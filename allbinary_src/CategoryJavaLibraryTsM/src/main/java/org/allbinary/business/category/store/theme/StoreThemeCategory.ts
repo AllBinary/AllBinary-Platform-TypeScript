@@ -87,7 +87,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
+//not GWT import const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
 
                 
 export class StoreThemeCategory extends Category implements StoreThemeCategoryInterface {

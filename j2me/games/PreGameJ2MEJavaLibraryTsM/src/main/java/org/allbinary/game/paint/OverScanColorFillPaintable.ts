@@ -45,7 +45,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.ColorFillPaintable;
+//not GWT import const ColorFillPaintable = globalThis.org.allbinary.game.paint.ColorFillPaintable;
 
                 
 export class OverScanColorFillPaintable extends ColorFillPaintable {

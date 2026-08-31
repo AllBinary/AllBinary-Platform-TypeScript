@@ -43,13 +43,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputFactory } from './InputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
                 import { GameKey } from './GameKey.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameKey;
+//not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
 
                 import { GameKeyFactory } from './GameKeyFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyFactory;
+//not GWT import const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
 
                 
 export class GameKeyMappingFactory

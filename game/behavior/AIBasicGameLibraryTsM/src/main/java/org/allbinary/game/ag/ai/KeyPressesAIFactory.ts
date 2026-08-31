@@ -65,10 +65,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiKeyPressesAI } from './MultiKeyPressesAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.MultiKeyPressesAI;
+//not GWT import const MultiKeyPressesAI = globalThis.org.allbinary.game.ag.ai.MultiKeyPressesAI;
 
                 import { KeyPressesAI } from './KeyPressesAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.KeyPressesAI;
+//not GWT import const KeyPressesAI = globalThis.org.allbinary.game.ag.ai.KeyPressesAI;
 
                 
 export class KeyPressesAIFactory

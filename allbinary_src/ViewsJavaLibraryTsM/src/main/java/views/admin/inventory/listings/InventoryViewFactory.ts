@@ -61,7 +61,7 @@ import { InventorySearch } from '../../../../views/generic/inventory/InventorySe
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryViewSearchInterface } from './InventoryViewSearchInterface.js';
-//not GWT import const  = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
+//not GWT import const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
 
                 
 export class InventoryViewFactory

@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfig } from './LogConfig.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfig;
+//not GWT import const LogConfig = globalThis.org.allbinary.logic.communication.log.config.LogConfig;
 
                 
 export class LoggingInitInfo

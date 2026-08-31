@@ -69,7 +69,7 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
+const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageCopyUtil

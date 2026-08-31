@@ -59,7 +59,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameState } from './GameState.js';
-//not GWT import const  = globalThis.org.allbinary.game.state.GameState;
+//not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
 
                 
 export class GameStateFactory

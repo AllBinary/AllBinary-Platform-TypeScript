@@ -103,13 +103,13 @@ import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
+//not GWT import const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
 
                 import { UserRoleB } from './UserRoleB.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.UserRoleB;
+//not GWT import const UserRoleB = globalThis.org.allbinary.business.user.role.UserRoleB;
 
                 import { UserRole } from './UserRole.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.UserRole;
+//not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
                 
 export class UserRoleFactory

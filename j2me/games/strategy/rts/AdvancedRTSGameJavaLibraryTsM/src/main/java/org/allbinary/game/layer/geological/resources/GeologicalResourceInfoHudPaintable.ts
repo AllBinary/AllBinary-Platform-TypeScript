@@ -61,7 +61,7 @@ import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
+//not GWT import const GeologicalGeographicMapCellPosition = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
 
                 
 export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable {

@@ -79,7 +79,7 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyCompleteMotionGestureInputEvent } from './GameKeyCompleteMotionGestureInputEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
+//not GWT import const GameKeyCompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
 
                 
 export class GameKeyFromMotionGestureEventListener extends CompleteMotionGestureInputEventListener {

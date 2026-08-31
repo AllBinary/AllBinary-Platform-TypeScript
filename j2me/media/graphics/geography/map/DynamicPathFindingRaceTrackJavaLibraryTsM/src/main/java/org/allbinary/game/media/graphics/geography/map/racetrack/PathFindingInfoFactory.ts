@@ -117,7 +117,7 @@ import { PathFindingNodeCostInfoFactory } from '../../../../../../../../org/allb
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimplePathFinderGraphVisitorFactory } from './SimplePathFinderGraphVisitorFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.SimplePathFinderGraphVisitorFactory;
+//not GWT import const SimplePathFinderGraphVisitorFactory = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.SimplePathFinderGraphVisitorFactory;
 
                 
 export class PathFindingInfoFactory extends BasePathFindingInfoFactory {

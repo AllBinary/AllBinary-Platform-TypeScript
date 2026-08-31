@@ -53,10 +53,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MyFontProcessor } from './MyFontProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
                 import { UpdateMyFontInterface } from './UpdateMyFontInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
 
                 
 export class UpdateMyFontProcessor extends MyFontProcessor {

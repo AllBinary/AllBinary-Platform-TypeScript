@@ -53,7 +53,7 @@ import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BillingAddressesEntity } from './BillingAddressesEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
+//not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
 
                 
 export class BillingAddressesEntityFactory

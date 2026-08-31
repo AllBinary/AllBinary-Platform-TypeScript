@@ -85,10 +85,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextBox2 } from './CustomTextBox2.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.CustomTextBox2;
+//not GWT import const CustomTextBox2 = globalThis.org.allbinary.animation.text.CustomTextBox2;
 
                 import { CustomTextBoxIndexedAnimation } from './CustomTextBoxIndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.CustomTextBoxIndexedAnimation;
+//not GWT import const CustomTextBoxIndexedAnimation = globalThis.org.allbinary.animation.text.CustomTextBoxIndexedAnimation;
 
                 
 export class CustomTextBoxIndexedAnimationFactory

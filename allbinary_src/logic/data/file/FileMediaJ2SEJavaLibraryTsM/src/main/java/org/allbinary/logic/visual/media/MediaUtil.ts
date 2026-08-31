@@ -67,10 +67,10 @@ import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIOUtil } from './ImageIOUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.media.ImageIOUtil;
+//not GWT import const ImageIOUtil = globalThis.org.allbinary.logic.visual.media.ImageIOUtil;
 
                 import { MediaData } from './MediaData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.media.MediaData;
+//not GWT import const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
 
                 //import com.sun.imageio.plugins.common.ImageUtil;
 export class MediaUtil

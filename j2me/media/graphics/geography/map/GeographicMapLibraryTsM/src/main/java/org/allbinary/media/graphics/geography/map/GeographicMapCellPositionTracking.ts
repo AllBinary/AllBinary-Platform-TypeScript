@@ -49,19 +49,19 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.SimpleGeographicMapCellPositionFactory;
+//not GWT import const SimpleGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.SimpleGeographicMapCellPositionFactory;
 
                 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
                 import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+//not GWT import const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
 
                 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
                 import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
+//not GWT import const GeographicMapCompositeInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
 
                 
 export class GeographicMapCellPositionTracking

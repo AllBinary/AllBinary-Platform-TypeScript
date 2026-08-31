@@ -31,16 +31,16 @@ import { Stack } from '../../../java/util/Stack.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { Canvas } from './Canvas.js';
-const  = globalThis.javax.microedition.lcdui.Canvas;
+const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
                 //not plain js import { Command } from './Command.js';
-const  = globalThis.javax.microedition.lcdui.Command;
+const Command = globalThis.javax.microedition.lcdui.Command;
 
                 //not plain js import { CommandListener } from './CommandListener.js';
-const  = globalThis.javax.microedition.lcdui.CommandListener;
+const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
                 //not plain js import { Graphics } from './Graphics.js';
-const  = globalThis.javax.microedition.lcdui.Graphics;
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
                 
 export class NullCanvas extends Canvas {

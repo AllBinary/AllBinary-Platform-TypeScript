@@ -81,22 +81,22 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
+//not GWT import const ImageComparatorConstraintsInterface = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
 
                 import { ImageComparator } from './ImageComparator.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparator;
+//not GWT import const ImageComparator = globalThis.org.allbinary.media.image.comparison.ImageComparator;
 
                 import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+//not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
 
                 import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultFrameCacheable;
+//not GWT import const ImageComparisonResultFrameCacheable = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultFrameCacheable;
 
                 import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultCacheSingleton;
+//not GWT import const ImageComparisonResultCacheSingleton = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultCacheSingleton;
 
                 import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
+//not GWT import const ImageComparisonResultsEvent = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
 
                 
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {

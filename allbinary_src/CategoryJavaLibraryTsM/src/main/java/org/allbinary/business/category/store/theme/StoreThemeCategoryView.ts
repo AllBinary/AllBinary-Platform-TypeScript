@@ -63,10 +63,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
+//not GWT import const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
 
                 import { ThemeComparator } from './ThemeComparator.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.store.theme.ThemeComparator;
+//not GWT import const ThemeComparator = globalThis.org.allbinary.business.category.store.theme.ThemeComparator;
 
                 
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {

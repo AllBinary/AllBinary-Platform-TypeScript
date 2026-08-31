@@ -121,28 +121,28 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
+//not GWT import const ProfileActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
 
                 import { GenericProfileActionScriptConditionData } from './GenericProfileActionScriptConditionData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.GenericProfileActionScriptConditionData;
+//not GWT import const GenericProfileActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.GenericProfileActionScriptConditionData;
 
                 import { ProfileActionScriptConditionFactory } from './ProfileActionScriptConditionFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionFactory;
+//not GWT import const ProfileActionScriptConditionFactory = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionFactory;
 
                 import { JMenu } from './JMenu.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JMenu;
+//not GWT import const JMenu = globalThis.org.allbinary.input.automation.actions.script.condition.JMenu;
 
                 import { JMenuItem } from './JMenuItem.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JMenuItem;
+//not GWT import const JMenuItem = globalThis.org.allbinary.input.automation.actions.script.condition.JMenuItem;
 
                 import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
+//not GWT import const TimeIntervalActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
 
                 import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
+//not GWT import const AlwaysActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
 
                 import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
+//not GWT import const ColorAtActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
 
                 
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {

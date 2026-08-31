@@ -55,16 +55,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
+//not GWT import const BaseTouchInput = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
                 import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonsBuilder;
+//not GWT import const BasicTouchButtonsBuilder = globalThis.org.allbinary.input.motion.button.BasicTouchButtonsBuilder;
 
                 import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BuildingScrollTouchButtonsBuilder;
+//not GWT import const BuildingScrollTouchButtonsBuilder = globalThis.org.allbinary.input.motion.button.BuildingScrollTouchButtonsBuilder;
 
                 import { UpgradeDowngradeTouchButtonsBuilder } from './UpgradeDowngradeTouchButtonsBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.UpgradeDowngradeTouchButtonsBuilder;
+//not GWT import const UpgradeDowngradeTouchButtonsBuilder = globalThis.org.allbinary.input.motion.button.UpgradeDowngradeTouchButtonsBuilder;
 
                 
 export class RTSTouchButtonsBuilder extends BaseTouchInput {

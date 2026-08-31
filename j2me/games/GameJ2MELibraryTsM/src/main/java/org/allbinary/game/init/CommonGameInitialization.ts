@@ -95,7 +95,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameInitialization } from './BaseGameInitialization.js';
-//not GWT import const  = globalThis.org.allbinary.game.init.BaseGameInitialization;
+//not GWT import const BaseGameInitialization = globalThis.org.allbinary.game.init.BaseGameInitialization;
 
                 
 export class CommonGameInitialization extends BaseGameInitialization {

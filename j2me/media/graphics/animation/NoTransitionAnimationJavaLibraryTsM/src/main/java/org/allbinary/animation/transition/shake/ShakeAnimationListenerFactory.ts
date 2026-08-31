@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoShakeAnimationListener } from './NoShakeAnimationListener.js';
-//not GWT import const  = globalThis.org.allbinary.animation.transition.shake.NoShakeAnimationListener;
+//not GWT import const NoShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.NoShakeAnimationListener;
 
                 import { ShakeAnimationListener } from './ShakeAnimationListener.js';
-//not GWT import const  = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListener;
+//not GWT import const ShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListener;
 
                 
 export class ShakeAnimationListenerFactory

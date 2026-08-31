@@ -53,7 +53,7 @@ import { PersistentInputMapping } from '../../../../org/allbinary/game/input/map
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionJ2MEGameInputMapping } from './MotionJ2MEGameInputMapping.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.MotionJ2MEGameInputMapping;
+//not GWT import const MotionJ2MEGameInputMapping = globalThis.org.allbinary.game.input.MotionJ2MEGameInputMapping;
 
                 
 export class PlatformInputMappingFactory

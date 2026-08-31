@@ -81,7 +81,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InGameOptionsForm } from './InGameOptionsForm.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.InGameOptionsForm;
+//not GWT import const InGameOptionsForm = globalThis.org.allbinary.game.configuration.InGameOptionsForm;
 
                 
 export class InGameOptionsFormFactory

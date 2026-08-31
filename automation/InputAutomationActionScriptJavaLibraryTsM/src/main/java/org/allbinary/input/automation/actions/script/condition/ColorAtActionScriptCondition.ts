@@ -119,22 +119,22 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
+//not GWT import const BasicProfileActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
 
                 import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
+//not GWT import const ColorAtActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
 
                 import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionJPanel;
+//not GWT import const ColorAtActionScriptConditionJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionJPanel;
 
                 import { Point } from './Point.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Point;
+//not GWT import const Point = globalThis.org.allbinary.input.automation.actions.script.condition.Point;
 
                 import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
+//not GWT import const ColorAtActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
 
                 import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Color;
+//not GWT import const Color = globalThis.org.allbinary.input.automation.actions.script.condition.Color;
 
                 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {

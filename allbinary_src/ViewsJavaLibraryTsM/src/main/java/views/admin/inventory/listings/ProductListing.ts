@@ -179,7 +179,7 @@ import { InventorySearchUtil } from '../../../../views/generic/inventory/Invento
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProductListingInterface } from './ProductListingInterface.js';
-//not GWT import const  = globalThis.views.admin.inventory.listings.ProductListingInterface;
+//not GWT import const ProductListingInterface = globalThis.views.admin.inventory.listings.ProductListingInterface;
 
                 
 export class ProductListing

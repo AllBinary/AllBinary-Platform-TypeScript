@@ -57,7 +57,7 @@ import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardw
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HardwareInterface } from './HardwareInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
+//not GWT import const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
 
                 
 export class HardwareFactory

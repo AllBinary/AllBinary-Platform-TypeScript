@@ -107,7 +107,7 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextFieldItem } from './ABTextFieldItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
+//not GWT import const ABTextFieldItem = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
 
                 
 export class CustomTextBox extends GameCommandCanvas implements RawKeyEventListener {

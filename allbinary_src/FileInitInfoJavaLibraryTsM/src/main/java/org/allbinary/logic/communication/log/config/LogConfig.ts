@@ -121,7 +121,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigData } from './LogConfigData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfigData;
+//not GWT import const LogConfigData = globalThis.org.allbinary.logic.communication.log.config.LogConfigData;
 
                 
 export class LogConfig

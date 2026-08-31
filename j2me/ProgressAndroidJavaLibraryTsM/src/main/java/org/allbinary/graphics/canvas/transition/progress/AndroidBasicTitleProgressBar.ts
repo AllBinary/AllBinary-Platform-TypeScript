@@ -151,19 +151,19 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ShowTitleProgressBarRunnable;
+//not GWT import const ShowTitleProgressBarRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.ShowTitleProgressBarRunnable;
 
                 import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.DismissTitleProgressBarRunnable;
+//not GWT import const DismissTitleProgressBarRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.DismissTitleProgressBarRunnable;
 
                 import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarSetProgressRunnable;
+//not GWT import const TitleProgressBarSetProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarSetProgressRunnable;
 
                 import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarPortionSetProgressRunnable;
+//not GWT import const TitleProgressBarPortionSetProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarPortionSetProgressRunnable;
 
                 
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {

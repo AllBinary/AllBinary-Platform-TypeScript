@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionResultEntity } from './TransactionResultEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionResultEntity;
+//not GWT import const TransactionResultEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionResultEntity;
 
                 
 export class TransactionResultEntityFactory

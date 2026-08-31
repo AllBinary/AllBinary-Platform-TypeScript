@@ -59,7 +59,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LurchRotationAI } from './LurchRotationAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.LurchRotationAI;
+//not GWT import const LurchRotationAI = globalThis.org.allbinary.game.ag.ai.LurchRotationAI;
 
                 
 export class LurchRotationAIFactory

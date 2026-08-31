@@ -71,7 +71,7 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GlobalsView } from './GlobalsView.js';
-//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.includes.globals.GlobalsView;
+//not GWT import const GlobalsView = globalThis.views.business.context.modules.storefront.customizer.includes.globals.GlobalsView;
 
                 
 export class InsertGlobalsValidationView extends GlobalsView implements ValidationComponentInterface {

@@ -55,7 +55,7 @@ import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.constraints.Color;
+//not GWT import const Color = globalThis.org.allbinary.input.automation.module.generic.constraints.Color;
 
                 
 export class NoImageComparatorConstraints extends ImageComparatorConstraints {

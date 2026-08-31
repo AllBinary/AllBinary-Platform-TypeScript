@@ -67,7 +67,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontStatisticsComponent } from './StoreFrontStatisticsComponent.js';
-//not GWT import const  = globalThis.views.admin.storefront.statistics.StoreFrontStatisticsComponent;
+//not GWT import const StoreFrontStatisticsComponent = globalThis.views.admin.storefront.statistics.StoreFrontStatisticsComponent;
 
                 //extends StoreFrontComponent
 export class ValidationStoreFrontStatisticsView extends StoreFrontStatisticsComponent implements ValidationComponentInterface {

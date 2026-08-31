@@ -59,7 +59,7 @@ import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeDelayHelper } from './TimeDelayHelper.js';
-//not GWT import const  = globalThis.org.allbinary.time.TimeDelayHelper;
+//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
                 
 export class StupidTimer

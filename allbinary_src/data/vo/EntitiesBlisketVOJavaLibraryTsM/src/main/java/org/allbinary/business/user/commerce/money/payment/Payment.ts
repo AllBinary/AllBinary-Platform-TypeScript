@@ -79,13 +79,13 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentInterface } from './PaymentInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+//not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
 
                 import { PaymentData } from './PaymentData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+//not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
 
                 import { CreditCardType } from './CreditCardType.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.CreditCardType;
+//not GWT import const CreditCardType = globalThis.org.allbinary.business.user.commerce.money.payment.CreditCardType;
 
                 
 export class Payment

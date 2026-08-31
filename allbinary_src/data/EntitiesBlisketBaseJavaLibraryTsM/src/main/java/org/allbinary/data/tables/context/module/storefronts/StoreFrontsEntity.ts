@@ -75,7 +75,7 @@ import { AbSqlBean } from '../../../../../../../org/allbinary/logic/communicatio
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontsEntityInterface } from './StoreFrontsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntityInterface;
+//not GWT import const StoreFrontsEntityInterface = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntityInterface;
 
                 
 export class StoreFrontsEntity extends AbSqlBean implements StoreFrontsEntityInterface {

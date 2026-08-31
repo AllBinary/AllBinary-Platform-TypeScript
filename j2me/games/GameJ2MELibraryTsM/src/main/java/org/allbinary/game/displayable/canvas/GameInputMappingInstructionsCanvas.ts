@@ -91,7 +91,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
+//not GWT import const GameCommandCanvas = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
 
                 
 export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {

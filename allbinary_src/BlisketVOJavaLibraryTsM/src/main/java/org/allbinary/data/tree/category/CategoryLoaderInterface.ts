@@ -45,7 +45,7 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryModifierTreeInterface;
+//not GWT import const CategoryModifierTreeInterface = globalThis.org.allbinary.data.tree.category.CategoryModifierTreeInterface;
 
                 
 export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {

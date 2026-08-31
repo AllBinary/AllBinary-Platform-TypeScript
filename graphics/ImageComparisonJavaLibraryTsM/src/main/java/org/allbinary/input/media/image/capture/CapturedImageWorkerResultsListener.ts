@@ -41,7 +41,7 @@ import { BasicEventListenerInterface } from '../../../../../../org/allbinary/log
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
+//not GWT import const CapturedImageWorkerResultsEvent = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
 
                 
 export interface CapturedImageWorkerResultsListener extends BasicEventListenerInterface {

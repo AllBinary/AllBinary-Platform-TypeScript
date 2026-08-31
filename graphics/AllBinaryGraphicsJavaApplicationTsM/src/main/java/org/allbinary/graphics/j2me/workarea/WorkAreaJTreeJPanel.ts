@@ -99,34 +99,34 @@ import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.JPanel;
 
                 import { JTree } from './JTree.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.JTree;
+//not GWT import const JTree = globalThis.org.allbinary.graphics.j2me.workarea.JTree;
 
                 import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.MouseAdapter;
+//not GWT import const MouseAdapter = globalThis.org.allbinary.graphics.j2me.workarea.MouseAdapter;
 
                 import { MouseEvent } from './MouseEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.MouseEvent;
+//not GWT import const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.MouseEvent;
 
                 import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.JPopupMenu;
+//not GWT import const JPopupMenu = globalThis.org.allbinary.graphics.j2me.workarea.JPopupMenu;
 
                 import { JMenuItem } from './JMenuItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.JMenuItem;
+//not GWT import const JMenuItem = globalThis.org.allbinary.graphics.j2me.workarea.JMenuItem;
 
                 import { JScrollPane } from './JScrollPane.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.JScrollPane;
+//not GWT import const JScrollPane = globalThis.org.allbinary.graphics.j2me.workarea.JScrollPane;
 
                 import { PopupMenuListener } from './PopupMenuListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.PopupMenuListener;
+//not GWT import const PopupMenuListener = globalThis.org.allbinary.graphics.j2me.workarea.PopupMenuListener;
 
                 import { PopupMenuEvent } from './PopupMenuEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.PopupMenuEvent;
+//not GWT import const PopupMenuEvent = globalThis.org.allbinary.graphics.j2me.workarea.PopupMenuEvent;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.GridLayout;
 
                 
 export class WorkAreaJTreeJPanel extends javax.swing.JPanel {

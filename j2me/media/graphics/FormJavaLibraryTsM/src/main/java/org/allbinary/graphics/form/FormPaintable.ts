@@ -57,7 +57,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.PaintableForm;
+//not GWT import const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
 
                 
 export class FormPaintable extends Paintable {

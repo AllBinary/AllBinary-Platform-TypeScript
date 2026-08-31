@@ -57,13 +57,13 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPropertiesFactoryInterface } from './CategoryPropertiesFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
+//not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
 
                 import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
+//not GWT import const CategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
 
                 import { CategoryProperties } from './CategoryProperties.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.properties.CategoryProperties;
+//not GWT import const CategoryProperties = globalThis.org.allbinary.business.category.properties.CategoryProperties;
 
                 
 export class CategoryPropertiesFactory

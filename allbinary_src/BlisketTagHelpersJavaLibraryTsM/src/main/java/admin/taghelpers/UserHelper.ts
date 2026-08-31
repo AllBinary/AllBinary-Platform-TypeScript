@@ -111,7 +111,7 @@ import { StringValidationUtil } from '../../org/allbinary/logic/string/StringVal
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Table } from './Table.js';
-//not GWT import const  = globalThis.admin.taghelpers.Table;
+//not GWT import const Table = globalThis.admin.taghelpers.Table;
 
                 
 export class UserHelper extends Table {

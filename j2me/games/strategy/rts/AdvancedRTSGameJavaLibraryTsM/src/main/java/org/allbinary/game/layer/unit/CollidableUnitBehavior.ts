@@ -111,10 +111,10 @@ import { DropCellPositionHistory } from '../../../../../org/allbinary/media/grap
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitLayer } from './UnitLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+//not GWT import const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
 
                 //import { SimpleSteeringVisitor } from './SimpleSteeringVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.SimpleSteeringVisitor;
+//not GWT import const SimpleSteeringVisitor = globalThis.org.allbinary.game.layer.unit.SimpleSteeringVisitor;
 
                 
 export class CollidableUnitBehavior extends CollidableRTSBehavior {

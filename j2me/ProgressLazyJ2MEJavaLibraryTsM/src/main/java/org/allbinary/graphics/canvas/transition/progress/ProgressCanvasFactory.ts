@@ -55,10 +55,10 @@ import { PaintableInterface } from '../../../../../../org/allbinary/graphics/pai
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LazyProgressCanvas } from './LazyProgressCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.LazyProgressCanvas;
+//not GWT import const LazyProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.LazyProgressCanvas;
 
                 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 
 export class ProgressCanvasFactory

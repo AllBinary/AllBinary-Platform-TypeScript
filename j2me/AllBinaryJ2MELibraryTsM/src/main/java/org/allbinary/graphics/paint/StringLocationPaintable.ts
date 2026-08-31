@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LocationPaintable } from './LocationPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.LocationPaintable;
+//not GWT import const LocationPaintable = globalThis.org.allbinary.graphics.paint.LocationPaintable;
 
                 
 export class StringLocationPaintable extends LocationPaintable {

@@ -55,7 +55,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VisitorInterface } from './VisitorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
+//not GWT import const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
 
                 
 export class Visitor

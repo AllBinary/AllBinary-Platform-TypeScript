@@ -85,7 +85,7 @@ import { AbeClientInformationInterface } from '../../../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventHandler } from './UserEmailEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.event.handler.UserEmailEventHandler;
+//not GWT import const UserEmailEventHandler = globalThis.org.allbinary.logic.communication.smtp.event.handler.UserEmailEventHandler;
 
                 
 export class EmailEventHandlerUtil

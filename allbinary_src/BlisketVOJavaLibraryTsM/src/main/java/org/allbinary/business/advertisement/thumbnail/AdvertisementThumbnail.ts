@@ -43,7 +43,7 @@ import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementThumbnailInterface } from './AdvertisementThumbnailInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.thumbnail.AdvertisementThumbnailInterface;
+//not GWT import const AdvertisementThumbnailInterface = globalThis.org.allbinary.business.advertisement.thumbnail.AdvertisementThumbnailInterface;
 
                 
 export class AdvertisementThumbnail

@@ -79,7 +79,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputInterface } from './CompleteMotionGestureInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.CompleteMotionGestureInputInterface;
+//not GWT import const CompleteMotionGestureInputInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputInterface;
 
                 
 export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implements CompleteMotionGestureInputInterface {

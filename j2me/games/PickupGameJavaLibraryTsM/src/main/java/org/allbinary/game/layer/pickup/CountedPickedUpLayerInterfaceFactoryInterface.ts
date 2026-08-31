@@ -49,7 +49,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
+//not GWT import const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
 
                 
 export interface CountedPickedUpLayerInterfaceFactoryInterface extends PickedUpLayerInterfaceFactoryInterface, LayerInterfaceFactoryInterface {

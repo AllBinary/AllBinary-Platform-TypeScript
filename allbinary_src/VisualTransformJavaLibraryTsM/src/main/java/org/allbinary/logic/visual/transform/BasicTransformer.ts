@@ -111,7 +111,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbTransformer } from './AbTransformer.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.AbTransformer;
+//not GWT import const AbTransformer = globalThis.org.allbinary.logic.visual.transform.AbTransformer;
 
                 
 export class BasicTransformer extends AbTransformer {

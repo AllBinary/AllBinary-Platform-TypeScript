@@ -63,7 +63,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MetaView } from './MetaView.js';
-//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.includes.meta.MetaView;
+//not GWT import const MetaView = globalThis.views.business.context.modules.storefront.customizer.includes.meta.MetaView;
 
                 
 export class EditMetaValidationView extends MetaView implements ValidationComponentInterface {

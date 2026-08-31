@@ -59,10 +59,10 @@ import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFront } from './BasicStoreFront.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFront;
+//not GWT import const BasicStoreFront = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFront;
 
                 import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
+//not GWT import const BasicStoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
 
                 
 export class BasicStoreFrontsEntity extends InitSql {

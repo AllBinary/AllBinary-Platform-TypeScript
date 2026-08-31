@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVectorInterface } from './MathVectorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.math.vector.MathVectorInterface;
+//not GWT import const MathVectorInterface = globalThis.org.allbinary.logic.math.vector.MathVectorInterface;
 
                 
 export class MathVector

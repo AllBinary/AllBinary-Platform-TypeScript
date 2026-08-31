@@ -63,19 +63,19 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
+//not GWT import const GameConfigurationSingleton = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
 
                 import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfiguration;
+//not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
 
                 import { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameOptionsForm;
+//not GWT import const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
 
                 import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
+//not GWT import const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
 
                 import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
                 
 export class GameConfigurationUtil

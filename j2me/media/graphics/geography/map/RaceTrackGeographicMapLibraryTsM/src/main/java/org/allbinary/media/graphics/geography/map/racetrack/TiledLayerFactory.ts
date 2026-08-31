@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+//not GWT import const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
 
                 
 export class TiledLayerFactory

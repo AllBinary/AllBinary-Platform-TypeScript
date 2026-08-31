@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryEntity } from './OrderHistoryEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
+//not GWT import const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
 
                 
 export class OrderHistoryEntityFactory

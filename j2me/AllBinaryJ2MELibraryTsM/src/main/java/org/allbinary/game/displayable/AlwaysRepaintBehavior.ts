@@ -73,7 +73,7 @@ import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengle
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RepaintBehavior } from './RepaintBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.RepaintBehavior;
+//not GWT import const RepaintBehavior = globalThis.org.allbinary.game.displayable.RepaintBehavior;
 
                 
 export class AlwaysRepaintBehavior extends RepaintBehavior {

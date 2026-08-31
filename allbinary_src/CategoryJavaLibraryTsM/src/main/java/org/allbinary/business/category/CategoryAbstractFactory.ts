@@ -71,13 +71,13 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryFactoryInterface } from './CategoryFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+//not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
                 import { CategoryInterface } from './CategoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.CategoryInterface;
+//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
                 import { Category } from './Category.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.Category;
+//not GWT import const Category = globalThis.org.allbinary.business.category.Category;
 
                 
 export class CategoryAbstractFactory

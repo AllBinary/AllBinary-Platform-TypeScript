@@ -57,10 +57,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+//not GWT import const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
 
                 import { ContextConfigurationView } from './ContextConfigurationView.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationView;
+//not GWT import const ContextConfigurationView = globalThis.org.allbinary.business.context.configuration.ContextConfigurationView;
 
                 
 export class ContextConfigurationDomDocumentMapping

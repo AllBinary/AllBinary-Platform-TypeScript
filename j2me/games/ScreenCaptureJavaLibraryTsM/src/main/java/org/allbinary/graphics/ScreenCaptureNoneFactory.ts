@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenCapture } from './ScreenCapture.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.ScreenCapture;
+//not GWT import const ScreenCapture = globalThis.org.allbinary.graphics.ScreenCapture;
 
                 
 export class ScreenCaptureNoneFactory

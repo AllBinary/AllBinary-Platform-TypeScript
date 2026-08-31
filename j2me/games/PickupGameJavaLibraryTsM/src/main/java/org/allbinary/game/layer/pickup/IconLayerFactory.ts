@@ -45,7 +45,7 @@ import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IconLayer } from './IconLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.IconLayer;
+//not GWT import const IconLayer = globalThis.org.allbinary.game.layer.pickup.IconLayer;
 
                 
 export class IconLayerFactory

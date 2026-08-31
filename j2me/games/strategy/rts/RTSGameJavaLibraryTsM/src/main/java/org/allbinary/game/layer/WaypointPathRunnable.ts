@@ -53,10 +53,10 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
+//not GWT import const WaypointPathRunnableBase = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
 
                 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+//not GWT import const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
 
                 
 export class WaypointPathRunnable extends WaypointPathRunnableBase {

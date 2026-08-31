@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontsEntity } from './StoreFrontsEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntity;
+//not GWT import const StoreFrontsEntity = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntity;
 
                 
 export class StoreFrontsEntityFactory

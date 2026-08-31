@@ -37,10 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+//not GWT import const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
 
                 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
                 
 export interface GeographicMapCompositeInterface {

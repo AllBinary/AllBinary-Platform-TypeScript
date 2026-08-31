@@ -73,10 +73,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsUtil } from './PointsUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsUtil;
+//not GWT import const PointsUtil = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsUtil;
 
                 import { Document } from './Document.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Document;
+//not GWT import const Document = globalThis.org.allbinary.graphics.j2me.workarea.tools.Document;
 
                 
 export class PointsDomUtil

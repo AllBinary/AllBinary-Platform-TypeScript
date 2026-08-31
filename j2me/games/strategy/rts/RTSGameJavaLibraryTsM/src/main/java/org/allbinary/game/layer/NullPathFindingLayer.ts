@@ -83,19 +83,19 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+//not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
                 import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaBase;
+//not GWT import const GeographicMapCellPositionAreaBase = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaBase;
 
                 import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
                 import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer2LogHelper;
+//not GWT import const RTSLayer2LogHelper = globalThis.org.allbinary.game.layer.RTSLayer2LogHelper;
 
                 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+//not GWT import const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
 
                 
 export class NullPathFindingLayer

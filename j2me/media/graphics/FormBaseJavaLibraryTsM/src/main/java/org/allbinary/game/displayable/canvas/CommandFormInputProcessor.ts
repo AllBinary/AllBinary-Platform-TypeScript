@@ -143,10 +143,10 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+//not GWT import const BasicMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
 
                 import { CommandRunnable } from './CommandRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.CommandRunnable;
+//not GWT import const CommandRunnable = globalThis.org.allbinary.game.displayable.canvas.CommandRunnable;
 
                 //In general allow scrolling of the menu and selection the center item
 export class CommandFormInputProcessor extends BasicMenuInputProcessor {

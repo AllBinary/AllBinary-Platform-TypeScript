@@ -57,7 +57,7 @@ import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreGameScrollSelectionForm } from './PreGameScrollSelectionForm.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.PreGameScrollSelectionForm;
+//not GWT import const PreGameScrollSelectionForm = globalThis.org.allbinary.game.displayable.canvas.PreGameScrollSelectionForm;
 
                 
 export class PreGameSelectorPaintable extends InitUpdatePaintable {

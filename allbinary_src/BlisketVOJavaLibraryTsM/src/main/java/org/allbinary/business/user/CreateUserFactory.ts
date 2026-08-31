@@ -61,7 +61,7 @@ import { StringValidationUtil } from '../../../../org/allbinary/logic/string/Str
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
                 
 export class CreateUserFactory

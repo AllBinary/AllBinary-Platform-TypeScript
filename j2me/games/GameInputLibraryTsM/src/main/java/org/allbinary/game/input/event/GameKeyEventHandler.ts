@@ -63,13 +63,13 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PressGameKeyEventHandler } from './PressGameKeyEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.PressGameKeyEventHandler;
+//not GWT import const PressGameKeyEventHandler = globalThis.org.allbinary.game.input.event.PressGameKeyEventHandler;
 
                 import { UpGameKeyEventHandler } from './UpGameKeyEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.UpGameKeyEventHandler;
+//not GWT import const UpGameKeyEventHandler = globalThis.org.allbinary.game.input.event.UpGameKeyEventHandler;
 
                 import { DownGameKeyEventHandler } from './DownGameKeyEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.DownGameKeyEventHandler;
+//not GWT import const DownGameKeyEventHandler = globalThis.org.allbinary.game.input.event.DownGameKeyEventHandler;
 
                 
 export class GameKeyEventHandler

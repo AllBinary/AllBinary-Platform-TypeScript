@@ -59,10 +59,10 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OptimizedAllBinaryCollisionLayerManager } from './OptimizedAllBinaryCollisionLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.OptimizedAllBinaryCollisionLayerManager;
+//not GWT import const OptimizedAllBinaryCollisionLayerManager = globalThis.org.allbinary.game.collision.OptimizedAllBinaryCollisionLayerManager;
 
                 import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+//not GWT import const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
 
                 
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {

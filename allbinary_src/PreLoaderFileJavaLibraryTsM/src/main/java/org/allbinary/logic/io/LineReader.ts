@@ -57,7 +57,7 @@ import { DataInputStream } from '../../../../java/io/DataInputStream.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.AbFileInputStream;
+//not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
                 
 export class LineReader

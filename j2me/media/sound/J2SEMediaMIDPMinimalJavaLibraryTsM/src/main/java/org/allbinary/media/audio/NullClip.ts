@@ -79,10 +79,10 @@ import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullJ2SEControl } from './NullJ2SEControl.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NullJ2SEControl;
+//not GWT import const NullJ2SEControl = globalThis.org.allbinary.media.audio.NullJ2SEControl;
 
                 import { NullAudioFormat } from './NullAudioFormat.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NullAudioFormat;
+//not GWT import const NullAudioFormat = globalThis.org.allbinary.media.audio.NullAudioFormat;
 
                 
 export class NullClip

@@ -95,10 +95,10 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PersistanceStrings } from './PersistanceStrings.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.persistance.PersistanceStrings;
+//not GWT import const PersistanceStrings = globalThis.org.allbinary.game.configuration.persistance.PersistanceStrings;
 
                 import { NullRecordStore } from './NullRecordStore.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
+//not GWT import const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
 
                 
 export class BasicPersitance

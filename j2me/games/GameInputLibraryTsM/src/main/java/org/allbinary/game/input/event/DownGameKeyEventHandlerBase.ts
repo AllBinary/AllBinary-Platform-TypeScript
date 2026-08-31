@@ -83,10 +83,10 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyEvent } from './GameKeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
                 import { DownGameKeyEventListenerInterface } from './DownGameKeyEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.DownGameKeyEventListenerInterface;
+//not GWT import const DownGameKeyEventListenerInterface = globalThis.org.allbinary.game.input.event.DownGameKeyEventListenerInterface;
 
                 
 export class DownGameKeyEventHandlerBase extends BasicEventHandler {

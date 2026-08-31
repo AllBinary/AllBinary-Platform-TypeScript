@@ -57,16 +57,16 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
                 import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInterface;
+//not GWT import const GeographicMapCellPositionFactoryInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInterface;
 
                 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
                 import { GeographicMapCellPositionFactoryInitVisitorInterface } from './GeographicMapCellPositionFactoryInitVisitorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInitVisitorInterface;
+//not GWT import const GeographicMapCellPositionFactoryInitVisitorInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInitVisitorInterface;
 
                 
 export class BasicGeographicMapCellPositionFactory

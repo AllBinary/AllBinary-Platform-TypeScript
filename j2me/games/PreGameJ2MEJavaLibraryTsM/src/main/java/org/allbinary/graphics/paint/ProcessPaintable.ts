@@ -45,7 +45,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.Paintable;
+//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
                 
 export class ProcessPaintable extends Paintable {

@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MyFrame } from './MyFrame.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.MyFrame;
+//not GWT import const MyFrame = globalThis.org.allbinary.graphics.j2me.MyFrame;
 
                 
 export class StatusFactory

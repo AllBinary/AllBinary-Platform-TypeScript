@@ -83,7 +83,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import const  = globalThis.admin.taghelpers.ModifyTable;
+//not GWT import const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
 
                 //TWB - Am I missing the correct Quote Request? Probably not
 export class QuoteRequestHelper extends ModifyTable {

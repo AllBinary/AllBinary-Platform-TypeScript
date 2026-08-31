@@ -91,7 +91,7 @@ import { StringValidationUtil } from '../../../../org/allbinary/logic/string/Str
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitializerData } from './InitializerData.js';
-//not GWT import const  = globalThis.org.allbinary.business.installer.InitializerData;
+//not GWT import const InitializerData = globalThis.org.allbinary.business.installer.InitializerData;
 
                 
 export class Initializer

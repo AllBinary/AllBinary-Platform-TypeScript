@@ -67,7 +67,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontComponent } from './StoreFrontComponent.js';
-//not GWT import const  = globalThis.views.admin.storefront.StoreFrontComponent;
+//not GWT import const StoreFrontComponent = globalThis.views.admin.storefront.StoreFrontComponent;
 
                 
 export class DeleteValidationStoreFrontView extends StoreFrontComponent implements ValidationComponentInterface {

@@ -117,16 +117,16 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
+//not GWT import const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
                 import { OrderHistoryInterface } from './OrderHistoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryInterface;
+//not GWT import const OrderHistoryInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryInterface;
 
                 import { OrderData } from './OrderData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+//not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
 
                 import { OrderHistoryData } from './OrderHistoryData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+//not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
 
                 
 export class OrderHistory extends Order implements OrderHistoryInterface {

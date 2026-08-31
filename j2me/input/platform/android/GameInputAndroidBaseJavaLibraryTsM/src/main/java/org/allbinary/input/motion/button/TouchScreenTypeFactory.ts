@@ -55,10 +55,10 @@ import { Configuration } from '../../../../../android/content/res/Configuration.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenFactory } from './TouchScreenFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
+//not GWT import const TouchScreenFactory = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
 
                 import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchScreenTypesFactory;
+//not GWT import const TouchScreenTypesFactory = globalThis.org.allbinary.input.motion.button.TouchScreenTypesFactory;
 
                 
 export class TouchScreenTypeFactory

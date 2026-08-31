@@ -111,34 +111,34 @@ import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { JCheckBox } from './JCheckBox.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JCheckBox;
+//not GWT import const JCheckBox = globalThis.org.allbinary.image.gui.JCheckBox;
 
                 import { Graphics } from './Graphics.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Graphics;
+//not GWT import const Graphics = globalThis.org.allbinary.image.gui.Graphics;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.image.gui.JButton;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.image.gui.JLabel;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JTextField;
+//not GWT import const JTextField = globalThis.org.allbinary.image.gui.JTextField;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+//not GWT import const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+//not GWT import const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
 
                 
 export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {

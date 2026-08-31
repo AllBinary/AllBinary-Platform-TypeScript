@@ -53,7 +53,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceLoadingLevel } from './ResourceLoadingLevel.js';
-//not GWT import const  = globalThis.org.allbinary.game.resource.ResourceLoadingLevel;
+//not GWT import const ResourceLoadingLevel = globalThis.org.allbinary.game.resource.ResourceLoadingLevel;
 
                 
 export class ResourceLoadingLevelFactory

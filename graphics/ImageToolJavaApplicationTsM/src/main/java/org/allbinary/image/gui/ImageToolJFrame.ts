@@ -105,79 +105,79 @@ import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/anal
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JFrame;
+//not GWT import const JFrame = globalThis.org.allbinary.image.gui.JFrame;
 
                 import { JDialog } from './JDialog.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JDialog;
+//not GWT import const JDialog = globalThis.org.allbinary.image.gui.JDialog;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.image.gui.JLabel;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JTextField;
+//not GWT import const JTextField = globalThis.org.allbinary.image.gui.JTextField;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.image.gui.JButton;
 
                 import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { JMenuBar } from './JMenuBar.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JMenuBar;
+//not GWT import const JMenuBar = globalThis.org.allbinary.image.gui.JMenuBar;
 
                 import { JMenu } from './JMenu.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JMenu;
+//not GWT import const JMenu = globalThis.org.allbinary.image.gui.JMenu;
 
                 import { JMenuItem } from './JMenuItem.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JMenuItem;
+//not GWT import const JMenuItem = globalThis.org.allbinary.image.gui.JMenuItem;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.image.gui.Dimension;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+//not GWT import const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+//not GWT import const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.image.gui.GridLayout;
 
                 import { ImageUnifierJPanel } from './ImageUnifierJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ImageUnifierJPanel;
+//not GWT import const ImageUnifierJPanel = globalThis.org.allbinary.image.gui.ImageUnifierJPanel;
 
                 import { ImageAnalysisResultsJPanel } from './ImageAnalysisResultsJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ImageAnalysisResultsJPanel;
+//not GWT import const ImageAnalysisResultsJPanel = globalThis.org.allbinary.image.gui.ImageAnalysisResultsJPanel;
 
                 import { RotationSpriteImageJPanel } from './RotationSpriteImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.RotationSpriteImageJPanel;
+//not GWT import const RotationSpriteImageJPanel = globalThis.org.allbinary.image.gui.RotationSpriteImageJPanel;
 
                 import { SpriteSplitterImageJPanel } from './SpriteSplitterImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.SpriteSplitterImageJPanel;
+//not GWT import const SpriteSplitterImageJPanel = globalThis.org.allbinary.image.gui.SpriteSplitterImageJPanel;
 
                 import { RotationImageJPanel } from './RotationImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.RotationImageJPanel;
+//not GWT import const RotationImageJPanel = globalThis.org.allbinary.image.gui.RotationImageJPanel;
 
                 import { ResizeImageJPanel } from './ResizeImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ResizeImageJPanel;
+//not GWT import const ResizeImageJPanel = globalThis.org.allbinary.image.gui.ResizeImageJPanel;
 
                 import { CreateIconImagesJPanel } from './CreateIconImagesJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.CreateIconImagesJPanel;
+//not GWT import const CreateIconImagesJPanel = globalThis.org.allbinary.image.gui.CreateIconImagesJPanel;
 
                 import { CanvasImageJPanel } from './CanvasImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.CanvasImageJPanel;
+//not GWT import const CanvasImageJPanel = globalThis.org.allbinary.image.gui.CanvasImageJPanel;
 
                 import { MirrorSpriteImageJPanel } from './MirrorSpriteImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.MirrorSpriteImageJPanel;
+//not GWT import const MirrorSpriteImageJPanel = globalThis.org.allbinary.image.gui.MirrorSpriteImageJPanel;
 
                 import { MirrorImageJPanel } from './MirrorImageJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.MirrorImageJPanel;
+//not GWT import const MirrorImageJPanel = globalThis.org.allbinary.image.gui.MirrorImageJPanel;
 
                 
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {

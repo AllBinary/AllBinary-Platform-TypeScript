@@ -43,7 +43,7 @@ import { Vector } from '../../../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
+//not GWT import const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
 
                 
 export class AdminRoleFactory

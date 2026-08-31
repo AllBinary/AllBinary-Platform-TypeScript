@@ -65,10 +65,10 @@ import { AbeClientInformationInterface } from '../../../../../../org/allbinary/l
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsInterface } from './ShippingMethodsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsInterface;
+//not GWT import const ShippingMethodsInterface = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsInterface;
 
                 import { ShippingMethodsFactory } from './ShippingMethodsFactory.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsFactory;
+//not GWT import const ShippingMethodsFactory = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsFactory;
 
                 
 export class ShippingMethods

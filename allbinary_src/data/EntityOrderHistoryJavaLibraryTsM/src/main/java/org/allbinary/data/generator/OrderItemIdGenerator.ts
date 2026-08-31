@@ -51,7 +51,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UniqueIdGenerator } from './UniqueIdGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.data.generator.UniqueIdGenerator;
+//not GWT import const UniqueIdGenerator = globalThis.org.allbinary.data.generator.UniqueIdGenerator;
 
                 
 export class OrderItemIdGenerator extends UniqueIdGenerator {

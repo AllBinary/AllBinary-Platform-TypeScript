@@ -57,7 +57,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssElementValidationFactory } from './CssElementValidationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.CssElementValidationFactory;
+//not GWT import const CssElementValidationFactory = globalThis.org.allbinary.logic.visual.dhtml.style.css.CssElementValidationFactory;
 
                 
 export class CssElementsValidationFactory

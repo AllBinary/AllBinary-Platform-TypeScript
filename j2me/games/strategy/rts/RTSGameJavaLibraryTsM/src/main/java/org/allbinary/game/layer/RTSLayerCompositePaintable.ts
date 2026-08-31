@@ -53,10 +53,10 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.UpgradableRTSLayerHudPaintable;
+//not GWT import const UpgradableRTSLayerHudPaintable = globalThis.org.allbinary.game.layer.UpgradableRTSLayerHudPaintable;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 
 export class RTSLayerCompositePaintable extends Paintable {

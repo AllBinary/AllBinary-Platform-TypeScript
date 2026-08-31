@@ -51,7 +51,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RelativeLayerRelationship } from './RelativeLayerRelationship.js';
-//not GWT import const  = globalThis.org.allbinary.layer.relationship.RelativeLayerRelationship;
+//not GWT import const RelativeLayerRelationship = globalThis.org.allbinary.layer.relationship.RelativeLayerRelationship;
 
                 
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {

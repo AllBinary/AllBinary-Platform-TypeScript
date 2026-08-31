@@ -75,7 +75,7 @@ import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/commun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlOptionItemsEntityInterface } from './XmlOptionItemsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.XmlOptionItemsEntityInterface;
+//not GWT import const XmlOptionItemsEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.XmlOptionItemsEntityInterface;
 
                 
 export class XmlOptionItemsEntity extends AbSqlBean implements XmlOptionItemsEntityInterface {

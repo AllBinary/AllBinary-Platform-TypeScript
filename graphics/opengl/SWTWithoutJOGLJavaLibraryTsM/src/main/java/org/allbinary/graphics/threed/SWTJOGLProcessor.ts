@@ -51,10 +51,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GLHolder } from './GLHolder.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.threed.GLHolder;
+//not GWT import const GLHolder = globalThis.org.allbinary.graphics.threed.GLHolder;
 
                 import { RatioProcessor } from './RatioProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.threed.RatioProcessor;
+//not GWT import const RatioProcessor = globalThis.org.allbinary.graphics.threed.RatioProcessor;
 
                 //SWTWithoutJOGL
 export class SWTJOGLProcessor

@@ -109,43 +109,43 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.PaintableForm;
+//not GWT import const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
 
                 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+//not GWT import const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
 
                 import { ItemIndexPaintable } from './ItemIndexPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemIndexPaintable;
+//not GWT import const ItemIndexPaintable = globalThis.org.allbinary.graphics.form.ItemIndexPaintable;
 
                 import { ItemIndexDx } from './ItemIndexDx.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemIndexDx;
+//not GWT import const ItemIndexDx = globalThis.org.allbinary.graphics.form.ItemIndexDx;
 
                 import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintable;
+//not GWT import const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
 
                 import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+//not GWT import const FormTypeFactory = globalThis.org.allbinary.graphics.form.FormTypeFactory;
 
                 //import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormTempHorizontalPaintable;
+//not GWT import const ScrollSelectionFormTempHorizontalPaintable = globalThis.org.allbinary.graphics.form.ScrollSelectionFormTempHorizontalPaintable;
 
                 //import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormTempHorizontalDx;
+//not GWT import const ScrollSelectionFormTempHorizontalDx = globalThis.org.allbinary.graphics.form.ScrollSelectionFormTempHorizontalDx;
 
                 //import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormVerticalPaintable;
+//not GWT import const ScrollSelectionFormVerticalPaintable = globalThis.org.allbinary.graphics.form.ScrollSelectionFormVerticalPaintable;
 
                 //import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormVericalDx;
+//not GWT import const ScrollSelectionFormVericalDx = globalThis.org.allbinary.graphics.form.ScrollSelectionFormVericalDx;
 
                 //import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormHorizontalPaintable;
+//not GWT import const ScrollSelectionFormHorizontalPaintable = globalThis.org.allbinary.graphics.form.ScrollSelectionFormHorizontalPaintable;
 
                 //import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormHorizontalDx;
+//not GWT import const ScrollSelectionFormHorizontalDx = globalThis.org.allbinary.graphics.form.ScrollSelectionFormHorizontalDx;
 
                 import { FormType } from './FormType.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+//not GWT import const FormType = globalThis.org.allbinary.graphics.form.FormType;
 
                 
 export class ScrollSelectionForm extends PaintableForm {

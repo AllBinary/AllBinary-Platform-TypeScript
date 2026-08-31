@@ -39,13 +39,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionFactoryInterface } from './ViewPositionFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
+//not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
 
                 import { ViewPosition } from './ViewPosition.js';
-//not GWT import const  = globalThis.org.allbinary.view.ViewPosition;
+//not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
 
                 import { ViewPositionBase } from './ViewPositionBase.js';
-//not GWT import const  = globalThis.org.allbinary.view.ViewPositionBase;
+//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
                 
 export class ViewPositionFactory

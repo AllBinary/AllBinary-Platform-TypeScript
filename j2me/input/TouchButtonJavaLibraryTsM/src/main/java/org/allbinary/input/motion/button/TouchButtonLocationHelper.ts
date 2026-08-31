@@ -47,7 +47,7 @@ import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/disp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommonButtons } from './CommonButtons.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.CommonButtons;
+//not GWT import const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
 
                 
 export class TouchButtonLocationHelper

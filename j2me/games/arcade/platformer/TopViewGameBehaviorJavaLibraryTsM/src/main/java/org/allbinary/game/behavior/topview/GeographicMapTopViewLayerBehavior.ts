@@ -67,7 +67,7 @@ import { BasicTopViewGeographicMapCellTypeFactory } from '../../../../../org/all
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewGameLayerBehavior } from './TopViewGameLayerBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.TopViewGameLayerBehavior;
+//not GWT import const TopViewGameLayerBehavior = globalThis.org.allbinary.game.behavior.topview.TopViewGameLayerBehavior;
 
                 
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {

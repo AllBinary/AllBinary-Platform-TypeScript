@@ -83,7 +83,7 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorInterface } from './IdGeneratorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.generator.IdGeneratorInterface;
+//not GWT import const IdGeneratorInterface = globalThis.org.allbinary.data.generator.IdGeneratorInterface;
 
                 
 export class UniqueIdGenerator

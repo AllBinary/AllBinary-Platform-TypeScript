@@ -73,7 +73,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeFiredInterface } from './TimeFiredInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.scroller.TimeFiredInterface;
+//not GWT import const TimeFiredInterface = globalThis.org.allbinary.game.ag.ai.scroller.TimeFiredInterface;
 
                 
 export class TimedFireAI extends BasicAI {

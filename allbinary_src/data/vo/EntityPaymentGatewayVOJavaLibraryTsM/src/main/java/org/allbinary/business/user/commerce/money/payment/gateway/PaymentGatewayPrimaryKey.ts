@@ -51,10 +51,10 @@ import { StoreFront } from '../../../../../../../../org/allbinary/business/conte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Serializable } from './Serializable.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.Serializable;
+//not GWT import const Serializable = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.Serializable;
 
                 import { PaymentGateway } from './PaymentGateway.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGateway;
+//not GWT import const PaymentGateway = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGateway;
 
                 
 export class PaymentGatewayPrimaryKey

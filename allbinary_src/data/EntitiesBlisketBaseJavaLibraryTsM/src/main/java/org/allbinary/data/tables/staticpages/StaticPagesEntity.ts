@@ -79,7 +79,7 @@ import { SearchData } from '../../../../../org/allbinary/logic/control/search/Se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticPagesEntityInterface } from './StaticPagesEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntityInterface;
+//not GWT import const StaticPagesEntityInterface = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntityInterface;
 
                 
 export class StaticPagesEntity extends AbSqlBean implements StaticPagesEntityInterface {

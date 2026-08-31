@@ -49,13 +49,13 @@ import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptOutputInterface } from './ProfileActionScriptOutputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ProfileActionScriptOutputInterface;
+//not GWT import const ProfileActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ProfileActionScriptOutputInterface;
 
                 import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputData;
+//not GWT import const ImageActionScriptOutputData = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputData;
 
                 import { ImageActionScriptOutput } from './ImageActionScriptOutput.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutput;
+//not GWT import const ImageActionScriptOutput = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutput;
 
                 
 export class ProfileActionScriptOutputFactory

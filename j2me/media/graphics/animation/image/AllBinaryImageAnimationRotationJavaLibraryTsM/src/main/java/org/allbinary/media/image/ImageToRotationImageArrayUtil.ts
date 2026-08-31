@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ImageRotationUtil } from './ImageRotationUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageRotationUtil;
+const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
 
                 
 export class ImageToRotationImageArrayUtil

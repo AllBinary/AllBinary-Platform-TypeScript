@@ -55,10 +55,10 @@ import { AdvertisementSearchInterface } from '../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInterface } from './AdvertisementCampaignInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignInterface;
+//not GWT import const AdvertisementCampaignInterface = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignInterface;
 
                 import { AdvertisementCampaignData } from './AdvertisementCampaignData.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
+//not GWT import const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
 
                 
 export class AdvertisementCampaign

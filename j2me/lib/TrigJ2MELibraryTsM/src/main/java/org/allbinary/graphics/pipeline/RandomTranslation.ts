@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
+//not GWT import const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
 
                 
 export class RandomTranslation

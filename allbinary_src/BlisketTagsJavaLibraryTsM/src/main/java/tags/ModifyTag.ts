@@ -77,7 +77,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
-//not GWT import const  = globalThis.tags.HelperTag;
+//not GWT import const HelperTag = globalThis.tags.HelperTag;
 
                 
 export class ModifyTag extends HelperTag {

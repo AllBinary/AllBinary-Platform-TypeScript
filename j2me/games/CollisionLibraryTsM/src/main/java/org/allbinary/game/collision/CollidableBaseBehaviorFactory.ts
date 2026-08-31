@@ -49,10 +49,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehaviorFactoryInterface } from './CollidableBaseBehaviorFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehaviorFactoryInterface;
+//not GWT import const CollidableBaseBehaviorFactoryInterface = globalThis.org.allbinary.game.collision.CollidableBaseBehaviorFactoryInterface;
 
                 import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+//not GWT import const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
 
                 
 export class CollidableBaseBehaviorFactory

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullServiceReference } from './NullServiceReference.js';
-//not GWT import const  = globalThis.org.osgi.framework.NullServiceReference;
+//not GWT import const NullServiceReference = globalThis.org.osgi.framework.NullServiceReference;
 
                 
 export class NullServiceReferenceFactory

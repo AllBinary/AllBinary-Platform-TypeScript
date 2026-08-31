@@ -95,7 +95,7 @@ import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StreetAddressesEntityInterface } from './StreetAddressesEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntityInterface;
+//not GWT import const StreetAddressesEntityInterface = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntityInterface;
 
                 
 export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesEntityInterface {

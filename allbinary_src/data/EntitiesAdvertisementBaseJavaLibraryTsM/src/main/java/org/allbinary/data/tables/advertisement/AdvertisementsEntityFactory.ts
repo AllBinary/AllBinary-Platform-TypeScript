@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementsEntity } from './AdvertisementsEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntity;
+//not GWT import const AdvertisementsEntity = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntity;
 
                 import { AdvertisementsEntityInterface } from './AdvertisementsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntityInterface;
+//not GWT import const AdvertisementsEntityInterface = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntityInterface;
 
                 
 export class AdvertisementsEntityFactory

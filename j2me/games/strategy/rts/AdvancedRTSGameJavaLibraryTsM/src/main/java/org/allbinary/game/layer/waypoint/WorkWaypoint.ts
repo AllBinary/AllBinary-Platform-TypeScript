@@ -77,10 +77,10 @@ import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Waypoint } from './Waypoint.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.Waypoint;
+//not GWT import const Waypoint = globalThis.org.allbinary.game.layer.waypoint.Waypoint;
 
                 import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintable;
+//not GWT import const WaypointInfoHudPaintable = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintable;
 
                 
 export class WorkWaypoint extends Waypoint {

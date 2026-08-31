@@ -95,7 +95,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicVelocityInterface } from './BasicVelocityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.physics.velocity.BasicVelocityInterface;
+//not GWT import const BasicVelocityInterface = globalThis.org.allbinary.game.physics.velocity.BasicVelocityInterface;
 
                 
 export class BasicVelocityProperties

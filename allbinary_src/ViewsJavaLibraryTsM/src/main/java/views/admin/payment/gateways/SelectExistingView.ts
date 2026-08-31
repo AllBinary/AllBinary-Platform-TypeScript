@@ -63,7 +63,7 @@ import { PaymentGatewayViewAbstract } from '../../../../views/admin/payment/gate
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewaysView } from './PaymentGatewaysView.js';
-//not GWT import const  = globalThis.views.admin.payment.gateways.PaymentGatewaysView;
+//not GWT import const PaymentGatewaysView = globalThis.views.admin.payment.gateways.PaymentGatewaysView;
 
                 
 export class SelectExistingView extends PaymentGatewayViewAbstract {

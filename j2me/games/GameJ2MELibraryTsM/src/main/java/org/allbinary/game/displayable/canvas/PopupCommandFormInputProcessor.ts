@@ -67,10 +67,10 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
+//not GWT import const CommandFormInputProcessor = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
 
                 import { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.PopupMenuInputProcessor;
+//not GWT import const PopupMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.PopupMenuInputProcessor;
 
                 
 export class PopupCommandFormInputProcessor extends CommandFormInputProcessor {

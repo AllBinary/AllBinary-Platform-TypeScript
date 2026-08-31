@@ -117,10 +117,10 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HudGraphicsPosition } from './HudGraphicsPosition.js';
-//not GWT import const  = globalThis.org.allbinary.game.graphics.hud.HudGraphicsPosition;
+//not GWT import const HudGraphicsPosition = globalThis.org.allbinary.game.graphics.hud.HudGraphicsPosition;
 
                 import { BasicHudFactory } from './BasicHudFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
+//not GWT import const BasicHudFactory = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
 
                 
 export class BasicHud_1

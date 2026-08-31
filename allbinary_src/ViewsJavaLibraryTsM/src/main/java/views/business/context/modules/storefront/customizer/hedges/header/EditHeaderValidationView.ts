@@ -71,7 +71,7 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopBarView } from './TopBarView.js';
-//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.hedges.header.TopBarView;
+//not GWT import const TopBarView = globalThis.views.business.context.modules.storefront.customizer.hedges.header.TopBarView;
 
                 
 export class EditHeaderValidationView extends TopBarView implements ValidationComponentInterface {

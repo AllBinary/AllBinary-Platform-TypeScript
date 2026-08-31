@@ -55,22 +55,22 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Context } from './Context.js';
-//not GWT import const  = globalThis.org.allbinary.content.Context;
+//not GWT import const Context = globalThis.org.allbinary.content.Context;
 
                 import { NotificationManager } from './NotificationManager.js';
-//not GWT import const  = globalThis.org.allbinary.content.NotificationManager;
+//not GWT import const NotificationManager = globalThis.org.allbinary.content.NotificationManager;
 
                 import { CommandUriAction } from './CommandUriAction.js';
-//not GWT import const  = globalThis.org.allbinary.content.CommandUriAction;
+//not GWT import const CommandUriAction = globalThis.org.allbinary.content.CommandUriAction;
 
                 import { Intent } from './Intent.js';
-//not GWT import const  = globalThis.org.allbinary.content.Intent;
+//not GWT import const Intent = globalThis.org.allbinary.content.Intent;
 
                 import { Notification } from './Notification.js';
-//not GWT import const  = globalThis.org.allbinary.content.Notification;
+//not GWT import const Notification = globalThis.org.allbinary.content.Notification;
 
                 import { PendingIntent } from './PendingIntent.js';
-//not GWT import const  = globalThis.org.allbinary.content.PendingIntent;
+//not GWT import const PendingIntent = globalThis.org.allbinary.content.PendingIntent;
 
                 
 export class NotificationUtil

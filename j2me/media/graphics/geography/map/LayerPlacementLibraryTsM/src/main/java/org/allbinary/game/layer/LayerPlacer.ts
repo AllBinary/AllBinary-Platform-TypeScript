@@ -77,13 +77,13 @@ import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterface } from './LayerPlacementInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementInterface;
+//not GWT import const LayerPlacementInterface = globalThis.org.allbinary.game.layer.LayerPlacementInterface;
 
                 import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementType;
+//not GWT import const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
 
                 import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementTypeFactory;
+//not GWT import const LayerPlacementTypeFactory = globalThis.org.allbinary.game.layer.LayerPlacementTypeFactory;
 
                 
 export class LayerPlacer

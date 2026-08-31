@@ -51,13 +51,13 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MiniBasketView } from './MiniBasketView.js';
-//not GWT import const  = globalThis.views.generic.basket.mini.MiniBasketView;
+//not GWT import const MiniBasketView = globalThis.views.generic.basket.mini.MiniBasketView;
 
                 import { Document } from './Document.js';
-//not GWT import const  = globalThis.views.generic.basket.mini.Document;
+//not GWT import const Document = globalThis.views.generic.basket.mini.Document;
 
                 import { Node } from './Node.js';
-//not GWT import const  = globalThis.views.generic.basket.mini.Node;
+//not GWT import const Node = globalThis.views.generic.basket.mini.Node;
 
                 
 export class ValidationView extends MiniBasketView implements ValidationComponentInterface {

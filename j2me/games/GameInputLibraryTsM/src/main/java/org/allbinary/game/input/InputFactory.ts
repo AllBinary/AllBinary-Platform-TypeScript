@@ -75,7 +75,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Input } from './Input.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
                 
 export class InputFactory

@@ -91,7 +91,7 @@ import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+//not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
 
                 
 export class CapturedImageInputOutput

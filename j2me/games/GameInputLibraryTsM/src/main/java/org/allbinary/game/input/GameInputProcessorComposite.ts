@@ -55,10 +55,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
                 import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorInterface;
+//not GWT import const GameInputProcessorInterface = globalThis.org.allbinary.game.input.GameInputProcessorInterface;
 
                 
 export class GameInputProcessorComposite extends PlayerGameInput {

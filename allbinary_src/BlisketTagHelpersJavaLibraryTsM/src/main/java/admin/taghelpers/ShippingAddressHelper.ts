@@ -97,7 +97,7 @@ import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSq
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
-//not GWT import const  = globalThis.admin.taghelpers.BasicTable;
+//not GWT import const BasicTable = globalThis.admin.taghelpers.BasicTable;
 
                 
 export class ShippingAddressHelper extends BasicTable {

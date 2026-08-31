@@ -65,13 +65,13 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiPlayerGameLayerInterface } from './MultiPlayerGameLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.multiplayer.layer.MultiPlayerGameLayerInterface;
+//not GWT import const MultiPlayerGameLayerInterface = globalThis.org.allbinary.game.multiplayer.layer.MultiPlayerGameLayerInterface;
 
                 import { RemoteInfo } from './RemoteInfo.js';
-//not GWT import const  = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+//not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
                 import { MultiplayerBehavior } from './MultiplayerBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.multiplayer.layer.MultiplayerBehavior;
+//not GWT import const MultiplayerBehavior = globalThis.org.allbinary.game.multiplayer.layer.MultiplayerBehavior;
 
                 
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {

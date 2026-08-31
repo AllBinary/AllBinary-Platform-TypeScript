@@ -483,13 +483,13 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableUnitBehavior } from './CollidableUnitBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.CollidableUnitBehavior;
+//not GWT import const CollidableUnitBehavior = globalThis.org.allbinary.game.layer.unit.CollidableUnitBehavior;
 
                 import { UnitWaypointBehavior2 } from './UnitWaypointBehavior2.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior2;
+//not GWT import const UnitWaypointBehavior2 = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior2;
 
                 import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
+//not GWT import const UnitWaypointBehavior = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
 
                 
 export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventListenerInterface, TrackingEventListenerInterface {

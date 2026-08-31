@@ -43,13 +43,13 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomCustomItem } from './CustomCustomItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.CustomCustomItem;
+//not GWT import const CustomCustomItem = globalThis.org.allbinary.graphics.form.item.CustomCustomItem;
 
                 import { ABCustomItemInterface } from './ABCustomItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABCustomItemInterface;
+//not GWT import const ABCustomItemInterface = globalThis.org.allbinary.graphics.form.item.ABCustomItemInterface;
 
                 import { ABStringComponent } from './ABStringComponent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
+//not GWT import const ABStringComponent = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
 
                 
 export class ABTextItem extends CustomCustomItem implements ABCustomItemInterface {

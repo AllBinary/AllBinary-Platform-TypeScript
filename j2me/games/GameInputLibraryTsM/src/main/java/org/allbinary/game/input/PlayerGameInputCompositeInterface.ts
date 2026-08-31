@@ -45,10 +45,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputInterface } from './GameInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputInterface;
+//not GWT import const GameInputInterface = globalThis.org.allbinary.game.input.GameInputInterface;
 
                 import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
                 
 export interface PlayerGameInputCompositeInterface extends GameInputInterface {

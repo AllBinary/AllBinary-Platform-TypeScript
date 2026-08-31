@@ -95,13 +95,13 @@ import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
+//not GWT import const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
                 import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
+//not GWT import const AlphaBaseProcessor = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
 
                 import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaProcessor;
+//not GWT import const AlphaProcessor = globalThis.org.allbinary.animation.image.AlphaProcessor;
 
                 
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {

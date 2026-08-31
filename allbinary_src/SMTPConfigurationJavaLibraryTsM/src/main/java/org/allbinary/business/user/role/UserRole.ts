@@ -49,7 +49,7 @@ import { UserFactoryInterface } from '../../../../../org/allbinary/business/user
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRole } from './BasicUserRole.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.BasicUserRole;
+//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
 
                 
 export class UserRole

@@ -141,22 +141,22 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationTextInput } from './GameConfigurationTextInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationTextInput;
+//not GWT import const GameConfigurationTextInput = globalThis.org.allbinary.game.configuration.GameConfigurationTextInput;
 
                 import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
+//not GWT import const GameConfigurationSingleton = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
 
                 import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfiguration;
+//not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
 
                 import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
+//not GWT import const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
 
                 import { GameConfigurationUtil } from './GameConfigurationUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
+//not GWT import const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
 
                 import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
                 
 export class GameOptionsForm extends CommandForm {

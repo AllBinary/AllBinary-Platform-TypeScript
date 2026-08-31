@@ -55,7 +55,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeature } from './OpenGLFeature.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLFeature;
+//not GWT import const OpenGLFeature = globalThis.org.allbinary.graphics.opengles.OpenGLFeature;
 
                 
 export class OpenGLFeatureFactory

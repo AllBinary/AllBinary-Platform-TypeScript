@@ -61,7 +61,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryObjectFactoryInterface } from './AllBinaryObjectFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.AllBinaryObjectFactoryInterface;
+//not GWT import const AllBinaryObjectFactoryInterface = globalThis.org.allbinary.logic.util.cache.AllBinaryObjectFactoryInterface;
 
                 
 export class BaseCircularPool

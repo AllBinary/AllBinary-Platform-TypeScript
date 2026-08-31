@@ -83,7 +83,7 @@ import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementsEntityInterface } from './AdvertisementsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntityInterface;
+//not GWT import const AdvertisementsEntityInterface = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntityInterface;
 
                 
 export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEntityInterface {

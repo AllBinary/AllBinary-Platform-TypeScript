@@ -51,7 +51,7 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEvent } from './TerrainEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.terrain.TerrainEvent;
+//not GWT import const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
 
                 
 export class TerrainEventFactory

@@ -79,7 +79,7 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterBehavior;
+//not GWT import const TopViewCharacterBehavior = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterBehavior;
 
                 
 export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {

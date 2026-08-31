@@ -83,13 +83,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimation;
+//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
                 import { VectorAnimationInterface } from './VectorAnimationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationInterface;
+//not GWT import const VectorAnimationInterface = globalThis.org.allbinary.animation.VectorAnimationInterface;
 
                 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
                 
 export class VectorAnimation extends IndexedAnimation implements VectorAnimationInterface {

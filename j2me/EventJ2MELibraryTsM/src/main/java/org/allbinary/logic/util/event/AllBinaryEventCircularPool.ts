@@ -45,7 +45,7 @@ import { BaseCircularPool } from '../../../../../org/allbinary/logic/util/cache/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryEventObjectFactoryInterface } from './AllBinaryEventObjectFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.event.AllBinaryEventObjectFactoryInterface;
+//not GWT import const AllBinaryEventObjectFactoryInterface = globalThis.org.allbinary.logic.util.event.AllBinaryEventObjectFactoryInterface;
 
                 
 export class AllBinaryEventCircularPool extends BaseCircularPool {

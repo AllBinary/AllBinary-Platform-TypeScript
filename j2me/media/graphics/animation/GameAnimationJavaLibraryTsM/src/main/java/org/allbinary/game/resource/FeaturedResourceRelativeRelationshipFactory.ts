@@ -71,10 +71,10 @@ import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
+//not GWT import const FeaturedResourceFactory = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
 
                 import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.resource.ResourceRelativeRelationshipFactoryInterface;
+//not GWT import const ResourceRelativeRelationshipFactoryInterface = globalThis.org.allbinary.game.resource.ResourceRelativeRelationshipFactoryInterface;
 
                 
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {

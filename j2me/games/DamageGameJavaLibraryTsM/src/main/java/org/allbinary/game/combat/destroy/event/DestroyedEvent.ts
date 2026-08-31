@@ -73,7 +73,7 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyedEventHandler } from './DestroyedEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventHandler;
+//not GWT import const DestroyedEventHandler = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventHandler;
 
                 
 export class DestroyedEvent extends AllBinaryEventObject {

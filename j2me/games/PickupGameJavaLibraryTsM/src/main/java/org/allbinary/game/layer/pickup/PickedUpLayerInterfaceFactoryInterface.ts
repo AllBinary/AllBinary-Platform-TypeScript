@@ -53,7 +53,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
+//not GWT import const PickedUpLayerType = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
 
                 
 export interface PickedUpLayerInterfaceFactoryInterface {

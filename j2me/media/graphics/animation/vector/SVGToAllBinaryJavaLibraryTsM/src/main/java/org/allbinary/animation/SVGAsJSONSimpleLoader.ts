@@ -89,13 +89,13 @@ import { JSONObject } from '../../../org/json/me/JSONObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShapeTypeFactory } from './ShapeTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ShapeTypeFactory;
+//not GWT import const ShapeTypeFactory = globalThis.org.allbinary.animation.ShapeTypeFactory;
 
                 import { ShapeType } from './ShapeType.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ShapeType;
+//not GWT import const ShapeType = globalThis.org.allbinary.animation.ShapeType;
 
                 import { Number } from './Number.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Number;
+//not GWT import const Number = globalThis.org.allbinary.animation.Number;
 
                 
 export class SVGAsJSONSimpleLoader

@@ -53,10 +53,10 @@ import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/Sta
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
+//not GWT import const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
 
                 import { GraphicItemFactory } from './GraphicItemFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemFactory;
+//not GWT import const GraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemFactory;
 
                 
 export class ToolFactory

@@ -49,10 +49,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBase;
+//not GWT import const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 
 export class HighScoresHelper extends HighScoresHelperBase {

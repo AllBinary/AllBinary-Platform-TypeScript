@@ -50,7 +50,7 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TechEventListenerInterface } from './TechEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.rts.technology.event.TechEventListenerInterface;
+//not GWT import const TechEventListenerInterface = globalThis.org.allbinary.game.rts.technology.event.TechEventListenerInterface;
 
                 
 export class TechEventHandler extends BasicEventHandler {

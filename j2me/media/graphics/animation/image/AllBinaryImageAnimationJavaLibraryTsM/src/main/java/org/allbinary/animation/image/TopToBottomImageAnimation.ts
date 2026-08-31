@@ -59,7 +59,7 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSegmentAnimation } from './ImageSegmentAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageSegmentAnimation;
+//not GWT import const ImageSegmentAnimation = globalThis.org.allbinary.animation.image.ImageSegmentAnimation;
 
                 
 export class TopToBottomImageAnimation extends ImageSegmentAnimation {

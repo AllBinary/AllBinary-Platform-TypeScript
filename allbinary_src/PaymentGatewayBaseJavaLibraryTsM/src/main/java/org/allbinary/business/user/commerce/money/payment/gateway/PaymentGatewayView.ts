@@ -69,13 +69,13 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
+//not GWT import const PaymentGatewayInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
 
                 import { PaymentGatewayMapping } from './PaymentGatewayMapping.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayMapping;
+//not GWT import const PaymentGatewayMapping = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayMapping;
 
                 import { PaymentGatewayData } from './PaymentGatewayData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+//not GWT import const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
 
                 
 export class PaymentGatewayView

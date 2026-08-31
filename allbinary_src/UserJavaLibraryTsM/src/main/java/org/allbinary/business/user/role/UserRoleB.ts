@@ -51,13 +51,13 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserRole } from './UserRole.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.UserRole;
+//not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
                 import { BasicUserRole } from './BasicUserRole.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.BasicUserRole;
+//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
 
                 import { UserRoleFactory } from './UserRoleFactory.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.role.UserRoleFactory;
+//not GWT import const UserRoleFactory = globalThis.org.allbinary.business.user.role.UserRoleFactory;
 
                 
 export class UserRoleB extends UserRole {

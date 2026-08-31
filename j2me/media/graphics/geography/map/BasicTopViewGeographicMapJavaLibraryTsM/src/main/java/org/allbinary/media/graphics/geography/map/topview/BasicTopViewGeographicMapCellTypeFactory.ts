@@ -69,10 +69,10 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTopViewGeographicMapCellType } from './BasicTopViewGeographicMapCellType.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.topview.BasicTopViewGeographicMapCellType;
+//not GWT import const BasicTopViewGeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.topview.BasicTopViewGeographicMapCellType;
 
                 import { BasicTopViewGeographicMapStrings } from './BasicTopViewGeographicMapStrings.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.topview.BasicTopViewGeographicMapStrings;
+//not GWT import const BasicTopViewGeographicMapStrings = globalThis.org.allbinary.media.graphics.geography.map.topview.BasicTopViewGeographicMapStrings;
 
                 
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {

@@ -89,7 +89,7 @@ import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseInitInfo } from './LicenseInitInfo.js';
-//not GWT import const  = globalThis.org.allbinary.business.init.LicenseInitInfo;
+//not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
 
                 
 export class LicenseInitInfoUtil

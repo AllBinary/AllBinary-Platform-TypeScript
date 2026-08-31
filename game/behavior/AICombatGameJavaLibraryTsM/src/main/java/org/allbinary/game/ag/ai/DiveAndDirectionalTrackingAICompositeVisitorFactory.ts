@@ -43,7 +43,7 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
+//not GWT import const DiveAndDirectionalTrackingAI = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
 
                 
 export class DiveAndDirectionalTrackingAICompositeVisitorFactory

@@ -87,7 +87,7 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackRoadsGeographicMapCellHistoryFactory } from './RaceTrackRoadsGeographicMapCellHistoryFactory.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackRoadsGeographicMapCellHistoryFactory;
+//not GWT import const RaceTrackRoadsGeographicMapCellHistoryFactory = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackRoadsGeographicMapCellHistoryFactory;
 
                 
 export class BasePathFindingInfoFactory

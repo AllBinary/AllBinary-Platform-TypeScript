@@ -51,7 +51,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
-const  = globalThis.org.allbinary.game.layer.SpriteFactoryInterface;
+const SpriteFactoryInterface = globalThis.org.allbinary.game.layer.SpriteFactoryInterface;
 
                 
 export class SpriteFactory

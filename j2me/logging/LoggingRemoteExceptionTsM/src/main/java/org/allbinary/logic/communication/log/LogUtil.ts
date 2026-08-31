@@ -81,13 +81,13 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { Log } from './Log.js';
-const  = globalThis.org.allbinary.logic.communication.log.Log;
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
                 //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
                 import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.XmlRpcRemoteLogClient;
+//not GWT import const XmlRpcRemoteLogClient = globalThis.org.allbinary.logic.communication.log.XmlRpcRemoteLogClient;
 
                 //ActualPlatform
 /*actual*/ export class LogUtil

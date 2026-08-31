@@ -55,25 +55,25 @@ import { swing } from '../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
                 import { JDialog } from './JDialog.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JDialog;
+//not GWT import const JDialog = globalThis.org.allbinary.logic.communication.log.JDialog;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.logic.communication.log.GridLayout;
 
                 import { JScrollPane } from './JScrollPane.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JScrollPane;
+//not GWT import const JScrollPane = globalThis.org.allbinary.logic.communication.log.JScrollPane;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.logic.communication.log.JLabel;
 
                 import { JTextArea } from './JTextArea.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JTextArea;
+//not GWT import const JTextArea = globalThis.org.allbinary.logic.communication.log.JTextArea;
 
                 //not plain js import { PreLogUtil } from './PreLogUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
                 
 export class GuiLog

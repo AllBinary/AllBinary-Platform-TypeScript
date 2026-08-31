@@ -59,7 +59,7 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FontFamilyView } from './FontFamilyView.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyView;
+//not GWT import const FontFamilyView = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyView;
 
                 
 export class FontFamilyValidation extends FontFamilyView implements ValidationInterface {

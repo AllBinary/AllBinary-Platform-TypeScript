@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperInterface } from './TagHelperInterface.js';
-//not GWT import const  = globalThis.admin.taghelpers.TagHelperInterface;
+//not GWT import const TagHelperInterface = globalThis.admin.taghelpers.TagHelperInterface;
 
                 
 export class TagHelper

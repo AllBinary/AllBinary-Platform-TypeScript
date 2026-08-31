@@ -57,19 +57,19 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
                 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { NullRotationAnimation } from './NullRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.NullRotationAnimation;
+//not GWT import const NullRotationAnimation = globalThis.org.allbinary.animation.NullRotationAnimation;
 
                 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
                 import { Animation } from './Animation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class RotationAnimationFactory

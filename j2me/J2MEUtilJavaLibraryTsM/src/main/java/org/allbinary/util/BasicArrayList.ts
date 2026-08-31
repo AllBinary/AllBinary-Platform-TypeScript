@@ -57,10 +57,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ArrayUtil } from './ArrayUtil.js';
-const  = globalThis.org.allbinary.util.ArrayUtil;
+const ArrayUtil = globalThis.org.allbinary.util.ArrayUtil;
 
                 //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
-const  = globalThis.org.allbinary.util.BasicArrayListS;
+const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
                 //This is a very fast and simple resizable list.
 export class BasicArrayList

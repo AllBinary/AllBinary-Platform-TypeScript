@@ -49,7 +49,7 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RectangleFilledAnimation } from './RectangleFilledAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.vector.RectangleFilledAnimation;
+//not GWT import const RectangleFilledAnimation = globalThis.org.allbinary.animation.vector.RectangleFilledAnimation;
 
                 
 export class RectangleFilledAdjustedAnimation extends RectangleFilledAnimation implements ColorCompositeInterface {

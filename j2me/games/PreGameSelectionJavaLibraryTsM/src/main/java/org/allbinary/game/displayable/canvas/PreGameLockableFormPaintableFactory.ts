@@ -55,7 +55,7 @@ import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreGameLockablePaintable } from './PreGameLockablePaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.PreGameLockablePaintable;
+//not GWT import const PreGameLockablePaintable = globalThis.org.allbinary.game.displayable.canvas.PreGameLockablePaintable;
 
                 
 export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {

@@ -45,7 +45,7 @@ import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BooleanFileVisitor } from './BooleanFileVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.visitor.BooleanFileVisitor;
+//not GWT import const BooleanFileVisitor = globalThis.org.allbinary.logic.io.file.visitor.BooleanFileVisitor;
 
                 
 export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {

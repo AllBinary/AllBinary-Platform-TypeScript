@@ -93,10 +93,10 @@ import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemInterface } from './ItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
                 import { BasicItemData } from './BasicItemData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
                 
 export class BasicItem

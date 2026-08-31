@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlatformBitmapBase } from './PlatformBitmapBase.js';
-//not GWT import const  = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+//not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
                 
 export class PlatformBitmapBaseFactory

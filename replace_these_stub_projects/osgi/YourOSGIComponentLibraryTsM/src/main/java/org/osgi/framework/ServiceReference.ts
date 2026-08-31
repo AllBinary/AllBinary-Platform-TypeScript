@@ -23,7 +23,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
-//not GWT import const  = globalThis.org.osgi.framework.Comparable;
+//not GWT import const Comparable = globalThis.org.osgi.framework.Comparable;
 
                 
 export interface ServiceReference extends Comparable {

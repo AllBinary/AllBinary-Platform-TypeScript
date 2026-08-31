@@ -59,7 +59,7 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
+//not GWT import const UserEmailEventConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
 
                 
 export interface UserEmailEventsConfigurationInterface {

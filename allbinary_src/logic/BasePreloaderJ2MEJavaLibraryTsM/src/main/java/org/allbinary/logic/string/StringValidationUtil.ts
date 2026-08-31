@@ -55,7 +55,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { StringUtil } from './StringUtil.js';
-const  = globalThis.org.allbinary.logic.string.StringUtil;
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
                 
 export class StringValidationUtil

@@ -51,7 +51,7 @@ import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/pain
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
                 
 export class RTSLayerInfoPaintable extends InitUpdatePaintable {

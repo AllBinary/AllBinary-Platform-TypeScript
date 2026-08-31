@@ -51,10 +51,10 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputLayerManager } from './GameInputLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputLayerManager;
+//not GWT import const GameInputLayerManager = globalThis.org.allbinary.game.input.GameInputLayerManager;
 
                 import { GameInputInterface } from './GameInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputInterface;
+//not GWT import const GameInputInterface = globalThis.org.allbinary.game.input.GameInputInterface;
 
                 
 export class GameInputLayerProcessor extends LayerProcessor {

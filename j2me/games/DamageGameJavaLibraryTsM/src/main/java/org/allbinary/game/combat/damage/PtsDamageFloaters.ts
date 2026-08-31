@@ -85,7 +85,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DamageFloaters } from './DamageFloaters.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.damage.DamageFloaters;
+//not GWT import const DamageFloaters = globalThis.org.allbinary.game.combat.damage.DamageFloaters;
 
                 
 export class PtsDamageFloaters extends DamageFloaters {

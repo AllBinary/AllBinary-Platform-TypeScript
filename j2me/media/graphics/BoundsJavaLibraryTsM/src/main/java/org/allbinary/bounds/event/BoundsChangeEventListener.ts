@@ -41,7 +41,7 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundsChangeEvent } from './BoundsChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.bounds.event.BoundsChangeEvent;
+//not GWT import const BoundsChangeEvent = globalThis.org.allbinary.bounds.event.BoundsChangeEvent;
 
                 
 export interface BoundsChangeEventListener extends EventListenerInterface {

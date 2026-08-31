@@ -105,10 +105,10 @@ import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileCaptureWorkerFactory } from './GenericProfileCaptureWorkerFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.GenericProfileCaptureWorkerFactory;
+//not GWT import const GenericProfileCaptureWorkerFactory = globalThis.org.allbinary.input.automation.module.generic.GenericProfileCaptureWorkerFactory;
 
                 import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.CaptureWorkerUtil;
+//not GWT import const CaptureWorkerUtil = globalThis.org.allbinary.input.automation.module.generic.CaptureWorkerUtil;
 
                 
 export class GenericInputAutomationWorker extends AbstractInputAutomationWorker {

@@ -53,7 +53,7 @@ import { LicensingException } from '../../../../org/allbinary/logic/system/secur
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitDb } from './InitDb.js';
-//not GWT import const  = globalThis.org.allbinary.business.installer.InitDb;
+//not GWT import const InitDb = globalThis.org.allbinary.business.installer.InitDb;
 
                 //Warning you must have sql root access
 export class DynamicInitDb extends InitDb {

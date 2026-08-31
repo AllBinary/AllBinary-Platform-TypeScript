@@ -49,7 +49,7 @@ import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.Color;
+//not GWT import const Color = globalThis.org.allbinary.graphics.color.Color;
 
                 
 export class ColorCacheable

@@ -117,7 +117,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentType } from './PaymentType.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.types.PaymentType;
+//not GWT import const PaymentType = globalThis.org.allbinary.business.user.commerce.money.payment.types.PaymentType;
 
                 
 export class PaymentTypeUtil

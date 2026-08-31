@@ -73,31 +73,31 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+//not GWT import const BasicTouchInputFactory = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
 
                 import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonInput;
+//not GWT import const TouchButtonInput = globalThis.org.allbinary.input.motion.button.TouchButtonInput;
 
                 import { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.CurrentlyPressedTouchButtonSingleton;
+//not GWT import const CurrentlyPressedTouchButtonSingleton = globalThis.org.allbinary.input.motion.button.CurrentlyPressedTouchButtonSingleton;
 
                 //import { ReleaseHelper } from './ReleaseHelper.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.ReleaseHelper;
+//not GWT import const ReleaseHelper = globalThis.org.allbinary.input.motion.button.ReleaseHelper;
 
                 import { CancelTouchButtonInputFactory } from './CancelTouchButtonInputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.CancelTouchButtonInputFactory;
+//not GWT import const CancelTouchButtonInputFactory = globalThis.org.allbinary.input.motion.button.CancelTouchButtonInputFactory;
 
                 import { TouchScreenFactory } from './TouchScreenFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
+//not GWT import const TouchScreenFactory = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
 
                 //import { MultitouchReleaseHelper } from './MultitouchReleaseHelper.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.MultitouchReleaseHelper;
+//not GWT import const MultitouchReleaseHelper = globalThis.org.allbinary.input.motion.button.MultitouchReleaseHelper;
 
                 import { TouchButtonFactory } from './TouchButtonFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonFactory;
+//not GWT import const TouchButtonFactory = globalThis.org.allbinary.input.motion.button.TouchButtonFactory;
 
                 import { TouchButton } from './TouchButton.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+//not GWT import const TouchButton = globalThis.org.allbinary.input.motion.button.TouchButton;
 
                 
 export class TouchButtonRecognizer

@@ -53,22 +53,22 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
+//not GWT import const VectorAnimationFactoryInterface = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
 
                 import { VectorRotationGenerator } from './VectorRotationGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorRotationGenerator;
+//not GWT import const VectorRotationGenerator = globalThis.org.allbinary.animation.VectorRotationGenerator;
 
                 import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorExplosionGenerator;
+//not GWT import const VectorExplosionGenerator = globalThis.org.allbinary.animation.VectorExplosionGenerator;
 
                 import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimation;
+//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
                 import { Animation } from './Animation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class IndependentVectorExplosionRotationAnimationFactory

@@ -25,7 +25,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESGraphics } from './OpenGLESGraphics.js';
-//not GWT import const  = globalThis.org.allbinary.device.OpenGLESGraphics;
+//not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
 
                 
 export class OpenGLESNullGraphicsFactory

@@ -49,7 +49,7 @@ import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { LogUtil } from './LogUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.LogUtil;
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
                 
 export class TestRemoteLogUtil

@@ -69,13 +69,13 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Toolkit } from './Toolkit.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.Toolkit;
+//not GWT import const Toolkit = globalThis.org.allbinary.input.media.image.capture.Toolkit;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.input.media.image.capture.Dimension;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.input.media.image.capture.Rectangle;
 
                 
 export class ScreenScavangerRobot

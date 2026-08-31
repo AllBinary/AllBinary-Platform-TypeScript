@@ -75,10 +75,10 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OperatingSystemInterface } from './OperatingSystemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
+//not GWT import const OperatingSystemInterface = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
 
                 //not plain js import { SystemProperties } from './SystemProperties.js';
-const  = globalThis.org.allbinary.logic.system.os.SystemProperties;
+const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
 
                 
 export class GenericOperatingSystem

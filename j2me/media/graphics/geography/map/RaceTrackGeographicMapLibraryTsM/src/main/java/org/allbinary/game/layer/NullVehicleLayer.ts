@@ -71,10 +71,10 @@ import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/med
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehicleLayerInterface } from './VehicleLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.VehicleLayerInterface;
+//not GWT import const VehicleLayerInterface = globalThis.org.allbinary.game.layer.VehicleLayerInterface;
 
                 import { VehicleProperties } from './VehicleProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.VehicleProperties;
+//not GWT import const VehicleProperties = globalThis.org.allbinary.game.layer.VehicleProperties;
 
                 
 export class NullVehicleLayer

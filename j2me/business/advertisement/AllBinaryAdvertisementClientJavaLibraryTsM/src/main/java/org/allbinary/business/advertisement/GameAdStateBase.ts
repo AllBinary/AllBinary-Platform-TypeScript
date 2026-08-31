@@ -77,10 +77,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.AdConfiguration;
+//not GWT import const AdConfiguration = globalThis.org.allbinary.business.advertisement.AdConfiguration;
 
                 import { Advertisements } from './Advertisements.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.Advertisements;
+//not GWT import const Advertisements = globalThis.org.allbinary.business.advertisement.Advertisements;
 
                 
 export class GameAdStateBase

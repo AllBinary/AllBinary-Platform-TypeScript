@@ -63,7 +63,7 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allb
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureEvent } from './MotionGestureEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+//not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
 
                 
 export class MotionEventFactory

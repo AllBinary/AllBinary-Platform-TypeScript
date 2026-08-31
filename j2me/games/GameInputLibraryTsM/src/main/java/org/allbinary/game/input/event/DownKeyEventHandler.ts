@@ -45,7 +45,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownKeyEventHandlerBase } from './DownKeyEventHandlerBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.DownKeyEventHandlerBase;
+//not GWT import const DownKeyEventHandlerBase = globalThis.org.allbinary.game.input.event.DownKeyEventHandlerBase;
 
                 
 export class DownKeyEventHandler extends DownKeyEventHandlerBase {

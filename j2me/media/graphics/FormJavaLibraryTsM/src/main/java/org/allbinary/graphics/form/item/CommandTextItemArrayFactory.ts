@@ -91,10 +91,10 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandTextItem } from './CommandTextItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.CommandTextItem;
+//not GWT import const CommandTextItem = globalThis.org.allbinary.graphics.form.item.CommandTextItem;
 
                 import { ABCustomItem } from './ABCustomItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
                 
 export class CommandTextItemArrayFactory

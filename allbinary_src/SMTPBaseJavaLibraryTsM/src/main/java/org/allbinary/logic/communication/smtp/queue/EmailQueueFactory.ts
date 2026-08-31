@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEmailQueue } from './BasicEmailQueue.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.queue.BasicEmailQueue;
+//not GWT import const BasicEmailQueue = globalThis.org.allbinary.logic.communication.smtp.queue.BasicEmailQueue;
 
                 import { EmailQueueInterface } from './EmailQueueInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.queue.EmailQueueInterface;
+//not GWT import const EmailQueueInterface = globalThis.org.allbinary.logic.communication.smtp.queue.EmailQueueInterface;
 
                 
 export class EmailQueueFactory

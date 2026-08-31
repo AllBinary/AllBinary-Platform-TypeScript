@@ -119,13 +119,13 @@ import { OutputStream } from '../../../../../java/io/OutputStream.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+//not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
                 import { StringBuilder } from './StringBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.StringBuilder;
+//not GWT import const StringBuilder = globalThis.org.allbinary.logic.communication.sql.StringBuilder;
 
                 import { AbSqlTable } from './AbSqlTable.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
+//not GWT import const AbSqlTable = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
 
                 
 export class AbSqlTableUtil

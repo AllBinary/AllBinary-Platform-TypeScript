@@ -79,10 +79,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberInSameGroupSequence } from './NumberInSameGroupSequence.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.NumberInSameGroupSequence;
+//not GWT import const NumberInSameGroupSequence = globalThis.org.allbinary.game.ag.ai.NumberInSameGroupSequence;
 
                 import { NumberOnOwnGroupSequenceAI } from './NumberOnOwnGroupSequenceAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.NumberOnOwnGroupSequenceAI;
+//not GWT import const NumberOnOwnGroupSequenceAI = globalThis.org.allbinary.game.ag.ai.NumberOnOwnGroupSequenceAI;
 
                 
 export class NumberOnOwnGroupSequenceAIFactory

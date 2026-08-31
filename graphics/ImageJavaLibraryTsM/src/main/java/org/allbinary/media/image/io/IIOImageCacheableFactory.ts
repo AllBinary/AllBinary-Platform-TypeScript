@@ -47,7 +47,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IIOImageCacheable } from './IIOImageCacheable.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.io.IIOImageCacheable;
+//not GWT import const IIOImageCacheable = globalThis.org.allbinary.media.image.io.IIOImageCacheable;
 
                 
 export class IIOImageCacheableFactory

@@ -71,10 +71,10 @@ import { RunnableInterface } from '../../../../../../org/allbinary/thread/Runnab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericInputAutomationAction } from './GenericInputAutomationAction.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.GenericInputAutomationAction;
+//not GWT import const GenericInputAutomationAction = globalThis.org.allbinary.input.automation.module.generic.GenericInputAutomationAction;
 
                 import { GenericInputAutomationWorker } from './GenericInputAutomationWorker.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.GenericInputAutomationWorker;
+//not GWT import const GenericInputAutomationWorker = globalThis.org.allbinary.input.automation.module.generic.GenericInputAutomationWorker;
 
                 
 export class GenericModuleFactory extends AbstractInputAutomationFactory {

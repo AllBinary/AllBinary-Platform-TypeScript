@@ -73,10 +73,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresInterface } from './HighScoresInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresInterface;
+//not GWT import const HighScoresInterface = globalThis.org.allbinary.game.score.HighScoresInterface;
 
                 import { HighScore } from './HighScore.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScore;
+//not GWT import const HighScore = globalThis.org.allbinary.game.score.HighScore;
 
                 
 export class HighScores

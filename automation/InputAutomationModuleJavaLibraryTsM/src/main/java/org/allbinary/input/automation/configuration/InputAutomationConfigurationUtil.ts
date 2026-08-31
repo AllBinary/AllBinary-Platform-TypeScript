@@ -49,7 +49,7 @@ import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfigurationModuleChangeEvent } from './InputAutomationConfigurationModuleChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
+//not GWT import const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
 
                 
 export class InputAutomationConfigurationUtil

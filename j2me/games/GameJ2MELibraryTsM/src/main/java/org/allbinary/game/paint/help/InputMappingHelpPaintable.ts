@@ -125,10 +125,10 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelpPaintable } from './HelpPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.help.HelpPaintable;
+//not GWT import const HelpPaintable = globalThis.org.allbinary.game.paint.help.HelpPaintable;
 
                 //import { UpdateMyFontProperties } from './UpdateMyFontProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.help.UpdateMyFontProperties;
+//not GWT import const UpdateMyFontProperties = globalThis.org.allbinary.game.paint.help.UpdateMyFontProperties;
 
                 
 export class InputMappingHelpPaintable extends HelpPaintable {

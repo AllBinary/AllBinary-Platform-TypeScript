@@ -191,10 +191,10 @@ import { RaceTrackGeographicMapCellTypeFactory } from '../../../../../org/allbin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.form.RTSFormInput;
+//not GWT import const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
 
                 import { PrimaryWaypointHelper } from './PrimaryWaypointHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.form.PrimaryWaypointHelper;
+//not GWT import const PrimaryWaypointHelper = globalThis.org.allbinary.game.input.form.PrimaryWaypointHelper;
 
                 
 export class WaypointRTSFormInput extends RTSFormInput {

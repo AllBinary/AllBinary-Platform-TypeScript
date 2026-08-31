@@ -85,13 +85,13 @@ import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.BaseSecretComposite;
+//not GWT import const BaseSecretComposite = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.BaseSecretComposite;
 
                 import { KeySpecFactory } from './KeySpecFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
+//not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
 
                 import { SecretComposite } from './SecretComposite.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.SecretComposite;
+//not GWT import const SecretComposite = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.SecretComposite;
 
                 
 export class AbCrypt

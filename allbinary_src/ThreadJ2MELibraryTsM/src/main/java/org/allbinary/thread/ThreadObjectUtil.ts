@@ -35,10 +35,10 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPriorityRunnable } from './NullPriorityRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.thread.NullPriorityRunnable;
+//not GWT import const NullPriorityRunnable = globalThis.org.allbinary.thread.NullPriorityRunnable;
 
                 import { PriorityRunnable } from './PriorityRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.thread.PriorityRunnable;
+//not GWT import const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
 
                 
 export class ThreadObjectUtil

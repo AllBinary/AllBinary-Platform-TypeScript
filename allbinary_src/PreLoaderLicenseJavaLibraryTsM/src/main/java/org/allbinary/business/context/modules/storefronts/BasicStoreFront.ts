@@ -73,7 +73,7 @@ import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/T
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
+//not GWT import const BasicStoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
 
                 
 export class BasicStoreFront

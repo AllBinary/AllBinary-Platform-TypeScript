@@ -91,7 +91,7 @@ import { StringValidationUtil } from '../../../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryEntityInterface } from './InventoryEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityInterface;
+//not GWT import const InventoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityInterface;
 
                 
 export class InventoryEntity extends AbSqlBean implements InventoryEntityInterface {

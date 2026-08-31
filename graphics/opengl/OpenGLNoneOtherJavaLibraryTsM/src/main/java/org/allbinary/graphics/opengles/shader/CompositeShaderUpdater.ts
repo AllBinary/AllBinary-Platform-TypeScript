@@ -57,7 +57,7 @@ import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderUpdater } from './ShaderUpdater.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderUpdater;
+//not GWT import const ShaderUpdater = globalThis.org.allbinary.graphics.opengles.shader.ShaderUpdater;
 
                 
 export class CompositeShaderUpdater extends ShaderUpdater {

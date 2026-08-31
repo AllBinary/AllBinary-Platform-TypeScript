@@ -49,10 +49,10 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 import { LayerManager } from './LayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
                 
 export class LayerManagerLoggingBase

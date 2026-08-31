@@ -65,7 +65,7 @@ import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SavedCaptureImagesWorker } from './SavedCaptureImagesWorker.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.SavedCaptureImagesWorker;
+//not GWT import const SavedCaptureImagesWorker = globalThis.org.allbinary.input.automation.module.generic.SavedCaptureImagesWorker;
 
                 
 export class GenericProfileCaptureWorkerFactory

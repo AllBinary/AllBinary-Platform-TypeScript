@@ -59,16 +59,16 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
                 import { LayerProcessor } from './LayerProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerProcessor;
+//not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
 
                 import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerManagerNoDebug;
+//not GWT import const LayerManagerNoDebug = globalThis.org.allbinary.layer.LayerManagerNoDebug;
 
                 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 
 export class AllBinaryLayerManager extends LayerManager {

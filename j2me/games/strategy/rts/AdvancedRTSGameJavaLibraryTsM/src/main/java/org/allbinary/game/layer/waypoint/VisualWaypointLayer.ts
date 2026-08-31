@@ -66,13 +66,13 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLayer } from './WaypointLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
+//not GWT import const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
 
                 import { WaypointInfoHudPaintableSingleton } from './WaypointInfoHudPaintableSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintableSingleton;
+//not GWT import const WaypointInfoHudPaintableSingleton = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintableSingleton;
 
                 import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintable;
+//not GWT import const WaypointInfoHudPaintable = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintable;
 
                 
 export class VisualWaypointLayer extends WaypointLayer {

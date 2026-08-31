@@ -35,7 +35,7 @@ import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
-//not GWT import const  = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
                 
             //Interfaces do not have static fields for typescript so create a class with the static fields

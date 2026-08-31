@@ -54,7 +54,7 @@ import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/grap
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerUtil } from './RTSLayerUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerUtil;
+//not GWT import const RTSLayerUtil = globalThis.org.allbinary.game.layer.RTSLayerUtil;
 
                 
 export class AdvancedRTSLayerUtil

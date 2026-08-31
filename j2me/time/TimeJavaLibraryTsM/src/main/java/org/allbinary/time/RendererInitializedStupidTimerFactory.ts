@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StupidTimer } from './StupidTimer.js';
-//not GWT import const  = globalThis.org.allbinary.time.StupidTimer;
+//not GWT import const StupidTimer = globalThis.org.allbinary.time.StupidTimer;
 
                 
 export class RendererInitializedStupidTimerFactory

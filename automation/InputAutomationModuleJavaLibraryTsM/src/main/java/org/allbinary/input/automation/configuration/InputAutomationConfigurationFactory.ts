@@ -85,7 +85,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfiguration } from './InputAutomationConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfiguration;
+//not GWT import const InputAutomationConfiguration = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfiguration;
 
                 
 export class InputAutomationConfigurationFactory

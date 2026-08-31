@@ -79,34 +79,34 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
+//not GWT import const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
 
                 import { AllMotionRectangles } from './AllMotionRectangles.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectangles;
+//not GWT import const AllMotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectangles;
 
                 import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectanglesResultsCacheSingleton;
+//not GWT import const AllMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectanglesResultsCacheSingleton;
 
                 import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsFrameCacheable;
+//not GWT import const MotionRectanglesResultsFrameCacheable = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsFrameCacheable;
 
                 import { ConsolidateMotionRectangles } from './ConsolidateMotionRectangles.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConsolidateMotionRectangles;
+//not GWT import const ConsolidateMotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.ConsolidateMotionRectangles;
 
                 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConsolidatedMotionRectanglesResultsCacheSingleton;
+//not GWT import const ConsolidatedMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.ConsolidatedMotionRectanglesResultsCacheSingleton;
 
                 import { ConstrainedMotionRectangles } from './ConstrainedMotionRectangles.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectangles;
+//not GWT import const ConstrainedMotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectangles;
 
                 import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectanglesResultsCacheSingleton;
+//not GWT import const ConstrainedMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectanglesResultsCacheSingleton;
 
                 import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
+//not GWT import const MotionRectanglesResultsEvent = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
 
                 import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+//not GWT import const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
 
                 
 export class MotionRectanglesWorker extends BasicEventHandler implements ImageComparisonResultsListener {

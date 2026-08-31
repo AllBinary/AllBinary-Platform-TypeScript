@@ -95,16 +95,16 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsListener;
+//not GWT import const MotionRectanglesResultsListener = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsListener;
 
                 import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
+//not GWT import const MotionRectanglesResultsEvent = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
 
                 import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+//not GWT import const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
 
                 
 export class TestInputForMotionRectanglesResultsWorker

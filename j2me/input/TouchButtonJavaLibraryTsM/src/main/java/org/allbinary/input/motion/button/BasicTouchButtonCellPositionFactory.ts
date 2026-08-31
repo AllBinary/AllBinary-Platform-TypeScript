@@ -55,7 +55,7 @@ import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellP
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
+//not GWT import const TouchButtonLocationHelper = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
 
                 
 export class BasicTouchButtonCellPositionFactory

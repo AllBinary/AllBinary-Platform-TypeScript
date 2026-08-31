@@ -57,10 +57,10 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonFactory } from './TouchButtonFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonFactory;
+//not GWT import const TouchButtonFactory = globalThis.org.allbinary.input.motion.button.TouchButtonFactory;
 
                 import { TouchButton } from './TouchButton.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+//not GWT import const TouchButton = globalThis.org.allbinary.input.motion.button.TouchButton;
 
                 
 export class TouchButtonsPaintable extends Paintable {

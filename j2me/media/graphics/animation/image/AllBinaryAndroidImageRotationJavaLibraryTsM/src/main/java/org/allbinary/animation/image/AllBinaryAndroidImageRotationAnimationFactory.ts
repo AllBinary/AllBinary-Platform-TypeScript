@@ -79,13 +79,13 @@ import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengle
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { AllBinaryFlickerAndroidImageRotationAnimation } from './AllBinaryFlickerAndroidImageRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryFlickerAndroidImageRotationAnimation;
+//not GWT import const AllBinaryFlickerAndroidImageRotationAnimation = globalThis.org.allbinary.animation.image.AllBinaryFlickerAndroidImageRotationAnimation;
 
                 import { AllBinaryAdjustedAndroidImageRotationAnimation } from './AllBinaryAdjustedAndroidImageRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryAdjustedAndroidImageRotationAnimation;
+//not GWT import const AllBinaryAdjustedAndroidImageRotationAnimation = globalThis.org.allbinary.animation.image.AllBinaryAdjustedAndroidImageRotationAnimation;
 
                 
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {

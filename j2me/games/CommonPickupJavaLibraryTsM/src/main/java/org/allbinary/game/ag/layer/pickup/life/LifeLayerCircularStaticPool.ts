@@ -59,7 +59,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LifeLayer } from './LifeLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.life.LifeLayer;
+//not GWT import const LifeLayer = globalThis.org.allbinary.game.ag.layer.pickup.life.LifeLayer;
 
                 
 export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {

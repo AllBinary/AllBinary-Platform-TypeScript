@@ -55,10 +55,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
                 import { BasicColorUtil } from './BasicColorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColorUtil;
+//not GWT import const BasicColorUtil = globalThis.org.allbinary.graphics.color.BasicColorUtil;
 
                 
 export class BasicColorFactory

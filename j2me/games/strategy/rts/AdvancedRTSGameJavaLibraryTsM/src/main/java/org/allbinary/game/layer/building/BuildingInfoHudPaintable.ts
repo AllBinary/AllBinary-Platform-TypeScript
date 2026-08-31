@@ -91,7 +91,7 @@ import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingLayer } from './BuildingLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingLayer;
+//not GWT import const BuildingLayer = globalThis.org.allbinary.game.layer.building.BuildingLayer;
 
                 
 export class BuildingInfoHudPaintable extends SelectionHudPaintable {

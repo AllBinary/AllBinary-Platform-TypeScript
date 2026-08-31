@@ -69,7 +69,7 @@ import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformGeneratorUtil } from './TransformGeneratorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.generator.TransformGeneratorUtil;
+//not GWT import const TransformGeneratorUtil = globalThis.org.allbinary.logic.visual.transform.generator.TransformGeneratorUtil;
 
                 
 export class TransformsGeneratorUtil

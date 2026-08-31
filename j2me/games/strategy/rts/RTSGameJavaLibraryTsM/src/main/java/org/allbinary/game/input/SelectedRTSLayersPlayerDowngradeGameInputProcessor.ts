@@ -47,10 +47,10 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectedRTSLayersPlayerGameInputProcessor } from './SelectedRTSLayersPlayerGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInputProcessor;
+//not GWT import const SelectedRTSLayersPlayerGameInputProcessor = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInputProcessor;
 
                 import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
+//not GWT import const SelectedRTSLayersPlayerGameInput = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
 
                 
 export class SelectedRTSLayersPlayerDowngradeGameInputProcessor extends SelectedRTSLayersPlayerGameInputProcessor {

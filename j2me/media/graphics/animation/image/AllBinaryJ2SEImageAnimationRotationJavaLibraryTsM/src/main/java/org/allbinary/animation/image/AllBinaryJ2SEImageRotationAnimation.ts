@@ -81,25 +81,25 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
+//not GWT import const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
                 import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ModifierBaseProcessor;
+//not GWT import const ModifierBaseProcessor = globalThis.org.allbinary.animation.image.ModifierBaseProcessor;
 
                 import { ScaleProcessor } from './ScaleProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ScaleProcessor;
+//not GWT import const ScaleProcessor = globalThis.org.allbinary.animation.image.ScaleProcessor;
 
                 import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ScaleBaseProcessor;
+//not GWT import const ScaleBaseProcessor = globalThis.org.allbinary.animation.image.ScaleBaseProcessor;
 
                 import { SetColorProcessor } from './SetColorProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.SetColorProcessor;
+//not GWT import const SetColorProcessor = globalThis.org.allbinary.animation.image.SetColorProcessor;
 
                 import { ChangeColorProcessor } from './ChangeColorProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ChangeColorProcessor;
+//not GWT import const ChangeColorProcessor = globalThis.org.allbinary.animation.image.ChangeColorProcessor;
 
                 import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaProcessor;
+//not GWT import const AlphaProcessor = globalThis.org.allbinary.animation.image.AlphaProcessor;
 
                 
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {

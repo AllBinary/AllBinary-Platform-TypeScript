@@ -63,22 +63,22 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 import { ImageUnifierProperties } from './ImageUnifierProperties.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUnifierProperties;
+//not GWT import const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
 
                 import { ImageUnifierCell } from './ImageUnifierCell.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUnifierCell;
+//not GWT import const ImageUnifierCell = globalThis.org.allbinary.media.image.ImageUnifierCell;
 
                 import { ImageUnifierUtil } from './ImageUnifierUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUnifierUtil;
+//not GWT import const ImageUnifierUtil = globalThis.org.allbinary.media.image.ImageUnifierUtil;
 
                 import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessorInput;
+//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
                 import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+//not GWT import const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
 
                 
 export class SpriteSplitterUtil

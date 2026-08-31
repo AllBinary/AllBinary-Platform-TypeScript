@@ -41,10 +41,10 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameInputMapping } from './PCGameInputMapping.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PCGameInputMapping;
+//not GWT import const PCGameInputMapping = globalThis.org.allbinary.game.input.PCGameInputMapping;
 
                 import { LaptopDefaultGameInputMapping } from './LaptopDefaultGameInputMapping.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.LaptopDefaultGameInputMapping;
+//not GWT import const LaptopDefaultGameInputMapping = globalThis.org.allbinary.game.input.LaptopDefaultGameInputMapping;
 
                 
 export class LaptopGameInputMapping extends PCGameInputMapping {

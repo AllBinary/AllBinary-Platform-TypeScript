@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeNoLicense } from './AbeNoLicense.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeNoLicense;
+//not GWT import const AbeNoLicense = globalThis.org.allbinary.logic.system.security.licensing.AbeNoLicense;
 
                 import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
+//not GWT import const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
 
                 
 export class LicenseInterfaceSingleton

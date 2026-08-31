@@ -73,7 +73,7 @@ import { NullAndroidCanvas } from '../../../../../org/allbinary/android/NullAndr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MusicStrings } from './MusicStrings.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.music.MusicStrings;
+//not GWT import const MusicStrings = globalThis.org.allbinary.media.audio.music.MusicStrings;
 
                 
 export class BaseMusicService extends Service {

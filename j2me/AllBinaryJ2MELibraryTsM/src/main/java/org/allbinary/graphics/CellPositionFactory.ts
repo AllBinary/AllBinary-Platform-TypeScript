@@ -53,7 +53,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CellPosition } from './CellPosition.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.CellPosition;
+//not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
 
                 
 export class CellPositionFactory

@@ -49,7 +49,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerConfigurationFactory } from './AnalogControllerConfigurationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.AnalogControllerConfigurationFactory;
+//not GWT import const AnalogControllerConfigurationFactory = globalThis.org.allbinary.android.input.motion.AnalogControllerConfigurationFactory;
 
                 
 export class AnalogControllerHelper

@@ -53,7 +53,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FallingPickupLayer } from './FallingPickupLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.FallingPickupLayer;
+//not GWT import const FallingPickupLayer = globalThis.org.allbinary.game.ag.layer.pickup.FallingPickupLayer;
 
                 
 export class FallingPickupLayerFactory

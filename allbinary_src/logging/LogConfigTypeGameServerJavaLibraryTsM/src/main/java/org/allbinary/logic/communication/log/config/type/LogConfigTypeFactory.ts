@@ -47,7 +47,7 @@ import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigType;
+//not GWT import const LogConfigType = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigType;
 
                 
 export class LogConfigTypeFactory

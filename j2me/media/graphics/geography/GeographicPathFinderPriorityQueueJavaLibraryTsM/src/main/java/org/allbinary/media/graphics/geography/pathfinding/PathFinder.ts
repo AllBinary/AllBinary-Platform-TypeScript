@@ -101,19 +101,19 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
+//not GWT import const GeographicPathFinderBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
 
                 import { PathFindingNodeCost } from './PathFindingNodeCost.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCost;
+//not GWT import const PathFindingNodeCost = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCost;
 
                 import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfo;
+//not GWT import const PathFindingNodeCostInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfo;
 
                 import { PathFindingNode } from './PathFindingNode.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
+//not GWT import const PathFindingNode = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
 
                 import { MultipassState } from './MultipassState.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
+//not GWT import const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
 
                 
 export class PathFinder extends GeographicPathFinderBase {

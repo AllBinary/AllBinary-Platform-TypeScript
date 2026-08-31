@@ -65,16 +65,16 @@ import { CommonButtons } from '../../../../org/allbinary/input/motion/button/Com
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
                 import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
+//not GWT import const RTSLayerCompositePaintable = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
 
                 import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.UpgradableWideRTSLayerPaintable;
+//not GWT import const UpgradableWideRTSLayerPaintable = globalThis.org.allbinary.game.layer.UpgradableWideRTSLayerPaintable;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {

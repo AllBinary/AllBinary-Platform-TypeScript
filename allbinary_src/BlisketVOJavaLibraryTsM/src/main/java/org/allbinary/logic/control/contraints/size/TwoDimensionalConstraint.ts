@@ -43,10 +43,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TwoDimensionalConstraintInterface } from './TwoDimensionalConstraintInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
+//not GWT import const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
 
                 import { SizeConstraintInterface } from './SizeConstraintInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.control.contraints.size.SizeConstraintInterface;
+//not GWT import const SizeConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.SizeConstraintInterface;
 
                 
 export class TwoDimensionalConstraint

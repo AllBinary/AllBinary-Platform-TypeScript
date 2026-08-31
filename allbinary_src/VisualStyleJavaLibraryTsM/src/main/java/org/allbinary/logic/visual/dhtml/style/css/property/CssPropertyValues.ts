@@ -91,10 +91,10 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssPropertyValueData } from './CssPropertyValueData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyValueData;
+//not GWT import const CssPropertyValueData = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyValueData;
 
                 import { CssPropertyData } from './CssPropertyData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyData;
+//not GWT import const CssPropertyData = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyData;
 
                 
 export class CssPropertyValues

@@ -53,13 +53,13 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullImage } from './NullImage.js';
-//not GWT import const  = globalThis.javax.microedition.lcdui.NullImage;
+//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
                 //not plain js import { Image } from './Image.js';
-const  = globalThis.javax.microedition.lcdui.Image;
+const Image = globalThis.javax.microedition.lcdui.Image;
 
                 //not plain js import { Graphics } from './Graphics.js';
-const  = globalThis.javax.microedition.lcdui.Graphics;
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
                 //PlatformNullImageJavaLibrary
 export class PlatformImage

@@ -45,7 +45,7 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TickableInterface } from './TickableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.tick.TickableInterface;
+//not GWT import const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
 
                 
 export class NullTickable

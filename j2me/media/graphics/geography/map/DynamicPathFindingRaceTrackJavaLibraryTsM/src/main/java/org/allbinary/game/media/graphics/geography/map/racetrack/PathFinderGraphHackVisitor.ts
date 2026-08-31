@@ -91,10 +91,10 @@ import { PathFindingNode } from '../../../../../../../../org/allbinary/media/gra
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.BasePathFinderGraphVisitor;
+//not GWT import const BasePathFinderGraphVisitor = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.BasePathFinderGraphVisitor;
 
                 import { CellPositionArray } from './CellPositionArray.js';
-//not GWT import const  = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.CellPositionArray;
+//not GWT import const CellPositionArray = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.CellPositionArray;
 
                 
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E> {

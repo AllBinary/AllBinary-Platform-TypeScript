@@ -57,10 +57,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+//not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
                 import { UserConfigurationView } from './UserConfigurationView.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationView;
+//not GWT import const UserConfigurationView = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationView;
 
                 
 export class UserConfigurationDomDocumentMapping

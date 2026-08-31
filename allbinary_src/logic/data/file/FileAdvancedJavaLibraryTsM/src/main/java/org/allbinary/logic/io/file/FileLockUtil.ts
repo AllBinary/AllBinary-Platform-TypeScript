@@ -65,7 +65,7 @@ import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
                 
 export class FileLockUtil

@@ -81,10 +81,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
                 import { FileDomDataModel } from './FileDomDataModel.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.FileDomDataModel;
+//not GWT import const FileDomDataModel = globalThis.org.allbinary.data.tree.dom.FileDomDataModel;
 
                 
 export class DirectoryDataModel

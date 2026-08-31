@@ -59,7 +59,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreTagWorkFlowHelper } from './StoreTagWorkFlowHelper.js';
-//not GWT import const  = globalThis.taghelpers.StoreTagWorkFlowHelper;
+//not GWT import const StoreTagWorkFlowHelper = globalThis.taghelpers.StoreTagWorkFlowHelper;
 
                 
 export class StoreTagWorkFlowHelperFactory extends TagHelperFactory {

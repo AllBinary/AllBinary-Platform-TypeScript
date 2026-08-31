@@ -47,7 +47,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScores } from './RemoteHighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
+//not GWT import const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
 
                 
 export interface RemoteHighScoresProcessorInterface {

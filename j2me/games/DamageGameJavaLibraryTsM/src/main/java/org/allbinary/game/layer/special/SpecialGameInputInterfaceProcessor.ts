@@ -53,7 +53,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.special.SpecialGameInputInterface;
+//not GWT import const SpecialGameInputInterface = globalThis.org.allbinary.game.layer.special.SpecialGameInputInterface;
 
                 
 export class SpecialGameInputInterfaceProcessor extends GameInputProcessor {

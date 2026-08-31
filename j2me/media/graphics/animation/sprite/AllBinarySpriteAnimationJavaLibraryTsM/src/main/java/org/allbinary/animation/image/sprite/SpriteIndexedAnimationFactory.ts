@@ -83,10 +83,10 @@ import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
+//not GWT import const SpriteIndexedAnimation = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
 
                 import { AdjustedSpriteIndexedAnimation } from './AdjustedSpriteIndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.AdjustedSpriteIndexedAnimation;
+//not GWT import const AdjustedSpriteIndexedAnimation = globalThis.org.allbinary.animation.image.sprite.AdjustedSpriteIndexedAnimation;
 
                 
 export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {

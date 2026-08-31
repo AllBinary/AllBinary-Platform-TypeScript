@@ -69,16 +69,16 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
+//not GWT import const FtpConfigurationInterface = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
 
                 import { FtpConfiguration } from './FtpConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfiguration;
+//not GWT import const FtpConfiguration = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfiguration;
 
                 import { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
+//not GWT import const FtpConfigurationData = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
 
                 import { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationMapping;
+//not GWT import const FtpConfigurationMapping = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationMapping;
 
                 
 export class FtpConfigurationView

@@ -85,7 +85,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestData } from './RequestData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.RequestData;
+//not GWT import const RequestData = globalThis.org.allbinary.logic.communication.http.request.RequestData;
 
                 //Note: if request is destroyed or messed up this will not work. Use fileRequestParams
 export class RequestParams

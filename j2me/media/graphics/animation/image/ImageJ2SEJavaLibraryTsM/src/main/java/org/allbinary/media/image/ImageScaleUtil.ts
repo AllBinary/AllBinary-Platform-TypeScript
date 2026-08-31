@@ -61,13 +61,13 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageJ2SEUtil;
+//not GWT import const ImageJ2SEUtil = globalThis.org.allbinary.media.image.ImageJ2SEUtil;
 
                 //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
+const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageScaleUtil

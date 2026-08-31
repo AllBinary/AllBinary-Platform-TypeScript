@@ -53,7 +53,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModDomHelper } from './ModDomHelper.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
                 
 export class BasicErrorNodeUtil

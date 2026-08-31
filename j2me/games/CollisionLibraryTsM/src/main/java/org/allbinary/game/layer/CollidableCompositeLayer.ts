@@ -105,7 +105,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+//not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
 
                 
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {

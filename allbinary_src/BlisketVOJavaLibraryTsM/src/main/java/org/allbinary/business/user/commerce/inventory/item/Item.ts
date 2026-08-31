@@ -75,10 +75,10 @@ import { ShippingMethodData } from '../../../../../../../org/allbinary/business/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicItem } from './BasicItem.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItem;
+//not GWT import const BasicItem = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItem;
 
                 import { OrderItemInterface } from './OrderItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.OrderItemInterface;
+//not GWT import const OrderItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.OrderItemInterface;
 
                 
 export class Item extends BasicItem implements OrderItemInterface {

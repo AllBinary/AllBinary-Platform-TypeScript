@@ -63,13 +63,13 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { AngleIncrementInfo } from './AngleIncrementInfo.js';
-const  = globalThis.org.allbinary.math.AngleIncrementInfo;
+const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
                 //not plain js import { AngleIncrementInfoFactory } from './AngleIncrementInfoFactory.js';
-const  = globalThis.org.allbinary.math.AngleIncrementInfoFactory;
+const AngleIncrementInfoFactory = globalThis.org.allbinary.math.AngleIncrementInfoFactory;
 
                 //not plain js import { FrameUtil } from './FrameUtil.js';
-const  = globalThis.org.allbinary.math.FrameUtil;
+const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
                 
 export class AngleInfo

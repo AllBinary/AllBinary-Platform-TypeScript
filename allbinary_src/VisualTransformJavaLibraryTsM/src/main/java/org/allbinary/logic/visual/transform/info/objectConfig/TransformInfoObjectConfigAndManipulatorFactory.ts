@@ -71,19 +71,19 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigAndManipulatorFactoryBase } from './TransformInfoObjectConfigAndManipulatorFactoryBase.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactoryBase;
+//not GWT import const TransformInfoObjectConfigAndManipulatorFactoryBase = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactoryBase;
 
                 import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
+//not GWT import const TransformInfoObjectConfigData = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
 
                 import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
+//not GWT import const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
 
                 import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfig;
+//not GWT import const TransformInfoObjectConfig = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfig;
 
                 import { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.GenericStoreTransformInfoObjectConfig;
+//not GWT import const GenericStoreTransformInfoObjectConfig = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.GenericStoreTransformInfoObjectConfig;
 
                 
 export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInfoObjectConfigAndManipulatorFactoryBase {

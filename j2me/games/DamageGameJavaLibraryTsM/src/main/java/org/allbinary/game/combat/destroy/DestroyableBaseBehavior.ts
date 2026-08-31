@@ -53,7 +53,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyableInterface } from './DestroyableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.DestroyableInterface;
+//not GWT import const DestroyableInterface = globalThis.org.allbinary.game.combat.destroy.DestroyableInterface;
 
                 
 export class DestroyableBaseBehavior

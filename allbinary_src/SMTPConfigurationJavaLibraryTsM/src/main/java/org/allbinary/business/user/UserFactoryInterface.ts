@@ -47,7 +47,7 @@ import { HashMap } from '../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
                 
 export interface UserFactoryInterface extends Serializable {

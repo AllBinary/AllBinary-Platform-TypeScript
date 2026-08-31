@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CachePolicy } from './CachePolicy.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CachePolicy;
+//not GWT import const CachePolicy = globalThis.org.allbinary.logic.util.cache.CachePolicy;
 
                 
 export class CachePolicyFactory

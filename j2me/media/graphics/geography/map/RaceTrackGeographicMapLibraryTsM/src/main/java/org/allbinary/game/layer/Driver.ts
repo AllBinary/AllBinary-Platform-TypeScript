@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Aggression } from './Aggression.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.Aggression;
+//not GWT import const Aggression = globalThis.org.allbinary.game.layer.Aggression;
 
                 
 export class Driver

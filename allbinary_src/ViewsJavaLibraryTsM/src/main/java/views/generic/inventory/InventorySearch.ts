@@ -113,10 +113,10 @@ import { InventoryViewSearchInterface } from '../../../views/admin/inventory/lis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventorySearchUtil } from './InventorySearchUtil.js';
-//not GWT import const  = globalThis.views.generic.inventory.InventorySearchUtil;
+//not GWT import const InventorySearchUtil = globalThis.views.generic.inventory.InventorySearchUtil;
 
                 import { InventorySearchProductUtil } from './InventorySearchProductUtil.js';
-//not GWT import const  = globalThis.views.generic.inventory.InventorySearchProductUtil;
+//not GWT import const InventorySearchProductUtil = globalThis.views.generic.inventory.InventorySearchProductUtil;
 
                 
 export class InventorySearch

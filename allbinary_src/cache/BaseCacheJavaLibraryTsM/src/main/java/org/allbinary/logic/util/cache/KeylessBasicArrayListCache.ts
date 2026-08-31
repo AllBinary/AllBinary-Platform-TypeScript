@@ -55,7 +55,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedBasicArrayListCache } from './IndexedBasicArrayListCache.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.IndexedBasicArrayListCache;
+//not GWT import const IndexedBasicArrayListCache = globalThis.org.allbinary.logic.util.cache.IndexedBasicArrayListCache;
 
                 
 export class KeylessBasicArrayListCache extends IndexedBasicArrayListCache {

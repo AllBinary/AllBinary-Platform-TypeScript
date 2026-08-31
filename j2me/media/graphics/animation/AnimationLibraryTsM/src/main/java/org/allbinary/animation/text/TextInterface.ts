@@ -45,7 +45,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextChangeListener } from './TextChangeListener.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.TextChangeListener;
+//not GWT import const TextChangeListener = globalThis.org.allbinary.animation.text.TextChangeListener;
 
                 
 export interface TextInterface {

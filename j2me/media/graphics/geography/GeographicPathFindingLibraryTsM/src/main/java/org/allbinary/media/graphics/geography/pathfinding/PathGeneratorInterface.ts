@@ -51,7 +51,7 @@ import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
+//not GWT import const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
 
                 
 export interface PathGeneratorInterface {

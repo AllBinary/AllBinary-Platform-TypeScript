@@ -65,7 +65,7 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlatormGeographicMapCellType } from './BasicPlatormGeographicMapCellType.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.platform.BasicPlatormGeographicMapCellType;
+//not GWT import const BasicPlatormGeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.platform.BasicPlatormGeographicMapCellType;
 
                 
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {

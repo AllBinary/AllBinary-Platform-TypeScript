@@ -53,7 +53,7 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BooleanFactory } from './BooleanFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
                 
 export class BooleanUtil

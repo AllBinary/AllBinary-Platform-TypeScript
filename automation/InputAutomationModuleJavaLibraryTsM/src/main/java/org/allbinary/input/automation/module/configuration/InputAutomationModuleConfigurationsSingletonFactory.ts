@@ -43,7 +43,7 @@ import { InputAutomationConfigurationFactory } from '../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleConfigurations } from './InputAutomationModuleConfigurations.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
+//not GWT import const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
 
                 
 export class InputAutomationModuleConfigurationsSingletonFactory

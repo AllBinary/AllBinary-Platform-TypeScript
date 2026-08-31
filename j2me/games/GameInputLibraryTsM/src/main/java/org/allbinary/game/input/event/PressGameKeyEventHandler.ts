@@ -71,10 +71,10 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyEvent } from './GameKeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
                 import { PressGameKeyEventListenerInterface } from './PressGameKeyEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.PressGameKeyEventListenerInterface;
+//not GWT import const PressGameKeyEventListenerInterface = globalThis.org.allbinary.game.input.event.PressGameKeyEventListenerInterface;
 
                 
 export class PressGameKeyEventHandler extends BasicEventHandler {

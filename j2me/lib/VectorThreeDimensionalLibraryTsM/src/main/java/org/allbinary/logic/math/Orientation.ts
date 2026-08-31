@@ -59,7 +59,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { BasicDecimal } from './BasicDecimal.js';
-const  = globalThis.org.allbinary.logic.math.BasicDecimal;
+const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
                 
 export class Orientation

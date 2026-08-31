@@ -73,7 +73,7 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinuxOS } from './LinuxOS.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.os.linux.LinuxOS;
+//not GWT import const LinuxOS = globalThis.org.allbinary.logic.system.os.linux.LinuxOS;
 
                 
 export class LinuxOperatingSystemFactory

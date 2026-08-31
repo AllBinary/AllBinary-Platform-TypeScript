@@ -73,7 +73,7 @@ import { PrimaryPlayerQueueFactory } from '../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseStrings } from './LicenseStrings.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LicenseStrings;
+//not GWT import const LicenseStrings = globalThis.org.allbinary.logic.system.security.licensing.LicenseStrings;
 
                 
 export class LockedFeatureNotificationUtil

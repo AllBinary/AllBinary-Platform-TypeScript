@@ -63,7 +63,7 @@ import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeneratorStoreFrontContextView } from './GeneratorStoreFrontContextView.js';
-//not GWT import const  = globalThis.views.business.context.modules.storefront.generator.GeneratorStoreFrontContextView;
+//not GWT import const GeneratorStoreFrontContextView = globalThis.views.business.context.modules.storefront.generator.GeneratorStoreFrontContextView;
 
                 
 export class PreviewGeneratorStoreFrontContextView extends GeneratorStoreFrontContextView {

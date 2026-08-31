@@ -75,10 +75,10 @@ import { AndroidImageInterface } from '../../../../org/microemu/android/device/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { ImageAnimation } from './ImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageAnimation;
+//not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
 
                 
 export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends BaseImageAnimationFactory {

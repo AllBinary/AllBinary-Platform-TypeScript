@@ -55,7 +55,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ScaleBaseProcessor;
+//not GWT import const ScaleBaseProcessor = globalThis.org.allbinary.animation.image.ScaleBaseProcessor;
 
                 
 export class ScaleProcessor extends ScaleBaseProcessor {

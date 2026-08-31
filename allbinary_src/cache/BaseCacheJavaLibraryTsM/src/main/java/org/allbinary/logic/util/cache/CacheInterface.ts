@@ -47,7 +47,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
                 
 export interface CacheInterface {

@@ -53,10 +53,10 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryOrientationSensor } from './AllBinaryOrientationSensor.js';
-//not GWT import const  = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
+//not GWT import const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
 
                 import { NoGyroSensor } from './NoGyroSensor.js';
-//not GWT import const  = globalThis.org.allbinary.input.gyro.NoGyroSensor;
+//not GWT import const NoGyroSensor = globalThis.org.allbinary.input.gyro.NoGyroSensor;
 
                 
 export class OrientationToGameKeyEvent

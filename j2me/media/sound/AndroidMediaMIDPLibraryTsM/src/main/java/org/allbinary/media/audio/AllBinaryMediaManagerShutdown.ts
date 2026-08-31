@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+//not GWT import const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
                 
 export class AllBinaryMediaManagerShutdown

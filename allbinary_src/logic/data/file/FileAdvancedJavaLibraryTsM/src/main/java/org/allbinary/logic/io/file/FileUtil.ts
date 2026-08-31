@@ -125,16 +125,16 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
                 //not plain js import { FilePathData } from './FilePathData.js';
-const  = globalThis.org.allbinary.logic.io.file.FilePathData;
+const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 
                 import { FileWrapperUtil } from './FileWrapperUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+//not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
                 import { FileUtil2 } from './FileUtil2.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.FileUtil2;
+//not GWT import const FileUtil2 = globalThis.org.allbinary.logic.io.file.FileUtil2;
 
                 //data/init/views/TestStore/template/type/genericTemplateObjectConfig.xml
 export class FileUtil

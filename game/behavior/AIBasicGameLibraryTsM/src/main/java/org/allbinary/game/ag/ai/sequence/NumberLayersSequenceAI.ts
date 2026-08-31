@@ -55,7 +55,7 @@ import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/All
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequenceAI } from './SequenceAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.sequence.SequenceAI;
+//not GWT import const SequenceAI = globalThis.org.allbinary.game.ag.ai.sequence.SequenceAI;
 
                 
 export class NumberLayersSequenceAI extends SequenceAI {

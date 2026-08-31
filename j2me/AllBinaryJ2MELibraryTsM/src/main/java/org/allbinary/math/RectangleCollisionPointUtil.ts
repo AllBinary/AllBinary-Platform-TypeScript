@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { RectangleCollisionUtil } from './RectangleCollisionUtil.js';
-const  = globalThis.org.allbinary.math.RectangleCollisionUtil;
+const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
 
                 
 export class RectangleCollisionPointUtil

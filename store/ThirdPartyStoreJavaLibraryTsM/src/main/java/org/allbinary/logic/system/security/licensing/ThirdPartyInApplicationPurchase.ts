@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyInApplicationPurchaseInterface } from './ThirdPartyInApplicationPurchaseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.ThirdPartyInApplicationPurchaseInterface;
+//not GWT import const ThirdPartyInApplicationPurchaseInterface = globalThis.org.allbinary.logic.system.security.licensing.ThirdPartyInApplicationPurchaseInterface;
 
                 import { LockableFeature } from './LockableFeature.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+//not GWT import const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
                 
 export class ThirdPartyInApplicationPurchase

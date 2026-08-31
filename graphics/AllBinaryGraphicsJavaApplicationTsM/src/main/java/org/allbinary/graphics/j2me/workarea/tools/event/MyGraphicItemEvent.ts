@@ -41,10 +41,10 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventObject } from './EventObject.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventObject;
+//not GWT import const EventObject = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventObject;
 
                 import { MyGraphicItemEventSource } from './MyGraphicItemEventSource.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventSource;
+//not GWT import const MyGraphicItemEventSource = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventSource;
 
                 
 export class MyGraphicItemEvent extends java.util.EventObject {

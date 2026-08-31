@@ -73,10 +73,10 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShowVirtualKeyboardRunnable } from './ShowVirtualKeyboardRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.api3.ShowVirtualKeyboardRunnable;
+//not GWT import const ShowVirtualKeyboardRunnable = globalThis.org.allbinary.android.input.api3.ShowVirtualKeyboardRunnable;
 
                 import { HideVirtualKeyboardRunnable } from './HideVirtualKeyboardRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.api3.HideVirtualKeyboardRunnable;
+//not GWT import const HideVirtualKeyboardRunnable = globalThis.org.allbinary.android.input.api3.HideVirtualKeyboardRunnable;
 
                 
 export class VirtualKeyboardAPI3 extends VirtualKeyboard implements VirtualKeyboardEventListenerInterface {

@@ -83,10 +83,10 @@ import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.BasicArrayListD;
+//not GWT import const BasicArrayListD = globalThis.org.allbinary.logic.system.security.licensing.BasicArrayListD;
 
                 import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.PrintLicenseInitInfo;
+//not GWT import const PrintLicenseInitInfo = globalThis.org.allbinary.logic.system.security.licensing.PrintLicenseInitInfo;
 
                 
 export class SetLicenseInitInfo

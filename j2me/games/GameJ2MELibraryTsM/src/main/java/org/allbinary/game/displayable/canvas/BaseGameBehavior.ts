@@ -63,10 +63,10 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameBehavior } from './DemoGameBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoGameBehavior;
+//not GWT import const DemoGameBehavior = globalThis.org.allbinary.game.displayable.canvas.DemoGameBehavior;
 
                 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+//not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
                 
 export class BaseGameBehavior extends DemoGameBehavior {

@@ -65,10 +65,10 @@ import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loade
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AppUrlGlobals } from './AppUrlGlobals.js';
-//not GWT import const  = globalThis.org.allbinary.globals.AppUrlGlobals;
+//not GWT import const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
 
                 import { URLGLOBALS } from './URLGLOBALS.js';
-//not GWT import const  = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
                 
 export class Globals

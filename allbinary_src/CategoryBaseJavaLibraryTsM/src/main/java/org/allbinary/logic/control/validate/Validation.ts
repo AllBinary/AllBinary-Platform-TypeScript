@@ -55,7 +55,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationInterface } from './ValidationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
                 
 export class Validation

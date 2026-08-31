@@ -59,7 +59,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullAI } from './NullAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.NullAI;
+//not GWT import const NullAI = globalThis.org.allbinary.game.ag.ai.NullAI;
 
                 
 export class NullAIFactory

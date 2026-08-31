@@ -103,7 +103,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadableInventoryItemView } from './DownloadableInventoryItemView.js';
-//not GWT import const  = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
+//not GWT import const DownloadableInventoryItemView = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
 
                 
 export class DeleteFileValidationView extends DownloadableInventoryItemView implements ValidationComponentInterface {

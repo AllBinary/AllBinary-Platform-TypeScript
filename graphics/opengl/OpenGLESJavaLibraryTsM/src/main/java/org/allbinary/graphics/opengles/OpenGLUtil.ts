@@ -109,10 +109,10 @@ import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLCapabilities } from './OpenGLCapabilities.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
+//not GWT import const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
 
                 import { OpenGLLogUtil } from './OpenGLLogUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
+//not GWT import const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
 
                 
 export class OpenGLUtil

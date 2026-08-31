@@ -73,7 +73,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleWeaponProperties } from './SimpleWeaponProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.weapon.SimpleWeaponProperties;
+//not GWT import const SimpleWeaponProperties = globalThis.org.allbinary.game.combat.weapon.SimpleWeaponProperties;
 
                 
 export class WeaponProperties extends SimpleWeaponProperties {

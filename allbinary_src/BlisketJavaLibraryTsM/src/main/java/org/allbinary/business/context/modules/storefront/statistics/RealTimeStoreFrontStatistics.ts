@@ -77,7 +77,7 @@ import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/all
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontStatisticsInterface } from './StoreFrontStatisticsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.StoreFrontStatisticsInterface;
+//not GWT import const StoreFrontStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.StoreFrontStatisticsInterface;
 
                 
 export class RealTimeStoreFrontStatistics

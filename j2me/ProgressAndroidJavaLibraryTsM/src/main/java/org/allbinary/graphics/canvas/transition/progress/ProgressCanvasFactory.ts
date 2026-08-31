@@ -59,10 +59,10 @@ import { PaintableInterface } from '../../../../../../org/allbinary/graphics/pai
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidBasicTitleProgressBar } from './AndroidBasicTitleProgressBar.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.AndroidBasicTitleProgressBar;
+//not GWT import const AndroidBasicTitleProgressBar = globalThis.org.allbinary.graphics.canvas.transition.progress.AndroidBasicTitleProgressBar;
 
                 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 
 export class ProgressCanvasFactory

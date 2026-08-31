@@ -73,16 +73,16 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
+//not GWT import const BasicProfileActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
 
                 import { AlwaysActionScriptConditionInterface } from './AlwaysActionScriptConditionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionInterface;
+//not GWT import const AlwaysActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionInterface;
 
                 import { AlwaysActionScriptConditionJPanel } from './AlwaysActionScriptConditionJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionJPanel;
+//not GWT import const AlwaysActionScriptConditionJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionJPanel;
 
                 import { AlwaysActionScriptConditionData } from './AlwaysActionScriptConditionData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionData;
+//not GWT import const AlwaysActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionData;
 
                 
 export class AlwaysActionScriptCondition extends BasicProfileActionScriptCondition implements AlwaysActionScriptConditionInterface {

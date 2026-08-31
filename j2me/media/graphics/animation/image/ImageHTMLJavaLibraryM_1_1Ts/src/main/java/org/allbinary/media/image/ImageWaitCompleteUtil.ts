@@ -71,7 +71,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ImageCompleteUtil } from './ImageCompleteUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageCompleteUtil;
+const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
 
                 
 export class ImageWaitCompleteUtil extends ImageCompleteUtil {

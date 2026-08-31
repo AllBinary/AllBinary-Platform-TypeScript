@@ -81,7 +81,7 @@ import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthenticationHelper } from './AuthenticationHelper.js';
-//not GWT import const  = globalThis.admin.taghelpers.AuthenticationHelper;
+//not GWT import const AuthenticationHelper = globalThis.admin.taghelpers.AuthenticationHelper;
 
                 
 export class AuthenticationHelperUtil

@@ -59,13 +59,13 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const  = globalThis.admin.tags.TableTag;
+//not GWT import const TableTag = globalThis.admin.tags.TableTag;
 
                 import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-//not GWT import const  = globalThis.admin.tags.ParentInventoryTagHelper;
+//not GWT import const ParentInventoryTagHelper = globalThis.admin.tags.ParentInventoryTagHelper;
 
                 import { AbTagData } from './AbTagData.js';
-//not GWT import const  = globalThis.admin.tags.AbTagData;
+//not GWT import const AbTagData = globalThis.admin.tags.AbTagData;
 
                 
 export class DownloadItemsTag extends TableTag {

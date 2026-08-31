@@ -43,7 +43,7 @@ import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/bu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRecognizer } from './MotionRecognizer.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.MotionRecognizer;
+//not GWT import const MotionRecognizer = globalThis.org.allbinary.input.motion.MotionRecognizer;
 
                 
 export class OnlyTouchButtonRecognizer extends MotionRecognizer {

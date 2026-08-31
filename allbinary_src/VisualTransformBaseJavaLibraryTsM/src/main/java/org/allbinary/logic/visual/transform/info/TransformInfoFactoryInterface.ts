@@ -47,7 +47,7 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
                 
 export interface TransformInfoFactoryInterface {

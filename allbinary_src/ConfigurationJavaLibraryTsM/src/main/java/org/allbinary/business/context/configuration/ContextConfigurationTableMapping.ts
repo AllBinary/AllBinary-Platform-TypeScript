@@ -53,10 +53,10 @@ import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+//not GWT import const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
 
                 import { ContextConfigurationData } from './ContextConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
+//not GWT import const ContextConfigurationData = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
 
                 
 export class ContextConfigurationTableMapping

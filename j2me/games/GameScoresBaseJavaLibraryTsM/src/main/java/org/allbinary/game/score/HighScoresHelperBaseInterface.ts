@@ -45,10 +45,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+//not GWT import const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 
 export interface HighScoresHelperBaseInterface extends HighScoresResultsListener {

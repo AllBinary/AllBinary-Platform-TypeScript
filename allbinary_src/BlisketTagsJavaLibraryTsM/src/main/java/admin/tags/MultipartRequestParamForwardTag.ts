@@ -75,10 +75,10 @@ import { HelperTag } from '../../tags/HelperTag.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-//not GWT import const  = globalThis.admin.tags.ParentInventoryTagHelper;
+//not GWT import const ParentInventoryTagHelper = globalThis.admin.tags.ParentInventoryTagHelper;
 
                 import { AbTagData } from './AbTagData.js';
-//not GWT import const  = globalThis.admin.tags.AbTagData;
+//not GWT import const AbTagData = globalThis.admin.tags.AbTagData;
 
                 
 export class MultipartRequestParamForwardTag extends CustomTagSupport {

@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Component } from './Component.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.components.Component;
+//not GWT import const Component = globalThis.org.allbinary.logic.system.hardware.components.Component;
 
                 
 export class ComponentFactory

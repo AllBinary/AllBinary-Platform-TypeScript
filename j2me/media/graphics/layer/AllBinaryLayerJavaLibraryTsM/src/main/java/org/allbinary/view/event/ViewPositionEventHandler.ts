@@ -67,10 +67,10 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionEvent } from './ViewPositionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.view.event.ViewPositionEvent;
+//not GWT import const ViewPositionEvent = globalThis.org.allbinary.view.event.ViewPositionEvent;
 
                 import { ViewPositionEventListenerInterface } from './ViewPositionEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.view.event.ViewPositionEventListenerInterface;
+//not GWT import const ViewPositionEventListenerInterface = globalThis.org.allbinary.view.event.ViewPositionEventListenerInterface;
 
                 
 export class ViewPositionEventHandler extends BasicEventHandler {

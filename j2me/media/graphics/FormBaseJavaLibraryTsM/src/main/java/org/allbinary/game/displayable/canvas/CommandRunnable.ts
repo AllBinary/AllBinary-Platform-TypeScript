@@ -79,7 +79,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
+//not GWT import const CommandFormInputProcessor = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
 
                 
 export class CommandRunnable

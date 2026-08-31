@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DbConnectionInfo } from './DbConnectionInfo.js';
-//not GWT import const  = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
                 //import org.allbinary.logic.communication.log.config.type.LogConfigTypes;
 export class DbInitInfo extends DbConnectionInfo {

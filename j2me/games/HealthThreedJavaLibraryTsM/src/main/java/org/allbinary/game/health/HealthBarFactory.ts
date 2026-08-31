@@ -53,16 +53,16 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBar } from './HealthBar.js';
-//not GWT import const  = globalThis.org.allbinary.game.health.HealthBar;
+//not GWT import const HealthBar = globalThis.org.allbinary.game.health.HealthBar;
 
                 import { HealthBarTwodAnimation } from './HealthBarTwodAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
+//not GWT import const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
 
                 import { Health } from './Health.js';
-//not GWT import const  = globalThis.org.allbinary.game.health.Health;
+//not GWT import const Health = globalThis.org.allbinary.game.health.Health;
 
                 import { HealthBarAnimationInterfaceFactory } from './HealthBarAnimationInterfaceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarAnimationInterfaceFactory;
+//not GWT import const HealthBarAnimationInterfaceFactory = globalThis.org.allbinary.game.health.HealthBarAnimationInterfaceFactory;
 
                 
 export class HealthBarFactory

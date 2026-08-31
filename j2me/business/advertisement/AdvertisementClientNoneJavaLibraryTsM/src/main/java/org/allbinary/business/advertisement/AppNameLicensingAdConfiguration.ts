@@ -27,7 +27,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.AdConfiguration;
+//not GWT import const AdConfiguration = globalThis.org.allbinary.business.advertisement.AdConfiguration;
 
                 
 export class AppNameLicensingAdConfiguration extends AdConfiguration {

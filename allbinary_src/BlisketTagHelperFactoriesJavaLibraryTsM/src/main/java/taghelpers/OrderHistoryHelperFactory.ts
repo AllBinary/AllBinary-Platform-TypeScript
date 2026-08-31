@@ -61,7 +61,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryHelper } from './OrderHistoryHelper.js';
-//not GWT import const  = globalThis.taghelpers.OrderHistoryHelper;
+//not GWT import const OrderHistoryHelper = globalThis.taghelpers.OrderHistoryHelper;
 
                 
 export class OrderHistoryHelperFactory

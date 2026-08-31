@@ -93,13 +93,13 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
                 import { Feature } from './Feature.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Feature;
+//not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
 
                 import { GameFeatureChoiceGroups } from './GameFeatureChoiceGroups.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
+//not GWT import const GameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
 
                 
 export class GameFeatureUtil

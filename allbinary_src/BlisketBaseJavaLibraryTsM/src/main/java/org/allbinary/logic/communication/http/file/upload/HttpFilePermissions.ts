@@ -65,7 +65,7 @@ import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FileUploadData } from './FileUploadData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.FileUploadData;
+//not GWT import const FileUploadData = globalThis.org.allbinary.logic.communication.http.file.upload.FileUploadData;
 
                 
 export class HttpFilePermissions

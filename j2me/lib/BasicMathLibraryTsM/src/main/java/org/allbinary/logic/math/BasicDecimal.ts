@@ -57,7 +57,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ScaleFactorFactory } from './ScaleFactorFactory.js';
-const  = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
+const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
 
                 
 export class BasicDecimal

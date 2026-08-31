@@ -41,10 +41,10 @@ import { GameConfigurationCentral } from '../../../org/allbinary/game/configurat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryVibrationME } from './AllBinaryVibrationME.js';
-//not GWT import const  = globalThis.org.allbinary.media.AllBinaryVibrationME;
+//not GWT import const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
 
                 import { AllBinaryNoVibration } from './AllBinaryNoVibration.js';
-//not GWT import const  = globalThis.org.allbinary.media.AllBinaryNoVibration;
+//not GWT import const AllBinaryNoVibration = globalThis.org.allbinary.media.AllBinaryNoVibration;
 
                 
 export class AllBinaryVibration extends AllBinaryVibrationME {

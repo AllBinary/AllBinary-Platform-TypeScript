@@ -81,7 +81,7 @@ import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PixelDelta } from './PixelDelta.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+//not GWT import const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
 
                 
 export class PixelDeltaFactory

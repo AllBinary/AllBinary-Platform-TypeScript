@@ -47,10 +47,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintable;
+//not GWT import const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
 
                 import { PaintableForm } from './PaintableForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.PaintableForm;
+//not GWT import const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
 
                 
 export class ItemPaintableFactory extends ItemPaintable {

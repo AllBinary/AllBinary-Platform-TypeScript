@@ -53,13 +53,13 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { AbPathData } from './AbPathData.js';
-const  = globalThis.org.allbinary.logic.io.path.AbPathData;
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
                 import { AbFilePath } from './AbFilePath.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.path.AbFilePath;
+//not GWT import const AbFilePath = globalThis.org.allbinary.logic.io.path.AbFilePath;
 
                 import { AbPath } from './AbPath.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
                 //Used to correct user input for paths
 export class PathUtil

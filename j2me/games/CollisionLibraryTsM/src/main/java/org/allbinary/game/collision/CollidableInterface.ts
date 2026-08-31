@@ -59,7 +59,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionType } from './CollisionType.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionType;
+//not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
 
                 
 export interface CollidableInterface extends NamedInterface {

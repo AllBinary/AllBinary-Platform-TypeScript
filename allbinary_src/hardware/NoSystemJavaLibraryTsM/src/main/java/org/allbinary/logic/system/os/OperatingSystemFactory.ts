@@ -55,10 +55,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoOperatingSystem } from './NoOperatingSystem.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.os.NoOperatingSystem;
+//not GWT import const NoOperatingSystem = globalThis.org.allbinary.logic.system.os.NoOperatingSystem;
 
                 import { GenericOperatingSystem } from './GenericOperatingSystem.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+//not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
                 
 export class OperatingSystemFactory

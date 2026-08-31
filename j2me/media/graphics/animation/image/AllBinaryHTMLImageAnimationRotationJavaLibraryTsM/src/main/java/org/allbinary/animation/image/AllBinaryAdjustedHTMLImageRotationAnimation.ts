@@ -55,7 +55,7 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryHTMLImageRotationAnimation } from './AllBinaryHTMLImageRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryHTMLImageRotationAnimation;
+//not GWT import const AllBinaryHTMLImageRotationAnimation = globalThis.org.allbinary.animation.image.AllBinaryHTMLImageRotationAnimation;
 
                 
 export class AllBinaryAdjustedHTMLImageRotationAnimation extends AllBinaryHTMLImageRotationAnimation {

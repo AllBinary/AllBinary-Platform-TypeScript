@@ -41,10 +41,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVector } from './MathVector.js';
-//not GWT import const  = globalThis.org.allbinary.logic.math.vector.MathVector;
+//not GWT import const MathVector = globalThis.org.allbinary.logic.math.vector.MathVector;
 
                 import { YAxisMathVectorUtil } from './YAxisMathVectorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.math.vector.YAxisMathVectorUtil;
+//not GWT import const YAxisMathVectorUtil = globalThis.org.allbinary.logic.math.vector.YAxisMathVectorUtil;
 
                 
 export class XAxisMathVector extends MathVector {

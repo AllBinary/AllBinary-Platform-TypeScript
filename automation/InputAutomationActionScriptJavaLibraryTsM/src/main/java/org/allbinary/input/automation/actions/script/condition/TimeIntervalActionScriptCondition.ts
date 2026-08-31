@@ -79,16 +79,16 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
+//not GWT import const BasicProfileActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
 
                 import { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionInterface;
+//not GWT import const TimeIntervalActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionInterface;
 
                 import { TimeIntervalActionScriptConditionJPanel } from './TimeIntervalActionScriptConditionJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionJPanel;
+//not GWT import const TimeIntervalActionScriptConditionJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionJPanel;
 
                 import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionData;
+//not GWT import const TimeIntervalActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionData;
 
                 
 export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition implements TimeIntervalActionScriptConditionInterface {

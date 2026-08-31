@@ -63,7 +63,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UsersView } from './UsersView.js';
-//not GWT import const  = globalThis.views.generic.user.UsersView;
+//not GWT import const UsersView = globalThis.views.generic.user.UsersView;
 
                 
 export class UsersValidationView extends UsersView implements ValidationComponentInterface {

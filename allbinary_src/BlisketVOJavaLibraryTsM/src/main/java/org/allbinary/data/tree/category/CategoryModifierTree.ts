@@ -67,10 +67,10 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPrivateTree } from './CategoryPrivateTree.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryPrivateTree;
+//not GWT import const CategoryPrivateTree = globalThis.org.allbinary.data.tree.category.CategoryPrivateTree;
 
                 import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryModifierTreeInterface;
+//not GWT import const CategoryModifierTreeInterface = globalThis.org.allbinary.data.tree.category.CategoryModifierTreeInterface;
 
                 
 export class CategoryModifierTree extends CategoryPrivateTree implements CategoryModifierTreeInterface {

@@ -49,10 +49,10 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.media.image.comparison.motion.Dimension;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
 
                 
 export interface MotionRectangleConstraintsInterface {

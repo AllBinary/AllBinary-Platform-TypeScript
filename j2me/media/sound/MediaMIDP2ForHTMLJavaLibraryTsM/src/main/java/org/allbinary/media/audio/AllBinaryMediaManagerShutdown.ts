@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMediaManager } from './AllBinaryMediaManager.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
+//not GWT import const AllBinaryMediaManager = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
 
                 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+//not GWT import const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
                 
 export class AllBinaryMediaManagerShutdown

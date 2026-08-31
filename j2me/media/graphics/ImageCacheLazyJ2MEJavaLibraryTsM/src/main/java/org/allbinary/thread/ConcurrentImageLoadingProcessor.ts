@@ -59,13 +59,13 @@ import { ImageCache } from '../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageLoadingProcessor } from './BaseImageLoadingProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.thread.BaseImageLoadingProcessor;
+//not GWT import const BaseImageLoadingProcessor = globalThis.org.allbinary.thread.BaseImageLoadingProcessor;
 
                 import { ABRunnable } from './ABRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ABRunnable;
+//not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
 
                 import { ImageThreadPool } from './ImageThreadPool.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ImageThreadPool;
+//not GWT import const ImageThreadPool = globalThis.org.allbinary.thread.ImageThreadPool;
 
                 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {

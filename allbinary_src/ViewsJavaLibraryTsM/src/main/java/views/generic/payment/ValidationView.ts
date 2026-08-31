@@ -59,7 +59,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentView } from './PaymentView.js';
-//not GWT import const  = globalThis.views.generic.payment.PaymentView;
+//not GWT import const PaymentView = globalThis.views.generic.payment.PaymentView;
 
                 
 export class ValidationView extends PaymentView implements ValidationComponentInterface {

@@ -51,7 +51,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RatioProcessor } from './RatioProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.threed.RatioProcessor;
+//not GWT import const RatioProcessor = globalThis.org.allbinary.graphics.threed.RatioProcessor;
 
                 //OpenGLNone
 export class SWTJOGLProcessor

@@ -67,7 +67,7 @@ import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAni
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterface } from './CompoundAnimationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundAnimationInterface;
+//not GWT import const CompoundAnimationInterface = globalThis.org.allbinary.animation.compound.CompoundAnimationInterface;
 
                 
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {

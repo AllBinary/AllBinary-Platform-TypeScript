@@ -89,16 +89,16 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntegerDimension } from './IntegerDimension.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
+//not GWT import const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
 
                 import { Grid } from './Grid.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
+//not GWT import const Grid = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
 
                 import { CanvasJPanel } from './CanvasJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
+//not GWT import const CanvasJPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
 
                 import { Document } from './Document.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Document;
+//not GWT import const Document = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Document;
 
                 
 export class CanvasDom

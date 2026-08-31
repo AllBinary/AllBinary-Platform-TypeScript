@@ -133,13 +133,13 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Input } from './Input.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
                 import { GameKeyMappingFactory } from './GameKeyMappingFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyMappingFactory;
+//not GWT import const GameKeyMappingFactory = globalThis.org.allbinary.game.input.GameKeyMappingFactory;
 
                 import { InputFactory } from './InputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
                 //GameInputPersistanceLibrary
 export class InputPersistance extends BasicPersitance {

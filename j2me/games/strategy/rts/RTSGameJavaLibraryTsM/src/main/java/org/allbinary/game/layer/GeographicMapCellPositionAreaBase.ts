@@ -55,7 +55,7 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaInterface } from './GeographicMapCellPositionAreaInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaInterface;
+//not GWT import const GeographicMapCellPositionAreaInterface = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaInterface;
 
                 
 export class GeographicMapCellPositionAreaBase

@@ -69,13 +69,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
+//not GWT import const LayerManagerLoggingBase = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
 
                 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 import { Layer } from './Layer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.Layer;
+//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
                 
 export class LayerManager

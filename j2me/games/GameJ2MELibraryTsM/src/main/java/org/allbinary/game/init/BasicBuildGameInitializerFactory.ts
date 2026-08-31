@@ -51,13 +51,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterfaceFactoryInterface } from './GameInitializationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.init.GameInitializationInterfaceFactoryInterface;
+//not GWT import const GameInitializationInterfaceFactoryInterface = globalThis.org.allbinary.game.init.GameInitializationInterfaceFactoryInterface;
 
                 import { BaseGameInitialization } from './BaseGameInitialization.js';
-//not GWT import const  = globalThis.org.allbinary.game.init.BaseGameInitialization;
+//not GWT import const BaseGameInitialization = globalThis.org.allbinary.game.init.BaseGameInitialization;
 
                 import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.init.GameInitializationInterface;
+//not GWT import const GameInitializationInterface = globalThis.org.allbinary.game.init.GameInitializationInterface;
 
                 
 export class BasicBuildGameInitializerFactory

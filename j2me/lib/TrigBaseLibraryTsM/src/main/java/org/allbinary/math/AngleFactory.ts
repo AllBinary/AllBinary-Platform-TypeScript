@@ -77,13 +77,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { Angle } from './Angle.js';
-const  = globalThis.org.allbinary.math.Angle;
+const Angle = globalThis.org.allbinary.math.Angle;
 
                 //not plain js import { NamedAngle } from './NamedAngle.js';
-const  = globalThis.org.allbinary.math.NamedAngle;
+const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
 
                 //not plain js import { FrameUtil } from './FrameUtil.js';
-const  = globalThis.org.allbinary.math.FrameUtil;
+const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
                 
 export class AngleFactory

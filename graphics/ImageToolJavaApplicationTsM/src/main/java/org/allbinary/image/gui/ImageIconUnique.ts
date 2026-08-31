@@ -45,7 +45,7 @@ import { swing } from '../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIcon } from './ImageIcon.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ImageIcon;
+//not GWT import const ImageIcon = globalThis.org.allbinary.image.gui.ImageIcon;
 
                 
 export class ImageIconUnique extends ImageIcon {

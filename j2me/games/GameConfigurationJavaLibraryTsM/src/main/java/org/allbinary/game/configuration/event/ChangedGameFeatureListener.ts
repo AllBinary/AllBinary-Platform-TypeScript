@@ -49,7 +49,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseChangedGameFeatureListener } from './BaseChangedGameFeatureListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.event.BaseChangedGameFeatureListener;
+//not GWT import const BaseChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.BaseChangedGameFeatureListener;
 
                 
 export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {

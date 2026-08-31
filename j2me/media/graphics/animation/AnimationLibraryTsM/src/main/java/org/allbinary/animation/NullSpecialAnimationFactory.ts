@@ -49,13 +49,13 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
                 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { Animation } from './Animation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class NullSpecialAnimationFactory

@@ -49,7 +49,7 @@ import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.BasePathFinderGraphVisitor;
+//not GWT import const BasePathFinderGraphVisitor = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.BasePathFinderGraphVisitor;
 
                 
 export class SimplePathFinderGraphVisitorFactory extends PathFinderGraphVisitorFactoryBase {

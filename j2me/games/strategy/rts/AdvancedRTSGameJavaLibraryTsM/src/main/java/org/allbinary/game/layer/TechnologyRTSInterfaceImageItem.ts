@@ -83,7 +83,7 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSInterface;
+//not GWT import const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
 
                 
 export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem implements UpdateMyFontInterface {

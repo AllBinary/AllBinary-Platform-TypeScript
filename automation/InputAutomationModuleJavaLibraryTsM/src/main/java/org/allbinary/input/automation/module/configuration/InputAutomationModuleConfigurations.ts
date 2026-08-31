@@ -89,7 +89,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleConfiguration } from './InputAutomationModuleConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+//not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
 
                 
 export class InputAutomationModuleConfigurations

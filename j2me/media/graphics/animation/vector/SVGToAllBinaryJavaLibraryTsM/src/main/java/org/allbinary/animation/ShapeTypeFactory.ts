@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShapeType } from './ShapeType.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ShapeType;
+//not GWT import const ShapeType = globalThis.org.allbinary.animation.ShapeType;
 
                 
 export class ShapeTypeFactory

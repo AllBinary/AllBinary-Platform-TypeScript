@@ -59,10 +59,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEvent } from './TrackingEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.tracking.TrackingEvent;
+//not GWT import const TrackingEvent = globalThis.org.allbinary.game.tracking.TrackingEvent;
 
                 import { TrackingEventHandler } from './TrackingEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.tracking.TrackingEventHandler;
+//not GWT import const TrackingEventHandler = globalThis.org.allbinary.game.tracking.TrackingEventHandler;
 
                 
 export class TrackingEventFactory

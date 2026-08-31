@@ -31,10 +31,10 @@ import { KeyEvent } from '../../../../android/view/KeyEvent.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.AndroidKeyFactory;
+//not GWT import const AndroidKeyFactory = globalThis.org.allbinary.game.input.AndroidKeyFactory;
 
                 import { AndroidGameKey } from './AndroidGameKey.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.AndroidGameKey;
+//not GWT import const AndroidGameKey = globalThis.org.allbinary.game.input.AndroidGameKey;
 
                 
 export class AndroidAPI9KeyFactory extends AndroidKeyFactory {

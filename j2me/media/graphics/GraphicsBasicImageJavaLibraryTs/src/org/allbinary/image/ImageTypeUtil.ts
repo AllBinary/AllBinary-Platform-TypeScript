@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import const  = globalThis.org.allbinary.image.BasicArrayListD;
+//not GWT import const BasicArrayListD = globalThis.org.allbinary.image.BasicArrayListD;
 
                 
 export class ImageTypeUtil

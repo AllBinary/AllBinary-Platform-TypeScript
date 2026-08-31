@@ -43,7 +43,7 @@ import { awt } from '../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.Point;
+//not GWT import const Point = globalThis.org.allbinary.input.automation.Point;
 
                 
 export class PointFactory

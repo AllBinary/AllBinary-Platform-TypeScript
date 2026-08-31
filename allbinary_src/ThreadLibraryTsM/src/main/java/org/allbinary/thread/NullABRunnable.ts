@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABRunnable } from './ABRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ABRunnable;
+//not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
 
                 
 export class NullABRunnable extends ABRunnable {

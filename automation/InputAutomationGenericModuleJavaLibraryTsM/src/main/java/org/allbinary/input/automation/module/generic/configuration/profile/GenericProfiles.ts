@@ -105,13 +105,13 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfilesData } from './GenericProfilesData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfilesData;
+//not GWT import const GenericProfilesData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfilesData;
 
                 import { GenericProfileData } from './GenericProfileData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileData;
+//not GWT import const GenericProfileData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileData;
 
                 import { GenericProfile } from './GenericProfile.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+//not GWT import const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
 
                 
 export class GenericProfiles

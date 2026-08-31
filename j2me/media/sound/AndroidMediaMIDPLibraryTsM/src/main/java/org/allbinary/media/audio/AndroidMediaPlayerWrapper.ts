@@ -81,7 +81,7 @@ import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.BasicPlayer;
+//not GWT import const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
 
                 
 export class AndroidMediaPlayerWrapper extends BasicPlayer {

@@ -45,10 +45,10 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextItem } from './ABTextItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABTextItem;
+//not GWT import const ABTextItem = globalThis.org.allbinary.graphics.form.item.ABTextItem;
 
                 import { ABStringComponent } from './ABStringComponent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
+//not GWT import const ABStringComponent = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
 
                 
 export class SelectableTextItem extends ABTextItem {

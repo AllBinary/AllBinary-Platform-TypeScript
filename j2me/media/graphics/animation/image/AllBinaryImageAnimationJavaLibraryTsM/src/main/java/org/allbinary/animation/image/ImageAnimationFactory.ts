@@ -59,13 +59,13 @@ import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { ImageAnimation } from './ImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageAnimation;
+//not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
 
                 import { AdjustedImageAnimation } from './AdjustedImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageAnimation;
+//not GWT import const AdjustedImageAnimation = globalThis.org.allbinary.animation.image.AdjustedImageAnimation;
 
                 
 export class ImageAnimationFactory extends BaseImageAnimationFactory {

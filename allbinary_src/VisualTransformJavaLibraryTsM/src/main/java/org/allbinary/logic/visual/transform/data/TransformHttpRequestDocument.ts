@@ -85,7 +85,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformDocumentInterface } from './TransformDocumentInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+//not GWT import const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
 
                 
 export class TransformHttpRequestDocument

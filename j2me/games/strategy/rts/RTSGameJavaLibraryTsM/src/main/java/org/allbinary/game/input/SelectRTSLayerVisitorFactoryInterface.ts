@@ -41,7 +41,7 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
+//not GWT import const SelectedRTSLayersPlayerGameInput = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
 
                 
 export interface SelectRTSLayerVisitorFactoryInterface {

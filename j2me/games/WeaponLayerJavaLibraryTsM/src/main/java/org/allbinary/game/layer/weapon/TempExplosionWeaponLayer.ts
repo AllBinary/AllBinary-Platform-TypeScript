@@ -61,7 +61,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleWeaponLayer } from './SimpleWeaponLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.weapon.SimpleWeaponLayer;
+//not GWT import const SimpleWeaponLayer = globalThis.org.allbinary.game.layer.weapon.SimpleWeaponLayer;
 
                 
 export class TempExplosionWeaponLayer extends SimpleWeaponLayer {

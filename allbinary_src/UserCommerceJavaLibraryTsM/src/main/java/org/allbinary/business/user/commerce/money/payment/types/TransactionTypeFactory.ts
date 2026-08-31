@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionType } from './TransactionType.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.types.TransactionType;
+//not GWT import const TransactionType = globalThis.org.allbinary.business.user.commerce.money.payment.types.TransactionType;
 
                 
 export class TransactionTypeFactory

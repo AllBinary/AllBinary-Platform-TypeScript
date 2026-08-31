@@ -53,19 +53,19 @@ import { GenericProfileActionJPanel } from '../../../../../../../../../../org/al
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Panel } from './Panel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Panel;
+//not GWT import const Panel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Panel;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JButton;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.ActionListener;
+//not GWT import const ActionListener = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.ActionEvent;
+//not GWT import const ActionEvent = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.ActionEvent;
 
                 
 export class RemoveActionScriptItemJPanel extends java.awt.Panel {

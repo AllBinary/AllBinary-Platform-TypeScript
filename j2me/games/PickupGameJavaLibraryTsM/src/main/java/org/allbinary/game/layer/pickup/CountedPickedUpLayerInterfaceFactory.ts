@@ -79,22 +79,22 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactory } from './PickedUpLayerInterfaceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactory;
+//not GWT import const PickedUpLayerInterfaceFactory = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactory;
 
                 import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryInterface;
+//not GWT import const CountedPickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryInterface;
 
                 import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerTypeFactory;
+//not GWT import const PickedUpLayerTypeFactory = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerTypeFactory;
 
                 import { IconLayer } from './IconLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.IconLayer;
+//not GWT import const IconLayer = globalThis.org.allbinary.game.layer.pickup.IconLayer;
 
                 import { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryPool;
+//not GWT import const CountedPickedUpLayerInterfaceFactoryPool = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryPool;
 
                 import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
+//not GWT import const PickedUpLayerType = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
 
                 
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {

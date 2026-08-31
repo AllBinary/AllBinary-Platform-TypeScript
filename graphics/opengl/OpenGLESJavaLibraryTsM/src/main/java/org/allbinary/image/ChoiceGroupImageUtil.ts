@@ -63,7 +63,7 @@ import { Features } from '../../../org/allbinary/game/configuration/feature/Feat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreResourceImageUtil } from './PreResourceImageUtil.js';
-//not GWT import const  = globalThis.org.allbinary.image.PreResourceImageUtil;
+//not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
                 
 export class ChoiceGroupImageUtil

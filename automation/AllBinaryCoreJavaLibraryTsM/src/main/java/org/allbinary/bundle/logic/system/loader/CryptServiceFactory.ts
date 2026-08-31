@@ -59,7 +59,7 @@ import { ServiceRegistration } from '../../../../../../org/osgi/framework/Servic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptService } from './CryptService.js';
-//not GWT import const  = globalThis.org.allbinary.bundle.logic.system.loader.CryptService;
+//not GWT import const CryptService = globalThis.org.allbinary.bundle.logic.system.loader.CryptService;
 
                 
 export class CryptServiceFactory

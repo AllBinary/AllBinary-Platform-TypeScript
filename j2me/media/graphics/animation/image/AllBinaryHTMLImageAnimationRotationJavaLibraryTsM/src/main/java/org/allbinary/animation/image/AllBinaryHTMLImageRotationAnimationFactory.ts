@@ -71,13 +71,13 @@ import { GameConfigurationCentral } from '../../../../org/allbinary/game/configu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { AllBinaryHTMLImageRotationAnimation } from './AllBinaryHTMLImageRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryHTMLImageRotationAnimation;
+//not GWT import const AllBinaryHTMLImageRotationAnimation = globalThis.org.allbinary.animation.image.AllBinaryHTMLImageRotationAnimation;
 
                 import { AllBinaryAdjustedHTMLImageRotationAnimation } from './AllBinaryAdjustedHTMLImageRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryAdjustedHTMLImageRotationAnimation;
+//not GWT import const AllBinaryAdjustedHTMLImageRotationAnimation = globalThis.org.allbinary.animation.image.AllBinaryAdjustedHTMLImageRotationAnimation;
 
                 
 export class AllBinaryHTMLImageRotationAnimationFactory extends BaseImageAnimationFactory {

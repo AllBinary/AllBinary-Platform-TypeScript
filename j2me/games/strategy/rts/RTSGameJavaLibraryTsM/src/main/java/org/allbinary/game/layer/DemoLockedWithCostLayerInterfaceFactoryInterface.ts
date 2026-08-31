@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CostLayerInterfaceFactoryInterface } from './CostLayerInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.CostLayerInterfaceFactoryInterface;
+//not GWT import const CostLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.CostLayerInterfaceFactoryInterface;
 
                 
 export interface DemoLockedWithCostLayerInterfaceFactoryInterface extends CostLayerInterfaceFactoryInterface {

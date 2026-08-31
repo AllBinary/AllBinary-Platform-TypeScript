@@ -67,16 +67,16 @@ import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.VehiclePropertiesCompositeInterface;
+//not GWT import const VehiclePropertiesCompositeInterface = globalThis.org.allbinary.game.layer.VehiclePropertiesCompositeInterface;
 
                 import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
 
                 import { VehicleProperties } from './VehicleProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.VehicleProperties;
+//not GWT import const VehicleProperties = globalThis.org.allbinary.game.layer.VehicleProperties;
 
                 import { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.VehicleFrictionProperties;
+//not GWT import const VehicleFrictionProperties = globalThis.org.allbinary.game.layer.VehicleFrictionProperties;
 
                 
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {

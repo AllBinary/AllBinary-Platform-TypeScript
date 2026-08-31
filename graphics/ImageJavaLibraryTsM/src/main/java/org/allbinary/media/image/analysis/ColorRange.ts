@@ -51,10 +51,10 @@ import { awt } from '../../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
                 import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.analysis.Color;
+//not GWT import const Color = globalThis.org.allbinary.media.image.analysis.Color;
 
                 
 export class ColorRange

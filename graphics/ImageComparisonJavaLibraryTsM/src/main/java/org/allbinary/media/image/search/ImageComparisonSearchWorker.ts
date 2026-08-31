@@ -83,7 +83,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonSearchConstraintsInterface } from './ImageComparisonSearchConstraintsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.search.ImageComparisonSearchConstraintsInterface;
+//not GWT import const ImageComparisonSearchConstraintsInterface = globalThis.org.allbinary.media.image.search.ImageComparisonSearchConstraintsInterface;
 
                 
 export class ImageComparisonSearchWorker extends BasicEventHandler implements ImageComparisonResultsListener {

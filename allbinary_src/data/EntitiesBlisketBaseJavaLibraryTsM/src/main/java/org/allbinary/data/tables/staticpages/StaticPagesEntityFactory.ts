@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticPagesEntity } from './StaticPagesEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
+//not GWT import const StaticPagesEntity = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
 
                 
 export class StaticPagesEntityFactory

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AudioContentTypeData } from './AudioContentTypeData.js';
-//not GWT import const  = globalThis.org.allbinary.audio.AudioContentTypeData;
+//not GWT import const AudioContentTypeData = globalThis.org.allbinary.audio.AudioContentTypeData;
 
                 
 export class AudioContentTypeDataFactory

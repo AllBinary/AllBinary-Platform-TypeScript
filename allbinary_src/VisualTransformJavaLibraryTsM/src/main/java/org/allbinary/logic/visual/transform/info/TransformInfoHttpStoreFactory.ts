@@ -49,13 +49,13 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoFactoryInterface } from './TransformInfoFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoFactoryInterface;
+//not GWT import const TransformInfoFactoryInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoFactoryInterface;
 
                 import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
+//not GWT import const TransformInfoHttpStore = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
 
                 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
                 
 export class TransformInfoHttpStoreFactory

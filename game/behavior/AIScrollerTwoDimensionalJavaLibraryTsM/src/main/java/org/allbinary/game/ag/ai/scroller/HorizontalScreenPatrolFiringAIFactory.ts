@@ -61,7 +61,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HorizontalScreenPatrolAI } from './HorizontalScreenPatrolAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.scroller.HorizontalScreenPatrolAI;
+//not GWT import const HorizontalScreenPatrolAI = globalThis.org.allbinary.game.ag.ai.scroller.HorizontalScreenPatrolAI;
 
                 
 export class HorizontalScreenPatrolFiringAIFactory

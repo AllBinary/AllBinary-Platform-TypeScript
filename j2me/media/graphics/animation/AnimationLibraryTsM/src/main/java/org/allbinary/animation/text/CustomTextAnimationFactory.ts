@@ -73,10 +73,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextAnimation } from './CustomTextAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.CustomTextAnimation;
+//not GWT import const CustomTextAnimation = globalThis.org.allbinary.animation.text.CustomTextAnimation;
 
                 import { AdjustCustomTextAnimation } from './AdjustCustomTextAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.AdjustCustomTextAnimation;
+//not GWT import const AdjustCustomTextAnimation = globalThis.org.allbinary.animation.text.AdjustCustomTextAnimation;
 
                 
 export class CustomTextAnimationFactory

@@ -55,10 +55,10 @@ import { AndroidImageInterface } from '../../../org/microemu/android/device/Andr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { Config } from './Config.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.Config;
+//not GWT import const Config = globalThis.org.allbinary.graphics.Config;
 
                 import { OpenGLBitmap } from './OpenGLBitmap.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.OpenGLBitmap;
+//not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
 
                 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {

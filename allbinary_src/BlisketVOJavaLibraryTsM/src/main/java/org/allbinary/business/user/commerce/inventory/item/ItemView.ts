@@ -73,13 +73,13 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderItemInterface } from './OrderItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.OrderItemInterface;
+//not GWT import const OrderItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.OrderItemInterface;
 
                 import { ItemData } from './ItemData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemData;
+//not GWT import const ItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemData;
 
                 import { BasicItemView } from './BasicItemView.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemView;
+//not GWT import const BasicItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemView;
 
                 
 export class ItemView

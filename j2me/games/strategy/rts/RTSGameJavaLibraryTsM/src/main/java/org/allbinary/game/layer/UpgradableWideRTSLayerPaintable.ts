@@ -53,13 +53,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
+//not GWT import const RTSLayerCompositePaintable = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
 
                 import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.UpgradableRTSLayerHudPaintable;
+//not GWT import const UpgradableRTSLayerHudPaintable = globalThis.org.allbinary.game.layer.UpgradableRTSLayerHudPaintable;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 
 export class UpgradableWideRTSLayerPaintable extends RTSLayerCompositePaintable {

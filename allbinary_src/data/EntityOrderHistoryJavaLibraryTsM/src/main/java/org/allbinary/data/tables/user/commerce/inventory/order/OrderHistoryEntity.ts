@@ -197,7 +197,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryEntityInterface } from './OrderHistoryEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
+//not GWT import const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
 
                 
 export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityInterface {

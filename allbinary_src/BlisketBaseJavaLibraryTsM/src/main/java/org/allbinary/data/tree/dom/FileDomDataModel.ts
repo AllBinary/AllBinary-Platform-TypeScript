@@ -61,13 +61,13 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
                 import { FileTableMapping } from './FileTableMapping.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.FileTableMapping;
+//not GWT import const FileTableMapping = globalThis.org.allbinary.data.tree.dom.FileTableMapping;
 
                 import { ModDomHelper } from './ModDomHelper.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
                 
 export class FileDomDataModel

@@ -85,13 +85,13 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+//not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
                 import { UserConfiguration } from './UserConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
+//not GWT import const UserConfiguration = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
 
                 import { UserConfigurationData } from './UserConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
+//not GWT import const UserConfigurationData = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
 
                 
 export class UserConfigurationView

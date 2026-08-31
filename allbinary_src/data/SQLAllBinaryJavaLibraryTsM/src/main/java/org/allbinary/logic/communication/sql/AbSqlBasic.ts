@@ -91,10 +91,10 @@ import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communicat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlTypeStrings } from './SqlTypeStrings.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
+//not GWT import const SqlTypeStrings = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
 
                 import { SqlStrings } from './SqlStrings.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+//not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
                 
 export class AbSqlBasic

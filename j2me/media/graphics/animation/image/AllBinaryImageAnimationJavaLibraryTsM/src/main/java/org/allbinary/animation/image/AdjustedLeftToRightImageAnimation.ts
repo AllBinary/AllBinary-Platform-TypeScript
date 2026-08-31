@@ -51,7 +51,7 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LeftToRightImageAnimation } from './LeftToRightImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
+//not GWT import const LeftToRightImageAnimation = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
 
                 
 export class AdjustedLeftToRightImageAnimation extends LeftToRightImageAnimation {

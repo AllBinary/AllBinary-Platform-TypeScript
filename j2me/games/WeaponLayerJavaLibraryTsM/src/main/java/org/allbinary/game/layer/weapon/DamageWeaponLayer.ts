@@ -59,10 +59,10 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
+//not GWT import const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
 
                 import { CollidableDamageWeaponBehavior } from './CollidableDamageWeaponBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.weapon.CollidableDamageWeaponBehavior;
+//not GWT import const CollidableDamageWeaponBehavior = globalThis.org.allbinary.game.layer.weapon.CollidableDamageWeaponBehavior;
 
                 
 export class DamageWeaponLayer extends WeaponLayer {

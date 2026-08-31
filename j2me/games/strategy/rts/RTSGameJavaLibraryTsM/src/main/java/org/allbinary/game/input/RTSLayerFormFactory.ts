@@ -49,7 +49,7 @@ import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/Scr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerFormFactoryInterface } from './RTSLayerFormFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.RTSLayerFormFactoryInterface;
+//not GWT import const RTSLayerFormFactoryInterface = globalThis.org.allbinary.game.input.RTSLayerFormFactoryInterface;
 
                 
 export class RTSLayerFormFactory

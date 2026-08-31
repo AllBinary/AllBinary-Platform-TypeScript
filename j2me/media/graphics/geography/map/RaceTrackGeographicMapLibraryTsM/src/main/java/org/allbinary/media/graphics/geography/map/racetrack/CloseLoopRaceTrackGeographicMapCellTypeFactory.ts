@@ -37,10 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapCellTypeFactory } from './RaceTrackGeographicMapCellTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellTypeFactory;
+//not GWT import const RaceTrackGeographicMapCellTypeFactory = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellTypeFactory;
 
                 import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from './EmptyRaceRaceTrackGeographicMapCellTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.EmptyRaceRaceTrackGeographicMapCellTypeFactory;
+//not GWT import const EmptyRaceRaceTrackGeographicMapCellTypeFactory = globalThis.org.allbinary.media.graphics.geography.map.racetrack.EmptyRaceRaceTrackGeographicMapCellTypeFactory;
 
                 
 export class CloseLoopRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {

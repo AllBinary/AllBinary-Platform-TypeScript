@@ -99,13 +99,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABRunnable } from './ABRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ABRunnable;
+//not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
 
                 import { PrimaryThreadPool } from './PrimaryThreadPool.js';
-//not GWT import const  = globalThis.org.allbinary.thread.PrimaryThreadPool;
+//not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
 
                 import { ThreadPool } from './ThreadPool.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ThreadPool;
+//not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
 
                 
 export class ThreadFactoryUtil

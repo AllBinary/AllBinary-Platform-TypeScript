@@ -87,13 +87,13 @@ import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidlet } from './GameMidlet.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.GameMidlet;
+//not GWT import const GameMidlet = globalThis.org.allbinary.game.midlet.GameMidlet;
 
                 import { DemoRunnable } from './DemoRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoRunnable;
+//not GWT import const DemoRunnable = globalThis.org.allbinary.game.midlet.DemoRunnable;
 
                 import { CreateGameRunnable } from './CreateGameRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.CreateGameRunnable;
+//not GWT import const CreateGameRunnable = globalThis.org.allbinary.game.midlet.CreateGameRunnable;
 
                 
 export class DemoGameMidlet extends GameMidlet {

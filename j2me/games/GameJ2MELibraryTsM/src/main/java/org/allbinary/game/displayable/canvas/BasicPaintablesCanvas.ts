@@ -75,7 +75,7 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
+//not GWT import const GameCommandCanvas = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
 
                 
 export class BasicPaintablesCanvas extends GameCommandCanvas {

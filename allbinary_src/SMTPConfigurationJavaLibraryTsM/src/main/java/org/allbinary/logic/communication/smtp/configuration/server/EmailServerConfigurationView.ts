@@ -69,16 +69,16 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
+//not GWT import const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
 
                 import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
+//not GWT import const EmailServerConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
 
                 import { EmailServerConfiguration } from './EmailServerConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfiguration;
+//not GWT import const EmailServerConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfiguration;
 
                 import { EmailServerConfigurationMapping } from './EmailServerConfigurationMapping.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationMapping;
+//not GWT import const EmailServerConfigurationMapping = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationMapping;
 
                 
 export class EmailServerConfigurationView

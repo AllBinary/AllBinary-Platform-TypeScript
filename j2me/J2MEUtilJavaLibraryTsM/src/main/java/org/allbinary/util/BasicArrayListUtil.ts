@@ -69,13 +69,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ImmutableBasicArrayList } from './ImmutableBasicArrayList.js';
-const  = globalThis.org.allbinary.util.ImmutableBasicArrayList;
+const ImmutableBasicArrayList = globalThis.org.allbinary.util.ImmutableBasicArrayList;
 
                 //not plain js import { BasicArrayList } from './BasicArrayList.js';
-const  = globalThis.org.allbinary.util.BasicArrayList;
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
                 //not plain js import { BasicArrayListD } from './BasicArrayListD.js';
-const  = globalThis.org.allbinary.util.BasicArrayListD;
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
                 
 export class BasicArrayListUtil

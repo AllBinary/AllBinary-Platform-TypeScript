@@ -83,7 +83,7 @@ import { Direction } from '../../../../org/allbinary/direction/Direction.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterface } from './CompoundAnimationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundAnimationInterface;
+//not GWT import const CompoundAnimationInterface = globalThis.org.allbinary.animation.compound.CompoundAnimationInterface;
 
                 
 export class CompoundRotationAnimation extends RotationAnimation implements CompoundAnimationInterface {

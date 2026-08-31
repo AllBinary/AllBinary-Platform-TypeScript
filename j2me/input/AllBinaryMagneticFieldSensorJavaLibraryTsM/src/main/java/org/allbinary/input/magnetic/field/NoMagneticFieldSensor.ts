@@ -47,7 +47,7 @@ import { Orientation } from '../../../../../org/allbinary/logic/math/Orientation
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMagneticFieldSensor } from './AllBinaryMagneticFieldSensor.js';
-//not GWT import const  = globalThis.org.allbinary.input.magnetic.field.AllBinaryMagneticFieldSensor;
+//not GWT import const AllBinaryMagneticFieldSensor = globalThis.org.allbinary.input.magnetic.field.AllBinaryMagneticFieldSensor;
 
                 
 export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implements AllBinarySensorListener {

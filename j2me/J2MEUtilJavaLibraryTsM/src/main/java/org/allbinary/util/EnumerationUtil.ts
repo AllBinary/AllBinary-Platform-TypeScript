@@ -51,10 +51,10 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { BasicArrayListD } from './BasicArrayListD.js';
-const  = globalThis.org.allbinary.util.BasicArrayListD;
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
                 //not plain js import { BasicArrayList } from './BasicArrayList.js';
-const  = globalThis.org.allbinary.util.BasicArrayList;
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
                 //ArkTs does not have this.  So this is for the ArkTs build.
 export class EnumerationUtil

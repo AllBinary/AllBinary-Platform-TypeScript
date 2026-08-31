@@ -101,7 +101,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationFactoryInitializationVisitor } from './AnimationFactoryInitializationVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AnimationFactoryInitializationVisitor;
+//not GWT import const AnimationFactoryInitializationVisitor = globalThis.org.allbinary.animation.image.AnimationFactoryInitializationVisitor;
 
                 
 export class BaseImageAnimationFactory

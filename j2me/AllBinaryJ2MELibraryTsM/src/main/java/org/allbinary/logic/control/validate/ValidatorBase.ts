@@ -75,7 +75,7 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidatorBaseInterface } from './ValidatorBaseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.control.validate.ValidatorBaseInterface;
+//not GWT import const ValidatorBaseInterface = globalThis.org.allbinary.logic.control.validate.ValidatorBaseInterface;
 
                 
 export class ValidatorBase

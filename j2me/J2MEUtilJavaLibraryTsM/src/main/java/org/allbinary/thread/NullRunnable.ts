@@ -49,7 +49,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ARunnable } from './ARunnable.js';
-const  = globalThis.org.allbinary.thread.ARunnable;
+const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
                 
 export class NullRunnable extends ARunnable {

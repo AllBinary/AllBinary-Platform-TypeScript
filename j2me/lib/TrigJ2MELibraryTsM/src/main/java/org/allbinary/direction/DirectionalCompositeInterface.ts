@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionalInterface } from './DirectionalInterface.js';
-//not GWT import const  = globalThis.org.allbinary.direction.DirectionalInterface;
+//not GWT import const DirectionalInterface = globalThis.org.allbinary.direction.DirectionalInterface;
 
                 
 export interface DirectionalCompositeInterface {

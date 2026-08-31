@@ -59,7 +59,7 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OptimizedTickableLayerManager } from './OptimizedTickableLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.tick.OptimizedTickableLayerManager;
+//not GWT import const OptimizedTickableLayerManager = globalThis.org.allbinary.game.tick.OptimizedTickableLayerManager;
 
                 
 export class OptimizedTickableLayerProcessor extends LayerProcessor {

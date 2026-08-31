@@ -43,13 +43,13 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.GameAdStateFactoryInterface;
+//not GWT import const GameAdStateFactoryInterface = globalThis.org.allbinary.business.advertisement.GameAdStateFactoryInterface;
 
                 import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.AppNameLicensingAdConfiguration;
+//not GWT import const AppNameLicensingAdConfiguration = globalThis.org.allbinary.business.advertisement.AppNameLicensingAdConfiguration;
 
                 import { GameAdStateBase } from './GameAdStateBase.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
+//not GWT import const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
 
                 
 export class GameAdStateFactory

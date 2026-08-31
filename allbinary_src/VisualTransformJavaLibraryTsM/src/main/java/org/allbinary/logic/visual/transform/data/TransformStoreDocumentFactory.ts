@@ -53,10 +53,10 @@ import { SearchRequest } from '../../../../../../org/allbinary/logic/control/sea
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformStoreDocument } from './TransformStoreDocument.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformStoreDocument;
+//not GWT import const TransformStoreDocument = globalThis.org.allbinary.logic.visual.transform.data.TransformStoreDocument;
 
                 import { TransformDocumentInterface } from './TransformDocumentInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+//not GWT import const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
 
                 
 export class TransformStoreDocumentFactory

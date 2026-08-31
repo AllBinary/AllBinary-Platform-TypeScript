@@ -49,22 +49,22 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorExplosionGenerator;
+//not GWT import const VectorExplosionGenerator = globalThis.org.allbinary.animation.VectorExplosionGenerator;
 
                 import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
                 import { VectorAnimationInterface } from './VectorAnimationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationInterface;
+//not GWT import const VectorAnimationInterface = globalThis.org.allbinary.animation.VectorAnimationInterface;
 
                 import { VectorRotationAnimation } from './VectorRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorRotationAnimation;
+//not GWT import const VectorRotationAnimation = globalThis.org.allbinary.animation.VectorRotationAnimation;
 
                 import { Animation } from './Animation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class VectorExplosionAnimationFactory

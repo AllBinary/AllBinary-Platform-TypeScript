@@ -85,7 +85,7 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
+//not GWT import const HighScoresCanvasInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
 
                 
 export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasInputProcessor implements UpdateMyFontInterface {

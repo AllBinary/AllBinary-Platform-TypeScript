@@ -49,10 +49,10 @@ import { PersistentInputMapping } from '../../../../org/allbinary/game/input/map
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCKeyFactory } from './PCKeyFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PCKeyFactory;
+//not GWT import const PCKeyFactory = globalThis.org.allbinary.game.input.PCKeyFactory;
 
                 import { GameKeyFactory } from './GameKeyFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyFactory;
+//not GWT import const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
 
                 
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {

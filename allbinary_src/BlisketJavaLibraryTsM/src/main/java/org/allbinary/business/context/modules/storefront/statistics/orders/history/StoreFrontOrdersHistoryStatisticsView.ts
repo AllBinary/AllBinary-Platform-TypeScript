@@ -61,10 +61,10 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontOrdersHistoryStatisticsInterface } from './StoreFrontOrdersHistoryStatisticsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsInterface;
+//not GWT import const StoreFrontOrdersHistoryStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsInterface;
 
                 import { StoreFrontOrdersHistoryStatisticsData } from './StoreFrontOrdersHistoryStatisticsData.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsData;
+//not GWT import const StoreFrontOrdersHistoryStatisticsData = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsData;
 
                 
 export class StoreFrontOrdersHistoryStatisticsView

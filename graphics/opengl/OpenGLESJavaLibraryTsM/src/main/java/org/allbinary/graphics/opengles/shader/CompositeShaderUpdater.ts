@@ -73,10 +73,10 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderUpdater } from './ShaderUpdater.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderUpdater;
+//not GWT import const ShaderUpdater = globalThis.org.allbinary.graphics.opengles.shader.ShaderUpdater;
 
                 import { ShaderStrings } from './ShaderStrings.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderStrings;
+//not GWT import const ShaderStrings = globalThis.org.allbinary.graphics.opengles.shader.ShaderStrings;
 
                 
 export class CompositeShaderUpdater extends ShaderUpdater {

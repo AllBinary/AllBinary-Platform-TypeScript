@@ -77,7 +77,7 @@ import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeblisketSessionData } from './WeblisketSessionData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+//not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
 
                 
 export class BasicWeblisketSession

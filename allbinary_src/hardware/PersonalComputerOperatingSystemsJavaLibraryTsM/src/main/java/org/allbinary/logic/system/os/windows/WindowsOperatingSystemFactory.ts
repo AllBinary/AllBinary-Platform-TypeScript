@@ -73,7 +73,7 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WindowsOS } from './WindowsOS.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.os.windows.WindowsOS;
+//not GWT import const WindowsOS = globalThis.org.allbinary.logic.system.os.windows.WindowsOS;
 
                 
 export class WindowsOperatingSystemFactory

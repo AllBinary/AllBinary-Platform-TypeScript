@@ -67,7 +67,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeightShippingModule } from './BasicWeightShippingModule.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.modules.BasicWeightShippingModule;
+//not GWT import const BasicWeightShippingModule = globalThis.org.allbinary.business.user.commerce.shipping.modules.BasicWeightShippingModule;
 
                 
 export class BasicWeightShippingModuleView extends BasicWeightShippingModule implements DomNodeInterface {

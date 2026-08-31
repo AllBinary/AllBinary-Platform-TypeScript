@@ -55,10 +55,10 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { BottomToTopImageAnimation } from './BottomToTopImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BottomToTopImageAnimation;
+//not GWT import const BottomToTopImageAnimation = globalThis.org.allbinary.animation.image.BottomToTopImageAnimation;
 
                 
 export class BottomToTopImageAnimationFactory extends BaseImageAnimationFactory {

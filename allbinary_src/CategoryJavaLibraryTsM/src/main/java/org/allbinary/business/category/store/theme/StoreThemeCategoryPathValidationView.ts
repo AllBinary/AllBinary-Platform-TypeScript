@@ -51,10 +51,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryPathView } from './StoreThemeCategoryPathView.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryPathView;
+//not GWT import const StoreThemeCategoryPathView = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryPathView;
 
                 import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
+//not GWT import const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
 
                 
 export class StoreThemeCategoryPathValidationView extends StoreThemeCategoryPathView implements ValidationInterface {

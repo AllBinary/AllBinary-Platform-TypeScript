@@ -65,10 +65,10 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.scroller.BasePatrolAI;
+//not GWT import const BasePatrolAI = globalThis.org.allbinary.game.ag.ai.scroller.BasePatrolAI;
 
                 import { PacePatrolAI } from './PacePatrolAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.scroller.PacePatrolAI;
+//not GWT import const PacePatrolAI = globalThis.org.allbinary.game.ag.ai.scroller.PacePatrolAI;
 
                 
 export class PacePatrolAIFactory

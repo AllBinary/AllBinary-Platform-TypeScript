@@ -61,7 +61,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryHelper } from './InventoryHelper.js';
-//not GWT import const  = globalThis.taghelpers.InventoryHelper;
+//not GWT import const InventoryHelper = globalThis.taghelpers.InventoryHelper;
 
                 
 export class InventoryHelperFactory

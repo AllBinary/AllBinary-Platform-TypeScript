@@ -59,7 +59,7 @@ import { LockedUtil } from '../../../../org/allbinary/logic/system/security/lice
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintable;
+//not GWT import const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
 
                 
 export class LockablePaintable extends ItemPaintable {

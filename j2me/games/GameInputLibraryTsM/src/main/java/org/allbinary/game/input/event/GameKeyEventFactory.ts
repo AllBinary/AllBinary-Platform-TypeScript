@@ -77,7 +77,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyEvent } from './GameKeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
                 
 export class GameKeyEventFactory

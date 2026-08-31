@@ -75,13 +75,13 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundStrings } from './SoundStrings.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundStrings;
+//not GWT import const SoundStrings = globalThis.org.allbinary.media.audio.SoundStrings;
 
                 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+//not GWT import const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
                 import { Sound } from './Sound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 
 export class Sounds

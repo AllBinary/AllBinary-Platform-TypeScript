@@ -59,7 +59,7 @@ import { LicensingException } from '../../../org/allbinary/logic/system/security
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHelper } from './TransformInfoHelper.js';
-//not GWT import const  = globalThis.taghelpers.transform.info.TransformInfoHelper;
+//not GWT import const TransformInfoHelper = globalThis.taghelpers.transform.info.TransformInfoHelper;
 
                 
 export class TransformInfoHelperFactory extends TagHelperFactory {

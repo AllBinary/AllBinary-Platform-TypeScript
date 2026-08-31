@@ -73,31 +73,31 @@ import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JDialog;
+//not GWT import const JDialog = globalThis.org.allbinary.graphics.j2me.dialog.JDialog;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.graphics.j2me.dialog.Dimension;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JTextField;
+//not GWT import const JTextField = globalThis.org.allbinary.graphics.j2me.dialog.JTextField;
 
                 import { Frame } from './Frame.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.Frame;
+//not GWT import const Frame = globalThis.org.allbinary.graphics.j2me.dialog.Frame;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.graphics.j2me.dialog.JButton;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.graphics.j2me.dialog.GridLayout;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.graphics.j2me.dialog.JLabel;
 
                 import { WindowAdapter } from './WindowAdapter.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.WindowAdapter;
+//not GWT import const WindowAdapter = globalThis.org.allbinary.graphics.j2me.dialog.WindowAdapter;
 
                 import { WindowEvent } from './WindowEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.WindowEvent;
+//not GWT import const WindowEvent = globalThis.org.allbinary.graphics.j2me.dialog.WindowEvent;
 
                 
 export class NewWorkAreaJDialog extends javax.swing.JDialog {

@@ -57,7 +57,7 @@ import { MotionGestureReceiveInterfaceFactory } from '../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventProcessor } from './MotionEventProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.MotionEventProcessor;
+//not GWT import const MotionEventProcessor = globalThis.org.allbinary.android.input.motion.MotionEventProcessor;
 
                 
 export class BaseGameInputMotionEventProcessor extends MotionEventProcessor {

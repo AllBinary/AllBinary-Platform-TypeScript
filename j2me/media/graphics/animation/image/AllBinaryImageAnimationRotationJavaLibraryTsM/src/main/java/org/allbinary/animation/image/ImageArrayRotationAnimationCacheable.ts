@@ -55,10 +55,10 @@ import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
+//not GWT import const AdjustedImageArrayRotationAnimation = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
 
                 import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
+//not GWT import const ImageArrayRotationAnimationInfo = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
 
                 
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {

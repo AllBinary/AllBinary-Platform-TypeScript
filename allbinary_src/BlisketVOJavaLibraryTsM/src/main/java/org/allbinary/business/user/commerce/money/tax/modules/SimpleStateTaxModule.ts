@@ -123,7 +123,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TaxModuleInterface } from './TaxModuleInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.tax.modules.TaxModuleInterface;
+//not GWT import const TaxModuleInterface = globalThis.org.allbinary.business.user.commerce.money.tax.modules.TaxModuleInterface;
 
                 
 export class SimpleStateTaxModule

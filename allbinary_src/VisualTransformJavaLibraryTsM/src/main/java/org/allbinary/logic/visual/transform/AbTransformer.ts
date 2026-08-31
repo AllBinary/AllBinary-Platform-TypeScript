@@ -81,7 +81,7 @@ import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../org/al
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTransformerInterface } from './BasicTransformerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.BasicTransformerInterface;
+//not GWT import const BasicTransformerInterface = globalThis.org.allbinary.logic.visual.transform.BasicTransformerInterface;
 
                 
 export class AbTransformer

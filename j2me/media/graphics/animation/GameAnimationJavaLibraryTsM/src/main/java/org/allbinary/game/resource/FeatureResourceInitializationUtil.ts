@@ -53,10 +53,10 @@ import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
+//not GWT import const FeaturedResourceFactory = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
 
                 import { FeaturedResourceRelativeRelationshipFactory } from './FeaturedResourceRelativeRelationshipFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.resource.FeaturedResourceRelativeRelationshipFactory;
+//not GWT import const FeaturedResourceRelativeRelationshipFactory = globalThis.org.allbinary.game.resource.FeaturedResourceRelativeRelationshipFactory;
 
                 
 export class FeatureResourceInitializationUtil

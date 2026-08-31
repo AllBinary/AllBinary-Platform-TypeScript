@@ -167,37 +167,37 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
                 import { InputFactory } from './InputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
                 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessor;
+//not GWT import const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
 
                 import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.ScrollMapPlayerGameInput;
+//not GWT import const ScrollMapPlayerGameInput = globalThis.org.allbinary.game.input.ScrollMapPlayerGameInput;
 
                 import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
+//not GWT import const SelectedRTSLayersPlayerGameInput = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
 
                 import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.LayerPositionFinderInterface;
+//not GWT import const LayerPositionFinderInterface = globalThis.org.allbinary.game.input.LayerPositionFinderInterface;
 
                 import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.SelectRTSLayerVisitorFactoryInterface;
+//not GWT import const SelectRTSLayerVisitorFactoryInterface = globalThis.org.allbinary.game.input.SelectRTSLayerVisitorFactoryInterface;
 
                 import { RTSPlayerLeftGameInputProcessor } from './RTSPlayerLeftGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.RTSPlayerLeftGameInputProcessor;
+//not GWT import const RTSPlayerLeftGameInputProcessor = globalThis.org.allbinary.game.input.RTSPlayerLeftGameInputProcessor;
 
                 import { RTSPlayerRightGameInputProcessor } from './RTSPlayerRightGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.RTSPlayerRightGameInputProcessor;
+//not GWT import const RTSPlayerRightGameInputProcessor = globalThis.org.allbinary.game.input.RTSPlayerRightGameInputProcessor;
 
                 import { RTSPlayerFireGameInputProcessor } from './RTSPlayerFireGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.RTSPlayerFireGameInputProcessor;
+//not GWT import const RTSPlayerFireGameInputProcessor = globalThis.org.allbinary.game.input.RTSPlayerFireGameInputProcessor;
 
                 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
+//not GWT import const GameInputProcessorUtil = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
 
                 
 export class RTSPlayerGameInput extends PlayerGameInput {

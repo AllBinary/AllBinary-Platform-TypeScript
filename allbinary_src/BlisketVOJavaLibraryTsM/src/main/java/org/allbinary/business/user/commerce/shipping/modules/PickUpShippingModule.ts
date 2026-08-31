@@ -51,7 +51,7 @@ import { Money } from '../../../../../../../org/allbinary/business/user/commerce
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingInterface } from './ShippingInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
+//not GWT import const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
 
                 
 export class PickUpShippingModule

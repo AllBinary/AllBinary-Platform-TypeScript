@@ -51,13 +51,13 @@ import { Activity } from '../../../../../../android/app/Activity.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressRunnable } from './ProgressRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressRunnable;
+//not GWT import const ProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressRunnable;
 
                 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 import { AndroidBasicTitleProgressBar } from './AndroidBasicTitleProgressBar.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.AndroidBasicTitleProgressBar;
+//not GWT import const AndroidBasicTitleProgressBar = globalThis.org.allbinary.graphics.canvas.transition.progress.AndroidBasicTitleProgressBar;
 
                 
 export class TitleProgressBarPortionSetProgressRunnable extends ProgressRunnable {

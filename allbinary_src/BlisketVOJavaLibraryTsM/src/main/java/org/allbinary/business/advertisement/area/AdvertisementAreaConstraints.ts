@@ -69,10 +69,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
+//not GWT import const AdvertisementAreaConstraintsInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
 
                 import { AdvertisementAreaData } from './AdvertisementAreaData.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
+//not GWT import const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
 
                 
 export class AdvertisementAreaConstraints

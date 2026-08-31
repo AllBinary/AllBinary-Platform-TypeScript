@@ -45,7 +45,7 @@ import { HashMap } from '../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandTag } from './CommandTag.js';
-//not GWT import const  = globalThis.tags.CommandTag;
+//not GWT import const CommandTag = globalThis.tags.CommandTag;
 
                 
 export class PropertiesTag extends CommandTag {

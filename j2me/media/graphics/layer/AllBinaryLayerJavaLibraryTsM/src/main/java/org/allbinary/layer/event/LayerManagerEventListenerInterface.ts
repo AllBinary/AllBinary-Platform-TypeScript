@@ -51,7 +51,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerEvent } from './LayerManagerEvent.js';
-//not GWT import const  = globalThis.org.allbinary.layer.event.LayerManagerEvent;
+//not GWT import const LayerManagerEvent = globalThis.org.allbinary.layer.event.LayerManagerEvent;
 
                 
 export interface LayerManagerEventListenerInterface extends EventListenerInterface {

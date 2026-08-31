@@ -35,7 +35,7 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomItem } from './CustomItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.item.CustomItem;
+//not GWT import const CustomItem = globalThis.org.allbinary.graphics.form.item.CustomItem;
 
                 
 export class CustomGaugeItem extends CustomItem {

@@ -43,13 +43,13 @@ import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/work
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
+//not GWT import const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
 
                 import { SelectionTool } from './SelectionTool.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionTool;
+//not GWT import const SelectionTool = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionTool;
 
                 import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+//not GWT import const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
                 
 export class SelectionToolFactory

@@ -75,7 +75,7 @@ import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryEntityInterface } from './CategoryEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.category.CategoryEntityInterface;
+//not GWT import const CategoryEntityInterface = globalThis.org.allbinary.data.tables.category.CategoryEntityInterface;
 
                 
 export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface {

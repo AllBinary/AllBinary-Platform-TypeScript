@@ -79,7 +79,7 @@ import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPos
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+//not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
 
                 
 export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements PlayerGameInputCompositeInterface {

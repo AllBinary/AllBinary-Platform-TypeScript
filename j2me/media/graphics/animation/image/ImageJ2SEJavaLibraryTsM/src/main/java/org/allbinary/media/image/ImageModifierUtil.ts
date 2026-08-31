@@ -73,10 +73,10 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
+const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageModifierUtil

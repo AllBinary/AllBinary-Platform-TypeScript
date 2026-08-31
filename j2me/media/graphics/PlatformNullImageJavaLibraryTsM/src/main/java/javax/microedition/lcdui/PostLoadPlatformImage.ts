@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { PlatformImage } from './PlatformImage.js';
-const  = globalThis.javax.microedition.lcdui.PlatformImage;
+const PlatformImage = globalThis.javax.microedition.lcdui.PlatformImage;
 
                 //PlatformNullImageJavaLibrary
 export class PostLoadPlatformImage extends PlatformImage {

@@ -49,25 +49,25 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
                 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimationInterface;
+//not GWT import const IndexedAnimationInterface = globalThis.org.allbinary.animation.IndexedAnimationInterface;
 
                 import { NullIndexedAnimation } from './NullIndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.NullIndexedAnimation;
+//not GWT import const NullIndexedAnimation = globalThis.org.allbinary.animation.NullIndexedAnimation;
 
                 import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
+//not GWT import const IndexedAnimationBehavior = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
 
                 //import { NullIndexedAnimationInner } from './NullIndexedAnimationInner.js';
-//not GWT import const  = globalThis.org.allbinary.animation.NullIndexedAnimationInner;
+//not GWT import const NullIndexedAnimationInner = globalThis.org.allbinary.animation.NullIndexedAnimationInner;
 
                 import { Animation } from './Animation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class NullIndexedAnimationFactory

@@ -23,7 +23,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
-//not GWT import const  = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
                 
 export interface GL11 extends GL10 {

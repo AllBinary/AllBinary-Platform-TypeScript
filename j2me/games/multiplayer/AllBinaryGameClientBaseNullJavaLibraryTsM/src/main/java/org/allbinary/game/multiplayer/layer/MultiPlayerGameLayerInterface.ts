@@ -45,7 +45,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiplayerBehavior } from './MultiplayerBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.multiplayer.layer.MultiplayerBehavior;
+//not GWT import const MultiplayerBehavior = globalThis.org.allbinary.game.multiplayer.layer.MultiplayerBehavior;
 
                 
 export interface MultiPlayerGameLayerInterface {

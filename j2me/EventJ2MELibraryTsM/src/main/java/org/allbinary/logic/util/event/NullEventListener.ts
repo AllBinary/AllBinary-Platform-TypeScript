@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerInterface } from './EventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
                 import { AllBinaryEventObject } from './AllBinaryEventObject.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
                 
 export class NullEventListener

@@ -49,10 +49,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+//not GWT import const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
                 import { Sound } from './Sound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 
 export class BaseSoundsFactory

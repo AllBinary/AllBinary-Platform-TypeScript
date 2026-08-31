@@ -53,7 +53,7 @@ import { AnimationBehavior } from '../../../../../org/allbinary/animation/Animat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.AllBinarySpriteRotationAnimation;
+//not GWT import const AllBinarySpriteRotationAnimation = globalThis.org.allbinary.animation.image.sprite.AllBinarySpriteRotationAnimation;
 
                 
 export class AllBinaryAdjustedSpriteRotationAnimation extends AllBinarySpriteRotationAnimation {

@@ -53,10 +53,10 @@ import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/an
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundAnimationInterfaceFactory;
+//not GWT import const CompoundAnimationInterfaceFactory = globalThis.org.allbinary.animation.compound.CompoundAnimationInterfaceFactory;
 
                 import { CompoundIndexedAnimation } from './CompoundIndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundIndexedAnimation;
+//not GWT import const CompoundIndexedAnimation = globalThis.org.allbinary.animation.compound.CompoundIndexedAnimation;
 
                 
 export class CompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {

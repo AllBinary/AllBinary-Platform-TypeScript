@@ -61,7 +61,7 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameOptionsForm;
+//not GWT import const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
 
                 
 export class GameOptionsFormFactory

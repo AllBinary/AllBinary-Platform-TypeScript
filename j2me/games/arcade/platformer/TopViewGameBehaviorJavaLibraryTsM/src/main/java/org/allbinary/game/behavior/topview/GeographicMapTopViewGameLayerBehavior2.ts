@@ -71,10 +71,10 @@ import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapTopViewLayerBehavior } from './GeographicMapTopViewLayerBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.GeographicMapTopViewLayerBehavior;
+//not GWT import const GeographicMapTopViewLayerBehavior = globalThis.org.allbinary.game.behavior.topview.GeographicMapTopViewLayerBehavior;
 
                 import { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterInterface;
+//not GWT import const TopViewCharacterInterface = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterInterface;
 
                 
 export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopViewLayerBehavior {

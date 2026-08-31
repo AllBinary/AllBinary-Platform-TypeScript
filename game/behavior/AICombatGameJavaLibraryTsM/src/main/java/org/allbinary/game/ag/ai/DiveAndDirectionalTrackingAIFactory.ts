@@ -73,16 +73,16 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThrustAIVisitorFactory } from './ThrustAIVisitorFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitorFactory;
+//not GWT import const ThrustAIVisitorFactory = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitorFactory;
 
                 import { BasicProbabilityAIDataFactory } from './BasicProbabilityAIDataFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.BasicProbabilityAIDataFactory;
+//not GWT import const BasicProbabilityAIDataFactory = globalThis.org.allbinary.game.ag.ai.BasicProbabilityAIDataFactory;
 
                 import { LastKeyAIVisitorFactory } from './LastKeyAIVisitorFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.LastKeyAIVisitorFactory;
+//not GWT import const LastKeyAIVisitorFactory = globalThis.org.allbinary.game.ag.ai.LastKeyAIVisitorFactory;
 
                 import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
+//not GWT import const DiveAndDirectionalTrackingAI = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
 
                 
 export class DiveAndDirectionalTrackingAIFactory

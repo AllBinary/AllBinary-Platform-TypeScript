@@ -67,16 +67,16 @@ import { StringValidationUtil } from '../../../../../../org/allbinary/logic/stri
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
+//not GWT import const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
 
                 import { LicenseType } from './LicenseType.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
+//not GWT import const LicenseType = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
 
                 import { AbeClientInformationData } from './AbeClientInformationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
+//not GWT import const AbeClientInformationData = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
 
                 import { LicenseTypeFactory } from './LicenseTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LicenseTypeFactory;
+//not GWT import const LicenseTypeFactory = globalThis.org.allbinary.logic.system.security.licensing.LicenseTypeFactory;
 
                 
 export class AbeClientLicense

@@ -49,7 +49,7 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTerrainInfo } from './BasicTerrainInfo.js';
-//not GWT import const  = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
+//not GWT import const BasicTerrainInfo = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
 
                 
 export class TerrainEvent extends AllBinaryEventObject {

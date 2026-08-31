@@ -51,10 +51,10 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.Rectangle;
 
                 import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.Color;
+//not GWT import const Color = globalThis.org.allbinary.media.image.comparison.Color;
 
                 
 export interface ImageComparatorConstraintsInterface {

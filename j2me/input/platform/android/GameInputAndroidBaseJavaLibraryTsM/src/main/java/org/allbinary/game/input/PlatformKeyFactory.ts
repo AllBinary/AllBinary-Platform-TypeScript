@@ -29,16 +29,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ActivityFractureControllerUtilFactory } from './ActivityFractureControllerUtilFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.ActivityFractureControllerUtilFactory;
+//not GWT import const ActivityFractureControllerUtilFactory = globalThis.org.allbinary.game.input.ActivityFractureControllerUtilFactory;
 
                 import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.AndroidKeyFactory;
+//not GWT import const AndroidKeyFactory = globalThis.org.allbinary.game.input.AndroidKeyFactory;
 
                 import { AndroidGameKey } from './AndroidGameKey.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.AndroidGameKey;
+//not GWT import const AndroidGameKey = globalThis.org.allbinary.game.input.AndroidGameKey;
 
                 import { Input } from './Input.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
                 
 export class PlatformKeyFactory

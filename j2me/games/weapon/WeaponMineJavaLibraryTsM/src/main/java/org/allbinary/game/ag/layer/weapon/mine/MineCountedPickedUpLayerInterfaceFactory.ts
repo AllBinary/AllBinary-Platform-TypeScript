@@ -85,10 +85,10 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayerCircularStaticPool } from './MineLayerCircularStaticPool.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayerCircularStaticPool;
+//not GWT import const MineLayerCircularStaticPool = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayerCircularStaticPool;
 
                 import { MineWeaponResources } from './MineWeaponResources.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineWeaponResources;
+//not GWT import const MineWeaponResources = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineWeaponResources;
 
                 
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {

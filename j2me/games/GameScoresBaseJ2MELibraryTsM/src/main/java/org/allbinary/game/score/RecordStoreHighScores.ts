@@ -135,13 +135,13 @@ import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/Plat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScores } from './HighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 import { HighScore } from './HighScore.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScore;
+//not GWT import const HighScore = globalThis.org.allbinary.game.score.HighScore;
 
                 import { ScoreComparator } from './ScoreComparator.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.ScoreComparator;
+//not GWT import const ScoreComparator = globalThis.org.allbinary.game.score.ScoreComparator;
 
                 
 export class RecordStoreHighScores extends HighScores {

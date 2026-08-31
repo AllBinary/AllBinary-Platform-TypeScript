@@ -55,10 +55,10 @@ import { Vector } from '../../../../../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameSkillType } from './GameSkillType.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillType;
+//not GWT import const GameSkillType = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillType;
 
                 import { GameSkillPropertyInterface } from './GameSkillPropertyInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillPropertyInterface;
+//not GWT import const GameSkillPropertyInterface = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillPropertyInterface;
 
                 
 export class GameSkill

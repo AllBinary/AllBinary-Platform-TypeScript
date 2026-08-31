@@ -45,7 +45,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
-const  = globalThis.org.allbinary.util.BasicArrayListS;
+const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
                 
 export class BasicArrayListD extends BasicArrayListS {

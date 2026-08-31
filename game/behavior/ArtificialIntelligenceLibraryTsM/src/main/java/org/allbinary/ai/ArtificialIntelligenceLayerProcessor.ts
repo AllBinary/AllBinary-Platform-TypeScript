@@ -51,10 +51,10 @@ import { LayerProcessor } from '../../../org/allbinary/layer/LayerProcessor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceLayerManager } from './ArtificialIntelligenceLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.ai.ArtificialIntelligenceLayerManager;
+//not GWT import const ArtificialIntelligenceLayerManager = globalThis.org.allbinary.ai.ArtificialIntelligenceLayerManager;
 
                 import { ArtificialIntelligenceCompositeInterface } from './ArtificialIntelligenceCompositeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.ai.ArtificialIntelligenceCompositeInterface;
+//not GWT import const ArtificialIntelligenceCompositeInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceCompositeInterface;
 
                 
 export class ArtificialIntelligenceLayerProcessor extends LayerProcessor {

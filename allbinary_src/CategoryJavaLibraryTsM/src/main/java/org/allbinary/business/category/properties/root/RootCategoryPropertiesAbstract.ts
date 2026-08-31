@@ -75,7 +75,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RootCategoryPropertiesInterface } from './RootCategoryPropertiesInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.properties.root.RootCategoryPropertiesInterface;
+//not GWT import const RootCategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.root.RootCategoryPropertiesInterface;
 
                 
 export class RootCategoryPropertiesAbstract

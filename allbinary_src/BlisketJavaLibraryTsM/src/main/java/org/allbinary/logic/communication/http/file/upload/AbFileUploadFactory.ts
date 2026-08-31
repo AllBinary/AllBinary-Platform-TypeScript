@@ -77,13 +77,13 @@ import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileUpload } from './AbFileUpload.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUpload;
+//not GWT import const AbFileUpload = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUpload;
 
                 import { HttpFileUploadUtil } from './HttpFileUploadUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFileUploadUtil;
+//not GWT import const HttpFileUploadUtil = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFileUploadUtil;
 
                 import { AbFileItem } from './AbFileItem.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileItem;
+//not GWT import const AbFileItem = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileItem;
 
                 
 export class AbFileUploadFactory

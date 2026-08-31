@@ -77,7 +77,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialAnimation } from './SpecialAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.special.SpecialAnimation;
+//not GWT import const SpecialAnimation = globalThis.org.allbinary.animation.special.SpecialAnimation;
 
                 
 export class TitleAnimation extends SpecialAnimation {

@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUnifierCell } from './ImageUnifierCell.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageUnifierCell;
+//not GWT import const ImageUnifierCell = globalThis.org.allbinary.media.image.ImageUnifierCell;
 
                 
 export class ImageUnifierProperties

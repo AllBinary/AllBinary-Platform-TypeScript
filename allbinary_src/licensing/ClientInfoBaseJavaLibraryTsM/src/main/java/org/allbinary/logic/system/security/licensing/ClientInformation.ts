@@ -95,10 +95,10 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
                 import { AbeClientInformationData } from './AbeClientInformationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
+//not GWT import const AbeClientInformationData = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
 
                 // This is the information sent to the license server
 export class ClientInformation

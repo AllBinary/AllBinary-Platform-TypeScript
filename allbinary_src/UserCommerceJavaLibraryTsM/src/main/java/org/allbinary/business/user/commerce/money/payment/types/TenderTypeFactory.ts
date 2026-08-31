@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TenderType } from './TenderType.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderType;
+//not GWT import const TenderType = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderType;
 
                 
 export class TenderTypeFactory

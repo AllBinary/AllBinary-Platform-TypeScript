@@ -43,7 +43,7 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementType;
+//not GWT import const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
 
                 
 export interface LayerPlacementInterface {

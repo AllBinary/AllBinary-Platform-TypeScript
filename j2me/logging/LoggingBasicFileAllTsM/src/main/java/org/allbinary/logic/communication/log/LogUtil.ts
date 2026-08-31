@@ -57,7 +57,7 @@ import { FileLog } from '../../../../../org/allbinary/log/FileLog.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { Log } from './Log.js';
-const  = globalThis.org.allbinary.logic.communication.log.Log;
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
                 //ActualPlatform
 /*actual*/ export class LogUtil

@@ -51,7 +51,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLImageFactory } from './OpenGLImageFactory.js';
-//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLImageFactory;
+//not GWT import const OpenGLImageFactory = globalThis.org.allbinary.image.opengles.OpenGLImageFactory;
 
                 
 export class OpenGLImageSpecificFactory

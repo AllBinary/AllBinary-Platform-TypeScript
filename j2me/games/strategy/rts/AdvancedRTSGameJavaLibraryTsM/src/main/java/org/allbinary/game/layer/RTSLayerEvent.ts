@@ -44,10 +44,10 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
+//not GWT import const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
 
                 import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+//not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
                 
 export class RTSLayerEvent extends AllBinaryEventObject {

@@ -65,7 +65,7 @@ import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/sec
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseEncoder } from './DatabaseEncoder.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
+//not GWT import const DatabaseEncoder = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
 
                 
 export class WeakCrypt

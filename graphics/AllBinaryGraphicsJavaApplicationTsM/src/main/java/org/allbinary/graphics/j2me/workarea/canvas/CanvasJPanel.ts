@@ -179,46 +179,46 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.JPanel;
 
                 import { MouseListener } from './MouseListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseListener;
+//not GWT import const MouseListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseListener;
 
                 import { MouseMotionListener } from './MouseMotionListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseMotionListener;
+//not GWT import const MouseMotionListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseMotionListener;
 
                 import { KeyListener } from './KeyListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyListener;
+//not GWT import const KeyListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyListener;
 
                 import { IntegerDimension } from './IntegerDimension.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
+//not GWT import const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
 
                 import { CanvasTreeLabel } from './CanvasTreeLabel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasTreeLabel;
+//not GWT import const CanvasTreeLabel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasTreeLabel;
 
                 import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Color;
+//not GWT import const Color = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Color;
 
                 import { Grid } from './Grid.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
+//not GWT import const Grid = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Dimension;
 
                 import { CanvasDom } from './CanvasDom.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
+//not GWT import const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.canvas.GridLayout;
 
                 import { Graphics } from './Graphics.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Graphics;
+//not GWT import const Graphics = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Graphics;
 
                 import { MouseEvent } from './MouseEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseEvent;
+//not GWT import const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseEvent;
 
                 import { KeyEvent } from './KeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyEvent;
+//not GWT import const KeyEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyEvent;
 
                 
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {

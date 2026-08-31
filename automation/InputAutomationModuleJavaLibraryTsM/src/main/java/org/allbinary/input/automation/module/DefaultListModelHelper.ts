@@ -49,10 +49,10 @@ import { swing } from '../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.DefaultListModel;
+//not GWT import const DefaultListModel = globalThis.org.allbinary.input.automation.module.DefaultListModel;
 
                 import { ListModel } from './ListModel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.ListModel;
+//not GWT import const ListModel = globalThis.org.allbinary.input.automation.module.ListModel;
 
                 
 export class DefaultListModelHelper

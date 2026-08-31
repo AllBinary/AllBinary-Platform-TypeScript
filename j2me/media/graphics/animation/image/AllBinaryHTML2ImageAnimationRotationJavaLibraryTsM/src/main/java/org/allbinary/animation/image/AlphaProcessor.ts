@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
+//not GWT import const AlphaBaseProcessor = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
 
                 
 export class AlphaProcessor extends AlphaBaseProcessor {

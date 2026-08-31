@@ -129,10 +129,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseScalable } from './BaseScalable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.BaseScalable;
+//not GWT import const BaseScalable = globalThis.org.allbinary.graphics.displayable.BaseScalable;
 
                 import { ScalableListener } from './ScalableListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.ScalableListener;
+//not GWT import const ScalableListener = globalThis.org.allbinary.graphics.displayable.ScalableListener;
 
                 
 export class DisplayInfoSingleton

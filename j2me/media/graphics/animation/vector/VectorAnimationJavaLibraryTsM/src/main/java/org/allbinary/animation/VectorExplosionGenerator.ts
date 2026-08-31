@@ -69,10 +69,10 @@ import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/Rand
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorExplosionType } from './VectorExplosionType.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorExplosionType;
+//not GWT import const VectorExplosionType = globalThis.org.allbinary.animation.VectorExplosionType;
 
                 import { VectorAnimationUtil } from './VectorAnimationUtil.js';
-//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationUtil;
+//not GWT import const VectorAnimationUtil = globalThis.org.allbinary.animation.VectorAnimationUtil;
 
                 
 export class VectorExplosionGenerator

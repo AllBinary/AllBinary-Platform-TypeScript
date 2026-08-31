@@ -85,10 +85,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGameDemoPaintable } from './BasicGameDemoPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.BasicGameDemoPaintable;
+//not GWT import const BasicGameDemoPaintable = globalThis.org.allbinary.game.paint.BasicGameDemoPaintable;
 
                 import { MainGameDemoStatePaintable } from './MainGameDemoStatePaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.MainGameDemoStatePaintable;
+//not GWT import const MainGameDemoStatePaintable = globalThis.org.allbinary.game.paint.MainGameDemoStatePaintable;
 
                 
 export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {

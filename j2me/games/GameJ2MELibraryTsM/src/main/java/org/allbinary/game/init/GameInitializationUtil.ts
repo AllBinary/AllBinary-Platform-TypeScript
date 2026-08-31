@@ -73,10 +73,10 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.init.GameInitializationInterface;
+//not GWT import const GameInitializationInterface = globalThis.org.allbinary.game.init.GameInitializationInterface;
 
                 import { BasicBuildGameInitializerFactory } from './BasicBuildGameInitializerFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.init.BasicBuildGameInitializerFactory;
+//not GWT import const BasicBuildGameInitializerFactory = globalThis.org.allbinary.game.init.BasicBuildGameInitializerFactory;
 
                 
 export class GameInitializationUtil

@@ -89,13 +89,13 @@ import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureFactory } from './GameFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
                 import { GameFeature } from './GameFeature.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeature;
+//not GWT import const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
 
                 import { GameFeatureUtil } from './GameFeatureUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
+//not GWT import const GameFeatureUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
 
                 
 export class GameFeatureItemStateListener

@@ -91,16 +91,16 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresSubmissionProcessorInterface } from './RemoteHighScoresSubmissionProcessorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessorInterface;
+//not GWT import const RemoteHighScoresSubmissionProcessorInterface = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessorInterface;
 
                 import { RemoteHighScoresData } from './RemoteHighScoresData.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresData;
+//not GWT import const RemoteHighScoresData = globalThis.org.allbinary.game.score.remote.RemoteHighScoresData;
 
                 import { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.remote.XmlRpcRemoteHighScoresClient;
+//not GWT import const XmlRpcRemoteHighScoresClient = globalThis.org.allbinary.game.score.remote.XmlRpcRemoteHighScoresClient;
 
                 import { RemoteHighScores } from './RemoteHighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
+//not GWT import const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
 
                 
 export class RemoteHighScoresSubmissionProcessor

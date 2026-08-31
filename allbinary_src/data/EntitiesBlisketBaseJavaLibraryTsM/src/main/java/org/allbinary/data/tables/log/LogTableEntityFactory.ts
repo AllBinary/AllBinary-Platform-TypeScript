@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogTableEntity } from './LogTableEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.log.LogTableEntity;
+//not GWT import const LogTableEntity = globalThis.org.allbinary.data.tables.log.LogTableEntity;
 
                 
 export class LogTableEntityFactory

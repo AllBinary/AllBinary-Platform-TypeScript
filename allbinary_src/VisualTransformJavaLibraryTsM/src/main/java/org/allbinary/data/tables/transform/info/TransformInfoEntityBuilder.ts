@@ -51,10 +51,10 @@ import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoEntityFactory } from './TransformInfoEntityFactory.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityFactory;
+//not GWT import const TransformInfoEntityFactory = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityFactory;
 
                 import { TransformInfoEntity } from './TransformInfoEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntity;
+//not GWT import const TransformInfoEntity = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntity;
 
                 
 export class TransformInfoEntityBuilder

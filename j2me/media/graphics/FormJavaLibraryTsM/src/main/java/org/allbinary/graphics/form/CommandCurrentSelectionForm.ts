@@ -103,10 +103,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
+//not GWT import const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
 
                 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+//not GWT import const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
 
                 
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {

@@ -61,7 +61,7 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEventHandler } from './TrackingEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.tracking.TrackingEventHandler;
+//not GWT import const TrackingEventHandler = globalThis.org.allbinary.game.tracking.TrackingEventHandler;
 
                 
 export class TrackingEvent extends AllBinaryEventObject {

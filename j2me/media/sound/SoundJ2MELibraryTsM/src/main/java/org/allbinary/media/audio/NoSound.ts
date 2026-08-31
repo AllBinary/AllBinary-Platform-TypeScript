@@ -41,10 +41,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 import { NoPlayer } from './NoPlayer.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NoPlayer;
+//not GWT import const NoPlayer = globalThis.org.allbinary.media.audio.NoPlayer;
 
                 
 export class NoSound extends Sound {

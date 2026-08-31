@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HardwareComponentInterface } from './HardwareComponentInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+//not GWT import const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
 
                 
 export class NoHardwareComponent

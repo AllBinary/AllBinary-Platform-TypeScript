@@ -59,13 +59,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoDomNode } from './TransformInfoDomNode.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNode;
+//not GWT import const TransformInfoDomNode = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNode;
 
                 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
                 import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
                 
 export class TransformInfoDomNodeView extends TransformInfoDomNode implements DomNodeInterface {

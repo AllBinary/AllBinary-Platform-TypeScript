@@ -69,7 +69,7 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySensorListener } from './AllBinarySensorListener.js';
-//not GWT import const  = globalThis.org.allbinary.input.AllBinarySensorListener;
+//not GWT import const AllBinarySensorListener = globalThis.org.allbinary.input.AllBinarySensorListener;
 
                 
 export class AllBinarySensor

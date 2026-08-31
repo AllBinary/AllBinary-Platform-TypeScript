@@ -61,13 +61,13 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
+//not GWT import const LayerManagerLoggingBase = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
 
                 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 import { LayerManager } from './LayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
                 
 export class LayerManagerLogging extends LayerManagerLoggingBase {

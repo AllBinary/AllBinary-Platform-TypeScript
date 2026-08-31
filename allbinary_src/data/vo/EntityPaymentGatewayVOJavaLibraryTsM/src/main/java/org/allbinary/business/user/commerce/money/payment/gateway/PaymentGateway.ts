@@ -73,13 +73,13 @@ import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
+//not GWT import const PaymentGatewayInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
 
                 import { PaymentGatewayData } from './PaymentGatewayData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+//not GWT import const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
 
                 import { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayPrimaryKey;
+//not GWT import const PaymentGatewayPrimaryKey = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayPrimaryKey;
 
                 
 export class PaymentGateway

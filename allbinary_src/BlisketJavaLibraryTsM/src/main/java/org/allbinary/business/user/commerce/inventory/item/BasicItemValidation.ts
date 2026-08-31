@@ -67,7 +67,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemInterface } from './ItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
                 
 export class BasicItemValidation extends Validation {

@@ -49,13 +49,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.PlayerOwnedRTSLayers;
+//not GWT import const PlayerOwnedRTSLayers = globalThis.org.allbinary.game.layer.PlayerOwnedRTSLayers;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+//not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
 
                 
 export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {

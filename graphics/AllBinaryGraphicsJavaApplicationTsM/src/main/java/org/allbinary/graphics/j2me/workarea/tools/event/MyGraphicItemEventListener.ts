@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MyGraphicItemEvent } from './MyGraphicItemEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
+//not GWT import const MyGraphicItemEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
 
                 
 export interface MyGraphicItemEventListener {

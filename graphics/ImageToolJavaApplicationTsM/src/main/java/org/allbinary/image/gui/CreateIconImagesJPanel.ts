@@ -101,22 +101,22 @@ import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.image.gui.JButton;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+//not GWT import const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+//not GWT import const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
 
                 
 export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

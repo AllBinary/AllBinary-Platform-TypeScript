@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEmailInfo } from './BasicEmailInfo.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
+//not GWT import const BasicEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
 
                 
 export class EmailInfo

@@ -61,7 +61,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScoreableInterface } from './ScoreableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.ScoreableInterface;
+//not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
 
                 
 export class Scoreable

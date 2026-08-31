@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+//not GWT import const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
 
                 
 export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {

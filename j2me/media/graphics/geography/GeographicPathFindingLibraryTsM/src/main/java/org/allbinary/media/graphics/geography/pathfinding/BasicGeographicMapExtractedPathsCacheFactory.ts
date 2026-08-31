@@ -35,7 +35,7 @@ import { BaseBasicArrayListCache } from '../../../../../../org/allbinary/logic/u
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMapExtractedPathCacheFactory } from './BasicGeographicMapExtractedPathCacheFactory.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.BasicGeographicMapExtractedPathCacheFactory;
+//not GWT import const BasicGeographicMapExtractedPathCacheFactory = globalThis.org.allbinary.media.graphics.geography.pathfinding.BasicGeographicMapExtractedPathCacheFactory;
 
                 
 export class BasicGeographicMapExtractedPathsCacheFactory extends BaseBasicArrayListCache {

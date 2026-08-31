@@ -49,7 +49,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
+//not GWT import const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
 
                 
 export interface CompleteMotionGestureInputEventListenerInterface extends EventListenerInterface {

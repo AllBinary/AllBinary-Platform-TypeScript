@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { ImageCopyUtil } from './ImageCopyUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageCopyUtil;
+const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
                 
 export class ImageJ2MEScaleUtil

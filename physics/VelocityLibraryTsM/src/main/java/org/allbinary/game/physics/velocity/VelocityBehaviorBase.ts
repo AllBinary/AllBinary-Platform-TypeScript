@@ -47,7 +47,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicVelocityProperties } from './BasicVelocityProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
+//not GWT import const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
 
                 
 export class VelocityBehaviorBase

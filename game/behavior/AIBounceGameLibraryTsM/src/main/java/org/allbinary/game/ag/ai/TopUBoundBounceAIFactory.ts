@@ -89,10 +89,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundBounceAI } from './BoundBounceAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.BoundBounceAI;
+//not GWT import const BoundBounceAI = globalThis.org.allbinary.game.ag.ai.BoundBounceAI;
 
                 import { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.ReverseVelocityBoundsVisitor;
+//not GWT import const ReverseVelocityBoundsVisitor = globalThis.org.allbinary.game.ag.ai.ReverseVelocityBoundsVisitor;
 
                 
 export class TopUBoundBounceAIFactory

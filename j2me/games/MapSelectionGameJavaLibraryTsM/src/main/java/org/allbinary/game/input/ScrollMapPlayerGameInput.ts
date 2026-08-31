@@ -95,28 +95,28 @@ import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
                 import { InputFactory } from './InputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
                 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessor;
+//not GWT import const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
 
                 import { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.ScrollMapUpGameInputProcessor;
+//not GWT import const ScrollMapUpGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapUpGameInputProcessor;
 
                 import { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.ScrollMapDownGameInputProcessor;
+//not GWT import const ScrollMapDownGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapDownGameInputProcessor;
 
                 import { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.ScrollMapRightGameInputProcessor;
+//not GWT import const ScrollMapRightGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapRightGameInputProcessor;
 
                 import { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.ScrollMapLeftGameInputProcessor;
+//not GWT import const ScrollMapLeftGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapLeftGameInputProcessor;
 
                 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
+//not GWT import const GameInputProcessorUtil = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
 
                 
 export class ScrollMapPlayerGameInput extends PlayerGameInput {

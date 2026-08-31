@@ -95,10 +95,10 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureListenerInterface } from './GameFeatureListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
+//not GWT import const GameFeatureListenerInterface = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
 
                 import { GameFeatureEvent } from './GameFeatureEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
+//not GWT import const GameFeatureEvent = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
 
                 
 export class BaseChangedGameFeatureListener

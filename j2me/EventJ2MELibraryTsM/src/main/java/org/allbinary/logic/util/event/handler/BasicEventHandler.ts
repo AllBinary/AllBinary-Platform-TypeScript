@@ -89,7 +89,7 @@ import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEventHandlerInterface } from './BasicEventHandlerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandlerInterface;
+//not GWT import const BasicEventHandlerInterface = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandlerInterface;
 
                 
 export class BasicEventHandler

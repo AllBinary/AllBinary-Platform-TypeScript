@@ -103,16 +103,16 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sounds;
+//not GWT import const Sounds = globalThis.org.allbinary.media.audio.Sounds;
 
                 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+//not GWT import const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
                 import { NoPlayer } from './NoPlayer.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NoPlayer;
+//not GWT import const NoPlayer = globalThis.org.allbinary.media.audio.NoPlayer;
 
                 import { PCClipWavPlayer } from './PCClipWavPlayer.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.PCClipWavPlayer;
+//not GWT import const PCClipWavPlayer = globalThis.org.allbinary.media.audio.PCClipWavPlayer;
 
                 //J2SEMediaMIDPMinimalJavaLibrary
 export class AllBinaryMediaManager

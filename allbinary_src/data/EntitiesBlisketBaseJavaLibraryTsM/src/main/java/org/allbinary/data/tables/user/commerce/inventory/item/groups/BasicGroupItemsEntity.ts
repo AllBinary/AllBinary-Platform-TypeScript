@@ -75,7 +75,7 @@ import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/commun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGroupItemsEntityInterface } from './BasicGroupItemsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntityInterface;
+//not GWT import const BasicGroupItemsEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntityInterface;
 
                 
 export class BasicGroupItemsEntity extends AbSqlBean implements BasicGroupItemsEntityInterface {

@@ -63,7 +63,7 @@ import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/u
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.Color;
+//not GWT import const Color = globalThis.org.allbinary.input.automation.module.game.Color;
 
                 
 export class GraphicsAnalysisUtil

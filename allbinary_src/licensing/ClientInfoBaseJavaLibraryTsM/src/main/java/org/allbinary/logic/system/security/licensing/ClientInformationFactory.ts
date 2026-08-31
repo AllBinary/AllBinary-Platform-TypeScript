@@ -55,7 +55,7 @@ import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ClientInformation } from './ClientInformation.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.ClientInformation;
+//not GWT import const ClientInformation = globalThis.org.allbinary.logic.system.security.licensing.ClientInformation;
 
                 
 export class ClientInformationFactory

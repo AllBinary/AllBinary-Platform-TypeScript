@@ -67,10 +67,10 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorData } from './ColorData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorData;
+//not GWT import const ColorData = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorData;
 
                 import { ColorsData } from './ColorsData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsData;
+//not GWT import const ColorsData = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsData;
 
                 
 export class ColorsView

@@ -37,31 +37,31 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.tools.JPanel;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.graphics.j2me.workarea.tools.JButton;
 
                 import { JList } from './JList.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.JList;
+//not GWT import const JList = globalThis.org.allbinary.graphics.j2me.workarea.tools.JList;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.tools.GridLayout;
 
                 import { Font } from './Font.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Font;
+//not GWT import const Font = globalThis.org.allbinary.graphics.j2me.workarea.tools.Font;
 
                 import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+//not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
 
                 import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseAdapter;
+//not GWT import const MouseAdapter = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseAdapter;
 
                 import { MouseEvent } from './MouseEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
+//not GWT import const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
 
                 import { ToolFactory } from './ToolFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.ToolFactory;
+//not GWT import const ToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.ToolFactory;
 
                 
 export class ToolJPanel extends javax.swing.JPanel {

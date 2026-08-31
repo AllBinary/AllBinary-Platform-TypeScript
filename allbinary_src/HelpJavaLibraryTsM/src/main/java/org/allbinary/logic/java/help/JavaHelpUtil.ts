@@ -85,16 +85,16 @@ import { swing } from '../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.help.Point;
+//not GWT import const Point = globalThis.org.allbinary.logic.java.help.Point;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.help.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.logic.java.help.Dimension;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.help.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.logic.java.help.JLabel;
 
                 import { DisplayHelpFromSource } from './DisplayHelpFromSource.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.help.DisplayHelpFromSource;
+//not GWT import const DisplayHelpFromSource = globalThis.org.allbinary.logic.java.help.DisplayHelpFromSource;
 
                 
 export class JavaHelpUtil

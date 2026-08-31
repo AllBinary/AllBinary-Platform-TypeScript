@@ -51,7 +51,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { AngleFactory } from './AngleFactory.js';
-const  = globalThis.org.allbinary.math.AngleFactory;
+const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
                 
 export class FrameUtil

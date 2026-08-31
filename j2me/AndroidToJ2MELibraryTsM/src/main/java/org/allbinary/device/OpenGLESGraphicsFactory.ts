@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESNullGraphicsFactory } from './OpenGLESNullGraphicsFactory.js';
-//not GWT import const  = globalThis.org.allbinary.device.OpenGLESNullGraphicsFactory;
+//not GWT import const OpenGLESNullGraphicsFactory = globalThis.org.allbinary.device.OpenGLESNullGraphicsFactory;
 
                 import { OpenGLESGraphics } from './OpenGLESGraphics.js';
-//not GWT import const  = globalThis.org.allbinary.device.OpenGLESGraphics;
+//not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
 
                 
 export class OpenGLESGraphicsFactory

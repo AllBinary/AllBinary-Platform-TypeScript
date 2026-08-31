@@ -61,10 +61,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadObjectUtil } from './ThreadObjectUtil.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ThreadObjectUtil;
+//not GWT import const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
 
                 import { ThreadPool } from './ThreadPool.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ThreadPool;
+//not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
 
                 
 export class PooledThread extends Thread {

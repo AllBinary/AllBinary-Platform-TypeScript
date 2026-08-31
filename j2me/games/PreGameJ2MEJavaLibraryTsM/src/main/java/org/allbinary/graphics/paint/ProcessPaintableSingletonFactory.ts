@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProcessPaintable } from './ProcessPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+//not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
 
                 
 export class ProcessPaintableSingletonFactory

@@ -77,22 +77,22 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameTypeFactory } from './GameTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.GameTypeFactory;
+//not GWT import const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
 
                 import { GameMode } from './GameMode.js';
-//not GWT import const  = globalThis.org.allbinary.game.GameMode;
+//not GWT import const GameMode = globalThis.org.allbinary.game.GameMode;
 
                 import { PlayerTypesFactory } from './PlayerTypesFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.PlayerTypesFactory;
+//not GWT import const PlayerTypesFactory = globalThis.org.allbinary.game.PlayerTypesFactory;
 
                 import { GameInfoData } from './GameInfoData.js';
-//not GWT import const  = globalThis.org.allbinary.game.GameInfoData;
+//not GWT import const GameInfoData = globalThis.org.allbinary.game.GameInfoData;
 
                 import { GameType } from './GameType.js';
-//not GWT import const  = globalThis.org.allbinary.game.GameType;
+//not GWT import const GameType = globalThis.org.allbinary.game.GameType;
 
                 import { PlayerType } from './PlayerType.js';
-//not GWT import const  = globalThis.org.allbinary.game.PlayerType;
+//not GWT import const PlayerType = globalThis.org.allbinary.game.PlayerType;
 
                 
 export class GameInfo

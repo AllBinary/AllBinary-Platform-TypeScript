@@ -45,7 +45,7 @@ import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionF
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementType;
+//not GWT import const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
 
                 
 export class LayerPlacementTypeFactory

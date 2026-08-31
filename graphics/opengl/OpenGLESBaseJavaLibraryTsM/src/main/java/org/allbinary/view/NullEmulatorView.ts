@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmulatorViewInterface } from './EmulatorViewInterface.js';
-//not GWT import const  = globalThis.org.allbinary.view.EmulatorViewInterface;
+//not GWT import const EmulatorViewInterface = globalThis.org.allbinary.view.EmulatorViewInterface;
 
                 
 export class NullEmulatorView

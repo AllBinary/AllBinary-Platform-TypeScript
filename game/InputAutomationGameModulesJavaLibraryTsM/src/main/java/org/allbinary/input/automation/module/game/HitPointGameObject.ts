@@ -53,10 +53,10 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObject } from './MeteredGameObject.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.MeteredGameObject;
+//not GWT import const MeteredGameObject = globalThis.org.allbinary.input.automation.module.game.MeteredGameObject;
 
                 import { HitPointGameObjectInterface } from './HitPointGameObjectInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.HitPointGameObjectInterface;
+//not GWT import const HitPointGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.HitPointGameObjectInterface;
 
                 
 export class HitPointGameObject extends MeteredGameObject implements HitPointGameObjectInterface {

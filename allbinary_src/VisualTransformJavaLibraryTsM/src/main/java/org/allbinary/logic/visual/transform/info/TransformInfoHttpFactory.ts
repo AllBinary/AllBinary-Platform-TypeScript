@@ -73,13 +73,13 @@ import { StringValidationUtil } from '../../../../../../org/allbinary/logic/stri
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpContext } from './TransformInfoHttpContext.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpContext;
+//not GWT import const TransformInfoHttpContext = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpContext;
 
                 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
                 import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
+//not GWT import const TransformInfoHttpStore = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
 
                 
 export class TransformInfoHttpFactory

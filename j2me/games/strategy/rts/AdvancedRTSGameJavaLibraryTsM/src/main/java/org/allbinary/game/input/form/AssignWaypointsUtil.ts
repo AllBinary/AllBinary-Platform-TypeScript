@@ -81,7 +81,7 @@ import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/un
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PrimaryWaypointHelper } from './PrimaryWaypointHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.form.PrimaryWaypointHelper;
+//not GWT import const PrimaryWaypointHelper = globalThis.org.allbinary.game.input.form.PrimaryWaypointHelper;
 
                 
 export class AssignWaypointsUtil

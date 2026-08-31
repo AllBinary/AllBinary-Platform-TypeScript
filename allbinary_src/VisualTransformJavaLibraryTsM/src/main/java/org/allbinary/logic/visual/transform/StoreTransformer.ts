@@ -59,7 +59,7 @@ import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visua
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTransformer } from './BasicTransformer.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.BasicTransformer;
+//not GWT import const BasicTransformer = globalThis.org.allbinary.logic.visual.transform.BasicTransformer;
 
                 
 export class StoreTransformer extends BasicTransformer {

@@ -73,10 +73,10 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptionAnimationHelperBase } from './CaptionAnimationHelperBase.js';
-//not GWT import const  = globalThis.org.allbinary.animation.caption.CaptionAnimationHelperBase;
+//not GWT import const CaptionAnimationHelperBase = globalThis.org.allbinary.animation.caption.CaptionAnimationHelperBase;
 
                 import { CaptionAnimation } from './CaptionAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.caption.CaptionAnimation;
+//not GWT import const CaptionAnimation = globalThis.org.allbinary.animation.caption.CaptionAnimation;
 
                 
 export class CaptionAnimationHelper extends CaptionAnimationHelperBase {

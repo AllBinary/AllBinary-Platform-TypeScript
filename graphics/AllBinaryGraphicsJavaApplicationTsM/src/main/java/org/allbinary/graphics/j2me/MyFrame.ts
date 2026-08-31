@@ -143,67 +143,67 @@ import { Document } from '../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JFrame;
+//not GWT import const JFrame = globalThis.org.allbinary.graphics.j2me.JFrame;
 
                 import { KeyListener } from './KeyListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.KeyListener;
+//not GWT import const KeyListener = globalThis.org.allbinary.graphics.j2me.KeyListener;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.graphics.j2me.Dimension;
 
                 import { JToolBar } from './JToolBar.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JToolBar;
+//not GWT import const JToolBar = globalThis.org.allbinary.graphics.j2me.JToolBar;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.graphics.j2me.JButton;
 
                 import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.graphics.j2me.JPanel;
 
                 import { JTabbedPane } from './JTabbedPane.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JTabbedPane;
+//not GWT import const JTabbedPane = globalThis.org.allbinary.graphics.j2me.JTabbedPane;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.graphics.j2me.JLabel;
 
                 import { JMenuBar } from './JMenuBar.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JMenuBar;
+//not GWT import const JMenuBar = globalThis.org.allbinary.graphics.j2me.JMenuBar;
 
                 import { JMenu } from './JMenu.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JMenu;
+//not GWT import const JMenu = globalThis.org.allbinary.graphics.j2me.JMenu;
 
                 import { JMenuItem } from './JMenuItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.JMenuItem;
+//not GWT import const JMenuItem = globalThis.org.allbinary.graphics.j2me.JMenuItem;
 
                 import { WindowAdapter } from './WindowAdapter.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.WindowAdapter;
+//not GWT import const WindowAdapter = globalThis.org.allbinary.graphics.j2me.WindowAdapter;
 
                 import { WindowEvent } from './WindowEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.WindowEvent;
+//not GWT import const WindowEvent = globalThis.org.allbinary.graphics.j2me.WindowEvent;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.ActionListener;
+//not GWT import const ActionListener = globalThis.org.allbinary.graphics.j2me.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.ActionEvent;
+//not GWT import const ActionEvent = globalThis.org.allbinary.graphics.j2me.ActionEvent;
 
                 import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.MouseAdapter;
+//not GWT import const MouseAdapter = globalThis.org.allbinary.graphics.j2me.MouseAdapter;
 
                 import { MouseEvent } from './MouseEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.MouseEvent;
+//not GWT import const MouseEvent = globalThis.org.allbinary.graphics.j2me.MouseEvent;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.GridLayout;
+//not GWT import const GridLayout = globalThis.org.allbinary.graphics.j2me.GridLayout;
 
                 import { ChangeListener } from './ChangeListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.ChangeListener;
+//not GWT import const ChangeListener = globalThis.org.allbinary.graphics.j2me.ChangeListener;
 
                 import { ChangeEvent } from './ChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.ChangeEvent;
+//not GWT import const ChangeEvent = globalThis.org.allbinary.graphics.j2me.ChangeEvent;
 
                 import { KeyEvent } from './KeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.KeyEvent;
+//not GWT import const KeyEvent = globalThis.org.allbinary.graphics.j2me.KeyEvent;
 
                 
 export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerInterface, HashMapJDialogListenerInterface, java.awt.event.KeyListener {

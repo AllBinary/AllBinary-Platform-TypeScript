@@ -83,7 +83,7 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageFactory } from './ImageFactory.js';
-//not GWT import const  = globalThis.org.allbinary.image.ImageFactory;
+//not GWT import const ImageFactory = globalThis.org.allbinary.image.ImageFactory;
 
                 
 export class ImageCacheBase

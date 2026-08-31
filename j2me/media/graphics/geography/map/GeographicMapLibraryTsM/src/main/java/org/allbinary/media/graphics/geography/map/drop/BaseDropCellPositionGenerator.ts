@@ -57,7 +57,7 @@ import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/gra
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DropCellPositionGeneratorInterface } from './DropCellPositionGeneratorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.drop.DropCellPositionGeneratorInterface;
+//not GWT import const DropCellPositionGeneratorInterface = globalThis.org.allbinary.media.graphics.geography.map.drop.DropCellPositionGeneratorInterface;
 
                 
 export class BaseDropCellPositionGenerator

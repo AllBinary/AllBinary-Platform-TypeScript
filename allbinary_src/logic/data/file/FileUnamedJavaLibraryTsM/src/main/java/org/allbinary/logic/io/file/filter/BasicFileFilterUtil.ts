@@ -55,7 +55,7 @@ import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VisitorFileFilter } from './VisitorFileFilter.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.filter.VisitorFileFilter;
+//not GWT import const VisitorFileFilter = globalThis.org.allbinary.logic.io.file.filter.VisitorFileFilter;
 
                 
 export class BasicFileFilterUtil

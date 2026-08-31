@@ -83,19 +83,19 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputInterface } from './GameInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputInterface;
+//not GWT import const GameInputInterface = globalThis.org.allbinary.game.input.GameInputInterface;
 
                 import { InputFactory } from './InputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
                 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessor;
+//not GWT import const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
 
                 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
+//not GWT import const GameInputProcessorUtil = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
 
                 import { TestInputInterface } from './TestInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.TestInputInterface;
+//not GWT import const TestInputInterface = globalThis.org.allbinary.game.input.TestInputInterface;
 
                 
 export class TestingInputSingleton extends AllBinaryGameLayer implements GameInputInterface {

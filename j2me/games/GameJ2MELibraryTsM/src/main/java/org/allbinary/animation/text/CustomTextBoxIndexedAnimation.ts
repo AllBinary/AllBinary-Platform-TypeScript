@@ -73,10 +73,10 @@ import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/Cust
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextInterface } from './TextInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.TextInterface;
+//not GWT import const TextInterface = globalThis.org.allbinary.animation.text.TextInterface;
 
                 import { TextChangeListener } from './TextChangeListener.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.TextChangeListener;
+//not GWT import const TextChangeListener = globalThis.org.allbinary.animation.text.TextChangeListener;
 
                 
 export class CustomTextBoxIndexedAnimation extends IndexedAnimation implements RawKeyEventListener, UpdateMyFontInterface, TextInterface {

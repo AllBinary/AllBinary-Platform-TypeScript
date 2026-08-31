@@ -51,7 +51,7 @@ import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanv
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
+//not GWT import const GameRunnable = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
 
                 
 export class RunnableCanvasSingleThreadStartRunnable extends GameRunnable {

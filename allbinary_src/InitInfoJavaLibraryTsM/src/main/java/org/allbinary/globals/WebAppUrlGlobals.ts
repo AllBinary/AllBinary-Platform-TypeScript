@@ -47,7 +47,7 @@ import { StringValidationUtil } from '../../../org/allbinary/logic/string/String
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsInterface } from './UrlGlobalsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.globals.UrlGlobalsInterface;
+//not GWT import const UrlGlobalsInterface = globalThis.org.allbinary.globals.UrlGlobalsInterface;
 
                 
 export class WebAppUrlGlobals extends UrlGlobalsInterface {

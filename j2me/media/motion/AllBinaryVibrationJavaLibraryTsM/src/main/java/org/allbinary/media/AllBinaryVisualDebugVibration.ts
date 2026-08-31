@@ -71,7 +71,7 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryVibrationME } from './AllBinaryVibrationME.js';
-//not GWT import const  = globalThis.org.allbinary.media.AllBinaryVibrationME;
+//not GWT import const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
 
                 
 export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME implements UpdateMyFontInterface {

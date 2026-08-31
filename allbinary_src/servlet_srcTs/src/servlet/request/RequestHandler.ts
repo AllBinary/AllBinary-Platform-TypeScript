@@ -71,25 +71,25 @@ import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workfl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HttpServlet } from './HttpServlet.js';
-//not GWT import const  = globalThis.servlet.request.HttpServlet;
+//not GWT import const HttpServlet = globalThis.servlet.request.HttpServlet;
 
                 import { ServletConfig } from './ServletConfig.js';
-//not GWT import const  = globalThis.servlet.request.ServletConfig;
+//not GWT import const ServletConfig = globalThis.servlet.request.ServletConfig;
 
                 import { PrintWriter } from './PrintWriter.js';
-//not GWT import const  = globalThis.servlet.request.PrintWriter;
+//not GWT import const PrintWriter = globalThis.servlet.request.PrintWriter;
 
                 import { ServletRequest } from './ServletRequest.js';
-//not GWT import const  = globalThis.servlet.request.ServletRequest;
+//not GWT import const ServletRequest = globalThis.servlet.request.ServletRequest;
 
                 import { ServletResponse } from './ServletResponse.js';
-//not GWT import const  = globalThis.servlet.request.ServletResponse;
+//not GWT import const ServletResponse = globalThis.servlet.request.ServletResponse;
 
                 import { HttpServletRequest } from './HttpServletRequest.js';
-//not GWT import const  = globalThis.servlet.request.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.servlet.request.HttpServletRequest;
 
                 import { HttpServletResponse } from './HttpServletResponse.js';
-//not GWT import const  = globalThis.servlet.request.HttpServletResponse;
+//not GWT import const HttpServletResponse = globalThis.servlet.request.HttpServletResponse;
 
                 
 export class RequestHandler extends HttpServlet {

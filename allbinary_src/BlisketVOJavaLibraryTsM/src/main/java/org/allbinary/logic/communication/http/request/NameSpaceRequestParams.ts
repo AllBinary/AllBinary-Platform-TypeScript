@@ -103,13 +103,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestParams } from './RequestParams.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
                 import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
+//not GWT import const NameSpaceRequestParamData = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
 
                 import { NameSpaceRequestParam } from './NameSpaceRequestParam.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParam;
+//not GWT import const NameSpaceRequestParam = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParam;
 
                 //containing string values and other hashmaps of the like
 export class NameSpaceRequestParams extends RequestParams {

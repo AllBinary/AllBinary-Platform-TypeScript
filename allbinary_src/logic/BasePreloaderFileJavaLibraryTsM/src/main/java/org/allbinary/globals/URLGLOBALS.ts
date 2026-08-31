@@ -41,10 +41,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AppUrlGlobals } from './AppUrlGlobals.js';
-//not GWT import const  = globalThis.org.allbinary.globals.AppUrlGlobals;
+//not GWT import const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
 
                 import { UrlGlobalsInterface } from './UrlGlobalsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.globals.UrlGlobalsInterface;
+//not GWT import const UrlGlobalsInterface = globalThis.org.allbinary.globals.UrlGlobalsInterface;
 
                 
 export class URLGLOBALS

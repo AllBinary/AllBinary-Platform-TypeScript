@@ -81,10 +81,10 @@ import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OnDemandResourcesFactory } from './OnDemandResourcesFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.resources.OnDemandResourcesFactory;
+//not GWT import const OnDemandResourcesFactory = globalThis.org.allbinary.game.layer.resources.OnDemandResourcesFactory;
 
                 import { OnDemandResources } from './OnDemandResources.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.resources.OnDemandResources;
+//not GWT import const OnDemandResources = globalThis.org.allbinary.game.layer.resources.OnDemandResources;
 
                 
 export class OnDemandLoader

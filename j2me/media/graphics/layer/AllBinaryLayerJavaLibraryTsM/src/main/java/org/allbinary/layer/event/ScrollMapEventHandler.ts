@@ -51,10 +51,10 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollMapEventListenerInterface } from './ScrollMapEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.layer.event.ScrollMapEventListenerInterface;
+//not GWT import const ScrollMapEventListenerInterface = globalThis.org.allbinary.layer.event.ScrollMapEventListenerInterface;
 
                 import { ScrollMapEvent } from './ScrollMapEvent.js';
-//not GWT import const  = globalThis.org.allbinary.layer.event.ScrollMapEvent;
+//not GWT import const ScrollMapEvent = globalThis.org.allbinary.layer.event.ScrollMapEvent;
 
                 
 export class ScrollMapEventHandler extends BasicEventHandler {

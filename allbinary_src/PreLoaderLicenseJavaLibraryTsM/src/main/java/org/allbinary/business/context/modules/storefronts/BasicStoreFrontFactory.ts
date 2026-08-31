@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFrontsEntity } from './BasicStoreFrontsEntity.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontsEntity;
+//not GWT import const BasicStoreFrontsEntity = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontsEntity;
 
                 import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
+//not GWT import const BasicStoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
 
                 
 export class BasicStoreFrontFactory

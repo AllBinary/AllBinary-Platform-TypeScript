@@ -49,10 +49,10 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerVisitor } from './AnalogControllerVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.AnalogControllerVisitor;
+//not GWT import const AnalogControllerVisitor = globalThis.org.allbinary.android.input.motion.AnalogControllerVisitor;
 
                 import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.AnalogLocationInputProcessor;
+//not GWT import const AnalogLocationInputProcessor = globalThis.org.allbinary.android.input.motion.AnalogLocationInputProcessor;
 
                 
 export class SingleAnalogControllerVisitor extends AnalogControllerVisitor {

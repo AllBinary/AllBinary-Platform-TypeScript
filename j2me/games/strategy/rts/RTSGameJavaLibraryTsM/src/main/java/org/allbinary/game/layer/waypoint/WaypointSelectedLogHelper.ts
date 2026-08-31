@@ -77,7 +77,7 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLogHelper } from './WaypointLogHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointLogHelper;
+//not GWT import const WaypointLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointLogHelper;
 
                 
 export class WaypointSelectedLogHelper extends WaypointLogHelper {

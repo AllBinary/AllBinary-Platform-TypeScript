@@ -43,7 +43,7 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 
 export interface LayerInterfaceFactoryInterface {

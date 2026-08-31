@@ -99,16 +99,16 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+//not GWT import const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
 
                 import { PickupableInterface } from './PickupableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickupableInterface;
+//not GWT import const PickupableInterface = globalThis.org.allbinary.game.layer.pickup.PickupableInterface;
 
                 import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactory;
+//not GWT import const CountedPickedUpLayerInterfaceFactory = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactory;
 
                 import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
+//not GWT import const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
 
                 
 export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerInterface, PickupableInterface {

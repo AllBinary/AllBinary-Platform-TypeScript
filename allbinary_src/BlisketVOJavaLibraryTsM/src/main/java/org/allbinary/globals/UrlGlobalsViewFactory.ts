@@ -53,7 +53,7 @@ import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeIn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsView } from './UrlGlobalsView.js';
-//not GWT import const  = globalThis.org.allbinary.globals.UrlGlobalsView;
+//not GWT import const UrlGlobalsView = globalThis.org.allbinary.globals.UrlGlobalsView;
 
                 
 export class UrlGlobalsViewFactory

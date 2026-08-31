@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DamageableInterface } from './DamageableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.damage.DamageableInterface;
+//not GWT import const DamageableInterface = globalThis.org.allbinary.game.combat.damage.DamageableInterface;
 
                 
 export class DamageableBaseBehavior

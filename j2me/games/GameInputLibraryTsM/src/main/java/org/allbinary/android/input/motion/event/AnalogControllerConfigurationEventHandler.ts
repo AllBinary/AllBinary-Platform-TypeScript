@@ -63,10 +63,10 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerConfigurationEventListenerInterface } from './AnalogControllerConfigurationEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEventListenerInterface;
+//not GWT import const AnalogControllerConfigurationEventListenerInterface = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEventListenerInterface;
 
                 import { AnalogControllerConfigurationEvent } from './AnalogControllerConfigurationEvent.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEvent;
+//not GWT import const AnalogControllerConfigurationEvent = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEvent;
 
                 
 export class AnalogControllerConfigurationEventHandler extends BasicEventHandler {

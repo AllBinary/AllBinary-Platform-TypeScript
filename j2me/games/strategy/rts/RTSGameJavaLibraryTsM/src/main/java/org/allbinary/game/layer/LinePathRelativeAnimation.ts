@@ -49,7 +49,7 @@ import { Layer } from '../../../../org/allbinary/layer/Layer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LinePathAnimation;
+//not GWT import const LinePathAnimation = globalThis.org.allbinary.game.layer.LinePathAnimation;
 
                 
 export class LinePathRelativeAnimation extends LinePathAnimation {

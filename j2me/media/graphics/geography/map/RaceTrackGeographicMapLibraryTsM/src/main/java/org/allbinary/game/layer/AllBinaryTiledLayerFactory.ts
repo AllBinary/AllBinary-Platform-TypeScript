@@ -69,10 +69,10 @@ import { TiledLayerFactory } from '../../../../org/allbinary/media/graphics/geog
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
                 import { AllBinaryJ2METiledLayer } from './AllBinaryJ2METiledLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryJ2METiledLayer;
+//not GWT import const AllBinaryJ2METiledLayer = globalThis.org.allbinary.game.layer.AllBinaryJ2METiledLayer;
 
                 
 export class AllBinaryTiledLayerFactory

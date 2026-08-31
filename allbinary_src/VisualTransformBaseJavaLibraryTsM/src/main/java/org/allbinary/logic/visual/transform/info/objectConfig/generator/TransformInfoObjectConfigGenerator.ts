@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorInterface } from './TransformInfoObjectConfigGeneratorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorInterface;
+//not GWT import const TransformInfoObjectConfigGeneratorInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorInterface;
 
                 
 export class TransformInfoObjectConfigGenerator

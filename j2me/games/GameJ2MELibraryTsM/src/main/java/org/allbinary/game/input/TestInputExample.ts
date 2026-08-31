@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TestInputInterface } from './TestInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.TestInputInterface;
+//not GWT import const TestInputInterface = globalThis.org.allbinary.game.input.TestInputInterface;
 
                 
 export class TestInputExample

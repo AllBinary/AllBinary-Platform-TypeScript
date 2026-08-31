@@ -47,7 +47,7 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryJ2SEImageRotationAnimationFactory } from './AllBinaryJ2SEImageRotationAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryJ2SEImageRotationAnimationFactory;
+//not GWT import const AllBinaryJ2SEImageRotationAnimationFactory = globalThis.org.allbinary.animation.image.AllBinaryJ2SEImageRotationAnimationFactory;
 
                 
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryJ2SEImageRotationAnimationFactory {

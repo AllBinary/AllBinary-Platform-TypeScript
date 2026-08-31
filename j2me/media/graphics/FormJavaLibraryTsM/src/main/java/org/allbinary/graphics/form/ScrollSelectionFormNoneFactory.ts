@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+//not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
                 
 export class ScrollSelectionFormNoneFactory

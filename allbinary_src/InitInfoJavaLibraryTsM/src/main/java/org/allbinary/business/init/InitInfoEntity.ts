@@ -71,10 +71,10 @@ import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitSql } from './InitSql.js';
-//not GWT import const  = globalThis.org.allbinary.business.init.InitSql;
+//not GWT import const InitSql = globalThis.org.allbinary.business.init.InitSql;
 
                 import { InitInfo } from './InitInfo.js';
-//not GWT import const  = globalThis.org.allbinary.business.init.InitInfo;
+//not GWT import const InitInfo = globalThis.org.allbinary.business.init.InitInfo;
 
                 
 export class InitInfoEntity extends InitSql {

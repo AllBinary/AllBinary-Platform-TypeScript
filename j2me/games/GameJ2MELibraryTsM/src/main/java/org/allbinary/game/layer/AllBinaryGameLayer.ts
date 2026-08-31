@@ -135,10 +135,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTUtil } from './SWTUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.SWTUtil;
+//not GWT import const SWTUtil = globalThis.org.allbinary.game.layer.SWTUtil;
 
                 import { GameLayerUtil } from './GameLayerUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.GameLayerUtil;
+//not GWT import const GameLayerUtil = globalThis.org.allbinary.game.layer.GameLayerUtil;
 
                 
 export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEventListenerInterface, OpenGLSurfaceChangedInterface {

@@ -69,10 +69,10 @@ import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbstractInputAutomationWorker } from './AbstractInputAutomationWorker.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationWorker;
+//not GWT import const AbstractInputAutomationWorker = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationWorker;
 
                 import { InputAutomationActionInterface } from './InputAutomationActionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
+//not GWT import const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
 
                 
 export class TestInputAutomationActionWorker extends AbstractInputAutomationWorker {

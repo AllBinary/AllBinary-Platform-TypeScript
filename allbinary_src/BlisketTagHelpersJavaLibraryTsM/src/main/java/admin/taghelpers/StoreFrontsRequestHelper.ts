@@ -123,7 +123,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import const  = globalThis.admin.taghelpers.ModifyTable;
+//not GWT import const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
 
                 
 export class StoreFrontsRequestHelper extends ModifyTable {

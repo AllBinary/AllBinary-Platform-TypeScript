@@ -27,13 +27,13 @@ import { Dictionary } from '../../../java/util/Dictionary.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Bundle } from './Bundle.js';
-//not GWT import const  = globalThis.org.osgi.framework.Bundle;
+//not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
 
                 import { ServiceRegistration } from './ServiceRegistration.js';
-//not GWT import const  = globalThis.org.osgi.framework.ServiceRegistration;
+//not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
 
                 import { ServiceReference } from './ServiceReference.js';
-//not GWT import const  = globalThis.org.osgi.framework.ServiceReference;
+//not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
 
                 
 export interface BundleContext {

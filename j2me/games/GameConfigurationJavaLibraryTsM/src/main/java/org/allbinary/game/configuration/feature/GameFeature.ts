@@ -45,7 +45,7 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Feature } from './Feature.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Feature;
+//not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
 
                 
 export class GameFeature extends Feature {

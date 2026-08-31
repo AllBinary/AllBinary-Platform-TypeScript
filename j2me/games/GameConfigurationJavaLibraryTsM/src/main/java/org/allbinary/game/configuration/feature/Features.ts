@@ -105,22 +105,22 @@ import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/syste
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Feature } from './Feature.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Feature;
+//not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
 
                 import { GameFeatureFactory } from './GameFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
                 import { InputFeatureFactory } from './InputFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.InputFeatureFactory;
+//not GWT import const InputFeatureFactory = globalThis.org.allbinary.game.configuration.feature.InputFeatureFactory;
 
                 import { SensorFeatureFactory } from './SensorFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
+//not GWT import const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
 
                 import { TouchFeatureFactory } from './TouchFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.TouchFeatureFactory;
+//not GWT import const TouchFeatureFactory = globalThis.org.allbinary.game.configuration.feature.TouchFeatureFactory;
 
                 import { MainFeatureFactory } from './MainFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+//not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
 
                 
 export class Features

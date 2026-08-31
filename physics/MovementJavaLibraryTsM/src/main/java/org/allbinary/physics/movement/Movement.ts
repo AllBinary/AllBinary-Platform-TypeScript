@@ -61,7 +61,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MovementInterface } from './MovementInterface.js';
-//not GWT import const  = globalThis.org.allbinary.physics.movement.MovementInterface;
+//not GWT import const MovementInterface = globalThis.org.allbinary.physics.movement.MovementInterface;
 
                 
 export class Movement

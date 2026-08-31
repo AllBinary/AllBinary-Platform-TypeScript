@@ -135,7 +135,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoreUtil } from './HighScoreUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.displayable.HighScoreUtil;
+//not GWT import const HighScoreUtil = globalThis.org.allbinary.game.score.displayable.HighScoreUtil;
 
                 
 export class HighScoreTextBox extends CustomTextBox {

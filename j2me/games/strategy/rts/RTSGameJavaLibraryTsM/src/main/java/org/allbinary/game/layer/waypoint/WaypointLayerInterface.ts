@@ -67,13 +67,13 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLogHelper } from './WaypointLogHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointLogHelper;
+//not GWT import const WaypointLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointLogHelper;
 
                 import { Waypoint2LogHelper } from './Waypoint2LogHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.Waypoint2LogHelper;
+//not GWT import const Waypoint2LogHelper = globalThis.org.allbinary.game.layer.waypoint.Waypoint2LogHelper;
 
                 import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointRunnableLogHelper;
+//not GWT import const WaypointRunnableLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointRunnableLogHelper;
 
                 
 export interface WaypointLayerInterface {

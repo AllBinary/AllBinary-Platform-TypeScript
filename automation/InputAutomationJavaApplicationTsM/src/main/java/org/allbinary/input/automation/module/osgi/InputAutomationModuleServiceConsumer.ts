@@ -49,7 +49,7 @@ import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleOSGIServiceVisitor } from './InputAutomationModuleOSGIServiceVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleOSGIServiceVisitor;
+//not GWT import const InputAutomationModuleOSGIServiceVisitor = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleOSGIServiceVisitor;
 
                 
 export class InputAutomationModuleServiceConsumer extends InputAutomationServiceConsumer {

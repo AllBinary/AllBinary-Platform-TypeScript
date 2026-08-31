@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInfo } from './GameInfo.js';
-//not GWT import const  = globalThis.org.allbinary.game.GameInfo;
+//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
                 
 export class GameInfoCopyFactory

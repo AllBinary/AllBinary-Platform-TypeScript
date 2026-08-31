@@ -51,7 +51,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LocationPaintableInterface } from './LocationPaintableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.LocationPaintableInterface;
+//not GWT import const LocationPaintableInterface = globalThis.org.allbinary.graphics.paint.LocationPaintableInterface;
 
                 
 export class LocationPaintable

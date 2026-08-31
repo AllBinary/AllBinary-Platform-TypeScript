@@ -41,13 +41,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
 
                 import { BasicArrayListCacheable } from './BasicArrayListCacheable.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.BasicArrayListCacheable;
+//not GWT import const BasicArrayListCacheable = globalThis.org.allbinary.logic.util.cache.BasicArrayListCacheable;
 
                 import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
                 
 export class BasicArrayListCacheableInterfaceFactory

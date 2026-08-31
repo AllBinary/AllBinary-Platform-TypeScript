@@ -45,7 +45,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequentialAnimationInterface } from './SequentialAnimationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.SequentialAnimationInterface;
+//not GWT import const SequentialAnimationInterface = globalThis.org.allbinary.animation.SequentialAnimationInterface;
 
                 
 export interface IndexedAnimationInterface extends SequentialAnimationInterface {

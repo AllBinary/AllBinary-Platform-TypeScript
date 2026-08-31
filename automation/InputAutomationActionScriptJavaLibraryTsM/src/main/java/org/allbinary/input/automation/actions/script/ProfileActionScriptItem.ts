@@ -71,13 +71,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptItemInterface } from './ProfileActionScriptItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
+//not GWT import const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
 
                 import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.JPopupMenu;
+//not GWT import const JPopupMenu = globalThis.org.allbinary.input.automation.actions.script.JPopupMenu;
 
                 import { JMenuItem } from './JMenuItem.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.JMenuItem;
+//not GWT import const JMenuItem = globalThis.org.allbinary.input.automation.actions.script.JMenuItem;
 
                 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {

@@ -59,10 +59,10 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JvmStatisticsMapping } from './JvmStatisticsMapping.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsMapping;
+//not GWT import const JvmStatisticsMapping = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsMapping;
 
                 import { JvmStatisticsData } from './JvmStatisticsData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsData;
+//not GWT import const JvmStatisticsData = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsData;
 
                 
 export class JvmStatisticsView extends JvmStatisticsMapping implements DomNodeInterface {

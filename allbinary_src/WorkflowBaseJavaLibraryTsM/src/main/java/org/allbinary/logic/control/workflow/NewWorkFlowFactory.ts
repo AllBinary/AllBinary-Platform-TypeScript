@@ -79,10 +79,10 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowWrapper } from './WorkFlowWrapper.js';
-//not GWT import const  = globalThis.org.allbinary.logic.control.workflow.WorkFlowWrapper;
+//not GWT import const WorkFlowWrapper = globalThis.org.allbinary.logic.control.workflow.WorkFlowWrapper;
 
                 import { WorkFlowInterface } from './WorkFlowInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+//not GWT import const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
 
                 
 export class NewWorkFlowFactory

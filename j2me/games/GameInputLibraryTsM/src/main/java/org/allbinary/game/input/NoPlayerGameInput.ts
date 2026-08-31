@@ -45,7 +45,7 @@ import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKey
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
                 
 export class NoPlayerGameInput extends PlayerGameInput {

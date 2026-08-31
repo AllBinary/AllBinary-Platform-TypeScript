@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCache } from './ImageCache.js';
-//not GWT import const  = globalThis.org.allbinary.image.ImageCache;
+//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
                 
 export class ImageCacheFactory

@@ -109,16 +109,16 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionsJPanel } from './GenericProfileActionsJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsJPanel;
+//not GWT import const GenericProfileActionsJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsJPanel;
 
                 import { GenericProfileActionsData } from './GenericProfileActionsData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsData;
+//not GWT import const GenericProfileActionsData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsData;
 
                 import { GenericProfileActionData } from './GenericProfileActionData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
+//not GWT import const GenericProfileActionData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
 
                 import { GenericProfileAction } from './GenericProfileAction.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
+//not GWT import const GenericProfileAction = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
 
                 
 export class GenericProfileActions

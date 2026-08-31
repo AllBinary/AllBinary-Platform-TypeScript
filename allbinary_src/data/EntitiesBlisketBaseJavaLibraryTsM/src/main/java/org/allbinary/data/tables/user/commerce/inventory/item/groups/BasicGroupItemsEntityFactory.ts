@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGroupItemsEntity } from './BasicGroupItemsEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntity;
+//not GWT import const BasicGroupItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntity;
 
                 
 export class BasicGroupItemsEntityFactory

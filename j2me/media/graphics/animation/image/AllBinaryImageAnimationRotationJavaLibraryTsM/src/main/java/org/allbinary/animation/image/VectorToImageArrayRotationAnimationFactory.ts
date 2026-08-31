@@ -95,10 +95,10 @@ import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
+//not GWT import const AdjustedImageArrayRotationAnimation = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
 
                 
 export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimationFactory {

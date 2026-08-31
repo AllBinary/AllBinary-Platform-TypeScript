@@ -47,7 +47,7 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { FilePathData } from './FilePathData.js';
-const  = globalThis.org.allbinary.logic.io.file.FilePathData;
+const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 
                 //Used to correct user input for paths
 export class FilePathUtil

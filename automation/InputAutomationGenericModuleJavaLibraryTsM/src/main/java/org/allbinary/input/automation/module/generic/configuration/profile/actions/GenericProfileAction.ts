@@ -77,10 +77,10 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionJPanel } from './GenericProfileActionJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionJPanel;
+//not GWT import const GenericProfileActionJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionJPanel;
 
                 import { GenericProfileActionData } from './GenericProfileActionData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
+//not GWT import const GenericProfileActionData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
 
                 
 export class GenericProfileAction

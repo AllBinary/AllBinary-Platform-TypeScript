@@ -51,10 +51,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameKey } from './PCGameKey.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PCGameKey;
+//not GWT import const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
 
                 import { Input } from './Input.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
                 
 export class PCKeyFactory

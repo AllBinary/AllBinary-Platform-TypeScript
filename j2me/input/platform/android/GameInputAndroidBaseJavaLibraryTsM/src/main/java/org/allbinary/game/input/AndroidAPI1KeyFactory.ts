@@ -27,7 +27,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.AndroidKeyFactory;
+//not GWT import const AndroidKeyFactory = globalThis.org.allbinary.game.input.AndroidKeyFactory;
 
                 
 export class AndroidAPI1KeyFactory extends AndroidKeyFactory {

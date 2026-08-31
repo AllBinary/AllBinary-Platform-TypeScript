@@ -65,7 +65,7 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimultaneousCompoundIndexAnimation } from './SimultaneousCompoundIndexAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.SimultaneousCompoundIndexAnimation;
+//not GWT import const SimultaneousCompoundIndexAnimation = globalThis.org.allbinary.animation.compound.SimultaneousCompoundIndexAnimation;
 
                 
 export class SimultaneousCompoundIndexAnimationInterfaceFactory

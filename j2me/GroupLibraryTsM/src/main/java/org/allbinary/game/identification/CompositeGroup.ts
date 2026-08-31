@@ -63,10 +63,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Group } from './Group.js';
-//not GWT import const  = globalThis.org.allbinary.game.identification.Group;
+//not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
 
                 import { GroupCommonFactory } from './GroupCommonFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.identification.GroupCommonFactory;
+//not GWT import const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
 
                 
 export class CompositeGroup

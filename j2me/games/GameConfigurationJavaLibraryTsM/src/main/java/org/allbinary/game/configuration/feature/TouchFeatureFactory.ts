@@ -55,7 +55,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchFeature } from './TouchFeature.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.TouchFeature;
+//not GWT import const TouchFeature = globalThis.org.allbinary.game.configuration.feature.TouchFeature;
 
                 
 export class TouchFeatureFactory

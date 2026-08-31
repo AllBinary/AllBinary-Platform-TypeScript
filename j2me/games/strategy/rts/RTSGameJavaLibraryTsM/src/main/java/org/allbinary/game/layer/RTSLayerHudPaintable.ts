@@ -65,10 +65,10 @@ import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 
 export class RTSLayerHudPaintable extends SelectionHudPaintable implements UpdateMyFontInterface {

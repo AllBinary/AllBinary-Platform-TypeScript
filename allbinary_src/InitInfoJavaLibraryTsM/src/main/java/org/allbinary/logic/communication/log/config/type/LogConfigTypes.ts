@@ -69,13 +69,13 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigTypeFactory } from './LogConfigTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+//not GWT import const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
 
                 import { LogConfigTypeData } from './LogConfigTypeData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeData;
+//not GWT import const LogConfigTypeData = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeData;
 
                 import { LogConfigType } from './LogConfigType.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigType;
+//not GWT import const LogConfigType = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigType;
 
                 
 export class LogConfigTypes

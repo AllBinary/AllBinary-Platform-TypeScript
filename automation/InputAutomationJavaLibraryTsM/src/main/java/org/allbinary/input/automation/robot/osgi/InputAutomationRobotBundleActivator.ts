@@ -83,10 +83,10 @@ import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotUtil } from './InputAutomationRobotUtil.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotUtil;
+//not GWT import const InputAutomationRobotUtil = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotUtil;
 
                 import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotChangeEvent;
+//not GWT import const InputAutomationRobotChangeEvent = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotChangeEvent;
 
                 
 export class InputAutomationRobotBundleActivator

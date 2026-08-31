@@ -61,7 +61,7 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
                 //ActualPlatform
 /*actual*/ export class PreLogUtil

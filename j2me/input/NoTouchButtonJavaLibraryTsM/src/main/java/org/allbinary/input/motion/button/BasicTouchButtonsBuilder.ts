@@ -59,7 +59,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
+//not GWT import const BaseTouchInput = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
                 
 export class BasicTouchButtonsBuilder extends BaseTouchInput {

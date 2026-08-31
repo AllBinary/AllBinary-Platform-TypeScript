@@ -73,7 +73,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserData } from './UserData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.UserData;
+//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
                 
 export class UserDomNode

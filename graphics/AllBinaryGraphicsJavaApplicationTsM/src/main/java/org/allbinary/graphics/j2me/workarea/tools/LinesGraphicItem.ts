@@ -123,34 +123,34 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+//not GWT import const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
                 import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
+//not GWT import const Color = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
 
                 import { Points } from './Points.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
+//not GWT import const Points = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
 
                 import { PointsDomUtil } from './PointsDomUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
+//not GWT import const PointsDomUtil = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
 
                 import { Graphics2D } from './Graphics2D.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics2D;
+//not GWT import const Graphics2D = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics2D;
 
                 import { BasicStroke } from './BasicStroke.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.BasicStroke;
+//not GWT import const BasicStroke = globalThis.org.allbinary.graphics.j2me.workarea.tools.BasicStroke;
 
                 import { PointsUtil } from './PointsUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsUtil;
+//not GWT import const PointsUtil = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsUtil;
 
                 import { Graphics } from './Graphics.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
+//not GWT import const Graphics = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
 
                 import { MouseEvent } from './MouseEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
+//not GWT import const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
 
                 import { KeyEvent } from './KeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
+//not GWT import const KeyEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
 
                 
 export class LinesGraphicItem

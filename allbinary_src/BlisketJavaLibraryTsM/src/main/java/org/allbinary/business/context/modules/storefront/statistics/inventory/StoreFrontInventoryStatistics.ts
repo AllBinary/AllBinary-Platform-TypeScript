@@ -73,10 +73,10 @@ import { InventoryEntityInterface } from '../../../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontInventoryStatisticsInterface } from './StoreFrontInventoryStatisticsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsInterface;
+//not GWT import const StoreFrontInventoryStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsInterface;
 
                 import { StoreFrontInventoryStatisticsData } from './StoreFrontInventoryStatisticsData.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsData;
+//not GWT import const StoreFrontInventoryStatisticsData = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsData;
 
                 
 export class StoreFrontInventoryStatistics

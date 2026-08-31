@@ -51,7 +51,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberLayersSequenceAI } from './NumberLayersSequenceAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.sequence.NumberLayersSequenceAI;
+//not GWT import const NumberLayersSequenceAI = globalThis.org.allbinary.game.ag.ai.sequence.NumberLayersSequenceAI;
 
                 
 export class NumberLayersSequenceAIFactory

@@ -57,16 +57,16 @@ import { TransformInfoInterface } from '../../../../../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorFactoryInterface } from './TransformInfoObjectConfigGeneratorFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactoryInterface;
+//not GWT import const TransformInfoObjectConfigGeneratorFactoryInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactoryInterface;
 
                 import { StoreFileGenerator } from './StoreFileGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.StoreFileGenerator;
+//not GWT import const StoreFileGenerator = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.StoreFileGenerator;
 
                 import { BasicGenerator } from './BasicGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.BasicGenerator;
+//not GWT import const BasicGenerator = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.BasicGenerator;
 
                 import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
+//not GWT import const TransformInfoObjectConfigGenerator = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
 
                 
 export class TransformInfoObjectConfigGeneratorFactory

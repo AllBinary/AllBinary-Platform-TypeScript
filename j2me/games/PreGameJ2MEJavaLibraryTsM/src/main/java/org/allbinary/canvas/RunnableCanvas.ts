@@ -111,10 +111,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Processor } from './Processor.js';
-//not GWT import const  = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
                 import { RunnableCanvasRefreshHelper } from './RunnableCanvasRefreshHelper.js';
-//not GWT import const  = globalThis.org.allbinary.canvas.RunnableCanvasRefreshHelper;
+//not GWT import const RunnableCanvasRefreshHelper = globalThis.org.allbinary.canvas.RunnableCanvasRefreshHelper;
 
                 
 export class RunnableCanvas extends MyCanvas implements RunnableInterface {

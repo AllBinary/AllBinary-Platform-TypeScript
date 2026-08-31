@@ -101,7 +101,7 @@ import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
+//not GWT import const SpriteIndexedAnimation = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
 
                 
 export class ImageCaptionIndexedAnimationFactory

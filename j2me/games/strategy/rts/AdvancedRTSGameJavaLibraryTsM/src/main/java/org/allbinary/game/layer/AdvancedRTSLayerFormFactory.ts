@@ -63,10 +63,10 @@ import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSScrollSelectionFormFactory } from './RTSScrollSelectionFormFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSScrollSelectionFormFactory;
+//not GWT import const RTSScrollSelectionFormFactory = globalThis.org.allbinary.game.layer.RTSScrollSelectionFormFactory;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {

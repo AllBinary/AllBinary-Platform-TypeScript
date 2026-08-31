@@ -41,7 +41,7 @@ import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+//not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
 
                 
 export class ImageComparisonResultsEvent extends AllBinaryEventObject {

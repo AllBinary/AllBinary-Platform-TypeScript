@@ -93,13 +93,13 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigsData } from './LogConfigsData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfigsData;
+//not GWT import const LogConfigsData = globalThis.org.allbinary.logic.communication.log.config.LogConfigsData;
 
                 import { LogConfigData } from './LogConfigData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfigData;
+//not GWT import const LogConfigData = globalThis.org.allbinary.logic.communication.log.config.LogConfigData;
 
                 import { LogConfig } from './LogConfig.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfig;
+//not GWT import const LogConfig = globalThis.org.allbinary.logic.communication.log.config.LogConfig;
 
                 
 export class LoggingInitInfo

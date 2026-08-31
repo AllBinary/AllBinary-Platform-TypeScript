@@ -121,10 +121,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.Layer;
+//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
                 import { LayerInterface } from './LayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.layer.LayerInterface;
+//not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
 
                 
 export class AllBinaryLayer extends Layer implements LayerInterface {

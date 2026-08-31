@@ -95,13 +95,13 @@ import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/grap
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 import { FakeLayerManager } from './FakeLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.FakeLayerManager;
+//not GWT import const FakeLayerManager = globalThis.org.allbinary.game.layer.FakeLayerManager;
 
                 import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
 
                 
 export class RTSLayerUtil

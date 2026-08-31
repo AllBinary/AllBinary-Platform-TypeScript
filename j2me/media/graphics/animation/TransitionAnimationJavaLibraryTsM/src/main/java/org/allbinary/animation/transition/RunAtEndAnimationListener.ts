@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationListenerInterface } from './AnimationListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.transition.AnimationListenerInterface;
+//not GWT import const AnimationListenerInterface = globalThis.org.allbinary.animation.transition.AnimationListenerInterface;
 
                 
 export class RunAtEndAnimationListener

@@ -47,7 +47,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorCacheable } from './ColorCacheable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.ColorCacheable;
+//not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
                 
 export class ColorCacheableFactory

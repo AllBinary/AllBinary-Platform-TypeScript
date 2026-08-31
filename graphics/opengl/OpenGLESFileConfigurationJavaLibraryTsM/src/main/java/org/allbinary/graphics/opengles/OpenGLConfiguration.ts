@@ -121,10 +121,10 @@ import { NullCloseable } from '../../../../org/allbinary/logic/io/NullCloseable.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+//not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
                 import { OpenGLFeature } from './OpenGLFeature.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLFeature;
+//not GWT import const OpenGLFeature = globalThis.org.allbinary.graphics.opengles.OpenGLFeature;
 
                 
 export class OpenGLConfiguration

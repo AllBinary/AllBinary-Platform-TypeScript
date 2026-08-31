@@ -55,16 +55,16 @@ import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathGeneratorInterface;
+//not GWT import const PathGeneratorInterface = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathGeneratorInterface;
 
                 import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
+//not GWT import const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
 
                 import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
+//not GWT import const GeographicPathFinderBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
 
                 import { MultipassState } from './MultipassState.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
+//not GWT import const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
 
                 
 export class PathGenerator

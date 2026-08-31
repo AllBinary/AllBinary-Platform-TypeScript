@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehicleProperties } from './VehicleProperties.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.VehicleProperties;
+//not GWT import const VehicleProperties = globalThis.org.allbinary.game.layer.VehicleProperties;
 
                 
 export interface VehiclePropertiesCompositeInterface {

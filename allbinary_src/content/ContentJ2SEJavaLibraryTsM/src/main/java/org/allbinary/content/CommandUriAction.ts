@@ -57,7 +57,7 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Intent } from './Intent.js';
-//not GWT import const  = globalThis.org.allbinary.content.Intent;
+//not GWT import const Intent = globalThis.org.allbinary.content.Intent;
 
                 
 export class CommandUriAction

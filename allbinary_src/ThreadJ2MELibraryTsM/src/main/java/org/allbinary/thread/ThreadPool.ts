@@ -73,19 +73,19 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { NullRunnable } from './NullRunnable.js';
-const  = globalThis.org.allbinary.thread.NullRunnable;
+const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
 
                 import { ThreadPoolStrings } from './ThreadPoolStrings.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ThreadPoolStrings;
+//not GWT import const ThreadPoolStrings = globalThis.org.allbinary.thread.ThreadPoolStrings;
 
                 import { ThreadObjectUtil } from './ThreadObjectUtil.js';
-//not GWT import const  = globalThis.org.allbinary.thread.ThreadObjectUtil;
+//not GWT import const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
 
                 import { PooledThread } from './PooledThread.js';
-//not GWT import const  = globalThis.org.allbinary.thread.PooledThread;
+//not GWT import const PooledThread = globalThis.org.allbinary.thread.PooledThread;
 
                 import { PriorityRunnable } from './PriorityRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.thread.PriorityRunnable;
+//not GWT import const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
 
                 
 export class ThreadPool

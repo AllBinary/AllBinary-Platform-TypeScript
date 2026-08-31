@@ -59,7 +59,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HorizontaRotationManeuverAI } from './HorizontaRotationManeuverAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.HorizontaRotationManeuverAI;
+//not GWT import const HorizontaRotationManeuverAI = globalThis.org.allbinary.game.ag.ai.HorizontaRotationManeuverAI;
 
                 
 export class HorizontalRotationManeuverAIFactory

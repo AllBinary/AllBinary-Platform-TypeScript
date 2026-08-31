@@ -45,10 +45,10 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MediaTypeData } from './MediaTypeData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
+//not GWT import const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
 
                 import { MediaDataFactory } from './MediaDataFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
+//not GWT import const MediaDataFactory = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
 
                 
 export class MediaData

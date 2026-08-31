@@ -47,7 +47,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OnDemandResources } from './OnDemandResources.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.resources.OnDemandResources;
+//not GWT import const OnDemandResources = globalThis.org.allbinary.game.layer.resources.OnDemandResources;
 
                 
 export class OnDemandResourcesFactory

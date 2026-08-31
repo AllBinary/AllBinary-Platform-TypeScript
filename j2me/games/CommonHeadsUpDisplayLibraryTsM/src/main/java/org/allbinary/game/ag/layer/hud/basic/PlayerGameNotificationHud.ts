@@ -125,10 +125,10 @@ import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDel
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { SetAndRemoveProcessor } from './SetAndRemoveProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.SetAndRemoveProcessor;
+//not GWT import const SetAndRemoveProcessor = globalThis.org.allbinary.game.ag.layer.hud.basic.SetAndRemoveProcessor;
 
                 //import { NextUnremoveableProcessor } from './NextUnremoveableProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.NextUnremoveableProcessor;
+//not GWT import const NextUnremoveableProcessor = globalThis.org.allbinary.game.ag.layer.hud.basic.NextUnremoveableProcessor;
 
                 
 export class PlayerGameNotificationHud extends GameNotificationHud implements UpdateMyFontInterface {

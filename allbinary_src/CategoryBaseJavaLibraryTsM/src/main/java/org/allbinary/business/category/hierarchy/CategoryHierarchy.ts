@@ -57,7 +57,7 @@ import { CategoryInterface } from '../../../../../org/allbinary/business/categor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryHierarchyInterface } from './CategoryHierarchyInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
+//not GWT import const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
 
                 
 export class CategoryHierarchy

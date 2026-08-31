@@ -69,7 +69,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AboutCommandProcessor } from './AboutCommandProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.screen.AboutCommandProcessor;
+//not GWT import const AboutCommandProcessor = globalThis.org.allbinary.graphics.displayable.screen.AboutCommandProcessor;
 
                 
 export class WebCommandProcessor

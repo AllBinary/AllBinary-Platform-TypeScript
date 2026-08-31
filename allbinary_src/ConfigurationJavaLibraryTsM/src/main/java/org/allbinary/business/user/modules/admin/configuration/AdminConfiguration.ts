@@ -89,10 +89,10 @@ import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/contro
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdminConfigurationInterface } from './AdminConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
+//not GWT import const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
 
                 import { AdminConfigurationData } from './AdminConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationData;
+//not GWT import const AdminConfigurationData = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationData;
 
                 
 export class AdminConfiguration

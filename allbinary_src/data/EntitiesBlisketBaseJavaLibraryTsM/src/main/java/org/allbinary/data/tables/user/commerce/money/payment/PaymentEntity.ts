@@ -107,7 +107,7 @@ import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentEntityInterface } from './PaymentEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityInterface;
+//not GWT import const PaymentEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityInterface;
 
                 
 export class PaymentEntity extends AbSqlBean implements PaymentEntityInterface {

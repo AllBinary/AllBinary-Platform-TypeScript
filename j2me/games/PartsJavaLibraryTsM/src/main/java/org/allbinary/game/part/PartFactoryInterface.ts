@@ -51,7 +51,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.PartInterface;
+//not GWT import const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
 
                 
 export interface PartFactoryInterface {

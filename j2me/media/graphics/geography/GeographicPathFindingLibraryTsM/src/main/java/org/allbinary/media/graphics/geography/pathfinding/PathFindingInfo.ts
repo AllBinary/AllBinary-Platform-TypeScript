@@ -47,16 +47,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingInfoInterface } from './PathFindingInfoInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfoInterface;
+//not GWT import const PathFindingInfoInterface = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfoInterface;
 
                 import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoFactoryBase;
+//not GWT import const PathFindingNodeCostInfoFactoryBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoFactoryBase;
 
                 import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
+//not GWT import const GeographicPathFinderBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
 
                 import { PathFindingNode } from './PathFindingNode.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
+//not GWT import const PathFindingNode = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
 
                 
 export class PathFindingInfo

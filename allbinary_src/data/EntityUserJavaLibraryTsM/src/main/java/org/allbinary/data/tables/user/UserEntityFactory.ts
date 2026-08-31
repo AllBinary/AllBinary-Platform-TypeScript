@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEntity } from './UserEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.UserEntity;
+//not GWT import const UserEntity = globalThis.org.allbinary.data.tables.user.UserEntity;
 
                 
 export class UserEntityFactory

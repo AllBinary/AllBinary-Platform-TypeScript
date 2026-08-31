@@ -59,10 +59,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GroupInterface } from './GroupInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.identification.GroupInterface;
+//not GWT import const GroupInterface = globalThis.org.allbinary.game.identification.GroupInterface;
 
                 import { GroupCommonFactory } from './GroupCommonFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.identification.GroupCommonFactory;
+//not GWT import const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
 
                 
 export class Group

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { Image } from './Image.js';
-const  = globalThis.javax.microedition.lcdui.Image;
+const Image = globalThis.javax.microedition.lcdui.Image;
 
                 
 export class NullImage

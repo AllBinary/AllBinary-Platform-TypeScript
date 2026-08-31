@@ -59,7 +59,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewHelper } from './ViewHelper.js';
-//not GWT import const  = globalThis.taghelpers.ViewHelper;
+//not GWT import const ViewHelper = globalThis.taghelpers.ViewHelper;
 
                 
 export class ViewHelperFactory extends TagHelperFactory {

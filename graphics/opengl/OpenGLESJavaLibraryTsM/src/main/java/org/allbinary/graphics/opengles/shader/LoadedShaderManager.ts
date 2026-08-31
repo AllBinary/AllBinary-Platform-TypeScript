@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderManager } from './ShaderManager.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderManager;
+//not GWT import const ShaderManager = globalThis.org.allbinary.graphics.opengles.shader.ShaderManager;
 
                 
 export class LoadedShaderManager

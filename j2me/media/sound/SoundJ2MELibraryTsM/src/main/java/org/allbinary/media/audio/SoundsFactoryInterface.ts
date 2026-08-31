@@ -47,7 +47,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 
 export interface SoundsFactoryInterface {

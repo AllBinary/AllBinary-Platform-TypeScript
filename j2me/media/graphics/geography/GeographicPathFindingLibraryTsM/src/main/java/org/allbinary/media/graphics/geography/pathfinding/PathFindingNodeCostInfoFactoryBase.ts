@@ -51,7 +51,7 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNodeCostInfoFactoryBaseInterface } from './PathFindingNodeCostInfoFactoryBaseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoFactoryBaseInterface;
+//not GWT import const PathFindingNodeCostInfoFactoryBaseInterface = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoFactoryBaseInterface;
 
                 
 export class PathFindingNodeCostInfoFactoryBase

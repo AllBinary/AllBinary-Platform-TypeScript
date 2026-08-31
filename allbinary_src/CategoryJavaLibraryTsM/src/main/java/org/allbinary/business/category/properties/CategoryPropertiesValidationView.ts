@@ -59,10 +59,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPropertiesView } from './CategoryPropertiesView.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.properties.CategoryPropertiesView;
+//not GWT import const CategoryPropertiesView = globalThis.org.allbinary.business.category.properties.CategoryPropertiesView;
 
                 import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
+//not GWT import const CategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
 
                 
 export class CategoryPropertiesValidationView extends CategoryPropertiesView implements ValidationInterface {

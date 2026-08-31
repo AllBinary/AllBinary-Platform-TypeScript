@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LongData } from './LongData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.number.LongData;
+//not GWT import const LongData = globalThis.org.allbinary.logic.java.number.LongData;
 
                 
 export class LongUtil

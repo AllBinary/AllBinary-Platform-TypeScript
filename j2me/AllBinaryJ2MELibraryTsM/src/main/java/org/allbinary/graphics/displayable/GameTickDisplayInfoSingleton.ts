@@ -47,7 +47,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
                 
 export class GameTickDisplayInfoSingleton

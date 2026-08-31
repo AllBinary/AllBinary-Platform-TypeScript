@@ -51,7 +51,7 @@ import { TransformInfoObjectConfigNoManipulationFactory } from '../../../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
+//not GWT import const TransformInfoHttpStore = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
 
                 
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {

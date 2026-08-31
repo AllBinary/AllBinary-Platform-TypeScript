@@ -91,22 +91,22 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.BasicProfileActionScriptInput;
+//not GWT import const BasicProfileActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.BasicProfileActionScriptInput;
 
                 import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputInterface;
+//not GWT import const MouseActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputInterface;
 
                 import { Point } from './Point.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Point;
+//not GWT import const Point = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Point;
 
                 import { MouseActionScriptInputJPanel } from './MouseActionScriptInputJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputJPanel;
+//not GWT import const MouseActionScriptInputJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputJPanel;
 
                 import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputData;
+//not GWT import const MouseActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputData;
 
                 import { MouseInputAutomationProcessor } from './MouseInputAutomationProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseInputAutomationProcessor;
+//not GWT import const MouseInputAutomationProcessor = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseInputAutomationProcessor;
 
                 
 export class MouseActionScriptInput extends BasicProfileActionScriptInput implements MouseActionScriptInputInterface {

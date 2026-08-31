@@ -53,10 +53,10 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyEventFactory } from './DestroyEventFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.event.DestroyEventFactory;
+//not GWT import const DestroyEventFactory = globalThis.org.allbinary.game.combat.destroy.event.DestroyEventFactory;
 
                 import { DestroyedEvent } from './DestroyedEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
+//not GWT import const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
 
                 
 export class DestroyEventCircularStaticPool

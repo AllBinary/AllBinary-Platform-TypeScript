@@ -101,10 +101,10 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { URIResolverStrings } from './URIResolverStrings.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.URIResolverStrings;
+//not GWT import const URIResolverStrings = globalThis.org.allbinary.data.tree.dom.URIResolverStrings;
 
                 import { BasicUriResolver } from './BasicUriResolver.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+//not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
 
                 
 export class StoreUriResolver

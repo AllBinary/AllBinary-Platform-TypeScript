@@ -77,13 +77,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomForm } from './ABCustomForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ABCustomForm;
+//not GWT import const ABCustomForm = globalThis.org.allbinary.graphics.form.ABCustomForm;
 
                 import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+//not GWT import const FormTypeFactory = globalThis.org.allbinary.graphics.form.FormTypeFactory;
 
                 import { FormType } from './FormType.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+//not GWT import const FormType = globalThis.org.allbinary.graphics.form.FormType;
 
                 
 export class PaintableForm extends ABCustomForm {

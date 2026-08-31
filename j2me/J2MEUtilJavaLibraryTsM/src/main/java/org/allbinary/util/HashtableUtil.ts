@@ -47,13 +47,13 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { EnumerationUtil } from './EnumerationUtil.js';
-const  = globalThis.org.allbinary.util.EnumerationUtil;
+const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
                 //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
-const  = globalThis.org.allbinary.util.BasicArrayListS;
+const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
                 //not plain js import { BasicArrayList } from './BasicArrayList.js';
-const  = globalThis.org.allbinary.util.BasicArrayList;
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
                 
 export class HashtableUtil

@@ -57,7 +57,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
                 
 export class TileLayerItem extends ABCustomItem implements ABCustomItemInterface {

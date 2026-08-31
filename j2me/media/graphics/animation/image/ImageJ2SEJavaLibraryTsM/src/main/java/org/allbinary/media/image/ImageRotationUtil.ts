@@ -61,10 +61,10 @@ import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
+//not GWT import const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
 
                 //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
-const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
+const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageRotationUtil

@@ -49,7 +49,7 @@ import { UpdateInterface } from '../../../../org/allbinary/init/UpdateInterface.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableInterface } from './PaintableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
                 
 export interface InitUpdatePaintableInterface extends InitInterface, UpdateInterface, PaintableInterface {

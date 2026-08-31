@@ -71,19 +71,19 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptureWorkerInterface } from './CaptureWorkerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CaptureWorkerInterface;
+//not GWT import const CaptureWorkerInterface = globalThis.org.allbinary.input.media.image.capture.CaptureWorkerInterface;
 
                 import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.ScreenScavangerRobot;
+//not GWT import const ScreenScavangerRobot = globalThis.org.allbinary.input.media.image.capture.ScreenScavangerRobot;
 
                 import { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.ProcessingFrameIndexFactory;
+//not GWT import const ProcessingFrameIndexFactory = globalThis.org.allbinary.input.media.image.capture.ProcessingFrameIndexFactory;
 
                 import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+//not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
 
                 import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
+//not GWT import const CapturedImageWorkerResultsEvent = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
 
                 
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {

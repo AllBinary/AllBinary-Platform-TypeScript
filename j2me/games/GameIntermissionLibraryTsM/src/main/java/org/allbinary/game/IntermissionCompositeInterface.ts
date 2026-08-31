@@ -45,7 +45,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionInterface } from './IntermissionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.IntermissionInterface;
+//not GWT import const IntermissionInterface = globalThis.org.allbinary.game.IntermissionInterface;
 
                 
 export interface IntermissionCompositeInterface {

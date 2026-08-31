@@ -143,7 +143,7 @@ import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communica
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderItemsEntityInterface } from './OrderItemsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntityInterface;
+//not GWT import const OrderItemsEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntityInterface;
 
                 
 export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInterface {

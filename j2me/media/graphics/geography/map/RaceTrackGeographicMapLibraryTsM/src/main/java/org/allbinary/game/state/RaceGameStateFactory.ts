@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameStateFactory } from './GameStateFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.state.GameStateFactory;
+//not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
                 import { GameState } from './GameState.js';
-//not GWT import const  = globalThis.org.allbinary.game.state.GameState;
+//not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
 
                 
 export class RaceGameStateFactory

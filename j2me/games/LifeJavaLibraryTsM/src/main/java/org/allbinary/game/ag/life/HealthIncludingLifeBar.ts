@@ -71,7 +71,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Life } from './Life.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.life.Life;
+//not GWT import const Life = globalThis.org.allbinary.game.ag.life.Life;
 
                 
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {

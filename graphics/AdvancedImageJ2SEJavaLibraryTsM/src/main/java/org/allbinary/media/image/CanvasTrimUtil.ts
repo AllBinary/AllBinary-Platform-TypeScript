@@ -55,10 +55,10 @@ import { IOException } from '../../../../java/io/IOException.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessorInput;
+//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
                 import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+//not GWT import const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
 
                 
 export class CanvasTrimUtil

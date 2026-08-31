@@ -49,7 +49,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { Angle } from './Angle.js';
-const  = globalThis.org.allbinary.math.Angle;
+const Angle = globalThis.org.allbinary.math.Angle;
 
                 
 export class NamedAngle extends Angle {

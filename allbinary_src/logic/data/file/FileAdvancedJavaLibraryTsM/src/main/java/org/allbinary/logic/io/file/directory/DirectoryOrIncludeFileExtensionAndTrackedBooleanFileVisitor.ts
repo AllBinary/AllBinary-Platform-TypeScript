@@ -69,13 +69,13 @@ import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackedStrings } from './TrackedStrings.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.TrackedStrings;
+//not GWT import const TrackedStrings = globalThis.org.allbinary.logic.io.file.directory.TrackedStrings;
 
                 import { ProcessBuilder } from './ProcessBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.ProcessBuilder;
+//not GWT import const ProcessBuilder = globalThis.org.allbinary.logic.io.file.directory.ProcessBuilder;
 
                 import { Process } from './Process.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.Process;
+//not GWT import const Process = globalThis.org.allbinary.logic.io.file.directory.Process;
 
                 
 export class DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor extends IncludeFileExtensionsBooleanFileVisitor {

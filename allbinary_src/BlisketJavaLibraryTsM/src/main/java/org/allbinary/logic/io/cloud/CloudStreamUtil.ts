@@ -53,10 +53,10 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.AbFileInputStream;
+//not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
                 import { AbFileLocalInputStream } from './AbFileLocalInputStream.js';
-//not GWT import const  = globalThis.org.allbinary.logic.io.AbFileLocalInputStream;
+//not GWT import const AbFileLocalInputStream = globalThis.org.allbinary.logic.io.AbFileLocalInputStream;
 
                 
 export class CloudStreamUtil

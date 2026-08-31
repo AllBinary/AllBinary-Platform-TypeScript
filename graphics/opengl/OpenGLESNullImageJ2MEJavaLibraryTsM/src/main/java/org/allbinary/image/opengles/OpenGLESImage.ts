@@ -81,10 +81,10 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
-//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+//not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
 
                 import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+//not GWT import const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
 
                 //OpenGLESNullImageJ2MEJavaLibrary
 export class OpenGLESImage

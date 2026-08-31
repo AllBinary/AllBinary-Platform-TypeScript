@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageColorRangeResults } from './ImageColorRangeResults.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ImageColorRangeResults;
+//not GWT import const ImageColorRangeResults = globalThis.org.allbinary.media.image.analysis.ImageColorRangeResults;
 
                 import { ImageColorResults } from './ImageColorResults.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
+//not GWT import const ImageColorResults = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
 
                 
 export class ImageAnalysisResults

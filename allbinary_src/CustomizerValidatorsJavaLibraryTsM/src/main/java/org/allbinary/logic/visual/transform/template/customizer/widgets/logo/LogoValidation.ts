@@ -99,10 +99,10 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogoData } from './LogoData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.logo.LogoData;
+//not GWT import const LogoData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.logo.LogoData;
 
                 import { LogoImageFileUtil } from './LogoImageFileUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.logo.LogoImageFileUtil;
+//not GWT import const LogoImageFileUtil = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.logo.LogoImageFileUtil;
 
                 
 export class LogoValidation extends Validation implements DomNodeInterface {

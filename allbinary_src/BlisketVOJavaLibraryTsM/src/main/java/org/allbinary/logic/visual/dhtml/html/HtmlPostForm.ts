@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlForm } from './HtmlForm.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlForm;
+//not GWT import const HtmlForm = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlForm;
 
                 
 export class HtmlPostForm extends HtmlForm {

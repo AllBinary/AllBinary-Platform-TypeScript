@@ -79,7 +79,7 @@ import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/commun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadItemsEntityInterface } from './DownloadItemsEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.downloads.DownloadItemsEntityInterface;
+//not GWT import const DownloadItemsEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.downloads.DownloadItemsEntityInterface;
 
                 
 export class DownloadItemsEntity extends AbSqlBean implements DownloadItemsEntityInterface {

@@ -65,16 +65,16 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+//not GWT import const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
 
                 import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.LastFetchHighScoresFactory;
+//not GWT import const LastFetchHighScoresFactory = globalThis.org.allbinary.game.score.LastFetchHighScoresFactory;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
+//not GWT import const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
 
                 
 export class HighScoresHelperBase

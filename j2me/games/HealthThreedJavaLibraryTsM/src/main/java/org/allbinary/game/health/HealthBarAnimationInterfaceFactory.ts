@@ -61,10 +61,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarThreedAnimation } from './HealthBarThreedAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarThreedAnimation;
+//not GWT import const HealthBarThreedAnimation = globalThis.org.allbinary.game.health.HealthBarThreedAnimation;
 
                 import { HealthBarAnimation } from './HealthBarAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarAnimation;
+//not GWT import const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
 
                 
 export class HealthBarAnimationInterfaceFactory

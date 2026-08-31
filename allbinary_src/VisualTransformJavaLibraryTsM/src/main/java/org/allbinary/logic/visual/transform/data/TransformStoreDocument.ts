@@ -67,7 +67,7 @@ import { SearchRequest } from '../../../../../../org/allbinary/logic/control/sea
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformHttpRequestDocument } from './TransformHttpRequestDocument.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocument;
+//not GWT import const TransformHttpRequestDocument = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocument;
 
                 
 export class TransformStoreDocument extends TransformHttpRequestDocument {

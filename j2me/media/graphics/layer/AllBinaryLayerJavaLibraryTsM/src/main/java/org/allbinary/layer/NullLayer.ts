@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import const  = globalThis.org.allbinary.layer.Layer;
+//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
                 
 export class NullLayer extends Layer {

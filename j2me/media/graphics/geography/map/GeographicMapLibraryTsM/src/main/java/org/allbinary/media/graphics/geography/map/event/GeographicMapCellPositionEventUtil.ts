@@ -49,10 +49,10 @@ import { GeographicMapCellPositionTracking } from '../../../../../../../org/allb
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEvent;
+//not GWT import const GeographicMapCellPositionEvent = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEvent;
 
                 import { GeographicMapCellPositionEventHandler } from './GeographicMapCellPositionEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEventHandler;
+//not GWT import const GeographicMapCellPositionEventHandler = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEventHandler;
 
                 
 export class GeographicMapCellPositionEventUtil

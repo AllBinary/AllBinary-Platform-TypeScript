@@ -63,7 +63,7 @@ import { Node } from '../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewHelper } from './ViewHelper.js';
-//not GWT import const  = globalThis.taghelpers.ViewHelper;
+//not GWT import const ViewHelper = globalThis.taghelpers.ViewHelper;
 
                 
 export class ValidationViewHelper extends ViewHelper implements ValidationComponentInterface {

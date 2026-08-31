@@ -61,7 +61,7 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XslHelper } from './XslHelper.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.XslHelper;
+//not GWT import const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
 
                 
 export class AbXslHelper

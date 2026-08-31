@@ -91,7 +91,7 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MetaValidation } from './MetaValidation.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.meta.MetaValidation;
+//not GWT import const MetaValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.meta.MetaValidation;
 
                 
 export class MetasValidation extends Validation implements DomNodeInterface {

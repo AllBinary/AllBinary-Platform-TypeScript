@@ -81,25 +81,25 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationInterface;
+//not GWT import const UserEmailEventsConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationInterface;
 
                 import { UserEmailEventsConfiguration } from './UserEmailEventsConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfiguration;
+//not GWT import const UserEmailEventsConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfiguration;
 
                 import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationData;
+//not GWT import const UserEmailEventConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationData;
 
                 import { UserEmailEventConfigurationView } from './UserEmailEventConfigurationView.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationView;
+//not GWT import const UserEmailEventConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationView;
 
                 import { UserEmailEventsConfigurationMapping } from './UserEmailEventsConfigurationMapping.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationMapping;
+//not GWT import const UserEmailEventsConfigurationMapping = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationMapping;
 
                 import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationData;
+//not GWT import const UserEmailEventsConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationData;
 
                 import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
+//not GWT import const UserEmailEventConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
 
                 
 export class UserEmailEventsConfigurationView

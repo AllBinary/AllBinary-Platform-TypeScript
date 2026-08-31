@@ -59,10 +59,10 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickUpShippingModule } from './PickUpShippingModule.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.modules.PickUpShippingModule;
+//not GWT import const PickUpShippingModule = globalThis.org.allbinary.business.user.commerce.shipping.modules.PickUpShippingModule;
 
                 import { Document } from './Document.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.modules.Document;
+//not GWT import const Document = globalThis.org.allbinary.business.user.commerce.shipping.modules.Document;
 
                 
 export class PickUpShippingModuleView extends PickUpShippingModule implements DomNodeInterface {

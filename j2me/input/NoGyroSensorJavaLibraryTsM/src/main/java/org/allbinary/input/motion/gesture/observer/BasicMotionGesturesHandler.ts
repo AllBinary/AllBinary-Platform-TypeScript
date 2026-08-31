@@ -63,10 +63,10 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMotionGestureEventListener } from './BaseMotionGestureEventListener.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.BaseMotionGestureEventListener;
+//not GWT import const BaseMotionGestureEventListener = globalThis.org.allbinary.input.motion.gesture.observer.BaseMotionGestureEventListener;
 
                 import { MotionGestureEvent } from './MotionGestureEvent.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+//not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
 
                 
 export class BasicMotionGesturesHandler extends BasicEventHandler {

@@ -45,7 +45,7 @@ import { Vector } from '../../../../../../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPaymentType } from './BasicPaymentType.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentType;
+//not GWT import const BasicPaymentType = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentType;
 
                 
 export class BasicPaymentTypeUtil

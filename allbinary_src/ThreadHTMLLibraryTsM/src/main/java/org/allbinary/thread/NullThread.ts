@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { NullRunnable } from './NullRunnable.js';
-const  = globalThis.org.allbinary.thread.NullRunnable;
+const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
 
                 
 export class NullThread

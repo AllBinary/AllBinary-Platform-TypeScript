@@ -73,10 +73,10 @@ import { CountedPickedUpLayerInterfaceFactoryPool } from '../../../../org/allbin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
+//not GWT import const CountedLayerInterfaceFactoryPart = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
 
                 import { PartInterface } from './PartInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.PartInterface;
+//not GWT import const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
 
                 
 export class MakeCountedPartsSingletonArrayFactory

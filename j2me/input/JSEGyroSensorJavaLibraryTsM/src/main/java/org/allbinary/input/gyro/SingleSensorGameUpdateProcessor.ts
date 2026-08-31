@@ -43,13 +43,13 @@ import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SensorGameUpdateProcessor } from './SensorGameUpdateProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.input.gyro.SensorGameUpdateProcessor;
+//not GWT import const SensorGameUpdateProcessor = globalThis.org.allbinary.input.gyro.SensorGameUpdateProcessor;
 
                 import { AccelerometerSensorUpdateProcessor } from './AccelerometerSensorUpdateProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.input.gyro.AccelerometerSensorUpdateProcessor;
+//not GWT import const AccelerometerSensorUpdateProcessor = globalThis.org.allbinary.input.gyro.AccelerometerSensorUpdateProcessor;
 
                 import { GyroSensorUpdateProcessor } from './GyroSensorUpdateProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.input.gyro.GyroSensorUpdateProcessor;
+//not GWT import const GyroSensorUpdateProcessor = globalThis.org.allbinary.input.gyro.GyroSensorUpdateProcessor;
 
                 
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {

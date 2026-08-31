@@ -69,7 +69,7 @@ import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpSer
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeHttpRequestInfoData } from './AbeHttpRequestInfoData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.AbeHttpRequestInfoData;
+//not GWT import const AbeHttpRequestInfoData = globalThis.org.allbinary.logic.communication.http.request.AbeHttpRequestInfoData;
 
                 
 export class AbeHttpRequestInfo

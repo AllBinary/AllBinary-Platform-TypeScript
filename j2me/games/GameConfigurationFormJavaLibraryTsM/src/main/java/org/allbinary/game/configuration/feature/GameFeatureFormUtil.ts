@@ -89,13 +89,13 @@ import { CommandForm } from '../../../../../org/allbinary/graphics/displayable/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
                 import { Feature } from './Feature.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Feature;
+//not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
 
                 import { GameFeatureUtil } from './GameFeatureUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
+//not GWT import const GameFeatureUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
 
                 
 export class GameFeatureFormUtil

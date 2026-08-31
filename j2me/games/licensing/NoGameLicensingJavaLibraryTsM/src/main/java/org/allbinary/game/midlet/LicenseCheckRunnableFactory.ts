@@ -55,7 +55,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialDemoGameMidlet } from './SpecialDemoGameMidlet.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.SpecialDemoGameMidlet;
+//not GWT import const SpecialDemoGameMidlet = globalThis.org.allbinary.game.midlet.SpecialDemoGameMidlet;
 
                 
 export class LicenseCheckRunnableFactory

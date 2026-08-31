@@ -67,22 +67,22 @@ import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellP
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
+//not GWT import const BaseTouchInput = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
                 import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
+//not GWT import const TouchButtonLocationHelper = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
 
                 import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonCellPositionFactory;
+//not GWT import const BasicTouchButtonCellPositionFactory = globalThis.org.allbinary.input.motion.button.BasicTouchButtonCellPositionFactory;
 
                 import { CommonButtons } from './CommonButtons.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.CommonButtons;
+//not GWT import const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
 
                 import { TouchButton } from './TouchButton.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+//not GWT import const TouchButton = globalThis.org.allbinary.input.motion.button.TouchButton;
 
                 import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+//not GWT import const BasicTouchInputFactory = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
 
                 
 export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {

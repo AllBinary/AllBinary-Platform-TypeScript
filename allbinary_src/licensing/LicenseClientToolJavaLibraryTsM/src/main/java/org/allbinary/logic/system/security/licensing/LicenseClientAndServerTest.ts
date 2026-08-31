@@ -81,19 +81,19 @@ import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBA
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.BasicArrayListD;
+//not GWT import const BasicArrayListD = globalThis.org.allbinary.logic.system.security.licensing.BasicArrayListD;
 
                 import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.PrintLicenseInitInfo;
+//not GWT import const PrintLicenseInitInfo = globalThis.org.allbinary.logic.system.security.licensing.PrintLicenseInitInfo;
 
                 import { AbeClientInformationInterfaceFactory } from './AbeClientInformationInterfaceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterfaceFactory;
+//not GWT import const AbeClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterfaceFactory;
 
                 import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
                 import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
+//not GWT import const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
 
                 
 export class LicenseClientAndServerTest

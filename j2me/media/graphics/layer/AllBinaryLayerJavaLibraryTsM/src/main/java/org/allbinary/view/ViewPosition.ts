@@ -53,7 +53,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionBase } from './ViewPositionBase.js';
-//not GWT import const  = globalThis.org.allbinary.view.ViewPositionBase;
+//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
                 
 export class ViewPosition extends ViewPositionBase {

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoPaintableInterface } from './DemoPaintableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoPaintableInterface;
+//not GWT import const DemoPaintableInterface = globalThis.org.allbinary.game.displayable.canvas.DemoPaintableInterface;
 
                 
 export class NullDemoPaintable

@@ -53,10 +53,10 @@ import { TableMappingInterface } from '../../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
+//not GWT import const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
 
                 import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
+//not GWT import const EmailServerConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
 
                 
 export class EmailServerConfigurationMapping

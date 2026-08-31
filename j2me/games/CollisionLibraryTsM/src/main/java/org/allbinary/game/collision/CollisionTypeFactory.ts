@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionType } from './CollisionType.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionType;
+//not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
 
                 
 export class CollisionTypeFactory

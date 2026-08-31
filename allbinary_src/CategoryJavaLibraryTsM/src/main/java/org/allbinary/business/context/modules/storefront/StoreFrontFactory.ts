@@ -57,7 +57,7 @@ import { StoreFrontsEntityFactory } from '../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFront } from './StoreFront.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.StoreFront;
+//not GWT import const StoreFront = globalThis.org.allbinary.business.context.modules.storefront.StoreFront;
 
                 
 export class StoreFrontFactory

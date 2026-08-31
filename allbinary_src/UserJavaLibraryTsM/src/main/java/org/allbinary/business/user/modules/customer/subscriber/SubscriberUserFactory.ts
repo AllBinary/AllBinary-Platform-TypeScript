@@ -53,7 +53,7 @@ import { UserInterface } from '../../../../../../../org/allbinary/business/user/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SubscriberUser } from './SubscriberUser.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.customer.subscriber.SubscriberUser;
+//not GWT import const SubscriberUser = globalThis.org.allbinary.business.user.modules.customer.subscriber.SubscriberUser;
 
                 
 export class SubscriberUserFactory

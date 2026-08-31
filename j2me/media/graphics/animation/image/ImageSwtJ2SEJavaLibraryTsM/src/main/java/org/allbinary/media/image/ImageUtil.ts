@@ -101,7 +101,7 @@ import { BareMain } from '../../../../org/microemu/app/BareMain.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Image } from './Image.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.Image;
+//not GWT import const Image = globalThis.org.allbinary.media.image.Image;
 
                 
 export class ImageUtil

@@ -83,16 +83,16 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
+//not GWT import const DemoGameMidlet = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
 
                 import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
+//not GWT import const DemoGameMidletEvent = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
 
                 import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletStateFactory;
+//not GWT import const DemoGameMidletStateFactory = globalThis.org.allbinary.game.midlet.DemoGameMidletStateFactory;
 
                 import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEventHandler;
+//not GWT import const DemoGameMidletEventHandler = globalThis.org.allbinary.game.midlet.DemoGameMidletEventHandler;
 
                 
 export class CreateGameRunnable

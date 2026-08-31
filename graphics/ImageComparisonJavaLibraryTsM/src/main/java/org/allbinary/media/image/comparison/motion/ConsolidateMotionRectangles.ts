@@ -51,13 +51,13 @@ import { Vector } from '../../../../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+//not GWT import const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
 
                 import { MotionRectangle } from './MotionRectangle.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
+//not GWT import const MotionRectangle = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
 
                 
 export class ConsolidateMotionRectangles extends MotionRectangles {

@@ -43,7 +43,7 @@ import { SoftwareInformation } from '../../../../org/allbinary/logic/system/Soft
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateBase } from './GameAdStateBase.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
+//not GWT import const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
 
                 
 export interface GameAdStateFactoryInterface {

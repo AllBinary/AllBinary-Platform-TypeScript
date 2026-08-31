@@ -67,10 +67,10 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingPropertiesFactory;
+//not GWT import const BuildingPropertiesFactory = globalThis.org.allbinary.game.layer.building.BuildingPropertiesFactory;
 
                 import { BuildingLayer } from './BuildingLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingLayer;
+//not GWT import const BuildingLayer = globalThis.org.allbinary.game.layer.building.BuildingLayer;
 
                 
 export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactory {

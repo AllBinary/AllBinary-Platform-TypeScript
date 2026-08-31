@@ -51,7 +51,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayChangeEvent } from './DisplayChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
+//not GWT import const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
 
                 
 export interface DisplayChangeEventListener extends EventListenerInterface {

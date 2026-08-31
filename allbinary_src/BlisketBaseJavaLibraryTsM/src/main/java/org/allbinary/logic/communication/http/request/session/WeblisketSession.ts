@@ -111,10 +111,10 @@ import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeblisketSessionInterface } from './WeblisketSessionInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
+//not GWT import const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
 
                 import { WeblisketSessionData } from './WeblisketSessionData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+//not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
 
                 
 export class WeblisketSession

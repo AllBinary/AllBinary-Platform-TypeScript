@@ -53,7 +53,7 @@ import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.input.automation.module.JPanel;
 
                 
 export class InputAutomationModuleFactoryInterface

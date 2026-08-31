@@ -41,7 +41,7 @@ import { BasicEventListenerInterface } from '../../../../../../org/allbinary/log
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
+//not GWT import const MotionRectanglesResultsEvent = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
 
                 
 export interface MotionRectanglesResultsListener extends BasicEventListenerInterface {

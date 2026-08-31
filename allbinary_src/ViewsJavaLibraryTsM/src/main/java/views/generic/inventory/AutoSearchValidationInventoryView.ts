@@ -49,7 +49,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventorySearch } from './InventorySearch.js';
-//not GWT import const  = globalThis.views.generic.inventory.InventorySearch;
+//not GWT import const InventorySearch = globalThis.views.generic.inventory.InventorySearch;
 
                 
 export class AutoSearchValidationInventoryView extends InventorySearch {

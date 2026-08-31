@@ -59,7 +59,7 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameStatisticsFactory } from './GameStatisticsFactory.js';
-//not GWT import const  = globalThis.org.allbinary.canvas.GameStatisticsFactory;
+//not GWT import const GameStatisticsFactory = globalThis.org.allbinary.canvas.GameStatisticsFactory;
 
                 
 export class SpecialMessageUtil

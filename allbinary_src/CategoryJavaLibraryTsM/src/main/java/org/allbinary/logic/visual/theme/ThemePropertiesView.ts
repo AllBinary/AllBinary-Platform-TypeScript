@@ -57,10 +57,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemeInterface } from './ThemeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.theme.ThemeInterface;
+//not GWT import const ThemeInterface = globalThis.org.allbinary.logic.visual.theme.ThemeInterface;
 
                 import { ThemeData } from './ThemeData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.theme.ThemeData;
+//not GWT import const ThemeData = globalThis.org.allbinary.logic.visual.theme.ThemeData;
 
                 
 export class ThemePropertiesView

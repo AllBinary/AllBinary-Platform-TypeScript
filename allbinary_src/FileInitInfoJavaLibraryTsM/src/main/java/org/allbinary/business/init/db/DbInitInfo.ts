@@ -111,7 +111,7 @@ import { WeakCrypt } from '../../../../../org/allbinary/logic/system/security/cr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DbConnectionInfo } from './DbConnectionInfo.js';
-//not GWT import const  = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
                 
 export class DbInitInfo extends DbConnectionInfo {

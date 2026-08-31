@@ -111,13 +111,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayableInterface } from './DisplayableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.DisplayableInterface;
+//not GWT import const DisplayableInterface = globalThis.org.allbinary.graphics.displayable.DisplayableInterface;
 
                 import { CanvasStrings } from './CanvasStrings.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
                 import { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
                 
 export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandInterface {

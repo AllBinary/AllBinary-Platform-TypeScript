@@ -157,7 +157,7 @@ import { Cpu } from '../../../../../../org/allbinary/logic/system/hardware/compo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCComponentFactory } from './PCComponentFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.linux.PCComponentFactory;
+//not GWT import const PCComponentFactory = globalThis.org.allbinary.logic.system.hardware.linux.PCComponentFactory;
 
                 
 export class LinuxHardware

@@ -87,10 +87,10 @@ import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import const  = globalThis.admin.taghelpers.ModifyTable;
+//not GWT import const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
 
                 import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
-//not GWT import const  = globalThis.admin.taghelpers.InventoryItemViewParentTagHelper;
+//not GWT import const InventoryItemViewParentTagHelper = globalThis.admin.taghelpers.InventoryItemViewParentTagHelper;
 
                 
 export class InventoryRequestHelper extends ModifyTable {

@@ -41,16 +41,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PoolInterface } from './PoolInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+//not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
 
                 import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
 
                 import { PoolType } from './PoolType.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.PoolType;
+//not GWT import const PoolType = globalThis.org.allbinary.logic.util.cache.PoolType;
 
                 import { CachePolicy } from './CachePolicy.js';
-//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CachePolicy;
+//not GWT import const CachePolicy = globalThis.org.allbinary.logic.util.cache.CachePolicy;
 
                 
 export class PoolInterfaceFactory

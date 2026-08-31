@@ -49,7 +49,7 @@ import { View } from '../../../android/view/View.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidGameStatistics } from './AndroidGameStatistics.js';
-//not GWT import const  = globalThis.org.allbinary.canvas.AndroidGameStatistics;
+//not GWT import const AndroidGameStatistics = globalThis.org.allbinary.canvas.AndroidGameStatistics;
 
                 
 export class ProfilingRefreshHelper extends AndroidGameStatistics {

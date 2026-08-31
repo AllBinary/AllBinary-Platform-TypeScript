@@ -99,19 +99,19 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.BasicProfileActionScriptInput;
+//not GWT import const BasicProfileActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.BasicProfileActionScriptInput;
 
                 import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputInterface;
+//not GWT import const KeyboardActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputInterface;
 
                 import { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputJPanel;
+//not GWT import const KeyboardActionScriptInputJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputJPanel;
 
                 import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputData;
+//not GWT import const KeyboardActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputData;
 
                 import { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardInputAutomationProcessor;
+//not GWT import const KeyboardInputAutomationProcessor = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardInputAutomationProcessor;
 
                 
 export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {

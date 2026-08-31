@@ -69,7 +69,7 @@ import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OSGIServiceUtil } from './OSGIServiceUtil.js';
-//not GWT import const  = globalThis.org.allbinary.osgi.service.OSGIServiceUtil;
+//not GWT import const OSGIServiceUtil = globalThis.org.allbinary.osgi.service.OSGIServiceUtil;
 
                 
 export class InputAutomationServiceConsumer

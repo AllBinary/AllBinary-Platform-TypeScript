@@ -135,7 +135,7 @@ import { PathGenerator } from '../../../../../org/allbinary/media/graphics/geogr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointBase } from './WaypointBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointBase;
+//not GWT import const WaypointBase = globalThis.org.allbinary.game.layer.waypoint.WaypointBase;
 
                 
 export class MultipassNoCacheWaypoint extends WaypointBase implements BuildingEventListenerInterface {

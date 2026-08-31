@@ -49,13 +49,13 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+//not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
 
                 import { NoPlayerGameInput } from './NoPlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.NoPlayerGameInput;
+//not GWT import const NoPlayerGameInput = globalThis.org.allbinary.game.input.NoPlayerGameInput;
 
                 import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
                 
 export class NullPlayerGameInputComposite

@@ -53,7 +53,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheable;
+//not GWT import const ImageArrayRotationAnimationCacheable = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheable;
 
                 
 export class ImageArrayRotationAnimationCacheableInterfaceFactory

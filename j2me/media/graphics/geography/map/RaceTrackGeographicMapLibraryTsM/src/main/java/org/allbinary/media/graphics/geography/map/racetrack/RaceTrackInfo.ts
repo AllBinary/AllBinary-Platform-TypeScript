@@ -45,7 +45,7 @@ import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/Ba
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackFrictionProperties } from './RaceTrackFrictionProperties.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackFrictionProperties;
+//not GWT import const RaceTrackFrictionProperties = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackFrictionProperties;
 
                 
 export class RaceTrackInfo

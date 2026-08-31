@@ -53,13 +53,13 @@ import { HelpSet } from '../../../../../javax/help/HelpSet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.input.automation.robot.Rectangle;
 
                 import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Color;
+//not GWT import const Color = globalThis.org.allbinary.input.automation.robot.Color;
 
                 import { Point } from './Point.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Point;
+//not GWT import const Point = globalThis.org.allbinary.input.automation.robot.Point;
 
                 
 export interface InputRobotInterface {

@@ -63,7 +63,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureInput } from './MotionGestureInput.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+//not GWT import const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
 
                 
 export class TouchMotionGestureFactory

@@ -51,7 +51,7 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidletEventListener } from './GameMidletEventListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.midlet.GameMidletEventListener;
+//not GWT import const GameMidletEventListener = globalThis.org.allbinary.game.midlet.GameMidletEventListener;
 
                 
 export class GameMidletEventHandler extends BasicEventHandler {

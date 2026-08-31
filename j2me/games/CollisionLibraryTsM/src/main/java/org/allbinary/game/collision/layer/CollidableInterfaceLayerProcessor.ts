@@ -59,10 +59,10 @@ import { LayerProcessor } from '../../../../../org/allbinary/layer/LayerProcesso
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableInterfaceLayerManager } from './CollidableInterfaceLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.layer.CollidableInterfaceLayerManager;
+//not GWT import const CollidableInterfaceLayerManager = globalThis.org.allbinary.game.collision.layer.CollidableInterfaceLayerManager;
 
                 import { AllBinaryCollisionManager } from './AllBinaryCollisionManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.layer.AllBinaryCollisionManager;
+//not GWT import const AllBinaryCollisionManager = globalThis.org.allbinary.game.collision.layer.AllBinaryCollisionManager;
 
                 
 export class CollidableInterfaceLayerProcessor extends LayerProcessor {

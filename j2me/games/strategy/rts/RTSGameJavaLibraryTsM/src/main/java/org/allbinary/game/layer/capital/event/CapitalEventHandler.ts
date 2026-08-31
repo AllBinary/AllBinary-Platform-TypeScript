@@ -50,10 +50,10 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapitalEventListenerInterface } from './CapitalEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.capital.event.CapitalEventListenerInterface;
+//not GWT import const CapitalEventListenerInterface = globalThis.org.allbinary.game.layer.capital.event.CapitalEventListenerInterface;
 
                 import { CapitalEvent } from './CapitalEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.capital.event.CapitalEvent;
+//not GWT import const CapitalEvent = globalThis.org.allbinary.game.layer.capital.event.CapitalEvent;
 
                 
 export class CapitalEventHandler extends BasicEventHandler {

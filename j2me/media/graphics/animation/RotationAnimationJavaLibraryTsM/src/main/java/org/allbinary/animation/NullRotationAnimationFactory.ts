@@ -61,25 +61,25 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
                 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { RotationAnimation } from './RotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.RotationAnimation;
+//not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
 
                 import { NullRotationAnimation } from './NullRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.NullRotationAnimation;
+//not GWT import const NullRotationAnimation = globalThis.org.allbinary.animation.NullRotationAnimation;
 
                 import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
+//not GWT import const IndexedAnimationBehavior = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
 
                 //import { NullRotationAnimation2 } from './NullRotationAnimation2.js';
-//not GWT import const  = globalThis.org.allbinary.animation.NullRotationAnimation2;
+//not GWT import const NullRotationAnimation2 = globalThis.org.allbinary.animation.NullRotationAnimation2;
 
                 import { Animation } from './Animation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class NullRotationAnimationFactory

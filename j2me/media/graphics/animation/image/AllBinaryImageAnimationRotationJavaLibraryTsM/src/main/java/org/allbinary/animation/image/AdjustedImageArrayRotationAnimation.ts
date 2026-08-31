@@ -55,10 +55,10 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimation } from './ImageArrayRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimation;
+//not GWT import const ImageArrayRotationAnimation = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimation;
 
                 import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
+//not GWT import const ImageArrayRotationAnimationInfo = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
 
                 //TWB - Adjustments should be done in the resource creation and not at the animation level
 export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnimation {

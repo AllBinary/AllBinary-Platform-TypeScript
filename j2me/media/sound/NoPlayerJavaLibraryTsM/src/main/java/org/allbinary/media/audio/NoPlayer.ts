@@ -45,10 +45,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.BasicPlayer;
+//not GWT import const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
 
                 import { NullControl } from './NullControl.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NullControl;
+//not GWT import const NullControl = globalThis.org.allbinary.media.audio.NullControl;
 
                 
 export class NoPlayer extends BasicPlayer {

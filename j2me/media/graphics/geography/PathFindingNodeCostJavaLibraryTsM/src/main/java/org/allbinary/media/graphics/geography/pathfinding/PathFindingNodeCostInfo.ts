@@ -51,10 +51,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
+//not GWT import const Comparable = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
 
                 import { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
+//not GWT import const PathFindingNodeCostInfoData = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
 
                 
 export class PathFindingNodeCostInfo

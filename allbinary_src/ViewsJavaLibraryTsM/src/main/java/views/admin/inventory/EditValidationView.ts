@@ -97,7 +97,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryItemView } from './InventoryItemView.js';
-//not GWT import const  = globalThis.views.admin.inventory.InventoryItemView;
+//not GWT import const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
 
                 
 export class EditValidationView extends InventoryItemView implements ValidationComponentInterface {

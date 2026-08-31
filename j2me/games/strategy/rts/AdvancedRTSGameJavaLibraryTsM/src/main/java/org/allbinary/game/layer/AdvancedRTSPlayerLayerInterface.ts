@@ -45,10 +45,10 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
+//not GWT import const RTSPlayerLayerInterface = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
 
                 import { AdvancedPlayerOwnedRTSLayers } from './AdvancedPlayerOwnedRTSLayers.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AdvancedPlayerOwnedRTSLayers;
+//not GWT import const AdvancedPlayerOwnedRTSLayers = globalThis.org.allbinary.game.layer.AdvancedPlayerOwnedRTSLayers;
 
                 
 export interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface {

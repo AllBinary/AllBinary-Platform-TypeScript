@@ -57,7 +57,7 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitInterface } from './InitInterface.js';
-//not GWT import const  = globalThis.org.allbinary.init.InitInterface;
+//not GWT import const InitInterface = globalThis.org.allbinary.init.InitInterface;
 
                 
 export class Init

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColorUtil } from './BasicColorUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColorUtil;
+//not GWT import const BasicColorUtil = globalThis.org.allbinary.graphics.color.BasicColorUtil;
 
                 
 export class BasicColorUtilFactory

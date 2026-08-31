@@ -57,10 +57,10 @@ import { RotationAnimation } from '../../../../org/allbinary/animation/RotationA
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundAnimationInterfaceFactory;
+//not GWT import const CompoundAnimationInterfaceFactory = globalThis.org.allbinary.animation.compound.CompoundAnimationInterfaceFactory;
 
                 import { CompoundRotationAnimation } from './CompoundRotationAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundRotationAnimation;
+//not GWT import const CompoundRotationAnimation = globalThis.org.allbinary.animation.compound.CompoundRotationAnimation;
 
                 
 export class CompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {

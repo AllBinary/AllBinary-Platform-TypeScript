@@ -51,10 +51,10 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TickableLayerManager } from './TickableLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.tick.TickableLayerManager;
+//not GWT import const TickableLayerManager = globalThis.org.allbinary.game.tick.TickableLayerManager;
 
                 import { TickableInterface } from './TickableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.tick.TickableInterface;
+//not GWT import const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
 
                 
 export class TickableLayerProcessor extends LayerProcessor {

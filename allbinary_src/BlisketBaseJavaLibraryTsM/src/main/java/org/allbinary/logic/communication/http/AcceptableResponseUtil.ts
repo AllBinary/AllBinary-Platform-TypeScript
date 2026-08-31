@@ -47,7 +47,7 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseFactory } from './AcceptableResponseFactory.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.AcceptableResponseFactory;
+//not GWT import const AcceptableResponseFactory = globalThis.org.allbinary.logic.communication.http.AcceptableResponseFactory;
 
                 
 export class AcceptableResponseUtil

@@ -75,10 +75,10 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.PartInterface;
+//not GWT import const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
 
                 import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
+//not GWT import const CountedLayerInterfaceFactoryPart = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
 
                 
 export class CountedLayersHudPaintable

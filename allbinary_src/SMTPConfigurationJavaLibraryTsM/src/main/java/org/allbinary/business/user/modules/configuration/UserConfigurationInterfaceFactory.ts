@@ -81,16 +81,16 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationData } from './UserConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
+//not GWT import const UserConfigurationData = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
 
                 import { UserConfigurationView } from './UserConfigurationView.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationView;
+//not GWT import const UserConfigurationView = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationView;
 
                 import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+//not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
                 import { UserConfiguration } from './UserConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
+//not GWT import const UserConfiguration = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
 
                 
 export class UserConfigurationInterfaceFactory

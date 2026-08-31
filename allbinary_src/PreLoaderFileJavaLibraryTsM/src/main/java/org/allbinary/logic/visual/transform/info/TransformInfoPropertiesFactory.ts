@@ -69,10 +69,10 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
                 import { TransformInfoProperties } from './TransformInfoProperties.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoProperties;
+//not GWT import const TransformInfoProperties = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoProperties;
 
                 
 export class TransformInfoPropertiesFactory

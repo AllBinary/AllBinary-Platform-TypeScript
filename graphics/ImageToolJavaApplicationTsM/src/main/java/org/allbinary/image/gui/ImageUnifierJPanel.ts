@@ -119,61 +119,61 @@ import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { ImageIconUnique } from './ImageIconUnique.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ImageIconUnique;
+//not GWT import const ImageIconUnique = globalThis.org.allbinary.image.gui.ImageIconUnique;
 
                 import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.DefaultListModel;
+//not GWT import const DefaultListModel = globalThis.org.allbinary.image.gui.DefaultListModel;
 
                 import { ImageIcon } from './ImageIcon.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ImageIcon;
+//not GWT import const ImageIcon = globalThis.org.allbinary.image.gui.ImageIcon;
 
                 import { Icon } from './Icon.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Icon;
+//not GWT import const Icon = globalThis.org.allbinary.image.gui.Icon;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.image.gui.JLabel;
 
                 import { JScrollPane } from './JScrollPane.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JScrollPane;
+//not GWT import const JScrollPane = globalThis.org.allbinary.image.gui.JScrollPane;
 
                 import { JList } from './JList.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JList;
+//not GWT import const JList = globalThis.org.allbinary.image.gui.JList;
 
                 import { JButton } from './JButton.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+//not GWT import const JButton = globalThis.org.allbinary.image.gui.JButton;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JTextField;
+//not GWT import const JTextField = globalThis.org.allbinary.image.gui.JTextField;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Dimension;
+//not GWT import const Dimension = globalThis.org.allbinary.image.gui.Dimension;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+//not GWT import const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+//not GWT import const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
 
                 import { PropertyChangeListener } from './PropertyChangeListener.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.PropertyChangeListener;
+//not GWT import const PropertyChangeListener = globalThis.org.allbinary.image.gui.PropertyChangeListener;
 
                 import { PropertyChangeEvent } from './PropertyChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.PropertyChangeEvent;
+//not GWT import const PropertyChangeEvent = globalThis.org.allbinary.image.gui.PropertyChangeEvent;
 
                 import { KeyAdapter } from './KeyAdapter.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.KeyAdapter;
+//not GWT import const KeyAdapter = globalThis.org.allbinary.image.gui.KeyAdapter;
 
                 import { KeyEvent } from './KeyEvent.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.KeyEvent;
+//not GWT import const KeyEvent = globalThis.org.allbinary.image.gui.KeyEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
 
                 
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

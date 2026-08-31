@@ -51,7 +51,7 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfiguration;
+//not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
 
                 
 export class GameConfigurationSingleton

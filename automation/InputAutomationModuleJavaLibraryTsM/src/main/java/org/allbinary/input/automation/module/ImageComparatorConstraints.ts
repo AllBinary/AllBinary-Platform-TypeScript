@@ -71,10 +71,10 @@ import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.Color;
+//not GWT import const Color = globalThis.org.allbinary.input.automation.module.Color;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.input.automation.module.Rectangle;
 
                 
 export class ImageComparatorConstraints

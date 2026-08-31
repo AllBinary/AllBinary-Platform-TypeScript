@@ -83,10 +83,10 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadableItem } from './DownloadableItem.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
+//not GWT import const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
 
                 import { DownloadItemData } from './DownloadItemData.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadItemData;
+//not GWT import const DownloadItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadItemData;
 
                 
 export class DownloadableItemView

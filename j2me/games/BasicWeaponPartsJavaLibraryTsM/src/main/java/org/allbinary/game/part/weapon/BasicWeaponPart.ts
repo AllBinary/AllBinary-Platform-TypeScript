@@ -105,7 +105,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SalvoInterface } from './SalvoInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.weapon.SalvoInterface;
+//not GWT import const SalvoInterface = globalThis.org.allbinary.game.part.weapon.SalvoInterface;
 
                 
 export class BasicWeaponPart

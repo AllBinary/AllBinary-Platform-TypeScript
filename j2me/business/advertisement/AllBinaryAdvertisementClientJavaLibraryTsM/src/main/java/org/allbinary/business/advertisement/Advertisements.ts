@@ -63,7 +63,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementProcessorInterface } from './AdvertisementProcessorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.AdvertisementProcessorInterface;
+//not GWT import const AdvertisementProcessorInterface = globalThis.org.allbinary.business.advertisement.AdvertisementProcessorInterface;
 
                 
 export class Advertisements

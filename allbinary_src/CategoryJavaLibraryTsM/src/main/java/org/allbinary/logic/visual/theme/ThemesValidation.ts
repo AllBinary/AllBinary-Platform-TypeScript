@@ -63,7 +63,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemesData } from './ThemesData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.theme.ThemesData;
+//not GWT import const ThemesData = globalThis.org.allbinary.logic.visual.theme.ThemesData;
 
                 
 export class ThemesValidation extends Validation implements DomNodeInterface {

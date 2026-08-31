@@ -55,7 +55,7 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBean } from './AbSqlBean.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
 
                 
 export class AbDatabaseManagement extends AbSqlBean {

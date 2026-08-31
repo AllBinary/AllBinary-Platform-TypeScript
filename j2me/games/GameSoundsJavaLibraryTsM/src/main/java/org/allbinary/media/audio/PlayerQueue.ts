@@ -77,10 +77,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 import { NoSound } from './NoSound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NoSound;
+//not GWT import const NoSound = globalThis.org.allbinary.media.audio.NoSound;
 
                 
 export class PlayerQueue

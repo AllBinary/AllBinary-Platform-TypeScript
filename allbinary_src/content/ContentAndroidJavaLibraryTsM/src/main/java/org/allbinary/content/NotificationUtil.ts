@@ -81,13 +81,13 @@ import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.content.NotificationBuilder;
+//not GWT import const NotificationBuilder = globalThis.org.allbinary.content.NotificationBuilder;
 
                 import { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
-//not GWT import const  = globalThis.org.allbinary.content.NotificationBuilderAPI23;
+//not GWT import const NotificationBuilderAPI23 = globalThis.org.allbinary.content.NotificationBuilderAPI23;
 
                 import { CommandUriAction } from './CommandUriAction.js';
-//not GWT import const  = globalThis.org.allbinary.content.CommandUriAction;
+//not GWT import const CommandUriAction = globalThis.org.allbinary.content.CommandUriAction;
 
                 
 export class NotificationUtil

@@ -81,13 +81,13 @@ import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
+//not GWT import const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
 
                 import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
+//not GWT import const RTSPlayerLayerInterface = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
 
                 import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.PlayerOwnedRTSLayers;
+//not GWT import const PlayerOwnedRTSLayers = globalThis.org.allbinary.game.layer.PlayerOwnedRTSLayers;
 
                 
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {

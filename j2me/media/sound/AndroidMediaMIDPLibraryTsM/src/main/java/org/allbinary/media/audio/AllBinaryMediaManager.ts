@@ -83,25 +83,25 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sounds;
+//not GWT import const Sounds = globalThis.org.allbinary.media.audio.Sounds;
 
                 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+//not GWT import const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
                 import { Sound } from './Sound.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.AndroidMediaPlayerWrapper;
+//not GWT import const AndroidMediaPlayerWrapper = globalThis.org.allbinary.media.audio.AndroidMediaPlayerWrapper;
 
                 import { PlayerComposite } from './PlayerComposite.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.PlayerComposite;
+//not GWT import const PlayerComposite = globalThis.org.allbinary.media.audio.PlayerComposite;
 
                 import { MediaPlayerUtil } from './MediaPlayerUtil.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.MediaPlayerUtil;
+//not GWT import const MediaPlayerUtil = globalThis.org.allbinary.media.audio.MediaPlayerUtil;
 
                 import { NoPlayer } from './NoPlayer.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.NoPlayer;
+//not GWT import const NoPlayer = globalThis.org.allbinary.media.audio.NoPlayer;
 
                 //AndroidMediaMIDPLibrary
 export class AllBinaryMediaManager

@@ -53,7 +53,7 @@ import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/h
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlRow } from './HtmlRow.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlRow;
+//not GWT import const HtmlRow = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlRow;
 
                 
 export class HtmlTable extends HtmlTag {

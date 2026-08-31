@@ -117,7 +117,7 @@ import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/Sup
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEntityInterface } from './UserEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
+//not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
 
                 
 export class UserEntity extends AbSqlBean implements UserEntityInterface {

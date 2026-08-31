@@ -77,10 +77,10 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleProgressActivityInterface } from './SimpleProgressActivityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.android.activity.SimpleProgressActivityInterface;
+//not GWT import const SimpleProgressActivityInterface = globalThis.org.allbinary.android.activity.SimpleProgressActivityInterface;
 
                 import { KeyInputViewCompositeInterface } from './KeyInputViewCompositeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.android.activity.KeyInputViewCompositeInterface;
+//not GWT import const KeyInputViewCompositeInterface = globalThis.org.allbinary.android.activity.KeyInputViewCompositeInterface;
 
                 
 export class MidletActivityBase extends Activity implements GameFeatureListenerInterface, GameInitializedListenerInterface, SimpleProgressActivityInterface, KeyInputViewCompositeInterface, GenericMotionEventVerifyInterface {

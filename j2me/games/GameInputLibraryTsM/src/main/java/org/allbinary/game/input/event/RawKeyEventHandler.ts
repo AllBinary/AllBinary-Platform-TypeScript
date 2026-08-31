@@ -65,7 +65,7 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RawKeyEventListener } from './RawKeyEventListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
+//not GWT import const RawKeyEventListener = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
 
                 
 export class RawKeyEventHandler

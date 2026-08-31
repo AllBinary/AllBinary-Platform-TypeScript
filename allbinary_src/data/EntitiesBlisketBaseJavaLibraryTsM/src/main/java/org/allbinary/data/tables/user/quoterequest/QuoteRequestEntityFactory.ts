@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { QuoteRequestEntity } from './QuoteRequestEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntity;
+//not GWT import const QuoteRequestEntity = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntity;
 
                 
 export class QuoteRequestEntityFactory

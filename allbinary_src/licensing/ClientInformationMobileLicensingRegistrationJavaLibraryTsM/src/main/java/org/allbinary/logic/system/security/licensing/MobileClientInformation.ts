@@ -75,10 +75,10 @@ import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
+//not GWT import const AbeClientInformation = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
 
                 import { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
+//not GWT import const PartnerIdentifierFileUtil = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
 
                 
 export class MobileClientInformation extends AbeClientInformation {

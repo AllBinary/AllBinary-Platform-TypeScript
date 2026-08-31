@@ -49,7 +49,7 @@ import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/Vie
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticTileLayerIntoPositionViewPosition } from './StaticTileLayerIntoPositionViewPosition.js';
-//not GWT import const  = globalThis.org.allbinary.game.view.StaticTileLayerIntoPositionViewPosition;
+//not GWT import const StaticTileLayerIntoPositionViewPosition = globalThis.org.allbinary.game.view.StaticTileLayerIntoPositionViewPosition;
 
                 
 export class StaticTileLayerViewPositionFactory

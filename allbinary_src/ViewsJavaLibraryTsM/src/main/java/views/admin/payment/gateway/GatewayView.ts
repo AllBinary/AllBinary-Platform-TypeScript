@@ -67,10 +67,10 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayViewAbstract } from './PaymentGatewayViewAbstract.js';
-//not GWT import const  = globalThis.views.admin.payment.gateway.PaymentGatewayViewAbstract;
+//not GWT import const PaymentGatewayViewAbstract = globalThis.views.admin.payment.gateway.PaymentGatewayViewAbstract;
 
                 import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
-//not GWT import const  = globalThis.views.admin.payment.gateway.PaymentGatewayComponent;
+//not GWT import const PaymentGatewayComponent = globalThis.views.admin.payment.gateway.PaymentGatewayComponent;
 
                 
 export class GatewayView extends PaymentGatewayViewAbstract {

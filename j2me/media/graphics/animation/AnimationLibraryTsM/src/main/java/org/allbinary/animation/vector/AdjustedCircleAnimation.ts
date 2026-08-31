@@ -49,7 +49,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CircleAnimation } from './CircleAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.vector.CircleAnimation;
+//not GWT import const CircleAnimation = globalThis.org.allbinary.animation.vector.CircleAnimation;
 
                 
 export class AdjustedCircleAnimation extends CircleAnimation {

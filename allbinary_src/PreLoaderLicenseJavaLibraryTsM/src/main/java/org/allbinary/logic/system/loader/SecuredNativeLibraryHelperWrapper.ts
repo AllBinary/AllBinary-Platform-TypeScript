@@ -49,10 +49,10 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NativeLibraryHelperWrapper } from './NativeLibraryHelperWrapper.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.loader.NativeLibraryHelperWrapper;
+//not GWT import const NativeLibraryHelperWrapper = globalThis.org.allbinary.logic.system.loader.NativeLibraryHelperWrapper;
 
                 import { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
+//not GWT import const SecuredNativeLibraryInterface = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
 
                 
 export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrapper {

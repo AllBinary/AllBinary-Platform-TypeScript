@@ -57,13 +57,13 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactoryBase } from './PickedUpLayerInterfaceFactoryBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryBase;
+//not GWT import const PickedUpLayerInterfaceFactoryBase = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryBase;
 
                 import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
+//not GWT import const PickedUpLayerType = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
 
                 import { IconLayer } from './IconLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.IconLayer;
+//not GWT import const IconLayer = globalThis.org.allbinary.game.layer.pickup.IconLayer;
 
                 
 export class PickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactoryBase {

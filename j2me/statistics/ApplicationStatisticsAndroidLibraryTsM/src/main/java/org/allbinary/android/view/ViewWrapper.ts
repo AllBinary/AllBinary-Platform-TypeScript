@@ -41,7 +41,7 @@ import { View } from '../../../../android/view/View.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseViewWrapper } from './BaseViewWrapper.js';
-//not GWT import const  = globalThis.org.allbinary.android.view.BaseViewWrapper;
+//not GWT import const BaseViewWrapper = globalThis.org.allbinary.android.view.BaseViewWrapper;
 
                 
 export class ViewWrapper extends BaseViewWrapper {

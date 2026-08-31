@@ -61,16 +61,16 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionFormNoneFactory } from './ScrollSelectionFormNoneFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormNoneFactory;
+//not GWT import const ScrollSelectionFormNoneFactory = globalThis.org.allbinary.graphics.form.ScrollSelectionFormNoneFactory;
 
                 import { CommandCurrentSelectionForm } from './CommandCurrentSelectionForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.CommandCurrentSelectionForm;
+//not GWT import const CommandCurrentSelectionForm = globalThis.org.allbinary.graphics.form.CommandCurrentSelectionForm;
 
                 import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+//not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
                 import { FormType } from './FormType.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+//not GWT import const FormType = globalThis.org.allbinary.graphics.form.FormType;
 
                 
 export class CommandCurrentSelectionFormFactory

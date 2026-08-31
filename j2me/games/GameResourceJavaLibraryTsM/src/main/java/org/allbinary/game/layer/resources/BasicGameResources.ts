@@ -77,7 +77,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameGraphicsResourceUtil } from './GameGraphicsResourceUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.resources.GameGraphicsResourceUtil;
+//not GWT import const GameGraphicsResourceUtil = globalThis.org.allbinary.game.layer.resources.GameGraphicsResourceUtil;
 
                 
 export class BasicGameResources

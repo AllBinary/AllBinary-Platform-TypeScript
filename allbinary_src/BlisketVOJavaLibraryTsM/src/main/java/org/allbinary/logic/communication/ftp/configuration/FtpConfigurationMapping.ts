@@ -53,10 +53,10 @@ import { TableMappingInterface } from '../../../../../../org/allbinary/data/tabl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
+//not GWT import const FtpConfigurationInterface = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
 
                 import { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
+//not GWT import const FtpConfigurationData = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
 
                 
 export class FtpConfigurationMapping

@@ -41,7 +41,7 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitLayer } from './UnitLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+//not GWT import const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
 
                 
 export class UnitGameInputProcessor extends GameInputProcessor {

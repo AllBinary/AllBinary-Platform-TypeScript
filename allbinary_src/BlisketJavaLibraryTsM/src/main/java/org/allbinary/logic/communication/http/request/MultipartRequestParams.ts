@@ -75,7 +75,7 @@ import { InvalidContentTypeException } from '../../../../../../org/apache/common
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestParams } from './RequestParams.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
                 
 export class MultipartRequestParams extends RequestParams {

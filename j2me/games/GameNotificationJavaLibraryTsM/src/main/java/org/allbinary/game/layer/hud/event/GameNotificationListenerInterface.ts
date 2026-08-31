@@ -51,7 +51,7 @@ import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotificationEvent } from './GameNotificationEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEvent;
+//not GWT import const GameNotificationEvent = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEvent;
 
                 
 export interface GameNotificationListenerInterface extends EventListenerInterface {

@@ -65,13 +65,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresFactoryInterface } from './HighScoresFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
+//not GWT import const HighScoresFactoryInterface = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
 
                 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+//not GWT import const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
 
                 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+//not GWT import const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
 
                 
 export class HighScoresBase

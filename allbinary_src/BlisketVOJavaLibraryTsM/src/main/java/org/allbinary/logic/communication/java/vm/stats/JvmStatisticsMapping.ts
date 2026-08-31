@@ -51,10 +51,10 @@ import { TableMappingInterface } from '../../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JvmStatistics } from './JvmStatistics.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatistics;
+//not GWT import const JvmStatistics = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatistics;
 
                 import { JvmStatisticsData } from './JvmStatisticsData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsData;
+//not GWT import const JvmStatisticsData = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsData;
 
                 
 export class JvmStatisticsMapping extends JvmStatistics implements TableMappingInterface {

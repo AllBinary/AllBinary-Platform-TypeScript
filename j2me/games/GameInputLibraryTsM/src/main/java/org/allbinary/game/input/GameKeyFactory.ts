@@ -63,10 +63,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKey } from './GameKey.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.GameKey;
+//not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
 
                 import { InputFactory } from './InputFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
                 
 export class GameKeyFactory

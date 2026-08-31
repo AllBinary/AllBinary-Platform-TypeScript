@@ -55,7 +55,7 @@ import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/Anima
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageAnimation } from './ImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageAnimation;
+//not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
 
                 
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {

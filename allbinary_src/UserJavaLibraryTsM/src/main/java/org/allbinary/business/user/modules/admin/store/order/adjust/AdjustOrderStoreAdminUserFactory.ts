@@ -53,7 +53,7 @@ import { UserInterface } from '../../../../../../../../../org/allbinary/business
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdjustOrderStoreAdminUser } from './AdjustOrderStoreAdminUser.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.admin.store.order.adjust.AdjustOrderStoreAdminUser;
+//not GWT import const AdjustOrderStoreAdminUser = globalThis.org.allbinary.business.user.modules.admin.store.order.adjust.AdjustOrderStoreAdminUser;
 
                 
 export class AdjustOrderStoreAdminUserFactory

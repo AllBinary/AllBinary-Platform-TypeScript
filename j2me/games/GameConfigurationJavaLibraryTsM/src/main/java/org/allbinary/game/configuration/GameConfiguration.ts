@@ -79,7 +79,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
+//not GWT import const GameConfigurationSingleton = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
 
                 
 export class GameConfiguration

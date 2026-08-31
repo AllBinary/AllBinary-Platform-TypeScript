@@ -67,10 +67,10 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyedEvent } from './DestroyedEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
+//not GWT import const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
 
                 import { DestroyedEventListenerInterface } from './DestroyedEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventListenerInterface;
+//not GWT import const DestroyedEventListenerInterface = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventListenerInterface;
 
                 
 export class DestroyedEventHandler extends BasicEventHandler {

@@ -55,13 +55,13 @@ import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.ColorFillPaintable;
+//not GWT import const ColorFillPaintable = globalThis.org.allbinary.game.paint.ColorFillPaintable;
 
                 import { OverScanColorFillPaintable } from './OverScanColorFillPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.OverScanColorFillPaintable;
+//not GWT import const OverScanColorFillPaintable = globalThis.org.allbinary.game.paint.OverScanColorFillPaintable;
 
                 import { ColorFillBasePaintable } from './ColorFillBasePaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+//not GWT import const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
 
                 
 export class ColorFillPaintableFactory

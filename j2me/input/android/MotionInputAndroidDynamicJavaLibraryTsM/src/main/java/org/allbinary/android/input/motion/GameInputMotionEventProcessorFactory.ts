@@ -51,7 +51,7 @@ import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameInputMotionEventProcessor } from './BaseGameInputMotionEventProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
+//not GWT import const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
 
                 
 export class GameInputMotionEventProcessorFactory

@@ -55,7 +55,7 @@ import { AdvertisementSearchInterface } from '../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignsInterface } from './AdvertisementCampaignsInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignsInterface;
+//not GWT import const AdvertisementCampaignsInterface = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignsInterface;
 
                 
 export class AdvertisementCampaigns

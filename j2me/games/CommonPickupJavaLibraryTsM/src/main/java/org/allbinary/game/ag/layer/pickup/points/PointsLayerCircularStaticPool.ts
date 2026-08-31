@@ -55,7 +55,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayer } from './PointsLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsLayer;
+//not GWT import const PointsLayer = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsLayer;
 
                 
 export class PointsLayerCircularStaticPool extends AllBinaryLayerCircularPool {

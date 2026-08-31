@@ -53,7 +53,7 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
 
                 
 export class SpecialGameInputProcessor extends GameInputProcessor {

@@ -49,7 +49,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.Paintable;
+//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
                 
 export class NullPaintable extends Paintable {

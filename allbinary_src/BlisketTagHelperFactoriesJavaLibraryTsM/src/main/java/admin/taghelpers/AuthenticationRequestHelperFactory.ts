@@ -59,10 +59,10 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactory } from './TagHelperFactory.js';
-//not GWT import const  = globalThis.admin.taghelpers.TagHelperFactory;
+//not GWT import const TagHelperFactory = globalThis.admin.taghelpers.TagHelperFactory;
 
                 import { AuthenticationRequestHelper } from './AuthenticationRequestHelper.js';
-//not GWT import const  = globalThis.admin.taghelpers.AuthenticationRequestHelper;
+//not GWT import const AuthenticationRequestHelper = globalThis.admin.taghelpers.AuthenticationRequestHelper;
 
                 
 export class AuthenticationRequestHelperFactory extends TagHelperFactory {

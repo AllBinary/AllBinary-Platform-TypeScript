@@ -51,7 +51,7 @@ import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputMappingEvent } from './InputMappingEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.mapping.event.InputMappingEvent;
+//not GWT import const InputMappingEvent = globalThis.org.allbinary.game.input.mapping.event.InputMappingEvent;
 
                 
 export interface InputMappingEventListenerInterface extends EventListenerInterface {

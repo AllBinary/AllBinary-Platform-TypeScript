@@ -79,19 +79,19 @@ import { PathFindingInfo } from '../../../../org/allbinary/media/graphics/geogra
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
+//not GWT import const WaypointPathRunnableBase = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
 
                 //import { FirstRunnable } from './FirstRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.FirstRunnable;
+//not GWT import const FirstRunnable = globalThis.org.allbinary.game.layer.FirstRunnable;
 
                 //import { SecondRunnable } from './SecondRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.SecondRunnable;
+//not GWT import const SecondRunnable = globalThis.org.allbinary.game.layer.SecondRunnable;
 
                 //import { EndRunnable } from './EndRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.EndRunnable;
+//not GWT import const EndRunnable = globalThis.org.allbinary.game.layer.EndRunnable;
 
                 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+//not GWT import const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
 
                 
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {

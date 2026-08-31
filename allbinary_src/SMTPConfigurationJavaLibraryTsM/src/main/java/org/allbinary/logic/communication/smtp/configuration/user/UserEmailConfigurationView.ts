@@ -89,16 +89,16 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailConfigurationInterface } from './UserEmailConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
+//not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
                 import { UserEmailConfiguration } from './UserEmailConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
+//not GWT import const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
 
                 import { UserEmailConfigurationMapping } from './UserEmailConfigurationMapping.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationMapping;
+//not GWT import const UserEmailConfigurationMapping = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationMapping;
 
                 import { UserEmailConfigurationData } from './UserEmailConfigurationData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
+//not GWT import const UserEmailConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
 
                 
 export class UserEmailConfigurationView

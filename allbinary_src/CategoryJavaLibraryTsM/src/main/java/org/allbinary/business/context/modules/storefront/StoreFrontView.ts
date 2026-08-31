@@ -73,10 +73,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontInterface } from './StoreFrontInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
                 import { StoreFrontData } from './StoreFrontData.js';
-//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
                 
 export class StoreFrontView

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerQueue } from './PlayerQueue.js';
-//not GWT import const  = globalThis.org.allbinary.media.audio.PlayerQueue;
+//not GWT import const PlayerQueue = globalThis.org.allbinary.media.audio.PlayerQueue;
 
                 
 export class SecondaryPlayerQueueFactory

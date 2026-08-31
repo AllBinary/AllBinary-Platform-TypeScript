@@ -81,7 +81,7 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelpPaintable } from './HelpPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.paint.help.HelpPaintable;
+//not GWT import const HelpPaintable = globalThis.org.allbinary.game.paint.help.HelpPaintable;
 
                 
 export class BasicInputMappingHelpPaintable extends HelpPaintable {

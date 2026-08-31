@@ -47,10 +47,10 @@ import { ActivityFractureUtil } from '../../../../org/allbinary/android/Activity
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidGameKey } from './AndroidGameKey.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.AndroidGameKey;
+//not GWT import const AndroidGameKey = globalThis.org.allbinary.game.input.AndroidGameKey;
 
                 import { Input } from './Input.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
                 
 export class AndroidKeyFactory extends ActivityFractureUtil {

@@ -73,10 +73,10 @@ import { TransformInfoInterface } from '../../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentProcessorInterfaceFactoryInterface } from './PaymentProcessorInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.processor.PaymentProcessorInterfaceFactoryInterface;
+//not GWT import const PaymentProcessorInterfaceFactoryInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.processor.PaymentProcessorInterfaceFactoryInterface;
 
                 import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.processor.PaymentProcessorInterface;
+//not GWT import const PaymentProcessorInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.processor.PaymentProcessorInterface;
 
                 
 export class PaymentProcessorInterfaceFactory

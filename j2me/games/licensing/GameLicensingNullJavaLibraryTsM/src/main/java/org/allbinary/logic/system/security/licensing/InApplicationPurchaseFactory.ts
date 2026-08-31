@@ -55,7 +55,7 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockableFeature } from './LockableFeature.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+//not GWT import const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
                 
 export class InApplicationPurchaseFactory

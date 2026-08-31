@@ -61,7 +61,7 @@ import { RelativeRelationship } from '../../../../org/allbinary/graphics/Relativ
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.resource.ResourceRelativeRelationshipFactoryInterface;
+//not GWT import const ResourceRelativeRelationshipFactoryInterface = globalThis.org.allbinary.game.resource.ResourceRelativeRelationshipFactoryInterface;
 
                 
 export class ResourceRelativeRelationshipFactory

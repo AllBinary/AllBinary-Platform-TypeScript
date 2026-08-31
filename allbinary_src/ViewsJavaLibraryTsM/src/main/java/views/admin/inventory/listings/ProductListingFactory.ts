@@ -53,10 +53,10 @@ import { SearchRequest } from '../../../../org/allbinary/logic/control/search/Se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProductListing } from './ProductListing.js';
-//not GWT import const  = globalThis.views.admin.inventory.listings.ProductListing;
+//not GWT import const ProductListing = globalThis.views.admin.inventory.listings.ProductListing;
 
                 import { ProductListingInterface } from './ProductListingInterface.js';
-//not GWT import const  = globalThis.views.admin.inventory.listings.ProductListingInterface;
+//not GWT import const ProductListingInterface = globalThis.views.admin.inventory.listings.ProductListingInterface;
 
                 
 export class ProductListingFactory

@@ -57,7 +57,7 @@ import { BasicColorFactory } from '../../../../../../../../org/allbinary/graphic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotificationHud } from './GameNotificationHud.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotificationHud;
+//not GWT import const GameNotificationHud = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotificationHud;
 
                 
 export class NoGameNotificationHudSingleton

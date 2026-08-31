@@ -65,7 +65,7 @@ import { PoolTypeFactory } from '../../../../../org/allbinary/logic/util/cache/P
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageCacheableFactory } from './BufferedImageCacheableFactory.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.cache.BufferedImageCacheableFactory;
+//not GWT import const BufferedImageCacheableFactory = globalThis.org.allbinary.media.image.cache.BufferedImageCacheableFactory;
 
                 
 export class BufferedImagePoolSingleton

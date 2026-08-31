@@ -91,7 +91,7 @@ import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationBundleActivatorListenerInterface } from './InputAutomationBundleActivatorListenerInterface.js';
-//not GWT import const  = globalThis.bundle.input.automation.InputAutomationBundleActivatorListenerInterface;
+//not GWT import const InputAutomationBundleActivatorListenerInterface = globalThis.bundle.input.automation.InputAutomationBundleActivatorListenerInterface;
 
                 
 export class InputAutomationBundleActivator

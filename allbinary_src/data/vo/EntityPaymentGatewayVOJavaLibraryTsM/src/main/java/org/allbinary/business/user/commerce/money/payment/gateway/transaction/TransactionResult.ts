@@ -81,10 +81,10 @@ import { Tokenizer } from '../../../../../../../../../org/allbinary/logic/string
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionResultInterface } from './TransactionResultInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.TransactionResultInterface;
+//not GWT import const TransactionResultInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.TransactionResultInterface;
 
                 import { PaymentTransactionKeysFactory } from './PaymentTransactionKeysFactory.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionKeysFactory;
+//not GWT import const PaymentTransactionKeysFactory = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionKeysFactory;
 
                 
 export class TransactionResult

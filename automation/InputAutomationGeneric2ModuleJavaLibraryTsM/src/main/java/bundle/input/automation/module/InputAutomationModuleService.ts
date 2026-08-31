@@ -43,7 +43,7 @@ import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleServiceInterface } from './InputAutomationModuleServiceInterface.js';
-//not GWT import const  = globalThis.bundle.input.automation.module.InputAutomationModuleServiceInterface;
+//not GWT import const InputAutomationModuleServiceInterface = globalThis.bundle.input.automation.module.InputAutomationModuleServiceInterface;
 
                 
 export class InputAutomationModuleService

@@ -91,7 +91,7 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import const  = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
+//not GWT import const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
 
                 
 export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {

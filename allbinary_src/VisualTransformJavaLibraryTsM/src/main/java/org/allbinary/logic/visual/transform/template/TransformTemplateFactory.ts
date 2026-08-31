@@ -73,7 +73,7 @@ import { TransformInfoObjectFactory } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTemplateInterface } from './TransformTemplateInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.TransformTemplateInterface;
+//not GWT import const TransformTemplateInterface = globalThis.org.allbinary.logic.visual.transform.template.TransformTemplateInterface;
 
                 
 export class TransformTemplateFactory

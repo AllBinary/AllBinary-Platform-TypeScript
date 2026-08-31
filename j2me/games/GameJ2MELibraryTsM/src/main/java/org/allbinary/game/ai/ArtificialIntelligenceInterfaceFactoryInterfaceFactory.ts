@@ -57,10 +57,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAI } from './BasicAI.js';
-//not GWT import const  = globalThis.org.allbinary.game.ai.BasicAI;
+//not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
                 import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
+//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
 
                 
 export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory

@@ -55,7 +55,7 @@ import { AbResponseHandler } from '../org/allbinary/logic/communication/http/req
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationTransformTag } from './ValidationTransformTag.js';
-//not GWT import const  = globalThis.tags.ValidationTransformTag;
+//not GWT import const ValidationTransformTag = globalThis.tags.ValidationTransformTag;
 
                 
 export class StoreValidationTransformTag extends ValidationTransformTag {

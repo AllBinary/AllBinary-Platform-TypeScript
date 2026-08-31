@@ -45,10 +45,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
                 import { BasicColorFactory } from './BasicColorFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
                 
 export class BasicColorCacheFactory

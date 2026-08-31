@@ -33,7 +33,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogLocationInput } from './AnalogLocationInput.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.analog.AnalogLocationInput;
+//not GWT import const AnalogLocationInput = globalThis.org.allbinary.game.input.analog.AnalogLocationInput;
 
                 
 export class AnalogLocationInputFactory

@@ -63,10 +63,10 @@ import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableDestroyableDamageableBehavior } from './CollidableDestroyableDamageableBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
+//not GWT import const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
 
                 import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
 
                 
 export class CollidableCharacterBehavior extends CollidableDestroyableDamageableBehavior {

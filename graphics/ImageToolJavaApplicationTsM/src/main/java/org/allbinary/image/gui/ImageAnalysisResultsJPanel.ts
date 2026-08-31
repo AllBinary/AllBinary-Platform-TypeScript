@@ -57,25 +57,25 @@ import { ImageColorResults } from '../../../../org/allbinary/media/image/analysi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.image.gui.JLabel;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JTextField;
+//not GWT import const JTextField = globalThis.org.allbinary.image.gui.JTextField;
 
                 import { JComboBox } from './JComboBox.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.JComboBox;
+//not GWT import const JComboBox = globalThis.org.allbinary.image.gui.JComboBox;
 
                 import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.DefaultComboBoxModel;
+//not GWT import const DefaultComboBoxModel = globalThis.org.allbinary.image.gui.DefaultComboBoxModel;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
 
                 
 export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {

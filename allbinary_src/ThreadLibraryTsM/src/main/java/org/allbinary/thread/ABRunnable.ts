@@ -49,7 +49,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RunnableInterface } from './RunnableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.thread.RunnableInterface;
+//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
                 
 export class ABRunnable

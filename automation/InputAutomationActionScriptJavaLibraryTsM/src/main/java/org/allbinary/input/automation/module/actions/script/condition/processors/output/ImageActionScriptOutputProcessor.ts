@@ -67,10 +67,10 @@ import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageTypes } from './ImageTypes.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
+//not GWT import const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
 
                 import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
+//not GWT import const ImageActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
 
                 
 export class ImageActionScriptOutputProcessor

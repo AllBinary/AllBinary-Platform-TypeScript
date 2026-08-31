@@ -53,7 +53,7 @@ import { UserInterface } from '../../../../../../../org/allbinary/business/user/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WholesaleUser } from './WholesaleUser.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.customer.wholesale.WholesaleUser;
+//not GWT import const WholesaleUser = globalThis.org.allbinary.business.user.modules.customer.wholesale.WholesaleUser;
 
                 
 export class WholesaleUserFactory

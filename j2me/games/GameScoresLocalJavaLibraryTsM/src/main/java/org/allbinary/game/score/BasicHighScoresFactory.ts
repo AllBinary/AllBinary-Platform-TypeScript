@@ -45,25 +45,25 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresBase;
+//not GWT import const HighScoresBase = globalThis.org.allbinary.game.score.HighScoresBase;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+//not GWT import const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
 
                 import { RecordStoreHighScores } from './RecordStoreHighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.RecordStoreHighScores;
+//not GWT import const RecordStoreHighScores = globalThis.org.allbinary.game.score.RecordStoreHighScores;
 
                 import { ScoreComparator } from './ScoreComparator.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.ScoreComparator;
+//not GWT import const ScoreComparator = globalThis.org.allbinary.game.score.ScoreComparator;
 
                 import { HighScoresHelper2 } from './HighScoresHelper2.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelper2;
+//not GWT import const HighScoresHelper2 = globalThis.org.allbinary.game.score.HighScoresHelper2;
 
                 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+//not GWT import const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
 
                 
 export class BasicHighScoresFactory extends HighScoresBase {

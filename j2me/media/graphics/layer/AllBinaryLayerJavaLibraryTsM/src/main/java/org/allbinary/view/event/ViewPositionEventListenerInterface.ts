@@ -51,7 +51,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionEvent } from './ViewPositionEvent.js';
-//not GWT import const  = globalThis.org.allbinary.view.event.ViewPositionEvent;
+//not GWT import const ViewPositionEvent = globalThis.org.allbinary.view.event.ViewPositionEvent;
 
                 
 export interface ViewPositionEventListenerInterface extends EventListenerInterface {

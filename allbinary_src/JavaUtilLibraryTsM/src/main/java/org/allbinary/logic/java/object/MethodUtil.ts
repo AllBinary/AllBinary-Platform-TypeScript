@@ -49,7 +49,7 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParamsUtil } from './ParamsUtil.js';
-//not GWT import const  = globalThis.org.allbinary.logic.java.anyType.ParamsUtil;
+//not GWT import const ParamsUtil = globalThis.org.allbinary.logic.java.anyType.ParamsUtil;
 
                 
 export class MethodUtil

@@ -31,13 +31,13 @@ import { Vector } from '../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StringBuffer } from './StringBuffer.js';
-//not GWT import const  = globalThis.org.allbinary.animation.StringBuffer;
+//not GWT import const StringBuffer = globalThis.org.allbinary.animation.StringBuffer;
 
                 import { FixedPoint } from './FixedPoint.js';
-//not GWT import const  = globalThis.org.allbinary.animation.FixedPoint;
+//not GWT import const FixedPoint = globalThis.org.allbinary.animation.FixedPoint;
 
                 import { PGUtil } from './PGUtil.js';
-//not GWT import const  = globalThis.org.allbinary.animation.PGUtil;
+//not GWT import const PGUtil = globalThis.org.allbinary.animation.PGUtil;
 
                 
 export class PathParser

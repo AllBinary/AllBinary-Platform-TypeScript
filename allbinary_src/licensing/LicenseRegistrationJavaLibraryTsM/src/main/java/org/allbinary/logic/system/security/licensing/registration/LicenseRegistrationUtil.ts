@@ -65,10 +65,10 @@ import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/Sp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RegistrationConfiguration } from './RegistrationConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.registration.RegistrationConfiguration;
+//not GWT import const RegistrationConfiguration = globalThis.org.allbinary.logic.system.security.licensing.registration.RegistrationConfiguration;
 
                 import { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.registration.XmlRpcRemoteLicenseRegistrationClient;
+//not GWT import const XmlRpcRemoteLicenseRegistrationClient = globalThis.org.allbinary.logic.system.security.licensing.registration.XmlRpcRemoteLicenseRegistrationClient;
 
                 
 export class LicenseRegistrationUtil

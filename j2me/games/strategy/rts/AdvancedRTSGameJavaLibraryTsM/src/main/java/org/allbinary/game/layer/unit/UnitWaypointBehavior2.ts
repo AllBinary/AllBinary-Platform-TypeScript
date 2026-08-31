@@ -157,16 +157,16 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
+//not GWT import const UnitWaypointBehavior = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
 
                 import { UnitWaypointStrings } from './UnitWaypointStrings.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitWaypointStrings;
+//not GWT import const UnitWaypointStrings = globalThis.org.allbinary.game.layer.unit.UnitWaypointStrings;
 
                 import { UnitLayer } from './UnitLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+//not GWT import const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
 
                 //import { BuildingSteeringVisitor } from './BuildingSteeringVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.unit.BuildingSteeringVisitor;
+//not GWT import const BuildingSteeringVisitor = globalThis.org.allbinary.game.layer.unit.BuildingSteeringVisitor;
 
                 
 export class UnitWaypointBehavior2 extends UnitWaypointBehavior {

@@ -57,22 +57,22 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionToolFactory } from './SelectionToolFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionToolFactory;
+//not GWT import const SelectionToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionToolFactory;
 
                 import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
+//not GWT import const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
 
                 import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+//not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
 
                 import { LinesGraphicItemFactory } from './LinesGraphicItemFactory.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItemFactory;
+//not GWT import const LinesGraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItemFactory;
 
                 import { GraphicItemBuilder } from './GraphicItemBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemBuilder;
+//not GWT import const GraphicItemBuilder = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemBuilder;
 
                 import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+//not GWT import const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
                 
 export class GraphicItemFactory

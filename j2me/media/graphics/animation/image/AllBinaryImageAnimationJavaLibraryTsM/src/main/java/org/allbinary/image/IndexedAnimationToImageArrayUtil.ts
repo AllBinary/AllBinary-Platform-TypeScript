@@ -49,7 +49,7 @@ import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationFrameToImageUtil } from './AnimationFrameToImageUtil.js';
-//not GWT import const  = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
+//not GWT import const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
 
                 
 export class IndexedAnimationToImageArrayUtil

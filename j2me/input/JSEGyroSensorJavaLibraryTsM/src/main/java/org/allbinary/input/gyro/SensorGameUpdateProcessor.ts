@@ -65,7 +65,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GyroSensorFactory } from './GyroSensorFactory.js';
-//not GWT import const  = globalThis.org.allbinary.input.gyro.GyroSensorFactory;
+//not GWT import const GyroSensorFactory = globalThis.org.allbinary.input.gyro.GyroSensorFactory;
 
                 
 export class SensorGameUpdateProcessor

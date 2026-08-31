@@ -65,16 +65,16 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultsListener } from './ImageComparisonResultsListener.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsListener;
+//not GWT import const ImageComparisonResultsListener = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsListener;
 
                 import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
+//not GWT import const ImageComparisonResultsEvent = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
 
                 import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+//not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
 
                 import { ComparisonImageInputOutput } from './ComparisonImageInputOutput.js';
-//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ComparisonImageInputOutput;
+//not GWT import const ComparisonImageInputOutput = globalThis.org.allbinary.media.image.comparison.ComparisonImageInputOutput;
 
                 
 export class SaveImageComparisonWorker

@@ -75,7 +75,7 @@ import { HtmlNameMathData } from '../../../../../../org/allbinary/logic/visual/d
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
-//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
+//not GWT import const NameSpaceRequestParamData = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
 
                 
 export class NameSpaceRequestParam

@@ -43,10 +43,10 @@ import { Vector } from '../../../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { LogUtil } from './LogUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.LogUtil;
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
                 //not plain js import { Log } from './Log.js';
-const  = globalThis.org.allbinary.logic.communication.log.Log;
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
                 
 export class LogBuffer

@@ -49,10 +49,10 @@ import { WeblisketSession } from '../../../../../../org/allbinary/logic/communic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformHttpRequestDocument } from './TransformHttpRequestDocument.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocument;
+//not GWT import const TransformHttpRequestDocument = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocument;
 
                 import { TransformDocumentInterface } from './TransformDocumentInterface.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+//not GWT import const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
 
                 
 export class TransformHttpRequestDocumentFactory

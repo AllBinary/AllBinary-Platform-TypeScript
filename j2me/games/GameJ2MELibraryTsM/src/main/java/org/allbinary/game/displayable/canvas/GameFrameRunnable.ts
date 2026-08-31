@@ -59,10 +59,10 @@ import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/tim
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
+//not GWT import const GameRunnable = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
 
                 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+//not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
                 
 export class GameFrameRunnable extends GameRunnable {

@@ -81,7 +81,7 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImage } from './OpenGLESImage.js';
-//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
                 //This is not actually VBO impl
 export class OpenGLESGL11VBOImage extends OpenGLESImage {

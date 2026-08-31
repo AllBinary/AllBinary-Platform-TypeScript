@@ -67,7 +67,7 @@ import { InitEmulatorFactory } from '../../../../../org/allbinary/emulator/InitE
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RendererStrings } from './RendererStrings.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.opengles.renderer.RendererStrings;
+//not GWT import const RendererStrings = globalThis.org.allbinary.graphics.opengles.renderer.RendererStrings;
 
                 
 export class EmulatorCustomRenderer

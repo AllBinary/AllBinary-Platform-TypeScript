@@ -55,13 +55,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsListBuilder } from './TouchButtonsListBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonsListBuilder;
+//not GWT import const TouchButtonsListBuilder = globalThis.org.allbinary.input.motion.button.TouchButtonsListBuilder;
 
                 import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonsBuilder;
+//not GWT import const BasicTouchButtonsBuilder = globalThis.org.allbinary.input.motion.button.BasicTouchButtonsBuilder;
 
                 import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.BuildingScrollTouchButtonsBuilder;
+//not GWT import const BuildingScrollTouchButtonsBuilder = globalThis.org.allbinary.input.motion.button.BuildingScrollTouchButtonsBuilder;
 
                 
 export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsListBuilder {

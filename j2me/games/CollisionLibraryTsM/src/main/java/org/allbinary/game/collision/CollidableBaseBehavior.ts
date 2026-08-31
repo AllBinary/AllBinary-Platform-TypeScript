@@ -85,19 +85,19 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableInterface } from './CollidableInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableInterface;
+//not GWT import const CollidableInterface = globalThis.org.allbinary.game.collision.CollidableInterface;
 
                 import { LayerCollisionUtil } from './LayerCollisionUtil.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.LayerCollisionUtil;
+//not GWT import const LayerCollisionUtil = globalThis.org.allbinary.game.collision.LayerCollisionUtil;
 
                 import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
+//not GWT import const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
 
                 import { CollisionTypeFactory } from './CollisionTypeFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+//not GWT import const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
 
                 import { CollisionType } from './CollisionType.js';
-//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionType;
+//not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
 
                 
 export class CollidableBaseBehavior

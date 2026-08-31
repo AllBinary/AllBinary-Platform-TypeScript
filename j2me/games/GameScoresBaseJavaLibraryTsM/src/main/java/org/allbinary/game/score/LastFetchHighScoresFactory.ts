@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHighScoresFactory } from './NoHighScoresFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.NoHighScoresFactory;
+//not GWT import const NoHighScoresFactory = globalThis.org.allbinary.game.score.NoHighScoresFactory;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 
 export class LastFetchHighScoresFactory

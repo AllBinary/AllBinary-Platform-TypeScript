@@ -59,10 +59,10 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionFactory } from './DirectionFactory.js';
-//not GWT import const  = globalThis.org.allbinary.direction.DirectionFactory;
+//not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
                 import { Direction } from './Direction.js';
-//not GWT import const  = globalThis.org.allbinary.direction.Direction;
+//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
                 
 export class DirectionUtil

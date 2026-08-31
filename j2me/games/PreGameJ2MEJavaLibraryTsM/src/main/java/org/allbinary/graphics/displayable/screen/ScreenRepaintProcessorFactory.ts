@@ -51,7 +51,7 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintProcessor } from './ScreenRepaintProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintProcessor;
+//not GWT import const ScreenRepaintProcessor = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintProcessor;
 
                 
 export class ScreenRepaintProcessorFactory

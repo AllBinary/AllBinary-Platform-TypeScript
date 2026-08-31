@@ -53,7 +53,7 @@ import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayer } from './MineLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayer;
+//not GWT import const MineLayer = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayer;
 
                 
 export class MineLayerFactory

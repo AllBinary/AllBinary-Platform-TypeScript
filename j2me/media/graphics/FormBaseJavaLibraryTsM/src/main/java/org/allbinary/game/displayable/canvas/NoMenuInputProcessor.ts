@@ -53,7 +53,7 @@ import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/ge
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+//not GWT import const BasicMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
 
                 
 export class NoMenuInputProcessor extends BasicMenuInputProcessor {

@@ -135,7 +135,7 @@ import { HttpStoreComponentView } from '../../../views/business/context/modules/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryUploadMediaUtil } from './InventoryUploadMediaUtil.js';
-//not GWT import const  = globalThis.views.admin.inventory.InventoryUploadMediaUtil;
+//not GWT import const InventoryUploadMediaUtil = globalThis.views.admin.inventory.InventoryUploadMediaUtil;
 
                 
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {

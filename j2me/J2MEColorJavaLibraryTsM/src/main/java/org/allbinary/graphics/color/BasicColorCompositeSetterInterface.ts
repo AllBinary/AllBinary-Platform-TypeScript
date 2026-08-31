@@ -45,7 +45,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
                 
 export interface BasicColorCompositeSetterInterface {

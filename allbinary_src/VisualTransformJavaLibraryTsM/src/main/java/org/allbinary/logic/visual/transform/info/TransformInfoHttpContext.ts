@@ -75,7 +75,7 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttp } from './TransformInfoHttp.js';
-//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttp;
+//not GWT import const TransformInfoHttp = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttp;
 
                 
 export class TransformInfoHttpContext extends TransformInfoHttp {

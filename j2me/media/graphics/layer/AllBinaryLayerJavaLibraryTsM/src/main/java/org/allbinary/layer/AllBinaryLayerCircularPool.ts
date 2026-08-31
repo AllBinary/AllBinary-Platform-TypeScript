@@ -59,7 +59,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerFactoryInterface } from './AllBinaryLayerFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
+//not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
 
                 
 export class AllBinaryLayerCircularPool extends BaseCircularPool {

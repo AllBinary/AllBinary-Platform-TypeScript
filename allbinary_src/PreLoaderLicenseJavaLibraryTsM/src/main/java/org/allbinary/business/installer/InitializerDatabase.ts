@@ -87,10 +87,10 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DynamicInitDb } from './DynamicInitDb.js';
-//not GWT import const  = globalThis.org.allbinary.business.installer.DynamicInitDb;
+//not GWT import const DynamicInitDb = globalThis.org.allbinary.business.installer.DynamicInitDb;
 
                 import { InitializerData } from './InitializerData.js';
-//not GWT import const  = globalThis.org.allbinary.business.installer.InitializerData;
+//not GWT import const InitializerData = globalThis.org.allbinary.business.installer.InitializerData;
 
                 
 export class InitializerDatabase

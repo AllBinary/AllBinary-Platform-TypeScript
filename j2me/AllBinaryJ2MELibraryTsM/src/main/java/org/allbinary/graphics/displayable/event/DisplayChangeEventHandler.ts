@@ -51,10 +51,10 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayChangeEventListener } from './DisplayChangeEventListener.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventListener;
+//not GWT import const DisplayChangeEventListener = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventListener;
 
                 import { DisplayChangeEvent } from './DisplayChangeEvent.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
+//not GWT import const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
 
                 
 export class DisplayChangeEventHandler extends BasicEventHandler {

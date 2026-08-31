@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureConfiguration } from './MotionGestureConfiguration.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
+//not GWT import const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
 
                 
 export class MotionGestureConfigurationFactory

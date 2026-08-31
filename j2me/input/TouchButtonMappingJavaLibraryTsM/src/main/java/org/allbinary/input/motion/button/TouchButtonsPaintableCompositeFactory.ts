@@ -51,7 +51,7 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsPaintableComposite } from './TouchButtonsPaintableComposite.js';
-//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonsPaintableComposite;
+//not GWT import const TouchButtonsPaintableComposite = globalThis.org.allbinary.input.motion.button.TouchButtonsPaintableComposite;
 
                 
 export class TouchButtonsPaintableCompositeFactory

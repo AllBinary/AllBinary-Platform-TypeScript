@@ -93,7 +93,7 @@ import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/commun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionResultEntityInterface } from './TransactionResultEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionResultEntityInterface;
+//not GWT import const TransactionResultEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionResultEntityInterface;
 
                 
 export class TransactionResultEntity extends AbSqlBean implements TransactionResultEntityInterface {

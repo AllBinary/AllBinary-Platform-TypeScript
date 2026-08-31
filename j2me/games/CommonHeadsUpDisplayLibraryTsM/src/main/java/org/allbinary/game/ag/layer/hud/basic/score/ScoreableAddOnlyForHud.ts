@@ -41,7 +41,7 @@ import { Scoreable } from '../../../../../../../../org/allbinary/game/score/Scor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScoreHudWidget } from './ScoreHudWidget.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.score.ScoreHudWidget;
+//not GWT import const ScoreHudWidget = globalThis.org.allbinary.game.ag.layer.hud.basic.score.ScoreHudWidget;
 
                 
 export class ScoreableAddOnlyForHud extends Scoreable {

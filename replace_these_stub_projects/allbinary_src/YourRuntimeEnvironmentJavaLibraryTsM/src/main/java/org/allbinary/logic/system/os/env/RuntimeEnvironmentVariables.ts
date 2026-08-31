@@ -63,7 +63,7 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Process } from './Process.js';
-//not GWT import const  = globalThis.org.allbinary.logic.system.os.env.Process;
+//not GWT import const Process = globalThis.org.allbinary.logic.system.os.env.Process;
 
                 
 export class RuntimeEnvironmentVariables

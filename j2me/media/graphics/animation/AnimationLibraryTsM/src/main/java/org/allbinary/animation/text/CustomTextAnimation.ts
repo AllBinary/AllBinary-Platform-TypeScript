@@ -75,10 +75,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextAnimation } from './TextAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.TextAnimation;
+//not GWT import const TextAnimation = globalThis.org.allbinary.animation.text.TextAnimation;
 
                 import { TextInterface } from './TextInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.text.TextInterface;
+//not GWT import const TextInterface = globalThis.org.allbinary.animation.text.TextInterface;
 
                 
 export class CustomTextAnimation extends TextAnimation implements TextInterface {

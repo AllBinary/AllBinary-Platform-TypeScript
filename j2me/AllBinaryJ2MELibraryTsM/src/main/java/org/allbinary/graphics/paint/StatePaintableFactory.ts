@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StatePaintable } from './StatePaintable.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.paint.StatePaintable;
+//not GWT import const StatePaintable = globalThis.org.allbinary.graphics.paint.StatePaintable;
 
                 
 export class StatePaintableFactory

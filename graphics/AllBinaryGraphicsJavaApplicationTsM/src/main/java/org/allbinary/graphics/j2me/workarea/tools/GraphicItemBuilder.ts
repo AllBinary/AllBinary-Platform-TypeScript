@@ -45,13 +45,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsDomUtil } from './PointsDomUtil.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
+//not GWT import const PointsDomUtil = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
 
                 import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+//not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
 
                 import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+//not GWT import const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
                 
 export class GraphicItemBuilder

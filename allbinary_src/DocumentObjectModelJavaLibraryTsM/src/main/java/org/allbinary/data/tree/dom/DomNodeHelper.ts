@@ -57,7 +57,7 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomSearchHelper } from './DomSearchHelper.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
                 
 export class DomNodeHelper

@@ -223,13 +223,13 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimulatedBuildingPropertiesFactory } from './SimulatedBuildingPropertiesFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.building.SimulatedBuildingPropertiesFactory;
+//not GWT import const SimulatedBuildingPropertiesFactory = globalThis.org.allbinary.game.layer.building.SimulatedBuildingPropertiesFactory;
 
                 import { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingPropertiesFactory;
+//not GWT import const BuildingPropertiesFactory = globalThis.org.allbinary.game.layer.building.BuildingPropertiesFactory;
 
                 import { BuildingInfoHudPaintable } from './BuildingInfoHudPaintable.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingInfoHudPaintable;
+//not GWT import const BuildingInfoHudPaintable = globalThis.org.allbinary.game.layer.building.BuildingInfoHudPaintable;
 
                 
 export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {

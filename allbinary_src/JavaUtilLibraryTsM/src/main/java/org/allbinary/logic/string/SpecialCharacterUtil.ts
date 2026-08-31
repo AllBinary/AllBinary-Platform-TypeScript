@@ -55,7 +55,7 @@ import { HashMap } from '../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { StringUtil } from './StringUtil.js';
-const  = globalThis.org.allbinary.logic.string.StringUtil;
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
                 
 export class SpecialCharacterUtil

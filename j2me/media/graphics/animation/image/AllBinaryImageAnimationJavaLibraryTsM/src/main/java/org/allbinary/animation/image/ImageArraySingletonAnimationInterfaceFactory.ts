@@ -63,7 +63,7 @@ import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/imag
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayAnimation;
+//not GWT import const ImageArrayAnimation = globalThis.org.allbinary.animation.image.ImageArrayAnimation;
 
                 
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {

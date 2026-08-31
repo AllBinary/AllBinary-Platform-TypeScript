@@ -79,13 +79,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerEventListener } from './LayerManagerEventListener.js';
-//not GWT import const  = globalThis.org.allbinary.layer.event.LayerManagerEventListener;
+//not GWT import const LayerManagerEventListener = globalThis.org.allbinary.layer.event.LayerManagerEventListener;
 
                 import { LayerManagerEvent } from './LayerManagerEvent.js';
-//not GWT import const  = globalThis.org.allbinary.layer.event.LayerManagerEvent;
+//not GWT import const LayerManagerEvent = globalThis.org.allbinary.layer.event.LayerManagerEvent;
 
                 import { LayerManagerEventListenerInterface } from './LayerManagerEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.layer.event.LayerManagerEventListenerInterface;
+//not GWT import const LayerManagerEventListenerInterface = globalThis.org.allbinary.layer.event.LayerManagerEventListenerInterface;
 
                 
 export class LayerManagerEventHandler extends BasicEventHandler {

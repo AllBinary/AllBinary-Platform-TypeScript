@@ -51,7 +51,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultipassState } from './MultipassState.js';
-//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
+//not GWT import const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
 
                 
 export class GeographicPathFinderBase

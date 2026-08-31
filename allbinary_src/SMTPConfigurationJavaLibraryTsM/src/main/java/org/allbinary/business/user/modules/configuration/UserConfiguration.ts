@@ -63,7 +63,7 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+//not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
                 
 export class UserConfiguration

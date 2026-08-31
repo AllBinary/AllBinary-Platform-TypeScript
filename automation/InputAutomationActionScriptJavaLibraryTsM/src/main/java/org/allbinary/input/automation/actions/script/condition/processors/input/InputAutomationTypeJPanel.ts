@@ -37,22 +37,22 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JPanel;
+//not GWT import const JPanel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JPanel;
 
                 import { JComboBox } from './JComboBox.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JComboBox;
+//not GWT import const JComboBox = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JComboBox;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JLabel;
+//not GWT import const JLabel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JLabel;
 
                 import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
+//not GWT import const DefaultComboBoxModel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.GroupLayout;
+//not GWT import const GroupLayout = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Short;
+//not GWT import const Short = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Short;
 
                 
 export class InputAutomationTypeJPanel extends javax.swing.JPanel {

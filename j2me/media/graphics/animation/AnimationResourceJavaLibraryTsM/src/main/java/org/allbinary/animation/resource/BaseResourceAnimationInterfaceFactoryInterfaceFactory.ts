@@ -101,7 +101,7 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeatureResourceAnimationInterfaceFactoryInterface } from './FeatureResourceAnimationInterfaceFactoryInterface.js';
-//not GWT import const  = globalThis.org.allbinary.animation.resource.FeatureResourceAnimationInterfaceFactoryInterface;
+//not GWT import const FeatureResourceAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.resource.FeatureResourceAnimationInterfaceFactoryInterface;
 
                 
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory

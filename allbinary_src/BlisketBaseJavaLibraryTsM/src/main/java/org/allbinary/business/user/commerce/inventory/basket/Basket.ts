@@ -75,7 +75,7 @@ import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasketInterface } from './BasketInterface.js';
-//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
+//not GWT import const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
 
                 
 export class Basket

@@ -63,7 +63,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GlobalsView } from './GlobalsView.js';
-//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.includes.globals.GlobalsView;
+//not GWT import const GlobalsView = globalThis.views.business.context.modules.storefront.customizer.includes.globals.GlobalsView;
 
                 
 export class EditGlobalsValidationView extends GlobalsView implements ValidationComponentInterface {

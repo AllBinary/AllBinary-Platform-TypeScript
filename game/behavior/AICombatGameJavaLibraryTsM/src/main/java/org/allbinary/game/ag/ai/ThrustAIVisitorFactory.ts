@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThrustAIVisitor } from './ThrustAIVisitor.js';
-//not GWT import const  = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitor;
+//not GWT import const ThrustAIVisitor = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitor;
 
                 
 export class ThrustAIVisitorFactory

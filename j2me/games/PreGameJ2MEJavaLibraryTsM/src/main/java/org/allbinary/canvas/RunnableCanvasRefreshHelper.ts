@@ -53,7 +53,7 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Processor } from './Processor.js';
-//not GWT import const  = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
                 
 export class RunnableCanvasRefreshHelper extends Processor {

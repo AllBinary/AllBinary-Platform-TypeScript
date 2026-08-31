@@ -63,13 +63,13 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputEventListener } from './CompleteMotionGestureInputEventListener.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListener;
+//not GWT import const CompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListener;
 
                 import { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
+//not GWT import const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
 
                 import { CompleteMotionGestureInputEventListenerInterface } from './CompleteMotionGestureInputEventListenerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
+//not GWT import const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
 
                 
 export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {

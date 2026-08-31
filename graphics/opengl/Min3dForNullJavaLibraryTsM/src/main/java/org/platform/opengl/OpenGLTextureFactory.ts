@@ -37,7 +37,7 @@ import { PlatformTextureBaseFactory } from '../../../org/allbinary/platform/open
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLGLUUtils } from './OpenGLGLUUtils.js';
-//not GWT import const  = globalThis.org.platform.opengl.OpenGLGLUUtils;
+//not GWT import const OpenGLGLUUtils = globalThis.org.platform.opengl.OpenGLGLUUtils;
 
                 
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {

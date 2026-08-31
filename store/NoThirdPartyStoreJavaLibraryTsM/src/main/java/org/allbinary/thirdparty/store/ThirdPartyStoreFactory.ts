@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoThirdPartyStore } from './NoThirdPartyStore.js';
-//not GWT import const  = globalThis.org.allbinary.thirdparty.store.NoThirdPartyStore;
+//not GWT import const NoThirdPartyStore = globalThis.org.allbinary.thirdparty.store.NoThirdPartyStore;
 
                 import { ThirdPartyStore } from './ThirdPartyStore.js';
-//not GWT import const  = globalThis.org.allbinary.thirdparty.store.ThirdPartyStore;
+//not GWT import const ThirdPartyStore = globalThis.org.allbinary.thirdparty.store.ThirdPartyStore;
 
                 
 export class ThirdPartyStoreFactory

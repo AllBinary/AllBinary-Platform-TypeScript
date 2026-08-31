@@ -47,7 +47,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
                 
 export interface BasicLayerProcessorInterface {

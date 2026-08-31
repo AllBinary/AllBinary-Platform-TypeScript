@@ -81,7 +81,7 @@ import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { QuoteRequestEntityInterface } from './QuoteRequestEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntityInterface;
+//not GWT import const QuoteRequestEntityInterface = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntityInterface;
 
                 
 export class QuoteRequestEntity extends AbSqlBean implements QuoteRequestEntityInterface {

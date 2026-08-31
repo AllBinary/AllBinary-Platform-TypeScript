@@ -75,7 +75,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomData } from './DomData.js';
-//not GWT import const  = globalThis.org.allbinary.data.tree.dom.DomData;
+//not GWT import const DomData = globalThis.org.allbinary.data.tree.dom.DomData;
 
                 
 export class ModDomHelper

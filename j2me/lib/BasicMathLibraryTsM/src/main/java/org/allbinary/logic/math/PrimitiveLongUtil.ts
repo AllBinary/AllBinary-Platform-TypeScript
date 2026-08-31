@@ -69,10 +69,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { PrimitiveLongSingleton } from './PrimitiveLongSingleton.js';
-const  = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
+const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
                 //not plain js import { MathUtil } from './MathUtil.js';
-const  = globalThis.org.allbinary.logic.math.MathUtil;
+const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
                 
 export class PrimitiveLongUtil

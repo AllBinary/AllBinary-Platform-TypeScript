@@ -71,7 +71,7 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MetaView } from './MetaView.js';
-//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.includes.meta.MetaView;
+//not GWT import const MetaView = globalThis.views.business.context.modules.storefront.customizer.includes.meta.MetaView;
 
                 
 export class NewMetaValidationView extends MetaView implements ValidationComponentInterface {

@@ -91,19 +91,19 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.LinePathAnimation;
+//not GWT import const LinePathAnimation = globalThis.org.allbinary.game.layer.LinePathAnimation;
 
                 import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+//not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
                 import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
 
                 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+//not GWT import const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
 
                 import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
                 
 export class PathAnimation extends Animation {

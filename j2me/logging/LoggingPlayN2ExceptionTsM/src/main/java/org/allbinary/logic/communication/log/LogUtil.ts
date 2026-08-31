@@ -61,13 +61,13 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
                 //not plain js import { Log } from './Log.js';
-const  = globalThis.org.allbinary.logic.communication.log.Log;
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
                 //not plain js import { PreLogUtil } from './PreLogUtil.js';
-const  = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
                 //ActualPlatform
 /*actual*/ export class LogUtil

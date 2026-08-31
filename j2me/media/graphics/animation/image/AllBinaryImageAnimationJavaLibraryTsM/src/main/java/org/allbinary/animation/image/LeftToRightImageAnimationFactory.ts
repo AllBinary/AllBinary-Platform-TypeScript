@@ -51,13 +51,13 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { LeftToRightImageAnimation } from './LeftToRightImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
+//not GWT import const LeftToRightImageAnimation = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
 
                 import { AdjustedLeftToRightImageAnimation } from './AdjustedLeftToRightImageAnimation.js';
-//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedLeftToRightImageAnimation;
+//not GWT import const AdjustedLeftToRightImageAnimation = globalThis.org.allbinary.animation.image.AdjustedLeftToRightImageAnimation;
 
                 
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {

@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorEntity } from './IdGeneratorEntity.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
+//not GWT import const IdGeneratorEntity = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
 
                 import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
-//not GWT import const  = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityInterface;
+//not GWT import const IdGeneratorEntityInterface = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityInterface;
 
                 
 export class IdGeneratorEntityFactory
