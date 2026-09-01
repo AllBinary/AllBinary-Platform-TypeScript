@@ -30,8 +30,8 @@ import { Build } from '../../../../../../android/os/Build.js';
       //not GWT import const Build = globalThis.android.os.Build;
 
       
-import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 //not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';

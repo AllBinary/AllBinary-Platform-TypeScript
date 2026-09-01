@@ -50,7 +50,7 @@ import { Set } from '../../java/util/Set.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //ArkTs does not have this.  So this is for the ArkTs build.
+        //AndroidToJ2ME
 export class J2SEUtil
             extends Object
          {

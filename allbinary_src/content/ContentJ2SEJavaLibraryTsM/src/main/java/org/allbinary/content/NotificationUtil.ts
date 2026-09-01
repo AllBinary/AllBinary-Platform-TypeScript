@@ -28,8 +28,8 @@
       const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';

@@ -26,8 +26,8 @@ import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseIn
       //not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
 
       
-import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';

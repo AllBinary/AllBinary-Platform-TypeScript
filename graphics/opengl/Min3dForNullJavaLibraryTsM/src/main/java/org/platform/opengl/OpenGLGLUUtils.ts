@@ -20,8 +20,8 @@ import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
       //not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
 
       
-import { OpenGLESImage } from '../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } from '../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 

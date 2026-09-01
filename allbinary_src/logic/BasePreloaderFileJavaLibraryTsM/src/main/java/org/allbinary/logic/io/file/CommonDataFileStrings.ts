@@ -100,6 +100,10 @@ export class CommonDataFileStrings
 
     public readonly _CPP: string = ".cpp";
 
+    public readonly H: string = "h";
+
+    public readonly _H: string = ".h";
+
     public readonly UNCRYPTED_EXTENSION: string = this.XML;
 
     public readonly ENCRYPTED_EXTENSION: string = "abd";

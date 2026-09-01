@@ -80,17 +80,17 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLESImage } from './OpenGLESImage.js';
-//not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+        //not plain js import { OpenGLESImage } from './OpenGLESImage.js';
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
-                import { OpenGLESImageDraw } from './OpenGLESImageDraw.js';
-//not GWT import const OpenGLESImageDraw = globalThis.org.allbinary.image.opengles.OpenGLESImageDraw;
+                //not plain js import { OpenGLESImageDraw } from './OpenGLESImageDraw.js';
+const OpenGLESImageDraw = globalThis.org.allbinary.image.opengles.OpenGLESImageDraw;
 
-                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-//not GWT import const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+                //not plain js import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
 
-                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-//not GWT import const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+                //not plain js import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
 
                 
 export class OpenGLESGL10Image extends OpenGLESImage {

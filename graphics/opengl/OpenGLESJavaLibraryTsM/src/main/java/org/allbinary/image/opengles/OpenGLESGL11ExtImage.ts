@@ -82,8 +82,8 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLESImage } from './OpenGLESImage.js';
-//not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+        //not plain js import { OpenGLESImage } from './OpenGLESImage.js';
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
                 //Many devices don't support this even though it is supposed to
 export class OpenGLESGL11ExtImage extends OpenGLESImage {

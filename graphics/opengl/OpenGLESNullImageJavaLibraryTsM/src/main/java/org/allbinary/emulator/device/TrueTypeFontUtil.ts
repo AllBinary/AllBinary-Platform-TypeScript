@@ -32,8 +32,8 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 

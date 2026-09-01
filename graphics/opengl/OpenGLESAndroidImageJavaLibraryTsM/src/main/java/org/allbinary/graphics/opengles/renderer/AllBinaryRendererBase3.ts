@@ -30,8 +30,8 @@ import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js
       const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { OpenGLESImage } from '../../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } from '../../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';

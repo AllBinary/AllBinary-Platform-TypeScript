@@ -101,14 +101,14 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
 //not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
 
-                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-//not GWT import const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+                //not plain js import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
 
-                import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
-//not GWT import const OpenGLESImageTranslate = globalThis.org.allbinary.image.opengles.OpenGLESImageTranslate;
+                //not plain js import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
+const OpenGLESImageTranslate = globalThis.org.allbinary.image.opengles.OpenGLESImageTranslate;
 
-                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-//not GWT import const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+                //not plain js import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
 
                 import { OpenGLImageCacheFactory } from './OpenGLImageCacheFactory.js';
 //not GWT import const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;

@@ -70,8 +70,8 @@ import { Processor } from '../../../org/allbinary/canvas/Processor.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { ABToGBUtil } from '../../../org/allbinary/game/canvas/ABToGBUtil.js';

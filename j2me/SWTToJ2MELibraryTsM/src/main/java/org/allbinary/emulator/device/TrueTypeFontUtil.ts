@@ -54,8 +54,8 @@ import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
       //not GWT import const AvianUtil = globalThis.org.allbinary.AvianUtil;
 
       
-import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 //not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
@@ -86,8 +86,8 @@ import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourc
       //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 //not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';

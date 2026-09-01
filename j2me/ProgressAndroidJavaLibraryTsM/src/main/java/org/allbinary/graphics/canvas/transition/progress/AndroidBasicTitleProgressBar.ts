@@ -116,8 +116,8 @@ import { ImageAnimation } from '../../../../../../org/allbinary/animation/image/
       //not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
 
       
-import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';

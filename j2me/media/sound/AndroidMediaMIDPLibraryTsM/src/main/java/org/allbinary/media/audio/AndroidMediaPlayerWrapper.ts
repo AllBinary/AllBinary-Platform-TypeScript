@@ -42,8 +42,8 @@ import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroid
       //not GWT import const NullAndroidCanvas = globalThis.org.allbinary.android.NullAndroidCanvas;
 
       
-import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 //not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';

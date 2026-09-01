@@ -48,8 +48,8 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';

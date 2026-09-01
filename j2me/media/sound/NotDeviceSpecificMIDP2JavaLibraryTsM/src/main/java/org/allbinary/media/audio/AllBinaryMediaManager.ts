@@ -44,8 +44,8 @@ import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/Aud
       //not GWT import const AudioContentTypeDataFactory = globalThis.org.allbinary.audio.AudioContentTypeDataFactory;
 
       
-import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';

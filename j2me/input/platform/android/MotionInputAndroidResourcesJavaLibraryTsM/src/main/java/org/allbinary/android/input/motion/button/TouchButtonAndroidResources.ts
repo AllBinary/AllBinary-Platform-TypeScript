@@ -24,8 +24,8 @@ import { AndroidResources } from '../../../../../../org/allbinary/AndroidResourc
       //not GWT import const AndroidResources = globalThis.org.allbinary.AndroidResources;
 
       
-import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { Init } from '../../../../../../org/allbinary/init/Init.js';
