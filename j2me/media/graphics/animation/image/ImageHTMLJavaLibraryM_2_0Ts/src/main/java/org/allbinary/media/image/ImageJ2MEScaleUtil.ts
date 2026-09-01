@@ -38,8 +38,8 @@
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
-      //not GWT import const ImageImpl = globalThis.playn.core.ImageImpl;
+//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
 

@@ -60,16 +60,16 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
 
       
-import { Canvas } from '../../../../playn/core/Canvas.js';
-      //not GWT import const Canvas = globalThis.playn.core.Canvas;
+//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
+      const Canvas = globalThis.playn.core.Canvas;
 
       
-import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-      //not GWT import const CanvasImage = globalThis.playn.core.CanvasImage;
+//not plain js import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+      const CanvasImage = globalThis.playn.core.CanvasImage;
 
       
-import { Callback } from '../../../../playn/core/util/Callback.js';
-      //not GWT import const Callback = globalThis.playn.core.util.Callback;
+//not plain js import { Callback } from '../../../../playn/core/util/Callback.js';
+      const Callback = globalThis.playn.core.util.Callback;
 
       
 

@@ -46,8 +46,8 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-import { PlayN } from '../../../../../playn/core/PlayN.js';
-      //not GWT import const PlayN = globalThis.playn.core.PlayN;
+//not plain js import { PlayN } from '../../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
 
       
 

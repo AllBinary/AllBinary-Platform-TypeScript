@@ -36,24 +36,24 @@
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-import { Canvas } from '../../../../playn/core/Canvas.js';
-      //not GWT import const Canvas = globalThis.playn.core.Canvas;
+//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
+      const Canvas = globalThis.playn.core.Canvas;
 
       
-import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
-      //not GWT import const ImageImpl = globalThis.playn.core.ImageImpl;
+//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-import { PlayN } from '../../../../playn/core/PlayN.js';
-      //not GWT import const PlayN = globalThis.playn.core.PlayN;
+//not plain js import { PlayN } from '../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
 
       
-import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
-      //not GWT import const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+//not plain js import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+      const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
 
       
-import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
-      //not GWT import const HtmlImage = globalThis.playn.html.HtmlImage;
+//not plain js import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+      const HtmlImage = globalThis.playn.html.HtmlImage;
 
       
 

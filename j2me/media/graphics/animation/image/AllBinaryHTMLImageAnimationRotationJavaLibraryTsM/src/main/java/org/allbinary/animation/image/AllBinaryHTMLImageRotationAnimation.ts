@@ -56,12 +56,12 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-      //not GWT import const CanvasImage = globalThis.playn.core.CanvasImage;
+//not plain js import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+      const CanvasImage = globalThis.playn.core.CanvasImage;
 
       
-import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
-      //not GWT import const CanvasSurface = globalThis.playn.core.CanvasSurface;
+//not plain js import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
+      const CanvasSurface = globalThis.playn.core.CanvasSurface;
 
       
 

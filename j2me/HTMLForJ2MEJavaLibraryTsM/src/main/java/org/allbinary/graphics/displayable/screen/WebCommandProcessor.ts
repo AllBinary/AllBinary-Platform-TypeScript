@@ -54,8 +54,8 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-import { PlayN } from '../../../../../playn/core/PlayN.js';
-      //not GWT import const PlayN = globalThis.playn.core.PlayN;
+//not plain js import { PlayN } from '../../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
 
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
