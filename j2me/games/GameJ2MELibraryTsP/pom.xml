@@ -180,7 +180,7 @@
 
         <module>../../../graphics/opengl/NoSWTJavaLibraryTsM</module>
         <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryTsM</module>
-<!--        <module>../SWTJavaLibraryTsM</module>-->
+        <module>../SWTJavaLibraryTsM</module>
         <module>../GameJ2MELibraryTsM</module>
         
         <!--
