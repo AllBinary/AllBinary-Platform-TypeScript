@@ -68,8 +68,8 @@ import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/lay
       //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';

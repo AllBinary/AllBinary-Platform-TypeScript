@@ -92,8 +92,8 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
-import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 

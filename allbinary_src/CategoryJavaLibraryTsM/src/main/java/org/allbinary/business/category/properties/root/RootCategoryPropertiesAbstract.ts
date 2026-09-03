@@ -44,8 +44,8 @@ import { CategoryHierarchyInterface } from '../../../../../../org/allbinary/busi
       //not GWT import const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';

@@ -38,8 +38,8 @@ import { Map } from '../../../../../java/util/Map.js';
       //not GWT import const Map = globalThis.java.util.Map;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogBuffer } from '../../../../../org/allbinary/logic/communication/log/LogBuffer.js';

@@ -82,8 +82,8 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
       //not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';

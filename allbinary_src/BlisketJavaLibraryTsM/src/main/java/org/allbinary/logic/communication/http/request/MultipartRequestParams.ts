@@ -36,8 +36,8 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
       //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';

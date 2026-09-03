@@ -114,8 +114,8 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 

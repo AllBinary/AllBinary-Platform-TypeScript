@@ -74,8 +74,8 @@ import { InputAutomationBundleActivator } from '../../../../../../bundle/input/a
       //not GWT import const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';

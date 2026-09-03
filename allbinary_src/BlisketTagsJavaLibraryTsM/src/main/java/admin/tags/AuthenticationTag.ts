@@ -60,8 +60,8 @@ import { AuthenticationRequestHelperFactory } from '../../admin/taghelpers/Authe
       //not GWT import const AuthenticationRequestHelperFactory = globalThis.admin.taghelpers.AuthenticationRequestHelperFactory;
 
       
-import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';

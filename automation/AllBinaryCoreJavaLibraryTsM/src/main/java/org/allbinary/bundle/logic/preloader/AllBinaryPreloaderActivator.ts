@@ -46,8 +46,8 @@ import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/s
       //not GWT import const CryptServiceFactory = globalThis.org.allbinary.bundle.logic.system.loader.CryptServiceFactory;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';

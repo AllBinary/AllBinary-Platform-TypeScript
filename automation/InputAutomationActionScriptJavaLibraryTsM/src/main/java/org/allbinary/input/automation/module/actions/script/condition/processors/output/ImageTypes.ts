@@ -42,8 +42,8 @@ import { InputImageType } from '../../../../../../../../../../org/allbinary/inpu
       //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
 
       
-import { StdUtil } from '../../../../../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringMaker } from '../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';

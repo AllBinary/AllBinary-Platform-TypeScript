@@ -50,8 +50,8 @@ import { ItemView } from '../../../../../../../org/allbinary/business/user/comme
       //not GWT import const ItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemView;
 
       
-import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';

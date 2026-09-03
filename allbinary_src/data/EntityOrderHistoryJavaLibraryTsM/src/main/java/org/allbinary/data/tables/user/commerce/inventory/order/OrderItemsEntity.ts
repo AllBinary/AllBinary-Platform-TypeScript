@@ -52,8 +52,8 @@ import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/busines
       //not GWT import const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
 
       
-import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';

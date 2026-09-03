@@ -60,8 +60,8 @@ import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/
       //not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
 
       
-import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 

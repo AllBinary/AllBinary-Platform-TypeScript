@@ -28,8 +28,8 @@ import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
       //not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
 
       
-import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

@@ -66,8 +66,8 @@ import { CustomItemsEntityFactory } from '../../org/allbinary/data/tables/user/c
       //not GWT import const CustomItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.customs.CustomItemsEntityFactory;
 
       
-import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';

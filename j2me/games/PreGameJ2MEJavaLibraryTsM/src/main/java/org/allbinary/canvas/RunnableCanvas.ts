@@ -44,8 +44,8 @@ import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.j
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';

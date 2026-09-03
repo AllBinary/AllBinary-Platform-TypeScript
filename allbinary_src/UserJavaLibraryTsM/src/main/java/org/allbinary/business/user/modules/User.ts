@@ -92,8 +92,8 @@ import { UserName } from '../../../../../org/allbinary/business/user/username/Us
       //not GWT import const UserName = globalThis.org.allbinary.business.user.username.UserName;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { RequestParams } from '../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';

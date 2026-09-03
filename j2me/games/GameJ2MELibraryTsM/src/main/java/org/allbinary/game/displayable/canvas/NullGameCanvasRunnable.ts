@@ -48,8 +48,8 @@ import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameSt
       //not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';

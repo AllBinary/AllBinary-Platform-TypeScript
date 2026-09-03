@@ -44,8 +44,8 @@ import { ToDomHelper } from '../../../../../org/allbinary/data/tree/dom/ToDomHel
       //not GWT import const ToDomHelper = globalThis.org.allbinary.data.tree.dom.ToDomHelper;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';

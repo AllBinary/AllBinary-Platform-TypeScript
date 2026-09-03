@@ -56,8 +56,8 @@ import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
       const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
 
       
-import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';

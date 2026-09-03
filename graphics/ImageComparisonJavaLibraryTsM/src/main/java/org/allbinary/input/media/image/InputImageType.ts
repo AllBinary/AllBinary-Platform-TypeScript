@@ -32,8 +32,8 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 

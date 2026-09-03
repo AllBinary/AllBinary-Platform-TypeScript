@@ -62,8 +62,8 @@ import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/
       //not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';

@@ -30,8 +30,8 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

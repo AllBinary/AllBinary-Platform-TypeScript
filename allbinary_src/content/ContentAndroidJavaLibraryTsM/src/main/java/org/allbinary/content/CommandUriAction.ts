@@ -42,8 +42,8 @@ import { Uri } from '../../../android/net/Uri.js';
       const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

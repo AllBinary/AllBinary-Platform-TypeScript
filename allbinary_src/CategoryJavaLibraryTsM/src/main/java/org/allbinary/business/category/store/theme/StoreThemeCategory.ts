@@ -48,8 +48,8 @@ import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/D
       //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { ThemeData } from '../../../../../../org/allbinary/logic/visual/theme/ThemeData.js';

@@ -44,8 +44,8 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
       //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 

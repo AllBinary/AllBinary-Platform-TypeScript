@@ -28,8 +28,8 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
-import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';

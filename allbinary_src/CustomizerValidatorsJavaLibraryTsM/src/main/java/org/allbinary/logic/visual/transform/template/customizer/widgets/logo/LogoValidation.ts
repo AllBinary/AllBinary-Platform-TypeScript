@@ -36,8 +36,8 @@ import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree
       //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { HttpRequestUtil } from '../../../../../../../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';

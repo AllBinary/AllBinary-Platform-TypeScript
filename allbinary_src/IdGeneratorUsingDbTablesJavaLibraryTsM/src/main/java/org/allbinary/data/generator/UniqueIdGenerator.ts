@@ -44,8 +44,8 @@ import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/
       //not GWT import const IdGeneratorEntityFactory = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityFactory;
 
       
-import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';

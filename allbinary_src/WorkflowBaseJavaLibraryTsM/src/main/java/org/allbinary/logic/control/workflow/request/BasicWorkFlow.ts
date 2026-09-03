@@ -64,8 +64,8 @@ import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom
       //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';

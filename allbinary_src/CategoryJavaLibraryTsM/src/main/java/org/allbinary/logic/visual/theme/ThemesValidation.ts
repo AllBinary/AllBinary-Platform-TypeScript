@@ -36,8 +36,8 @@ import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/Dom
       //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { Validation } from '../../../../../org/allbinary/logic/control/validate/Validation.js';

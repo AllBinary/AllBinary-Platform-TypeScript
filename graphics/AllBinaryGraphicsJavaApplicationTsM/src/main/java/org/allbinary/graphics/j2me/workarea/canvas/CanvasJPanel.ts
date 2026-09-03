@@ -132,8 +132,8 @@ import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
       //not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
 
       
-import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/GuiLog.js';

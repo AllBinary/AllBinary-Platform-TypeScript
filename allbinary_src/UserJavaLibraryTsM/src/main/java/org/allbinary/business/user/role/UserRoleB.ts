@@ -32,8 +32,8 @@ import { UserFactoryInterface } from '../../../../../org/allbinary/business/user
       //not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
 
       
-import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
