@@ -70,6 +70,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
       //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -180,7 +184,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Hashtable<any, any>();
+                        return StdUtil.getInstance()!.createHashtable();;
     
 }
 

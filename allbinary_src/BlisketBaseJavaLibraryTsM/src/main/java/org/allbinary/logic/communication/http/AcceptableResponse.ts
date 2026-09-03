@@ -67,9 +67,9 @@ protected constructor (candidate: string, tagName: string, index: number){
 
     var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;;
     
-acceptableResponseUtil!.candidateVector!.add(index, candidate);
+acceptableResponseUtil!.candidateVector!.addAt(index, candidate);
     
-acceptableResponseUtil!.tagNameVector!.add(index, tagName);
+acceptableResponseUtil!.tagNameVector!.addAt(index, tagName);
     
 }
 

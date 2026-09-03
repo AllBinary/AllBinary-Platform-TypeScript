@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
@@ -46,6 +50,10 @@ import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db
       
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
       //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -146,7 +154,7 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -217,7 +225,7 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(transformInfoData!.NAME, name);
     
@@ -288,15 +296,15 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
 
                 //@Throws(Exception.constructor)
             
-    public getObjectConfigs(storeName: string): Vector{
+    public getObjectConfigs(storeName: string): BasicArrayList{
 
-    var objectConfigVector: Vector = new Vector();;
+    var objectConfigVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var objectConfigColumnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;;
+    var objectConfigColumnVector: BasicArrayList = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;;
     
 
-    var size: number = objectConfigColumnVector!.length!;;
+    var size: number = objectConfigColumnVector!.size()!;;
     
 
 
@@ -325,15 +333,15 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
 
                 //@Throws(Exception.constructor)
             
-    public getNames(storeName: string): Vector{
+    public getNames(storeName: string): BasicArrayList{
 
-    var viewNameVector: Vector = new Vector();;
+    var viewNameVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var columnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;;
+    var columnVector: BasicArrayList = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;;
     
 
-    var size: number = columnVector!.length!;;
+    var size: number = columnVector!.size()!;;
     
 
 

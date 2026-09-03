@@ -28,6 +28,10 @@ import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js
       //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
 
       
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -150,7 +154,7 @@ this.GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
     var ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(
                                                 [

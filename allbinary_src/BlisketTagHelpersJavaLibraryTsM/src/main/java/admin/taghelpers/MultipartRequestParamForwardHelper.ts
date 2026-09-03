@@ -26,8 +26,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
@@ -103,9 +107,9 @@ export class MultipartRequestParamForwardHelper
 
     private readonly command: string;
 
-    private readonly paramVector: Vector;
+    private readonly paramVector: BasicArrayList;
 
-public constructor (parentHelperTag: HelperTag, page: string, command: string, paramVector: Vector, pageContext: PageContext){
+public constructor (parentHelperTag: HelperTag, page: string, command: string, paramVector: BasicArrayList, pageContext: PageContext){
 
             super();
         this.pageContext= pageContext;
@@ -186,7 +190,7 @@ this.pageContext!.forward(stringBuffer!.toString());
     var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.paramVector!.length!;;
+    var size: number = this.paramVector!.size()!;;
     
 
 

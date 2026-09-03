@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
@@ -36,6 +40,10 @@ import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/t
       
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
       //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
+
+      
+import { StdUtil } from '../../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringMaker } from '../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -108,7 +116,7 @@ imageTypes!.getVector()!.add(imageType);
 }
 
 
-    private vector: Vector = new Vector();
+    private vector: BasicArrayList = new BasicArrayListD();
 
 public constructor (){
 
@@ -158,7 +166,7 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
 }
 
 
-    public getVector(): Vector{
+    public getVector(): BasicArrayList{
 
 
 
@@ -175,7 +183,7 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
     var newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;;
     
 
-    var size: number = this.vector.length!;;
+    var size: number = this.vector.size()!;;
     
 
 
@@ -207,7 +215,7 @@ newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutp
 stringBuffer!.append("ImageTypes: ");
     
 
-    var size: number = this.vector.length!;;
+    var size: number = this.vector.size()!;;
     
 
 

@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CategoryHierarchyInterface } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
@@ -66,7 +70,7 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 export interface CategoryInterface extends TableMappingInterface, ValidationInterface {
         
 
-    getChildNodes(): Vector
+    getChildNodes(): BasicArrayList
 
     addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean
 

@@ -24,8 +24,16 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
+      
+//not plain js import { MathData } from '../../../../org/allbinary/logic/math/MathData.js';
+      const MathData = globalThis.org.allbinary.logic.math.MathData;
 
       
 //not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
@@ -65,13 +73,16 @@ export class SpecialCharacterUtil
 
     public static getHashMap(): HashMap<any, any>{
 
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    
+
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put("!", stringUtil!.EMPTY_STRING);
     
@@ -85,21 +96,21 @@ hashMap!.put("%", stringUtil!.EMPTY_STRING);
     
 hashMap!.put("^", stringUtil!.EMPTY_STRING);
     
-hashMap!.put(CommonSeps.getInstance()!.AMPERSAND, stringUtil!.EMPTY_STRING);
+hashMap!.put(commonSeps!.AMPERSAND, stringUtil!.EMPTY_STRING);
     
 hashMap!.put(commonPhoneStrings!.STAR, stringUtil!.EMPTY_STRING);
     
-hashMap!.put("(", stringUtil!.EMPTY_STRING);
+hashMap!.put(commonSeps!.PARENTHESIS_OPEN, stringUtil!.EMPTY_STRING);
     
-hashMap!.put(")", stringUtil!.EMPTY_STRING);
+hashMap!.put(commonSeps!.PARENTHESIS_CLOSE, stringUtil!.EMPTY_STRING);
     
-hashMap!.put("-", stringUtil!.EMPTY_STRING);
+hashMap!.put(commonSeps!.DASH, stringUtil!.EMPTY_STRING);
     
-hashMap!.put("_", stringUtil!.EMPTY_STRING);
+hashMap!.put(commonSeps!.UNDERSCORE, stringUtil!.EMPTY_STRING);
     
-hashMap!.put("+", stringUtil!.EMPTY_STRING);
+hashMap!.put(MathData.getInstance()!.PLUS, stringUtil!.EMPTY_STRING);
     
-hashMap!.put("=", stringUtil!.EMPTY_STRING);
+hashMap!.put(commonSeps!.EQUALS, stringUtil!.EMPTY_STRING);
     
 hashMap!.put("\\", stringUtil!.EMPTY_STRING);
     

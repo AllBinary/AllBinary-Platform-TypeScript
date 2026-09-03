@@ -20,8 +20,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { AdvertisementInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js';
@@ -63,9 +67,9 @@ export class AdvertisementCampaigns
          implements AdvertisementCampaignsInterface {
         
 
-    private advertisementsVector: Vector;
+    private advertisementsVector: BasicArrayList;
 
-public constructor (vector: Vector){
+public constructor (vector: BasicArrayList){
 
             super();
         this.advertisementsVector= this.advertisementsVector;
@@ -94,7 +98,7 @@ this.advertisementsVector!.add(advertisementInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.advertisementsVector!.length;;
+                        return this.advertisementsVector!.size();;
     
 }
 

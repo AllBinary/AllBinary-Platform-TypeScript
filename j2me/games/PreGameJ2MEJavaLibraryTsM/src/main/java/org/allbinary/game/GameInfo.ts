@@ -58,6 +58,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -257,7 +261,7 @@ this.logUtil!.putF(new StringMaker().append(this.NEXT)!.append(this.NEW_LEVEL)!.
 
     public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString());
     

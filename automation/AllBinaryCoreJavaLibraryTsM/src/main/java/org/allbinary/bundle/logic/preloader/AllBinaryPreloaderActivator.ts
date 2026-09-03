@@ -46,6 +46,10 @@ import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/s
       //not GWT import const CryptServiceFactory = globalThis.org.allbinary.bundle.logic.system.loader.CryptServiceFactory;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -133,7 +137,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: Hashtable<any, any> = new Hashtable<any, any>();;
+    var properties: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;;

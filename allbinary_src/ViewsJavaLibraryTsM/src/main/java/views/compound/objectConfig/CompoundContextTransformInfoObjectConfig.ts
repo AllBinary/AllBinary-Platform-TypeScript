@@ -28,8 +28,12 @@ import { InputStream } from '../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DocumentToNode } from '../../../org/allbinary/data/tree/dom/document/DocumentToNode.js';
@@ -178,13 +182,13 @@ stringBuffer!.append(RootTransformInfoData.NAME);
     var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;;
     
 
-    var viewVector: Vector = this.getTransformDomNodes()!;;
+    var viewVector: BasicArrayList = this.getTransformDomNodes()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Root View Called with: " +viewVector!.length, this, "get(transformInfoInterface)");
+                                    this.logUtil!.putF("Root View Called with: " +viewVector!.size(), this, "get(transformInfoInterface)");
     
 
                                     }
@@ -199,7 +203,7 @@ stringBuffer!.append(RootTransformInfoData.NAME);
     var endXMLHeader: string = "]]></xsl:text>";;
     
 
-    var size: number = viewVector!.length!;;
+    var size: number = viewVector!.size()!;;
     
 
 

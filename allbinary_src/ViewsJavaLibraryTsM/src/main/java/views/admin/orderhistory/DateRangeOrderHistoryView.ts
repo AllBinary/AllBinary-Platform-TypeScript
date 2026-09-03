@@ -26,8 +26,12 @@ import { Calendar } from '../../../java/util/Calendar.js';
       //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
@@ -309,10 +313,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;;
+    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;;
+    var size: number = orderHistoryVector!.size()!;;
     
 
 
@@ -347,10 +351,10 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;;
+    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;;
+    var size: number = orderHistoryVector!.size()!;;
     
 
 
@@ -385,10 +389,10 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;;
+    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;;
+    var size: number = orderHistoryVector!.size()!;;
     
 
 
@@ -423,10 +427,10 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;;
+    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;;
+    var size: number = orderHistoryVector!.size()!;;
     
 
 
@@ -461,10 +465,10 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;;
+    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;;
+    var size: number = orderHistoryVector!.size()!;;
     
 
 

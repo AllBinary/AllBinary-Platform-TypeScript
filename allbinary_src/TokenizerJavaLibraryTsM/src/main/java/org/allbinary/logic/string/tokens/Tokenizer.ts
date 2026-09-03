@@ -30,6 +30,10 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
@@ -207,7 +211,7 @@ break;
 
     public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
 
-    var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var tokenHashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var string: string = StringUtil.getInstance()!.EMPTY_STRING;;

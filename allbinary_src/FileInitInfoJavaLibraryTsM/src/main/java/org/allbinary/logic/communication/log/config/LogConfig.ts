@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
@@ -306,10 +310,10 @@ stringBuffer!.append(this.getFileName());
     var logConfigTypesNode: Node = logConfigTypesNodeList!.item(0)!;;
     
 
-    var logConfigTypeNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigTypeData.getInstance()!.NAME, logConfigTypesNode!.getChildNodes())!;;
+    var logConfigTypeNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(LogConfigTypeData.getInstance()!.NAME, logConfigTypesNode!.getChildNodes())!;;
     
 
-    var size: number = logConfigTypeNodeVector!.length!;;
+    var size: number = logConfigTypeNodeVector!.size()!;;
     
 
 
@@ -319,7 +323,7 @@ stringBuffer!.append(this.getFileName());
     var i: number = 0;i < size; i++)
         {
 
-    var node: Node = logConfigTypeNodeVector!.elementAt(i) as Node;;
+    var node: Node = logConfigTypeNodeVector!.get(i) as Node;;
     
 
     var logType: LogConfigType = LogConfigTypes.getInstance(node)!;;

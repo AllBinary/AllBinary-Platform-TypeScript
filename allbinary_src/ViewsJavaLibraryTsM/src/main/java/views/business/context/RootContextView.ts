@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -160,10 +164,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
-    var componentsVector: Vector = objectConfig!.getTransforms()!;;
+    var componentsVector: BasicArrayList = objectConfig!.getTransforms()!;;
     
 
-                        if(componentsVector!.length == 0)
+                        if(componentsVector!.size() == 0)
                         
                                     {
                                     
@@ -175,13 +179,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-                        if(componentsVector!.length > 1)
+                        if(componentsVector!.size() > 1)
                         
                                     {
                                     
 
 
-                            throw new Exception("To Many Root Template Views: " +componentsVector!.length);
+                            throw new Exception("To Many Root Template Views: " +componentsVector!.size());
                     
 
                                     }

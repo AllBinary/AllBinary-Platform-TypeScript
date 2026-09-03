@@ -76,6 +76,10 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -232,7 +236,7 @@ this.init();
     var genericOperatingSystem: GenericOperatingSystem = this.getOperatingSystemInterface()!;;
     
 
-    var clientInfoHashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var clientInfoHashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
     

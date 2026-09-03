@@ -62,6 +62,10 @@ import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/
       //not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -156,7 +160,7 @@ this.dimension= new IntegerDimension(0, 0);
                         if(name.compareTo(CanvasDom.FRAME) == 0)
                         
                                     {
-                                    this.graphicItemHashMap= new HashMap<any, any>();
+                                    this.graphicItemHashMap= StdUtil.getInstance()!.createHashMap();
     
 
     var angleNode: Node = DomHelper.getInstance()!.searchNodeList(this.ROTATE, canvasNode!.getChildNodes())!;;

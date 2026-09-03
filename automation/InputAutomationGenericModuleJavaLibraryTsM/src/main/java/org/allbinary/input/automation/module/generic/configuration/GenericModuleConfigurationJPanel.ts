@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
@@ -608,7 +612,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "updateProfileOptions");
     var genericProfile: GenericProfile = this.getSelectedGenericProfile()!;;
     
 
-    var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
+    var vector: BasicArrayList = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
     
 this.screenCaptureJRadioButton!.setSelected(false);
     
@@ -619,7 +623,7 @@ this.captureComparisonJCheckBox!.setSelected(false);
 this.captureMotionAnalysisJCheckBox!.setSelected(false);
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

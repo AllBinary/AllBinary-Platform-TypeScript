@@ -38,6 +38,10 @@ import { InputImageType } from '../../../../../../../../org/allbinary/input/medi
       //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
 
       
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
       //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
@@ -79,7 +83,7 @@ export class GenericProfileDataWorkerType
          implements GenericProfileDataWorkerTypeInterface {
         
 
-    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
     public static SAVED_CAPTURE: GenericProfileDataWorkerType = SavedCaptureGenericProfileDataWorkerType.SAVED_CAPTURE;
 

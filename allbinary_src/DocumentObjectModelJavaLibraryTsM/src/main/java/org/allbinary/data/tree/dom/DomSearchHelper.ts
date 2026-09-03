@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { Node } from '../../../../../org/w3c/dom/Node.js';
@@ -146,9 +150,9 @@ export class DomSearchHelper
 
                 //@Throws(Exception.constructor)
             
-    public static getAllNodes(nodeName: string, nodeList: NodeList): Vector{
+    public static getAllNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 
-    var vector: Vector = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;;
+    var vector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;;
     
 
                         if(vector == 
@@ -177,9 +181,9 @@ export class DomSearchHelper
 }
 
 
-    public static getAllNodesNoThrow(nodeName: string, nodeList: NodeList): Vector{
+    public static getAllNodesNoThrow(nodeName: string, nodeList: NodeList): BasicArrayList{
 
-    var nodeVector: Vector = new Vector();;
+    var nodeVector: BasicArrayList = new BasicArrayListD();;
     
 
     var numberOfNodes: number = nodeList!.getLength()!;;

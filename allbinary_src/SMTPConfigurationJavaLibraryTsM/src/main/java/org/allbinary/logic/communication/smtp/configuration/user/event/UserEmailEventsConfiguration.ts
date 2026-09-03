@@ -30,6 +30,10 @@ import { UserInterface } from '../../../../../../../../org/allbinary/business/us
       //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
       
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -106,7 +110,7 @@ public constructor (hashMap: HashMap<any, any>){
 
 
     init(){
-this.emailEventHashMap= new HashMap<any, any>();
+this.emailEventHashMap= StdUtil.getInstance()!.createHashMap();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))

@@ -36,8 +36,16 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -86,6 +94,8 @@ export class SqlConnectionPool
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly stdUtil: StdUtil = StdUtil.getInstance()!;
+
     private connectionHashMap: HashMap<any, any> = 
                 null
             ;
@@ -126,7 +136,7 @@ private constructor (){
                                 )
                         
                                     {
-                                    this.connectionHashMap= new HashMap<any, any>();
+                                    this.connectionHashMap= this.stdUtil!.createHashMap();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
@@ -148,7 +158,7 @@ private constructor (){
                                 
                         else {
                             
-    var connectionVector: Vector = this.connectionHashMap!.get(url) as Vector;;
+    var connectionVector: BasicArrayList = this.connectionHashMap!.get(url) as BasicArrayList;;
     
 
                         if(connectionVector == 
@@ -156,7 +166,7 @@ private constructor (){
                                 )
                         
                                     {
-                                    connectionVector= new Vector();
+                                    connectionVector= new BasicArrayListD();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
@@ -188,7 +198,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                                     }
                                 
                              else 
-                        if(connectionVector!.length == 0)
+                        if(connectionVector!.size() == 0)
                         
                                     {
                                     
@@ -214,7 +224,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
     var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = connectionVector!.length!;;
+    var size: number = connectionVector!.size()!;;
     
 
 
@@ -246,7 +256,7 @@ stringBuffer!.append(url);
     
 stringBuffer!.append(this.IS);
     
-stringBuffer!.appendint(connectionVector!.length);
+stringBuffer!.appendint(connectionVector!.size());
     
 this.logUtil!.putF(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size(), this, this.METHOD_GET);
     
@@ -308,7 +318,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                         
                                     {
                                     
-    var connectionVector: Vector;;
+    var connectionVector: BasicArrayList;;
     
 
                         if(this.connectionHashMap == 
@@ -316,9 +326,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                                 )
                         
                                     {
-                                    this.connectionHashMap= new HashMap<any, any>();
+                                    this.connectionHashMap= this.stdUtil!.createHashMap();
     
-connectionVector= new Vector();
+connectionVector= new BasicArrayListD();
     
 connectionVector!.add(sqlConnection);
     
@@ -326,7 +336,7 @@ connectionVector!.add(sqlConnection);
                                     }
                                 
                         else {
-                            connectionVector= this.connectionHashMap!.get(url) as Vector;
+                            connectionVector= this.connectionHashMap!.get(url) as BasicArrayList;
     
 
                         if(connectionVector == 
@@ -334,7 +344,7 @@ connectionVector!.add(sqlConnection);
                                 )
                         
                                     {
-                                    connectionVector= new Vector();
+                                    connectionVector= new BasicArrayListD();
     
 
                                     }
@@ -359,7 +369,7 @@ stringBuffer!.append(url);
     
 stringBuffer!.append(this.IS);
     
-stringBuffer!.appendint(connectionVector!.length);
+stringBuffer!.appendint(connectionVector!.size());
     
 this.logUtil!.putF(this.NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size(), this, this.METHOD_ADD);
     

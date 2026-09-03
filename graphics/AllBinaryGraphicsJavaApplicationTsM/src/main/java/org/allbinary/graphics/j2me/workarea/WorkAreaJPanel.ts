@@ -90,6 +90,10 @@ import { LOGGING } from '../../../../../org/allbinary/log/LOGGING.js';
       //not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -375,7 +379,7 @@ MyCanvasEventService.addListener(this as MyCanvasEventListener);
 
     getCanvasHashMap(): HashMap<any, any>{
 
-    var canvasJPanelHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var canvasJPanelHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var size: number = this.canvasJPanelList!.size()!;;

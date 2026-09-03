@@ -22,8 +22,12 @@
         
             import { Float } from '../../../java/lang/Float.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
@@ -168,10 +172,10 @@ this.shippingMethods= new ShippingMethods(this.abeClientInformation, this.storeF
     var streetAddress: StreetAddress = shippingAddressesEntityInterface!.getDefault()!;;
     
 
-    var shippingVector: Vector = this.shippingMethods!.get()!;;
+    var shippingVector: BasicArrayList = this.shippingMethods!.get()!;;
     
 
-    var size: number = shippingVector!.length!;;
+    var size: number = shippingVector!.size()!;;
     
 
 

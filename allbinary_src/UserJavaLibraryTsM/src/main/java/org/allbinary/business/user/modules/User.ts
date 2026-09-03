@@ -32,8 +32,12 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
@@ -86,6 +90,10 @@ import { UserRoleData } from '../../../../../org/allbinary/business/user/role/Us
       
 import { UserName } from '../../../../../org/allbinary/business/user/username/UserName.js';
       //not GWT import const UserName = globalThis.org.allbinary.business.user.username.UserName;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { RequestParams } from '../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
@@ -829,9 +837,9 @@ this.enable= enable;
 
                 //@Throws(Exception.constructor)
             
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.userName);
     
@@ -874,7 +882,7 @@ values.add(userConfigurationDomDocumentMapping!.toDomDocumentString());
     
 values.add(this.permissions);
     
-values.addAll(this.password.toVector(this.secret));
+values.addAllList(this.password.toVector(this.secret));
     
 values.add(this.enable);
     
@@ -901,7 +909,7 @@ values.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();;
+    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(UserData.USERNAME, userName);
     

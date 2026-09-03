@@ -56,6 +56,10 @@ import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
@@ -126,7 +130,7 @@ export class ResourceUtil
 
     private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private hashMap: Hashtable<any, any> = new Hashtable<any, any>();
+    private hashMap: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 

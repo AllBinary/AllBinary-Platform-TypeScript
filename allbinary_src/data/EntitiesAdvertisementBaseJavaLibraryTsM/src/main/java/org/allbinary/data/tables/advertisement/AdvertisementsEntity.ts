@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
@@ -50,6 +54,10 @@ import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData
       
 import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
       //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -138,20 +146,20 @@ this.setTableName(this.tableName);
 }
 
 
-    public get(storeName: string): Vector{
+    public get(storeName: string): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = hashMapVector!.length!;;
+    var size: number = hashMapVector!.size()!;;
     
 
 
@@ -169,14 +177,14 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return vector as Vector;
+                        return vector;
     
 }
 
 
     public get(storeName: string, advertismentName: string): AdvertisementInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     

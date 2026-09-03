@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -62,11 +66,11 @@ export interface StoreFrontsEntityInterface extends BasicDataTableInterface {
             
     getStoreFrontInterface(name: string): StoreFrontInterface
 
-    getStoreFrontNames(): Vector
+    getStoreFrontNames(): BasicArrayList
 
     delete(value: string)
 
-    insert(values: Vector)
+    insert(values: BasicArrayList)
 
     update(updatedValues: HashMap<any, any>)
 

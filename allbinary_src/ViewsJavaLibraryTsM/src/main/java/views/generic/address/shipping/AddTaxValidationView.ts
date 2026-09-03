@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
@@ -157,7 +161,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: Vector = billingAddressesEntity!.get()!;;
+    var streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
     
 
                         if(streetAddressList == 
@@ -175,7 +179,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var size: number = streetAddressList!.length!;;
+    var size: number = streetAddressList!.size()!;;
     
 
 
@@ -274,10 +278,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: Vector = billingAddressesEntity!.get()!;;
+    var streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
     
 
-    var size: number = streetAddressList!.length!;;
+    var size: number = streetAddressList!.size()!;;
     
 
 

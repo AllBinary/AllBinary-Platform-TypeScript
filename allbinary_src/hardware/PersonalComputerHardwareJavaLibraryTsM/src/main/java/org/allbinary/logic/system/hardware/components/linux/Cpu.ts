@@ -34,6 +34,10 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -182,7 +186,7 @@ public constructor (){
     
 lineNumberReader= new LineNumberReader(fileReader);
     
-this.cpuHashMap= new HashMap<any, any>();
+this.cpuHashMap= StdUtil.getInstance()!.createHashMap();
     
 
                         if(lineNumberReader == 
@@ -197,7 +201,7 @@ this.cpuHashMap= new HashMap<any, any>();
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().append("Cpu File Vector Size: ")!.appendint(fileVector!.size())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(new StringMaker().append("Cpu File BasicArrayList Size: ")!.appendint(fileVector!.size())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }

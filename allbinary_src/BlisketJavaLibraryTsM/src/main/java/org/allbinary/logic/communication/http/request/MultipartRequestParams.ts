@@ -36,6 +36,10 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
       //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
       //not GWT import const AbFileUploadFactory = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUploadFactory;
 
@@ -117,7 +121,7 @@ this.special= true;
 
         try {
             
-    var specialRequest: HashMap<any, any> = new HashMap<any, any>();;
+    var specialRequest: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;;

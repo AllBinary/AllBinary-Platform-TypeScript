@@ -32,8 +32,12 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
@@ -58,6 +62,10 @@ import { StreetAddressData } from '../../../../../../org/allbinary/business/user
       
 import { TableDataFactory } from '../../../../../../org/allbinary/data/tables/TableDataFactory.js';
       //not GWT import const TableDataFactory = globalThis.org.allbinary.data.tables.TableDataFactory;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -129,7 +137,7 @@ this.userName= userName;
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(UserData.USERNAME, this.userName);
     
@@ -174,7 +182,7 @@ this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING);
 
         try {
             
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(index);
     
@@ -240,7 +248,7 @@ this.setDefault(getLastId());
     var addressHashMap: HashMap<any, any> = address.toHashMap()!;;
     
 
-    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();;
+    var whereKeyValuePairs: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyValuePairs!.put(StreetAddressData.ID, address.getId());
     
@@ -287,22 +295,22 @@ this.setDefault(address.getId());
 }
 
 
-    public get(): Vector{
+    public get(): BasicArrayList{
 
         try {
             
-    var streetAddressVector: Vector = new Vector();;
+    var streetAddressVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
+    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(UserData.USERNAME, this.userName);
     
 
-    var addressList: Vector = super.getRows(keyAndValue)!;;
+    var addressList: BasicArrayList = super.getRows(keyAndValue)!;;
     
 
-    var size: number = addressList!.length!;;
+    var size: number = addressList!.size()!;;
     
 
 
@@ -364,7 +372,7 @@ keyAndValue!.put(UserData.USERNAME, this.userName);
 
         try {
             
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
+    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(UserData.USERNAME, this.userName);
     
@@ -426,10 +434,10 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
 
         try {
             
-    var addressHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var addressHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
+    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
     
@@ -511,10 +519,10 @@ addressHashMap= super.getRow(updateKeyAndValue);
 
         try {
             
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
+    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
+    var whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyAndValue!.put(UserData.USERNAME, this.userName);
     

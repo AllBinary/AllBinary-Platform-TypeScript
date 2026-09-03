@@ -257,7 +257,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                                     }
                                 
 
-    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
+    var anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
@@ -410,7 +410,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).validationInfo(
 }
 
 
-    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
+    var anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
@@ -525,7 +525,7 @@ this.processImageFiles();
                         
                                     {
                                     
-                        if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
+                        if(fileItemFieldName!.compareTo(basicItemData!.IMAGE) == 0)
                         
                                     {
                                     

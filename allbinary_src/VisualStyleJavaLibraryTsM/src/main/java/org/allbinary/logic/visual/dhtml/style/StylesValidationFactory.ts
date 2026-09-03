@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
@@ -114,7 +118,7 @@ export class StylesValidationFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(hashMap: HashMap<any, any>): Vector{
+    public static getInstance(hashMap: HashMap<any, any>): BasicArrayList{
 
     var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;;
     
@@ -137,7 +141,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(document: Document): Vector{
+    public getInstance(document: Document): BasicArrayList{
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
@@ -173,13 +177,13 @@ private constructor (){
     var stylesNode: Node = nodeList!.item(index)!;;
     
 
-    var styleNodeList: Vector = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;;
+    var styleNodeList: BasicArrayList = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Number Of Style Nodes Present: " +styleNodeList!.length, this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Number Of Style Nodes Present: " +styleNodeList!.size(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -189,19 +193,19 @@ private constructor (){
 
 
                         for (
-    var styleNodesIndex: number = 0;styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
+    var styleNodesIndex: number = 0;styleNodesIndex < styleNodeList!.size(); styleNodesIndex++)
         {
 
     var styleNode: Node = styleNodeList!.get(styleNodesIndex) as Node;;
     
 
-    var cssElementStyleNodeList: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;;
+    var cssElementStyleNodeList: BasicArrayList = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Number Of Element Nodes Present: " +cssElementStyleNodeList!.length, this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Number Of Element Nodes Present: " +cssElementStyleNodeList!.size(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -229,7 +233,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Vector();
+                        return new BasicArrayListD();
     
 }
 

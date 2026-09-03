@@ -44,6 +44,10 @@ import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbC
       //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -129,7 +133,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
     var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var keys: Set = map.keySet()!;;

@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomDocumentMappingInterface } from '../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
@@ -62,19 +66,19 @@ export interface TransformInfoObjectConfigInterface extends DomDocumentMappingIn
 
                 //@Throws(Exception.constructor)
             
-    getTransformsGroup(group: string): Vector
+    getTransformsGroup(group: string): BasicArrayList
 
                 //@Throws(Exception.constructor)
             
-    getTransforms(): Vector
+    getTransforms(): BasicArrayList
 
                 //@Throws(Exception.constructor)
             
-    getParentTransforms(): Vector
+    getParentTransforms(): BasicArrayList
 
                 //@Throws(Exception.constructor)
             
-    getGroupTransforms(): Vector
+    getGroupTransforms(): BasicArrayList
 
                 //@Throws(Exception.constructor)
             

@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
@@ -36,6 +40,10 @@ import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/do
       
 import { GenericProfileActions } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
       //not GWT import const GenericProfileActions = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActions;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -91,7 +99,7 @@ export class GenericProfile
 
     private name: string;
 
-    private vector: Vector;
+    private vector: BasicArrayList;
 
     private genericProfileActions: GenericProfileActions;
 
@@ -100,7 +108,7 @@ public constructor (node: Node){
             super();
         this.setName(DomNodeHelper.getTextNodeValue(node));
     
-this.vector= new Vector();
+this.vector= new BasicArrayListD();
     
 
     var nodeList: NodeList = node.getChildNodes()!;;
@@ -141,12 +149,12 @@ public constructor (name: string){
             super();
         this.setName(name);
     
-this.vector= new Vector();
+this.vector= new BasicArrayListD();
     
 }
 
 
-    public getGenericProfileDataWorkerTypeVector(): Vector{
+    public getGenericProfileDataWorkerTypeVector(): BasicArrayList{
 
 
 
@@ -176,7 +184,7 @@ this.vector.remove(genericProfileDataWorkerType);
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, this.name)!;;
     
 
-    var size: number = this.vector.length!;;
+    var size: number = this.vector.size()!;;
     
 
 

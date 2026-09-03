@@ -114,6 +114,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -199,6 +203,9 @@ public constructor (name: string){
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
+    var stdUtil: StdUtil = StdUtil.getInstance()!;;
+    
+
     var recordAsBytes: number[];;
     
 
@@ -229,7 +236,7 @@ recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 inputStream= new DataInputStream(byteArrayInputStream);
     
-hashtable= new Hashtable<any, any>();
+hashtable= stdUtil!.createHashtable();
     
 
     var value: number= 0;;

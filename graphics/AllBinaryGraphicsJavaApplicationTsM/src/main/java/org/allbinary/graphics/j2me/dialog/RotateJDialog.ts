@@ -36,6 +36,10 @@ import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gu
       //not GWT import const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -139,7 +143,7 @@ dialog.setVisible(true);
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);

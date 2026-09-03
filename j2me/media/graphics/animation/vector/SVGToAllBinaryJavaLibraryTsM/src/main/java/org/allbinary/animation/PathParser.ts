@@ -8,8 +8,16 @@
         
             import { Double } from '../../../java/lang/Double.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -47,7 +55,7 @@ export class PathParser
 
     static tokenize(d: string): string[]{
 
-    var tokens: Vector = new Vector();;
+    var tokens: BasicArrayList = new BasicArrayListD();;
     
 
     var sb: StringBuffer = new StringBuffer();;
@@ -70,7 +78,7 @@ export class PathParser
                         if(sb.length() > 0)
                         
                                     {
-                                    tokens.addElement(sb.toString());
+                                    tokens.add(sb.toString());
     
 sb.setLength(0);
     
@@ -88,14 +96,14 @@ sb.setLength(0);
                         if(sb.length() > 0)
                         
                                     {
-                                    tokens.addElement(sb.toString());
+                                    tokens.add(sb.toString());
     
 sb.setLength(0);
     
 
                                     }
                                 
-tokens.addElement(c.slice(, ).join(''));
+tokens.add(c.slice(, ).join(''));
     
 
                                     }
@@ -110,11 +118,11 @@ tokens.addElement(c.slice(, ).join(''));
 
 
                         if(sb.length() > 0)
-                        tokens.addElement(sb.toString())
+                        tokens.add(sb.toString())
 
-    var res: string[] = new Array(tokens.length);;
+    var res: string[] = new Array(tokens.size());;
     
-tokens.copyInto(res);
+tokens.toArrayType(res);
     
 
 

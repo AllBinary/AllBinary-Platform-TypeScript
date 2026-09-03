@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
@@ -36,6 +40,10 @@ import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/do
       
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
       //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -429,7 +437,7 @@ attrNode!.setValue(name);
 
                 //@Throws(Exception.constructor)
             
-    getNodeVector(nodeName: string): Vector{
+    getNodeVector(nodeName: string): BasicArrayList{
 
     var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;;
     
@@ -440,10 +448,10 @@ attrNode!.setValue(name);
                         
                                     {
                                     
-    var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;;
+    var viewNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var numberOfViews: number = viewNodeVector!.length!;;
+    var numberOfViews: number = viewNodeVector!.size()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -478,22 +486,22 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Vector();
+                        return new BasicArrayListD();
     
 }
 
 
                 //@Throws(Exception.constructor)
             
-    getTransformDomNodes(nodeName: string): Vector{
+    getTransformDomNodes(nodeName: string): BasicArrayList{
 
-    var viewVector: Vector = new Vector();;
+    var viewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var viewNodeVector: Vector = this.getNodeVector(nodeName)!;;
+    var viewNodeVector: BasicArrayList = this.getNodeVector(nodeName)!;;
     
 
-    var size: number = viewNodeVector!.length!;;
+    var size: number = viewNodeVector!.size()!;;
     
 
 
@@ -520,15 +528,15 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getTransforms(nodeName: string): Vector{
+    public getTransforms(nodeName: string): BasicArrayList{
 
-    var viewVector: Vector = new Vector();;
+    var viewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var viewNodeVector: Vector = this.getNodeVector(nodeName)!;;
+    var viewNodeVector: BasicArrayList = this.getNodeVector(nodeName)!;;
     
 
-    var size: number = viewNodeVector!.length!;;
+    var size: number = viewNodeVector!.size()!;;
     
 
 
@@ -555,7 +563,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
 
                 //@Throws(Exception.constructor)
             
-    public getTransformsGroup(group: string): Vector{
+    public getTransformsGroup(group: string): BasicArrayList{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -566,7 +574,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
                                     }
                                 
 
-    var viewVector: Vector = new Vector();;
+    var viewVector: BasicArrayList = new BasicArrayListD();;
     
 
     var GROUP: string = TransformInfosData.getInstance()!.GROUP;;
@@ -620,10 +628,10 @@ break;
 }
 
 
-    var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;;
+    var viewNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;;
     
 
-    var numberOfViews: number = viewNodeVector!.length!;;
+    var numberOfViews: number = viewNodeVector!.size()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -635,7 +643,7 @@ break;
                                     }
                                 
 
-    var size: number = viewNodeVector!.length!;;
+    var size: number = viewNodeVector!.size()!;;
     
 
 
@@ -693,7 +701,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getTransformDomNodes(): Vector{
+    public getTransformDomNodes(): BasicArrayList{
 
 
 
@@ -705,7 +713,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getTransforms(): Vector{
+    public getTransforms(): BasicArrayList{
 
 
 
@@ -717,7 +725,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getGroupTransforms(): Vector{
+    public getGroupTransforms(): BasicArrayList{
 
 
 
@@ -729,7 +737,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getParentTransforms(): Vector{
+    public getParentTransforms(): BasicArrayList{
 
 
 

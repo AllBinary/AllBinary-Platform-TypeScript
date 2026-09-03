@@ -64,6 +64,10 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { FileUploadData } from '../../../../org/allbinary/logic/communication/http/file/upload/FileUploadData.js';
       //not GWT import const FileUploadData = globalThis.org.allbinary.logic.communication.http.file.upload.FileUploadData;
 
@@ -182,7 +186,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;

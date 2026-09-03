@@ -30,8 +30,12 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
@@ -48,6 +52,10 @@ import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.j
       
 import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js';
       //not GWT import const RemoteErrorHighScoresSingletonFactory = globalThis.org.allbinary.game.score.RemoteErrorHighScoresSingletonFactory;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -101,7 +109,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 export class RemoteHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static readonly hashTable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
@@ -209,7 +217,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 this.getList()!.clear();
     
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as Vector;;
+    var vector: BasicArrayList = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as BasicArrayList;;
     
 
                         if(vector != 
@@ -218,7 +226,7 @@ this.getList()!.clear();
                         
                                     {
                                     
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 
@@ -228,13 +236,13 @@ this.getList()!.clear();
     var index: number = 0;index < size; index++)
         {
 
-    var highScoreVector: Vector = vector.elementAt(index) as Vector;;
+    var highScoreVector: BasicArrayList = vector.get(index) as BasicArrayList;;
     
 
-    var displayName: string = highScoreVector!.elementAt(0) as string;;
+    var displayName: string = highScoreVector!.get(0) as string;;
     
 
-    var score: string = highScoreVector!.elementAt(1) as string;;
+    var score: string = highScoreVector!.get(1) as string;;
     
 
     var longScore: number = Long.parseLong(score)!;;

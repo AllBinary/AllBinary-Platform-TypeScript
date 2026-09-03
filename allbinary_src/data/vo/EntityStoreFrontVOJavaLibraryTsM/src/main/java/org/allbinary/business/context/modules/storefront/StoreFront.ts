@@ -32,8 +32,12 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
@@ -74,6 +78,10 @@ import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/global
       
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
@@ -2006,9 +2014,9 @@ FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, sto
 
                 //@Throws(Exception.constructor)
             
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var dataVector: Vector = new Vector();;
+    var dataVector: BasicArrayList = new BasicArrayListD();;
     
 dataVector!.add(this.name);
     
@@ -2089,7 +2097,7 @@ dataVector!.add(time);
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 
-    var dataHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var dataHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 dataHashMap!.put(storeFrontData!.NAME, this.name);
     

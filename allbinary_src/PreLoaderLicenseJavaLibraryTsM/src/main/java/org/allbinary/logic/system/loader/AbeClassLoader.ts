@@ -34,12 +34,12 @@ import { IOException } from '../../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { HashMap } from '../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
 import { Map } from '../../../../../java/util/Map.js';
       //not GWT import const Map = globalThis.java.util.Map;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogBuffer } from '../../../../../org/allbinary/logic/communication/log/LogBuffer.js';
@@ -95,7 +95,7 @@ import { AbCryptUtil } from '../../../../../org/allbinary/logic/system/security/
 export class AbeClassLoader extends ClassLoader {
         
 
-    private static classes: Map = new HashMap<any, any>();
+    private static classes: Map = StdUtil.getInstance()!.createHashMap()!;
 
     private static PATH: string;
 

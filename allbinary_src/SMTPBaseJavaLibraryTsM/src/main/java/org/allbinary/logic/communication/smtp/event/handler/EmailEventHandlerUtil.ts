@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { UserInterface } from '../../../../../../../org/allbinary/business/user/UserInterface.js';
@@ -32,6 +36,10 @@ import { UserInterface } from '../../../../../../../org/allbinary/business/user/
       
 import { UserConfigurationInterface } from '../../../../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
       //not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -107,7 +115,7 @@ export class EmailEventHandlerUtil
 
                 //@Throws(Exception.constructor)
             
-    public static getUserEmailEventListenerVector(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): Vector{
+    public static getUserEmailEventListenerVector(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): BasicArrayList{
 
     var userConfigurationInterface: UserConfigurationInterface = userInterface!.getUserConfigurationInterface()!;;
     
@@ -121,7 +129,7 @@ export class EmailEventHandlerUtil
     var userEmailEventListenerInterface: UserEmailEventListenerInterface = userEmailEventsConfigurationInterface!.getEventListener(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(userEmailEventListenerInterface);
     
@@ -144,7 +152,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getEventHandler(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userVector: Vector): UserEmailEventHandler{
+    public getEventHandler(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userVector: BasicArrayList): UserEmailEventHandler{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -154,7 +162,7 @@ private constructor (){
     
 stringBuffer!.append("Returning UserEmailEventHandler for ");
     
-stringBuffer!.appendint(userVector!.length);
+stringBuffer!.appendint(userVector!.size());
     
 stringBuffer!.append(" users.");
     
@@ -169,7 +177,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getEventHandler");
 userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
     
 
-    var size: number = userVector!.length!;;
+    var size: number = userVector!.size()!;;
     
 
 
@@ -182,7 +190,7 @@ userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
     var userInterface: UserInterface = userVector!.get(index) as UserInterface;;
     
 
-    var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
+    var vector: BasicArrayList = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 userEmailEventHandler!.addListener(vector);
     

@@ -32,8 +32,12 @@ import { Set } from '../../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
@@ -46,6 +50,10 @@ import { EntryData } from '../../../../../../../../org/allbinary/business/entry/
       
 import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
       //not GWT import const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
@@ -151,6 +159,8 @@ export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInter
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     readonly tableName: string = "orderitems";
 
 public constructor (){
@@ -166,7 +176,7 @@ this.setTableName(this.tableName);
 
     public insert(userName: string, order: OrderInterface){
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 
         try {
@@ -205,7 +215,7 @@ this.setTableName(this.tableName);
 
     var itemInterface: ItemInterface = inventoryEntity!.getItem(item)!;;
     
-vector= new Vector();
+vector= new BasicArrayListD();
     
 vector.add(new OrderItemIdGenerator().getNext());
     
@@ -301,7 +311,7 @@ this.insert(vector);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.putF("Command Success Added: " +items.length, this, INSERT);
+                                    this.logUtil!.putF("Command Success Added: " +items.size(), this, INSERT);
     
 
                                     }
@@ -328,10 +338,10 @@ this.insert(vector);
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderData.ID, orderId);
     
@@ -363,16 +373,20 @@ super.updateWhere(whereHashMap, updateHashMap);
 
         try {
             
-    var itemStatusVector: Vector = super.getColumnWhere(OrderHistoryData.STATUS, OrderData.ID, orderId)!;;
+    var itemStatusVector: BasicArrayList = super.getColumnWhere(OrderHistoryData.STATUS, OrderData.ID, orderId)!;;
     
 
-    var itemStatusIter: ListIterator = itemStatusVector!.listIterator()!;;
+    var size: number = itemStatusVector!.size()!;;
     
 
-        while(itemStatusIter!.hasNext())
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
         {
 
-    var status: string = itemStatusIter!.next() as string;;
+    var status: string = itemStatusVector!.get(index) as string;;
     
 
                         if(status.compareTo(OrderHistoryData.SHIPPED) != 0)
@@ -426,12 +440,12 @@ super.updateWhere(whereHashMap, updateHashMap);
     var basketReview: BasketReview = new BasketReview();;
     
 
-    var keyValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keyValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyValues!.put(OrderData.ID, orderId);
     
 
-    var items: Vector = super.getRows(keyValues)!;;
+    var items: BasicArrayList = super.getRows(keyValues)!;;
     
 
     var entryData: EntryData = EntryData.getInstance()!;;
@@ -439,7 +453,7 @@ keyValues!.put(OrderData.ID, orderId);
 
                         if(items != 
                                     null
-                                 && items.length > 0)
+                                 && items.size() > 0)
                         
                                     {
                                     
@@ -462,7 +476,7 @@ keyValues!.put(OrderData.ID, orderId);
 
     var itemHashMap: HashMap<any, any> = itemsArray[i]! as HashMap<any, any>;;
     
-itemHashMap!.put(BasicItemData.INBASKETS, EMPTY_STRING);
+itemHashMap!.put(basicItemData!.INBASKETS, EMPTY_STRING);
     
 itemHashMap!.put(entryData!.ENABLE, EMPTY_STRING);
     
@@ -470,13 +484,13 @@ itemHashMap!.put(entryData!.TIMECREATED, EMPTY_STRING);
     
 itemHashMap!.put(entryData!.LASTMODIFIED, EMPTY_STRING);
     
-itemHashMap!.put(BasicItemData.GROUPS, EMPTY_STRING);
+itemHashMap!.put(basicItemData!.GROUPS, EMPTY_STRING);
     
-itemHashMap!.put(BasicItemData.OPTIONS, EMPTY_STRING);
+itemHashMap!.put(basicItemData!.OPTIONS, EMPTY_STRING);
     
-itemHashMap!.put(BasicItemData.PERMISSIONS, EMPTY_STRING);
+itemHashMap!.put(basicItemData!.PERMISSIONS, EMPTY_STRING);
     
-itemHashMap!.put(BasicItemData.SPECIALS, EMPTY_STRING);
+itemHashMap!.put(basicItemData!.SPECIALS, EMPTY_STRING);
     
 
     var item: Item = new Item(itemHashMap);;
@@ -561,87 +575,87 @@ stringBuffer!.append(StoreFrontData.getInstance()!.NAME);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.ID);
+stringBuffer!.append(basicItemData!.ID);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.NUMBER);
+stringBuffer!.append(basicItemData!.NUMBER);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.NEWORUSED);
+stringBuffer!.append(basicItemData!.NEWORUSED);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.SUMMARY);
+stringBuffer!.append(basicItemData!.SUMMARY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.DISTRIBUTOR);
+stringBuffer!.append(basicItemData!.DISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.IDUSEDBYDISTRIBUTOR);
+stringBuffer!.append(basicItemData!.IDUSEDBYDISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PRODUCEDBY);
+stringBuffer!.append(basicItemData!.PRODUCEDBY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PRODUCTIONDATE);
+stringBuffer!.append(basicItemData!.PRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.STARTPRODUCTIONDATE);
+stringBuffer!.append(basicItemData!.STARTPRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.DESCRIPTION);
+stringBuffer!.append(basicItemData!.DESCRIPTION);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.KEYWORDS);
+stringBuffer!.append(basicItemData!.KEYWORDS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.CATEGORY);
+stringBuffer!.append(basicItemData!.CATEGORY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.TYPE);
+stringBuffer!.append(basicItemData!.TYPE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.SMALLIMAGE);
+stringBuffer!.append(basicItemData!.SMALLIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.MEDIUMIMAGE);
+stringBuffer!.append(basicItemData!.MEDIUMIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.LARGEIMAGE);
+stringBuffer!.append(basicItemData!.LARGEIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.WEIGHT);
+stringBuffer!.append(basicItemData!.WEIGHT);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PRICE);
+stringBuffer!.append(basicItemData!.PRICE);
     
 stringBuffer!.append(" VARCHAR(20) NOT NULL,");
     
-stringBuffer!.append(BasicItemData.COMMENT);
+stringBuffer!.append(basicItemData!.COMMENT);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.CUSTOMS);
+stringBuffer!.append(basicItemData!.CUSTOMS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.DOWNLOADS);
+stringBuffer!.append(basicItemData!.DOWNLOADS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     

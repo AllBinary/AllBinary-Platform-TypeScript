@@ -26,8 +26,12 @@ import { ActionEvent } from '../../../../../../../java/awt/event/ActionEvent.js'
       //not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { swing } from '../../../../../../../javax/swing.js';
@@ -150,9 +154,9 @@ export class BasicProfileActionScriptCondition extends ProfileActionScriptItem i
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private profileActionProcessorInterfaceVector: Vector;
+    private profileActionProcessorInterfaceVector: BasicArrayList;
 
-    private profileActionConditionInterfaceVector: Vector;
+    private profileActionConditionInterfaceVector: BasicArrayList;
 
 public constructor (label: string, node: Node){
             super(label, node);
@@ -265,9 +269,9 @@ this.init();
 
 
     init(){
-this.setProfileActionProcessorInterfaceVector(new Vector());
+this.setProfileActionProcessorInterfaceVector(new BasicArrayListD());
     
-this.setProfileActionConditionInterfaceVector(new Vector());
+this.setProfileActionConditionInterfaceVector(new BasicArrayListD());
     
 this.getJPopupMenu()!.add(this.getConditionJPopupMenu());
     
@@ -413,10 +417,10 @@ this.add(profileActionScriptNodeInterface);
     var node: Node = document.createElement(GenericProfileActionScriptConditionData.NAME)!;;
     
 
-    var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;;
+    var profileActionConditionInterfaceVector: BasicArrayList = this.getProfileActionConditionInterfaceVector()!;;
     
 
-    var size: number = profileActionConditionInterfaceVector!.length!;;
+    var size: number = profileActionConditionInterfaceVector!.size()!;;
     
 
 
@@ -433,10 +437,10 @@ node.appendChild(profileActionConditionInterface!.toXmlNode(document));
 }
 
 
-    var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;;
+    var profileActionProcessorInterfaceVector: BasicArrayList = this.getProfileActionProcessorInterfaceVector()!;;
     
 
-    var size2: number = profileActionProcessorInterfaceVector!.length!;;
+    var size2: number = profileActionProcessorInterfaceVector!.size()!;;
     
 
 
@@ -461,7 +465,7 @@ node.appendChild(profileActionProcessorInterface!.toXmlNode(document));
 }
 
 
-    public getProfileActionConditionInterfaceVector(): Vector{
+    public getProfileActionConditionInterfaceVector(): BasicArrayList{
 
 
 
@@ -471,7 +475,7 @@ node.appendChild(profileActionProcessorInterface!.toXmlNode(document));
 }
 
 
-    public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: Vector){
+    public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: BasicArrayList){
 this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVector;
     
 }
@@ -580,7 +584,7 @@ this.logUtil!.put("Error", this, "actionPerformed", e);
 }
 
 
-    public getProfileActionProcessorInterfaceVector(): Vector{
+    public getProfileActionProcessorInterfaceVector(): BasicArrayList{
 
 
 
@@ -590,7 +594,7 @@ this.logUtil!.put("Error", this, "actionPerformed", e);
 }
 
 
-    public setProfileActionProcessorInterfaceVector(profileActionProcessorInterfaceVector: Vector){
+    public setProfileActionProcessorInterfaceVector(profileActionProcessorInterfaceVector: BasicArrayList){
 this.profileActionProcessorInterfaceVector= profileActionProcessorInterfaceVector;
     
 }
@@ -611,10 +615,10 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()
             
     public shouldProcess(frame: Long): boolean{
 
-    var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;;
+    var profileActionConditionInterfaceVector: BasicArrayList = this.getProfileActionConditionInterfaceVector()!;;
     
 
-    var size: number = profileActionConditionInterfaceVector!.length!;;
+    var size: number = profileActionConditionInterfaceVector!.size()!;;
     
 
 
@@ -656,10 +660,10 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()
 this.logUtil!.putF(new StringMaker().append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, this.commonStrings!.PROCESS);
     
 
-    var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;;
+    var profileActionProcessorInterfaceVector: BasicArrayList = this.getProfileActionProcessorInterfaceVector()!;;
     
 
-    var size: number = profileActionProcessorInterfaceVector!.length!;;
+    var size: number = profileActionProcessorInterfaceVector!.size()!;;
     
 
 

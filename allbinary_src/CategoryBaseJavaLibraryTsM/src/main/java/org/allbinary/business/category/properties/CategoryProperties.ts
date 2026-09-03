@@ -26,10 +26,6 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
-
-      
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
       //not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
@@ -44,6 +40,10 @@ import { CategoryUtil } from '../../../../../org/allbinary/business/category/Cat
       
 import { CategoryHierarchyInterface } from '../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
       //not GWT import const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -361,7 +361,7 @@ this.category= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     
@@ -374,9 +374,9 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var categoryVector: Vector = new Vector();;
+    var categoryVector: BasicArrayList = new BasicArrayListD();;
     
 categoryVector!.add(this.category);
     

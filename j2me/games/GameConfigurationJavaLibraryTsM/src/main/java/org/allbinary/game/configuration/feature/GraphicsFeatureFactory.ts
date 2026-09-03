@@ -99,9 +99,9 @@ private constructor (){
 
     public readonly SPRITE_FULL_GRAPHICS: GraphicsFeature = new GraphicsFeature("Sprite Full Rotation Graphics");
 
-    public readonly VECTOR_GRAPHICS: GraphicsFeature = new GraphicsFeature("Vector Graphics");
+    public readonly VECTOR_GRAPHICS: GraphicsFeature = new GraphicsFeature("BasicArrayList Graphics");
 
-    public readonly VECTOR_TO_IMAGE_GRAPHICS: GraphicsFeature = new GraphicsFeature("Vector To Image Graphics");
+    public readonly VECTOR_TO_IMAGE_GRAPHICS: GraphicsFeature = new GraphicsFeature("BasicArrayList To Image Graphics");
 
 }
 

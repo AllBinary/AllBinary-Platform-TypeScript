@@ -26,6 +26,10 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -56,7 +60,7 @@ export class MediaData
          {
         
 
-    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
                 //@Throws(Exception.constructor)
             

@@ -38,6 +38,10 @@ import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/t
       //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
+import { StdUtil } from '../../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -230,7 +234,7 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()));
     

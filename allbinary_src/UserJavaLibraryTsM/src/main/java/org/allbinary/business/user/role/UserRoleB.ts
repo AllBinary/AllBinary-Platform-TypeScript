@@ -20,12 +20,20 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
       //not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
@@ -63,7 +71,7 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
 export class UserRoleB extends UserRole {
         
 
-    public static roleVector: Vector = new Vector();
+    public static roleVector: BasicArrayList = new BasicArrayListD();
 
                 //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
@@ -76,10 +84,10 @@ UserRoleFactory.getInstance();
                         
                                     {
                                     
-    var roleVector: Vector = UserRoleB.getAll()!;;
+    var roleVector: BasicArrayList = UserRoleB.getAll()!;;
     
 
-    var size: number = roleVector!.length!;;
+    var size: number = roleVector!.size()!;;
     
 
 
@@ -117,7 +125,7 @@ UserRoleFactory.getInstance();
 }
 
 
-    public static getAll(): Vector{
+    public static getAll(): BasicArrayList{
 UserRoleFactory.getInstance();
     
 

@@ -22,12 +22,20 @@
         
             import { Cloneable } from '../../../../../../java/lang/Cloneable.js';
         
-import { awt } from '../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.java.awt.Rectangle;
 
       
 import { Vector } from '../../../../../../java/util/Vector.js';
       //not GWT import const Vector = globalThis.java.util.Vector;
+
+      
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -48,10 +56,7 @@ import { Vector } from '../../../../../../java/util/Vector.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
-
-                
+        
 export class MotionRectangle
             extends Object
          implements Cloneable {
@@ -59,14 +64,14 @@ export class MotionRectangle
 
     private rectangle: Rectangle;
 
-    private pixelDeltaVector: Vector;
+    private pixelDeltaVector: BasicArrayList;
 
 public constructor (rectangle: Rectangle){
 
             super();
         this.setRectangle(rectangle);
     
-this.setPixelDeltaVector(new Vector());
+this.setPixelDeltaVector(new BasicArrayListD());
     
 }
 
@@ -87,7 +92,7 @@ this.rectangle= rectangle;
 }
 
 
-    public getPixelDeltaVector(): Vector{
+    public getPixelDeltaVector(): BasicArrayList{
 
 
 
@@ -97,7 +102,7 @@ this.rectangle= rectangle;
 }
 
 
-    public setPixelDeltaVector(pixelDeltaVector: Vector){
+    public setPixelDeltaVector(pixelDeltaVector: BasicArrayList){
 this.pixelDeltaVector= pixelDeltaVector;
     
 }
@@ -107,7 +112,7 @@ this.pixelDeltaVector= pixelDeltaVector;
 
     var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);;
     
-motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector);
+motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as BasicArrayList);
     
 
 

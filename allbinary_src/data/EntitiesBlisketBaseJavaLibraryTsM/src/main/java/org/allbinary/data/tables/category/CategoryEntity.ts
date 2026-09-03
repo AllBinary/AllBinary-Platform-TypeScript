@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { Category } from '../../../../../org/allbinary/business/category/Category.js';
@@ -42,6 +46,10 @@ import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/
       
 import { InventoryDbInitInfo } from '../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
       //not GWT import const InventoryDbInitInfo = globalThis.org.allbinary.business.init.db.InventoryDbInitInfo;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -111,10 +119,10 @@ this.setTableName(this.tableName);
 
         try {
             
-    var categoryVector: Vector = category.toVector()!;;
+    var categoryVector: BasicArrayList = category.toVector()!;;
     
 
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(categoryVector!.get(0));
     

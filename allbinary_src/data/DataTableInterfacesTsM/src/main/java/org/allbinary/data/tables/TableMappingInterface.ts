@@ -24,8 +24,8 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 
@@ -56,7 +56,7 @@ export interface TableMappingInterface {
 
                 //@Throws(Exception.constructor)
             
-    toVector(): Vector
+    toVector(): BasicArrayList
 
                 //@Throws(Exception.constructor)
             

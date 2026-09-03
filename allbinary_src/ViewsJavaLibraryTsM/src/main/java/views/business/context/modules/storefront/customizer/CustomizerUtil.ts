@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { TransformInfoEntity } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
@@ -149,7 +153,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getTransformInfoObjectConfigComponentNodesToCustomize(customizerTransformInfoInterface: Object, transformInfoInterface: Object): Vector{
+    public getTransformInfoObjectConfigComponentNodesToCustomize(customizerTransformInfoInterface: Object, transformInfoInterface: Object): BasicArrayList{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -182,7 +186,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getTransformInfoObjectConfigComponentNodes(transformInfoInterface: Object): Vector{
+    public getTransformInfoObjectConfigComponentNodes(transformInfoInterface: Object): BasicArrayList{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -206,7 +210,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface: Object): Vector{
+    public getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface: Object): BasicArrayList{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -244,7 +248,7 @@ private constructor (){
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var allViewsToBeModified: Vector = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
+    var allViewsToBeModified: BasicArrayList = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
     
 
     var document: Document = DomDocumentHelper.create()!;;
@@ -263,7 +267,7 @@ document.appendChild(domNodeInterface!.toXmlNode(document));
                                     {
                                     stringBuffer!.append("Total Views For Modification: ");
     
-stringBuffer!.appendint(allViewsToBeModified!.length);
+stringBuffer!.appendint(allViewsToBeModified!.size());
     
 stringBuffer!.append(" New Xml/Data: ");
     
@@ -277,7 +281,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
 transformInfoInterface!.setData(documentString);
     
 
-    var size: number = allViewsToBeModified!.length!;;
+    var size: number = allViewsToBeModified!.size()!;;
     
 
 
@@ -422,13 +426,13 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
-    var allViewsToBeModified: Vector = transformInfoObjectConfigInterface!.getGroupTransforms()!;;
+    var allViewsToBeModified: BasicArrayList = transformInfoObjectConfigInterface!.getGroupTransforms()!;;
     
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var size: number = allViewsToBeModified!.length!;;
+    var size: number = allViewsToBeModified!.size()!;;
     
 
 

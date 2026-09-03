@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
@@ -36,6 +40,10 @@ import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/do
       
 import { DomDocumentFileHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentFileHelper.js';
       //not GWT import const DomDocumentFileHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentFileHelper;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -121,7 +129,7 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
 
         try {
             
-    var transformInfoPropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var transformInfoPropertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;;
@@ -130,19 +138,19 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
     var transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;;
     
 
-    var transformInfoNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;;
+    var transformInfoNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()");
+                                    this.logUtil!.putF("Size: " +transformInfoNodeVector!.size(), this, "toTransformInfoPropertiesHashMap()");
     
 
                                     }
                                 
 
-    var size: number = transformInfoNodeVector!.length!;;
+    var size: number = transformInfoNodeVector!.size()!;;
     
 
     var node: Node;;

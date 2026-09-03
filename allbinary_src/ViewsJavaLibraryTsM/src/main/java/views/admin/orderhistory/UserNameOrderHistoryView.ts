@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
@@ -203,10 +207,10 @@ this.addDomNodeInterface(this as DomNodeInterface);
     var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();;
     
 
-    var orderReviewVector: Vector = orderHistoryEntity!.getOrders(this.userName)!;;
+    var orderReviewVector: BasicArrayList = orderHistoryEntity!.getOrders(this.userName)!;;
     
 
-    var size: number = orderReviewVector!.length!;;
+    var size: number = orderReviewVector!.size()!;;
     
 
 

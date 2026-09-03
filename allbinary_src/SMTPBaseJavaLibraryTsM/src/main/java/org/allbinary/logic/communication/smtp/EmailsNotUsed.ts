@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { BasicErrorNodeUtil } from '../../../../../org/allbinary/data/tree/dom/BasicErrorNodeUtil.js';
@@ -32,6 +36,10 @@ import { BasicErrorNodeUtil } from '../../../../../org/allbinary/data/tree/dom/B
       
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
       //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -84,12 +92,12 @@ export class EmailsNotUsed
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    emailInfoVector: Vector;
+    emailInfoVector: BasicArrayList;
 
 public constructor (){
 
             super();
-        this.emailInfoVector= new Vector();
+        this.emailInfoVector= new BasicArrayListD();
     
 }
 
@@ -112,7 +120,7 @@ public constructor (){
     var node: Node = document.createElement(EmailData.NAME)!;;
     
 
-    var size: number = this.emailInfoVector!.length!;;
+    var size: number = this.emailInfoVector!.size()!;;
     
 
 

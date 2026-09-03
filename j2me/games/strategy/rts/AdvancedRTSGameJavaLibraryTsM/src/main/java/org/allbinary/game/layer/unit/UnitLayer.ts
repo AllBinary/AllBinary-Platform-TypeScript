@@ -372,6 +372,10 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
       //not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
       const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
@@ -662,7 +666,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.groupCommonFactory!.ID, this.getGroupInterface());
     

@@ -26,12 +26,20 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
       //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -98,7 +106,7 @@ super.setTableName(this.tableName);
             
     public get(name: string): Long{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(this.NAME, name);
     
@@ -129,7 +137,7 @@ keysAndValues!.put(this.NAME, name);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -167,7 +175,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, this.commonStrings!.delete,
 
     public update(name: string, value: Long){
 
-    var map: HashMap<any, any> = new HashMap<any, any>();;
+    var map: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 map.put(this.NAME, name);
     

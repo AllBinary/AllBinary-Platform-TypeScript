@@ -30,8 +30,12 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
@@ -835,7 +839,7 @@ this.close();
     var commandTextItemArrayFactory: CommandTextItemArrayFactory = DemoLimitedCommandTextItemArrayFactory.getInstance()!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
+    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
     
 
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
@@ -1110,7 +1114,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.nullUtil!.NULL_TABLE;
+                        return this.stdUtil!.NULL_TABLE;
     
 }
 
@@ -1124,7 +1128,7 @@ this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable"
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.nullUtil!.NULL_TABLE;
+                        return this.stdUtil!.NULL_TABLE;
     
 }
 

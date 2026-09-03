@@ -28,8 +28,8 @@ import { Hashtable } from '../../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -251,7 +251,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullUtil.getInstance()!.NULL_TABLE;
+                        return StdUtil.getInstance()!.NULL_TABLE;
     
 }
 

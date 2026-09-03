@@ -22,8 +22,12 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
@@ -136,12 +140,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;;
     
 
-    var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;;
+    var itemVector: BasicArrayList = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;;
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).toString()));
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.size()).toString()));
     
 
-    var size: number = itemVector!.length!;;
+    var size: number = itemVector!.size()!;;
     
 
 
@@ -160,7 +164,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchDat
                         
                                     {
                                     
-    var node: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(document)!;;
+    var node: Node = new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(document)!;;
     
 inventoryNode!.appendChild(node);
     

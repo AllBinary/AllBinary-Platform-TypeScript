@@ -26,12 +26,16 @@ import { Hashtable } from '../../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -122,29 +126,29 @@ export class WindowsHardware
          implements HardwareInterface {
         
 
-    private componentInterfaceVector: Vector;
+    private componentInterfaceVector: BasicArrayList;
 
-    private videoInterfaceVector: Vector;
+    private videoInterfaceVector: BasicArrayList;
 
-    private hardDriveControllerInterfaceVector: Vector;
+    private hardDriveControllerInterfaceVector: BasicArrayList;
 
-    private cpuInterfaceVector: Vector;
+    private cpuInterfaceVector: BasicArrayList;
 
-    private usbInterfaceVector: Vector;
+    private usbInterfaceVector: BasicArrayList;
 
-    private ethernetInterfaceVector: Vector;
+    private ethernetInterfaceVector: BasicArrayList;
 
-    private multimediaInterfaceVector: Vector;
+    private multimediaInterfaceVector: BasicArrayList;
 
-    private fireWireInterfaceVector: Vector;
+    private fireWireInterfaceVector: BasicArrayList;
 
-    private bridgeInterfaceVector: Vector;
+    private bridgeInterfaceVector: BasicArrayList;
 
-    private hardDriveInterfaceVector: Vector;
+    private hardDriveInterfaceVector: BasicArrayList;
 
-    private macInterfaceVector: Vector;
+    private macInterfaceVector: BasicArrayList;
 
-    private monitorInterfaceVector: Vector;
+    private monitorInterfaceVector: BasicArrayList;
 
     private readonly NAME: string = "Windows Hardware Profile";
 
@@ -157,32 +161,32 @@ public constructor (){
             super();
         
         try {
-            this.componentInterfaceVector= new Vector();
+            this.componentInterfaceVector= new BasicArrayListD();
     
-this.videoInterfaceVector= new Vector();
+this.videoInterfaceVector= new BasicArrayListD();
     
-this.hardDriveControllerInterfaceVector= new Vector();
+this.hardDriveControllerInterfaceVector= new BasicArrayListD();
     
-this.cpuInterfaceVector= new Vector();
+this.cpuInterfaceVector= new BasicArrayListD();
     
-this.usbInterfaceVector= new Vector();
+this.usbInterfaceVector= new BasicArrayListD();
     
-this.ethernetInterfaceVector= new Vector();
+this.ethernetInterfaceVector= new BasicArrayListD();
     
-this.multimediaInterfaceVector= new Vector();
+this.multimediaInterfaceVector= new BasicArrayListD();
     
-this.fireWireInterfaceVector= new Vector();
+this.fireWireInterfaceVector= new BasicArrayListD();
     
-this.bridgeInterfaceVector= new Vector();
+this.bridgeInterfaceVector= new BasicArrayListD();
     
-this.hardDriveInterfaceVector= new Vector();
+this.hardDriveInterfaceVector= new BasicArrayListD();
     
-this.macInterfaceVector= new Vector();
+this.macInterfaceVector= new BasicArrayListD();
     
-this.monitorInterfaceVector= new Vector();
+this.monitorInterfaceVector= new BasicArrayListD();
     
 
-                        if(this.componentInterfaceVector!.length < this.MINHARDWARE)
+                        if(this.componentInterfaceVector!.size() < this.MINHARDWARE)
                         
                                     throw new Exception("Not Enough Data For A Valid License On Windows");
                                 
@@ -423,7 +427,7 @@ this.monitorInterfaceVector= new Vector();
     var hardwareBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.length!;;
+    var size: number = this.componentInterfaceVector!.size()!;;
     
 
 
@@ -465,7 +469,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullUtil.getInstance()!.NULL_TABLE;
+                        return StdUtil.getInstance()!.NULL_TABLE;
     
 }
 

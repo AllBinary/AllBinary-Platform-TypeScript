@@ -120,6 +120,8 @@ export class InventoryHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private weblisketSession: WeblisketSession;
 
     private response: HttpServletResponse;
@@ -171,7 +173,7 @@ this.getFormData();
 
 
     getFormData(){
-this.id= this.request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(basicItemData!.ID);
     
 }
 
@@ -234,7 +236,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
     var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS) as string;;
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(basicItemData!.KEYWORDS) as string;;
     
 
                         if(keywords == 

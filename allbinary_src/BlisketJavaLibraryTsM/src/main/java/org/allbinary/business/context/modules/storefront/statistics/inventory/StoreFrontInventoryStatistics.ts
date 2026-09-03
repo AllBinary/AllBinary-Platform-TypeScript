@@ -30,8 +30,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -52,6 +56,10 @@ import { InventoryEntityFactory } from '../../../../../../../../org/allbinary/da
       
 import { InventoryEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityInterface.js';
       //not GWT import const InventoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityInterface;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -97,10 +105,10 @@ public constructor (storeFrontInterface: StoreFrontInterface){
     var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var itemVector: Vector = inventoryEntityInterface!.getItems(storeFrontInterface)!;;
+    var itemVector: BasicArrayList = inventoryEntityInterface!.getItems(storeFrontInterface)!;;
     
 
-    var size: number = itemVector!.length!;;
+    var size: number = itemVector!.size()!;;
     
 
 
@@ -151,7 +159,7 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString());
     
@@ -166,7 +174,7 @@ hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.g
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
 
 

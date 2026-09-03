@@ -28,8 +28,12 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
@@ -66,6 +70,10 @@ import { DownloadableItemView } from '../../../../org/allbinary/business/user/co
       
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
+      
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { MultipartRequestParams } from '../../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
@@ -138,6 +146,8 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView implem
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     readonly request: HttpServletRequest;
 
     id: string;
@@ -187,14 +197,14 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
     getFormData(){
 this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
-this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as string;
+this.id= this.getRequestHashMap()!.get(basicItemData!.ID) as string;
     
 }
 
 
     public addDomNodeInterfaces(){
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 
                         if(this.downloadableItem != 

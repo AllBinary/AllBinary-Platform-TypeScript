@@ -28,6 +28,18 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
+      
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
       //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
 
@@ -40,16 +52,8 @@ import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 
@@ -104,16 +108,7 @@ export class SmallIntegerSingletonFactory
 
     public getMin(): number{
 
-    var minAllowed: number = (J2MEUtil.isJ2ME()
-                        ?       
-                                0
-                                :
-
-                            
-                                        //Otherwise - expression - elseExpr - ConditionalExpr
-;
-
-    );;
+    var minAllowed: number = this.getMinAllowed()!;;
     
 
                         if(this.MIN <= minAllowed)
@@ -133,7 +128,7 @@ export class SmallIntegerSingletonFactory
                                     
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.putF("Android InputFactory was initialized before GameMidlet: " +this.MIN, this, "getMin");
+logUtil!.putF(new StringMaker().append("Android InputFactory was initialized before GameMidlet: ")!.appendint(this.MIN)!.toString(), this, "getMin");
     
 this.initWithRange(0x291, 6);
     
@@ -144,7 +139,7 @@ this.initWithRange(0x291, 6);
                             
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.putF("InputFactory was initialized before GameMidlet or KeyFactoryInitializer - Currently this is occurs on JS build by TouchMotionGestureFactory constructor: " +this.MIN, this, "getMin");
+logUtil!.putF(new StringMaker().append("InputFactory was initialized before GameMidlet or KeyFactoryInitializer - Currently this is occurs on JS build by TouchMotionGestureFactory constructor: ")!.appendint(this.MIN)!.toString(), this, "getMin");
     
 this.initWithRange(0x2D0, 6);
     
@@ -172,6 +167,50 @@ logUtil!.put("This means you loaded the InputFactory before determining the plat
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.MIN;
     
+}
+
+
+    getMinAllowed(): number{
+
+                        if(J2MEUtil.isJ2ME())
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return 0;
+    
+
+                                    }
+                                
+                        else {
+                            
+                        if(AndroidUtil.isAndroid())
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return 0x101;
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return 23;
+    
+
+                        }
+                            
+
+                        }
+                            
 }
 
 

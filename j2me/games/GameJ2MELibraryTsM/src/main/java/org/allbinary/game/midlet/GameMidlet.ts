@@ -390,6 +390,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -1635,7 +1639,7 @@ GameEventHandlerUtil.removeAllListeners();
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    this.logUtil!.putF("Set Running False: " +gameCanvasRunnableInterface, this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+                                    this.logUtil!.putF(new StringMaker().append("Set Running False: ")!.append(gameCanvasRunnableInterface!.toString())!.toString(), this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
     
 gameCanvasRunnableInterface!.setRunning(false);
     
@@ -1734,7 +1738,7 @@ GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtabl
 this.logUtil!.putF(this.commonStrings!.START, this, "getCurrentStateHashtable");
     
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
                         if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)

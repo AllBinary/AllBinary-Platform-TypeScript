@@ -52,6 +52,10 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
       //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -117,6 +121,8 @@ export class AbSqlBasic
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
+
+    readonly stdUtil: StdUtil = StdUtil.getInstance()!;
 
     readonly sqlTypeStrings: SqlTypeStrings = SqlTypeStrings.getInstance()!;
 

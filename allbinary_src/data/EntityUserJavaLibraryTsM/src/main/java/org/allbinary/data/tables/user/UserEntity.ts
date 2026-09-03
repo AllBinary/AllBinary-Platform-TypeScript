@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
@@ -76,6 +80,10 @@ import { UserRoleFactory } from '../../../../../org/allbinary/business/user/role
       
 import { GLOBALS2 } from '../../../../../org/allbinary/globals/GLOBALS2.js';
       //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -152,7 +160,7 @@ this.setTableName(this.tableName);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -186,7 +194,7 @@ this.setTableName(this.tableName);
 
                 //@Throws(Exception.constructor)
             
-    public getAdministrators(): Vector{
+    public getAdministrators(): BasicArrayList{
 
 
 
@@ -198,22 +206,22 @@ this.setTableName(this.tableName);
 
                 //@Throws(Exception.constructor)
             
-    public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
+    public getStoreManagers(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var usersVector: Vector = new Vector();;
+    var usersVector: BasicArrayList = new BasicArrayListD();;
     
 keysAndValues!.put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString());
     
 keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
     
 
-    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.length!;;
+    var size: number = usersHashMapVector!.size()!;;
     
 
 
@@ -243,7 +251,7 @@ keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
 
                 //@Throws(Exception.constructor)
             
-    public getCustomers(): Vector{
+    public getCustomers(): BasicArrayList{
 
 
 
@@ -255,20 +263,20 @@ keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
 
                 //@Throws(Exception.constructor)
             
-    public getUsersWithRole(userRole: UserRole): Vector{
+    public getUsersWithRole(userRole: UserRole): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var usersVector: Vector = new Vector();;
+    var usersVector: BasicArrayList = new BasicArrayListD();;
     
 keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
     
 
-    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.length!;;
+    var size: number = usersHashMapVector!.size()!;;
     
 
 
@@ -298,20 +306,20 @@ keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
 
                 //@Throws(Exception.constructor)
             
-    public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
+    public getUsers(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var usersVector: Vector = new Vector();;
+    var usersVector: BasicArrayList = new BasicArrayListD();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
     
 
-    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.length!;;
+    var size: number = usersHashMapVector!.size()!;;
     
 
 
@@ -343,7 +351,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getN
             
     public getUser(userName: string): UserInterface{
 
-    var row: HashMap<any, any> = new HashMap<any, any>();;
+    var row: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 row.put(UserData.USERNAME, userName);
     

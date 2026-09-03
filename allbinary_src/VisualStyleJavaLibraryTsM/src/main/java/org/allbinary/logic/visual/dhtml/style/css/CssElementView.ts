@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomData } from '../../../../../../../org/allbinary/data/tree/dom/DomData.js';
@@ -48,6 +52,10 @@ import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/do
       
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
       //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -126,14 +134,14 @@ export class CssElementView
 
     private description: string;
 
-    cssElementVector: Vector;
+    cssElementVector: BasicArrayList;
 
-    cssPropertyVector: Vector;
+    cssPropertyVector: BasicArrayList;
 
 public constructor (){
 
             super();
-        this.cssPropertyVector= new Vector();
+        this.cssPropertyVector= new BasicArrayListD();
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;;
@@ -210,13 +218,13 @@ this.title= stringUtil!.EMPTY_STRING;
                                     }
                                 
 
-    var cssElementStyleNodeVector: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;;
+    var cssElementStyleNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()");
+                                    this.logUtil!.putF("Child Css Elements: " +cssElementStyleNodeVector!.size(), this, "CssElementView()");
     
 
                                     }
@@ -263,7 +271,7 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(DomData.VALUE, this.value);
     
@@ -299,7 +307,7 @@ hashMap!.put(this.DESCRIPTION, this.description);
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;;
     
 
-    var size: number = this.cssPropertyVector!.length!;;
+    var size: number = this.cssPropertyVector!.size()!;;
     
 
 
@@ -316,7 +324,7 @@ node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
 }
 
 
-    var size2: number = this.cssElementVector!.length!;;
+    var size2: number = this.cssElementVector!.size()!;;
     
 
 

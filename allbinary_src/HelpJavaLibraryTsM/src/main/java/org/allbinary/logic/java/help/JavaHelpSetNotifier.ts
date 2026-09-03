@@ -24,8 +24,12 @@ import { URL } from '../../../../../java/net/URL.js';
       //not GWT import const URL = globalThis.java.net.URL;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
@@ -56,9 +60,9 @@ export class JavaHelpSetNotifier
          {
         
 
-    private static vector: Vector = new Vector();
+    private static vector: BasicArrayList = new BasicArrayListD();
 
-    static get(): Vector{
+    static get(): BasicArrayList{
 
 
 
@@ -76,7 +80,7 @@ export class JavaHelpSetNotifier
     var url: URL = helpSet!.getHelpSetURL()!;;
     
 
-    var size: number = JavaHelpSetNotifier.vector.length!;;
+    var size: number = JavaHelpSetNotifier.vector.size()!;;
     
 
     var urlArray: any[] = JavaHelpSetNotifier.vector.toArray()!;;

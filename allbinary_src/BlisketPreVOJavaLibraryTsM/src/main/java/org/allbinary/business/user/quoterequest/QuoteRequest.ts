@@ -32,8 +32,12 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
@@ -54,6 +58,10 @@ import { UserData } from '../../../../../org/allbinary/business/user/UserData.js
       
 import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js';
       //not GWT import const QuoteRequestIdGenerator = globalThis.org.allbinary.data.generator.QuoteRequestIdGenerator;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -386,9 +394,9 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.id);
     
@@ -428,7 +436,7 @@ values.add(time);
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 
-    var values: HashMap<any, any> = new HashMap<any, any>();;
+    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(UserData.USERNAME, userName);
     

@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -211,10 +215,16 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
     
 
-    var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;;
+    var storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontNamesBasicArrayList!.length!;;
+    var size: number = storeFrontNamesBasicArrayList!.size()!;;
+    
+
+    var nextStore: string;;
+    
+
+    var viewsPath: string;;
     
 
 
@@ -223,8 +233,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as string;;
+nextStore= storeFrontNamesBasicArrayList!.get(index) as string;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -234,8 +243,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.VIEWS_PATH);
     
 stringBuffer!.append(nextStore);
     
-
-    var viewsPath: string = stringBuffer!.toString()!;;
+viewsPath= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -291,10 +299,19 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
     
 
-    var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;;
+    var storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontNamesBasicArrayList!.length!;;
+    var size: number = storeFrontNamesBasicArrayList!.size()!;;
+    
+
+    var nextStore: string;;
+    
+
+    var storeFrontInterface: StoreFrontInterface;;
+    
+
+    var resourcesPath: string;;
     
 
 
@@ -303,11 +320,9 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as string;;
+nextStore= storeFrontNamesBasicArrayList!.get(index) as string;
     
-
-    var storeFrontInterface: StoreFrontInterface = storeFrontsEntity!.getStoreFrontInterface(nextStore)!;;
+storeFrontInterface= storeFrontsEntity!.getStoreFrontInterface(nextStore);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -317,8 +332,7 @@ stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath());
     
 stringBuffer!.append(storeFrontInterface!.getCategoryPath());
     
-
-    var resourcesPath: string = stringBuffer!.toString()!;;
+resourcesPath= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -374,10 +388,13 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
     
 
-    var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;;
+    var storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontNamesBasicArrayList!.length!;;
+    var size: number = storeFrontNamesBasicArrayList!.size()!;;
+    
+
+    var nextStore: string;;
     
 
 
@@ -386,8 +403,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as string;;
+nextStore= storeFrontNamesBasicArrayList!.get(index) as string;
     
 PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()");
     

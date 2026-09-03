@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
@@ -61,7 +65,7 @@ export class NullXmlRpcHandler
 
                 //@Throws(Exception.constructor)
             
-    public execute(method: string, params: Vector<any>): any{
+    public execute(method: string, params: BasicArrayList): any{
 
 
 

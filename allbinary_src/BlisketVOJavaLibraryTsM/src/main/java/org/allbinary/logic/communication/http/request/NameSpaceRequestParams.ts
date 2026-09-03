@@ -28,8 +28,12 @@ import { Set } from '../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
@@ -58,6 +62,10 @@ import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModD
       
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
       //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -517,18 +525,18 @@ node.appendChild(newPropertyNode);
 
                 //@Throws(Exception.constructor)
             
-    isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap<any, any>, elementNodeVector: Vector): number{
+    isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap<any, any>, elementNodeVector: BasicArrayList): number{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    this.logUtil!.putF("\nComparing Properties of: " +elementNodeVector!.length +" Nodes", this, "isElementValueTextNodeUnique");
+                                    this.logUtil!.putF("\nComparing Properties of: " +elementNodeVector!.size() +" Nodes", this, "isElementValueTextNodeUnique");
     
 
                                     }
                                 
 
-    var size: number = elementNodeVector!.length!;;
+    var size: number = elementNodeVector!.size()!;;
     
 
 
@@ -571,10 +579,10 @@ node.appendChild(newPropertyNode);
     var node: Node = rootNode;;
     
 
-    var packageVector: Vector = nameSpaceRequestParam!.getPackages()!;;
+    var packageVector: BasicArrayList = nameSpaceRequestParam!.getPackages()!;;
     
 
-    var size: number = packageVector!.length!;;
+    var size: number = packageVector!.size()!;;
     
 
 
@@ -599,13 +607,13 @@ node.appendChild(newPropertyNode);
     var nextPackagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(index)!;;
     
 
-    var elementNodeVector: Vector = DomSearchHelper.getAllNodesNoThrow(nextPackageName, node.getChildNodes())!;;
+    var elementNodeVector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(nextPackageName, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    this.logUtil!.putF("\nDocument Contains " +elementNodeVector!.length +" Node(s) With Same Name", this, "addChildren");
+                                    this.logUtil!.putF("\nDocument Contains " +elementNodeVector!.size() +" Node(s) With Same Name", this, "addChildren");
     
 
                                     }
@@ -614,7 +622,7 @@ node.appendChild(newPropertyNode);
     var isElementValueTextNodeUniqueIndex: number = this.isElementValueTextNodeUnique(nextPackagePropertiesHashMap, elementNodeVector)!;;
     
 
-                        if((elementNodeVector!.length == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE))
+                        if((elementNodeVector!.size() == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE))
                         
                                     {
                                     
@@ -724,10 +732,10 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
     var nameSpaceRequestParam: NameSpaceRequestParam = new NameSpaceRequestParam(key, value);;
     
 
-    var packageVector: Vector = nameSpaceRequestParam!.getPackages()!;;
+    var packageVector: BasicArrayList = nameSpaceRequestParam!.getPackages()!;;
     
 
-    var size: number = packageVector!.length!;;
+    var size: number = packageVector!.size()!;;
     
 
 
@@ -776,7 +784,7 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
     var document: Document = DomDocumentHelper.create()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var keys: Set = this.getMap()!.keySet()!;;

@@ -30,8 +30,12 @@ import { Set } from '../../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
@@ -122,10 +126,10 @@ public constructor (node: Node){
     var childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var emailEventConfigurationNodeVector: Vector = DomSearchHelper.getAllNodesNoThrow(UserEmailEventConfigurationData.NAME, childNodeList)!;;
+    var emailEventConfigurationNodeVector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(UserEmailEventConfigurationData.NAME, childNodeList)!;;
     
 
-    var size: number = emailEventConfigurationNodeVector!.length!;;
+    var size: number = emailEventConfigurationNodeVector!.size()!;;
     
 
 

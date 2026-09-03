@@ -20,8 +20,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -63,27 +67,27 @@ export class AdminRoleFactory
 }
 
 
-    private readonly adminRoles: Vector<any> = new Vector<any>();
+    private readonly adminRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly storeAdminRoles: Vector<any> = new Vector<any>();
+    private readonly storeAdminRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly storeManagementRoles: Vector<any> = new Vector<any>();
+    private readonly storeManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly productManagementRoles: Vector<any> = new Vector<any>();
+    private readonly productManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly reviewManagementRoles: Vector<any> = new Vector<any>();
+    private readonly reviewManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly customerManagementRoles: Vector<any> = new Vector<any>();
+    private readonly customerManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly workflowManagementRoles: Vector<any> = new Vector<any>();
+    private readonly workflowManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly orderManagementRoles: Vector<any> = new Vector<any>();
+    private readonly orderManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly adjusterManagementRoles: Vector<any> = new Vector<any>();
+    private readonly adjusterManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly shippingManagementRoles: Vector<any> = new Vector<any>();
+    private readonly shippingManagementRoles: BasicArrayList = new BasicArrayListD();
 
-    private readonly webManagementRoles: Vector<any> = new Vector<any>();
+    private readonly webManagementRoles: BasicArrayList = new BasicArrayListD();
 
 private constructor (){
 
@@ -164,7 +168,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getProductManagementRoles(): Vector<any>{
+    public getProductManagementRoles(): BasicArrayList{
 
 
 
@@ -174,7 +178,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getAdminRoles(): Vector<any>{
+    public getAdminRoles(): BasicArrayList{
 
 
 
@@ -184,7 +188,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getStoreAdminRoles(): Vector<any>{
+    public getStoreAdminRoles(): BasicArrayList{
 
 
 
@@ -194,7 +198,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getStoreManagementRoles(): Vector<any>{
+    public getStoreManagementRoles(): BasicArrayList{
 
 
 
@@ -204,7 +208,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getReviewManagementRoles(): Vector<any>{
+    public getReviewManagementRoles(): BasicArrayList{
 
 
 
@@ -214,7 +218,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getCustomerManagementRoles(): Vector<any>{
+    public getCustomerManagementRoles(): BasicArrayList{
 
 
 
@@ -224,7 +228,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getWorkflowManagementRoles(): Vector<any>{
+    public getWorkflowManagementRoles(): BasicArrayList{
 
 
 
@@ -234,7 +238,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getWebManagementRoles(): Vector<any>{
+    public getWebManagementRoles(): BasicArrayList{
 
 
 
@@ -244,7 +248,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getShippingManagementRoles(): Vector<any>{
+    public getShippingManagementRoles(): BasicArrayList{
 
 
 
@@ -254,7 +258,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getAdjusterManagementRoles(): Vector<any>{
+    public getAdjusterManagementRoles(): BasicArrayList{
 
 
 
@@ -264,7 +268,7 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 }
 
 
-    public getOrderManagementRoles(): Vector<any>{
+    public getOrderManagementRoles(): BasicArrayList{
 
 
 

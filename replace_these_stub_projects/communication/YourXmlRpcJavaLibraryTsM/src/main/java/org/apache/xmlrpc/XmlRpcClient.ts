@@ -18,8 +18,12 @@ import { URL } from '../../../java/net/URL.js';
       //not GWT import const URL = globalThis.java.net.URL;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
@@ -83,7 +87,7 @@ public constructor (url: string){
 
                 //@Throws(XmlRpcException.constructor, IOException.constructor)
             
-    public execute(method: string, params: Vector<any>): any{
+    public execute(method: string, params: BasicArrayList): any{
 
 
 
@@ -95,7 +99,7 @@ public constructor (url: string){
 
                 //@Throws(XmlRpcException.constructor, IOException.constructor)
             
-    public execute(method: string, params: Vector<any>, cryptInterface: CryptInterface): any{
+    public execute(method: string, params: BasicArrayList, cryptInterface: CryptInterface): any{
 
 
 

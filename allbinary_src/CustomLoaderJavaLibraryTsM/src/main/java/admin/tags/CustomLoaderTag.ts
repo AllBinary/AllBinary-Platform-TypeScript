@@ -38,6 +38,10 @@ import { CustomLoaderHelperFactory } from '../../admin/taghelpers/CustomLoaderHe
       //not GWT import const CustomLoaderHelperFactory = globalThis.admin.taghelpers.CustomLoaderHelperFactory;
 
       
+import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
       //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
@@ -178,7 +182,7 @@ setMethod!.invoke(anyType, methodArgs);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= StdUtil.getInstance()!.createHashMap();
     
 
                         if(this.command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)

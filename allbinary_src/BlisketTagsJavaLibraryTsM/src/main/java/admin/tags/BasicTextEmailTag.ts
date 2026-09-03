@@ -36,6 +36,10 @@ import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEma
       //not GWT import const BasicTextEmailHelperFactory = globalThis.admin.taghelpers.BasicTextEmailHelperFactory;
 
       
+import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
       //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
@@ -98,7 +102,7 @@ this.body= value;
 
         try {
             
-    var propertiesHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var propertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 propertiesHashMap!.put("Subject", this.subject);
     

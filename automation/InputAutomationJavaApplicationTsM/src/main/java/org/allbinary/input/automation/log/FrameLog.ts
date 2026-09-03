@@ -32,8 +32,12 @@ import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
       //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
@@ -102,9 +106,9 @@ this.infoStringBuffer!.append(infoString);
 }
 
 
-    public addActions(vectorOfStrings: Vector<string>){
+    public addActions(vectorOfStrings: BasicArrayList){
 
-    var size: number = vectorOfStrings!.length!;;
+    var size: number = vectorOfStrings!.size()!;;
     
 
 

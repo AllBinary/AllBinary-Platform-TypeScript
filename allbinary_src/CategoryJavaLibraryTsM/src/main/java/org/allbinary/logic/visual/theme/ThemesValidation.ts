@@ -24,12 +24,20 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
       //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { Validation } from '../../../../../org/allbinary/logic/control/validate/Validation.js';
@@ -69,12 +77,12 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
 export class ThemesValidation extends Validation implements DomNodeInterface {
         
 
-    private themeVector: Vector;
+    private themeVector: BasicArrayList;
 
 public constructor (){
 
             super();
-        this.themeVector= new Vector();
+        this.themeVector= new BasicArrayListD();
     
 }
 
@@ -138,7 +146,7 @@ public constructor (hashMap: HashMap<any, any>){
     var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;;
     
 
-    var size: number = this.themeVector!.length!;;
+    var size: number = this.themeVector!.size()!;;
     
 
 

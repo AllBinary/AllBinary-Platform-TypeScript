@@ -28,12 +28,20 @@ import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
       //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
@@ -46,10 +54,6 @@ import { XmlRpcClient } from '../../../../../../../org/apache/xmlrpc/XmlRpcClien
       
 import { XmlRpcException } from '../../../../../../../org/apache/xmlrpc/XmlRpcException.js';
       //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
-
-      
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 //not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -131,7 +135,7 @@ stringBuffer!.append(server);
 this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, this.commonStrings!.GET);
     
 
-    var param: Vector = new Vector();;
+    var param: BasicArrayList = new BasicArrayListD();;
     
 
     var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;;

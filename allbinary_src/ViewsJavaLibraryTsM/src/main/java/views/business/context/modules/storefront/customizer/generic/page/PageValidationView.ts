@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { TransformInfoEntity } from '../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
@@ -38,6 +42,10 @@ import { TransformInfoEntityBuilder } from '../../../../../../../../org/allbinar
       
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
       //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -155,19 +163,19 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var pageObjectConfigInterface: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;;
     
 
-    var allViewsToBeModifiedVector: Vector = pageObjectConfigInterface!.getGroupTransforms()!;;
+    var allViewsToBeModifiedVector: BasicArrayList = pageObjectConfigInterface!.getGroupTransforms()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)");
+                                    this.logUtil!.putF("Views To Be Modified: " +allViewsToBeModifiedVector!.size(), this, "get(transformInfoInterface)");
     
 
                                     }
                                 
 
-    var size: number = allViewsToBeModifiedVector!.length!;;
+    var size: number = allViewsToBeModifiedVector!.size()!;;
     
 
 
@@ -225,7 +233,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;;
@@ -344,10 +352,10 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
     var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var allViewsToBeModifiedVector: Vector = objectConfig!.getGroupTransforms()!;;
+    var allViewsToBeModifiedVector: BasicArrayList = objectConfig!.getGroupTransforms()!;;
     
 
-    var size: number = allViewsToBeModifiedVector!.length!;;
+    var size: number = allViewsToBeModifiedVector!.size()!;;
     
 
 
@@ -366,7 +374,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;;

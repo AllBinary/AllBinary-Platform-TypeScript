@@ -28,8 +28,12 @@ import { Set } from '../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
@@ -66,6 +70,10 @@ import { DownloadableItem } from '../../../org/allbinary/business/user/commerce/
       
 import { DownloadableItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemView.js';
       //not GWT import const DownloadableItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItemView;
+
+      
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
@@ -145,6 +153,8 @@ export class InventoryItemView extends HttpStoreComponentView implements Request
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     readonly request: HttpServletRequest;
 
     private imageFileName: string;
@@ -153,7 +163,7 @@ export class InventoryItemView extends HttpStoreComponentView implements Request
 
     itemInterface: ItemInterface;
 
-    downloadableItemVector: Vector;
+    downloadableItemVector: BasicArrayList;
 
     private requestHashMap: HashMap<any, any>;
 
@@ -197,7 +207,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
@@ -257,13 +267,13 @@ this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
 
     public addDomNodeInterfaces(){
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 
     var downloadableItem: DownloadableItem;;
     
 
-    var size: number = this.downloadableItemVector!.length!;;
+    var size: number = this.downloadableItemVector!.size()!;;
     
 
 
@@ -353,7 +363,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     var fieldName: string = fieldNameArray[index]! as string;;
     
 
-                        if(fieldName!.compareTo(BasicItemData.IMAGE) == 0)
+                        if(fieldName!.compareTo(basicItemData!.IMAGE) == 0)
                         
                                     {
                                     
@@ -363,7 +373,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     var inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);;
     
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE) as FileItem;;
+    var fileItem: FileItem = this.getRequestHashMap()!.get(basicItemData!.IMAGE) as FileItem;;
     
 this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);
     

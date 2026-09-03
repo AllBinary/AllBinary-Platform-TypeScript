@@ -28,8 +28,12 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -50,6 +54,10 @@ import { OrderHistoryEntityFactory } from '../../../../../../../../../org/allbin
       
 import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
       //not GWT import const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
+
+      
+import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -107,7 +115,7 @@ this.totalMoney= new Money();
     var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 
-    var orderHistoryInterfaceVector: Vector = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;;
+    var orderHistoryInterfaceVector: BasicArrayList = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;;
     
 
     var numberOfOrders: number = 0;;
@@ -116,7 +124,7 @@ this.totalMoney= new Money();
     var orderHistoryInterface: OrderHistoryInterface;;
     
 
-    var size: number = orderHistoryInterfaceVector!.length!;;
+    var size: number = orderHistoryInterfaceVector!.size()!;;
     
 
 
@@ -196,7 +204,7 @@ this.numberOfOrdersLong= new Long(numberOfOrders);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;;
@@ -220,7 +228,7 @@ hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toSt
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
 
 

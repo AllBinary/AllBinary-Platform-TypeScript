@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
@@ -64,6 +68,10 @@ import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/global
       
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { CryptFileReader } from '../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
@@ -170,7 +178,7 @@ SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
 
     private document: Document;
 
-    private shippingVector: Vector;
+    private shippingVector: BasicArrayList;
 
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
@@ -199,7 +207,7 @@ stringBuffer!.append(ShippingMethodsFactory.SHIPPINGMETHODSFILEPATHSTRING);
     
 this.document= DomDocumentHelper.create(data);
     
-this.shippingVector= new Vector();
+this.shippingVector= new BasicArrayListD();
     
 
     var nodeList: NodeList = this.document.getElementsByTagName(ShippingMethodsData.NAME)!;;
@@ -245,7 +253,7 @@ this.shippingVector!.add(shippingMethodInterface);
 }
 
 
-                        if(this.shippingVector!.length < 1)
+                        if(this.shippingVector!.size() < 1)
                         
                                     {
                                     this.defaultShippingMethodInterface= new BasicWeightShippingModuleView();
@@ -262,7 +270,7 @@ this.shippingVector!.add(new NoShippingModuleView());
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(): Vector{
+    public getInstance(): BasicArrayList{
 
 
 

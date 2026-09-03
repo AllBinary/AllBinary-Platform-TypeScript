@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
-
-      
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
       //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
@@ -180,12 +176,12 @@ export class LoggingInitInfo
     var logConfigsNode: Node = logConfigsNodeList!.item(0)!;;
     
 
-    var logConfigNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigData.getInstance()!.NAME, logConfigsNode!.getChildNodes())!;;
+    var logConfigNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(LogConfigData.getInstance()!.NAME, logConfigsNode!.getChildNodes())!;;
     
 LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
     
 
-    var size: number = logConfigNodeVector!.length!;;
+    var size: number = logConfigNodeVector!.size()!;;
     
 
 
@@ -195,7 +191,7 @@ LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
     var i: number = 0;i < size; i++)
         {
 
-    var node: Node = logConfigNodeVector!.elementAt(i) as Node;;
+    var node: Node = logConfigNodeVector!.get(i) as Node;;
     
 
     var logConfigInfo: LogConfig = new LogConfig(node);;

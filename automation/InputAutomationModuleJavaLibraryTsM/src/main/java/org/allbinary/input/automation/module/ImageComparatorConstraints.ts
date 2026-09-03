@@ -24,16 +24,24 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+import { Color } from '../../../../../java/awt/Color.js';
+      //not GWT import const Color = globalThis.java.awt.Color;
+
+      
+import { Rectangle } from '../../../../../java/awt/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.java.awt.Rectangle;
 
       
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
       //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/collision/RectangleCollisionUtil.js';
@@ -70,13 +78,7 @@ import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinar
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.input.automation.module.Color;
-
-                import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.input.automation.module.Rectangle;
-
-                
+        
 export class ImageComparatorConstraints
             extends Object
          implements ImageComparatorConstraintsInterface {
@@ -84,7 +86,7 @@ export class ImageComparatorConstraints
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private avoidVector: Vector;
+    private avoidVector: BasicArrayList;
 
     private maxNonMatchingPixelDeltas: number= 0;
 
@@ -95,12 +97,12 @@ public constructor (doImageComparisonEveryNthFrame: number){
             super();
         this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame;
     
-this.setAvoidVector(new Vector());
+this.setAvoidVector(new BasicArrayListD());
     
 }
 
 
-    public getAvoidVector(): Vector{
+    public getAvoidVector(): BasicArrayList{
 
 
 
@@ -124,10 +126,10 @@ this.setAvoidVector(new Vector());
     var isCollsionWithAvoidRectangles: boolean = false;;
     
 
-    var avoidVector: Vector = this.getAvoidVector()!;;
+    var avoidVector: BasicArrayList = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.length!;;
+    var size: number = avoidVector!.size()!;;
     
 
 
@@ -164,10 +166,10 @@ this.setAvoidVector(new Vector());
     var isCollsionWithAvoidRectangles: boolean = false;;
     
 
-    var avoidVector: Vector = this.getAvoidVector()!;;
+    var avoidVector: BasicArrayList = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.length!;;
+    var size: number = avoidVector!.size()!;;
     
 
 
@@ -202,7 +204,7 @@ break;
 }
 
 
-    public setAvoidVector(avoidVector: Vector){
+    public setAvoidVector(avoidVector: BasicArrayList){
 this.avoidVector= avoidVector;
     
 }
@@ -269,10 +271,10 @@ this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageC
 
     public log(){
 
-    var avoidVector: Vector = this.getAvoidVector()!;;
+    var avoidVector: BasicArrayList = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.length!;;
+    var size: number = avoidVector!.size()!;;
     
 
 

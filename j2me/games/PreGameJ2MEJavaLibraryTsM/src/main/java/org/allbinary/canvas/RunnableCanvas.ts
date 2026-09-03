@@ -44,6 +44,10 @@ import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.j
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -121,6 +125,8 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
         
 
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;
+
+    readonly stdUtil: StdUtil = StdUtil.getInstance()!;
 
     private thread: Thread = NullThread.NULL_THREAD;
 

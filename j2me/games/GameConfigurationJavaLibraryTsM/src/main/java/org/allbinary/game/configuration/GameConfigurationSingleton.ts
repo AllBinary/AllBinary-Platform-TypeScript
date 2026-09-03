@@ -24,6 +24,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -80,7 +84,7 @@ private constructor (){
             super();
         this.list= new BasicArrayListD();
     
-this.hashtable= new Hashtable<any, any>();
+this.hashtable= StdUtil.getInstance()!.createHashtable();
     
 }
 

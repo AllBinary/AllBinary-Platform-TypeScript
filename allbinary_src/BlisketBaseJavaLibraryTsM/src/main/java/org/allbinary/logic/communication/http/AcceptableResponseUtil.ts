@@ -20,12 +20,20 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -77,9 +85,9 @@ TsUtil.getInstance()!.hashCode(AcceptableResponseFactory.getInstance()!.HTML);
                     return 0;
                 }
             
-    public readonly candidateVector: Vector = new Vector();
+    public readonly candidateVector: BasicArrayList = new BasicArrayListD();
 
-    public readonly tagNameVector: Vector = new Vector();
+    public readonly tagNameVector: BasicArrayList = new BasicArrayListD();
 
     public get(index: number): string{
 
@@ -106,7 +114,7 @@ TsUtil.getInstance()!.hashCode(AcceptableResponseFactory.getInstance()!.HTML);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.candidateVector!.length;;
+                        return this.candidateVector!.size();;
     
 }
 

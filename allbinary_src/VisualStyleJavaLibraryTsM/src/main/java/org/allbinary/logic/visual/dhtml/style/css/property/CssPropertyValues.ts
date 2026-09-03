@@ -28,8 +28,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomData } from '../../../../../../../../org/allbinary/data/tree/dom/DomData.js';
@@ -50,6 +54,10 @@ import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree
       
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
       //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -104,12 +112,12 @@ export class CssPropertyValues
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private propertyValueVector: Vector;
+    private propertyValueVector: BasicArrayList;
 
 public constructor (){
 
             super();
-        this.propertyValueVector= new Vector();
+        this.propertyValueVector= new BasicArrayListD();
     
 }
 
@@ -118,24 +126,24 @@ public constructor (node: Node){
 
             super();
         
-    var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var indexPropertyValueHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-this.propertyValueVector= new Vector();
+this.propertyValueVector= new BasicArrayListD();
     
 
-    var cssPropertyNodeVector: Vector = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;;
+    var cssPropertyNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    this.logUtil!.putF("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()");
+                                    this.logUtil!.putF("Number Of Properties: " +cssPropertyNodeVector!.size(), this, "CssProperties()");
     
 
                                     }
                                 
 
-    var size: number = cssPropertyNodeVector!.length!;;
+    var size: number = cssPropertyNodeVector!.size()!;;
     
 
 
@@ -203,13 +211,13 @@ this.propertyValueVector!.add(propertyValue);
     var cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.propertyValueVector!.length!;;
+    var size: number = this.propertyValueVector!.size()!;;
     
 
 

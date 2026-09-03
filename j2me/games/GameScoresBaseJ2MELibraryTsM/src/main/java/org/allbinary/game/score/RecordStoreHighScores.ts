@@ -80,6 +80,10 @@ import { NullRecordStore } from '../../../../org/allbinary/game/configuration/pe
       //not GWT import const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -147,7 +151,7 @@ import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/Plat
 export class RecordStoreHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static readonly hashTable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{

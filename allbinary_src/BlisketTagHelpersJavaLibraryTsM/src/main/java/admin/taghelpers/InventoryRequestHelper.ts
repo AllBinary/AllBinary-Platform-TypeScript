@@ -24,8 +24,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
@@ -98,6 +102,8 @@ export class InventoryRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private readonly itemInterface: ItemInterface;
 
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
@@ -123,7 +129,7 @@ this.itemInterface= itemView!.getItemInterface();
     var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
     
 
-    var values: Vector = dataMappingInterface!.toVector()!;;
+    var values: BasicArrayList = dataMappingInterface!.toVector()!;;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values);
     
@@ -181,14 +187,14 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 
     var id: string = dataMappingInterface!.getKey() as string;;
     
-InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id);
+InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(basicItemData!.ID, id);
     
 
     var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed the item with ");
     
-stringBuffer!.append(BasicItemData.ID);
+stringBuffer!.append(basicItemData!.ID);
     
 stringBuffer!.append("=");
     

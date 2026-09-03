@@ -30,6 +30,10 @@ import { OrderHistoryData } from '../../../../../../org/allbinary/business/user/
       //not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -54,7 +58,7 @@ export class UserEmailEventNameData
          {
         
 
-    private static userNameEvenNameHashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static userNameEvenNameHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
     private static nextId: number = 0;
 

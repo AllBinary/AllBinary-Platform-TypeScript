@@ -36,8 +36,12 @@ import { Set } from '../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
@@ -582,7 +586,7 @@ this.executeSQLStatement(sqlStatement);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -599,7 +603,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 
 
                         for (
-    var i: number = 0;i < values.length -1; i++)
+    var i: number = 0;i < values.size() -1; i++)
         {
 
     var value: string = this.getValue(values.get(i) as string)!;;
@@ -613,7 +617,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement() as string)!;;
+    var value: string = this.getValue(values.get(values.size() -1) as string)!;;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
@@ -733,7 +737,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap<any, any>();
+result= this.stdUtil!.createHashMap();
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;;
@@ -811,7 +815,7 @@ result.put(columnName, field);
 }
 
 
-    public getRows(keysAndValues: HashMap<any, any>): Vector{
+    public getRows(keysAndValues: HashMap<any, any>): BasicArrayList{
 
 
 
@@ -821,7 +825,7 @@ result.put(columnName, field);
 }
 
 
-    public getRows(keysAndValues: HashMap<any, any>, more: string): Vector{
+    public getRows(keysAndValues: HashMap<any, any>, more: string): BasicArrayList{
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -834,7 +838,7 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
         try {
             
-    var rows: Vector = new Vector();;
+    var rows: BasicArrayList = new BasicArrayListD();;
     
 
     var set: Set = keysAndValues!.keySet()!;;
@@ -902,7 +906,7 @@ stringBuffer!.append(more);
         while(rset.next())
         {
 
-    var result: HashMap<any, any> = new HashMap<any, any>();;
+    var result: HashMap<any, any> = this.stdUtil!.createHashMap()!;;
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;;
@@ -970,7 +974,7 @@ rows.add(result);
 }
 
 
-    public getAllRows(): Vector{
+    public getAllRows(): BasicArrayList{
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -990,7 +994,7 @@ stringBuffer!.append(this.getTableName());
                                     }
                                 
 
-    var rows: Vector = new Vector();;
+    var rows: BasicArrayList = new BasicArrayListD();;
     
 
     var sqlStatement: string = stringBuffer!.toString()!;;
@@ -1005,7 +1009,7 @@ stringBuffer!.append(this.getTableName());
         while(rset.next())
         {
 
-    var result: HashMap<any, any> = new HashMap<any, any>();;
+    var result: HashMap<any, any> = this.stdUtil!.createHashMap()!;;
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;;
@@ -1070,7 +1074,7 @@ rows.add(result);
 }
 
 
-    public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): Vector{
+    public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): BasicArrayList{
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -1081,7 +1085,7 @@ stringBuffer!.append(this.getTableName());
 
         try {
             
-    var rows: Vector = new Vector();;
+    var rows: BasicArrayList = new BasicArrayListD();;
     
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
@@ -1164,7 +1168,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     var result: HashMap<any, any>;;
     
 
-    var columnNames: Vector;;
+    var columnNames: BasicArrayList;;
     
 
     var columnCount: number= 0;;
@@ -1178,9 +1182,9 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap<any, any>();
+result= this.stdUtil!.createHashMap();
     
-columnNames= new Vector();
+columnNames= new BasicArrayListD();
     
 columnCount= resultSetMetaData!.getColumnCount();
     
@@ -1242,7 +1246,7 @@ rows.add(result);
 }
 
 
-    public getRowsWhereBetween(betweenColumn: string, smallest: string, largest: string): Vector{
+    public getRowsWhereBetween(betweenColumn: string, smallest: string, largest: string): BasicArrayList{
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -1253,7 +1257,7 @@ stringBuffer!.append(this.getTableName());
 
         try {
             
-    var rows: Vector = new Vector();;
+    var rows: BasicArrayList = new BasicArrayListD();;
     
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
@@ -1303,7 +1307,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     var result: HashMap<any, any>;;
     
 
-    var columnNames: Vector;;
+    var columnNames: BasicArrayList;;
     
 
     var columnCount: number= 0;;
@@ -1311,9 +1315,9 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap<any, any>();
+result= this.stdUtil!.createHashMap();
     
-columnNames= new Vector();
+columnNames= new BasicArrayListD();
     
 columnCount= resultSetMetaData!.getColumnCount();
     

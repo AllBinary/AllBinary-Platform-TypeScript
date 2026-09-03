@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { TransformInfoEntityBuilder } from '../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
@@ -182,10 +186,10 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as str
     var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
-    var componentVector: Vector = objectConfig!.getGroupTransforms()!;;
+    var componentVector: BasicArrayList = objectConfig!.getGroupTransforms()!;;
     
 
-    var size: number = componentVector!.length!;;
+    var size: number = componentVector!.size()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -196,7 +200,7 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as str
     
 stringBuffer!.append("Pointing ");
     
-stringBuffer!.appendint(componentVector!.length);
+stringBuffer!.appendint(componentVector!.size());
     
 stringBuffer!.append(" Components");
     

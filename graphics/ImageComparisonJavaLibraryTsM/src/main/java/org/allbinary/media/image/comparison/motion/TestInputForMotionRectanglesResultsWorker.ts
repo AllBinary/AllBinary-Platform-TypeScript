@@ -40,8 +40,12 @@ import { Hashtable } from '../../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
@@ -54,6 +58,10 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
       
 import { TempInputRobotNames } from '../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
       //not GWT import const TempInputRobotNames = globalThis.org.allbinary.input.automation.robot.TempInputRobotNames;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -120,17 +128,17 @@ export class TestInputForMotionRectanglesResultsWorker
 
     private running: boolean= false;
 
-    private motionRectanglesVector: Vector;
+    private motionRectanglesVector: BasicArrayList;
 
 public constructor (){
 
             super();
-        this.motionRectanglesVector= new Vector();
+        this.motionRectanglesVector= new BasicArrayListD();
     
 }
 
 
-    public getMotionRectanglesVector(): Vector{
+    public getMotionRectanglesVector(): BasicArrayList{
 
 
 
@@ -188,10 +196,10 @@ timeHelper!.setStartTimeTNT();
     var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;;
     
 
-    var motionRectangleVector: Vector = motionRectangles!.getVector()!;;
+    var motionRectangleVector: BasicArrayList = motionRectangles!.getVector()!;;
     
 
-                        if(motionRectangleVector!.length > 0)
+                        if(motionRectangleVector!.size() > 0)
                         
                                     {
                                     

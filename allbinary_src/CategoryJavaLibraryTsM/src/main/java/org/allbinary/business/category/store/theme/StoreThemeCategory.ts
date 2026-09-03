@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { Category } from '../../../../../../org/allbinary/business/category/Category.js';
@@ -42,6 +46,10 @@ import { CategoryPropertiesFactoryInterface } from '../../../../../../org/allbin
       
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
       //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { ThemeData } from '../../../../../../org/allbinary/logic/visual/theme/ThemeData.js';
@@ -95,7 +103,7 @@ export class StoreThemeCategory extends Category implements StoreThemeCategoryIn
 
     private transformInfoInterface: TransformInfoInterface;
 
-    private themeVector: Vector;
+    private themeVector: BasicArrayList;
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
             super(categoryPropertiesFactoryInterface, level);
@@ -105,7 +113,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= new Vector();
+this.themeVector= new BasicArrayListD();
     
 }
 
@@ -118,7 +126,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, rootCategory
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= new Vector();
+this.themeVector= new BasicArrayListD();
     
 }
 
@@ -131,7 +139,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node, 
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= new Vector();
+this.themeVector= new BasicArrayListD();
     
 this.addThemes(node);
     
@@ -146,7 +154,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node, 
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= new Vector();
+this.themeVector= new BasicArrayListD();
     
 this.addThemes(node);
     
@@ -202,7 +210,7 @@ this.themeVector!.add(themeValidation);
 }
 
 
-    public getThemes(): Vector{
+    public getThemes(): BasicArrayList{
 
 
 
@@ -256,9 +264,9 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
 
                 //@Throws(Exception.constructor)
             
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var categoryVector: Vector = super.toVector()!;;
+    var categoryVector: BasicArrayList = super.toVector()!;;
     
 
 

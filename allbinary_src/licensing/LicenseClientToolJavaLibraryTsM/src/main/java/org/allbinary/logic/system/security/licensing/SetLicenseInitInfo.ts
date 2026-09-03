@@ -172,7 +172,7 @@ this.vector.add(options[index]!);
                                     
 
 
-                            throw new Exception("null Vector Passed - Just Make Empty if you want");
+                            throw new Exception("null BasicArrayList Passed - Just Make Empty if you want");
                     
 
                                     }

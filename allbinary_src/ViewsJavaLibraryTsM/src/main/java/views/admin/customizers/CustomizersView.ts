@@ -24,8 +24,12 @@ import { Arrays } from '../../../java/util/Arrays.js';
       //not GWT import const Arrays = globalThis.java.util.Arrays;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
@@ -42,6 +46,10 @@ import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.
       
 import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
       //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
+      
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -122,7 +130,7 @@ export class CustomizersView extends HttpStoreComponentView implements DomNodeIn
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly customizersVector: Vector;
+    readonly customizersVector: BasicArrayList;
 
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
@@ -142,10 +150,10 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
     var node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;;
     
 
-    var unsortedCustomizerViewVector: Vector = new Vector();;
+    var unsortedCustomizerViewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.customizersVector!.length!;;
+    var size: number = this.customizersVector!.size()!;;
     
 
 

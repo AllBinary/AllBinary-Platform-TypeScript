@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -146,7 +150,7 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigComponentVector: Vector = transformInfoObjectConfigInterface!.getTransformsGroup(group)!;;
+    var transformInfoObjectConfigComponentVector: BasicArrayList = transformInfoObjectConfigInterface!.getTransformsGroup(group)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -157,7 +161,7 @@ private constructor (){
     
 stringBuffer!.append("Processing ");
     
-stringBuffer!.appendint(transformInfoObjectConfigComponentVector!.length);
+stringBuffer!.appendint(transformInfoObjectConfigComponentVector!.size());
     
 stringBuffer!.append(" Components Group: ");
     
@@ -169,7 +173,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
                                     }
                                 
 
-                        if(transformInfoObjectConfigComponentVector!.length < 1)
+                        if(transformInfoObjectConfigComponentVector!.size() < 1)
                         
                                     {
                                     
@@ -181,7 +185,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
                                     }
                                 
 
-    var size: number = transformInfoObjectConfigComponentVector!.length!;;
+    var size: number = transformInfoObjectConfigComponentVector!.size()!;;
     
 
 

@@ -56,8 +56,12 @@ import { Set } from '../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
@@ -66,6 +70,10 @@ import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/busin
       
 import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
       //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+
+      
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
@@ -139,6 +147,8 @@ export class InitSql
     readonly sqlTypeStrings: SqlTypeStrings = SqlTypeStrings.getInstance()!;
 
     readonly sqlStrings: SqlStrings = SqlStrings.getInstance()!;
+
+    readonly stdUtil: StdUtil = StdUtil.getInstance()!;
 
     readonly INSERT: string = "insert";
 
@@ -358,7 +368,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap<any, any>();
+result= stdUtil!.createHashMap();
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;;
@@ -547,7 +557,7 @@ this.executeSQLStatement(sqlStatement);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -560,7 +570,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 
         try {
             
-    var size: number = values.length!;;
+    var size: number = values.size()!;;
     
 
 
@@ -579,7 +589,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement() as string)!;;
+    var value: string = this.getValue(values.get(values.size() -1) as string)!;;
     
 stringBuffer!.append(value);
     

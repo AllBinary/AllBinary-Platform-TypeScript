@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
@@ -117,19 +121,19 @@ public constructor (categoryInterface: CategoryInterface){
     var node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;;
     
 
-    var childCategoryVector: Vector = this.categoryInterface!.getChildNodes()!;;
+    var childCategoryVector: BasicArrayList = this.categoryInterface!.getChildNodes()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    this.logUtil!.putF("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode");
+                                    this.logUtil!.putF("Number Of Children: " +childCategoryVector!.size(), this, "toXmlNode");
     
 
                                     }
                                 
 
-    var size: number = childCategoryVector!.length!;;
+    var size: number = childCategoryVector!.size()!;;
     
 
 

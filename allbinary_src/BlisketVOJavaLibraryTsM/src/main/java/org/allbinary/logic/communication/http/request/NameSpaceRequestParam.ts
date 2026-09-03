@@ -28,8 +28,16 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -85,7 +93,7 @@ export class NameSpaceRequestParam
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private nameSpaceVector: Vector;
+    private nameSpaceVector: BasicArrayList;
 
     private nameSpacePropertiesHashMap: HashMap<any, any>;
 
@@ -94,9 +102,9 @@ export class NameSpaceRequestParam
 public constructor (nameSpace: string, value: string){
 
             super();
-        this.nameSpaceVector= new Vector();
+        this.nameSpaceVector= new BasicArrayListD();
     
-this.nameSpacePropertiesHashMap= new HashMap<any, any>();
+this.nameSpacePropertiesHashMap= StdUtil.getInstance()!.createHashMap();
     
 this.value= value;
     
@@ -225,7 +233,7 @@ packageIndex++;
 }
 
 
-    public getPackages(): Vector{
+    public getPackages(): BasicArrayList{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
@@ -254,7 +262,7 @@ packageIndex++;
                                 )
                         
                                     {
-                                    packagePropertiesHashMap= new HashMap<any, any>();
+                                    packagePropertiesHashMap= StdUtil.getInstance()!.createHashMap();
     
 
                                     }
@@ -303,7 +311,7 @@ packageIndex++;
     var propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var packagePropertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var propertyVector: BasicArrayList = propertiesTokenizer!.getTokensFromString(properties, new BasicArrayListD())!;;

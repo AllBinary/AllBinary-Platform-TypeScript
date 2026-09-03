@@ -32,6 +32,10 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
       //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -71,7 +75,7 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         
 
-    private static readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public static getHashtable(): Hashtable<any, any>{
 

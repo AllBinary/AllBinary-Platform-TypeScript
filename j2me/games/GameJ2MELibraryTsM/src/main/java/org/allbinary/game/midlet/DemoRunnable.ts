@@ -91,9 +91,6 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                 import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
 //not GWT import const DemoGameMidletStateFactory = globalThis.org.allbinary.game.midlet.DemoGameMidletStateFactory;
 
-                import { DemoGameMidletJs } from './DemoGameMidletJs.js';
-//not GWT import const DemoGameMidletJs = globalThis.org.allbinary.game.midlet.DemoGameMidletJs;
-
                 import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
 //not GWT import const DemoGameMidletEventHandler = globalThis.org.allbinary.game.midlet.DemoGameMidletEventHandler;
 
@@ -128,7 +125,7 @@ this.startDemoGameMidletEvent= new DemoGameMidletEvent(this.demoGameMidlet, Demo
     
 this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance());
     
-this.demoGameMidlet!.setGameCanvasRunnableInterface((demoGameMidlet as DemoGameMidletJs).createDemoGameCanvasRunnableInterface());
+this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createDemoGameCanvasRunnableInterface());
     
 this.demoGameMidlet!.demoSetup();
     

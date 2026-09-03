@@ -28,6 +28,10 @@ import { Set } from '../../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -111,9 +115,9 @@ export class UploadMediaSingleton
 private constructor (){
 
             super();
-        this.readerFileTypesHashMap= new HashMap<any, any>();
+        this.readerFileTypesHashMap= StdUtil.getInstance()!.createHashMap();
     
-this.writerFileTypesHashMap= new HashMap<any, any>();
+this.writerFileTypesHashMap= StdUtil.getInstance()!.createHashMap();
     
 
     var hashMap: HashMap<any, any> = MediaData.toHashMap()!;;

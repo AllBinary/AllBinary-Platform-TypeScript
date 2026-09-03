@@ -30,8 +30,12 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
@@ -101,7 +105,7 @@ public constructor (clientInfo: AbeClientInformationInterface){
 
         try {
             
-    var param: Vector = new Vector();;
+    var param: BasicArrayList = new BasicArrayListD();;
     
 
     var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;;

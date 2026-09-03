@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
       //not GWT import const BaseResourceAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
 
@@ -46,6 +42,10 @@ import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
       
 import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
       //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -81,7 +81,7 @@ export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extend
 
 
 public constructor (name: string){
-            super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
+            super(name, StdUtil.getInstance()!.createHashtable(), StdUtil.getInstance()!.createHashtable(), StdUtil.getInstance()!.createHashtable());
                     
 
                             //For kotlin this is before the body of the constructor.

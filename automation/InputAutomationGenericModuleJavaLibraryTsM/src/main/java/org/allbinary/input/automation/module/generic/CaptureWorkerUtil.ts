@@ -24,8 +24,12 @@
         
             import { Long } from '../../../../../../java/lang/Long.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ProfileActionScriptConditionInterface } from '../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
@@ -66,7 +70,7 @@ export class CaptureWorkerUtil
 
                 //@Throws(Exception.constructor)
             
-    public static processProfileActionConditions(vector: Vector, frame: Long){
+    public static processProfileActionConditions(vector: BasicArrayList, frame: Long){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
@@ -76,7 +80,7 @@ export class CaptureWorkerUtil
 logUtil!.putF(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions");
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

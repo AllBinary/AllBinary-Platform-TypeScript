@@ -24,8 +24,16 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
       //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -86,7 +94,7 @@ export class ImageComparisonSearch
 
     private tolerance: number= 0;
 
-    private nonMatchingPixelVector: Vector;
+    private nonMatchingPixelVector: BasicArrayList;
 
     private bufferedImages: BufferedImage[];
 
@@ -95,7 +103,7 @@ export class ImageComparisonSearch
 public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage, tolerance: number){
 
             super();
-        this.nonMatchingPixelVector= new Vector();
+        this.nonMatchingPixelVector= new BasicArrayListD();
     
 this.setBufferedImages(new Array(2));
     
@@ -199,7 +207,7 @@ this.nonMatchingPixelVector!.add(pixel);
 }
 
 
-    public getNonMatchingPixelVector(): Vector{
+    public getNonMatchingPixelVector(): BasicArrayList{
 
 
 

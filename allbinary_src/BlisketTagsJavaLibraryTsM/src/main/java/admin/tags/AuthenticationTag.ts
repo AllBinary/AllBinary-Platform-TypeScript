@@ -32,8 +32,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
@@ -54,6 +58,10 @@ import { AuthenticationHelperFactory } from '../../admin/taghelpers/Authenticati
       
 import { AuthenticationRequestHelperFactory } from '../../admin/taghelpers/AuthenticationRequestHelperFactory.js';
       //not GWT import const AuthenticationRequestHelperFactory = globalThis.admin.taghelpers.AuthenticationRequestHelperFactory;
+
+      
+import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
@@ -116,7 +124,7 @@ export class AuthenticationTag extends CustomTagSupport {
 
     private newPassword: string;
 
-    private roles: Vector;
+    private roles: BasicArrayList;
 
     private propertiesHashMap: HashMap<any, any>;
 
@@ -157,7 +165,7 @@ this.newPassword= value;
 }
 
 
-    public setRoles(values: Vector){
+    public setRoles(values: BasicArrayList){
 this.roles= values;
     
 }
@@ -822,7 +830,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= StdUtil.getInstance()!.createHashMap();
     
 
                         if(this.command.compareTo(org.allbinary.globals.GLOBALS2.NEWPASSWORD) == 0)

@@ -30,8 +30,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
@@ -56,6 +60,10 @@ import { BasicOptionItemData } from '../../org/allbinary/business/user/commerce/
       
 import { BasicOptionItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntityFactory.js';
       //not GWT import const BasicOptionItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.BasicOptionItemsEntityFactory;
+
+      
+import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -97,6 +105,8 @@ export class BasicOptionItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private request: HttpServletRequest;
 
     private id: string;
@@ -107,9 +117,9 @@ export class BasicOptionItemsRequestHelper extends ModifyTable {
 
     private defaultOptionValue: string;
 
-    private optionItem: Vector;
+    private optionItem: BasicArrayList;
 
-    private optionValue: Vector;
+    private optionValue: BasicArrayList;
 
     private timeEntered: string;
 
@@ -126,11 +136,11 @@ this.getFormData();
 
 
     public getFormData(){
-this.optionItem= new Vector();
+this.optionItem= new BasicArrayListD();
     
-this.optionValue= new Vector();
+this.optionValue= new BasicArrayListD();
     
-this.id= this.request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(basicItemData!.ID);
     
 this.optionOneTitle= this.request.getParameter(BasicOptionItemData.OPTION_ONE_TITLE);
     
@@ -183,9 +193,9 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();;
+    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(BasicItemData.ID, id);
+values.put(basicItemData!.ID, id);
     
 values.put(BasicOptionItemData.OPTION_ONE_ONE_ITEM, this.optionItem!.get(0));
     
@@ -250,12 +260,12 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.id);
     
 
-    var size: number = this.optionValue!.length!;;
+    var size: number = this.optionValue!.size()!;;
     
 
 

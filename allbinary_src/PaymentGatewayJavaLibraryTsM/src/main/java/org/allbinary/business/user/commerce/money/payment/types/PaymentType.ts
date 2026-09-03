@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PaymentGatewayData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
@@ -40,6 +44,10 @@ import { PaymentProcessorInterfaceFactoryInterface } from '../../../../../../../
       
 import { PaymentTransactionInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceFactoryInterface.js';
       //not GWT import const PaymentTransactionInterfaceFactoryInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterfaceFactoryInterface;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -162,11 +170,11 @@ PaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
-vector.addAll(this.getBasicPaymentType()!.toVector());
+vector.addAllList(this.getBasicPaymentType()!.toVector());
     
 
                         if(this.paymentTransactionInterfaceFactoryInterface != 
@@ -201,7 +209,7 @@ vector.addAll(this.getBasicPaymentType()!.toVector());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());
     

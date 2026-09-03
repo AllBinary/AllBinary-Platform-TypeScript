@@ -30,8 +30,12 @@ import { Set } from '../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
@@ -89,9 +93,9 @@ export class ItemView
 
     private readonly itemInterface: OrderItemInterface;
 
-    private readonly vector: Vector;
+    private readonly vector: BasicArrayList;
 
-public constructor (itemInterface: OrderItemInterface, vector: Vector){
+public constructor (itemInterface: OrderItemInterface, vector: BasicArrayList){
 
             super();
         this.itemInterface= itemInterface;

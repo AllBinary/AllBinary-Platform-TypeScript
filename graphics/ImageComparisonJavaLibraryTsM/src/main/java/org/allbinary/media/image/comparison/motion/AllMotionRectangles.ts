@@ -24,8 +24,12 @@ import { awt } from '../../../../../../java/awt.js';
       //not GWT import const awt = globalThis.java.awt;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
@@ -84,10 +88,10 @@ this.createMotionRectangles(imageComparisonResult);
             
     createMotionRectangles(imageComparisonInfo: ImageComparisonResult){
 
-    var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;;
+    var vector: BasicArrayList = imageComparisonInfo!.getNonMatchingPixelVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 
@@ -110,10 +114,10 @@ this.addPixelDeltaToAMotionRectangle(pixelDelta);
             
     addPixelDeltaToExistingMotionRectangle(pixelDelta: PixelDelta): boolean{
 
-    var vector: Vector = this.getVector()!;;
+    var vector: BasicArrayList = this.getVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

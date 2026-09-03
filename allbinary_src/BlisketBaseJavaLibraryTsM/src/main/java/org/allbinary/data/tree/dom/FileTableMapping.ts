@@ -26,12 +26,20 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
       //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
@@ -98,9 +106,9 @@ public constructor (file: AbFile){
 
                 //@Throws(Exception.constructor)
             
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var filePropertyVector: Vector = new Vector();;
+    var filePropertyVector: BasicArrayList = new BasicArrayListD();;
     
 filePropertyVector!.add(this.file.getAbsolutePath());
     
@@ -125,7 +133,7 @@ filePropertyVector!.add(this.file.getPath());
             
     public toHashMap(): HashMap<any, any>{
 
-    var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var filePropertyHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var pathData: AbPathData = AbPathData.getInstance()!;;

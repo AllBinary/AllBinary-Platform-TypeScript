@@ -30,8 +30,12 @@ import { Set } from '../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
@@ -80,11 +84,11 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ItemInterface } from './ItemInterface.js';
-//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
-
-                import { BasicItemData } from './BasicItemData.js';
+        import { BasicItemData } from './BasicItemData.js';
 //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
+                import { ItemInterface } from './ItemInterface.js';
+//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
                 
 export class BasicItemView
@@ -96,11 +100,13 @@ export class BasicItemView
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private readonly itemInterface: ItemInterface;
 
-    private readonly vector: Vector;
+    private readonly vector: BasicArrayList;
 
-public constructor (itemInterface: ItemInterface, vector: Vector){
+public constructor (itemInterface: ItemInterface, vector: BasicArrayList){
 
             super();
         this.itemInterface= itemInterface;
@@ -128,7 +134,7 @@ this.vector= vector;
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
-hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
+hashMap!.put(this.basicItemData!.IMAGE, EMPTY_STRING);
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;;
@@ -137,7 +143,7 @@ hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
     var keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(BasicItemData.ITEM)!;;
+    var node: Node = document.createElement(this.basicItemData!.ITEM)!;;
     
 
     var nameArray: any[] = keySet!.()!;;
@@ -166,12 +172,12 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-    var totalNode: Node = ModDomHelper.createNameValueNodes(document, BasicItemData.TOTAL, this.itemInterface!.getTotal()!.toString())!;;
+    var totalNode: Node = ModDomHelper.createNameValueNodes(document, this.basicItemData!.TOTAL, this.itemInterface!.getTotal()!.toString())!;;
     
 node.appendChild(totalNode);
     
 
-    var size: number = this.vector.length!;;
+    var size: number = this.vector.size()!;;
     
 
 

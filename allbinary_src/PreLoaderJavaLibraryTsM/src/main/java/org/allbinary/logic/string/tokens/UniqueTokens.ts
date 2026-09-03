@@ -30,8 +30,16 @@ import { HashSet } from '../../../../../java/util/HashSet.js';
       //not GWT import const HashSet = globalThis.java.util.HashSet;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
@@ -85,7 +93,7 @@ export class UniqueTokens
          {
         
 
-    private readonly specialCharacters: Vector = new Vector();
+    private readonly specialCharacters: BasicArrayList = new BasicArrayListD();
 
 public constructor (){
 
@@ -143,7 +151,7 @@ this.specialCharacters!.add("`");
 
                 //@Throws(Exception.constructor)
             
-    public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: Vector): HashSet{
+    public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: BasicArrayList): HashSet{
 
         try {
             
@@ -156,10 +164,10 @@ this.specialCharacters!.add("`");
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-        while(index < stringVector!.length)
+        while(index < stringVector!.size())
         {
 
-    var keywords: string = stringVector!.elementAt(index) as string;;
+    var keywords: string = stringVector!.get(index) as string;;
     
 
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.COMMA);;
@@ -276,10 +284,10 @@ index++;
 
 
                         for (
-    var index: number = 0;index < this.specialCharacters!.length; index++)
+    var index: number = 0;index < this.specialCharacters!.size(); index++)
         {
 
-                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index) as string) == 0)
+                        if(subCleaningString!.compareTo(this.specialCharacters!.get(index) as string) == 0)
                         
 
 

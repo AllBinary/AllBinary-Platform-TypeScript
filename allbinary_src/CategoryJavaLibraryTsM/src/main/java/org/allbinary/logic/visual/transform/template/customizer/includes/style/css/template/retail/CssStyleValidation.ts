@@ -24,12 +24,20 @@ import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.j
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
       //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
+      
+import { StdUtil } from '../../../../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -92,12 +100,12 @@ export class CssStyleValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    cssStyleElementVector: Vector;
+    cssStyleElementVector: BasicArrayList;
 
 public constructor (){
 
             super();
-        this.cssStyleElementVector= new Vector();
+        this.cssStyleElementVector= new BasicArrayListD();
     
 }
 
@@ -134,7 +142,7 @@ public constructor (hashMap: HashMap<any, any>){
                                     }
                                 
 
-    var size: number = this.cssStyleElementVector!.length!;;
+    var size: number = this.cssStyleElementVector!.size()!;;
     
 
 
@@ -264,7 +272,7 @@ public constructor (hashMap: HashMap<any, any>){
 node.appendChild(styleNode);
     
 
-    var size: number = this.cssStyleElementVector!.length!;;
+    var size: number = this.cssStyleElementVector!.size()!;;
     
 
 

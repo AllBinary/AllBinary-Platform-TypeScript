@@ -26,8 +26,16 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { ValidationInterface } from '../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
@@ -67,12 +75,12 @@ export class CssElementsValidationFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(cssElementStyleNodeList: Vector): Vector{
+    public static getInstance(cssElementStyleNodeList: BasicArrayList): BasicArrayList{
 
-    var styles: Vector = new Vector();;
+    var styles: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = cssElementStyleNodeList!.length!;;
+    var size: number = cssElementStyleNodeList!.size()!;;
     
 
     var cssElementStyleNode: Node;;
@@ -104,9 +112,9 @@ styles.add(cssValidationInterface);
 }
 
 
-    public static getInstance(hashMap: HashMap<any, any>): Vector{
+    public static getInstance(hashMap: HashMap<any, any>): BasicArrayList{
 
-    var styles: Vector = new Vector();;
+    var styles: BasicArrayList = new BasicArrayListD();;
     
 
 

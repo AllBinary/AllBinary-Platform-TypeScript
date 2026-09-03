@@ -24,8 +24,12 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { EntryData } from '../../../../org/allbinary/business/entry/EntryData.js';
@@ -100,9 +104,9 @@ export class PaymentGatewaysView extends HttpStoreComponentView implements DomNo
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private paymentGatewayVector: Vector;
+    private paymentGatewayVector: BasicArrayList;
 
-public constructor (transformInfoInterface: TransformInfoInterface, gatewayVector: Vector){
+public constructor (transformInfoInterface: TransformInfoInterface, gatewayVector: BasicArrayList){
             super(transformInfoInterface);
                     
 
@@ -125,7 +129,7 @@ this.paymentGatewayVector= gatewayVector;
     var paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;;
     
 
-    var size: number = this.paymentGatewayVector!.length!;;
+    var size: number = this.paymentGatewayVector!.size()!;;
     
 
 

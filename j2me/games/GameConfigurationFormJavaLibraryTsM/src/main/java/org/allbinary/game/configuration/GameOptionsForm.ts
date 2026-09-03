@@ -122,6 +122,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -382,7 +386,7 @@ item= this.get(index);
 GameConfigurationUtil.getInstance()!.updateCompetitionValue();
     
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;;

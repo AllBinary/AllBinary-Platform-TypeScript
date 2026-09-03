@@ -32,8 +32,12 @@ import { Set } from '../../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -54,6 +58,10 @@ import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/ta
       
 import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js';
       //not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -93,18 +101,18 @@ export class StoreFrontUsersStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        this.totalUsersByRoleHashMap= new HashMap<any, any>();
+        this.totalUsersByRoleHashMap= StdUtil.getInstance()!.createHashMap();
     
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userVector: Vector = userEntityInterface!.getCustomers()!;;
+    var userVector: BasicArrayList = userEntityInterface!.getCustomers()!;;
     
-this.totalNumberOfUsers= new Long(userVector!.length);
+this.totalNumberOfUsers= new Long(userVector!.size());
     
 
-    var size: number = userVector!.length!;;
+    var size: number = userVector!.size()!;;
     
 
 
@@ -178,7 +186,7 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(StoreFrontUsersStatisticsData.getInstance()!.NUMBEROFUSERS, this.getNumberOfUsers()!.toString());
     
@@ -220,7 +228,7 @@ hashMap!.put(nextUserRole!.toString(), totalForRole!.toString());
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
 
 

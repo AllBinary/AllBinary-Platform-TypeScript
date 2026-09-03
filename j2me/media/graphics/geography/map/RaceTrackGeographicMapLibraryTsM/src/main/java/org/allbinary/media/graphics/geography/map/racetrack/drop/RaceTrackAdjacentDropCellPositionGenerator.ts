@@ -48,10 +48,6 @@ import { BasicGroupFactory } from '../../../../../../../../org/allbinary/game/id
       //not GWT import const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
 
       
-import { Group } from '../../../../../../../../org/allbinary/game/identification/Group.js';
-      //not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
-
-      
 import { AllBinaryGameLayerManager } from '../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
       //not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
 
@@ -70,6 +66,10 @@ import { AllBinaryLayer } from '../../../../../../../../org/allbinary/layer/AllB
       
 import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
       //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
@@ -232,7 +232,7 @@ break;
 }
 
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
                 //@Throws(Exception.constructor)
             

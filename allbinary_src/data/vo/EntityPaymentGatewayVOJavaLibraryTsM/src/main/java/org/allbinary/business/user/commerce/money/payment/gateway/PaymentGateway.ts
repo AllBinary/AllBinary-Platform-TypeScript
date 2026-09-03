@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
@@ -44,6 +48,10 @@ import { UserData } from '../../../../../../../../org/allbinary/business/user/Us
       
 import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
       //not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
@@ -931,7 +939,7 @@ this.timeEntered= value;
             
     public toHashMap(isEncrypted: boolean): HashMap<any, any>{
 
-    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var paymentGatewayHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 paymentGatewayHashMap!.put(EntryData.getInstance()!.ENABLE, this.enable);
     
@@ -1056,7 +1064,7 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
 
 
@@ -1066,9 +1074,9 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
 }
 
 
-    public toVector(isEncrypted: boolean): Vector{
+    public toVector(isEncrypted: boolean): BasicArrayList{
 
-    var updateVector: Vector = new Vector();;
+    var updateVector: BasicArrayList = new BasicArrayListD();;
     
 updateVector!.add(this.enable);
     

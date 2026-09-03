@@ -20,8 +20,12 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-import { Vector } from '../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeHelper } from '../org/allbinary/data/tree/dom/DomNodeHelper.js';
@@ -34,6 +38,10 @@ import { DomNodeInterface } from '../org/allbinary/data/tree/dom/DomNodeInterfac
       
 import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
       //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
+      
+import { StdUtil } from '../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
@@ -106,7 +114,7 @@ export class HttpComponentView extends TransformInfoHttpComposite implements Tra
 
     readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private domNodeInterfaceVector: Vector;
+    private domNodeInterfaceVector: BasicArrayList;
 
     private transformDocumentInterface: TransformDocumentInterface;
 
@@ -125,7 +133,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                                     }
                                 
-this.domNodeInterfaceVector= new Vector();
+this.domNodeInterfaceVector= new BasicArrayListD();
     
 this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()));
     
@@ -172,7 +180,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 
         try {
             
-    var size: number = this.domNodeInterfaceVector!.length!;;
+    var size: number = this.domNodeInterfaceVector!.size()!;;
     
 
 

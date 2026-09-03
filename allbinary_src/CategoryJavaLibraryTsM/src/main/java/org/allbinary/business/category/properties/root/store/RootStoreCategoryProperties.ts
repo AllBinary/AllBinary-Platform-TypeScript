@@ -26,8 +26,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
@@ -66,6 +70,10 @@ import { URLGLOBALS } from '../../../../../../../org/allbinary/globals/URLGLOBAL
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -76,10 +84,6 @@ import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.
       
 //not plain js import { AbPathData } from '../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
-import { PathUtil } from '../../../../../../../org/allbinary/logic/io/path/PathUtil.js';
-      //not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
 
       
 //not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -389,7 +393,7 @@ this.category= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
     
@@ -402,9 +406,9 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var categoryVector: Vector = new Vector();;
+    var categoryVector: BasicArrayList = new BasicArrayListD();;
     
 categoryVector!.add(this.getValue());
     

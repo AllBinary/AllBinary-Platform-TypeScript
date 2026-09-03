@@ -28,8 +28,12 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
       //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
@@ -127,10 +131,10 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(ChangedPixelsUtil.STA
 }
 
 
-    var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;;
+    var vector: BasicArrayList = imageComparisonInfo!.getNonMatchingPixelVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

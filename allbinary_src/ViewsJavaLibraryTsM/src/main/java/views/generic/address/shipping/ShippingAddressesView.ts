@@ -22,8 +22,12 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
@@ -100,7 +104,7 @@ export class ShippingAddressesView extends HttpStoreComponentView implements Dom
 
     private request: HttpServletRequest;
 
-    streetAddressList: Vector;
+    streetAddressList: BasicArrayList;
 
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
@@ -135,7 +139,7 @@ this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as Http
     var billingAddressesNode: Node = document.createElement(ShippingAddressData.MULTIPLE)!;;
     
 
-    var size: number = this.streetAddressList!.length!;;
+    var size: number = this.streetAddressList!.size()!;;
     
 
 
@@ -151,7 +155,7 @@ billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
     
 }
 
-billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(streetAddressList!.length).toString()));
+billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(streetAddressList!.size()).toString()));
     
 
 

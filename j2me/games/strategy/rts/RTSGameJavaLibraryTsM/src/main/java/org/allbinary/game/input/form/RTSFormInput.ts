@@ -82,6 +82,10 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
       //not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -126,7 +130,7 @@ export class RTSFormInput
 
     private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     readonly newUnconstructedRTSLayerInterfaceArray: CollidableDestroyableDamageableLayer[] = new Array(7);
 

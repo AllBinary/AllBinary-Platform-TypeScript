@@ -22,8 +22,16 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { EmailEvent } from '../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
@@ -66,7 +74,7 @@ export class UserEmailEventHandler
          {
         
 
-    private emailVector: Vector;
+    private emailVector: BasicArrayList;
 
     private emailInfo: EmailInfo;
 
@@ -75,7 +83,7 @@ export class UserEmailEventHandler
 public constructor (){
 
             super();
-        this.emailVector= new Vector();
+        this.emailVector= new BasicArrayListD();
     
 }
 
@@ -94,9 +102,9 @@ this.fireEmailEvent();
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public addListener(vector: Vector){
+    public addListener(vector: BasicArrayList){
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 
@@ -137,7 +145,7 @@ this.emailVector!.remove(emailEventListenerInterface);
     var emailEvent: EmailEvent = new EmailEvent(this, this.userEmailEventNameData, this.emailInfo, 0);;
     
 
-    var size: number = this.emailVector!.length!;;
+    var size: number = this.emailVector!.size()!;;
     
 
 

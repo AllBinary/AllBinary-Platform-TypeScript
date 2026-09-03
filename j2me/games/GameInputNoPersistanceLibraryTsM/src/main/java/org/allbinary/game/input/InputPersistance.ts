@@ -84,6 +84,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -150,7 +154,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-hashtable= new Hashtable<any, any>();
+hashtable= StdUtil.getInstance()!.createHashtable();
     
 this.valueList!.add(hashtable);
     

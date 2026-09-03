@@ -26,12 +26,20 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
       //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -102,7 +110,7 @@ export class UserEmailEventHandlerSingletons
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
+    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
 private constructor (){
 
@@ -153,7 +161,7 @@ private constructor (){
     var newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();;
     
 
-    var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
+    var vector: BasicArrayList = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 newUserEmailEventHandler!.addListener(vector);
     

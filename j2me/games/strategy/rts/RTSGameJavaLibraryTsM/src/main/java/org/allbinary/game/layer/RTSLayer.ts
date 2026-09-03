@@ -170,6 +170,10 @@ import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/Rem
       //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
@@ -366,7 +370,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     private readonly rootName: string;
 
-    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private readonly BUILD_VALUE: number = 63;
 

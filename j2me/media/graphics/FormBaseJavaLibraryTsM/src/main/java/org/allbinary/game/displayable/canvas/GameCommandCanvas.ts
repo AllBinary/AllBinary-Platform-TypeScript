@@ -26,8 +26,12 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
@@ -447,7 +451,7 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public createForm(): ScrollSelectionForm{
 
-    var items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;;
+    var items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).getInstance(this.getCommandStack(), this.backgroundBasicColor, this.foregroundBasicColor)!;;
     
 
     var rectangle: Rectangle = this.createRectangle(items.length)!;;

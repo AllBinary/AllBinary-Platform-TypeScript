@@ -28,8 +28,12 @@ import { Set } from '../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
@@ -183,7 +187,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
                         
                                     {
                                     
-    var basicItemView: BasicItemView = new BasicItemView(itemInterface, new Vector());;
+    var basicItemView: BasicItemView = new BasicItemView(itemInterface, new BasicArrayListD());;
     
 
     var node: Node = basicItemView!.toXmlNode(document)!;;

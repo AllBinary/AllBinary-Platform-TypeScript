@@ -30,8 +30,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
@@ -56,6 +60,10 @@ import { BasicGroupItemData } from '../../org/allbinary/business/user/commerce/i
       
 import { BasicGroupItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/groups/BasicGroupItemsEntityFactory.js';
       //not GWT import const BasicGroupItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntityFactory;
+
+      
+import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -97,6 +105,8 @@ export class BasicGroupItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private request: HttpServletRequest;
 
     private id: string;
@@ -136,7 +146,7 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= this.request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(basicItemData!.ID);
     
 this.itemOne= this.request.getParameter(BasicGroupItemData.ITEM_ONE);
     
@@ -167,9 +177,9 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();;
+    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(BasicItemData.ID, id);
+values.put(basicItemData!.ID, id);
     
 values.put(BasicGroupItemData.ITEM_ONE, this.itemOne);
     
@@ -218,7 +228,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.id);
     

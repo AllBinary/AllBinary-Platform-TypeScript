@@ -28,8 +28,12 @@ import { IOException } from '../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { IdGeneratorEntity } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js';
@@ -38,6 +42,10 @@ import { IdGeneratorEntity } from '../../../../org/allbinary/data/tables/generat
       
 import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntityFactory.js';
       //not GWT import const IdGeneratorEntityFactory = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityFactory;
+
+      
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
@@ -95,7 +103,7 @@ public constructor (){
 
         try {
             
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(this.name);
     

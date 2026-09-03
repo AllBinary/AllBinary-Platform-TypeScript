@@ -22,8 +22,16 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -79,7 +87,7 @@ private constructor (){
         }
 
 
-    private paymentTypeVector: Vector = new Vector();
+    private paymentTypeVector: BasicArrayList = new BasicArrayListD();
 
     public add(paymentType: BasicPaymentType){
 this.paymentTypeVector!.add(paymentType);
@@ -91,7 +99,7 @@ this.paymentTypeVector!.add(paymentType);
             
     public get(paymentTypeString: string): BasicPaymentType{
 
-    var size: number = this.paymentTypeVector!.length!;;
+    var size: number = this.paymentTypeVector!.size()!;;
     
 
 
@@ -136,12 +144,12 @@ this.paymentTypeVector!.add(paymentType);
 }
 
 
-    public difference(a_PaymentTypeVector: Vector): Vector{
+    public difference(a_PaymentTypeVector: BasicArrayList): BasicArrayList{
 
-    var diff: Vector = new Vector();;
+    var diff: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.paymentTypeVector!.length!;;
+    var size: number = this.paymentTypeVector!.size()!;;
     
 
 

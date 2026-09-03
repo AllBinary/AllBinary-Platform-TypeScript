@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFront } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFront.js';
@@ -42,6 +46,10 @@ import { EntryData } from '../../../../../../../org/allbinary/business/entry/Ent
       
 import { UserDbInitInfo } from '../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
       //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -96,7 +104,7 @@ this.setTableName(this.tableName);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -164,7 +172,7 @@ this.setTableName(this.tableName);
             
     public getStoreFrontInterface(name: string): StoreFront{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
     
@@ -199,9 +207,9 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 }
 
 
-    public getStoreFrontNames(): Vector{
+    public getStoreFrontNames(): BasicArrayList{
 
-    var storeFrontNames: Vector = super.getColumn(StoreFrontData.getInstance()!.NAME)!;;
+    var storeFrontNames: BasicArrayList = super.getColumn(StoreFrontData.getInstance()!.NAME)!;;
     
 
 

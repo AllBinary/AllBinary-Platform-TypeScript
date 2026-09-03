@@ -26,8 +26,12 @@ import { ResultSet } from '../../../../../java/sql/ResultSet.js';
       //not GWT import const ResultSet = globalThis.java.sql.ResultSet;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
@@ -190,9 +194,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_LARGETS_INTEG
 }
 
 
-    public getColumn(columnName: string): Vector{
+    public getColumn(columnName: string): BasicArrayList{
 
-    var column: Vector = new Vector();;
+    var column: BasicArrayList = new BasicArrayListD();;
     
 
     var stringBuffer: StringMaker = new StringMaker();;
@@ -272,7 +276,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN);
 }
 
 
-    public getColumnWhere(columnName: string, key: string, value: string): Vector{
+    public getColumnWhere(columnName: string, key: string, value: string): BasicArrayList{
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -298,7 +302,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     var sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var column: Vector = new Vector();;
+    var column: BasicArrayList = new BasicArrayListD();;
     
 
     var rset: ResultSet;;

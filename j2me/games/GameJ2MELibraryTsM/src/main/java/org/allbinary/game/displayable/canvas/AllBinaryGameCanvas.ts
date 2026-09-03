@@ -36,8 +36,12 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
@@ -735,7 +739,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private isCheating: boolean= false;
 
-    private hashtable: Hashtable<any, any> = this.nullUtil!.NULL_TABLE;
+    private hashtable: Hashtable<any, any> = this.stdUtil!.NULL_TABLE;
 
     private isSingleKeyRepeatableProcessing: boolean= false;
 
@@ -1084,7 +1088,7 @@ this.closeMenu();
     var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
+    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
     var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
@@ -1161,7 +1165,7 @@ scrollSelectionForm!.deleteAll();
     var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
+    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
     var size: number = items.length
@@ -2280,7 +2284,7 @@ this.hashtable= hashtable;
 
     public getCurrentStateHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
+    var hashtable: Hashtable<any, any> = this.stdUtil!.createHashtable()!;;
     
 
     var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;;

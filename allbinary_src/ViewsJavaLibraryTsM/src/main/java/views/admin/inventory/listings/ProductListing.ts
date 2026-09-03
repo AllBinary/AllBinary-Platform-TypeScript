@@ -36,8 +36,12 @@ import { Set } from '../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -66,6 +70,10 @@ import { GLOBALS2 } from '../../../../org/allbinary/globals/GLOBALS2.js';
       
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
+      
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -191,6 +199,8 @@ export class ProductListing
 
     private readonly directory: Directory = Directory.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private readonly storeFronts: StoreFrontsEntity;
 
     private readonly staticPages: StaticPagesEntity;
@@ -222,7 +232,7 @@ this.inventory= new InventoryEntity();
     var inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var keywords: Vector = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), BasicItemData.KEYWORDS)!;;
+    var keywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), basicItemData!.KEYWORDS)!;;
     
 
     var subStoreVector: BasicArrayList = storeFront!.getSubStores()!;;
@@ -241,9 +251,9 @@ this.inventory= new InventoryEntity();
     var subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreKeywords: Vector = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, BasicItemData.CATEGORY)!;;
+    var substoreKeywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, basicItemData!.CATEGORY)!;;
     
-keywords.addAll(substoreKeywords);
+keywords.addAllList(substoreKeywords);
     
 }
 
@@ -327,7 +337,7 @@ StreamUtil.getInstance()!.close(idOutData);
 
                 //@Throws(Exception.constructor)
             
-    create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
+    create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: BasicArrayList, staticPath: AbPath){
 
     var stringBuffer: StringMaker = new StringMaker();;
     
@@ -342,7 +352,7 @@ hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_ST
 
     var searchParams: SearchParams = this.searchRequest!.getParams()!;;
     
-searchParams!.add(BasicItemData.KEYWORDS, keywordData);
+searchParams!.add(basicItemData!.KEYWORDS, keywordData);
     
 searchParams!.setStartPage(CommonPhoneStrings.getInstance()!.ZERO);
     
@@ -454,7 +464,7 @@ this.savePage(file, productListingPages[index]!);
     var index: number = 0;index < size; index++)
         {
 
-    var insertVector: Vector = new Vector();;
+    var insertVector: BasicArrayList = new BasicArrayListD();;
     
 
     var keywordData: string = keywordArray[index]! as string;;
@@ -517,7 +527,7 @@ stringBuffer!.append(storeFront!.getStaticPath());
                 ;;
     
 
-    var keywordFilenameHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var keywordFilenameHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
                         if(size == 0)
@@ -544,7 +554,7 @@ stringBuffer!.append(" Store Not Found");
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
     
 
-    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
+    var vector: BasicArrayList = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
     
 
 
@@ -630,10 +640,10 @@ stringBuffer!.append("<br />");
                                 
                         else {
                             
-    var storeFrontVector: Vector = this.storeFronts!.getStoreFrontNames()!;;
+    var storeFrontVector: BasicArrayList = this.storeFronts!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontVector!.length!;;
+    var size: number = storeFrontVector!.size()!;;
     
 
 

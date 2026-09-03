@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -54,6 +58,10 @@ import { ItemInterface } from '../../../../../../../../org/allbinary/business/us
       
 import { MoneyException } from '../../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
       //not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -99,6 +107,8 @@ export class InventoryEntity extends AbSqlBean implements InventoryEntityInterfa
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private readonly tableName: string = "basicinventory";
 
 public constructor (){
@@ -112,7 +122,7 @@ this.setTableName(this.tableName);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -147,7 +157,7 @@ this.setTableName(this.tableName);
     public delete(value: string){
 
         try {
-            super.deleteWhere(BasicItemData.ID, value);
+            super.deleteWhere(basicItemData!.ID, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -178,7 +188,7 @@ this.setTableName(this.tableName);
 
                 //@Throws(Exception.constructor)
             
-    public getItems(storeFrontInterface: StoreFrontInterface): Vector{
+    public getItems(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -189,16 +199,16 @@ this.setTableName(this.tableName);
                                     }
                                 
 
-    var itemVector: Vector = new Vector();;
+    var itemVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var itemHashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var itemHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = itemHashMapVector!.length!;;
+    var size: number = itemHashMapVector!.size()!;;
     
 
 
@@ -217,7 +227,7 @@ this.setTableName(this.tableName);
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(BasicItemData.CATEGORY) as string;;
+    var category: string = itemHashMap!.get(basicItemData!.CATEGORY) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(category) && category.startsWith(storeFrontInterface!.getCategoryPath()))
@@ -246,9 +256,9 @@ this.setTableName(this.tableName);
             
     public getItem(id: string): ItemInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-keysAndValues!.put(BasicItemData.ID, id);
+keysAndValues!.put(basicItemData!.ID, id);
     
 
     var itemHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
@@ -286,7 +296,7 @@ keysAndValues!.put(BasicItemData.ID, id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getField(BasicItemData.ID, id, BasicItemData.WEIGHT);;
+                        return super.getField(basicItemData!.ID, id, basicItemData!.WEIGHT);;
     
 }
 
@@ -301,19 +311,19 @@ stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     
-stringBuffer!.append(BasicItemData.ID);
+stringBuffer!.append(basicItemData!.ID);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.NUMBER);
+stringBuffer!.append(basicItemData!.NUMBER);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.INBASKETS);
+stringBuffer!.append(basicItemData!.INBASKETS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.WEIGHT);
+stringBuffer!.append(basicItemData!.WEIGHT);
     
 stringBuffer!.append(" VARCHAR(20) NOT NULL,");
     
@@ -321,59 +331,59 @@ stringBuffer!.append(EntryData.getInstance()!.ENABLE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.NEWORUSED);
+stringBuffer!.append(basicItemData!.NEWORUSED);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.SUMMARY);
+stringBuffer!.append(basicItemData!.SUMMARY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.DISTRIBUTOR);
+stringBuffer!.append(basicItemData!.DISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.IDUSEDBYDISTRIBUTOR);
+stringBuffer!.append(basicItemData!.IDUSEDBYDISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PRODUCEDBY);
+stringBuffer!.append(basicItemData!.PRODUCEDBY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PRODUCTIONDATE);
+stringBuffer!.append(basicItemData!.PRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.STARTPRODUCTIONDATE);
+stringBuffer!.append(basicItemData!.STARTPRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.DESCRIPTION);
+stringBuffer!.append(basicItemData!.DESCRIPTION);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.KEYWORDS);
+stringBuffer!.append(basicItemData!.KEYWORDS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.CATEGORY);
+stringBuffer!.append(basicItemData!.CATEGORY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.TYPE);
+stringBuffer!.append(basicItemData!.TYPE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.SMALLIMAGE);
+stringBuffer!.append(basicItemData!.SMALLIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.MEDIUMIMAGE);
+stringBuffer!.append(basicItemData!.MEDIUMIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.LARGEIMAGE);
+stringBuffer!.append(basicItemData!.LARGEIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
@@ -385,41 +395,41 @@ stringBuffer!.append(EntryData.getInstance()!.TIMECREATED);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PRICE);
+stringBuffer!.append(basicItemData!.PRICE);
     
 stringBuffer!.append(" VARCHAR(20) NOT NULL,");
     
-stringBuffer!.append(BasicItemData.COMMENT);
+stringBuffer!.append(basicItemData!.COMMENT);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.CUSTOMS);
+stringBuffer!.append(basicItemData!.CUSTOMS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.DOWNLOADS);
+stringBuffer!.append(basicItemData!.DOWNLOADS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.GROUPS);
+stringBuffer!.append(basicItemData!.GROUPS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.OPTIONS);
+stringBuffer!.append(basicItemData!.OPTIONS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.PERMISSIONS);
+stringBuffer!.append(basicItemData!.PERMISSIONS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(BasicItemData.SPECIALS);
+stringBuffer!.append(basicItemData!.SPECIALS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
 stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
     
-stringBuffer!.append(BasicItemData.ID);
+stringBuffer!.append(basicItemData!.ID);
     
 stringBuffer!.append(this.sqlStrings!.END);
     
@@ -443,7 +453,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
     public update(updatedValues: HashMap<any, any>){
-super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as string, updatedValues);
+super.updateWhere(basicItemData!.ID, updatedValues!.get(basicItemData!.ID) as string, updatedValues);
     
 }
 

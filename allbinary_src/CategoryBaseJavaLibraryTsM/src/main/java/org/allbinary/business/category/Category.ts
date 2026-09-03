@@ -28,8 +28,12 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CategoryHierarchy } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchy.js';
@@ -50,6 +54,10 @@ import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/
       
 import { RootCategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/root/RootCategoryPropertiesInterface.js';
       //not GWT import const RootCategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.root.RootCategoryPropertiesInterface;
+
+      
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -117,9 +125,9 @@ export class Category
 
     private categoryPropertiesInterface: CategoryPropertiesInterface;
 
-    private readonly childCategoryVector: Vector = new Vector();
+    private readonly childCategoryVector: BasicArrayList = new BasicArrayListD();
 
-    private readonly typeVector: Vector = new Vector();
+    private readonly typeVector: BasicArrayList = new BasicArrayListD();
 
     private readonly PROPERTIES: Integer = new Integer(1);
 
@@ -297,7 +305,7 @@ this.typeVector!.add(this.CATEGORY);
 }
 
 
-    public getChildNodes(): Vector{
+    public getChildNodes(): BasicArrayList{
 
 
 
@@ -310,13 +318,13 @@ this.typeVector!.add(this.CATEGORY);
 
     public removeChild(categoryInterface: CategoryInterface): boolean{
 
-    var removalVector: Vector = new Vector();;
+    var removalVector: BasicArrayList = new BasicArrayListD();;
     
 
     var bool_return: boolean = false;;
     
 
-    var size: number = this.childCategoryVector!.length!;;
+    var size: number = this.childCategoryVector!.size()!;;
     
 
 
@@ -362,9 +370,9 @@ this.removal(removalVector);
 }
 
 
-    removal(removalVector: Vector){
+    removal(removalVector: BasicArrayList){
 
-    var removalSize: number = removalVector!.length!;;
+    var removalSize: number = removalVector!.size()!;;
     
 
 
@@ -391,13 +399,13 @@ this.childCategoryVector!.remove(objectIndex);
 
     removeDuplicateChild(categoryInterface: CategoryInterface): boolean{
 
-    var removalVector: Vector = new Vector();;
+    var removalVector: BasicArrayList = new BasicArrayListD();;
     
 
     var bool_return: boolean = false;;
     
 
-    var size: number = this.childCategoryVector!.length!;;
+    var size: number = this.childCategoryVector!.size()!;;
     
 
 
@@ -491,7 +499,7 @@ this.removal(removalVector);
                                     }
                                 
 
-                        if(this.childCategoryVector!.length == 0)
+                        if(this.childCategoryVector!.size() == 0)
                         
                                     {
                                     
@@ -566,7 +574,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
                                     }
                                 
 
-    var size: number = this.childCategoryVector!.length!;;
+    var size: number = this.childCategoryVector!.size()!;;
     
 
 
@@ -688,9 +696,9 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
                 //@Throws(Exception.constructor)
             
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
-    var categoryVector: Vector = this.categoryPropertiesInterface!.toVector()!;;
+    var categoryVector: BasicArrayList = this.categoryPropertiesInterface!.toVector()!;;
     
 categoryVector!.add(this.childCategoryVector);
     

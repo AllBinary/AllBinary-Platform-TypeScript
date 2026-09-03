@@ -24,6 +24,10 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -55,7 +59,7 @@ export class BufferedImageInfoFactory
          {
         
 
-    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
     public static getInstance(width: number, height: number, type: number): BufferedImageInfo{
 

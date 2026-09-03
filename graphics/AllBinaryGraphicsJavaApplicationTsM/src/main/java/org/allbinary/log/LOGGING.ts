@@ -20,8 +20,16 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -48,7 +56,7 @@ export class LOGGING
          {
         
 
-    private static logging: Vector = new Vector();
+    private static logging: BasicArrayList = new BasicArrayListD();
 
     public static contains(logType: LOGGING): boolean{
 

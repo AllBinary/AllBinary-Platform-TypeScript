@@ -44,8 +44,8 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
       //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
@@ -230,7 +230,7 @@ progressCanvas!.start();
 
     var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;;
     
-this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);
+this.setStartStateHashtable(StdUtil.getInstance()!.NULL_TABLE);
     
 PrimaryThreadPool.getInstance()!.runTask(new CreateGameRunnable(this, hashtable));
     

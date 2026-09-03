@@ -32,8 +32,12 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
@@ -46,6 +50,10 @@ import { BasicItemData } from '../../../../../../../../org/allbinary/business/us
       
 import { ProductIdGenerator } from '../../../../../../../../org/allbinary/data/generator/ProductIdGenerator.js';
       //not GWT import const ProductIdGenerator = globalThis.org.allbinary.data.generator.ProductIdGenerator;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -153,7 +161,7 @@ public constructor (hashMap: HashMap<any, any>){
             super();
         this.id= hashMap!.get(DownloadItemData.ID) as string;
     
-this.basicItemId= hashMap!.get(BasicItemData.ID) as string;
+this.basicItemId= hashMap!.get(BasicItemData.getInstance()!.ID) as string;
     
 this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE) as string;
     
@@ -233,7 +241,7 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
 }
 
 
-    public toVector(): Vector{
+    public toVector(): BasicArrayList{
 
     var calendar: Calendar = Calendar.getInstance()!;;
     
@@ -241,7 +249,7 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
     var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 
-    var values: Vector = new Vector();;
+    var values: BasicArrayList = new BasicArrayListD();;
     
 values.add(getId());
     
@@ -284,11 +292,11 @@ values.add(time);
 
     public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();;
+    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(DownloadItemData.ID, this.getId());
     
-values.put(BasicItemData.ID, this.basicItemId);
+values.put(BasicItemData.getInstance()!.ID, this.basicItemId);
     
 values.put(EntryData.getInstance()!.ENABLE, this.enabled);
     

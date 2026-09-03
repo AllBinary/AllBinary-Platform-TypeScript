@@ -44,6 +44,10 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
       //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { SuperCrypt } from '../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
       //not GWT import const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
 
@@ -591,7 +595,7 @@ this.number= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(PaymentData.NAME, this.name);
     

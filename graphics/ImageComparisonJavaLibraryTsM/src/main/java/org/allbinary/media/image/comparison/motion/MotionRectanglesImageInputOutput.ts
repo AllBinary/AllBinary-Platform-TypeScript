@@ -32,8 +32,12 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
       //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
@@ -303,10 +307,10 @@ bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedIm
 }
 
 
-    var rectangelList: Vector = motionRectangles!.getVector()!;;
+    var rectangelList: BasicArrayList = motionRectangles!.getVector()!;;
     
 
-    var size: number = rectangelList!.length!;;
+    var size: number = rectangelList!.size()!;;
     
 
 

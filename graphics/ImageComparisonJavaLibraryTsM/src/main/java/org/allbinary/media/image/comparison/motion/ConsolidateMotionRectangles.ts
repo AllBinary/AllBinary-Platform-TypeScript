@@ -24,8 +24,16 @@ import { awt } from '../../../../../../java/awt.js';
       //not GWT import const awt = globalThis.java.awt;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -74,10 +82,10 @@ public constructor (motionRectangles: MotionRectangles){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var vector: Vector = motionRectangles!.getVector()!;;
+    var vector: BasicArrayList = motionRectangles!.getVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 
@@ -100,15 +108,15 @@ this.consolidateMotionRectangles();
 
     consolidateMotionRectangles(){
 
-    var vector: Vector = this.getVector()!;;
+    var vector: BasicArrayList = this.getVector()!;;
     
-this.logUtil!.putF("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints");
-    
-
-    var removeVector: Vector = new Vector();;
+this.logUtil!.putF("Start - Size Before: " +vector.size(), this, "consolidateMotionRectangleConstraints");
     
 
-    var size: number = vector.length!;;
+    var removeVector: BasicArrayList = new BasicArrayListD();;
+    
+
+    var size: number = vector.size()!;;
     
 
 
@@ -125,7 +133,7 @@ this.logUtil!.putF("Start - Size Before: " +vector.length, this, "consolidateMot
 
 
                         for (
-    var i: number = index +1;i < vector.length; i++)
+    var i: number = index +1;i < vector.size(); i++)
         {
 
     var motionRectangle2: MotionRectangle = vector.get(i) as MotionRectangle;;
@@ -166,12 +174,12 @@ this.remove(removeVector);
 }
 
 
-    remove(removeVector: Vector){
+    remove(removeVector: BasicArrayList){
 
-    var vector: Vector = this.getVector()!;;
+    var vector: BasicArrayList = this.getVector()!;;
     
 
-    var size: number = removeVector!.length!;;
+    var size: number = removeVector!.size()!;;
     
 
 

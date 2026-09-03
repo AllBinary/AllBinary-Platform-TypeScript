@@ -22,8 +22,12 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
@@ -108,12 +112,12 @@ this.maxChars= maxChars;
 }
 
 
-    toNumberVector(value: Integer): Vector<any>{
+    toNumberVector(value: Integer): BasicArrayList{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Vector<any>();
+                        return new BasicArrayListD();
     
 }
 

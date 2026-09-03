@@ -54,6 +54,10 @@ import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener
       //not GWT import const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -172,7 +176,7 @@ securedNativeLibraryInterface!.load();
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private helpSetListenerInterface: HelpSetListener;
 

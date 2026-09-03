@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
@@ -42,6 +46,10 @@ import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData
       
 import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
       //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -126,7 +134,7 @@ this.setTableName(this.tableName);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -162,7 +170,7 @@ this.setTableName(this.tableName);
 
         try {
             
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
     
@@ -203,7 +211,7 @@ super.deleteWhere(keysAndValues);
 
         try {
             
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
     
@@ -260,22 +268,22 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 }
 
 
-    public get(storeName: string): Vector{
+    public get(storeName: string): BasicArrayList{
 
         try {
             
-    var workFlowsVector: Vector = new Vector();;
+    var workFlowsVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = hashMapVector!.length!;;
+    var size: number = hashMapVector!.size()!;;
     
 
 
@@ -334,7 +342,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
         try {
             
-    var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var wherekeysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as string);
     

@@ -40,6 +40,10 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -64,7 +68,7 @@ export class Feature
          {
         
 
-    private static hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public static getInstance(name: string): Feature{
 

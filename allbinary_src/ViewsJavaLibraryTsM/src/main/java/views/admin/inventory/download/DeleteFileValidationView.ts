@@ -24,8 +24,12 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
@@ -142,7 +146,7 @@ this.getFormData();
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID) as string;
+this.id= hashMap!.get(basicItemData!.ID) as string;
     
 this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
     
@@ -191,10 +195,10 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
+    var vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
-                        if(vector.length != 1)
+                        if(vector.size() != 1)
                         
                                     {
                                     
@@ -279,10 +283,10 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
+    var vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
-                        if(vector.length == 0)
+                        if(vector.size() == 0)
                         
                                     {
                                     stringBuffer!.append("DownloadItem does not exist.<br />");
@@ -291,7 +295,7 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                                     }
                                 
 
-                        if(vector.length > 1)
+                        if(vector.size() > 1)
                         
                                     {
                                     stringBuffer!.append("To Many DownloadItems exist.<br />");

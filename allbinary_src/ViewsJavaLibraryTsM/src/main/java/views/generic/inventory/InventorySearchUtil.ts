@@ -32,8 +32,12 @@ import { ListIterator } from '../../../java/util/ListIterator.js';
       //not GWT import const ListIterator = globalThis.java.util.ListIterator;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
@@ -197,9 +201,11 @@ export class InventorySearchUtil
 
     private readonly commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
                 //@Throws(Exception.constructor)
             
-    public getBasicItemIdColumn(searchRequest: SearchRequest): Vector{
+    public getBasicItemIdColumn(searchRequest: SearchRequest): BasicArrayList{
 
     var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
@@ -210,13 +216,13 @@ export class InventorySearchUtil
     var inventorySearchUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var column: Vector = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), BasicItemData.ID)!;;
+    var column: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), basicItemData!.ID)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    this.logUtil!.putF("Number Of Items Found: " +column.length, this, "search");
+                                    this.logUtil!.putF("Number Of Items Found: " +column.size(), this, "search");
     
 
                                     }
@@ -238,9 +244,9 @@ export class InventorySearchUtil
     var subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreIdColumn: Vector = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, BasicItemData.ID)!;;
+    var substoreIdColumn: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, basicItemData!.ID)!;;
     
-column.addAll(substoreIdColumn);
+column.addAllList(substoreIdColumn);
     
 }
 
@@ -248,7 +254,7 @@ column.addAll(substoreIdColumn);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    this.logUtil!.putF("Number Of Items Found Including SubStores: " +column.length, this, "search");
+                                    this.logUtil!.putF("Number Of Items Found Including SubStores: " +column.size(), this, "search");
     
 
                                     }
@@ -290,7 +296,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 }
 
 
-    public search(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, column: Vector): string[]{
+    public search(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, column: BasicArrayList): string[]{
 
         try {
             
@@ -315,7 +321,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
     var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string)!;;
+    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(basicItemData!.KEYWORDS) as string)!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(keyword))
@@ -358,9 +364,6 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 
     var inventoryNodes: Node[] = new Array(MAXPAGES);;
     
-
-    var iter: ListIterator = column.listIterator()!;;
-    
 keyword= keyword.toUpperCase();
     
 
@@ -397,7 +400,14 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
     var currentPage: number =  -1;;
     
 
-        while(iter.hasNext())
+    var size: number = column.size()!;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
         {
 
     var product: string = .toCharArray();;
@@ -419,7 +429,7 @@ keywords= keywords.toUpperCase();
                         
                                     {
                                     
-    var itemNode: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(viewDocumentInterface!.getDoc())!;;
+    var itemNode: Node = new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(viewDocumentInterface!.getDoc())!;;
     
 itemNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, this.commonPhoneStrings!.ONE));
     

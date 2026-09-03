@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { WorkFlowEntityFactory } from '../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
@@ -88,7 +92,7 @@ export class WorkFlowsView extends HttpStoreComponentView implements DomNodeInte
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private workFlowsVector: Vector;
+    private workFlowsVector: BasicArrayList;
 
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
@@ -150,7 +154,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
     var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOWS)!;;
     
 
-    var size: number = this.workFlowsVector!.length!;;
+    var size: number = this.workFlowsVector!.size()!;;
     
 
 

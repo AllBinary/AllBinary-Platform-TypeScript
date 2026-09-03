@@ -34,8 +34,12 @@ import { Set } from '../../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { Item } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js';
@@ -44,6 +48,10 @@ import { Item } from '../../../../../../../org/allbinary/business/user/commerce/
       
 import { ItemView } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemView.js';
       //not GWT import const ItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemView;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
@@ -81,7 +89,7 @@ export class BasketReview
          {
         
 
-    items: Vector = new Vector();
+    items: BasicArrayList = new BasicArrayListD();
 
 public constructor (){
 
@@ -105,7 +113,7 @@ this.items.add(item);
 }
 
 
-    public getItems(): Vector{
+    public getItems(): BasicArrayList{
 
 
 
@@ -218,7 +226,7 @@ weightFloat += new number(item.getWeight());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(this.items.length);
+                        return new Integer(this.items.size());
     
 }
 
@@ -322,7 +330,7 @@ idSet!.add(item.getId());
 
     var item: Item = itemArray[index]! as Item;;
     
-node.appendChild(new ItemView(item, new Vector()).toXmlNode(document));
+node.appendChild(new ItemView(item, new BasicArrayListD()).toXmlNode(document));
     
 }
 

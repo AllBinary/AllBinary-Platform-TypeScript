@@ -56,6 +56,10 @@ import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/
       //not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
 
       
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -83,7 +87,7 @@ export class Basket
          implements BasketInterface, Serializable {
         
 
-    private items: HashMap<any, any> = new HashMap<any, any>();
+    private items: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;
 
 public constructor (){
 

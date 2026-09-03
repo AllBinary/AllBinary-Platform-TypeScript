@@ -22,8 +22,12 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CapturedImageWorkerResultsEvent } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
@@ -32,6 +36,10 @@ import { CapturedImageWorkerResultsEvent } from '../../../../../org/allbinary/in
       
 import { CapturedImageWorkerResultsListener } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsListener.js';
       //not GWT import const CapturedImageWorkerResultsListener = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsListener;
+
+      
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -106,7 +114,7 @@ export class ImageComparisonWorker extends BasicEventHandler implements Captured
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly bufferedImageVector: Vector = new Vector();
+    private readonly bufferedImageVector: BasicArrayList = new BasicArrayListD();
 
     private readonly imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface;
 
@@ -149,7 +157,7 @@ this.running= running;
 this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
     
 
-                        if(this.bufferedImageVector!.length > 1)
+                        if(this.bufferedImageVector!.size() > 1)
                         
                                     {
                                     this.run();

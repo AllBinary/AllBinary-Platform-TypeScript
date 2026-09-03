@@ -38,6 +38,10 @@ import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/do
       //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
       //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
@@ -95,7 +99,7 @@ public constructor (node: Node){
     var childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
     var name: string = DomNodeHelper.getTextNodeValue(UserEmailEventConfigurationData.NAME, childNodeList)!;;

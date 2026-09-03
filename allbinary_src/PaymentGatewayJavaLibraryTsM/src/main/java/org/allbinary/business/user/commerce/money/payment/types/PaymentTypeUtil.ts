@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
@@ -52,6 +56,10 @@ import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../../../org/allbinary/
       
 import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
+      
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -157,7 +165,7 @@ export class PaymentTypeUtil
                 null
             ;
 
-    private paymentTypeVector: Vector = new Vector();
+    private paymentTypeVector: BasicArrayList = new BasicArrayListD();
 
 private constructor (){
 
@@ -209,7 +217,7 @@ this.paymentTypeVector!.add(paymentType);
             
     public get(paymentTypeString: string): PaymentType{
 
-    var size: number = this.paymentTypeVector!.length!;;
+    var size: number = this.paymentTypeVector!.size()!;;
     
 
 
@@ -372,12 +380,12 @@ this.initDefault(storeName);
 }
 
 
-    public difference(a_PaymentTypeVector: Vector): Vector{
+    public difference(a_PaymentTypeVector: BasicArrayList): BasicArrayList{
 
-    var diff: Vector = new Vector();;
+    var diff: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.paymentTypeVector!.length!;;
+    var size: number = this.paymentTypeVector!.size()!;;
     
 
 

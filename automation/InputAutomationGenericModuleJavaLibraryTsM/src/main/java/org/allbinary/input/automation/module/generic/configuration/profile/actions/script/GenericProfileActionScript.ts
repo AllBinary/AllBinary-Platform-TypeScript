@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
@@ -54,6 +58,10 @@ import { GenericProfileActionData } from '../../../../../../../../../../org/allb
       
 import { GenericProfileActionJPanel } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionJPanel.js';
       //not GWT import const GenericProfileActionJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionJPanel;
+
+      
+import { StdUtil } from '../../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -106,7 +114,7 @@ export class GenericProfileActionScript extends DefaultMutableTreeNode implement
 
     private genericProfileActionJPanel: GenericProfileActionJPanel;
 
-    private profileActionConditionInterfaceVector: Vector;
+    private profileActionConditionInterfaceVector: BasicArrayList;
 
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
             super(NAME);
@@ -116,7 +124,7 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node
                     
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
-this.setProfileActionConditionInterfaceVector(new Vector());
+this.setProfileActionConditionInterfaceVector(new BasicArrayListD());
     
 
     var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;;
@@ -171,7 +179,7 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
             super();
         this.genericProfileActionJPanel= genericProfileActionJPanel;
     
-this.setProfileActionConditionInterfaceVector(new Vector());
+this.setProfileActionConditionInterfaceVector(new BasicArrayListD());
     
 }
 
@@ -198,7 +206,7 @@ this.remove(profileActionScriptNodeInterface);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
@@ -211,7 +219,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-    public getProfileActionConditionInterfaceVector(): Vector{
+    public getProfileActionConditionInterfaceVector(): BasicArrayList{
 
 
 
@@ -221,7 +229,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-    public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: Vector){
+    public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: BasicArrayList){
 this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVector;
     
 }
@@ -234,10 +242,10 @@ this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVecto
     var node: Node = document.createElement(GenericProfileActionData.SCRIPT)!;;
     
 
-    var vector: Vector = this.getProfileActionConditionInterfaceVector()!;;
+    var vector: BasicArrayList = this.getProfileActionConditionInterfaceVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

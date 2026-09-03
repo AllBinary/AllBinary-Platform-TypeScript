@@ -99,6 +99,8 @@ export class BasketRequestHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
     private readonly weblisketSession: WeblisketSession;
 
     private readonly storeFrontInterface: StoreFrontInterface;
@@ -152,7 +154,7 @@ this.getFormData();
 
 
     getFormData(){
-this.id= this.request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(basicItemData!.ID);
     
 this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
     

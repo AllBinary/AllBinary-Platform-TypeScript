@@ -30,8 +30,12 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
@@ -80,6 +84,10 @@ import { BasicPaymentTypeUtil } from '../../../../../../../../../org/allbinary/b
       
 import { PaymentGatewayIdGenerator } from '../../../../../../../../../org/allbinary/data/generator/PaymentGatewayIdGenerator.js';
       //not GWT import const PaymentGatewayIdGenerator = globalThis.org.allbinary.data.generator.PaymentGatewayIdGenerator;
+
+      
+import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -160,11 +168,11 @@ this.setTableName(this.tableName);
                                     }
                                 
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(new PaymentGatewayIdGenerator().getNext());
     
-vector.addAll(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toVector());
+vector.addAllList(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toVector());
     
 
     var calendar: Calendar = Calendar.getInstance()!;;
@@ -217,7 +225,7 @@ super.insert(vector);
 paymentGatewayInterface!.setLastModified(time);
     
 
-    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();;
+    var whereKeyValuePairs: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyValuePairs!.put(StoreFrontData.getInstance()!.NAME.toString(), paymentGatewayInterface!.getStoreName());
     
@@ -273,10 +281,10 @@ super.updateWhere(whereKeyValuePairs, updateHashMap);
 
         try {
             
-    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var paymentGatewayHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
+    var whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyAndValue!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -403,11 +411,11 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
 }
 
 
-    public findPaymentTypeVectorByStore(storeName: string): Vector{
+    public findPaymentTypeVectorByStore(storeName: string): BasicArrayList{
 
         try {
             
-    var paymentGatewayNameVector: Vector = new Vector();;
+    var paymentGatewayNameVector: BasicArrayList = new BasicArrayListD();;
     
 paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(), StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -418,10 +426,10 @@ paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(
                         
                                     {
                                     
-    var paymentGatewayVector: Vector = new Vector();;
+    var paymentGatewayVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = paymentGatewayNameVector!.length!;;
+    var size: number = paymentGatewayNameVector!.size()!;;
     
 
 
@@ -463,7 +471,7 @@ paymentGatewayVector!.add(paymentType);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Vector();
+                        return new BasicArrayListD();
     
 
                         }
@@ -496,7 +504,7 @@ paymentGatewayVector!.add(paymentType);
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
     

@@ -92,6 +92,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -154,7 +158,7 @@ this.name= name;
     
 this.childNameList= childNameList;
     
-this.commandStack= new Stack();
+this.commandStack= StdUtil.getInstance()!.createStack();
     
 }
 

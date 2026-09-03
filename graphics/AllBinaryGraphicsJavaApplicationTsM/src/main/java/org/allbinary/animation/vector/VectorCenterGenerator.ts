@@ -28,10 +28,6 @@ import { HashMap } from '../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
-
-      
 //not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
@@ -259,9 +255,6 @@ item.setPointsInterface(newPoints);
 
         try {
             
-    var newVector: Vector = new Vector();;
-    
-
     var size: number = pointVector!.size()!;;
     
 

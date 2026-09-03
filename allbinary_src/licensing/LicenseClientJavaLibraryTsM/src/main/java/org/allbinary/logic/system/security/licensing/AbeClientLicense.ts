@@ -24,8 +24,8 @@ import { Hashtable } from '../../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -127,7 +127,7 @@ export class AbeClientLicense
 public constructor (hashtable: Hashtable<any, any>){
 
             super();
-        this.hashtable= new Hashtable<any, any>();
+        this.hashtable= StdUtil.getInstance()!.createHashtable();
     
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
@@ -156,12 +156,12 @@ public constructor (hashtable: Hashtable<any, any>){
 this.id= hashtable.get(abeClientInformationData!.LICENSEID) as string;
     
 
-    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;;
+    var vector: BasicArrayList = hashtable.get(abeClientInformationData!.LICENSESERVERS) as BasicArrayList;;
     
 this.servers= new BasicArrayListD();
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

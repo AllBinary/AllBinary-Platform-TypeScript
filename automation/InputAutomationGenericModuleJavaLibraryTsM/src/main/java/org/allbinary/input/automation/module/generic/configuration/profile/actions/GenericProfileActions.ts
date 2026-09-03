@@ -66,6 +66,10 @@ import { GenericProfiles } from '../../../../../../../../../org/allbinary/input/
       //not GWT import const GenericProfiles = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfiles;
 
       
+import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -403,7 +407,7 @@ this.save();
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     

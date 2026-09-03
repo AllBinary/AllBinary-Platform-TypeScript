@@ -24,6 +24,10 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -53,7 +57,7 @@ export class HtmlTag
 public constructor (){
 
             super();
-        this.otherAttributes= new HashMap<any, any>();
+        this.otherAttributes= StdUtil.getInstance()!.createHashMap();
     
 }
 

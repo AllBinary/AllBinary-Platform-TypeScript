@@ -24,8 +24,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
@@ -38,6 +42,10 @@ import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
       
 import { MultipartRequestParamForwardHelper } from '../../admin/taghelpers/MultipartRequestParamForwardHelper.js';
       //not GWT import const MultipartRequestParamForwardHelper = globalThis.admin.taghelpers.MultipartRequestParamForwardHelper;
+
+      
+import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
@@ -88,7 +96,7 @@ export class MultipartRequestParamForwardTag extends CustomTagSupport {
 
     private command: string;
 
-    private paramVector: Vector;
+    private paramVector: BasicArrayList;
 
     public setPage(page: string){
 this.page= page;
@@ -102,7 +110,7 @@ this.command= command;
 }
 
 
-    public setParamVector(paramVector: Vector){
+    public setParamVector(paramVector: BasicArrayList){
 this.paramVector= paramVector;
     
 }
@@ -119,7 +127,7 @@ this.paramVector= paramVector;
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(AbTagData.PARENT, parentTag);
     

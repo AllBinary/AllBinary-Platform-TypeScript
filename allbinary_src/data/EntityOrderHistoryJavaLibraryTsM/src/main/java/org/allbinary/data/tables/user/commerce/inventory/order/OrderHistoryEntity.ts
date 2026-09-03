@@ -38,8 +38,12 @@ import { Random } from '../../../../../../../../java/util/Random.js';
       //not GWT import const Random = globalThis.java.util.Random;
 
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
@@ -150,6 +154,10 @@ import { PaymentEntity } from '../../../../../../../../org/allbinary/data/tables
       //not GWT import const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
 
       
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -220,7 +228,7 @@ this.setTableName(this.tableName);
 
     public insert(userName: string, order: Order){
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 
         try {
@@ -461,7 +469,7 @@ this.insert(vector);
 }
 
 
-    public insert(values: Vector){
+    public insert(values: BasicArrayList){
 
         try {
             super.insert(values);
@@ -503,7 +511,7 @@ this.insert(vector);
     var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateHashMap!.put(OrderHistoryData.STATUS, status);
     
@@ -555,7 +563,7 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
     var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateHashMap!.put(PaymentData.METHOD, paymentMethod);
     
@@ -583,20 +591,20 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 
                 //@Throws(Exception.constructor)
             
-    public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector{
+    public getStoreOrders(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
-    var orderReviewVector: Vector = new Vector();;
+    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
     
 
-    var orderHashMapVector: Vector = super.getRows(whereHashMap)!;;
+    var orderHashMapVector: BasicArrayList = super.getRows(whereHashMap)!;;
     
 
-    var size: number = orderHashMapVector!.length!;;
+    var size: number = orderHashMapVector!.size()!;;
     
 
 
@@ -626,20 +634,20 @@ orderReviewVector!.add(orderReview);
 
                 //@Throws(Exception.constructor)
             
-    public getOrders(userName: string): Vector{
+    public getOrders(userName: string): BasicArrayList{
 
-    var orderReviewVector: Vector = new Vector();;
+    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
 
-    var orderHashMapVector: Vector = super.getRows(whereHashMap)!;;
+    var orderHashMapVector: BasicArrayList = super.getRows(whereHashMap)!;;
     
 
-    var size: number = orderHashMapVector!.length!;;
+    var size: number = orderHashMapVector!.size()!;;
     
 
 
@@ -669,20 +677,20 @@ orderReviewVector!.add(orderReview);
 
                 //@Throws(Exception.constructor)
             
-    public getOrders(status: string, fromDate: string, toDate: string): Vector{
+    public getOrders(status: string, fromDate: string, toDate: string): BasicArrayList{
 
-    var orderReviewVector: Vector = new Vector();;
+    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderHistoryData.STATUS, status);
     
 
-    var orderHashMapVector: Vector = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
+    var orderHashMapVector: BasicArrayList = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
     
 
-    var size: number = orderHashMapVector!.length!;;
+    var size: number = orderHashMapVector!.size()!;;
     
 
 
@@ -712,15 +720,15 @@ orderReviewVector!.add(orderReview);
 
                 //@Throws(Exception.constructor)
             
-    public getOrders(fromDate: string, toDate: string): Vector{
+    public getOrders(fromDate: string, toDate: string): BasicArrayList{
 
-    var orderReviewVector: Vector = new Vector();;
+    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var orderHashMapVector: Vector = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
+    var orderHashMapVector: BasicArrayList = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
     
 
-    var size: number = orderHashMapVector!.length!;;
+    var size: number = orderHashMapVector!.size()!;;
     
 
 
@@ -752,7 +760,7 @@ orderReviewVector!.add(orderReview);
             
     public getOrder(id: string): OrderHistory{
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderData.ID, id);
     

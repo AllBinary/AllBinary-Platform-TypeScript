@@ -30,6 +30,10 @@ import { RelativeRelationship } from '../../../../org/allbinary/graphics/Relativ
       //not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -71,7 +75,7 @@ export class ResourceRelativeRelationshipFactory
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private initialized: boolean= false;
 

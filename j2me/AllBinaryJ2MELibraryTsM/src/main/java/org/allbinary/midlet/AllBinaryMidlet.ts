@@ -56,8 +56,8 @@ import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
       const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
 
       
-//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
@@ -106,6 +106,10 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
       
 import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
+      
+//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -163,7 +167,7 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 
     private readonly SETTING_NO_TITLE: string = "Setting: No Title, Display: ";
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private midletDestroyed: boolean= false;
 
@@ -323,7 +327,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullUtil.getInstance()!.NULL_TABLE;
+                        return StdUtil.getInstance()!.NULL_TABLE;
     
 }
 

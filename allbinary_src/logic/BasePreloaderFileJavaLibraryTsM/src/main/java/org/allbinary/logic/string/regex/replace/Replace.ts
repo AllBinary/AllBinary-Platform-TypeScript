@@ -30,10 +30,6 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Set } from '../../../../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
-
-      
 import { J2SEUtil } from '../../../../../../org/allbinary/J2SEUtil.js';
       //not GWT import const J2SEUtil = globalThis.org.allbinary.J2SEUtil;
 
@@ -46,6 +42,10 @@ import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.j
       //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -56,10 +56,6 @@ import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.j
       
 //not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
@@ -146,7 +142,7 @@ console.log("New String: " +testString);
 public constructor (key: string, value: string){
 
             super();
-        this.hashMap= new HashMap<any, any>();
+        this.hashMap= StdUtil.getInstance()!.createHashMap();
     
 this.hashMap!.put(
                                                 [
@@ -162,7 +158,7 @@ this.hashMap!.put(
 public constructor (keys: string[], values: string[]){
 
             super();
-        this.hashMap= new HashMap<any, any>();
+        this.hashMap= StdUtil.getInstance()!.createHashMap();
     
 this.hashMap!.put(keys, values);
     

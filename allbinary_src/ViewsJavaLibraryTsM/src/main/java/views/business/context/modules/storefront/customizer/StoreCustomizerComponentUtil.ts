@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -113,10 +117,10 @@ private constructor (){
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
     
 
-    var allCustomizedViews: Vector = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
+    var allCustomizedViews: BasicArrayList = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
     
 
-    var size: number = allCustomizedViews!.length!;;
+    var size: number = allCustomizedViews!.size()!;;
     
 
 
@@ -129,7 +133,7 @@ private constructor (){
     var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index) as TransformInfo;;
     
 
-    var allViewsToBeModified: Vector = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
+    var allViewsToBeModified: BasicArrayList = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -155,12 +159,12 @@ this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified
 
                 //@Throws(Exception.constructor)
             
-    generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: Vector){
+    generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: BasicArrayList){
 
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
     
 
-    var size: number = allViewsToBeModifiedVector!.length!;;
+    var size: number = allViewsToBeModifiedVector!.size()!;;
     
 
 

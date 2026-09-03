@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { swing } from '../../../../../../../../../../javax/swing.js';
@@ -140,13 +144,13 @@ this.setImageTypeJlistModel();
     var imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;;
     
 
-    var vector: Vector = imageTypes!.getVector()!;;
+    var vector: BasicArrayList = imageTypes!.getVector()!;;
     
 
-    var selectedArray: number[] = new Array(vector.length);;
+    var selectedArray: number[] = new Array(vector.size());;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 
@@ -236,10 +240,10 @@ this.capturedImageActionScriptOutputInterface!.log();
     var defaultListModel: DefaultListModel = new DefaultListModel();;
     
 
-    var vector: Vector = InputImageType.getAllAsVector()!;;
+    var vector: BasicArrayList = InputImageType.getAllAsVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 

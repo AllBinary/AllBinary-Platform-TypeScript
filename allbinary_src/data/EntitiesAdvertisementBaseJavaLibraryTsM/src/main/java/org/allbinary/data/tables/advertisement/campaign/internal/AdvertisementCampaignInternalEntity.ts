@@ -24,8 +24,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { AdvertisementCampaign } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaign.js';
@@ -62,6 +66,10 @@ import { UserDbInitInfo } from '../../../../../../../org/allbinary/business/init
       
 import { TimeData } from '../../../../../../../org/allbinary/business/time/TimeData.js';
       //not GWT import const TimeData = globalThis.org.allbinary.business.time.TimeData;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -150,18 +158,18 @@ this.setTableName(this.tableName);
 
     public getCampaignsInStore(storeName: string): AdvertisementCampaignsInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
+    var hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var vector: Vector = new Vector();;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = hashMapVector!.length!;;
+    var size: number = hashMapVector!.size()!;;
     
 
 
@@ -197,7 +205,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
     public get(storeName: string, name: string): AdvertisementCampaignInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
+    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     

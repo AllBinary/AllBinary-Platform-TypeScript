@@ -44,8 +44,8 @@ import { NullCloseable } from '../../../../../../org/allbinary/logic/io/NullClos
       //not GWT import const NullCloseable = globalThis.org.allbinary.logic.io.NullCloseable;
 
       
-//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -277,7 +277,7 @@ stringBuilder!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullUtil.getInstance()!.NULL_TABLE;
+                        return StdUtil.getInstance()!.NULL_TABLE;
     
 }
 

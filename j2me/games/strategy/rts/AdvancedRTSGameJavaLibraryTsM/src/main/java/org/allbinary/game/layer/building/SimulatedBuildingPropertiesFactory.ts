@@ -44,8 +44,8 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
       //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not plain js import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 
@@ -130,7 +130,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullUtil.getInstance()!.NULL_TABLE;
+                        return StdUtil.getInstance()!.NULL_TABLE;
     
 }
 

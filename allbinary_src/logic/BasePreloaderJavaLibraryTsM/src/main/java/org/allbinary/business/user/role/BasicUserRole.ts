@@ -26,8 +26,12 @@ import { Serializable } from '../../../../../java/io/Serializable.js';
       //not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -54,17 +58,17 @@ export class BasicUserRole
          implements Serializable {
         
 
-    private static readonly roleVector: Vector<any> = new Vector<any>();
+    private static readonly roleVector: BasicArrayList = new BasicArrayListD();
 
                 //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): BasicUserRole{
 
-    var roleVector: Vector<any> = BasicUserRole.getAll()!;;
+    var roleVector: BasicArrayList = BasicUserRole.getAll()!;;
     
 
-    var size: number = roleVector!.length!;;
+    var size: number = roleVector!.size()!;;
     
 
 
@@ -99,7 +103,7 @@ export class BasicUserRole
 }
 
 
-    public static getAll(): Vector<any>{
+    public static getAll(): BasicArrayList{
 
 
 

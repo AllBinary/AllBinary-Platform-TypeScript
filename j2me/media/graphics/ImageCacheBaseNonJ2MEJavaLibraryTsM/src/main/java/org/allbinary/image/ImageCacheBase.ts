@@ -80,6 +80,10 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -111,7 +115,7 @@ export class ImageCacheBase
 
     readonly imageFactory: ImageFactory = ImageFactory.getInstance()!;
 
-    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     readonly SIZE: number = 128;
 

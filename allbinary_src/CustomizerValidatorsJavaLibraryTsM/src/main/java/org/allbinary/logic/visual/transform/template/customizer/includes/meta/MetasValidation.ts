@@ -20,8 +20,12 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontFactory } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
@@ -34,6 +38,10 @@ import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/bu
       
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
       //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
+      
+import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -101,14 +109,14 @@ export class MetasValidation extends Validation implements DomNodeInterface {
 
     private storeFrontInterface: StoreFrontInterface;
 
-    private metaValidationVector: Vector;
+    private metaValidationVector: BasicArrayList;
 
 public constructor (storeName: string){
 
             super();
         this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
-this.metaValidationVector= new Vector();
+this.metaValidationVector= new BasicArrayListD();
     
 
     var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";;
@@ -241,7 +249,7 @@ public constructor (document: Document){
     var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;;
     
 
-    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]) as MetaValidation[];;
+    var metaArray: MetaValidation[] = this.metaValidationVector!.toArrayType(new Array(this.metaValidationVector!.size())) as MetaValidation[];;
     
 
     var size: number = metaArray!.length

@@ -24,8 +24,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
@@ -360,7 +364,7 @@ this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.intValue()
     var success: string = "Added Successfully";;
     
 
-    var values: Vector = this.modifyingStoreFrontInterface!.toVector()!;;
+    var values: BasicArrayList = this.modifyingStoreFrontInterface!.toVector()!;;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(values);
     

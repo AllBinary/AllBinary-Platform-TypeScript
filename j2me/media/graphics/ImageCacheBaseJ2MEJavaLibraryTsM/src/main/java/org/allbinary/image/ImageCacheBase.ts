@@ -40,6 +40,10 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -95,7 +99,7 @@ export class ImageCacheBase
 
     readonly imageFactory: ImageFactory = ImageFactory.getInstance()!;
 
-    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     readonly SIZE: number = 128;
 

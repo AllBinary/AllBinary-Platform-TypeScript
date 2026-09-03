@@ -26,8 +26,12 @@ import { Calendar } from '../../java/util/Calendar.js';
       //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
@@ -140,7 +144,7 @@ export class FileAuthenticationTag extends CustomTagSupport {
 
     private timeout: string;
 
-    private roles: Vector;
+    private roles: BasicArrayList;
 
 public constructor (){
 
@@ -172,7 +176,7 @@ this.newPassword= value;
 }
 
 
-    public setRoles(values: Vector){
+    public setRoles(values: BasicArrayList){
 this.roles= values;
     
 }
@@ -670,7 +674,7 @@ stringBuffer!.append("Trying New login<p>");
                         
                                     {
                                     
-    var size: number = this.roles.length!;;
+    var size: number = this.roles.size()!;;
     
 
 

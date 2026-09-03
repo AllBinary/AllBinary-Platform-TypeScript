@@ -18,8 +18,12 @@
         
 
 
-import { Vector } from '../../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PaymentGatewayInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
@@ -58,7 +62,7 @@ export interface PaymentGatewayEntityInterface extends BasicDataTableInterface {
 
     getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface
 
-    findPaymentTypeVectorByStore(storeName: string): Vector
+    findPaymentTypeVectorByStore(storeName: string): BasicArrayList
 
     remove(storeName: string, paymentType: BasicPaymentType)
 

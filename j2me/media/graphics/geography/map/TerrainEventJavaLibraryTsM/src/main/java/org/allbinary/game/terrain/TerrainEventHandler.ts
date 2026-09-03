@@ -24,8 +24,8 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
@@ -83,10 +83,10 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
 export class TerrainEventHandler extends BasicEventHandler {
         
 
-    private static hashtable: Hashtable<any, any> = NullUtil.getInstance()!.NULL_TABLE;
+    private static hashtable: Hashtable<any, any> = StdUtil.getInstance()!.NULL_TABLE;
 
     public static init(){
-TerrainEventHandler.hashtable= new Hashtable<any, any>();
+TerrainEventHandler.hashtable= StdUtil.getInstance()!.createHashtable();
     
 }
 

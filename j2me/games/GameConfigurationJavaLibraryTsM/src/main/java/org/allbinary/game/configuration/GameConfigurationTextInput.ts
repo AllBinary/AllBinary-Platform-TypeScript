@@ -28,6 +28,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
@@ -56,7 +60,7 @@ export class GameConfigurationTextInput
          {
         
 
-    private static hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public static SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
 

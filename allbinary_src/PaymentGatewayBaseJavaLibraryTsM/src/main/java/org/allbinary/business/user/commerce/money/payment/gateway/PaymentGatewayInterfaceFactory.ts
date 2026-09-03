@@ -38,6 +38,10 @@ import { BasicPaymentTypeUtil } from '../../../../../../../../org/allbinary/busi
       //not GWT import const BasicPaymentTypeUtil = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentTypeUtil;
 
       
+import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { RequestParams } from '../../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
       //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
@@ -141,7 +145,7 @@ public constructor (){
             
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
     

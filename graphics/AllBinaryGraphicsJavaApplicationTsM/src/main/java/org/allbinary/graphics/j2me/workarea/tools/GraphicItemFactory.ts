@@ -30,6 +30,10 @@ import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
       //not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -99,7 +103,7 @@ export class GraphicItemFactory
 private constructor (){
 
             super();
-        this.graphicItems= new HashMap<any, any>();
+        this.graphicItems= StdUtil.getInstance()!.createHashMap();
     
 this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory());
     
@@ -137,7 +141,7 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
     var numberOfItems: number = graphicItemNodeList!.size()!;;
     
 
-    var graphicItemHashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var graphicItemHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))

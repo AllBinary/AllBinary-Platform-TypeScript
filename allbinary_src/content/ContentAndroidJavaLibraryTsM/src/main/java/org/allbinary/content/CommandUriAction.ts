@@ -42,6 +42,10 @@ import { Uri } from '../../../android/net/Uri.js';
       const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
+import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -88,7 +92,7 @@ export class CommandUriAction
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public add(command: Command, url: string){
 this.hashtable.put(command, url);

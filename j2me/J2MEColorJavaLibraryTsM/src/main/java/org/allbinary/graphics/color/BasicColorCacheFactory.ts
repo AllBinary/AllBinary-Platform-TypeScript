@@ -26,6 +26,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
+import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 
 
 
@@ -68,7 +72,7 @@ export class BasicColorCacheFactory
 }
 
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 

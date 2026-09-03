@@ -32,8 +32,12 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
@@ -128,6 +132,10 @@ import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
       //not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
 
       
+import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
 import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/GuiLog.js';
       //not GWT import const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
 
@@ -154,6 +162,10 @@ import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/
       
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
@@ -368,7 +380,7 @@ CanvasJPanel.frame++;
     
 this.workAreaJTreeJPanel!.add(this.getTreeNode());
     
-this.graphicItemHashMap= new HashMap<any, any>();
+this.graphicItemHashMap= StdUtil.getInstance()!.createHashMap();
     
 this.grid.grid= PointFactory.getInstance()!.createXY(0, 0);
     
@@ -549,7 +561,7 @@ this.setAngle(this.angle +angle);
 
     public explodeAll(){
 
-    var newPoints: Vector = new Vector();;
+    var newPoints: BasicArrayList = new BasicArrayListD();;
     
 
     var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
@@ -612,7 +624,7 @@ newPoints!.add(newGraphicItem);
 }
 
 
-    var size2: number = newPoints!.length!;;
+    var size2: number = newPoints!.size()!;;
     
 
 

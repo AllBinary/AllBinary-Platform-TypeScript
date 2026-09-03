@@ -20,8 +20,12 @@
 
             import { Integer } from '../../../../../../../../java/lang/Integer.js';
         
-import { Vector } from '../../../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
@@ -60,13 +64,13 @@ export interface PaymentEntityInterface extends BasicDataTableInterface {
 
     getDefault(userName: string): PaymentInterface
 
-    get(userName: string): Vector
+    get(userName: string): BasicArrayList
 
     add(userName: string, paymentInterface: PaymentInterface)
 
     remove(userName: string, index: Integer)
 
-    insert(values: Vector)
+    insert(values: BasicArrayList)
 
 }
 

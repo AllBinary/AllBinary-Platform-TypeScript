@@ -24,8 +24,12 @@ import { HashMap } from '../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Vector } from '../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
@@ -148,7 +152,7 @@ this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), reques
 
         try {
             
-    var values: Vector = this.quoteRequest!.toVector()!;;
+    var values: BasicArrayList = this.quoteRequest!.toVector()!;;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values);
     

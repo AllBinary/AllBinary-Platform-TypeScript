@@ -24,8 +24,12 @@
         
             import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { awt } from '../../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+import { Color } from '../../../../../../../java/awt/Color.js';
+      //not GWT import const Color = globalThis.java.awt.Color;
+
+      
+import { Point } from '../../../../../../../java/awt/Point.js';
+      //not GWT import const Point = globalThis.java.awt.Point;
 
       
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
@@ -58,6 +62,10 @@ import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/colo
       
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
       //not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+
+      
+import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
+      //not GWT import const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -127,14 +135,8 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                 import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
 //not GWT import const ColorAtActionScriptConditionJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionJPanel;
 
-                import { Point } from './Point.js';
-//not GWT import const Point = globalThis.org.allbinary.input.automation.actions.script.condition.Point;
-
                 import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
 //not GWT import const ColorAtActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
-
-                import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.input.automation.actions.script.condition.Color;
 
                 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
@@ -338,7 +340,7 @@ this.colorAtActionScriptConditionJPanel!.getColorAtActionJDialog()!.setVisible(t
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
+    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(ColorAtActionScriptConditionData.LOCATION_X, Integer.toString(this.getPoint()!.x));
     

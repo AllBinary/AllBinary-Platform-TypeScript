@@ -30,8 +30,12 @@ import { Set } from '../../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
       
-import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { AbstractInputAutomationWorker } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
@@ -143,10 +147,10 @@ this.setMotionRectanglesWorker(new MotionRectanglesWorker(motionRectangleConstra
 this.setGenericProfile(genericProfile);
     
 
-    var vector: Vector = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;;
+    var vector: BasicArrayList = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;;
     
 
-    var size: number = vector.length!;;
+    var size: number = vector.size()!;;
     
 
 
@@ -244,7 +248,7 @@ this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_D
     var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
     
 
-    var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
+    var vector: BasicArrayList = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
     
 CaptureWorkerUtil.processProfileActionConditions(vector, getFrame());
     

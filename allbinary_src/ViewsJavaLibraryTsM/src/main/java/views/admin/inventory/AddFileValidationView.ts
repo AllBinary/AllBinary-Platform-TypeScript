@@ -143,6 +143,8 @@ export class AddFileValidationView extends InventoryItemView implements Validati
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly basicItemData: BasicItemData = BasicItemData.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -278,7 +280,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                                     }
                                 
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
@@ -457,7 +459,7 @@ stringBuffer!.append(" does not exist.<br />");
 }
 
 
-    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
+    var anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
@@ -649,7 +651,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-                        if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
+                        if(fileItemFieldName!.compareTo(basicItemData!.IMAGE) == 0)
                         
                                     {
                                     
