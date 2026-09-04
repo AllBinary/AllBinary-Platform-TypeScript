@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
-
-      
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
@@ -54,6 +50,10 @@ import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/disp
       
 import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
       //not GWT import const ScreenInfo = globalThis.org.allbinary.graphics.form.ScreenInfo;
+
+      
+import { VectorUtil } from '../../../../../org/allbinary/logic/VectorUtil.js';
+      //not GWT import const VectorUtil = globalThis.org.allbinary.logic.VectorUtil;
 
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -114,9 +114,12 @@ public constructor (visitorInterface: Visitor){
 }
 
 
-    public getInstance(vector: Vector<any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
+    public getInstance(vector: any = {}, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
 
-    var size: number = vector.length!;;
+    var vectorUtil: VectorUtil = VectorUtil.getInstance()!;;
+    
+
+    var size: number = vectorUtil!.getSize(vector)!;;
     
 this.list.clear();
     
@@ -151,7 +154,7 @@ this.list.clear();
                         for (
     var index: number = 0;index < size; index++)
         {
-command= vector.elementAt(index) as Command;
+command= vectorUtil!.elementAt(vector, index) as Command;
     
 
                         if(command.getPriority() < priorityLimit)

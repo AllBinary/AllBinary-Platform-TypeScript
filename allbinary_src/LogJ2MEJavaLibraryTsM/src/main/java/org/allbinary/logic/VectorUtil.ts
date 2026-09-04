@@ -2,7 +2,7 @@
         /*
                 *  
                 *  AllBinary Open License Version 1 
-                *  Copyright (c) 2025 AllBinary 
+                *  Copyright (c) 2026 AllBinary 
                 *   
                 *  By agreeing to this license you and any business entity you represent are 
                 *  legally bound to the AllBinary Open License Version 1 legal agreement. 
@@ -20,18 +20,6 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
-import { Stack } from '../../../java/util/Stack.js';
-      //not GWT import const Stack = globalThis.java.util.Stack;
-
-      
 import { Vector } from '../../../java/util/Vector.js';
       //not GWT import const Vector = globalThis.java.util.Vector;
 
@@ -54,27 +42,43 @@ import { Vector } from '../../../java/util/Vector.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //NoPlatform
-expect export class StdUtil
+        
+export class VectorUtil
             extends Object
          {
         
 
-    //private static readonly instance: StdUtil
+    private static readonly instance: VectorUtil = new VectorUtil();
 
-    /*actual*/ public static getInstance(): StdUtil
+    public static getInstance(): VectorUtil{
 
-    /*actual*/ public readonly EMPTY_VECTOR: Vector<any>
 
-    /*actual*/ public readonly NULL_TABLE: Hashtable<any, any>
 
-    public createStack(): Stack<any>
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
 
-    public createVector(): Vector<any>
 
-    public createHashtable(): Hashtable<any, any>
+    public getSize(vector: any = {}): number{
 
-    public createHashMap(): HashMap<any, any>
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return (vector as Vector).size();;
+    
+}
+
+
+    public elementAt(vector: any = {}, index: number): any{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return (vector as Vector).elementAt(index);;
+    
+}
+
 
 }
 

@@ -32,6 +32,10 @@ import { Stack } from '../../../java/util/Stack.js';
       //not GWT import const Stack = globalThis.java.util.Stack;
 
       
+import { Vector } from '../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
+
+      
 
 
 
@@ -68,6 +72,8 @@ import { Stack } from '../../../java/util/Stack.js';
 }
 
 
+    /*actual*/ public readonly EMPTY_VECTOR: Vector<any> = this.createVector()!;
+
     /*actual*/ public readonly NULL_TABLE: Hashtable<any, any> = this.createHashtable()!;
 
     /*actual*/ public readonly NULL_MAP: HashMap<any, any> = this.createHashMap()!;
@@ -78,6 +84,16 @@ import { Stack } from '../../../java/util/Stack.js';
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Stack<any>();
+    
+}
+
+
+    public createVector(): Vector<any>{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new Vector<any>();
     
 }
 
