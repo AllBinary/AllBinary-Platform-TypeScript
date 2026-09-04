@@ -52,8 +52,8 @@ import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInf
       //not GWT import const ScreenInfo = globalThis.org.allbinary.graphics.form.ScreenInfo;
 
       
-import { VectorUtil } from '../../../../../org/allbinary/logic/VectorUtil.js';
-      //not GWT import const VectorUtil = globalThis.org.allbinary.logic.VectorUtil;
+//not plain js import { VectorUtil } from '../../../../../org/allbinary/logic/VectorUtil.js';
+      const VectorUtil = globalThis.org.allbinary.logic.VectorUtil;
 
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
