@@ -24,10 +24,6 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
       //not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
 
@@ -50,6 +46,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
       
 //not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -94,7 +94,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: ABHashtable, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
     var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;;
     

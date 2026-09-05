@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
       const Font = globalThis.javax.microedition.lcdui.Font;
 
@@ -68,6 +64,10 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
       
 //not plain js import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
       const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -146,7 +146,7 @@ this.total= total;
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
 
                         if(this.total > 0)
                         

@@ -24,8 +24,12 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
@@ -56,16 +60,12 @@ import { PrimaryThreadPool } from '../../../../org/allbinary/thread/PrimaryThrea
       //not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
 import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
       //not GWT import const NullGameCanvasRunnable = globalThis.org.allbinary.game.displayable.canvas.NullGameCanvasRunnable;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -112,12 +112,12 @@ public constructor (clientInformationFactory: ClientInformationFactory){
             
     isContinue(): boolean{
 
-    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;;
+    var hashtable: ABHashtable = this.getStartStateHashtable()!;;
     
 
                         if(hashtable != 
                                     null
-                                 && hashtable.length > 0)
+                                 && hashtable.size() > 0)
                         
                                     {
                                     
@@ -228,7 +228,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, CREATE_GAME);
 progressCanvas!.start();
     
 
-    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;;
+    var hashtable: ABHashtable = this.getStartStateHashtable()!;;
     
 this.setStartStateHashtable(StdUtil.getInstance()!.NULL_TABLE);
     

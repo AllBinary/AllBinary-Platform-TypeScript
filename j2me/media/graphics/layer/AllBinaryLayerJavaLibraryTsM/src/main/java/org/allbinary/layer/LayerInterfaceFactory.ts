@@ -24,10 +24,6 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -42,6 +38,10 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       
 //not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
@@ -115,7 +115,7 @@ this.list= new BasicArrayListD();
 
                 //@Throws(Exception.constructor)
             
-    public getNexInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getNexInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     

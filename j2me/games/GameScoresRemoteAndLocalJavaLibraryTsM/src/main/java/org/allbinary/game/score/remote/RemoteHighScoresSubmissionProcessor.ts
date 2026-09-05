@@ -24,10 +24,6 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GameInfoData } from '../../../../../org/allbinary/game/GameInfoData.js';
       //not GWT import const GameInfoData = globalThis.org.allbinary.game.GameInfoData;
 
@@ -66,6 +62,10 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
       
 //not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
@@ -130,7 +130,7 @@ public constructor (){
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;;
     
 
-    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;;
+    var hashtable: ABHashtable = abeClientInformation!.toHashtable()!;;
     
 HashtableUtil.getInstance()!.putAll(highScore!.getGameInfo()!.toHashtable(), hashtable);
     
@@ -156,7 +156,7 @@ hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore())
                         
                                     {
                                     
-    var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").get(hashtable, this.noCrypt) as Hashtable<any, any>;;
+    var resultHashtable: ABHashtable = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").get(hashtable, this.noCrypt) as ABHashtable;;
     
 remoteHighScores!.update(resultHashtable);
     

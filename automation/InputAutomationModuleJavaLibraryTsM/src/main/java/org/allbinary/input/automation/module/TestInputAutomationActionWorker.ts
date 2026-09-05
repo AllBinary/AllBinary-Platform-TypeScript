@@ -22,10 +22,6 @@
         
             import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { Set } from '../../../../../java/util/Set.js';
       //not GWT import const Set = globalThis.java.util.Set;
 
@@ -48,6 +44,10 @@ import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinar
       
 import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
       //not GWT import const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -109,7 +109,7 @@ Thread.sleep(2000);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
-    var hashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
+    var hashtable: ABHashtable = InputRobotFactory.getInstance()!.get()!;;
     
 
     var set: Set = hashtable.keys()!;;

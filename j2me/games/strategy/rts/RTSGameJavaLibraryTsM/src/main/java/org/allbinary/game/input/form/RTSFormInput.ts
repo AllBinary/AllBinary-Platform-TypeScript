@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GroupCommonFactory } from '../../../../../org/allbinary/game/identification/GroupCommonFactory.js';
       //not GWT import const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
 
@@ -102,6 +98,10 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbi
       //not GWT import const SimpleGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.SimpleGeographicMapCellPositionFactory;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 
 
 
@@ -130,7 +130,7 @@ export class RTSFormInput
 
     private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     readonly newUnconstructedRTSLayerInterfaceArray: CollidableDestroyableDamageableLayer[] = new Array(7);
 
@@ -440,7 +440,7 @@ this.selectedStickyItemIndex= selectedStickyItemIndex;
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): ABHashtable{
 
 
 

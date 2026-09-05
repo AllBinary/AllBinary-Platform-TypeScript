@@ -24,8 +24,8 @@
         
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
-import { awt } from '../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.java.awt.Rectangle;
 
       
 import { InputEvent } from '../../../../../../java/awt/event/InputEvent.js';
@@ -34,10 +34,6 @@ import { InputEvent } from '../../../../../../java/awt/event/InputEvent.js';
       
 import { KeyEvent } from '../../../../../../java/awt/event/KeyEvent.js';
       //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
-
-      
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -60,10 +56,6 @@ import { TempInputRobotNames } from '../../../../../../org/allbinary/input/autom
       //not GWT import const TempInputRobotNames = globalThis.org.allbinary.input.automation.robot.TempInputRobotNames;
 
       
-//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -82,6 +74,10 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
       
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -110,9 +106,6 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
                 import { MotionRectangles } from './MotionRectangles.js';
 //not GWT import const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
-
-                import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
 
                 
 export class TestInputForMotionRectanglesResultsWorker
@@ -206,7 +199,7 @@ timeHelper!.setStartTimeTNT();
     var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;;
     
 
-    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
+    var robotHashtable: ABHashtable = InputRobotFactory.getInstance()!.get()!;;
     
 
     var inputTypeNameArray: any[] = robotHashtable!.keys().()!;;

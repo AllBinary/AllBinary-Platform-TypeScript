@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
       //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
@@ -48,6 +44,10 @@ import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/tim
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -79,7 +79,7 @@ export class MultiKeyPressesAI extends KeyPressesAI {
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
 

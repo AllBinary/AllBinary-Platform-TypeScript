@@ -20,14 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
-import { Stack } from '../../../../../java/util/Stack.js';
-      //not GWT import const Stack = globalThis.java.util.Stack;
-
-      
 //not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
       const Command = globalThis.javax.microedition.lcdui.Command;
 
@@ -42,6 +34,22 @@ import { Stack } from '../../../../../java/util/Stack.js';
       
 import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';
       //not GWT import const NullCommandListener = globalThis.javax.microedition.lcdui.NullCommandListener;
+
+      
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
@@ -80,16 +88,12 @@ import { MyCommandInterface } from '../../../../../org/allbinary/graphics/displa
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not plain js import { ABStack } from '../../../../../org/allbinary/util/ABStack.js';
+      const ABStack = globalThis.org.allbinary.util.ABStack;
 
       
 
@@ -144,7 +148,7 @@ export class CommandForm extends Form implements MyCommandInterface, MenuListene
 
     private readonly repaintProcessor: Processor = ScreenRepaintProcessorFactory.getInstance()!.create(this)!;
 
-    private commandStack: Stack<any>;
+    private commandStack: ABStack<any>;
 
 public constructor (commandListener: CommandListener, formTitle: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(formTitle);
@@ -152,7 +156,7 @@ public constructor (commandListener: CommandListener, formTitle: string, backgro
 
                             //For kotlin this is before the body of the constructor.
                     
-this.commandStack= new Stack<any>();
+this.commandStack= StdUtil.getInstance()!.createStack();
     
 
         try {
@@ -213,7 +217,7 @@ super.addCommand(command);
 
     public removeAllCommands(){
 
-    var size: number = this.commandStack!.length!;;
+    var size: number = this.commandStack!.size()!;;
     
 
 

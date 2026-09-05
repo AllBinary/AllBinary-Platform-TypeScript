@@ -20,12 +20,22 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-            import { System } from '../../../java/lang/System.js';
-        
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 //not plain js import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
@@ -38,6 +48,10 @@ import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/ca
       
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
       //not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 //not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
@@ -84,18 +98,6 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
 
 
 
@@ -127,6 +129,8 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;
 
     readonly stdUtil: StdUtil = StdUtil.getInstance()!;
+
+    readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 
     private thread: Thread = NullThread.NULL_THREAD;
 
@@ -475,7 +479,10 @@ this.runnableCanvasRefreshHelper!.process();
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(Date.now())!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, this.PROCESS_LOOP_SLEEP);
+
+    var currentTimeMillis: number = this.systemWrapper!.currentTimeMillis()!;;
+    
+this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(currentTimeMillis)!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, this.PROCESS_LOOP_SLEEP);
     
 
         while(this.isPaused() && this.isRunning() && !this.isSingleThread())
@@ -488,7 +495,7 @@ this.processSleep();
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.END_PAUSE)!.appendlong(Date.now())!.toString(), this, this.PROCESS_LOOP_SLEEP);
+this.logUtil!.putF(stringMaker!.append(this.END_PAUSE)!.appendlong(currentTimeMillis)!.toString(), this, this.PROCESS_LOOP_SLEEP);
     
 
 

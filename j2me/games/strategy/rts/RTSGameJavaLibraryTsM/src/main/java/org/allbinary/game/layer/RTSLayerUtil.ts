@@ -24,10 +24,6 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
       //not GWT import const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
 
@@ -78,6 +74,10 @@ import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geo
       
 import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
       //not GWT import const BaseRaceTrackGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BaseRaceTrackGeographicMap;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -425,9 +425,9 @@ list.clear();
 }
 
 
-    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
+    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): ABHashtable{
 
-    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var layerManager: FakeLayerManager = new FakeLayerManager(GameInfo.NONE);;

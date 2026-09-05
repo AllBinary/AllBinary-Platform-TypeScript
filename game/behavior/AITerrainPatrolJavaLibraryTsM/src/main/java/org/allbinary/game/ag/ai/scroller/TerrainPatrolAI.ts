@@ -20,14 +20,6 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { PacePatrolAI } from '../../../../../../org/allbinary/game/ag/ai/scroller/PacePatrolAI.js';
-      //not GWT import const PacePatrolAI = globalThis.org.allbinary.game.ag.ai.scroller.PacePatrolAI;
-
-      
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
       //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
@@ -64,6 +56,10 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
       const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -86,7 +82,10 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { PacePatrolAI } from './PacePatrolAI.js';
+//not GWT import const PacePatrolAI = globalThis.org.allbinary.game.ag.ai.scroller.PacePatrolAI;
+
+                
 export class TerrainPatrolAI extends PacePatrolAI {
         
 
@@ -96,7 +95,7 @@ export class TerrainPatrolAI extends PacePatrolAI {
 
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(this.DOWN);
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
 

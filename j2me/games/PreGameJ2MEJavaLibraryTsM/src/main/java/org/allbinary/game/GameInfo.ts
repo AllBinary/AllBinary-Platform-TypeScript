@@ -26,10 +26,6 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -60,6 +56,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
       
 //not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -259,9 +259,9 @@ this.logUtil!.putF(new StringMaker().append(this.NEXT)!.append(this.NEW_LEVEL)!.
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): ABHashtable{
 
-    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString());
     

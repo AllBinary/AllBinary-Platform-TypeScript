@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
@@ -42,6 +38,10 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
       
 //not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -75,9 +75,9 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         
 
-    private static readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private static readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
-    public static getHashtable(): Hashtable<any, any>{
+    public static getHashtable(): ABHashtable{
 
 
 

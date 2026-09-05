@@ -22,8 +22,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from '../../../../java/lang/System.js';
-        
 import { InputStream } from '../../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
@@ -34,6 +32,10 @@ import { InputStream } from '../../../../java/io/InputStream.js';
       
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
       //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -132,7 +134,7 @@ new Sounds(soundsFactoryInterface).stopAll();
     
 new Sounds(soundsFactoryInterface).closeAll();
     
-System.gc();
+ABSystemWrapper.getInstance()!.gc();
     
 }
 

@@ -24,8 +24,12 @@ import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
@@ -68,16 +72,12 @@ import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/
       const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 
       
-import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
 //not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -228,7 +228,7 @@ this.init();
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): ABHashtable{
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
@@ -236,7 +236,7 @@ this.init();
     var genericOperatingSystem: GenericOperatingSystem = this.getOperatingSystemInterface()!;;
     
 
-    var clientInfoHashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var clientInfoHashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
     

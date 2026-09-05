@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
       const TextField = globalThis.javax.microedition.lcdui.TextField;
 
@@ -34,6 +30,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -60,7 +60,7 @@ export class GameConfigurationTextInput
          {
         
 
-    private static hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private static hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     public static SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
 
@@ -78,7 +78,7 @@ gameConfigurationTextInput!.setText(textField!.getString());
 }
 
 
-    public static getHashtable(): Hashtable<any, any>{
+    public static getHashtable(): ABHashtable{
 
 
 

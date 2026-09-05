@@ -28,8 +28,16 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { GameConfigurationPersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js';
@@ -68,20 +76,12 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -229,7 +229,7 @@ keyValuePersistance!.loadAll(abeClientInformation);
                         
                                     {
                                     
-    var hashtable: Hashtable<any, any> = keyValuePersistance!.get(0)!;;
+    var hashtable: ABHashtable = keyValuePersistance!.get(0)!;;
     
 
     var anyType: any = this.SCALE.getName();;

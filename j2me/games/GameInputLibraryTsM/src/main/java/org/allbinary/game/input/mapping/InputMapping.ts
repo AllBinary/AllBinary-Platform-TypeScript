@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
@@ -78,6 +74,10 @@ import { Input } from '../../../../../org/allbinary/game/input/Input.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 
 
 
@@ -109,7 +109,7 @@ export class InputMapping
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     private readonly mappedList: BasicArrayList = new BasicArrayListD();
 
@@ -124,7 +124,7 @@ protected constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.length;;
+                        return this.hashtable.size();;
     
 }
 
@@ -291,7 +291,7 @@ this.hashtable.put(id, list);
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): ABHashtable{
 
 
 

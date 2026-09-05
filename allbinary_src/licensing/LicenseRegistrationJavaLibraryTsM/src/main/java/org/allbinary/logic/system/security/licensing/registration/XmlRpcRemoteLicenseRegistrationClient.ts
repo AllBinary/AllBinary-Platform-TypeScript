@@ -24,8 +24,12 @@ import { IOException } from '../../../../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { XmlRpcClient } from '../../../../../../../org/apache/xmlrpc/XmlRpcClient.js';
+      //not GWT import const XmlRpcClient = globalThis.org.apache.xmlrpc.XmlRpcClient;
+
+      
+import { XmlRpcException } from '../../../../../../../org/apache/xmlrpc/XmlRpcException.js';
+      //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -40,20 +44,8 @@ import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jc
       //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
-import { XmlRpcClient } from '../../../../../../../org/apache/xmlrpc/XmlRpcClient.js';
-      //not GWT import const XmlRpcClient = globalThis.org.apache.xmlrpc.XmlRpcClient;
-
-      
-import { XmlRpcException } from '../../../../../../../org/apache/xmlrpc/XmlRpcException.js';
-      //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
 
       
 //not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -74,6 +66,10 @@ import { XmlRpcAbeClient } from '../../../../../../../org/allbinary/logic/commun
       
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
       //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -155,7 +151,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;;
+    var hashtable: ABHashtable = anyType as ABHashtable;;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     

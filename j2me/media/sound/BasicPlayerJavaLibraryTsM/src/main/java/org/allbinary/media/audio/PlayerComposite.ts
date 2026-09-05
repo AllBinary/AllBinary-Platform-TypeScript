@@ -24,40 +24,41 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not plain js import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+//not plain js import { Control } 
+const Control = globalThis.javax.microedition.media.Control;
 
       
-//not plain js import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-      const Controllable = globalThis.javax.microedition.media.Controllable;
+//not plain js import { Controllable } 
+const Controllable = globalThis.javax.microedition.media.Controllable;
 
       
-//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player } 
+const Player = globalThis.javax.microedition.media.Player;
+ const PlayerI = globalThis.javax.microedition.media.Player;
 
       
-//not plain js import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } 
+const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+//not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+//not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 
@@ -79,7 +80,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Controllable2 } from './Controllable2.js';
-//not GWT import const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
+//not GWT import - same folder const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
 
                 //BasicPlayer
 export class PlayerComposite

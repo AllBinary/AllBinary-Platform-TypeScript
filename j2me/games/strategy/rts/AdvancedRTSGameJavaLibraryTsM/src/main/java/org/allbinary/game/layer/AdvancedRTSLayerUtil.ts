@@ -19,10 +19,6 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { WorkWaypoint } from '../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';
       //not GWT import const WorkWaypoint = globalThis.org.allbinary.game.layer.waypoint.WorkWaypoint;
 
@@ -33,6 +29,10 @@ import { WorkWaypoint } from '../../../../org/allbinary/game/layer/waypoint/Work
       
 import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
       //not GWT import const BaseRaceTrackGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BaseRaceTrackGeographicMap;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -74,9 +74,9 @@ export class AdvancedRTSLayerUtil
 }
 
 
-    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
+    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): ABHashtable{
 
-    var hashtable: Hashtable<any, any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;;
+    var hashtable: ABHashtable = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;;
     
 hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getAt(50));
     

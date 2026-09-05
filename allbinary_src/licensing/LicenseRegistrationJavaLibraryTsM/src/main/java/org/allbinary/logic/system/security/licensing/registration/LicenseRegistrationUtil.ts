@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
@@ -44,6 +40,10 @@ import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/Sp
       
 //not plain js import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -85,12 +85,15 @@ export class LicenseRegistrationUtil
     
 PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS);
     
-RegistrationConfiguration.getInstance()!.setRegistrationCode(registrationId);
+
+    var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;
     
-RegistrationConfiguration.getInstance()!.write();
+registrationConfiguration!.setRegistrationCode(registrationId);
+    
+registrationConfiguration!.write();
     
 
-    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;;
+    var hashtable: ABHashtable = abeClientInformation!.toHashtable()!;;
     
 hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);
     

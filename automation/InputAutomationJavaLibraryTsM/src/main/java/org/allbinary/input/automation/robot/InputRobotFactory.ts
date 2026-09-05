@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+import { GraphicsDevice } from '../../../../../java/awt/GraphicsDevice.js';
+      //not GWT import const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
+
+      
+import { GraphicsEnvironment } from '../../../../../java/awt/GraphicsEnvironment.js';
+      //not GWT import const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
 
       
 import { Collection } from '../../../../../java/util/Collection.js';
       //not GWT import const Collection = globalThis.java.util.Collection;
-
-      
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 import { Iterator } from '../../../../../java/util/Iterator.js';
@@ -78,6 +78,10 @@ import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logi
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 
 
 
@@ -96,13 +100,7 @@ import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logi
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GraphicsEnvironment } from './GraphicsEnvironment.js';
-//not GWT import const GraphicsEnvironment = globalThis.org.allbinary.input.automation.robot.GraphicsEnvironment;
-
-                import { GraphicsDevice } from './GraphicsDevice.js';
-//not GWT import const GraphicsDevice = globalThis.org.allbinary.input.automation.robot.GraphicsDevice;
-
-                import { InputRobotInterface } from './InputRobotInterface.js';
+        import { InputRobotInterface } from './InputRobotInterface.js';
 //not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
                 import { InputRobot } from './InputRobot.js';
@@ -176,7 +174,7 @@ securedNativeLibraryInterface!.load();
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     private helpSetListenerInterface: HelpSetListener;
 
@@ -209,7 +207,7 @@ this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
     
 }
 
-this.logUtil!.putF("Number Of Robots: " +this.hashtable.length, this, "getRobots");
+this.logUtil!.putF("Number Of Robots: " +this.hashtable.size(), this, "getRobots");
     
 
                 //: 
@@ -363,7 +361,7 @@ securedNativeLibraryInterface!.unload();
 
                 //@Throws(Exception.constructor)
             
-    public get(): Hashtable<any, any>{
+    public get(): ABHashtable{
 
 
 

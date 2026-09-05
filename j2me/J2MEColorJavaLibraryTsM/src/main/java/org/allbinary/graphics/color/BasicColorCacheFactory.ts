@@ -22,12 +22,12 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -72,7 +72,7 @@ export class BasicColorCacheFactory
 }
 
 
-    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 

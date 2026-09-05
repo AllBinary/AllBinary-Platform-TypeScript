@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
@@ -36,6 +32,10 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -209,9 +209,9 @@ break;
 }
 
 
-    public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
+    public getTokens(stringVector: BasicArrayList): ABHashtable{
 
-    var tokenHashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var tokenHashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var string: string = StringUtil.getInstance()!.EMPTY_STRING;;

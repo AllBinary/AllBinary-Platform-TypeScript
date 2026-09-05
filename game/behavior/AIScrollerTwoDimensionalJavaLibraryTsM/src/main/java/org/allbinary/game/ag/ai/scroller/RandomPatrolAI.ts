@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
       const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -42,6 +38,10 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
       
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
       //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -71,7 +71,7 @@ export class RandomPatrolAI extends BasePatrolAI {
 
     private changedDirection: boolean = true;
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
 

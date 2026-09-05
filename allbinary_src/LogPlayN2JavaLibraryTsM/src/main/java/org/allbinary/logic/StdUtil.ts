@@ -20,10 +20,6 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
-
-      
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
@@ -36,20 +32,20 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
       //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-import { ABHashMap } from '../../../org/allbinary/util/ABHashMap.js';
-      //not GWT import const ABHashMap = globalThis.org.allbinary.util.ABHashMap;
+//not plain js import { ABHashMap } from '../../../org/allbinary/util/ABHashMap.js';
+      const ABHashMap = globalThis.org.allbinary.util.ABHashMap;
 
       
-import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
-      //not GWT import const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-import { ABStack } from '../../../org/allbinary/util/ABStack.js';
-      //not GWT import const ABStack = globalThis.org.allbinary.util.ABStack;
+//not plain js import { ABStack } from '../../../org/allbinary/util/ABStack.js';
+      const ABStack = globalThis.org.allbinary.util.ABStack;
 
       
-import { ABVector } from '../../../org/allbinary/util/ABVector.js';
-      //not GWT import const ABVector = globalThis.org.allbinary.util.ABVector;
+//not plain js import { ABVector } from '../../../org/allbinary/util/ABVector.js';
+      const ABVector = globalThis.org.allbinary.util.ABVector;
 
       
 

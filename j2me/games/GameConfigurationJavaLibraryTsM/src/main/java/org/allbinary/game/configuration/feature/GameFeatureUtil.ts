@@ -22,20 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
       const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+
+      
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
@@ -54,6 +58,10 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -64,14 +72,6 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       
 //not plain js import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -403,7 +403,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
+    var hashtable: ABHashtable = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;

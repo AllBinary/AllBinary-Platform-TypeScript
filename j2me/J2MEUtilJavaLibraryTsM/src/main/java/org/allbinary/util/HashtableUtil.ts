@@ -24,10 +24,6 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 
 
 
@@ -48,6 +44,9 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js import { EnumerationUtil } from './EnumerationUtil.js';
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
+                //not plain js import { ABHashtable } from './ABHashtable.js';
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
                 //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
@@ -75,7 +74,7 @@ export class HashtableUtil
 
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
-    public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
+    public putAll(fromHashtable: ABHashtable, hashtable: ABHashtable){
 
     var enumeration: Enumeration<any> = fromHashtable!.keys()!;;
     
@@ -112,9 +111,9 @@ valueCanBeNull= hashtable.get(keyCanBeNull);
 }
 
 
-    public getKeysAsArray(hashtable: Hashtable<any, any>): any[]{
+    public getKeysAsArray(hashtable: ABHashtable): any[]{
 
-    var objectArray: any[] = new Array(hashtable.length);;
+    var objectArray: any[] = new Array(hashtable.size());;
     
 
     var index: number = 0;;
@@ -138,9 +137,9 @@ objectArray[index++]= this.enumerationUtil!.nextElement(enumeration)!;
 }
 
 
-    public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
+    public getKeysAsList(hashtable: ABHashtable): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListS(hashtable.length);;
+    var list: BasicArrayList = new BasicArrayListS(hashtable.size());;
     
 
     var enumeration: Enumeration<any> = hashtable.keys()!;;

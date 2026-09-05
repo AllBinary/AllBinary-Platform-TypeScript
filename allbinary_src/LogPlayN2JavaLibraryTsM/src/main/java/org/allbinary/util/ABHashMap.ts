@@ -22,6 +22,10 @@ import { HashMap } from '../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
+import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 
 
 

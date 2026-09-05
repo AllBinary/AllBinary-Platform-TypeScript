@@ -20,12 +20,16 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-import { Stack } from '../../../java/util/Stack.js';
-      //not GWT import const Stack = globalThis.java.util.Stack;
+//not plain js import { ABStack } from '../../../org/allbinary/util/ABStack.js';
+      const ABStack = globalThis.org.allbinary.util.ABStack;
+
+      
+//not plain js import { ABVector } from '../../../org/allbinary/util/ABVector.js';
+      const ABVector = globalThis.org.allbinary.util.ABVector;
 
       
 
@@ -64,24 +68,36 @@ import { Stack } from '../../../java/util/Stack.js';
 }
 
 
-    /*actual*/ public readonly NULL_TABLE: Hashtable<any, any> = this.createHashtable()!;
+    /*actual*/ public readonly EMPTY_VECTOR: ABVector<any> = this.createVector()!;
 
-    public createStack(): Stack<any>{
+    /*actual*/ public readonly NULL_TABLE: ABHashtable = this.createHashtable()!;
+
+    public createStack(): ABStack<any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Stack<any>();
+                        return new ABStack<any>();
     
 }
 
 
-    public createHashtable(): Hashtable<any, any>{
+    public createVector(): ABVector<any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Hashtable<any, any>();
+                        return new ABVector<any>();
+    
+}
+
+
+    public createHashtable(): ABHashtable<any, any>{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ABHashtable<any, any>();
     
 }
 

@@ -20,12 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from '../../../../../java/lang/System.js';
-        
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
       const Command = globalThis.javax.microedition.lcdui.Command;
 
@@ -36,6 +30,22 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       
 //not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
+      
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
@@ -142,16 +152,8 @@ import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/Seconda
       //not GWT import const SecondaryThreadPool = globalThis.org.allbinary.thread.SecondaryThreadPool;
 
       
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not plain js import { ABSystemWrapper } from '../../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 
@@ -288,7 +290,13 @@ highScoresCanvas!.hasPainted= false;
 
     var stringMaker: StringMaker = new StringMaker();;
     
-logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
+
+    var systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;;
+    
+
+    var currentTimeMillis: number = systemWrapper!.currentTimeMillis()!;;
+    
+logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(currentTimeMillis)!.toString(), this, commonStrings!.RUN);
     
 highScoresCanvas!.repaintBehavior!.onChangeRepaint(highScoresCanvas);
     
@@ -306,7 +314,7 @@ highScoresCanvas!.repaintBehavior!.onChangeRepaint(highScoresCanvas);
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
+logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(currentTimeMillis)!.toString(), this, commonStrings!.RUN);
     
 highScoresCanvas!.executeUpdate();
     

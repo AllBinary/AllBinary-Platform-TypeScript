@@ -24,10 +24,6 @@
         
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -86,6 +82,10 @@ import { UsbInterface } from '../../../../../../org/allbinary/logic/system/hardw
       
 import { VideoInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/VideoInterface.js';
       //not GWT import const VideoInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.VideoInterface;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -246,7 +246,7 @@ public constructor (){
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable{
 
 
 

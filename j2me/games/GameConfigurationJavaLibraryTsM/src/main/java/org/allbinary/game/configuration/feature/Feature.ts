@@ -24,14 +24,6 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
-import { ChangedGameFeatureListener } from '../../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
-      //not GWT import const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
-
-      
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
       //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
@@ -40,8 +32,16 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { ChangedGameFeatureListener } from '../../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+      //not GWT import const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
+
+      
 //not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -68,7 +68,7 @@ export class Feature
          {
         
 
-    private static hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private static hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     public static getInstance(name: string): Feature{
 

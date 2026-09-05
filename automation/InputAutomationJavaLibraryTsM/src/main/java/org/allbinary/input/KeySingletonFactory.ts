@@ -28,10 +28,6 @@ import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
       //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -42,6 +38,10 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       
 //not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -68,7 +68,7 @@ export class KeySingletonFactory
          {
         
 
-    private static keyStringHashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private static keyStringHashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     private static keyArray: Integer[] = 
                                                         [
@@ -116,7 +116,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
                     return 0;
                 }
             
-    public static getHashtable(): Hashtable<any, any>{
+    public static getHashtable(): ABHashtable{
 
 
 

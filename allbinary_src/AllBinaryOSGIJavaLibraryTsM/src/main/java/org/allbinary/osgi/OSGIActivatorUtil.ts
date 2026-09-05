@@ -22,8 +22,12 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
+      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
@@ -69,14 +73,14 @@ export class OSGIActivatorUtil
                 //@Throws(Exception.constructor)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string){
-OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Hashtable<any, any>());
+OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, StdUtil.getInstance()!.createHashtable());
     
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
+    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: ABHashtable){
 
     var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;;
     

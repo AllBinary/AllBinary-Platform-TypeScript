@@ -22,12 +22,22 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-            import { System } from '../../../java/lang/System.js';
-        
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { InputStream } from '../../../java/io/InputStream.js';
@@ -130,16 +140,8 @@ import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not plain js import { ABSystemWrapper } from '../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 
@@ -182,6 +184,8 @@ export class ImageCache extends ImageCacheBase {
     public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 
     private readonly concurrentImageLoadingProcessor: BaseImageLoadingProcessor = new ConcurrentImageLoadingProcessor(this);
 
@@ -847,7 +851,7 @@ image.setName(key);
                         if(this.volume > 32000)
                         
                                     {
-                                    System.gc();
+                                    this.systemWrapper!.gc();
     
 this.volume= 0;
     
@@ -919,9 +923,9 @@ this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.
     
 this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, this.commonStrings!.GET);
     
-System.gc();
+this.systemWrapper!.gc();
     
-System.gc();
+this.systemWrapper!.gc();
     
 this.logUtil!.putF(Memory.getInfo(), this, this.commonStrings!.GET);
     

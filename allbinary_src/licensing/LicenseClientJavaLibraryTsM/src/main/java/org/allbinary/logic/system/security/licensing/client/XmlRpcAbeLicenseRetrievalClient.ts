@@ -24,10 +24,6 @@ import { IOException } from '../../../../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -38,10 +34,6 @@ import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
       
 import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
       //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
-
-      
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -74,6 +66,10 @@ import { AbeLicenseInterface } from '../../../../../../../org/allbinary/logic/sy
       
 //not plain js import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 import { XmlRpcClient } from '../../../../../../../org/apache/xmlrpc/XmlRpcClient.js';
@@ -151,7 +147,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = this.getClientInfo()!.toHashtable()!;;
+    var hashtable: ABHashtable = this.getClientInfo()!.toHashtable()!;;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     
@@ -163,7 +159,7 @@ param.add(hashtable);
 this.logUtil!.putF(RESULT +result.toString(), this, this.commonStrings!.GET);
     
 
-    var resultHashtable: Hashtable<any, any> = result as Hashtable<any, any>;;
+    var resultHashtable: ABHashtable = result as ABHashtable;;
     
 
                         if(!AbeClientLicense.hasRequiredKeys(resultHashtable))

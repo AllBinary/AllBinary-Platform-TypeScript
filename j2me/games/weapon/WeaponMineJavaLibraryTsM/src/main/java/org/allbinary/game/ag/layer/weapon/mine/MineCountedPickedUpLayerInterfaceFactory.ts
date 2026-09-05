@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
       //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.FeaturedAnimationInterfaceFactoryInterfaceFactory;
 
@@ -64,6 +60,10 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
       
 //not plain js import { SmallIntegerSingletonFactory } from '../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -141,7 +141,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
 
     var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0)) as AllBinaryLayer;;
     

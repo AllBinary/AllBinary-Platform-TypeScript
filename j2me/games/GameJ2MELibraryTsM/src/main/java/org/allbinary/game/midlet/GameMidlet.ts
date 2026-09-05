@@ -22,16 +22,8 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { Enumeration } from '../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
-
-      
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 //not plain js import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
@@ -56,6 +48,22 @@ import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
       
 //not plain js import { MIDletStateChangeException } from '../../../../javax/microedition/midlet/MIDletStateChangeException.js';
       const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
+
+      
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
@@ -378,20 +386,12 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
       const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
 //not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -1725,7 +1725,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.SAVE);
     
 
-    var hashtable: Hashtable<any, any> = this.getCurrentStateHashtable()!;;
+    var hashtable: ABHashtable = this.getCurrentStateHashtable()!;;
     
 GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtable);
     
@@ -1734,18 +1734,18 @@ GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtabl
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): ABHashtable{
 this.logUtil!.putF(this.commonStrings!.START, this, "getCurrentStateHashtable");
     
 
-    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 
                         if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
                                     
-    var currentHashtable: Hashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;;
+    var currentHashtable: ABHashtable = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;;
     
 
     var enumeration: Enumeration<any> = currentHashtable!.keys()!;;

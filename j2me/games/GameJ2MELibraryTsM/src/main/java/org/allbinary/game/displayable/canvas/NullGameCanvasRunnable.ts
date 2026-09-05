@@ -24,10 +24,6 @@
         
             import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
       const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
@@ -54,6 +50,10 @@ import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameSt
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -163,7 +163,7 @@ export class NullGameCanvasRunnable
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): ABHashtable{
 
 
 
@@ -175,7 +175,7 @@ export class NullGameCanvasRunnable
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): Hashtable<any, any>{
+    public getLoadStateHashtable(): ABHashtable{
 
 
 
@@ -187,7 +187,7 @@ export class NullGameCanvasRunnable
 
                 //@Throws(Exception.constructor)
             
-    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
+    public setLoadStateHashtable(hashtable: ABHashtable){
 }
 
 

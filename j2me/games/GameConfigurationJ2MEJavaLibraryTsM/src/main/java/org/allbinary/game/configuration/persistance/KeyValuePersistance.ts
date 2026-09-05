@@ -24,6 +24,14 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
 import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
       //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
@@ -38,10 +46,6 @@ import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
       
 import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
       //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
-
-      
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 //not plain js import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
@@ -80,16 +84,12 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -159,7 +159,7 @@ this.loadAllSize(abeClientInformation, 1);
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: Hashtable<string, string>;;
+    var hashtable: ABHashtable<string, string>;;
     
 
     var name: string;;
@@ -204,7 +204,7 @@ recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 inputStream= new DataInputStream(byteArrayInputStream);
     
-hashtable= new Hashtable<string, string>();
+hashtable= new ABHashtable<string, string>();
     
 
 
@@ -265,7 +265,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Exception.constructor)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable){
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
@@ -355,9 +355,9 @@ recordStore!.closeRecordStore();
 }
 
 
-    public get(index: number): Hashtable<any, any>{
+    public get(index: number): ABHashtable{
 
-    var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;;
+    var hashtable: ABHashtable = this.valueList!.objectArray[index]! as ABHashtable;;
     
 
 

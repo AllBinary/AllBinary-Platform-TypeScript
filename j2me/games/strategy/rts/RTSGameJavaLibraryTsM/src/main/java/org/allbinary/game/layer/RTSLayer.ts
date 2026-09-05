@@ -22,10 +22,6 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
@@ -192,6 +188,10 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
       
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
       //not GWT import const GeographicMapCompositeInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -370,7 +370,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     private readonly rootName: string;
 
-    readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     private readonly BUILD_VALUE: number = 63;
 

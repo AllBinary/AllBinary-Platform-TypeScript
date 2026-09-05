@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { ABVector } from '../../../org/allbinary/util/ABVector.js';
-      //not GWT import const ABVector = globalThis.org.allbinary.util.ABVector;
+//not plain js import { ABVector } from '../../../org/allbinary/util/ABVector.js';
+      const ABVector = globalThis.org.allbinary.util.ABVector;
 
       
 

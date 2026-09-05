@@ -2,6 +2,7 @@ node_modules
 *.xml
 !pom.xml
 *.java
+.github/*.md
 *.class
 *.iml
 .idea

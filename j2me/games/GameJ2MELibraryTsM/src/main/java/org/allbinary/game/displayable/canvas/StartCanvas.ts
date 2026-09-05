@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
       const Command = globalThis.javax.microedition.lcdui.Command;
 
@@ -350,6 +346,10 @@ import { EarlySoundsFactory } from '../../../../../org/allbinary/media/audio/Ear
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -920,7 +920,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonStrings!.NOT_IMPLEMENTED)
 
                 //@Throws(Exception.constructor)
             
-    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
+    public setLoadStateHashtable(hashtable: ABHashtable){
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
     
 }
@@ -928,7 +928,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): Hashtable<any, any>{
+    public getLoadStateHashtable(): ABHashtable{
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
     
 
@@ -942,7 +942,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): ABHashtable{
 this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
     
 

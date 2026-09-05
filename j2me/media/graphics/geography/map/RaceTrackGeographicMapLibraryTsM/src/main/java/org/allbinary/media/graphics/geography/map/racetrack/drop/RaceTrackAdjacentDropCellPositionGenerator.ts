@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GroupCommonFactory } from '../../../../../../../../org/allbinary/game/identification/GroupCommonFactory.js';
       //not GWT import const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
 
@@ -114,6 +110,10 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../../../org/allb
       
 import { RaceTrackGeographicMapCellTypeFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellTypeFactory.js';
       //not GWT import const RaceTrackGeographicMapCellTypeFactory = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellTypeFactory;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -232,7 +232,7 @@ break;
 }
 
 
-    private readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
                 //@Throws(Exception.constructor)
             

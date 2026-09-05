@@ -26,22 +26,6 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Hashtable } from '../../../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
-//not plain js import { BasicArrayList } from '../../../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
-//not plain js import { BasicArrayListD } from '../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
-//not plain js import { StdUtil } from '../../../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -60,6 +44,10 @@ import { Tokenizer } from '../../../../../../../../../org/allbinary/logic/string
       
 //not plain js import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -125,7 +113,7 @@ public constructor (result: string){
     var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);;
     
 
-    var hashtable: Hashtable<any, any> = tokenizer2.getTokens(tokens)!;;
+    var hashtable: ABHashtable = tokenizer2.getTokens(tokens)!;;
     
 this.keyValuePairs!.putAll(hashtable);
     

@@ -30,10 +30,6 @@ import { Enumeration } from '../../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GamePersistanceStrings } from '../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
       //not GWT import const GamePersistanceStrings = globalThis.org.allbinary.game.configuration.persistance.GamePersistanceStrings;
 
@@ -100,6 +96,10 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
       
 import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -278,7 +278,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
     var size: number = list.size()!;;
     
 
-    var hashtable: Hashtable<any, any>;;
+    var hashtable: ABHashtable;;
     
 
     var enumeration: Enumeration<any>;;
@@ -296,7 +296,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
                         for (
     var index: number = 0;index < size; index++)
         {
-hashtable= list.objectArray[index]! as Hashtable<any, any>;
+hashtable= list.objectArray[index]! as ABHashtable;
     
 enumeration= hashtable.keys();
     

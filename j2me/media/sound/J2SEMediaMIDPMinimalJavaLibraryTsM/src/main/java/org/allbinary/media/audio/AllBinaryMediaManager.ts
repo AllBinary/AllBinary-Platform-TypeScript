@@ -22,8 +22,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from '../../../../java/lang/System.js';
-        
 import { BufferedInputStream } from '../../../../java/io/BufferedInputStream.js';
       //not GWT import const BufferedInputStream = globalThis.java.io.BufferedInputStream;
 
@@ -70,6 +68,10 @@ import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration
       
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
       //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 //not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
@@ -171,7 +173,7 @@ new Sounds(soundsFactoryInterface).stopAll();
     
 new Sounds(soundsFactoryInterface).closeAll();
     
-System.gc();
+ABSystemWrapper.getInstance()!.gc();
     
 }
 

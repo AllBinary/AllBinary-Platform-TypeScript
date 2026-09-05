@@ -22,16 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { GamePersistanceStrings } from '../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
@@ -82,24 +90,16 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 //not plain js import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
       const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -278,7 +278,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
     var size: number = list.size()!;;
     
 
-    var hashtable: Hashtable<any, any>;;
+    var hashtable: ABHashtable;;
     
 
     var enumeration: Enumeration<any>;;
@@ -296,7 +296,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
                         for (
     var index: number = 0;index < size; index++)
         {
-hashtable= list.objectArray[index]! as Hashtable<any, any>;
+hashtable= list.objectArray[index]! as ABHashtable;
     
 enumeration= hashtable.keys();
     

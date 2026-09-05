@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
       //not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -75,7 +75,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
 
-    var hashtable: Hashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;;
+    var hashtable: ABHashtable = GeographicMapCellPositionFactory.getHashtable()!;;
     
 
     var cellPositionKey: string = CellPosition.toStringColRow(i_column, i_row)!;;

@@ -26,8 +26,12 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 //not plain js import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
@@ -114,16 +118,12 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
 //not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -207,7 +207,7 @@ this.save(abeClientInformation);
     var key: string = OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT;;
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
+    var hashtable: ABHashtable = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
                         if(hashtable != 
@@ -247,10 +247,10 @@ this.save(abeClientInformation);
 
     addTextFields(){
 
-    var hashtable: Hashtable<any, any> = GameConfigurationTextInput.getHashtable()!;;
+    var hashtable: ABHashtable = GameConfigurationTextInput.getHashtable()!;;
     
 
-    var size: number = hashtable.length!;;
+    var size: number = hashtable.size()!;;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
@@ -386,7 +386,7 @@ item= this.get(index);
 GameConfigurationUtil.getInstance()!.updateCompetitionValue();
     
 
-    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;;

@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
       const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -56,6 +52,10 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
       
 //not plain js import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -98,7 +98,7 @@ export class BasePatrolAI extends BasicAI {
 
     keyDirection: number = Canvas.RIGHT;
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
 

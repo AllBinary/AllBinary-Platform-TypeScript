@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
       const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
@@ -60,6 +56,10 @@ import { CommandForm } from '../../../../../org/allbinary/graphics/displayable/s
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -117,7 +117,7 @@ export class GameFeatureFormUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public getChoiceGroup(hashtable: Hashtable<any, any>, name: string, option: number): ChoiceGroup{
+    public getChoiceGroup(hashtable: ABHashtable, name: string, option: number): ChoiceGroup{
 
     var stringMaker: StringMaker = new StringMaker();;
     
@@ -175,7 +175,7 @@ choiceGroup!.append(gameFeature!.toString(), NullImage.NULL_IMAGE);
 }
 
 
-    public addChoiceGroup(form: CommandForm, hashtable: Hashtable<any, any>, option: number){
+    public addChoiceGroup(form: CommandForm, hashtable: ABHashtable, option: number){
 
     var stringMaker: StringMaker = new StringMaker();;
     
@@ -186,7 +186,7 @@ choiceGroup!.append(gameFeature!.toString(), NullImage.NULL_IMAGE);
     var ADD_CHOICE_GROUP: string = "addChoiceGroup";;
     
 
-    var size: number = hashtable.length!;;
+    var size: number = hashtable.size()!;;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;

@@ -28,10 +28,6 @@ import { InputStream } from '../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
       const Image = globalThis.javax.microedition.lcdui.Image;
 
@@ -58,6 +54,10 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       
 //not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
@@ -99,7 +99,7 @@ export class ImageCacheBase
 
     readonly imageFactory: ImageFactory = ImageFactory.getInstance()!;
 
-    readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     readonly SIZE: number = 128;
 
@@ -362,7 +362,7 @@ stringBuffer!.appendint(totalAvailable);
 }
 
 
-    public getHashtableP(): Hashtable<any, any>{
+    public getHashtableP(): ABHashtable{
 
 
 

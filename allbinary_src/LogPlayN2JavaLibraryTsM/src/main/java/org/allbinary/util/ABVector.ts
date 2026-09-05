@@ -22,6 +22,10 @@ import { Vector } from '../../../java/util/Vector.js';
       //not GWT import const Vector = globalThis.java.util.Vector;
 
       
+import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 
 
 

@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
@@ -38,6 +34,10 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       
 //not plain js import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
       const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -66,7 +66,7 @@ export class LayerUtil
 
     private static readonly HASHTABLE: string = "Hashtable: ";
 
-    public static toString(hashtable: Hashtable<any, any>, x: number, y: number, z: number): string{
+    public static toString(hashtable: ABHashtable, x: number, y: number, z: number): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     

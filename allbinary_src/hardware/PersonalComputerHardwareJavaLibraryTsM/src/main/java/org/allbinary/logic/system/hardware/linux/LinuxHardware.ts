@@ -30,14 +30,6 @@ import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js'
       //not GWT import const LineNumberReader = globalThis.java.io.LineNumberReader;
 
       
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
@@ -136,6 +128,10 @@ import { Cpu } from '../../../../../../org/allbinary/logic/system/hardware/compo
       
 //not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -666,7 +662,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable{
 
 
 

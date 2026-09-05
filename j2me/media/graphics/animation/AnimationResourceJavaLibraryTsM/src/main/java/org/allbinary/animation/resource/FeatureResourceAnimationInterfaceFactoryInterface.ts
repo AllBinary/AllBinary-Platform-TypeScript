@@ -22,8 +22,8 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
@@ -34,8 +34,8 @@ import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/gam
       //not GWT import const RectangleResourceFactoryInterface = globalThis.org.allbinary.game.resource.RectangleResourceFactoryInterface;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -63,7 +63,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 
-    getHashtable(): Hashtable<any, any>
+    getHashtable(): ABHashtable
 
 }
 

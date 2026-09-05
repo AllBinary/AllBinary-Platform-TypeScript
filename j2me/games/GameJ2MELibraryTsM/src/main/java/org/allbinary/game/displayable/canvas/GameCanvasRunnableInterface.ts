@@ -24,10 +24,6 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
       const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
@@ -50,6 +46,10 @@ import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableI
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
       //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -100,15 +100,15 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
 
                 //@Throws(Exception.constructor)
             
-    getCurrentStateHashtable(): Hashtable<any, any>
+    getCurrentStateHashtable(): ABHashtable
 
                 //@Throws(Exception.constructor)
             
-    getLoadStateHashtable(): Hashtable<any, any>
+    getLoadStateHashtable(): ABHashtable
 
                 //@Throws(Exception.constructor)
             
-    setLoadStateHashtable(hashtable: Hashtable<any, any>)
+    setLoadStateHashtable(hashtable: ABHashtable)
 
     getType(): number
 

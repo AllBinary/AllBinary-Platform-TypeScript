@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
       const Command = globalThis.javax.microedition.lcdui.Command;
 
@@ -40,6 +36,10 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       
 //not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -85,7 +85,7 @@ export class CommandUriAction
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     public add(command: Command, url: string){
 this.hashtable.put(command, url);

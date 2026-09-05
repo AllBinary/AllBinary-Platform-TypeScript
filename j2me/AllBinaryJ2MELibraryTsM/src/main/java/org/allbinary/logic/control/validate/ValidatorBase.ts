@@ -24,10 +24,6 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -54,6 +50,10 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
       
 import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -121,7 +121,7 @@ public constructor (){
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): ABHashtable{
 
 
 

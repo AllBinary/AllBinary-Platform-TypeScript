@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
       //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
@@ -44,6 +40,10 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
       
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
       //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -72,13 +72,13 @@ export class KeyPressesAI extends BasicAI {
 
     keys: Integer[];
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
-this.keys= new Array(hashtable.length);
+this.keys= new Array(hashtable.size());
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;

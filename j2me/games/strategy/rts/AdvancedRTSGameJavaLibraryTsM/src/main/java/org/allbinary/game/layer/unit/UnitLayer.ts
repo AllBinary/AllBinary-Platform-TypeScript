@@ -24,10 +24,6 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
       const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -452,6 +448,10 @@ import { RaceTrackGeographicMap } from '../../../../../org/allbinary/media/graph
       const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -666,7 +666,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
 
-    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.groupCommonFactory!.ID, this.getGroupInterface());
     

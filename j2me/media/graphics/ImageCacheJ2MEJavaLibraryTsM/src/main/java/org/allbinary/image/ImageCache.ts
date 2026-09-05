@@ -22,8 +22,6 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-            import { System } from '../../../java/lang/System.js';
-        
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { InputStream } from '../../../java/io/InputStream.js';
@@ -44,6 +42,10 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       
 import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
       //not GWT import const GDResources = globalThis.org.allbinary.game.gd.resource.GDResources;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 //not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
@@ -90,6 +92,8 @@ export class ImageCache extends ImageCacheBase {
     public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 
 public constructor (){
 
@@ -163,7 +167,7 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
                         if(this.volume > 32000)
                         
                                     {
-                                    System.gc();
+                                    this.systemWrapper!.gc();
     
 this.volume= 0;
     
@@ -253,9 +257,9 @@ this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.
     
 this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, this.commonStrings!.GET);
     
-System.gc();
+this.systemWrapper!.gc();
     
-System.gc();
+this.systemWrapper!.gc();
     
 this.logUtil!.putF(Memory.getInfo(), this, this.commonStrings!.GET);
     

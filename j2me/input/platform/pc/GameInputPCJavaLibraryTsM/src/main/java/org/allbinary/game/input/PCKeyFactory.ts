@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
-      //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
-
-      
 //not plain js import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
       const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
 
@@ -54,7 +50,10 @@ import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PCGameKey } from './PCGameKey.js';
+        //not plain js import { ABKeyEventWrapper } from './ABKeyEventWrapper.js';
+const ABKeyEventWrapper = globalThis.org.allbinary.game.input.ABKeyEventWrapper;
+
+                import { PCGameKey } from './PCGameKey.js';
 //not GWT import const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
 
                 import { Input } from './Input.js';
@@ -78,61 +77,63 @@ export class PCKeyFactory
 }
 
 
-    public readonly UNKNOWN: PCGameKey = new PCGameKey(KeyEvent.VK_UNDEFINED, "UNKNOWN");
+    private readonly keyEventWrapper: ABKeyEventWrapper = ABKeyEventWrapper.getInstance()!;
+
+    public readonly UNKNOWN: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_UNDEFINED, "UNKNOWN");
 
     public readonly ENTER: PCGameKey = new PCGameKey(5, "Enter");
 
-    public readonly _A: PCGameKey = new PCGameKey(KeyEvent.VK_A, "A");
+    public readonly _A: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_A, "A");
 
-    public readonly _B: PCGameKey = new PCGameKey(KeyEvent.VK_B, "B");
+    public readonly _B: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_B, "B");
 
-    public readonly _C: PCGameKey = new PCGameKey(KeyEvent.VK_C, "C");
+    public readonly _C: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_C, "C");
 
-    public readonly _D: PCGameKey = new PCGameKey(KeyEvent.VK_D, "D");
+    public readonly _D: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_D, "D");
 
-    public readonly _E: PCGameKey = new PCGameKey(KeyEvent.VK_E, "E");
+    public readonly _E: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_E, "E");
 
-    public readonly _F: PCGameKey = new PCGameKey(KeyEvent.VK_F, "F");
+    public readonly _F: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_F, "F");
 
-    public readonly _G: PCGameKey = new PCGameKey(KeyEvent.VK_G, "G");
+    public readonly _G: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_G, "G");
 
-    public readonly _H: PCGameKey = new PCGameKey(KeyEvent.VK_H, "H");
+    public readonly _H: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_H, "H");
 
-    public readonly _I: PCGameKey = new PCGameKey(KeyEvent.VK_I, "I");
+    public readonly _I: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_I, "I");
 
-    public readonly _J: PCGameKey = new PCGameKey(KeyEvent.VK_J, "J");
+    public readonly _J: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_J, "J");
 
-    public readonly _K: PCGameKey = new PCGameKey(KeyEvent.VK_K, "K");
+    public readonly _K: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_K, "K");
 
-    public readonly _L: PCGameKey = new PCGameKey(KeyEvent.VK_L, "L");
+    public readonly _L: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_L, "L");
 
-    public readonly _M: PCGameKey = new PCGameKey(KeyEvent.VK_M, "M");
+    public readonly _M: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_M, "M");
 
-    public readonly _N: PCGameKey = new PCGameKey(KeyEvent.VK_N, "N");
+    public readonly _N: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_N, "N");
 
-    public readonly _O: PCGameKey = new PCGameKey(KeyEvent.VK_O, "O");
+    public readonly _O: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_O, "O");
 
-    public readonly _P: PCGameKey = new PCGameKey(KeyEvent.VK_P, "P");
+    public readonly _P: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_P, "P");
 
-    public readonly _Q: PCGameKey = new PCGameKey(KeyEvent.VK_Q, "Q");
+    public readonly _Q: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_Q, "Q");
 
-    public readonly _R: PCGameKey = new PCGameKey(KeyEvent.VK_R, "R");
+    public readonly _R: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_R, "R");
 
-    public readonly _S: PCGameKey = new PCGameKey(KeyEvent.VK_S, "S");
+    public readonly _S: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_S, "S");
 
-    public readonly _T: PCGameKey = new PCGameKey(KeyEvent.VK_T, "T");
+    public readonly _T: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_T, "T");
 
-    public readonly _U: PCGameKey = new PCGameKey(KeyEvent.VK_U, "U");
+    public readonly _U: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_U, "U");
 
-    public readonly _V: PCGameKey = new PCGameKey(KeyEvent.VK_V, "V");
+    public readonly _V: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_V, "V");
 
-    public readonly _W: PCGameKey = new PCGameKey(KeyEvent.VK_W, "W");
+    public readonly _W: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_W, "W");
 
-    public readonly _X: PCGameKey = new PCGameKey(KeyEvent.VK_X, "X");
+    public readonly _X: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_X, "X");
 
-    public readonly _Y: PCGameKey = new PCGameKey(KeyEvent.VK_Y, "Y");
+    public readonly _Y: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_Y, "Y");
 
-    public readonly _Z: PCGameKey = new PCGameKey(KeyEvent.VK_Z, "Z");
+    public readonly _Z: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_Z, "Z");
 
     public readonly a: PCGameKey = new PCGameKey(97, "a");
 
@@ -186,33 +187,33 @@ export class PCKeyFactory
 
     public readonly z: PCGameKey = new PCGameKey(122, "z");
 
-    public readonly ZERO: PCGameKey = new PCGameKey(KeyEvent.VK_0, CommonPhoneStrings.getInstance()!.ZERO);
+    public readonly ZERO: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_0, CommonPhoneStrings.getInstance()!.ZERO);
 
-    public readonly ONE: PCGameKey = new PCGameKey(KeyEvent.VK_1, CommonPhoneStrings.getInstance()!.ONE);
+    public readonly ONE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_1, CommonPhoneStrings.getInstance()!.ONE);
 
-    public readonly TWO: PCGameKey = new PCGameKey(KeyEvent.VK_2, CommonPhoneStrings.getInstance()!.TWO);
+    public readonly TWO: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_2, CommonPhoneStrings.getInstance()!.TWO);
 
-    public readonly THREE: PCGameKey = new PCGameKey(KeyEvent.VK_3, CommonPhoneStrings.getInstance()!.THREE);
+    public readonly THREE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_3, CommonPhoneStrings.getInstance()!.THREE);
 
-    public readonly FOUR: PCGameKey = new PCGameKey(KeyEvent.VK_4, CommonPhoneStrings.getInstance()!.FOUR);
+    public readonly FOUR: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_4, CommonPhoneStrings.getInstance()!.FOUR);
 
-    public readonly FIVE: PCGameKey = new PCGameKey(KeyEvent.VK_5, CommonPhoneStrings.getInstance()!.FIVE);
+    public readonly FIVE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_5, CommonPhoneStrings.getInstance()!.FIVE);
 
-    public readonly SIX: PCGameKey = new PCGameKey(KeyEvent.VK_6, CommonPhoneStrings.getInstance()!.SIX);
+    public readonly SIX: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_6, CommonPhoneStrings.getInstance()!.SIX);
 
-    public readonly SEVEN: PCGameKey = new PCGameKey(KeyEvent.VK_7, CommonPhoneStrings.getInstance()!.SEVEN);
+    public readonly SEVEN: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_7, CommonPhoneStrings.getInstance()!.SEVEN);
 
-    public readonly EIGHT: PCGameKey = new PCGameKey(KeyEvent.VK_8, CommonPhoneStrings.getInstance()!.EIGHT);
+    public readonly EIGHT: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_8, CommonPhoneStrings.getInstance()!.EIGHT);
 
-    public readonly NINE: PCGameKey = new PCGameKey(KeyEvent.VK_9, CommonPhoneStrings.getInstance()!.NINE);
+    public readonly NINE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_9, CommonPhoneStrings.getInstance()!.NINE);
 
-    public readonly DPAD_UP: PCGameKey = new PCGameKey(KeyEvent.VK_UP, CommonPhoneStrings.getInstance()!.UP);
+    public readonly DPAD_UP: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_UP, CommonPhoneStrings.getInstance()!.UP);
 
-    public readonly DPAD_DOWN: PCGameKey = new PCGameKey(KeyEvent.VK_DOWN, CommonPhoneStrings.getInstance()!.DOWN);
+    public readonly DPAD_DOWN: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_DOWN, CommonPhoneStrings.getInstance()!.DOWN);
 
-    public readonly DPAD_LEFT: PCGameKey = new PCGameKey(KeyEvent.VK_LEFT, CommonPhoneStrings.getInstance()!.LEFT);
+    public readonly DPAD_LEFT: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_LEFT, CommonPhoneStrings.getInstance()!.LEFT);
 
-    public readonly DPAD_RIGHT: PCGameKey = new PCGameKey(KeyEvent.VK_RIGHT, CommonPhoneStrings.getInstance()!.RIGHT);
+    public readonly DPAD_RIGHT: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_RIGHT, CommonPhoneStrings.getInstance()!.RIGHT);
 
     public readonly DPAD_UP2: PCGameKey = this.DPAD_UP;
 
@@ -222,21 +223,21 @@ export class PCKeyFactory
 
     public readonly DPAD_RIGHT2: PCGameKey = this.DPAD_RIGHT;
 
-    public readonly COMMA: PCGameKey = new PCGameKey(KeyEvent.VK_COMMA, "COMMA");
+    public readonly COMMA: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_COMMA, "COMMA");
 
-    public readonly SPACE: PCGameKey = new PCGameKey(KeyEvent.VK_SPACE, "SPACE");
+    public readonly SPACE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_SPACE, "SPACE");
 
-    public readonly DEL: PCGameKey = new PCGameKey(KeyEvent.VK_DELETE, "DEL");
+    public readonly DEL: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_DELETE, "DEL");
 
     public readonly STAR: PCGameKey = new PCGameKey(42, CommonPhoneStrings.getInstance()!.STAR);
 
     public readonly QUESTION: PCGameKey = new PCGameKey(47, "?");
 
-    public readonly PERIOD: PCGameKey = new PCGameKey(KeyEvent.VK_PERIOD, CommonSeps.getInstance()!.PERIOD);
+    public readonly PERIOD: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_PERIOD, CommonSeps.getInstance()!.PERIOD);
 
-    public readonly ESCAPE: PCGameKey = new PCGameKey(KeyEvent.VK_ESCAPE, "Esc");
+    public readonly ESCAPE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_ESCAPE, "Esc");
 
-    public readonly BACK_SPACE: PCGameKey = new PCGameKey(KeyEvent.VK_BACK_SPACE, "Backspace");
+    public readonly BACK_SPACE: PCGameKey = new PCGameKey(this.keyEventWrapper!.VK_BACK_SPACE, "Backspace");
 
     public isSubmission(input: Input): boolean{
 

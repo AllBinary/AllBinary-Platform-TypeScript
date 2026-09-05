@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -34,6 +30,10 @@ import { HardwareComponentInterface } from '../../../../../org/allbinary/logic/s
       
 import { NoHardwareComponent } from '../../../../../org/allbinary/logic/system/hardware/components/interfaces/NoHardwareComponent.js';
       //not GWT import const NoHardwareComponent = globalThis.org.allbinary.logic.system.hardware.components.interfaces.NoHardwareComponent;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -105,7 +105,7 @@ export class NoHardware
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable{
 
 
 

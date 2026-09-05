@@ -30,10 +30,6 @@ import { IOException } from '../../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
       //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
 
@@ -60,6 +56,10 @@ import { SpecialMessageUtil } from '../../../../../org/allbinary/canvas/SpecialM
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -241,7 +241,7 @@ this.isFirstException= false;
                                     }
                                 
 
-    var hashtable: Hashtable<any, any> = this.abeClientInformation!.toHashtable()!;;
+    var hashtable: ABHashtable = this.abeClientInformation!.toHashtable()!;;
     
 this.stringBuffer!.delete(0, this.stringBuffer!.length());
     

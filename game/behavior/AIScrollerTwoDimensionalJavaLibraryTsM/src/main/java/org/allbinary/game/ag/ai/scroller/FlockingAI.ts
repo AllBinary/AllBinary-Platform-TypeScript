@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
       const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -62,6 +58,10 @@ import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/All
       const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -93,7 +93,7 @@ export class FlockingAI extends BasicAI {
 
     private readonly allowedDistance: number;
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
 
@@ -126,14 +126,19 @@ this.allowedDistance= allowedDistance!.intValue();
     var size: number = list.size()!;;
     
 
+    var allBinaryLayer: AllBinaryLayer;;
+    
+
+    var ownerLayerInterface: AllBinaryLayer;;
+    
+
 
 
 
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var allBinaryLayer: AllBinaryLayer = list.get(index) as AllBinaryLayer;;
+allBinaryLayer= list.get(index) as AllBinaryLayer;
     
 
                         if(allBinaryLayer!.getType() != WeaponLayer.getStaticType())
@@ -176,8 +181,7 @@ farAllbinaryLayer= allBinaryLayer;
                         if(farAllbinaryLayer != AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {
-                                    
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+                                    ownerLayerInterface= this.getOwnerLayerInterface();
     
 
                         if(farAllbinaryLayer!.getXP() < ownerLayerInterface!.getXP())

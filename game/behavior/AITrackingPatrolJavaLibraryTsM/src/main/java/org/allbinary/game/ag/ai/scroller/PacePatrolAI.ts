@@ -22,10 +22,6 @@
         
             import { Math } from '../../../../../../java/lang/Math.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
       const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -82,6 +78,10 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
       //not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -121,7 +121,7 @@ export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerI
 
     isFollowLimitedByTerrain: boolean = false;
 
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
 

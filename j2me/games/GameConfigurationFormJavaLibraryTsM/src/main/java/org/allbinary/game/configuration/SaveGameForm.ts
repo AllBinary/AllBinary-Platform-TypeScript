@@ -20,8 +20,6 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from '../../../../java/lang/System.js';
-        
             import { Long } from '../../../../java/lang/Long.js';
         
 //not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
@@ -42,6 +40,10 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
       //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 
@@ -101,7 +103,7 @@ private constructor (commandListener: CommandListener, title: string, backgrounB
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var timeString: string = (Date.now()).toString()!;;
+    var timeString: string = (ABSystemWrapper.getInstance()!.currentTimeMillis()).toString()!;;
     
 this.append(new TextField("Name: ", timeString, 30, TextField.ANY));
     

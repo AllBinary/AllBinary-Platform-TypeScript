@@ -26,16 +26,16 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 //not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
@@ -422,24 +422,16 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 //not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -1099,7 +1091,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonStrings!.NOT_IMPLEMENTED)
 
                 //@Throws(Exception.constructor)
             
-    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
+    public setLoadStateHashtable(hashtable: ABHashtable){
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
     
 }
@@ -1107,7 +1099,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): Hashtable<any, any>{
+    public getLoadStateHashtable(): ABHashtable{
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
     
 
@@ -1121,7 +1113,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): ABHashtable{
 this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
     
 

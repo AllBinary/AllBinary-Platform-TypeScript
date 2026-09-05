@@ -26,8 +26,16 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { BasicAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js';
@@ -70,16 +78,8 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -113,17 +113,17 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any>;
+    private readonly hashtable: ABHashtable;
 
-    private readonly rectangleHashtable: Hashtable<any, any>;
+    private readonly rectangleHashtable: ABHashtable;
 
-    private readonly rectangleArrayOfArraysHashtable: Hashtable<any, any>;
+    private readonly rectangleArrayOfArraysHashtable: ABHashtable;
 
     private readonly name: string;
 
     private initialized: boolean= false;
 
-public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
+public constructor (name: string, hashtable: ABHashtable, rectangleHashtable: ABHashtable, rectangleArrayHashtable: ABHashtable){
 
             super();
         this.hashtable= hashtable;
@@ -324,7 +324,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): ABHashtable{
 
 
 
@@ -334,7 +334,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getRectangleHashtable(): Hashtable<any, any>{
+    public getRectangleHashtable(): ABHashtable{
 
 
 
@@ -344,7 +344,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getRectangleArrayOfArraysHashtable(): Hashtable<any, any>{
+    public getRectangleArrayOfArraysHashtable(): ABHashtable{
 
 
 

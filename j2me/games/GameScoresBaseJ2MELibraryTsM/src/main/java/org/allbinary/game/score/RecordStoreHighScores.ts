@@ -36,10 +36,6 @@ import { IOException } from '../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
       const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
 
@@ -112,6 +108,10 @@ import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/Plat
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -151,7 +151,7 @@ import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/Plat
 export class RecordStoreHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private static readonly hashTable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{

@@ -26,16 +26,8 @@ import { Enumeration } from '../../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
@@ -74,6 +66,10 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
       const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
@@ -109,7 +105,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 export class RemoteHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private static readonly hashTable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
@@ -213,7 +209,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 }
 
 
-    public update(hashtable: Hashtable<any, any>){
+    public update(hashtable: ABHashtable){
 this.getList()!.clear();
     
 

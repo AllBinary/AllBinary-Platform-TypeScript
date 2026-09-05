@@ -22,10 +22,6 @@ import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
@@ -36,6 +32,10 @@ import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/
       
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
       //not GWT import const GeographicMapCellTypeFactory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellTypeFactory;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -81,7 +81,7 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
 
     private readonly maxTileId: number;
 
-public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: ABHashtable, maxTileId: number){
 
             super();
         

@@ -26,8 +26,12 @@ import { IOException } from '../../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
+      //not GWT import const XmlRpcClient = globalThis.org.apache.xmlrpc.XmlRpcClient;
+
+      
+import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
+      //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
 
       
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -36,14 +40,6 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
 //not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
-import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
-      //not GWT import const XmlRpcClient = globalThis.org.apache.xmlrpc.XmlRpcClient;
-
-      
-import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
-      //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
 
       
 import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
@@ -64,6 +60,10 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
       
 //not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -125,7 +125,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;;
+    var hashtable: ABHashtable = anyType as ABHashtable;;
     
 param.add(hashtable);
     

@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
@@ -204,6 +200,10 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
       //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 
 
 
@@ -279,7 +279,7 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
 
     private readonly healthBar: Paintable;
 
-    private readonly pathsHashtable: Hashtable<any, any>;
+    private readonly pathsHashtable: ABHashtable;
 
 public constructor (remoteInfo: RemoteInfo, buildingPropertiesFactory: BuildingPropertiesFactory, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, advancedRTSProperties, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());

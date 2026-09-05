@@ -8,8 +8,6 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-            import { System } from '../../../java/lang/System.js';
-        
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
@@ -50,6 +48,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
       //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
+//not plain js import { ABSystemWrapper } from '../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
+      
 
 
 
@@ -86,6 +88,8 @@ export class LayerManager
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 
     private readonly layerManagerLogging: LayerManagerLoggingBase;
 
@@ -279,9 +283,9 @@ this.list.clear();
     
 this.layerManagerLogging!.clear();
     
-System.gc();
+this.systemWrapper!.gc();
     
-System.gc();
+this.systemWrapper!.gc();
     
 
 

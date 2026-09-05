@@ -24,8 +24,16 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 //not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
@@ -96,20 +104,12 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
       //not GWT import const Memory = globalThis.org.allbinary.system.Memory;
 
       
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
 //not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -167,7 +167,7 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 
     private readonly SETTING_NO_TITLE: string = "Setting: No Title, Display: ";
 
-    private hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     private midletDestroyed: boolean= false;
 
@@ -296,7 +296,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 
                 //@Throws(Exception.constructor)
             
-    public setStartStateHashtable(hashtable: Hashtable<any, any>){
+    public setStartStateHashtable(hashtable: ABHashtable){
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
     
 this.hashtable= hashtable;
@@ -306,7 +306,7 @@ this.hashtable= hashtable;
 
                 //@Throws(Exception.constructor)
             
-    public getStartStateHashtable(): Hashtable<any, any>{
+    public getStartStateHashtable(): ABHashtable{
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
     
 
@@ -320,7 +320,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LA
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): ABHashtable{
 this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
     
 

@@ -20,8 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from '../../../../../java/lang/System.js';
-        
             import { Integer } from '../../../../../java/lang/Integer.js';
         
             import { Thread } from '../../../../../java/lang/Thread.js';
@@ -32,16 +30,16 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 //not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
@@ -456,6 +454,10 @@ import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/m
       //not GWT import const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
 
       
+//not plain js import { ABSystemWrapper } from '../../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
+      
 //not plain js import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
@@ -536,6 +538,10 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -546,18 +552,6 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
       
 //not plain js import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
       const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -739,7 +733,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private isCheating: boolean= false;
 
-    private hashtable: Hashtable<any, any> = this.stdUtil!.NULL_TABLE;
+    private hashtable: ABHashtable = this.stdUtil!.NULL_TABLE;
 
     private isSingleKeyRepeatableProcessing: boolean= false;
 
@@ -1203,7 +1197,7 @@ super.pause();
     
 this.touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
     
-System.gc();
+this.systemWrapper!.gc();
     
 }
 
@@ -1214,7 +1208,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.gameStrings!.UNPAUSE);
     
 this.closeMenu();
     
-System.gc();
+this.systemWrapper!.gc();
     
 super.unPause();
     
@@ -2235,12 +2229,12 @@ this.gameCanvasStartListener= gameCanvasStartListener;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
     
 
-    var hashtable: Hashtable<any, any> = this.getLoadStateHashtable()!;;
+    var hashtable: ABHashtable = this.getLoadStateHashtable()!;;
     
 
                         if(hashtable != 
                                     null
-                                 && hashtable.length > 0)
+                                 && hashtable.size() > 0)
                         
                                     {
                                     
@@ -2262,7 +2256,7 @@ gameInfo!.setCurrentLevel(level);
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): Hashtable<any, any>{
+    public getLoadStateHashtable(): ABHashtable{
 this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
 
@@ -2274,7 +2268,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.app
 }
 
 
-    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
+    public setLoadStateHashtable(hashtable: ABHashtable){
 this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
 this.hashtable= hashtable;
@@ -2282,9 +2276,9 @@ this.hashtable= hashtable;
 }
 
 
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): ABHashtable{
 
-    var hashtable: Hashtable<any, any> = this.stdUtil!.createHashtable()!;;
+    var hashtable: ABHashtable = this.stdUtil!.createHashtable()!;;
     
 
     var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;;

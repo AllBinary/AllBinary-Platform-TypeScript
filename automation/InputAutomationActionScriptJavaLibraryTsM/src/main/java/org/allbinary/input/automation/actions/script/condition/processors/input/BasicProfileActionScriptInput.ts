@@ -26,10 +26,6 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
       //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-import { Hashtable } from '../../../../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { Iterator } from '../../../../../../../../../java/util/Iterator.js';
       //not GWT import const Iterator = globalThis.java.util.Iterator;
 
@@ -76,6 +72,10 @@ import { InputRobotInterface } from '../../../../../../../../../org/allbinary/in
       
 //not plain js import { StringUtil } from '../../../../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
@@ -174,7 +174,7 @@ this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.C
     var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;;
     
 
-    var hashtable: Hashtable<any, any> = inputRobotFactory!.get() as Hashtable<any, any>;;
+    var hashtable: ABHashtable = inputRobotFactory!.get() as ABHashtable;;
     
 
     var set: Set = hashtable.keys()!;;

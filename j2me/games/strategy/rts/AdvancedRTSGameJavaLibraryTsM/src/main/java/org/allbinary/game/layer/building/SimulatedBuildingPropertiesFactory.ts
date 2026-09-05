@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
       //not GWT import const DamageFloaters = globalThis.org.allbinary.game.combat.damage.DamageFloaters;
 
@@ -46,6 +42,10 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
       
 //not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -125,7 +125,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): ABHashtable{
 
 
 

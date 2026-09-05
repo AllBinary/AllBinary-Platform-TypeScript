@@ -26,16 +26,16 @@ import { Enumeration } from '../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
       //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
 //not plain js import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -88,7 +88,7 @@ export class LevelLayersFinder
 
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
-    public get(hashtable: Hashtable<any, any>): BasicArrayList{
+    public get(hashtable: ABHashtable): BasicArrayList{
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
@@ -99,7 +99,7 @@ export class LevelLayersFinder
     var enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
-    var layerHashtableCanBeNull: Hashtable<any, any>;;
+    var layerHashtableCanBeNull: ABHashtable;;
     
 
     var integerCanBeNull: Integer;;
@@ -110,7 +110,7 @@ export class LevelLayersFinder
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-layerHashtableCanBeNull= hashtable.get(this.enumerationUtil!.nextElement(enumeration)!) as Hashtable<any, any>;
+layerHashtableCanBeNull= hashtable.get(this.enumerationUtil!.nextElement(enumeration)!) as ABHashtable;
     
 integerCanBeNull= layerHashtableCanBeNull!.get(Layer.ID) as Integer;
     

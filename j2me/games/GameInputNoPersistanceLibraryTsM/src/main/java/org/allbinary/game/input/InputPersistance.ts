@@ -24,8 +24,12 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 //not plain js import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
@@ -76,16 +80,12 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
 //not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -134,7 +134,7 @@ public constructor (name: string){
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: Hashtable<any, any>;;
+    var hashtable: ABHashtable;;
     
 
     var stringBuffer: StringMaker = new StringMaker();;
@@ -169,7 +169,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Exception.constructor)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable){
 PreLogUtil.put(new StringMaker().append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 

@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
       const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -36,6 +32,10 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
 import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelayHelper.js';
       //not GWT import const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -65,7 +65,7 @@ export class BasicProbabilityAIDataFactory
          {
         
 
-    public getInstance(): Hashtable<any, any>{
+    public getInstance(): ABHashtable{
 
     var likelyhoodIntegerArray: Integer[][] = new Array(Canvas.KEY_NUM9 +1).fill(null).map(() => new Array(2).fill(0))
                                                             ;;

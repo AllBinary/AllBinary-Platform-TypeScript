@@ -26,10 +26,6 @@ import { Enumeration } from '../../../../java/util/Enumeration.js';
       //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
@@ -48,6 +44,10 @@ import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInte
       
 import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
       //not GWT import const LayerInterfaceVisitor = globalThis.org.allbinary.layer.LayerInterfaceVisitor;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -142,7 +142,7 @@ this.process(layerPlacementInterface);
     var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;;
     
 
-    var hashtable: Hashtable<any, any> = layerPlacementInterface!.getInstance()!;;
+    var hashtable: ABHashtable = layerPlacementInterface!.getInstance()!;;
     
 
     var enumeration: Enumeration<any> = hashtable.keys()!;;
@@ -151,7 +151,7 @@ this.process(layerPlacementInterface);
     var point: GPoint;;
     
 
-    var layerHashtable: Hashtable<any, any>;;
+    var layerHashtable: ABHashtable;;
     
 
     var x: number= 0;;
@@ -170,7 +170,7 @@ this.process(layerPlacementInterface);
         {
 point= this.enumerationUtil!.nextElement(enumeration)! as GPoint;
     
-layerHashtable= hashtable.get(point) as Hashtable<any, any>;
+layerHashtable= hashtable.get(point) as ABHashtable;
     
 x= point.getX() +relativePoint!.getX();
     

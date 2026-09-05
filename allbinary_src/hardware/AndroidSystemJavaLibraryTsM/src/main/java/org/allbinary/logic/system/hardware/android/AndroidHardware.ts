@@ -36,10 +36,6 @@ import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js'
       //not GWT import const LineNumberReader = globalThis.java.io.LineNumberReader;
 
       
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { NullCloseable } from '../../../../../../org/allbinary/logic/io/NullCloseable.js';
       //not GWT import const NullCloseable = globalThis.org.allbinary.logic.io.NullCloseable;
 
@@ -74,6 +70,10 @@ import { HardwareComponentInterface } from '../../../../../../org/allbinary/logi
       
 //not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -272,7 +272,7 @@ stringBuilder!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable{
 
 
 

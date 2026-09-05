@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
@@ -100,6 +96,10 @@ import { VideoInterface } from '../../../../../../org/allbinary/logic/system/har
       
 //not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -464,7 +464,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable{
 
 
 

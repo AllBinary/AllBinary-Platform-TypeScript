@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
       //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
@@ -42,16 +38,24 @@ import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
       //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
       const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
 //not plain js import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
       const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+
+      
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
@@ -106,16 +110,12 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
 //not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -188,7 +188,7 @@ public constructor (name: string){
     var input: Input;;
     
 
-    var hashtable: Hashtable<any, any>;;
+    var hashtable: ABHashtable;;
     
 
     var gameKeyFactory: GameKeyMappingFactory = GameKeyMappingFactory.getInstance()!;;
@@ -364,7 +364,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Exception.constructor)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable){
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     

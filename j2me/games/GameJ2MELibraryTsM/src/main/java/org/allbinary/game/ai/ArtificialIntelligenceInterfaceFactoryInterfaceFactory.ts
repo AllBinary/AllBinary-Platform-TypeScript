@@ -22,8 +22,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -88,7 +88,7 @@ this.list= new BasicArrayListD();
 }
 
 
-    public getInstanceFromCollection(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
+    public getInstanceFromCollection(hashtable: ABHashtable): ArtificialIntelligenceInterfaceFactoryInterface{
 
     var typeInteger: Integer = hashtable.get(BasicAI.ID) as Integer;;
     

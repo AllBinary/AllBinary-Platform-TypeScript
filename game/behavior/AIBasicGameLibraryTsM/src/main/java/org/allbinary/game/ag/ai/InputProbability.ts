@@ -22,10 +22,6 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -36,6 +32,10 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -126,9 +126,9 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): ABHashtable{
 
-    var hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(InputProbability.INPUT_PROBABILITY, this);
     

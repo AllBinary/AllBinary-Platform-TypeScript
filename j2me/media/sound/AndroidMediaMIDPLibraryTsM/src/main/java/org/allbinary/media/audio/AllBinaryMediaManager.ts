@@ -22,8 +22,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from '../../../../java/lang/System.js';
-        
 import { IOException } from '../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
@@ -50,6 +48,10 @@ import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration
       
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
       //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -152,7 +154,7 @@ AllBinaryMediaManager.shutdown(soundsFactoryInterface);
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
-System.gc();
+ABSystemWrapper.getInstance()!.gc();
     
 new Sounds(soundsFactoryInterface).init();
     
@@ -243,7 +245,7 @@ MediaPlayerUtil.getInstance()!.waitForMediaPlayer(androidMediaPlayerWrapper!.get
 
 new Sounds(soundsFactoryInterface).closeAll();
     
-System.gc();
+ABSystemWrapper.getInstance()!.gc();
     
 soundsFactoryInterface!.setInitialized(false);
     

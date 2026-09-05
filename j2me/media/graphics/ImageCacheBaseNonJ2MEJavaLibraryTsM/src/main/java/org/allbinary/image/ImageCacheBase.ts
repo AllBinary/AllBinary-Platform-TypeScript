@@ -28,10 +28,6 @@ import { InputStream } from '../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
       const Image = globalThis.javax.microedition.lcdui.Image;
 
@@ -42,6 +38,18 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
+      
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -68,20 +76,12 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
 //not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
       const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+      
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -115,7 +115,7 @@ export class ImageCacheBase
 
     readonly imageFactory: ImageFactory = ImageFactory.getInstance()!;
 
-    readonly hashtable: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
     readonly SIZE: number = 128;
 
@@ -378,7 +378,7 @@ stringBuffer!.appendint(totalAvailable);
 }
 
 
-    public getHashtableP(): Hashtable<any, any>{
+    public getHashtableP(): ABHashtable{
 
 
 

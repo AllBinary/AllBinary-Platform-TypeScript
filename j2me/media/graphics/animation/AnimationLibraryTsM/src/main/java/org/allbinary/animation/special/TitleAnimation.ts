@@ -18,8 +18,6 @@
         
 
 
-            import { System } from '../../../../java/lang/System.js';
-        
             import { Integer } from '../../../../java/lang/Integer.js';
         
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
@@ -48,6 +46,10 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
+      
+//not plain js import { ABSystemWrapper } from '../../../../org/allbinary/logic/ABSystemWrapper.js';
+      const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -95,6 +97,8 @@ export class TitleAnimation extends SpecialAnimation {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
+
     public deltaX: number= 0.0;
 
     public deltaY: number= 0.0;
@@ -125,7 +129,7 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
 
                             //For kotlin this is before the body of the constructor.
                     
-this.lastFrameStartTime= Date.now();
+this.lastFrameStartTime= this.systemWrapper!.currentTimeMillis();
     
 this.animationInterfaceArray= animationInterfaceArray;
     
@@ -148,7 +152,7 @@ this.reset();
 
     public nextFrame(){
 
-    var currentTime: number = Date.now()!;;
+    var currentTime: number = this.systemWrapper!.currentTimeMillis()!;;
     
 
     var totalTimeElapsed: number = currentTime -this.lastFrameStartTime;;

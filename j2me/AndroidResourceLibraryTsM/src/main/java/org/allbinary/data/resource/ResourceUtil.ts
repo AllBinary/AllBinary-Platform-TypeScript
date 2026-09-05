@@ -28,10 +28,6 @@ import { InputStream } from '../../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { Activity } from '../../../../android/app/Activity.js';
       //not GWT import const Activity = globalThis.android.app.Activity;
 
@@ -84,6 +80,10 @@ import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
+      
 //not plain js import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
@@ -130,7 +130,7 @@ export class ResourceUtil
 
     private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private hashMap: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
+    private hashMap: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 

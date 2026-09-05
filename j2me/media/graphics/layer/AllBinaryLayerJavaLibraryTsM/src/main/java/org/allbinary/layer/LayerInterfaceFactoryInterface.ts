@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -51,7 +51,7 @@ export interface LayerInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer
+    getNextInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer
 
 }
 

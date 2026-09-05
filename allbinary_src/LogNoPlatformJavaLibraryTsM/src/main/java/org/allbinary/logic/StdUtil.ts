@@ -20,20 +20,20 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not plain js import { ABHashMap } from '../../../org/allbinary/util/ABHashMap.js';
+      const ABHashMap = globalThis.org.allbinary.util.ABHashMap;
 
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-import { Stack } from '../../../java/util/Stack.js';
-      //not GWT import const Stack = globalThis.java.util.Stack;
+//not plain js import { ABStack } from '../../../org/allbinary/util/ABStack.js';
+      const ABStack = globalThis.org.allbinary.util.ABStack;
 
       
-import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not plain js import { ABVector } from '../../../org/allbinary/util/ABVector.js';
+      const ABVector = globalThis.org.allbinary.util.ABVector;
 
       
 
@@ -64,17 +64,19 @@ expect export class StdUtil
 
     /*actual*/ public static getInstance(): StdUtil
 
-    /*actual*/ public readonly EMPTY_VECTOR: Vector<any>
+    /*actual*/ public readonly EMPTY_VECTOR: ABVector<any>
 
-    /*actual*/ public readonly NULL_TABLE: Hashtable<any, any>
+    /*actual*/ public readonly NULL_TABLE: ABHashtable
 
-    public createStack(): Stack<any>
+    /*actual*/ public readonly NULL_MAP: ABHashMap
 
-    public createVector(): Vector<any>
+    public createStack(): ABStack<any>
 
-    public createHashtable(): Hashtable<any, any>
+    public createVector(): ABVector<any>
 
-    public createHashMap(): HashMap<any, any>
+    public createHashtable(): ABHashtable<any, any>
+
+    public createHashMap(): ABHashMap<any, any>
 
 }
 

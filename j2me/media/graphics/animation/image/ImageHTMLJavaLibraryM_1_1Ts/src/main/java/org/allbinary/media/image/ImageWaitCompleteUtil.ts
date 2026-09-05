@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 //not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       const Image = globalThis.javax.microedition.lcdui.Image;
 
@@ -42,6 +38,10 @@ import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/Ga
       
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
       //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 //not plain js import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
@@ -78,8 +78,6 @@ export class ImageWaitCompleteUtil extends ImageCompleteUtil {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
-    private readonly METHOD_NAME: string = "waitForLoad";
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(18000);
 
@@ -163,7 +161,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 this.allTimeDelayHelper!.setStartTimeTNT();
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;;
+    var hashtable: ABHashtable = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;

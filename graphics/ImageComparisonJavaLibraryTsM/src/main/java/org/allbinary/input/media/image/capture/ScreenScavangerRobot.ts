@@ -22,16 +22,20 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { awt } from '../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+import { Dimension } from '../../../../../../java/awt/Dimension.js';
+      //not GWT import const Dimension = globalThis.java.awt.Dimension;
+
+      
+import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.java.awt.Rectangle;
+
+      
+import { Toolkit } from '../../../../../../java/awt/Toolkit.js';
+      //not GWT import const Toolkit = globalThis.java.awt.Toolkit;
 
       
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
       //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
@@ -48,6 +52,10 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
       
 //not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -68,16 +76,7 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Toolkit } from './Toolkit.js';
-//not GWT import const Toolkit = globalThis.org.allbinary.input.media.image.capture.Toolkit;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.input.media.image.capture.Dimension;
-
-                import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.input.media.image.capture.Rectangle;
-
-                
+        
 export class ScreenScavangerRobot
             extends Object
          {
@@ -105,7 +104,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages")
     var rectScreenSize: Rectangle = new Rectangle(dimScreenSize);;
     
 
-    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
+    var robotHashtable: ABHashtable = InputRobotFactory.getInstance()!.get()!;;
     
 
     var bufferedImageArray: BufferedImage[] = new Array(1);;

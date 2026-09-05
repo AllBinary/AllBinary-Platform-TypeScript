@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
-
-      
 import { BundleActivator } from '../../../../../org/osgi/framework/BundleActivator.js';
       //not GWT import const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
 
@@ -56,6 +52,10 @@ import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/s
       
 //not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
+      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -137,7 +137,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: Hashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    var properties: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;;
