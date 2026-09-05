@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import - same folder const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
                 import { BasicColorFactory } from './BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import - same folder const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
                 
 export class SmallBasicColorCacheFactory

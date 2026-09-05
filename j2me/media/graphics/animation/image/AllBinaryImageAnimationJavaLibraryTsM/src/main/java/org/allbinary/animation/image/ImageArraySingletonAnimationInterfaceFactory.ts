@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-      //not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
       
 import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
-      //not GWT import const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
+//not GWT import const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
 
       
 import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/image/IndexedAnimationToImageArrayUtil.js';
-      //not GWT import const IndexedAnimationToImageArrayUtil = globalThis.org.allbinary.image.IndexedAnimationToImageArrayUtil;
+//not GWT import const IndexedAnimationToImageArrayUtil = globalThis.org.allbinary.image.IndexedAnimationToImageArrayUtil;
 
       
 
@@ -63,7 +63,7 @@ import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/imag
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
-//not GWT import const ImageArrayAnimation = globalThis.org.allbinary.animation.image.ImageArrayAnimation;
+//not GWT import - same folder const ImageArrayAnimation = globalThis.org.allbinary.animation.image.ImageArrayAnimation;
 
                 
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {

@@ -23,55 +23,55 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { CategoryFactoryInterface } from '../../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+//not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
 import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
-      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
 import { CategoryUtil } from '../../../../../../org/allbinary/business/category/CategoryUtil.js';
-      //not GWT import const CategoryUtil = globalThis.org.allbinary.business.category.CategoryUtil;
+//not GWT import const CategoryUtil = globalThis.org.allbinary.business.category.CategoryUtil;
 
       
 import { CategoryPropertiesFactory } from '../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactory.js';
-      //not GWT import const CategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactory;
+//not GWT import const CategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactory;
 
       
 import { CategoryPropertiesFactoryInterface } from '../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
-      //not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
+//not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
 
       
 import { RootStoreThemeCategoryPropertiesFactory } from '../../../../../../org/allbinary/business/category/properties/root/store/theme/RootStoreThemeCategoryPropertiesFactory.js';
-      //not GWT import const RootStoreThemeCategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.root.store.theme.RootStoreThemeCategoryPropertiesFactory;
+//not GWT import const RootStoreThemeCategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.root.store.theme.RootStoreThemeCategoryPropertiesFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -93,7 +93,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategory } from './StoreThemeCategory.js';
-//not GWT import const StoreThemeCategory = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategory;
+//not GWT import - same folder const StoreThemeCategory = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategory;
 
                 
 export class StoreThemeCategoryFactory

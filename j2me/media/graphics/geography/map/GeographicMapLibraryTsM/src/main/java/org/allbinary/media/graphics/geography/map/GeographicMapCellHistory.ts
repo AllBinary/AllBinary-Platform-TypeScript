@@ -22,72 +22,72 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } 
+const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not plain js import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
 import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
-      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
 import { TextAnimation } from '../../../../../../org/allbinary/animation/text/TextAnimation.js';
-      //not GWT import const TextAnimation = globalThis.org.allbinary.animation.text.TextAnimation;
+//not GWT import const TextAnimation = globalThis.org.allbinary.animation.text.TextAnimation;
 
       
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
-//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-      //not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
       
 import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      //not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
 
       
 import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-      //not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+//not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
 
       
-//not plain js import { BasicDecimal } from '../../../../../../org/allbinary/logic/math/BasicDecimal.js';
-      const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+//not plain js import { BasicDecimal } 
+const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 
@@ -109,10 +109,10 @@ import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+//not GWT import - same folder const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
                 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import - same folder const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
                 
 export class GeographicMapCellHistory

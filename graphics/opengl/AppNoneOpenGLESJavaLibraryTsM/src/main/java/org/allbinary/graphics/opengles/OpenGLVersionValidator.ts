@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { ShaderComposite } from '../../../../org/allbinary/graphics/opengles/shader/ShaderComposite.js';
-      //not GWT import const ShaderComposite = globalThis.org.allbinary.graphics.opengles.shader.ShaderComposite;
+//not GWT import const ShaderComposite = globalThis.org.allbinary.graphics.opengles.shader.ShaderComposite;
 
       
 

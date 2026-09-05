@@ -21,11 +21,11 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

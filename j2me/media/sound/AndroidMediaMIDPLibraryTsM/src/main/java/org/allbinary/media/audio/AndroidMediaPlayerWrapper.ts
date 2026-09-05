@@ -22,44 +22,45 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not plain js import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      const MediaException = globalThis.javax.microedition.media.MediaException;
+//not plain js import { MediaException } 
+const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player } 
+const Player = globalThis.javax.microedition.media.Player;
+const PlayerI = globalThis.javax.microedition.media.Player;
 
       
-//not plain js import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } 
+const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
-      //not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
+//not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
 
       
 import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroidCanvas.js';
-      //not GWT import const NullAndroidCanvas = globalThis.org.allbinary.android.NullAndroidCanvas;
+//not GWT import const NullAndroidCanvas = globalThis.org.allbinary.android.NullAndroidCanvas;
 
       
-//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -81,7 +82,7 @@ import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroid
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
+//not GWT import - same folder const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
 
                 
 export class AndroidMediaPlayerWrapper extends BasicPlayer {

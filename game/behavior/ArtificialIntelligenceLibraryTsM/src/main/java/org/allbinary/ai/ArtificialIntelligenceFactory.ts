@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceFactoryInterface } from './ArtificialIntelligenceFactoryInterface.js';
-//not GWT import const ArtificialIntelligenceFactoryInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceFactoryInterface;
+//not GWT import - same folder const ArtificialIntelligenceFactoryInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceFactoryInterface;
 
                 import { ArtificialIntelligence } from './ArtificialIntelligence.js';
-//not GWT import const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
+//not GWT import - same folder const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
 
                 
 export class ArtificialIntelligenceFactory

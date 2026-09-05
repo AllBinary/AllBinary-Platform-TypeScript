@@ -22,8 +22,8 @@
         
             import { ClassLoader } from '../../../../../java/lang/ClassLoader.js';
         
-//not plain js import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 

@@ -21,23 +21,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-      //not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
 
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
-      //not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
       
 import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
-      //not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
+//not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
 
       
 
@@ -59,10 +59,10 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OptimizedAllBinaryCollisionLayerManager } from './OptimizedAllBinaryCollisionLayerManager.js';
-//not GWT import const OptimizedAllBinaryCollisionLayerManager = globalThis.org.allbinary.game.collision.OptimizedAllBinaryCollisionLayerManager;
+//not GWT import - same folder const OptimizedAllBinaryCollisionLayerManager = globalThis.org.allbinary.game.collision.OptimizedAllBinaryCollisionLayerManager;
 
                 import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+//not GWT import - same folder const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
 
                 
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {

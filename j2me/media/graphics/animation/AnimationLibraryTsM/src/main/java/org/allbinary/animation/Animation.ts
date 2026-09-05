@@ -23,43 +23,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-      //not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
+//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
 
       
-//not plain js import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { BasicColorSetUtil } from '../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-      //not GWT import const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
+//not GWT import const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
 
       
 import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
-      //not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+//not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -81,7 +81,7 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterface } from './AnimationInterface.js';
-//not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
+//not GWT import - same folder const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
 
                 
 export class Animation

@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
-//not GWT import const TransformInfo = globalThis.org.allbinary.logic.visual.transform.info.TransformInfo;
+//not GWT import - same folder const TransformInfo = globalThis.org.allbinary.logic.visual.transform.info.TransformInfo;
 
                 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import - same folder const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
                 
 export class CustomTransformInfo extends TransformInfo implements TransformInfoInterface {

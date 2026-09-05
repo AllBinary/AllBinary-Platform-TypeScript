@@ -23,39 +23,39 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { Method } from '../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
 import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
-      //not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+//not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
       
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not plain js import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -77,7 +77,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
-//not GWT import const HelperTag = globalThis.tags.HelperTag;
+//not GWT import - same folder const HelperTag = globalThis.tags.HelperTag;
 
                 
 export class ModifyTag extends HelperTag {

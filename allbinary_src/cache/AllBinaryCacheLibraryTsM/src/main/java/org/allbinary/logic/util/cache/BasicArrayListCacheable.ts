@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -45,7 +45,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import - same folder const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
                 
 export class BasicArrayListCacheable extends BasicArrayListD implements CacheableInterface {

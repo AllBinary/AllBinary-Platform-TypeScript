@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlData } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
-      //not GWT import const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
+//not GWT import const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
 
       
 import { Validation } from '../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-      //not GWT import const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
+//not GWT import const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
 
       
-//not plain js import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -67,7 +67,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadableItem } from './DownloadableItem.js';
-//not GWT import const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
+//not GWT import - same folder const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
 
                 
 export class DownloadableItemValidation extends Validation {

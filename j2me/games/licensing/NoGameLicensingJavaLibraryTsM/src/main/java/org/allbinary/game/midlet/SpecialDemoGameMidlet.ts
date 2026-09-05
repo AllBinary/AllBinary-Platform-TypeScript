@@ -19,23 +19,23 @@
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-      //not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
+//not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
 
       
 import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/system/security/licensing/LicenseServerInitFileUtil.js';
-      //not GWT import const LicenseServerInitFileUtil = globalThis.org.allbinary.logic.system.security.licensing.LicenseServerInitFileUtil;
+//not GWT import const LicenseServerInitFileUtil = globalThis.org.allbinary.logic.system.security.licensing.LicenseServerInitFileUtil;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -57,16 +57,16 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-//not GWT import const DemoGameMidlet = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
+//not GWT import - same folder const DemoGameMidlet = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
 
                 import { LicenseLoadingType } from './LicenseLoadingType.js';
-//not GWT import const LicenseLoadingType = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
+//not GWT import - same folder const LicenseLoadingType = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
 
                 import { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
-//not GWT import const LicensedDemoSetupFactory = globalThis.org.allbinary.game.midlet.LicensedDemoSetupFactory;
+//not GWT import - same folder const LicensedDemoSetupFactory = globalThis.org.allbinary.game.midlet.LicensedDemoSetupFactory;
 
                 import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
-//not GWT import const LicenseCheckRunnableFactory = globalThis.org.allbinary.game.midlet.LicenseCheckRunnableFactory;
+//not GWT import - same folder const LicenseCheckRunnableFactory = globalThis.org.allbinary.game.midlet.LicenseCheckRunnableFactory;
 
                 
 export class SpecialDemoGameMidlet extends DemoGameMidlet {

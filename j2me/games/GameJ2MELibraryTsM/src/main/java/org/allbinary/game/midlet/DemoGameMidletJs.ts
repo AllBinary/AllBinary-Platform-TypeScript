@@ -21,15 +21,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JsPackage } from '../../../../jsinterop/annotations/JsPackage.js';
-      //not GWT import const JsPackage = globalThis.jsinterop.annotations.JsPackage;
+//not GWT import const JsPackage = globalThis.jsinterop.annotations.JsPackage;
 
       
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
-      //not GWT import const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
+//not GWT import const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
 
       
 

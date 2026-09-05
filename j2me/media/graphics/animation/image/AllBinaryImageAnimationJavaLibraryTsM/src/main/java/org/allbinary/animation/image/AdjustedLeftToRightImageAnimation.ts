@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
 
@@ -51,7 +51,7 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LeftToRightImageAnimation } from './LeftToRightImageAnimation.js';
-//not GWT import const LeftToRightImageAnimation = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
+//not GWT import - same folder const LeftToRightImageAnimation = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
 
                 
 export class AdjustedLeftToRightImageAnimation extends LeftToRightImageAnimation {

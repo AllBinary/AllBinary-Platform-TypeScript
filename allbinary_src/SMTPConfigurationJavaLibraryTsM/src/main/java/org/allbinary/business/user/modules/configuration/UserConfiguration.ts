@@ -21,27 +21,27 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
-      //not GWT import const TimeCreated = globalThis.org.allbinary.business.time.created.TimeCreated;
+//not GWT import const TimeCreated = globalThis.org.allbinary.business.time.created.TimeCreated;
 
       
 import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
-      //not GWT import const TimeLastModified = globalThis.org.allbinary.business.time.modified.TimeLastModified;
+//not GWT import const TimeLastModified = globalThis.org.allbinary.business.time.modified.TimeLastModified;
 
       
 import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
-      //not GWT import const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
+//not GWT import const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
 
       
 import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
-      //not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
+//not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
       
 
@@ -63,7 +63,7 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+//not GWT import - same folder const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
                 
 export class UserConfiguration

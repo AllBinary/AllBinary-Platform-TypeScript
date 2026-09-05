@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import const LayerManagerLoggingBase = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
+//not GWT import - same folder const LayerManagerLoggingBase = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
 
                 
 export class LayerManagerNoDebug extends LayerManagerLoggingBase {

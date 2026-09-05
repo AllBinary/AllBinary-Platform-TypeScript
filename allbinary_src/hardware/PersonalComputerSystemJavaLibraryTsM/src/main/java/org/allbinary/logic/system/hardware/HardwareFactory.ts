@@ -23,19 +23,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-      //not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+//not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
       
 import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
-      //not GWT import const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+//not GWT import const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
 
       
 import { LinuxHardware } from '../../../../../org/allbinary/logic/system/hardware/linux/LinuxHardware.js';
-      //not GWT import const LinuxHardware = globalThis.org.allbinary.logic.system.hardware.linux.LinuxHardware;
+//not GWT import const LinuxHardware = globalThis.org.allbinary.logic.system.hardware.linux.LinuxHardware;
 
       
 import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardware/windows/WindowsHardware.js';
-      //not GWT import const WindowsHardware = globalThis.org.allbinary.logic.system.hardware.windows.WindowsHardware;
+//not GWT import const WindowsHardware = globalThis.org.allbinary.logic.system.hardware.windows.WindowsHardware;
 
       
 
@@ -57,7 +57,7 @@ import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardw
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HardwareInterface } from './HardwareInterface.js';
-//not GWT import const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
+//not GWT import - same folder const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
 
                 
 export class HardwareFactory

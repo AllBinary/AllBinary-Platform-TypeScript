@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlMetaAttributeData } from './HtmlMetaAttributeData.js';
-//not GWT import const HtmlMetaAttributeData = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaAttributeData;
+//not GWT import - same folder const HtmlMetaAttributeData = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaAttributeData;
 
                 
 export class HtmlMetaAttributeDataFactory

@@ -23,11 +23,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { InputStream } from '../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 

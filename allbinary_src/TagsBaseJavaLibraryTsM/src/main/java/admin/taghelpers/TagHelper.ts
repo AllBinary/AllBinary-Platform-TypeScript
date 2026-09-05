@@ -20,8 +20,8 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not plain js import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperInterface } from './TagHelperInterface.js';
-//not GWT import const TagHelperInterface = globalThis.admin.taghelpers.TagHelperInterface;
+//not GWT import - same folder const TagHelperInterface = globalThis.admin.taghelpers.TagHelperInterface;
 
                 
 export class TagHelper

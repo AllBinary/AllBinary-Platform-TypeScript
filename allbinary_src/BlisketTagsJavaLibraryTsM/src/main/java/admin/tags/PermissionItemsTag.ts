@@ -19,11 +19,11 @@
 
 
 import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
-      //not GWT import const PermissionItemsHelperFactory = globalThis.admin.taghelpers.PermissionItemsHelperFactory;
+//not GWT import const PermissionItemsHelperFactory = globalThis.admin.taghelpers.PermissionItemsHelperFactory;
 
       
 import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';
-      //not GWT import const PermissionItemsRequestHelperFactory = globalThis.admin.taghelpers.PermissionItemsRequestHelperFactory;
+//not GWT import const PermissionItemsRequestHelperFactory = globalThis.admin.taghelpers.PermissionItemsRequestHelperFactory;
 
       
 
@@ -45,7 +45,7 @@ import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/Perm
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class PermissionItemsTag extends TableTag {

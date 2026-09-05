@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockedUtilInterface } from './LockedUtilInterface.js';
-//not GWT import const LockedUtilInterface = globalThis.org.allbinary.logic.system.security.licensing.LockedUtilInterface;
+//not GWT import - same folder const LockedUtilInterface = globalThis.org.allbinary.logic.system.security.licensing.LockedUtilInterface;
 
                 import { LockableFeature } from './LockableFeature.js';
-//not GWT import const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+//not GWT import - same folder const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
                 
 export class LockedUtil

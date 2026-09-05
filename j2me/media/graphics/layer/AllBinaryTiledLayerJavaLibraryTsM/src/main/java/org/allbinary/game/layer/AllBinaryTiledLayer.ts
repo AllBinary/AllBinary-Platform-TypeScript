@@ -20,32 +20,32 @@
 
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
+//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
-      //not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
+//not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 

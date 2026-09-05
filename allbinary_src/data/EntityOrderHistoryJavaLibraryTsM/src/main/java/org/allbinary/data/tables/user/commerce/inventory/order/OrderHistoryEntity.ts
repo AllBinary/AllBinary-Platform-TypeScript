@@ -27,163 +27,163 @@
             import { Float } from '../../../../../../../../java/lang/Float.js';
         
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { Random } from '../../../../../../../../java/util/Random.js';
-      //not GWT import const Random = globalThis.java.util.Random;
+//not GWT import const Random = globalThis.java.util.Random;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { StoreFrontFactory } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-      //not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
 
       
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
-      //not GWT import const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
+//not GWT import const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
 
       
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
-      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
+//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
 import { BillingAddressData } from '../../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
-      //not GWT import const BillingAddressData = globalThis.org.allbinary.business.user.address.BillingAddressData;
+//not GWT import const BillingAddressData = globalThis.org.allbinary.business.user.address.BillingAddressData;
 
       
 import { ShippingAddressData } from '../../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
-      //not GWT import const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
+//not GWT import const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
 
       
 import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
 import { Basket } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
-      //not GWT import const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
+//not GWT import const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
 
       
 import { BasketInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
-      //not GWT import const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
+//not GWT import const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
 
       
 import { Order } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/Order.js';
-      //not GWT import const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
+//not GWT import const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
       
 import { OrderData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-      //not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+//not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
 
       
 import { OrderHistory } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-      //not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
 
       
 import { OrderHistoryData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-      //not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+//not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
 
       
 import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-      //not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+//not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
 
       
 import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
-      //not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+//not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
 
       
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
-      //not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+//not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
 
       
 import { TaxFactory } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/TaxFactory.js';
-      //not GWT import const TaxFactory = globalThis.org.allbinary.business.user.commerce.money.tax.TaxFactory;
+//not GWT import const TaxFactory = globalThis.org.allbinary.business.user.commerce.money.tax.TaxFactory;
 
       
 import { ShippingMethodData } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-      //not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+//not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
 
       
 import { ShippingMethods } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethods.js';
-      //not GWT import const ShippingMethods = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethods;
+//not GWT import const ShippingMethods = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethods;
 
       
 import { ShippingInterface } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
-      //not GWT import const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
+//not GWT import const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
 
       
 import { OrderHistoryIdGenerator } from '../../../../../../../../org/allbinary/data/generator/OrderHistoryIdGenerator.js';
-      //not GWT import const OrderHistoryIdGenerator = globalThis.org.allbinary.data.generator.OrderHistoryIdGenerator;
+//not GWT import const OrderHistoryIdGenerator = globalThis.org.allbinary.data.generator.OrderHistoryIdGenerator;
 
       
 import { TableDataFactory } from '../../../../../../../../org/allbinary/data/tables/TableDataFactory.js';
-      //not GWT import const TableDataFactory = globalThis.org.allbinary.data.tables.TableDataFactory;
+//not GWT import const TableDataFactory = globalThis.org.allbinary.data.tables.TableDataFactory;
 
       
 import { BillingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js';
-      //not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
+//not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
 
       
 import { ShippingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
-      //not GWT import const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
+//not GWT import const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
 
       
 import { PaymentEntity } from '../../../../../../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
-      //not GWT import const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
+//not GWT import const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
 
       
-//not plain js import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-      //not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
 
       
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
-      //not GWT import const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
+//not GWT import const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
 
       
-//not plain js import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { ServiceClientInformationInterfaceFactory } from '../../../../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+//not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
 
@@ -205,7 +205,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryEntityInterface } from './OrderHistoryEntityInterface.js';
-//not GWT import const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
+//not GWT import - same folder const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
 
                 
 export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityInterface {

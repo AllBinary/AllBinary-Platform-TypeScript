@@ -21,63 +21,63 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
+//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
 import { NullPlayerGameInputComposite } from '../../../../org/allbinary/game/input/NullPlayerGameInputComposite.js';
-      //not GWT import const NullPlayerGameInputComposite = globalThis.org.allbinary.game.input.NullPlayerGameInputComposite;
+//not GWT import const NullPlayerGameInputComposite = globalThis.org.allbinary.game.input.NullPlayerGameInputComposite;
 
       
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
-      //not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+//not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
 
       
 import { ItemColorFactory } from '../../../../org/allbinary/graphics/ItemColorFactory.js';
-      //not GWT import const ItemColorFactory = globalThis.org.allbinary.graphics.ItemColorFactory;
+//not GWT import const ItemColorFactory = globalThis.org.allbinary.graphics.ItemColorFactory;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
-      //not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
+//not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not plain js import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+//not plain js import { SmallIntegerSingletonFactory } 
+const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 

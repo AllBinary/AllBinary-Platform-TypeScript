@@ -34,7 +34,7 @@ const Controllable = globalThis.javax.microedition.media.Controllable;
       
 //not plain js import { Player } 
 const Player = globalThis.javax.microedition.media.Player;
- const PlayerI = globalThis.javax.microedition.media.Player;
+const PlayerI = globalThis.javax.microedition.media.Player;
 
       
 //not plain js import { PlayerListener } 

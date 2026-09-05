@@ -23,107 +23,107 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not plain js import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
-      const Choice = globalThis.javax.microedition.lcdui.Choice;
+//not plain js import { Choice } 
+const Choice = globalThis.javax.microedition.lcdui.Choice;
 
       
-//not plain js import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } 
+const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } 
+const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { Item } from '../../../../javax/microedition/lcdui/Item.js';
-      const Item = globalThis.javax.microedition.lcdui.Item;
+//not plain js import { Item } 
+const Item = globalThis.javax.microedition.lcdui.Item;
 
       
-//not plain js import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      const TextField = globalThis.javax.microedition.lcdui.TextField;
+//not plain js import { TextField } 
+const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-      //not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+//not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
 
       
 import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
-      //not GWT import const GameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
+//not GWT import const GameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
 
       
 import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
-      //not GWT import const GameFeatureFormUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureFormUtil;
+//not GWT import const GameFeatureFormUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureFormUtil;
 
       
 import { GameFeatureItemCommandListener } from '../../../../org/allbinary/game/configuration/feature/GameFeatureItemCommandListener.js';
-      //not GWT import const GameFeatureItemCommandListener = globalThis.org.allbinary.game.configuration.feature.GameFeatureItemCommandListener;
+//not GWT import const GameFeatureItemCommandListener = globalThis.org.allbinary.game.configuration.feature.GameFeatureItemCommandListener;
 
       
 import { GameFeatureItemStateListener } from '../../../../org/allbinary/game/configuration/feature/GameFeatureItemStateListener.js';
-      //not GWT import const GameFeatureItemStateListener = globalThis.org.allbinary.game.configuration.feature.GameFeatureItemStateListener;
+//not GWT import const GameFeatureItemStateListener = globalThis.org.allbinary.game.configuration.feature.GameFeatureItemStateListener;
 
       
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
-      //not GWT import const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
+//not GWT import const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
 
       
 import { GameConfigurationPersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js';
-      //not GWT import const GameConfigurationPersistanceSingleton = globalThis.org.allbinary.game.configuration.persistance.GameConfigurationPersistanceSingleton;
+//not GWT import const GameConfigurationPersistanceSingleton = globalThis.org.allbinary.game.configuration.persistance.GameConfigurationPersistanceSingleton;
 
       
 import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
-      //not GWT import const KeyValuePersistance = globalThis.org.allbinary.game.configuration.persistance.KeyValuePersistance;
+//not GWT import const KeyValuePersistance = globalThis.org.allbinary.game.configuration.persistance.KeyValuePersistance;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
-      //not GWT import const MyCommandsFactory = globalThis.org.allbinary.graphics.displayable.command.MyCommandsFactory;
+//not GWT import const MyCommandsFactory = globalThis.org.allbinary.graphics.displayable.command.MyCommandsFactory;
 
       
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-      //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+//not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
 
       
 import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
-      //not GWT import const OrientationData = globalThis.org.allbinary.input.gyro.OrientationData;
+//not GWT import const OrientationData = globalThis.org.allbinary.input.gyro.OrientationData;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
-      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+//not plain js import { HashtableUtil } 
+const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
-//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -145,22 +145,22 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationTextInput } from './GameConfigurationTextInput.js';
-//not GWT import const GameConfigurationTextInput = globalThis.org.allbinary.game.configuration.GameConfigurationTextInput;
+//not GWT import - same folder const GameConfigurationTextInput = globalThis.org.allbinary.game.configuration.GameConfigurationTextInput;
 
                 import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import const GameConfigurationSingleton = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
+//not GWT import - same folder const GameConfigurationSingleton = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
 
                 import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
+//not GWT import - same folder const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
 
                 import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
+//not GWT import - same folder const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
 
                 import { GameConfigurationUtil } from './GameConfigurationUtil.js';
-//not GWT import const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
+//not GWT import - same folder const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
 
                 import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+//not GWT import - same folder const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
                 
 export class GameOptionsForm extends CommandForm {

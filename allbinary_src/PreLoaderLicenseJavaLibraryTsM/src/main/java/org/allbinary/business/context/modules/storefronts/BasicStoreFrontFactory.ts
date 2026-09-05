@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFrontsEntity } from './BasicStoreFrontsEntity.js';
-//not GWT import const BasicStoreFrontsEntity = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontsEntity;
+//not GWT import - same folder const BasicStoreFrontsEntity = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontsEntity;
 
                 import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
-//not GWT import const BasicStoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
+//not GWT import - same folder const BasicStoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
 
                 
 export class BasicStoreFrontFactory

@@ -23,35 +23,35 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { EntryData } from '../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
 import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { Document } from '../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -73,7 +73,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserData } from './UserData.js';
-//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
+//not GWT import - same folder const UserData = globalThis.org.allbinary.business.user.UserData;
 
                 
 export class UserDomNode

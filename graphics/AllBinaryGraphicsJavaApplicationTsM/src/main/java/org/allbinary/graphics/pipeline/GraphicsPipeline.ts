@@ -22,20 +22,20 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+//not plain js import { PointFactory } 
+const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -57,7 +57,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
-//not GWT import const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
+//not GWT import - same folder const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
 
                 
 export class GraphicsPipeline extends BasicGraphicsPipeline {

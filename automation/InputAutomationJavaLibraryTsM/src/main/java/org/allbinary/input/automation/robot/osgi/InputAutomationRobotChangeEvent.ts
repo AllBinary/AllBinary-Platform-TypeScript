@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotInterfaceWrapper } from './InputAutomationRobotInterfaceWrapper.js';
-//not GWT import const InputAutomationRobotInterfaceWrapper = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotInterfaceWrapper;
+//not GWT import - same folder const InputAutomationRobotInterfaceWrapper = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotInterfaceWrapper;
 
                 
 export class InputAutomationRobotChangeEvent

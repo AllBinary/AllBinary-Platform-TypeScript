@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-      //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
 
@@ -51,10 +51,10 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import - same folder const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { TopToBottomImageAnimation } from './TopToBottomImageAnimation.js';
-//not GWT import const TopToBottomImageAnimation = globalThis.org.allbinary.animation.image.TopToBottomImageAnimation;
+//not GWT import - same folder const TopToBottomImageAnimation = globalThis.org.allbinary.animation.image.TopToBottomImageAnimation;
 
                 
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {

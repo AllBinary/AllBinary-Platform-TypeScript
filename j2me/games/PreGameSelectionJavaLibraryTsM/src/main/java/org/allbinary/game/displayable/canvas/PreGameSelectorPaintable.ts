@@ -18,24 +18,24 @@
         
 
 
-//not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 import { CanvasDrawLineString } from '../../../../../org/allbinary/graphics/draw/CanvasDrawLineString.js';
-      //not GWT import const CanvasDrawLineString = globalThis.org.allbinary.graphics.draw.CanvasDrawLineString;
+//not GWT import const CanvasDrawLineString = globalThis.org.allbinary.graphics.draw.CanvasDrawLineString;
 
       
 import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
-      //not GWT import const InitUpdatePaintable = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
+//not GWT import const InitUpdatePaintable = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
 
       
 
@@ -57,7 +57,7 @@ import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreGameScrollSelectionForm } from './PreGameScrollSelectionForm.js';
-//not GWT import const PreGameScrollSelectionForm = globalThis.org.allbinary.game.displayable.canvas.PreGameScrollSelectionForm;
+//not GWT import - same folder const PreGameScrollSelectionForm = globalThis.org.allbinary.game.displayable.canvas.PreGameScrollSelectionForm;
 
                 
 export class PreGameSelectorPaintable extends InitUpdatePaintable {

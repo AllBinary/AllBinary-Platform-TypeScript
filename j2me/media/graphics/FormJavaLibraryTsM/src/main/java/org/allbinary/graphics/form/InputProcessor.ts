@@ -21,11 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
-      //not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+//not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
 
       
 

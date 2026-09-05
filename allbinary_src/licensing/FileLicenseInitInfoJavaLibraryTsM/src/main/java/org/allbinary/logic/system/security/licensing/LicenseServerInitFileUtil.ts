@@ -23,47 +23,47 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { InputStream } from '../../../../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 import { OutputStream } from '../../../../../../java/io/OutputStream.js';
-      //not GWT import const OutputStream = globalThis.java.io.OutputStream;
+//not GWT import const OutputStream = globalThis.java.io.OutputStream;
 
       
 import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-      //not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+//not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
 
       
-//not plain js import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { FileStreamFactory } from '../../../../../../org/allbinary/logic/io/FileStreamFactory.js';
-      //not GWT import const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
+//not GWT import const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
 
       
 import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
-      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
 import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
-      //not GWT import const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+//not GWT import const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
 
       
 import { SimpleFileUtil } from '../../../../../../org/allbinary/logic/io/file/SimpleFileUtil.js';
-      //not GWT import const SimpleFileUtil = globalThis.org.allbinary.logic.io.file.SimpleFileUtil;
+//not GWT import const SimpleFileUtil = globalThis.org.allbinary.logic.io.file.SimpleFileUtil;
 
       
-//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 

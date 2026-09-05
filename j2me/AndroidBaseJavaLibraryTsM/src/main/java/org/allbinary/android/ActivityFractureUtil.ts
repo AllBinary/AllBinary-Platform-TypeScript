@@ -25,7 +25,7 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Activity } from '../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 

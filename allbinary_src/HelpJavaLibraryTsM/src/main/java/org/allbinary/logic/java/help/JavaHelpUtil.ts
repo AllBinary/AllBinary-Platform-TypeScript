@@ -23,47 +23,47 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
-      //not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
+//not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
 
       
 import { File } from '../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { URI } from '../../../../../java/net/URI.js';
-      //not GWT import const URI = globalThis.java.net.URI;
+//not GWT import const URI = globalThis.java.net.URI;
 
       
 import { URL } from '../../../../../java/net/URL.js';
-      //not GWT import const URL = globalThis.java.net.URL;
+//not GWT import const URL = globalThis.java.net.URL;
 
       
 import { CSH } from '../../../../../javax/help/CSH.js';
-      //not GWT import const CSH = globalThis.javax.help.CSH;
+//not GWT import const CSH = globalThis.javax.help.CSH;
 
       
 import { HelpBroker } from '../../../../../javax/help/HelpBroker.js';
-      //not GWT import const HelpBroker = globalThis.javax.help.HelpBroker;
+//not GWT import const HelpBroker = globalThis.javax.help.HelpBroker;
 
       
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
+//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
 import { swing } from '../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -85,16 +85,16 @@ import { swing } from '../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import const Point = globalThis.org.allbinary.logic.java.help.Point;
+//not GWT import - same folder const Point = globalThis.org.allbinary.logic.java.help.Point;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.logic.java.help.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.logic.java.help.Dimension;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.logic.java.help.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.logic.java.help.JLabel;
 
                 import { DisplayHelpFromSource } from './DisplayHelpFromSource.js';
-//not GWT import const DisplayHelpFromSource = globalThis.org.allbinary.logic.java.help.DisplayHelpFromSource;
+//not GWT import - same folder const DisplayHelpFromSource = globalThis.org.allbinary.logic.java.help.DisplayHelpFromSource;
 
                 
 export class JavaHelpUtil

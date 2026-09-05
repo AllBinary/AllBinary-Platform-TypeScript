@@ -21,23 +21,23 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { AppUrlGlobals } from '../../../org/allbinary/globals/AppUrlGlobals.js';
-      //not GWT import const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
+//not GWT import const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
 
       
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not plain js import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
-      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+//not plain js import { AbPathData } 
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
 import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
-      //not GWT import const WebappClassLoaderInfo = globalThis.org.allbinary.logic.system.loader.WebappClassLoaderInfo;
+//not GWT import const WebappClassLoaderInfo = globalThis.org.allbinary.logic.system.loader.WebappClassLoaderInfo;
 
       
 

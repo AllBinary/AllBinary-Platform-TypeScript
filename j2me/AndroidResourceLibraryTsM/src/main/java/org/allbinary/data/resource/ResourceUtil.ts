@@ -25,67 +25,67 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { InputStream } from '../../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 import { Activity } from '../../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 import { Context } from '../../../../android/content/Context.js';
-      //not GWT import const Context = globalThis.android.content.Context;
+//not GWT import const Context = globalThis.android.content.Context;
 
       
 import { Resources } from '../../../../android/content/res/Resources.js';
-      //not GWT import const Resources = globalThis.android.content.res.Resources;
+//not GWT import const Resources = globalThis.android.content.res.Resources;
 
       
 import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
-      //not GWT import const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
+//not GWT import const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
 
       
 import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
-      //not GWT import const NoDebug = globalThis.org.allbinary.debug.NoDebug;
+//not GWT import const NoDebug = globalThis.org.allbinary.debug.NoDebug;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+//not plain js import { ForcedLogUtil } 
+const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-//not plain js import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
-      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+//not plain js import { HashtableUtil } 
+const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
 

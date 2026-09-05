@@ -19,7 +19,7 @@
 
 
 import { GameInputMotionInfo } from '../../../../../../org/allbinary/android/input/motion/GameInputMotionInfo.js';
-      //not GWT import const GameInputMotionInfo = globalThis.org.allbinary.android.input.motion.GameInputMotionInfo;
+//not GWT import const GameInputMotionInfo = globalThis.org.allbinary.android.input.motion.GameInputMotionInfo;
 
       
 

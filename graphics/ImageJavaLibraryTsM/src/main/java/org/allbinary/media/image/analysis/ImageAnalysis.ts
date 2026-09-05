@@ -25,31 +25,31 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-      //not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+//not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
 
       
 import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-      //not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+//not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -71,19 +71,19 @@ import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/Colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageAnalysisResults } from './ImageAnalysisResults.js';
-//not GWT import const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
+//not GWT import - same folder const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
 
                 import { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+//not GWT import - same folder const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
                 import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.media.image.analysis.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.media.image.analysis.Color;
 
                 import { ColorAverage } from './ColorAverage.js';
-//not GWT import const ColorAverage = globalThis.org.allbinary.media.image.analysis.ColorAverage;
+//not GWT import - same folder const ColorAverage = globalThis.org.allbinary.media.image.analysis.ColorAverage;
 
                 import { ImageColorResults } from './ImageColorResults.js';
-//not GWT import const ImageColorResults = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
+//not GWT import - same folder const ImageColorResults = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
 
                 
 export class ImageAnalysis

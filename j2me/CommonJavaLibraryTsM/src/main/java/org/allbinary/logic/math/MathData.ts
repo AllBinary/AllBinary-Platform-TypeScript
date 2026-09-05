@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+//not plain js import { CommonPhoneStrings } 
+const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 

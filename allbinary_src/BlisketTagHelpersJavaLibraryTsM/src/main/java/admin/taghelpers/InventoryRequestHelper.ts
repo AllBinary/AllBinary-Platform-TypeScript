@@ -21,55 +21,55 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { AbTagData } from '../../admin/tags/AbTagData.js';
-      //not GWT import const AbTagData = globalThis.admin.tags.AbTagData;
+//not GWT import const AbTagData = globalThis.admin.tags.AbTagData;
 
       
 import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
 import { ItemInterface } from '../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-      //not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
       
 import { TableMappingInterface } from '../../org/allbinary/data/tables/TableMappingInterface.js';
-      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
 import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-      //not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+//not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { HelperTag } from '../../tags/HelperTag.js';
-      //not GWT import const HelperTag = globalThis.tags.HelperTag;
+//not GWT import const HelperTag = globalThis.tags.HelperTag;
 
       
 import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
-      //not GWT import const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
+//not GWT import const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
 
       
 
@@ -91,10 +91,10 @@ import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
+//not GWT import - same folder const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
 
                 import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
-//not GWT import const InventoryItemViewParentTagHelper = globalThis.admin.taghelpers.InventoryItemViewParentTagHelper;
+//not GWT import - same folder const InventoryItemViewParentTagHelper = globalThis.admin.taghelpers.InventoryItemViewParentTagHelper;
 
                 
 export class InventoryRequestHelper extends ModifyTable {

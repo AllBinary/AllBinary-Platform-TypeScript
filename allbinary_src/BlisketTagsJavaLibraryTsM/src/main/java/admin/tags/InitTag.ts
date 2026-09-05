@@ -19,7 +19,7 @@
 
 
 import { InitHelperFactory } from '../../admin/taghelpers/InitHelperFactory.js';
-      //not GWT import const InitHelperFactory = globalThis.admin.taghelpers.InitHelperFactory;
+//not GWT import const InitHelperFactory = globalThis.admin.taghelpers.InitHelperFactory;
 
       
 
@@ -41,7 +41,7 @@ import { InitHelperFactory } from '../../admin/taghelpers/InitHelperFactory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class InitTag extends TableTag {

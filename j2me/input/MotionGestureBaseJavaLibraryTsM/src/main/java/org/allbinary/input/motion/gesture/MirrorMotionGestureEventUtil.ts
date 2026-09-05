@@ -24,20 +24,20 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+//not plain js import { PointFactory } 
+const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
-      //not GWT import const MotionEventCircularPool = globalThis.org.allbinary.input.motion.gesture.observer.MotionEventCircularPool;
+//not GWT import const MotionEventCircularPool = globalThis.org.allbinary.input.motion.gesture.observer.MotionEventCircularPool;
 
       
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-      //not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+//not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
 
       
 

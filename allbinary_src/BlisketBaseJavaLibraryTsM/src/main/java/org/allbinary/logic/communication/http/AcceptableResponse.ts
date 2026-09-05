@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseUtil } from './AcceptableResponseUtil.js';
-//not GWT import const AcceptableResponseUtil = globalThis.org.allbinary.logic.communication.http.AcceptableResponseUtil;
+//not GWT import - same folder const AcceptableResponseUtil = globalThis.org.allbinary.logic.communication.http.AcceptableResponseUtil;
 
                 
 export class AcceptableResponse

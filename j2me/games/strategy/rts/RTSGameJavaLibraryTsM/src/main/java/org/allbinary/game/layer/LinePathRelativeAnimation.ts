@@ -18,16 +18,16 @@
         
 
 
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
+//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
 
@@ -49,7 +49,7 @@ import { Layer } from '../../../../org/allbinary/layer/Layer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
-//not GWT import const LinePathAnimation = globalThis.org.allbinary.game.layer.LinePathAnimation;
+//not GWT import - same folder const LinePathAnimation = globalThis.org.allbinary.game.layer.LinePathAnimation;
 
                 
 export class LinePathRelativeAnimation extends LinePathAnimation {

@@ -23,19 +23,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -57,10 +57,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemeInterface } from './ThemeInterface.js';
-//not GWT import const ThemeInterface = globalThis.org.allbinary.logic.visual.theme.ThemeInterface;
+//not GWT import - same folder const ThemeInterface = globalThis.org.allbinary.logic.visual.theme.ThemeInterface;
 
                 import { ThemeData } from './ThemeData.js';
-//not GWT import const ThemeData = globalThis.org.allbinary.logic.visual.theme.ThemeData;
+//not GWT import - same folder const ThemeData = globalThis.org.allbinary.logic.visual.theme.ThemeData;
 
                 
 export class ThemePropertiesView

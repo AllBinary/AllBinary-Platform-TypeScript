@@ -25,19 +25,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Level } from '../../../../../java/util/logging/Level.js';
-      //not GWT import const Level = globalThis.java.util.logging.Level;
+//not GWT import const Level = globalThis.java.util.logging.Level;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { Logger } from '../../../../../java/util/logging/Logger.js';
-      //not GWT import const Logger = globalThis.java.util.logging.Logger;
+//not GWT import const Logger = globalThis.java.util.logging.Logger;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -58,13 +58,13 @@ import { Logger } from '../../../../../java/util/logging/Logger.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+        //not plain js - same folder import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
-                //not plain js import { PreLogUtil } from './PreLogUtil.js';
+                //not plain js - same folder import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
-                //not plain js import { Log } from './Log.js';
+                //not plain js - same folder import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
                 //ActualPlatform

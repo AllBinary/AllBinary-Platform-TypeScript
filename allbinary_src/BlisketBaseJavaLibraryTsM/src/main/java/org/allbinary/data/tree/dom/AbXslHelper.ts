@@ -23,23 +23,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
 import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
-      //not GWT import const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
+//not GWT import const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
 
       
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+//not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
 
@@ -61,7 +61,7 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XslHelper } from './XslHelper.js';
-//not GWT import const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
+//not GWT import - same folder const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
 
                 
 export class AbXslHelper

@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 

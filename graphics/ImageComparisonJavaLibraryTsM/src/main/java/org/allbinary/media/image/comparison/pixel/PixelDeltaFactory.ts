@@ -22,44 +22,44 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+//not plain js import { PointFactory } 
+const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
 import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
-      //not GWT import const CacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.CacheInterfaceFactory;
+//not GWT import const CacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.CacheInterfaceFactory;
 
       
 import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
-      //not GWT import const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+//not GWT import const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
 
       
 import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
-      //not GWT import const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+//not GWT import const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
 
       
 import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
-      //not GWT import const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
+//not GWT import const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
 
       
 import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
-      //not GWT import const ColorDeltaFactory = globalThis.org.allbinary.media.image.comparison.color.ColorDeltaFactory;
+//not GWT import const ColorDeltaFactory = globalThis.org.allbinary.media.image.comparison.color.ColorDeltaFactory;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -81,7 +81,7 @@ import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PixelDelta } from './PixelDelta.js';
-//not GWT import const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+//not GWT import - same folder const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
 
                 
 export class PixelDeltaFactory

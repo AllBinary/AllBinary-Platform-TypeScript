@@ -27,47 +27,47 @@
             import { ClassNotFoundException } from '../../../../../java/lang/ClassNotFoundException.js';
         
 import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
-      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
+//not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
 import { IOException } from '../../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { Map } from '../../../../../java/util/Map.js';
-      //not GWT import const Map = globalThis.java.util.Map;
+//not GWT import const Map = globalThis.java.util.Map;
 
       
-//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogBuffer } from '../../../../../org/allbinary/logic/communication/log/LogBuffer.js';
-      const LogBuffer = globalThis.org.allbinary.logic.communication.log.LogBuffer;
+import { LogBuffer } from '../../../../../org/allbinary/logic/communication/log/LogBuffer.js';
+//not GWT import const LogBuffer = globalThis.org.allbinary.logic.communication.log.LogBuffer;
 
       
-//not plain js import { LogFactory } from '../../../../../org/allbinary/logic/communication/log/LogFactory.js';
-      const LogFactory = globalThis.org.allbinary.logic.communication.log.LogFactory;
+//not plain js import { LogFactory } 
+const LogFactory = globalThis.org.allbinary.logic.communication.log.LogFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
-      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+//not plain js import { AbPathData } 
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { AbCryptUtil } from '../../../../../org/allbinary/logic/system/security/AbCryptUtil.js';
-      //not GWT import const AbCryptUtil = globalThis.org.allbinary.logic.system.security.AbCryptUtil;
+//not GWT import const AbCryptUtil = globalThis.org.allbinary.logic.system.security.AbCryptUtil;
 
       
 
@@ -89,7 +89,7 @@ import { AbCryptUtil } from '../../../../../org/allbinary/logic/system/security/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoClassDefFoundError } from './NoClassDefFoundError.js';
-//not GWT import const NoClassDefFoundError = globalThis.org.allbinary.logic.system.loader.NoClassDefFoundError;
+//not GWT import - same folder const NoClassDefFoundError = globalThis.org.allbinary.logic.system.loader.NoClassDefFoundError;
 
                 
 export class AbeClassLoader extends ClassLoader {

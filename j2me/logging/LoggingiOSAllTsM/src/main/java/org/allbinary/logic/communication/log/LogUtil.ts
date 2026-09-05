@@ -25,19 +25,19 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { TsUtil } from '../../../../../org/allbinary/logic/TsUtil.js';
-      //not GWT import const TsUtil = globalThis.org.allbinary.logic.TsUtil;
+//not GWT import const TsUtil = globalThis.org.allbinary.logic.TsUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -58,10 +58,10 @@ import { TsUtil } from '../../../../../org/allbinary/logic/TsUtil.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+        //not plain js - same folder import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
-                //not plain js import { Log } from './Log.js';
+                //not plain js - same folder import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
                 //ActualPlatform

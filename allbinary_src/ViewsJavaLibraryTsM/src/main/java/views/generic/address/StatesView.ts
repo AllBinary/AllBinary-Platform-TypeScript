@@ -23,43 +23,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { StreetAddressData } from '../../../org/allbinary/business/user/address/StreetAddressData.js';
-      //not GWT import const StreetAddressData = globalThis.org.allbinary.business.user.address.StreetAddressData;
+//not GWT import const StreetAddressData = globalThis.org.allbinary.business.user.address.StreetAddressData;
 
       
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
 import { FREEBLISKET_PATH_GLOBALS } from '../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-      //not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+//not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
 
       
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { LineReader } from '../../../org/allbinary/logic/io/LineReader.js';
-      //not GWT import const LineReader = globalThis.org.allbinary.logic.io.LineReader;
+//not GWT import const LineReader = globalThis.org.allbinary.logic.io.LineReader;
 
       
-//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { Document } from '../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

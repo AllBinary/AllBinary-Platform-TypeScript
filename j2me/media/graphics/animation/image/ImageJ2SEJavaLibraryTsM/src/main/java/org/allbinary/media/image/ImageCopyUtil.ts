@@ -23,23 +23,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
+//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
-      //not GWT import const J2SEImmutableImage = globalThis.org.microemu.device.j2se.J2SEImmutableImage;
+//not GWT import const J2SEImmutableImage = globalThis.org.microemu.device.j2se.J2SEImmutableImage;
 
       
 
@@ -61,9 +61,9 @@ import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImm
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
-                //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+                //not plain js - same folder import { ImageCreationUtil } 
 const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 

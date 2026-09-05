@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-      //not GWT import const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+//not GWT import const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
 
       
 

@@ -20,60 +20,60 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-      //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
 import { VectorAnimation } from '../../../../org/allbinary/animation/VectorAnimation.js';
-      //not GWT import const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
+//not GWT import const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
 
       
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-      //not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
-      //not GWT import const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
+//not GWT import const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
 
       
-//not plain js import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-      const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+//not plain js import { PrimitiveIntUtil } 
+const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-//not plain js import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+//not plain js import { AngleFactory } 
+const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not plain js import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
 import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js';
-      //not GWT import const ImageToRotationImageArrayUtil = globalThis.org.allbinary.media.image.ImageToRotationImageArrayUtil;
+//not GWT import const ImageToRotationImageArrayUtil = globalThis.org.allbinary.media.image.ImageToRotationImageArrayUtil;
 
       
 import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
-      //not GWT import const VectorInfo = globalThis.org.allbinary.vector.VectorInfo;
+//not GWT import const VectorInfo = globalThis.org.allbinary.vector.VectorInfo;
 
       
 
@@ -95,10 +95,10 @@ import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+//not GWT import - same folder const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
                 import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import const AdjustedImageArrayRotationAnimation = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
+//not GWT import - same folder const AdjustedImageArrayRotationAnimation = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
 
                 
 export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimationFactory {

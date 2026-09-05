@@ -21,15 +21,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
-      //not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
+//not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
 
       
 
@@ -51,10 +51,10 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TickableLayerManager } from './TickableLayerManager.js';
-//not GWT import const TickableLayerManager = globalThis.org.allbinary.game.tick.TickableLayerManager;
+//not GWT import - same folder const TickableLayerManager = globalThis.org.allbinary.game.tick.TickableLayerManager;
 
                 import { TickableInterface } from './TickableInterface.js';
-//not GWT import const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+//not GWT import - same folder const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
 
                 
 export class TickableLayerProcessor extends LayerProcessor {

@@ -23,15 +23,15 @@
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
 import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
-      //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
+//not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
 
       
 import { swing } from '../../../../../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
-      //not GWT import const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
+//not GWT import const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
 
       
 
@@ -53,7 +53,7 @@ import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import const DefaultComboBoxModel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
+//not GWT import - same folder const DefaultComboBoxModel = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
 
                 
 export class KeyNameDefaultComboBoxModelFactory

@@ -23,39 +23,39 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Provider } from '../../../../../../../java/security/Provider.js';
-      //not GWT import const Provider = globalThis.java.security.Provider;
+//not GWT import const Provider = globalThis.java.security.Provider;
 
       
 import { Security } from '../../../../../../../java/security/Security.js';
-      //not GWT import const Security = globalThis.java.security.Security;
+//not GWT import const Security = globalThis.java.security.Security;
 
       
 import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
-      //not GWT import const KeySpec = globalThis.java.security.spec.KeySpec;
+//not GWT import const KeySpec = globalThis.java.security.spec.KeySpec;
 
       
 import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
-      //not GWT import const Cipher = globalThis.javax.crypto.Cipher;
+//not GWT import const Cipher = globalThis.javax.crypto.Cipher;
 
       
 import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
-      //not GWT import const SecretKey = globalThis.javax.crypto.SecretKey;
+//not GWT import const SecretKey = globalThis.javax.crypto.SecretKey;
 
       
 import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
-      //not GWT import const SecretKeyFactory = globalThis.javax.crypto.SecretKeyFactory;
+//not GWT import const SecretKeyFactory = globalThis.javax.crypto.SecretKeyFactory;
 
       
 import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
-      //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+//not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
 
       
-//not plain js import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -77,10 +77,10 @@ import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SunJCE } from './SunJCE.js';
-//not GWT import const SunJCE = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.SunJCE;
+//not GWT import - same folder const SunJCE = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.SunJCE;
 
                 import { KeySpecFactory } from './KeySpecFactory.js';
-//not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
+//not GWT import - same folder const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
 
                 
 export class AbBasicCrypt

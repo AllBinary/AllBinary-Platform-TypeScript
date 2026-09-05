@@ -19,19 +19,19 @@
 
 
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { DirectionalInterface } from '../../../org/allbinary/direction/DirectionalInterface.js';
-      //not GWT import const DirectionalInterface = globalThis.org.allbinary.direction.DirectionalInterface;
+//not GWT import const DirectionalInterface = globalThis.org.allbinary.direction.DirectionalInterface;
 
       
-//not plain js import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -53,7 +53,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-//not GWT import const IndexedAnimationInterface = globalThis.org.allbinary.animation.IndexedAnimationInterface;
+//not GWT import - same folder const IndexedAnimationInterface = globalThis.org.allbinary.animation.IndexedAnimationInterface;
 
                 
 export interface RotationAnimationInterface extends IndexedAnimationInterface, DirectionalInterface {

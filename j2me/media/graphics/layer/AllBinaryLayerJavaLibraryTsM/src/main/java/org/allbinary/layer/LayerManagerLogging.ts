@@ -23,23 +23,23 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';
-      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
+//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -61,13 +61,13 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import const LayerManagerLoggingBase = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
+//not GWT import - same folder const LayerManagerLoggingBase = globalThis.org.allbinary.layer.LayerManagerLoggingBase;
 
                 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import - same folder const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 import { LayerManager } from './LayerManager.js';
-//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import - same folder const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
                 
 export class LayerManagerLogging extends LayerManagerLoggingBase {

@@ -21,23 +21,23 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Collection } from '../../../java/util/Collection.js';
-      //not GWT import const Collection = globalThis.java.util.Collection;
+//not GWT import const Collection = globalThis.java.util.Collection;
 
       
 import { Map } from '../../../java/util/Map.js';
-      //not GWT import const Map = globalThis.java.util.Map;
+//not GWT import const Map = globalThis.java.util.Map;
 
       
 import { Set } from '../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
+//not GWT import const Set = globalThis.java.util.Set;
 
       
 import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
-      //not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+//not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 

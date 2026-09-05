@@ -23,23 +23,23 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { IOException } from '../../../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { Calendar } from '../../../../../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/AbeLicenseClient.js';
-      //not GWT import const AbeLicenseClient = globalThis.org.allbinary.logic.system.security.licensing.client.AbeLicenseClient;
+//not GWT import const AbeLicenseClient = globalThis.org.allbinary.logic.system.security.licensing.client.AbeLicenseClient;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -61,19 +61,19 @@ import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
+//not GWT import - same folder const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
 
                 import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import - same folder const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
                 import { AbeNoLicense } from './AbeNoLicense.js';
-//not GWT import const AbeNoLicense = globalThis.org.allbinary.logic.system.security.licensing.AbeNoLicense;
+//not GWT import - same folder const AbeNoLicense = globalThis.org.allbinary.logic.system.security.licensing.AbeNoLicense;
 
                 import { AbeClientInformationData } from './AbeClientInformationData.js';
-//not GWT import const AbeClientInformationData = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
+//not GWT import - same folder const AbeClientInformationData = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
 
                 import { LicensingException } from './LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import - same folder const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
                 
 export class AbeLicenseInterfaceFactory

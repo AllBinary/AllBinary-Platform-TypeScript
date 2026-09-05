@@ -23,15 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -53,13 +53,13 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+//not GWT import - same folder const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
                 import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+//not GWT import - same folder const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
 
                 
 export class CanvasExpandUtil

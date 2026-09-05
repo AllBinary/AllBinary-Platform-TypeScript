@@ -21,19 +21,19 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } 
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 
@@ -55,7 +55,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
-//not GWT import const TrueTypeFontUtilBase = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
+//not GWT import - same folder const TrueTypeFontUtilBase = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
 
                 
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {

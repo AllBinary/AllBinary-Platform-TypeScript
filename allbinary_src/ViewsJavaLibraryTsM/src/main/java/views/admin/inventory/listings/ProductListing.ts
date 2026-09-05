@@ -25,147 +25,147 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { HashSet } from '../../../../java/util/HashSet.js';
-      //not GWT import const HashSet = globalThis.java.util.HashSet;
+//not GWT import const HashSet = globalThis.java.util.HashSet;
 
       
 import { Set } from '../../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
+//not GWT import const Set = globalThis.java.util.Set;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
 import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
 import { StoreFrontsEntity } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
-      //not GWT import const StoreFrontsEntity = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntity;
+//not GWT import const StoreFrontsEntity = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntity;
 
       
 import { StaticPagesEntity } from '../../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js';
-      //not GWT import const StaticPagesEntity = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
+//not GWT import const StaticPagesEntity = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
 
       
 import { InventoryEntity } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-      //not GWT import const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
+//not GWT import const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
 
       
 import { GLOBALS2 } from '../../../../org/allbinary/globals/GLOBALS2.js';
-      //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+//not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
 
       
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not plain js import { StdUtil } from '../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { SearchParams } from '../../../../org/allbinary/logic/control/search/SearchParams.js';
-      //not GWT import const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
+//not GWT import const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
 
       
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
-      //not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+//not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
 
       
 import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
-      //not GWT import const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+//not GWT import const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
 
       
 import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
-      //not GWT import const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
+//not GWT import const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
 
       
 import { InputOutputTypeData } from '../../../../org/allbinary/logic/io/InputOutputTypeData.js';
-      //not GWT import const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
+//not GWT import const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
 
       
 import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
-      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
-      //not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+//not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
 
       
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
-      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+//not plain js import { AbPathData } 
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
 import { SpecialCharacterUtil } from '../../../../org/allbinary/logic/string/SpecialCharacterUtil.js';
-      //not GWT import const SpecialCharacterUtil = globalThis.org.allbinary.logic.string.SpecialCharacterUtil;
+//not GWT import const SpecialCharacterUtil = globalThis.org.allbinary.logic.string.SpecialCharacterUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { Replace } from '../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-      //not GWT import const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+//not GWT import const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
 
       
 import { UniqueTokens } from '../../../../org/allbinary/logic/string/tokens/UniqueTokens.js';
-      //not GWT import const UniqueTokens = globalThis.org.allbinary.logic.string.tokens.UniqueTokens;
+//not GWT import const UniqueTokens = globalThis.org.allbinary.logic.string.tokens.UniqueTokens;
 
       
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { ServiceClientInformationInterfaceFactory } from '../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+//not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
-//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+//not plain js import { CommonPhoneStrings } 
+const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 import { InventoryColumnUtil } from '../../../../views/generic/inventory/InventoryColumnUtil.js';
-      //not GWT import const InventoryColumnUtil = globalThis.views.generic.inventory.InventoryColumnUtil;
+//not GWT import const InventoryColumnUtil = globalThis.views.generic.inventory.InventoryColumnUtil;
 
       
 import { InventorySearchUtil } from '../../../../views/generic/inventory/InventorySearchUtil.js';
-      //not GWT import const InventorySearchUtil = globalThis.views.generic.inventory.InventorySearchUtil;
+//not GWT import const InventorySearchUtil = globalThis.views.generic.inventory.InventorySearchUtil;
 
       
 
@@ -187,7 +187,7 @@ import { InventorySearchUtil } from '../../../../views/generic/inventory/Invento
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProductListingInterface } from './ProductListingInterface.js';
-//not GWT import const ProductListingInterface = globalThis.views.admin.inventory.listings.ProductListingInterface;
+//not GWT import - same folder const ProductListingInterface = globalThis.views.admin.inventory.listings.ProductListingInterface;
 
                 
 export class ProductListing

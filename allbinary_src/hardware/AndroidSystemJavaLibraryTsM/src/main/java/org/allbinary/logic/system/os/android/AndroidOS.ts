@@ -23,19 +23,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';
-      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+//not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
-//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-      //not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+//not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
       
-//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -57,7 +57,7 @@ import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/sy
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidSystemProperties } from './AndroidSystemProperties.js';
-//not GWT import const AndroidSystemProperties = globalThis.org.allbinary.logic.system.os.android.AndroidSystemProperties;
+//not GWT import - same folder const AndroidSystemProperties = globalThis.org.allbinary.logic.system.os.android.AndroidSystemProperties;
 
                 
 export class AndroidOS extends GenericOperatingSystem {

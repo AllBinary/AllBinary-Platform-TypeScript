@@ -21,7 +21,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { DomDocumentMappingInterface } from '../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-      //not GWT import const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+//not GWT import const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
 
       
 

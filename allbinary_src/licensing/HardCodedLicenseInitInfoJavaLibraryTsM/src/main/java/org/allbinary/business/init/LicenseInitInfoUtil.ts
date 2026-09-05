@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseInitInfo } from './LicenseInitInfo.js';
-//not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+//not GWT import - same folder const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
 
                 
 export class LicenseInitInfoUtil

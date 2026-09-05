@@ -23,51 +23,51 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
+//not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
 import { PaymentFactory } from '../../org/allbinary/business/user/commerce/money/payment/PaymentFactory.js';
-      //not GWT import const PaymentFactory = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentFactory;
+//not GWT import const PaymentFactory = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentFactory;
 
       
 import { PaymentInterface } from '../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
-      //not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+//not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
 
       
 import { PaymentEntity } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
-      //not GWT import const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
+//not GWT import const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
 
       
 import { PaymentEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
-      //not GWT import const PaymentEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityFactory;
+//not GWT import const PaymentEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityFactory;
 
       
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-      //not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-      //not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+//not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 
@@ -89,7 +89,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Table } from './Table.js';
-//not GWT import const Table = globalThis.admin.taghelpers.Table;
+//not GWT import - same folder const Table = globalThis.admin.taghelpers.Table;
 
                 
 export class PaymentHelper extends Table {

@@ -9,19 +9,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
-      //not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
+//not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
 
       
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-      //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+//not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -43,13 +43,13 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
-//not GWT import const GameAdStateFactoryInterface = globalThis.org.allbinary.business.advertisement.GameAdStateFactoryInterface;
+//not GWT import - same folder const GameAdStateFactoryInterface = globalThis.org.allbinary.business.advertisement.GameAdStateFactoryInterface;
 
                 import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
-//not GWT import const AppNameLicensingAdConfiguration = globalThis.org.allbinary.business.advertisement.AppNameLicensingAdConfiguration;
+//not GWT import - same folder const AppNameLicensingAdConfiguration = globalThis.org.allbinary.business.advertisement.AppNameLicensingAdConfiguration;
 
                 import { GameAdStateBase } from './GameAdStateBase.js';
-//not GWT import const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
+//not GWT import - same folder const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
 
                 
 export class GameAdStateFactory

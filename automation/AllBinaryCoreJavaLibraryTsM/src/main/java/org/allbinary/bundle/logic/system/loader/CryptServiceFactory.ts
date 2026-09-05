@@ -21,23 +21,23 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-      //not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
+//not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
 
       
 import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
-      //not GWT import const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
+//not GWT import const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
 
       
 import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
-      //not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
+//not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -59,7 +59,7 @@ import { ServiceRegistration } from '../../../../../../org/osgi/framework/Servic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptService } from './CryptService.js';
-//not GWT import const CryptService = globalThis.org.allbinary.bundle.logic.system.loader.CryptService;
+//not GWT import - same folder const CryptService = globalThis.org.allbinary.bundle.logic.system.loader.CryptService;
 
                 
 export class CryptServiceFactory

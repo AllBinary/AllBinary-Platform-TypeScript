@@ -21,19 +21,19 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { GenericOperatingSystem } from '../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-      //not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+//not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
       
 import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-      //not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+//not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
 
       
 
@@ -55,13 +55,13 @@ import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
-//not GWT import const ColorFillPaintable = globalThis.org.allbinary.game.paint.ColorFillPaintable;
+//not GWT import - same folder const ColorFillPaintable = globalThis.org.allbinary.game.paint.ColorFillPaintable;
 
                 import { OverScanColorFillPaintable } from './OverScanColorFillPaintable.js';
-//not GWT import const OverScanColorFillPaintable = globalThis.org.allbinary.game.paint.OverScanColorFillPaintable;
+//not GWT import - same folder const OverScanColorFillPaintable = globalThis.org.allbinary.game.paint.OverScanColorFillPaintable;
 
                 import { ColorFillBasePaintable } from './ColorFillBasePaintable.js';
-//not GWT import const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+//not GWT import - same folder const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
 
                 
 export class ColorFillPaintableFactory

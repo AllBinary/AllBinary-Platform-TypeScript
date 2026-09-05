@@ -22,8 +22,8 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-//not plain js import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 

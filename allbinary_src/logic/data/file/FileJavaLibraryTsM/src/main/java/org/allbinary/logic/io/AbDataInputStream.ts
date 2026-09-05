@@ -19,11 +19,11 @@
 
 
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
+//not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
 import { InputStream } from '../../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 

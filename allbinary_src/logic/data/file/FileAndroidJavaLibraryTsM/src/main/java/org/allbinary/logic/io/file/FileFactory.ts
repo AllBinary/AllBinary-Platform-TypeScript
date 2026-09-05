@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { FileNotFoundException } from '../../../../../java/io/FileNotFoundException.js';
-      //not GWT import const FileNotFoundException = globalThis.java.io.FileNotFoundException;
+//not GWT import const FileNotFoundException = globalThis.java.io.FileNotFoundException;
 
       
 import { Context } from '../../../../../android/content/Context.js';
-      //not GWT import const Context = globalThis.android.content.Context;
+//not GWT import const Context = globalThis.android.content.Context;
 
       
-//not plain js import { ResourceUtil } from '../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 
@@ -53,7 +53,7 @@ import { Context } from '../../../../../android/content/Context.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import - same folder const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
                 
 export class FileFactory

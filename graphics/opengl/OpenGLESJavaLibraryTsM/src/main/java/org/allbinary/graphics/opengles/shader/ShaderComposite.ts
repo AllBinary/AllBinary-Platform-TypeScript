@@ -21,31 +21,31 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
 import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
-      //not GWT import const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
+//not GWT import const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
 
       
 import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
-      //not GWT import const NullOpenGLProcessorFactory = globalThis.org.allbinary.graphics.opengles.NullOpenGLProcessorFactory;
+//not GWT import const NullOpenGLProcessorFactory = globalThis.org.allbinary.graphics.opengles.NullOpenGLProcessorFactory;
 
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -67,22 +67,22 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Shader } from './Shader.js';
-//not GWT import const Shader = globalThis.org.allbinary.graphics.opengles.shader.Shader;
+//not GWT import - same folder const Shader = globalThis.org.allbinary.graphics.opengles.shader.Shader;
 
                 import { ShaderInitializer } from './ShaderInitializer.js';
-//not GWT import const ShaderInitializer = globalThis.org.allbinary.graphics.opengles.shader.ShaderInitializer;
+//not GWT import - same folder const ShaderInitializer = globalThis.org.allbinary.graphics.opengles.shader.ShaderInitializer;
 
                 import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-//not GWT import const CompositeShaderUpdater = globalThis.org.allbinary.graphics.opengles.shader.CompositeShaderUpdater;
+//not GWT import - same folder const CompositeShaderUpdater = globalThis.org.allbinary.graphics.opengles.shader.CompositeShaderUpdater;
 
                 import { ModelViewProjection } from './ModelViewProjection.js';
-//not GWT import const ModelViewProjection = globalThis.org.allbinary.graphics.opengles.shader.ModelViewProjection;
+//not GWT import - same folder const ModelViewProjection = globalThis.org.allbinary.graphics.opengles.shader.ModelViewProjection;
 
                 import { NullOpenGLTextureProcessor } from './NullOpenGLTextureProcessor.js';
-//not GWT import const NullOpenGLTextureProcessor = globalThis.org.allbinary.graphics.opengles.shader.NullOpenGLTextureProcessor;
+//not GWT import - same folder const NullOpenGLTextureProcessor = globalThis.org.allbinary.graphics.opengles.shader.NullOpenGLTextureProcessor;
 
                 import { OpenGLObject3dProcessor } from './OpenGLObject3dProcessor.js';
-//not GWT import const OpenGLObject3dProcessor = globalThis.org.allbinary.graphics.opengles.shader.OpenGLObject3dProcessor;
+//not GWT import - same folder const OpenGLObject3dProcessor = globalThis.org.allbinary.graphics.opengles.shader.OpenGLObject3dProcessor;
 
                 
 export class ShaderComposite

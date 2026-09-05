@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
-      //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
+//not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
 
       
 

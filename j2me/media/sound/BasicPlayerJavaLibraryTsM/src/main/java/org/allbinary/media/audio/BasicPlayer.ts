@@ -30,7 +30,7 @@ const MediaException = globalThis.javax.microedition.media.MediaException;
       
 //not plain js import { Player } 
 const Player = globalThis.javax.microedition.media.Player;
- const PlayerI = globalThis.javax.microedition.media.Player;
+const PlayerI = globalThis.javax.microedition.media.Player;
 
       
 //not plain js import { PlayerListener } 

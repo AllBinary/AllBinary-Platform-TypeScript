@@ -19,15 +19,15 @@
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not plain js import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
-      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+//not plain js import { CircularIndexUtil } 
+const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -49,10 +49,10 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-//not GWT import const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
+//not GWT import - same folder const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import - same folder const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 
 export class HighScoresHelper extends HighScoresHelperBase {

@@ -21,19 +21,19 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
-      //not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
+//not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
 
       
 import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.js';
-      //not GWT import const NullABRunnable = globalThis.org.allbinary.thread.NullABRunnable;
+//not GWT import const NullABRunnable = globalThis.org.allbinary.thread.NullABRunnable;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -55,7 +55,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialDemoGameMidlet } from './SpecialDemoGameMidlet.js';
-//not GWT import const SpecialDemoGameMidlet = globalThis.org.allbinary.game.midlet.SpecialDemoGameMidlet;
+//not GWT import - same folder const SpecialDemoGameMidlet = globalThis.org.allbinary.game.midlet.SpecialDemoGameMidlet;
 
                 
 export class LicenseCheckRunnableFactory

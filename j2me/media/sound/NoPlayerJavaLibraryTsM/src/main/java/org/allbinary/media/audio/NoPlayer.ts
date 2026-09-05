@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+//not plain js import { Control } 
+const Control = globalThis.javax.microedition.media.Control;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -45,10 +45,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
+//not GWT import - same folder const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
 
                 import { NullControl } from './NullControl.js';
-//not GWT import const NullControl = globalThis.org.allbinary.media.audio.NullControl;
+//not GWT import - same folder const NullControl = globalThis.org.allbinary.media.audio.NullControl;
 
                 
 export class NoPlayer extends BasicPlayer {

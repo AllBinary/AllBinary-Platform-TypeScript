@@ -21,11 +21,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -47,7 +47,7 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBasic } from './AbSqlBasic.js';
-//not GWT import const AbSqlBasic = globalThis.org.allbinary.logic.communication.sql.AbSqlBasic;
+//not GWT import - same folder const AbSqlBasic = globalThis.org.allbinary.logic.communication.sql.AbSqlBasic;
 
                 
 export class AbSqlTable extends AbSqlBasic {

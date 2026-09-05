@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 
@@ -45,7 +45,7 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyStore } from './ThirdPartyStore.js';
-//not GWT import const ThirdPartyStore = globalThis.org.allbinary.thirdparty.store.ThirdPartyStore;
+//not GWT import - same folder const ThirdPartyStore = globalThis.org.allbinary.thirdparty.store.ThirdPartyStore;
 
                 
 export class NoThirdPartyStore extends ThirdPartyStore {

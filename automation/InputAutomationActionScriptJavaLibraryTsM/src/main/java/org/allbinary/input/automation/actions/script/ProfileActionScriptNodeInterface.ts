@@ -19,11 +19,11 @@
 
 
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 

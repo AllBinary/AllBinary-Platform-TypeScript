@@ -23,35 +23,35 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-      //not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
+//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
 
       
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
-      //not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
+//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
 
       
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
-      //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+//not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
       
 import { InputProbability } from '../../../../../../org/allbinary/game/ag/ai/InputProbability.js';
-      //not GWT import const InputProbability = globalThis.org.allbinary.game.ag.ai.InputProbability;
+//not GWT import const InputProbability = globalThis.org.allbinary.game.ag.ai.InputProbability;
 
       
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
-      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
+//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-      //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
 
       
-//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -73,7 +73,7 @@ import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicRandomAI } from './BasicRandomAI.js';
-//not GWT import const BasicRandomAI = globalThis.org.allbinary.game.ag.ai.tactical.BasicRandomAI;
+//not GWT import - same folder const BasicRandomAI = globalThis.org.allbinary.game.ag.ai.tactical.BasicRandomAI;
 
                 
 export class BasicRandomAIFactory

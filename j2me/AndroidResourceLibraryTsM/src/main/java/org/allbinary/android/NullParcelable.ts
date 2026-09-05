@@ -25,11 +25,11 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { Parcelable } from '../../../android/os/Parcelable.js';
-      //not GWT import const Parcelable = globalThis.android.os.Parcelable;
+//not GWT import const Parcelable = globalThis.android.os.Parcelable;
 
       
 import { Parcel } from '../../../android/os/Parcel.js';
-      //not GWT import const Parcel = globalThis.android.os.Parcel;
+//not GWT import const Parcel = globalThis.android.os.Parcel;
 
       
 

@@ -21,11 +21,11 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { GameState } from '../../../org/allbinary/game/state/GameState.js';
-      //not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
+//not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
 
       
 import { GameStateFactory } from '../../../org/allbinary/game/state/GameStateFactory.js';
-      //not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+//not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
       
 

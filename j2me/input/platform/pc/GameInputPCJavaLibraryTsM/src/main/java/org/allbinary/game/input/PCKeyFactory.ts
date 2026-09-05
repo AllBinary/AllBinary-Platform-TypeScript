@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
-      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+//not plain js import { PositionStrings } 
+const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
 
       
-//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+//not plain js import { CommonPhoneStrings } 
+const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -50,14 +50,14 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { ABKeyEventWrapper } from './ABKeyEventWrapper.js';
+        //not plain js - same folder import { ABKeyEventWrapper } 
 const ABKeyEventWrapper = globalThis.org.allbinary.game.input.ABKeyEventWrapper;
 
                 import { PCGameKey } from './PCGameKey.js';
-//not GWT import const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
+//not GWT import - same folder const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
 
                 import { Input } from './Input.js';
-//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
+//not GWT import - same folder const Input = globalThis.org.allbinary.game.input.Input;
 
                 
 export class PCKeyFactory

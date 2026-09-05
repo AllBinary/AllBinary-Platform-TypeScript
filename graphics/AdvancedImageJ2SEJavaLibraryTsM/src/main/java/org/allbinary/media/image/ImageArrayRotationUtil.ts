@@ -23,19 +23,19 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { IOException } from '../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -57,13 +57,13 @@ import { IOException } from '../../../../java/io/IOException.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
-//not GWT import const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
+//not GWT import - same folder const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
 
                 import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+//not GWT import - same folder const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
                 import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+//not GWT import - same folder const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
 
                 
 export class ImageArrayRotationUtil

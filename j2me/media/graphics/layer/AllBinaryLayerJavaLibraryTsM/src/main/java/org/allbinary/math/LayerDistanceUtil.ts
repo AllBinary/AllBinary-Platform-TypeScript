@@ -20,16 +20,16 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not plain js import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
-      const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+//not plain js import { MathUtil } 
+const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       
 

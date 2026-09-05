@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 
@@ -44,7 +44,7 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { ImageRotationUtil } from './ImageRotationUtil.js';
+        //not plain js - same folder import { ImageRotationUtil } 
 const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
 
                 

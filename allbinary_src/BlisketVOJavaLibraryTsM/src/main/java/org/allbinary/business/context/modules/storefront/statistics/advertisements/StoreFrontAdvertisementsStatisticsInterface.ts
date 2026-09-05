@@ -19,7 +19,7 @@
 
 
 import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
 

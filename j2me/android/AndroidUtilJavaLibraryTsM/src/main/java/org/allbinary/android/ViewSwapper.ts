@@ -9,15 +9,15 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Activity } from '../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 import { View } from '../../../android/view/View.js';
-      //not GWT import const View = globalThis.android.view.View;
+//not GWT import const View = globalThis.android.view.View;
 
       
 import { ViewGroup } from '../../../android/view/ViewGroup.js';
-      //not GWT import const ViewGroup = globalThis.android.view.ViewGroup;
+//not GWT import const ViewGroup = globalThis.android.view.ViewGroup;
 
       
 

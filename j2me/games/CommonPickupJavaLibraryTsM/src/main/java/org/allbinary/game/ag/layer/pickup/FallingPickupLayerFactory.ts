@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-      //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+//not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-      //not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
+//not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
 
       
 
@@ -53,7 +53,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FallingPickupLayer } from './FallingPickupLayer.js';
-//not GWT import const FallingPickupLayer = globalThis.org.allbinary.game.ag.layer.pickup.FallingPickupLayer;
+//not GWT import - same folder const FallingPickupLayer = globalThis.org.allbinary.game.ag.layer.pickup.FallingPickupLayer;
 
                 
 export class FallingPickupLayerFactory

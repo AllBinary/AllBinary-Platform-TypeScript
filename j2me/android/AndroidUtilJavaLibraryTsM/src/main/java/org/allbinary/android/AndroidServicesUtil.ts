@@ -23,31 +23,31 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { List } from '../../../java/util/List.js';
-      //not GWT import const List = globalThis.java.util.List;
+//not GWT import const List = globalThis.java.util.List;
 
       
 import { ActivityManager } from '../../../android/app/ActivityManager.js';
-      //not GWT import const ActivityManager = globalThis.android.app.ActivityManager;
+//not GWT import const ActivityManager = globalThis.android.app.ActivityManager;
 
       
 import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
-      //not GWT import const RunningServiceInfo = globalThis.android.app.ActivityManager.RunningServiceInfo;
+//not GWT import const RunningServiceInfo = globalThis.android.app.ActivityManager.RunningServiceInfo;
 
       
 import { ComponentName } from '../../../android/content/ComponentName.js';
-      //not GWT import const ComponentName = globalThis.android.content.ComponentName;
+//not GWT import const ComponentName = globalThis.android.content.ComponentName;
 
       
 import { Context } from '../../../android/content/Context.js';
-      //not GWT import const Context = globalThis.android.content.Context;
+//not GWT import const Context = globalThis.android.content.Context;
 
       
-//not plain js import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 

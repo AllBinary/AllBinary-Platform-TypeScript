@@ -23,15 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
-      //not GWT import const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
+//not GWT import const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
 
       
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-      //not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+//not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
 
       
 
@@ -53,10 +53,10 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryOrientationSensor } from './AllBinaryOrientationSensor.js';
-//not GWT import const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
+//not GWT import - same folder const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
 
                 import { NoGyroSensor } from './NoGyroSensor.js';
-//not GWT import const NoGyroSensor = globalThis.org.allbinary.input.gyro.NoGyroSensor;
+//not GWT import - same folder const NoGyroSensor = globalThis.org.allbinary.input.gyro.NoGyroSensor;
 
                 
 export class OrientationToGameKeyEvent

@@ -22,44 +22,44 @@
         
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } from '../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { DomNodeHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
 import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-      //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
+//not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
 
       
-//not plain js import { StdUtil } from '../../../../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js';
-      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
+//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 
@@ -81,7 +81,7 @@ import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
-//not GWT import const ImageActionScriptOutputData = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputData;
+//not GWT import - same folder const ImageActionScriptOutputData = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputData;
 
                 
 export class ImageTypes

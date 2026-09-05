@@ -21,23 +21,23 @@
             import { Long } from '../../../java/lang/Long.js';
         
 import { View } from '../../../android/view/View.js';
-      //not GWT import const View = globalThis.android.view.View;
+//not GWT import const View = globalThis.android.view.View;
 
       
 import { BaseViewWrapper } from '../../../org/allbinary/android/view/BaseViewWrapper.js';
-      //not GWT import const BaseViewWrapper = globalThis.org.allbinary.android.view.BaseViewWrapper;
+//not GWT import const BaseViewWrapper = globalThis.org.allbinary.android.view.BaseViewWrapper;
 
       
 import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js';
-      //not GWT import const ViewWrapper = globalThis.org.allbinary.android.view.ViewWrapper;
+//not GWT import const ViewWrapper = globalThis.org.allbinary.android.view.ViewWrapper;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -59,7 +59,7 @@ import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameStatistics } from './BaseGameStatistics.js';
-//not GWT import const BaseGameStatistics = globalThis.org.allbinary.canvas.BaseGameStatistics;
+//not GWT import - same folder const BaseGameStatistics = globalThis.org.allbinary.canvas.BaseGameStatistics;
 
                 
 export class AndroidGameStatistics extends BaseGameStatistics {

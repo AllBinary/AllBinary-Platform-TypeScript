@@ -18,24 +18,24 @@
         
 
 
-//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
-      //not GWT import const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
+//not GWT import const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
 
       
 
@@ -57,7 +57,7 @@ import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/h
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlCell } from './HtmlCell.js';
-//not GWT import const HtmlCell = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlCell;
+//not GWT import - same folder const HtmlCell = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlCell;
 
                 
 export class HtmlRow extends HtmlTag {

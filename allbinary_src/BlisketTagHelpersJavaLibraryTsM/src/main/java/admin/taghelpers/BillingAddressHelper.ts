@@ -23,59 +23,59 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
+//not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
-      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
+//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
 import { StreetAddress } from '../../org/allbinary/business/user/address/StreetAddress.js';
-      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
 import { BillingAddressesEntity } from '../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js';
-      //not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
+//not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
 
       
 import { BillingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
-      //not GWT import const BillingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntityFactory;
+//not GWT import const BillingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntityFactory;
 
       
 import { ShippingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
-      //not GWT import const ShippingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntityFactory;
+//not GWT import const ShippingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntityFactory;
 
       
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-      //not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
 
       
 import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
-      //not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+//not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-      //not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+//not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
 
       
-//not plain js import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -97,7 +97,7 @@ import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSq
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Table } from './Table.js';
-//not GWT import const Table = globalThis.admin.taghelpers.Table;
+//not GWT import - same folder const Table = globalThis.admin.taghelpers.Table;
 
                 
 export class BillingAddressHelper extends Table {

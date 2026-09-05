@@ -23,7 +23,7 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-      //not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
       
 
@@ -45,7 +45,7 @@ import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFinderGraphVisitorBase } from './PathFinderGraphVisitorBase.js';
-//not GWT import const PathFinderGraphVisitorBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorBase;
+//not GWT import - same folder const PathFinderGraphVisitorBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorBase;
 
                 
 export class PathFinderGraphVisitorFactoryBase

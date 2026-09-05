@@ -15,63 +15,63 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { File } from '../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { IOException } from '../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { Iterator } from '../../../../java/util/Iterator.js';
-      //not GWT import const Iterator = globalThis.java.util.Iterator;
+//not GWT import const Iterator = globalThis.java.util.Iterator;
 
       
 import { IIOImage } from '../../../../javax/imageio/IIOImage.js';
-      //not GWT import const IIOImage = globalThis.javax.imageio.IIOImage;
+//not GWT import const IIOImage = globalThis.javax.imageio.IIOImage;
 
       
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
+//not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
 import { ImageWriteParam } from '../../../../javax/imageio/ImageWriteParam.js';
-      //not GWT import const ImageWriteParam = globalThis.javax.imageio.ImageWriteParam;
+//not GWT import const ImageWriteParam = globalThis.javax.imageio.ImageWriteParam;
 
       
 import { ImageWriter } from '../../../../javax/imageio/ImageWriter.js';
-      //not GWT import const ImageWriter = globalThis.javax.imageio.ImageWriter;
+//not GWT import const ImageWriter = globalThis.javax.imageio.ImageWriter;
 
       
 import { ImageOutputStream } from '../../../../javax/imageio/stream/ImageOutputStream.js';
-      //not GWT import const ImageOutputStream = globalThis.javax.imageio.stream.ImageOutputStream;
+//not GWT import const ImageOutputStream = globalThis.javax.imageio.stream.ImageOutputStream;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
-      //not GWT import const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+//not GWT import const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
 
       
 import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
-      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { PNGImageWriter } from '../../../../org/apache/batik/ext/awt/image/codec/png/PNGImageWriter.js';
-      //not GWT import const PNGImageWriter = globalThis.org.apache.batik.ext.awt.image.codec.png.PNGImageWriter;
+//not GWT import const PNGImageWriter = globalThis.org.apache.batik.ext.awt.image.codec.png.PNGImageWriter;
 
       
 

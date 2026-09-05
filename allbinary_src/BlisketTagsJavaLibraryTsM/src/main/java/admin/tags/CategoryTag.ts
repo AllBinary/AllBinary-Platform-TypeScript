@@ -23,39 +23,39 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { CategoryHelperFactory } from '../../admin/taghelpers/CategoryHelperFactory.js';
-      //not GWT import const CategoryHelperFactory = globalThis.admin.taghelpers.CategoryHelperFactory;
+//not GWT import const CategoryHelperFactory = globalThis.admin.taghelpers.CategoryHelperFactory;
 
       
 import { CategoryRequestHelperFactory } from '../../admin/taghelpers/CategoryRequestHelperFactory.js';
-      //not GWT import const CategoryRequestHelperFactory = globalThis.admin.taghelpers.CategoryRequestHelperFactory;
+//not GWT import const CategoryRequestHelperFactory = globalThis.admin.taghelpers.CategoryRequestHelperFactory;
 
       
 import { CategoryData } from '../../org/allbinary/business/category/CategoryData.js';
-      //not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+//not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-      //not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
       
 
@@ -77,7 +77,7 @@ import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class CategoryTag extends TableTag {

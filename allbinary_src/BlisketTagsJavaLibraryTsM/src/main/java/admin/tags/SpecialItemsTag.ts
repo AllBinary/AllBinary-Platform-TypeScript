@@ -19,11 +19,11 @@
 
 
 import { SpecialItemsHelperFactory } from '../../admin/taghelpers/SpecialItemsHelperFactory.js';
-      //not GWT import const SpecialItemsHelperFactory = globalThis.admin.taghelpers.SpecialItemsHelperFactory;
+//not GWT import const SpecialItemsHelperFactory = globalThis.admin.taghelpers.SpecialItemsHelperFactory;
 
       
 import { SpecialItemsRequestHelperFactory } from '../../admin/taghelpers/SpecialItemsRequestHelperFactory.js';
-      //not GWT import const SpecialItemsRequestHelperFactory = globalThis.admin.taghelpers.SpecialItemsRequestHelperFactory;
+//not GWT import const SpecialItemsRequestHelperFactory = globalThis.admin.taghelpers.SpecialItemsRequestHelperFactory;
 
       
 
@@ -45,7 +45,7 @@ import { SpecialItemsRequestHelperFactory } from '../../admin/taghelpers/Special
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class SpecialItemsTag extends TableTag {

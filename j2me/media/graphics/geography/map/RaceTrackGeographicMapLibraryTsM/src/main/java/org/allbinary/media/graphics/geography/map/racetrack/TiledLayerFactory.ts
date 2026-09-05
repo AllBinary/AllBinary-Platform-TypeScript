@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not plain js import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
-      const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+//not plain js import { TiledLayer } 
+const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
 
       
 
@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+//not GWT import - same folder const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
 
                 
 export class TiledLayerFactory

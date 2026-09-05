@@ -21,11 +21,11 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { FullScreenPaintable } from '../../../../../org/allbinary/game/paint/FullScreenPaintable.js';
-      //not GWT import const FullScreenPaintable = globalThis.org.allbinary.game.paint.FullScreenPaintable;
+//not GWT import const FullScreenPaintable = globalThis.org.allbinary.game.paint.FullScreenPaintable;
 
       
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
 

@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
-      //not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
+//not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
 
       
 import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
-      //not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
+//not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
 
       
 import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
-      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
+//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
-      //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+//not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
 
@@ -63,7 +63,7 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthGraphic } from './HealthGraphic.js';
-//not GWT import const HealthGraphic = globalThis.org.allbinary.game.layer.hud.basic.HealthGraphic;
+//not GWT import - same folder const HealthGraphic = globalThis.org.allbinary.game.layer.hud.basic.HealthGraphic;
 
                 
 export class ImageHealthGraphic extends HealthGraphic {

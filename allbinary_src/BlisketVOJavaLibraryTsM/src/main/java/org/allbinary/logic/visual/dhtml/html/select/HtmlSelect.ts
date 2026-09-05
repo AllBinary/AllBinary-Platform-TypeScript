@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { LineReader } from '../../../../../../../org/allbinary/logic/io/LineReader.js';
-      //not GWT import const LineReader = globalThis.org.allbinary.logic.io.LineReader;
+//not GWT import const LineReader = globalThis.org.allbinary.logic.io.LineReader;
 
       
-//not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
-      //not GWT import const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
+//not GWT import const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
 
       
 

@@ -23,27 +23,27 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
+//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not plain js import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
-      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+//not plain js import { HashtableUtil } 
+const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-      //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+//not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
       
-//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 

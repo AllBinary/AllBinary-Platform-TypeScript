@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-      //not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
       
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
+//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -64,7 +64,7 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { ImageCopyUtil } from './ImageCopyUtil.js';
+        //not plain js - same folder import { ImageCopyUtil } 
 const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
                 

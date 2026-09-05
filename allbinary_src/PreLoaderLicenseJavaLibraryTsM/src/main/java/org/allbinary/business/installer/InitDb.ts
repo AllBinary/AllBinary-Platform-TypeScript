@@ -25,15 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Method } from '../../../../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
 import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 

@@ -21,11 +21,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
-      //not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
+//not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
 
       
 import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      //not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
       
 

@@ -18,16 +18,16 @@
         
 
 
-//not plain js import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
-      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+//not plain js import { ARunnable } 
+const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
 import { File } from '../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -49,34 +49,34 @@ import { File } from '../../../../java/io/File.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import const JDialog = globalThis.org.allbinary.gui.dialog.JDialog;
+//not GWT import - same folder const JDialog = globalThis.org.allbinary.gui.dialog.JDialog;
 
                 import { FileJDialogListenerInterface } from './FileJDialogListenerInterface.js';
-//not GWT import const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
+//not GWT import - same folder const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
 
                 import { Frame } from './Frame.js';
-//not GWT import const Frame = globalThis.org.allbinary.gui.dialog.Frame;
+//not GWT import - same folder const Frame = globalThis.org.allbinary.gui.dialog.Frame;
 
                 import { JFileChooser } from './JFileChooser.js';
-//not GWT import const JFileChooser = globalThis.org.allbinary.gui.dialog.JFileChooser;
+//not GWT import - same folder const JFileChooser = globalThis.org.allbinary.gui.dialog.JFileChooser;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const ActionListener = globalThis.org.allbinary.gui.dialog.ActionListener;
+//not GWT import - same folder const ActionListener = globalThis.org.allbinary.gui.dialog.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.org.allbinary.gui.dialog.ActionEvent;
+//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.gui.dialog.ActionEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.gui.dialog.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.gui.dialog.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.gui.dialog.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.gui.dialog.Short;
 
                 import { EventQueue } from './EventQueue.js';
-//not GWT import const EventQueue = globalThis.org.allbinary.gui.dialog.EventQueue;
+//not GWT import - same folder const EventQueue = globalThis.org.allbinary.gui.dialog.EventQueue;
 
                 import { JFrame } from './JFrame.js';
-//not GWT import const JFrame = globalThis.org.allbinary.gui.dialog.JFrame;
+//not GWT import - same folder const JFrame = globalThis.org.allbinary.gui.dialog.JFrame;
 
                 
 export class FileJDialog extends javax.swing.JDialog {

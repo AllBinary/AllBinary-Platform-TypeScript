@@ -24,12 +24,12 @@
         
             import { Long } from '../../../../../../java/lang/Long.js';
         
-//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
-      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
 
@@ -51,10 +51,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
-//not GWT import const Comparable = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
+//not GWT import - same folder const Comparable = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
 
                 import { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';
-//not GWT import const PathFindingNodeCostInfoData = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
+//not GWT import - same folder const PathFindingNodeCostInfoData = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
 
                 
 export class PathFindingNodeCostInfo

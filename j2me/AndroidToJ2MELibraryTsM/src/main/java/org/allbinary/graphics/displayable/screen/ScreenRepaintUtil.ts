@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } 
+const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not plain js import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } 
+const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 

@@ -19,7 +19,7 @@
 
 
 import { IOException } from '../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 

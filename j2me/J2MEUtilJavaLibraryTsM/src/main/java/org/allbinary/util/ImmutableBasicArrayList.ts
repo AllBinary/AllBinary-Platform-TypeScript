@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+//not plain js import { ForcedLogUtil } 
+const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
 
@@ -40,7 +40,7 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
+        //not plain js - same folder import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
                 

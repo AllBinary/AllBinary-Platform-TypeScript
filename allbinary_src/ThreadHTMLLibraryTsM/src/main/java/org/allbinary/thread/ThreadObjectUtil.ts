@@ -11,15 +11,15 @@
             import { Runnable } from '../../../java/lang/Runnable.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -41,10 +41,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPriorityRunnable } from './NullPriorityRunnable.js';
-//not GWT import const NullPriorityRunnable = globalThis.org.allbinary.thread.NullPriorityRunnable;
+//not GWT import - same folder const NullPriorityRunnable = globalThis.org.allbinary.thread.NullPriorityRunnable;
 
                 import { PriorityRunnable } from './PriorityRunnable.js';
-//not GWT import const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
+//not GWT import - same folder const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
 
                 
 export class ThreadObjectUtil

@@ -19,11 +19,11 @@
 
 
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { swing } from '../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 
@@ -45,7 +45,7 @@ import { swing } from '../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIcon } from './ImageIcon.js';
-//not GWT import const ImageIcon = globalThis.org.allbinary.image.gui.ImageIcon;
+//not GWT import - same folder const ImageIcon = globalThis.org.allbinary.image.gui.ImageIcon;
 
                 
 export class ImageIconUnique extends ImageIcon {

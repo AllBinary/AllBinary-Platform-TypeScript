@@ -21,23 +21,23 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not plain js import { Angle } from '../../../org/allbinary/math/Angle.js';
-      const Angle = globalThis.org.allbinary.math.Angle;
+//not plain js import { Angle } 
+const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+//not plain js import { AngleFactory } 
+const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -59,10 +59,10 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionFactory } from './DirectionFactory.js';
-//not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+//not GWT import - same folder const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
                 import { Direction } from './Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
+//not GWT import - same folder const Direction = globalThis.org.allbinary.direction.Direction;
 
                 
 export class DirectionUtil

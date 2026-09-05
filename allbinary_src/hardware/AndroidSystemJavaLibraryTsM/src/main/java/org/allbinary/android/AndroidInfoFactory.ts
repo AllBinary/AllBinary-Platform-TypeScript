@@ -25,7 +25,7 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { Build } from '../../../android/os/Build.js';
-      //not GWT import const Build = globalThis.android.os.Build;
+//not GWT import const Build = globalThis.android.os.Build;
 
       
 

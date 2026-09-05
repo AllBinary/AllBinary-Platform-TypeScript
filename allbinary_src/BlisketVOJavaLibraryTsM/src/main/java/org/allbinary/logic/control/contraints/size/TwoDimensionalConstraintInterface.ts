@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SizeConstraintInterface } from './SizeConstraintInterface.js';
-//not GWT import const SizeConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.SizeConstraintInterface;
+//not GWT import - same folder const SizeConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.SizeConstraintInterface;
 
                 
 export interface TwoDimensionalConstraintInterface {

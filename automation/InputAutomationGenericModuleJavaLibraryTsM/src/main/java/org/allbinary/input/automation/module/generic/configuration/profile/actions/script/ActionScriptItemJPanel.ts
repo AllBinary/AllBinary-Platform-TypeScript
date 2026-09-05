@@ -37,19 +37,19 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPanel;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const GridLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
+//not GWT import - same folder const GridLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Short;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Dimension;
 
                 
 export class ActionScriptItemJPanel extends javax.swing.JPanel {

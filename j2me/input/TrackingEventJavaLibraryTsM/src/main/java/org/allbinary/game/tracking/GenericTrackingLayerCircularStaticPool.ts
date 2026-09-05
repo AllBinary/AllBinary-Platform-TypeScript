@@ -19,7 +19,7 @@
 
 
 import { AllBinaryLayerCircularPool } from '../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-      //not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
+//not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
 
       
 

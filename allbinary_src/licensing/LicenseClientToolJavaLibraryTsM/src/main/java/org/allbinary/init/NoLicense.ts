@@ -25,7 +25,7 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Globals } from '../../../org/allbinary/globals/Globals.js';
-      //not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
+//not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
 
       
 

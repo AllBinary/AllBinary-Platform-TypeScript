@@ -23,11 +23,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { SpecialAnimation } from '../../../org/allbinary/animation/special/SpecialAnimation.js';
-      //not GWT import const SpecialAnimation = globalThis.org.allbinary.animation.special.SpecialAnimation;
+//not GWT import const SpecialAnimation = globalThis.org.allbinary.animation.special.SpecialAnimation;
 
       
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
 
@@ -49,13 +49,13 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import - same folder const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
                 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
                 import { Animation } from './Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import - same folder const Animation = globalThis.org.allbinary.animation.Animation;
 
                 
 export class NullSpecialAnimationFactory

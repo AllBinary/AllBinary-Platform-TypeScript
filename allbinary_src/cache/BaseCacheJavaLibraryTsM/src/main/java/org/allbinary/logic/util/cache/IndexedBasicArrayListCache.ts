@@ -21,23 +21,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -59,13 +59,13 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseBasicArrayListCache } from './BaseBasicArrayListCache.js';
-//not GWT import const BaseBasicArrayListCache = globalThis.org.allbinary.logic.util.cache.BaseBasicArrayListCache;
+//not GWT import - same folder const BaseBasicArrayListCache = globalThis.org.allbinary.logic.util.cache.BaseBasicArrayListCache;
 
                 import { CacheInterface } from './CacheInterface.js';
-//not GWT import const CacheInterface = globalThis.org.allbinary.logic.util.cache.CacheInterface;
+//not GWT import - same folder const CacheInterface = globalThis.org.allbinary.logic.util.cache.CacheInterface;
 
                 import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import - same folder const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
                 
 export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implements CacheInterface {

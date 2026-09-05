@@ -25,79 +25,79 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
-      //not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
+//not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
-      //not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
+//not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
 import { PoolInterface } from '../../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-      //not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+//not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
 
       
 import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
-      //not GWT import const MediaDataFactory = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
+//not GWT import const MediaDataFactory = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
 
       
 import { ImagePersistanceUtil } from '../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-      //not GWT import const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
+//not GWT import const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
 
       
 import { BufferedImageCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-      //not GWT import const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
+//not GWT import const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
 
       
 import { BufferedImageInfo } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
-      //not GWT import const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
+//not GWT import const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
 
       
 import { BufferedImageInfoFactory } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
-      //not GWT import const BufferedImageInfoFactory = globalThis.org.allbinary.media.image.cache.BufferedImageInfoFactory;
+//not GWT import const BufferedImageInfoFactory = globalThis.org.allbinary.media.image.cache.BufferedImageInfoFactory;
 
       
 import { BufferedImagePoolSingleton } from '../../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
-      //not GWT import const BufferedImagePoolSingleton = globalThis.org.allbinary.media.image.cache.BufferedImagePoolSingleton;
+//not GWT import const BufferedImagePoolSingleton = globalThis.org.allbinary.media.image.cache.BufferedImagePoolSingleton;
 
       
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-      //not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+//not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
 
       
 import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-      //not GWT import const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
+//not GWT import const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -119,31 +119,31 @@ import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-//not GWT import const AllMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectanglesResultsCacheSingleton;
+//not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectanglesResultsCacheSingleton;
 
                 import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-//not GWT import const MotionRectanglesResultsFrameCacheable = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsFrameCacheable;
+//not GWT import - same folder const MotionRectanglesResultsFrameCacheable = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsFrameCacheable;
 
                 import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+//not GWT import - same folder const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
 
                 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import const ConsolidatedMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.ConsolidatedMotionRectanglesResultsCacheSingleton;
+//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.ConsolidatedMotionRectanglesResultsCacheSingleton;
 
                 import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import const ConstrainedMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectanglesResultsCacheSingleton;
+//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectanglesResultsCacheSingleton;
 
                 import { Graphics } from './Graphics.js';
-//not GWT import const Graphics = globalThis.org.allbinary.media.image.comparison.motion.Graphics;
+//not GWT import - same folder const Graphics = globalThis.org.allbinary.media.image.comparison.motion.Graphics;
 
                 import { MotionRectangle } from './MotionRectangle.js';
-//not GWT import const MotionRectangle = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
+//not GWT import - same folder const MotionRectangle = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+//not GWT import - same folder const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
 
                 import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.media.image.comparison.motion.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.media.image.comparison.motion.Color;
 
                 
 export class MotionRectanglesImageInputOutput

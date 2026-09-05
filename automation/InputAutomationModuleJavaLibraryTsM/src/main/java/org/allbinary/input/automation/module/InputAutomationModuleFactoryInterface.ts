@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
+//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
 import { swing } from '../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
-      //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
       
 
@@ -53,7 +53,7 @@ import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.input.automation.module.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.JPanel;
 
                 
 export class InputAutomationModuleFactoryInterface

@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 
@@ -45,10 +45,10 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimation } from './VectorAnimation.js';
-//not GWT import const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
+//not GWT import - same folder const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
 
                 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
                 
 export class ColorLessVectorAnimation extends VectorAnimation {

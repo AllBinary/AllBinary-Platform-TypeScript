@@ -11,83 +11,83 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { LoadTextures } from '../../../../org/allbinary/device/LoadTextures.js';
-      //not GWT import const LoadTextures = globalThis.org.allbinary.device.LoadTextures;
+//not GWT import const LoadTextures = globalThis.org.allbinary.device.LoadTextures;
 
       
 import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
-      //not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
+//not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
 
       
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      //not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
       
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+//not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 import { RendererStrings } from '../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js';
-      //not GWT import const RendererStrings = globalThis.org.allbinary.graphics.opengles.renderer.RendererStrings;
+//not GWT import const RendererStrings = globalThis.org.allbinary.graphics.opengles.renderer.RendererStrings;
 
       
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+//not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } 
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 import { OpenGLImageCache } from '../../../../org/allbinary/image/opengles/OpenGLImageCache.js';
-      //not GWT import const OpenGLImageCache = globalThis.org.allbinary.image.opengles.OpenGLImageCache;
+//not GWT import const OpenGLImageCache = globalThis.org.allbinary.image.opengles.OpenGLImageCache;
 
       
 import { OpenGLImageCacheFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
-      //not GWT import const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
+//not GWT import const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
-      //not GWT import const SynchObject = globalThis.org.allbinary.thread.SynchObject;
+//not GWT import const SynchObject = globalThis.org.allbinary.thread.SynchObject;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -109,10 +109,10 @@ import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLCapabilities } from './OpenGLCapabilities.js';
-//not GWT import const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
+//not GWT import - same folder const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
 
                 import { OpenGLLogUtil } from './OpenGLLogUtil.js';
-//not GWT import const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
+//not GWT import - same folder const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
 
                 
 export class OpenGLUtil

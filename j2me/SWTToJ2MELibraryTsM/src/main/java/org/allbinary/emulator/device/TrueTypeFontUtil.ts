@@ -23,83 +23,83 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-      //not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
+//not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
 
       
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-      //not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+//not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
 
       
 import { ImageLoader } from '../../../../org/eclipse/swt/graphics/ImageLoader.js';
-      //not GWT import const ImageLoader = globalThis.org.eclipse.swt.graphics.ImageLoader;
+//not GWT import const ImageLoader = globalThis.org.eclipse.swt.graphics.ImageLoader;
 
       
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+//not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
 import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
-      //not GWT import const AvianUtil = globalThis.org.allbinary.AvianUtil;
+//not GWT import const AvianUtil = globalThis.org.allbinary.AvianUtil;
 
       
-//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+//not plain js import { PointFactory } 
+const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
 import { OpenGLCapabilities } from '../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
-      //not GWT import const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
+//not GWT import const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
 
       
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+//not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } 
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
-//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -121,7 +121,7 @@ import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
-//not GWT import const TrueTypeFontUtilBase = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
+//not GWT import - same folder const TrueTypeFontUtilBase = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
 
                 //TTF
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {

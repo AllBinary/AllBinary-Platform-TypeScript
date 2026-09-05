@@ -22,28 +22,28 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-      //not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
+//not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
 
       
 import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
-      //not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
+//not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
 
       
 import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
-      //not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
+//not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
 
       
 
@@ -65,13 +65,13 @@ import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
-//not GWT import const AllBinaryMidlet = globalThis.org.allbinary.midlet.AllBinaryMidlet;
+//not GWT import - same folder const AllBinaryMidlet = globalThis.org.allbinary.midlet.AllBinaryMidlet;
 
                 import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
-//not GWT import const MidletExitProcessorFactory = globalThis.org.allbinary.midlet.MidletExitProcessorFactory;
+//not GWT import - same folder const MidletExitProcessorFactory = globalThis.org.allbinary.midlet.MidletExitProcessorFactory;
 
                 import { ExitRunnable } from './ExitRunnable.js';
-//not GWT import const ExitRunnable = globalThis.org.allbinary.midlet.ExitRunnable;
+//not GWT import - same folder const ExitRunnable = globalThis.org.allbinary.midlet.ExitRunnable;
 
                 //SWTForJ2ME
 export class ProgressMidlet extends AllBinaryMidlet {

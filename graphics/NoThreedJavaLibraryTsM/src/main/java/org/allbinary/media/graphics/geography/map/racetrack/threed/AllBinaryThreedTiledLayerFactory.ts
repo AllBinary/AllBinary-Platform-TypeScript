@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
 import { RaceTrackData } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
-      //not GWT import const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+//not GWT import const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
 
       
 import { RaceTrackInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
-      //not GWT import const RaceTrackInfo = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
+//not GWT import const RaceTrackInfo = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
 
       
 

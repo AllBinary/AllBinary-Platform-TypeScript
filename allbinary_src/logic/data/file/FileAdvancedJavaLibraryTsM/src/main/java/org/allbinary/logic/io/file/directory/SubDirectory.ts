@@ -21,23 +21,23 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { FileFilter } from '../../../../../../java/io/FileFilter.js';
-      //not GWT import const FileFilter = globalThis.java.io.FileFilter;
+//not GWT import const FileFilter = globalThis.java.io.FileFilter;
 
       
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 
@@ -59,7 +59,7 @@ import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Directory } from './Directory.js';
-//not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+//not GWT import - same folder const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
 
                 
 export class SubDirectory

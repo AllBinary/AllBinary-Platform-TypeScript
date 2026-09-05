@@ -21,19 +21,19 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
-      //not GWT import const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
+//not GWT import const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
 
       
 
@@ -55,7 +55,7 @@ import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/wor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWorkFlow } from './BasicWorkFlow.js';
-//not GWT import const BasicWorkFlow = globalThis.workflows.template.data.BasicWorkFlow;
+//not GWT import - same folder const BasicWorkFlow = globalThis.workflows.template.data.BasicWorkFlow;
 
                 
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {

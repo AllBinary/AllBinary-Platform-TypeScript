@@ -23,75 +23,75 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { List } from '../../../../../java/util/List.js';
-      //not GWT import const List = globalThis.java.util.List;
+//not GWT import const List = globalThis.java.util.List;
 
       
 import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
-      //not GWT import const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
+//not GWT import const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
 
       
 import { Marshaller } from '../../../../../javax/xml/bind/Marshaller.js';
-      //not GWT import const Marshaller = globalThis.javax.xml.bind.Marshaller;
+//not GWT import const Marshaller = globalThis.javax.xml.bind.Marshaller;
 
       
 import { XmlAccessType } from '../../../../../javax/xml/bind/annotation/XmlAccessType.js';
-      //not GWT import const XmlAccessType = globalThis.javax.xml.bind.annotation.XmlAccessType;
+//not GWT import const XmlAccessType = globalThis.javax.xml.bind.annotation.XmlAccessType;
 
       
 import { XmlAccessorType } from '../../../../../javax/xml/bind/annotation/XmlAccessorType.js';
-      //not GWT import const XmlAccessorType = globalThis.javax.xml.bind.annotation.XmlAccessorType;
+//not GWT import const XmlAccessorType = globalThis.javax.xml.bind.annotation.XmlAccessorType;
 
       
 import { XmlElement } from '../../../../../javax/xml/bind/annotation/XmlElement.js';
-      //not GWT import const XmlElement = globalThis.javax.xml.bind.annotation.XmlElement;
+//not GWT import const XmlElement = globalThis.javax.xml.bind.annotation.XmlElement;
 
       
 import { XmlRootElement } from '../../../../../javax/xml/bind/annotation/XmlRootElement.js';
-      //not GWT import const XmlRootElement = globalThis.javax.xml.bind.annotation.XmlRootElement;
+//not GWT import const XmlRootElement = globalThis.javax.xml.bind.annotation.XmlRootElement;
 
       
 import { XmlType } from '../../../../../javax/xml/bind/annotation/XmlType.js';
-      //not GWT import const XmlType = globalThis.javax.xml.bind.annotation.XmlType;
+//not GWT import const XmlType = globalThis.javax.xml.bind.annotation.XmlType;
 
       
 import { DomDocumentFileHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentFileHelper.js';
-      //not GWT import const DomDocumentFileHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentFileHelper;
+//not GWT import const DomDocumentFileHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentFileHelper;
 
       
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-      //not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+//not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
-      //not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+//not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
 
       
 import { FileWrapperUtil } from '../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-      //not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+//not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

@@ -21,31 +21,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+//not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
-      //not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+//not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
 
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -67,10 +67,10 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPrivateTree } from './CategoryPrivateTree.js';
-//not GWT import const CategoryPrivateTree = globalThis.org.allbinary.data.tree.category.CategoryPrivateTree;
+//not GWT import - same folder const CategoryPrivateTree = globalThis.org.allbinary.data.tree.category.CategoryPrivateTree;
 
                 import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
-//not GWT import const CategoryModifierTreeInterface = globalThis.org.allbinary.data.tree.category.CategoryModifierTreeInterface;
+//not GWT import - same folder const CategoryModifierTreeInterface = globalThis.org.allbinary.data.tree.category.CategoryModifierTreeInterface;
 
                 
 export class CategoryModifierTree extends CategoryPrivateTree implements CategoryModifierTreeInterface {

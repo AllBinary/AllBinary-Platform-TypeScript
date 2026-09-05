@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 

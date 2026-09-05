@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
+//not GWT import - same folder const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
 
                 
 export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {

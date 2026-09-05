@@ -21,15 +21,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -51,13 +51,13 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import - same folder const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 import { PlayerComposite } from './PlayerComposite.js';
-//not GWT import const PlayerComposite = globalThis.org.allbinary.media.audio.PlayerComposite;
+//not GWT import - same folder const PlayerComposite = globalThis.org.allbinary.media.audio.PlayerComposite;
 
                 import { AllBinaryMediaManager } from './AllBinaryMediaManager.js';
-//not GWT import const AllBinaryMediaManager = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
+//not GWT import - same folder const AllBinaryMediaManager = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
 
                 
 export class CompositeSound extends Sound {

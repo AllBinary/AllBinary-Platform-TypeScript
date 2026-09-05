@@ -23,19 +23,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
-      //not GWT import const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
+//not GWT import const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -57,10 +57,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailInterface } from './EmailInterface.js';
-//not GWT import const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
+//not GWT import - same folder const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
 
                 import { Email } from './Email.js';
-//not GWT import const Email = globalThis.org.allbinary.logic.communication.smtp.Email;
+//not GWT import - same folder const Email = globalThis.org.allbinary.logic.communication.smtp.Email;
 
                 
 export class AbEmail

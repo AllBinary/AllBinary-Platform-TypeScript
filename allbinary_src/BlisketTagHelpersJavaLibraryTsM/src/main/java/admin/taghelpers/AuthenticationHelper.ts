@@ -23,83 +23,83 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { Calendar } from '../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
-      //not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
+//not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
 
       
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
-      //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
       
 import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
-      //not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
+//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
 
       
 import { UserRole } from '../../org/allbinary/business/user/role/UserRole.js';
-      //not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+//not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
       
 import { UserRoleFactory } from '../../org/allbinary/business/user/role/UserRoleFactory.js';
-      //not GWT import const UserRoleFactory = globalThis.org.allbinary.business.user.role.UserRoleFactory;
+//not GWT import const UserRoleFactory = globalThis.org.allbinary.business.user.role.UserRoleFactory;
 
       
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
-      //not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+//not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
 
       
 import { UserEntityInterface } from '../../org/allbinary/data/tables/user/UserEntityInterface.js';
-      //not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
+//not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
 
       
 import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
-      //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+//not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
 
       
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-      //not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { BooleanFactory } from '../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
 import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
-      //not GWT import const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
+//not GWT import const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
 
       
-//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -121,7 +121,7 @@ import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import const TagHelper = globalThis.admin.taghelpers.TagHelper;
+//not GWT import - same folder const TagHelper = globalThis.admin.taghelpers.TagHelper;
 
                 
 export class AuthenticationHelper extends TagHelper {

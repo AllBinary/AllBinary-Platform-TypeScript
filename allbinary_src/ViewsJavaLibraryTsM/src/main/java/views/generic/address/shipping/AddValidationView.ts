@@ -21,23 +21,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
-      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-      //not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
 
       
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { Document } from '../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -59,7 +59,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingAddressView } from './ShippingAddressView.js';
-//not GWT import const ShippingAddressView = globalThis.views.generic.address.shipping.ShippingAddressView;
+//not GWT import - same folder const ShippingAddressView = globalThis.views.generic.address.shipping.ShippingAddressView;
 
                 
 export class AddValidationView extends ShippingAddressView implements ValidationComponentInterface {

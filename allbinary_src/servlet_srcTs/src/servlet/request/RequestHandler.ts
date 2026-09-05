@@ -21,35 +21,35 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { io } from '../../java/io.js';
-      //not GWT import const io = globalThis.java.io;
+//not GWT import const io = globalThis.java.io;
 
       
 import { net } from '../../java/net.js';
-      //not GWT import const net = globalThis.java.net;
+//not GWT import const net = globalThis.java.net;
 
       
 import { servlet } from '../../javax/servlet.js';
-      //not GWT import const servlet = globalThis.javax.servlet;
+//not GWT import const servlet = globalThis.javax.servlet;
 
       
 import { http } from '../../javax/servlet/http.js';
-      //not GWT import const http = globalThis.javax.servlet.http;
+//not GWT import const http = globalThis.javax.servlet.http;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
-      //not GWT import const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+//not GWT import const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
 
       
 import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
-      //not GWT import const RequestWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.RequestWorkFlowFactory;
+//not GWT import const RequestWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.RequestWorkFlowFactory;
 
       
 
@@ -71,25 +71,25 @@ import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workfl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HttpServlet } from './HttpServlet.js';
-//not GWT import const HttpServlet = globalThis.servlet.request.HttpServlet;
+//not GWT import - same folder const HttpServlet = globalThis.servlet.request.HttpServlet;
 
                 import { ServletConfig } from './ServletConfig.js';
-//not GWT import const ServletConfig = globalThis.servlet.request.ServletConfig;
+//not GWT import - same folder const ServletConfig = globalThis.servlet.request.ServletConfig;
 
                 import { PrintWriter } from './PrintWriter.js';
-//not GWT import const PrintWriter = globalThis.servlet.request.PrintWriter;
+//not GWT import - same folder const PrintWriter = globalThis.servlet.request.PrintWriter;
 
                 import { ServletRequest } from './ServletRequest.js';
-//not GWT import const ServletRequest = globalThis.servlet.request.ServletRequest;
+//not GWT import - same folder const ServletRequest = globalThis.servlet.request.ServletRequest;
 
                 import { ServletResponse } from './ServletResponse.js';
-//not GWT import const ServletResponse = globalThis.servlet.request.ServletResponse;
+//not GWT import - same folder const ServletResponse = globalThis.servlet.request.ServletResponse;
 
                 import { HttpServletRequest } from './HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.servlet.request.HttpServletRequest;
+//not GWT import - same folder const HttpServletRequest = globalThis.servlet.request.HttpServletRequest;
 
                 import { HttpServletResponse } from './HttpServletResponse.js';
-//not GWT import const HttpServletResponse = globalThis.servlet.request.HttpServletResponse;
+//not GWT import - same folder const HttpServletResponse = globalThis.servlet.request.HttpServletResponse;
 
                 
 export class RequestHandler extends HttpServlet {

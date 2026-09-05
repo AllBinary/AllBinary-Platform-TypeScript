@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -49,19 +49,19 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
+//not GWT import - same folder const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
 
                 import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-//not GWT import const KeyboardActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputData;
+//not GWT import - same folder const KeyboardActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputData;
 
                 import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-//not GWT import const MouseActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputData;
+//not GWT import - same folder const MouseActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputData;
 
                 import { MouseActionScriptInput } from './MouseActionScriptInput.js';
-//not GWT import const MouseActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInput;
+//not GWT import - same folder const MouseActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInput;
 
                 import { KeyboardActionScriptInput } from './KeyboardActionScriptInput.js';
-//not GWT import const KeyboardActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInput;
+//not GWT import - same folder const KeyboardActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInput;
 
                 
 export class ProfileActionScriptInputFactory

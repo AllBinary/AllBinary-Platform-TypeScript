@@ -19,19 +19,19 @@
 
 
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-      //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-      //not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
       
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-      //not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
+//not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
 
       
 
@@ -53,10 +53,10 @@ import { RotationAnimation } from '../../../../org/allbinary/animation/RotationA
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import const CompoundAnimationInterfaceFactory = globalThis.org.allbinary.animation.compound.CompoundAnimationInterfaceFactory;
+//not GWT import - same folder const CompoundAnimationInterfaceFactory = globalThis.org.allbinary.animation.compound.CompoundAnimationInterfaceFactory;
 
                 import { AutoCompoundRotationAnimation } from './AutoCompoundRotationAnimation.js';
-//not GWT import const AutoCompoundRotationAnimation = globalThis.org.allbinary.animation.compound.AutoCompoundRotationAnimation;
+//not GWT import - same folder const AutoCompoundRotationAnimation = globalThis.org.allbinary.animation.compound.AutoCompoundRotationAnimation;
 
                 
 export class AutoCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {

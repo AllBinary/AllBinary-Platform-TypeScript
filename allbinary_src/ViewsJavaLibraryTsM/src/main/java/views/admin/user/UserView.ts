@@ -21,27 +21,27 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { UserDomNode } from '../../../org/allbinary/business/user/UserDomNode.js';
-      //not GWT import const UserDomNode = globalThis.org.allbinary.business.user.UserDomNode;
+//not GWT import const UserDomNode = globalThis.org.allbinary.business.user.UserDomNode;
 
       
 import { UserInterface } from '../../../org/allbinary/business/user/UserInterface.js';
-      //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
       
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { HttpContextView } from '../../../views/business/context/HttpContextView.js';
-      //not GWT import const HttpContextView = globalThis.views.business.context.HttpContextView;
+//not GWT import const HttpContextView = globalThis.views.business.context.HttpContextView;
 
       
 

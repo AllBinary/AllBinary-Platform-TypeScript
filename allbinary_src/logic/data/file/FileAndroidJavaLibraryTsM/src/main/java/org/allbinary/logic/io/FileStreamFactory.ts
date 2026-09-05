@@ -23,15 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Context } from '../../../../android/content/Context.js';
-      //not GWT import const Context = globalThis.android.content.Context;
+//not GWT import const Context = globalThis.android.content.Context;
 
       
-//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -53,10 +53,10 @@ import { Context } from '../../../../android/content/Context.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+//not GWT import - same folder const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
                 import { AbFileOutputStream } from './AbFileOutputStream.js';
-//not GWT import const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+//not GWT import - same folder const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
 
                 
 export class FileStreamFactory

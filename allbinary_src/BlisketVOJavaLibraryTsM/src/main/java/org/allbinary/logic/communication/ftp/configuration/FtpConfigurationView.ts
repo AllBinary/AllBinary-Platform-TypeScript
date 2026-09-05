@@ -23,31 +23,31 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
+//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 
@@ -69,16 +69,16 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import const FtpConfigurationInterface = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
+//not GWT import - same folder const FtpConfigurationInterface = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
 
                 import { FtpConfiguration } from './FtpConfiguration.js';
-//not GWT import const FtpConfiguration = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfiguration;
+//not GWT import - same folder const FtpConfiguration = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfiguration;
 
                 import { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import const FtpConfigurationData = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
+//not GWT import - same folder const FtpConfigurationData = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
 
                 import { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
-//not GWT import const FtpConfigurationMapping = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationMapping;
+//not GWT import - same folder const FtpConfigurationMapping = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationMapping;
 
                 
 export class FtpConfigurationView

@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
+//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
 

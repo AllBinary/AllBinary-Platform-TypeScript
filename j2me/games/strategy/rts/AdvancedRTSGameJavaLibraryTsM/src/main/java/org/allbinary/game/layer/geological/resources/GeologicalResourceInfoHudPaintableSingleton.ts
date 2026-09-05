@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
-//not GWT import const GeologicalResourceInfoHudPaintable = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResourceInfoHudPaintable;
+//not GWT import - same folder const GeologicalResourceInfoHudPaintable = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResourceInfoHudPaintable;
 
                 
 export class GeologicalResourceInfoHudPaintableSingleton

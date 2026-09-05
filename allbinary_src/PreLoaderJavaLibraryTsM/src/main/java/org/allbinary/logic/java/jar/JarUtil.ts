@@ -25,23 +25,23 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { IOException } from '../../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { URL } from '../../../../../java/net/URL.js';
-      //not GWT import const URL = globalThis.java.net.URL;
+//not GWT import const URL = globalThis.java.net.URL;
 
       
 import { URLConnection } from '../../../../../java/net/URLConnection.js';
-      //not GWT import const URLConnection = globalThis.java.net.URLConnection;
+//not GWT import const URLConnection = globalThis.java.net.URLConnection;
 
       
 import { JarEntry } from '../../../../../java/util/jar/JarEntry.js';
-      //not GWT import const JarEntry = globalThis.java.util.jar.JarEntry;
+//not GWT import const JarEntry = globalThis.java.util.jar.JarEntry;
 
       
 import { JarInputStream } from '../../../../../java/util/jar/JarInputStream.js';
-      //not GWT import const JarInputStream = globalThis.java.util.jar.JarInputStream;
+//not GWT import const JarInputStream = globalThis.java.util.jar.JarInputStream;
 
       
 

@@ -19,7 +19,7 @@
 
 
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
 

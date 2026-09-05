@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreasEntity } from './AdvertisementAreasEntity.js';
-//not GWT import const AdvertisementAreasEntity = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntity;
+//not GWT import - same folder const AdvertisementAreasEntity = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntity;
 
                 import { AdvertisementAreasEntityInterface } from './AdvertisementAreasEntityInterface.js';
-//not GWT import const AdvertisementAreasEntityInterface = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityInterface;
+//not GWT import - same folder const AdvertisementAreasEntityInterface = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityInterface;
 
                 
 export class AdvertisementAreasEntityFactory

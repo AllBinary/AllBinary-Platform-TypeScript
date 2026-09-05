@@ -21,51 +21,51 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { NameSpaceRequestParams } from '../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js';
-      //not GWT import const NameSpaceRequestParams = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParams;
+//not GWT import const NameSpaceRequestParams = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParams;
 
       
-//not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-      //not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
 
       
-//not plain js import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { ThemeValidation } from '../../../../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
-      //not GWT import const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
+//not GWT import const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
 
       
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 import { CustomizerUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
-      //not GWT import const CustomizerUtil = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
+//not GWT import const CustomizerUtil = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
 
       
 import { StoreCustomizerComponentUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js';
-      //not GWT import const StoreCustomizerComponentUtil = globalThis.views.business.context.modules.storefront.customizer.StoreCustomizerComponentUtil;
+//not GWT import const StoreCustomizerComponentUtil = globalThis.views.business.context.modules.storefront.customizer.StoreCustomizerComponentUtil;
 
       
 
@@ -87,7 +87,7 @@ import { StoreCustomizerComponentUtil } from '../../../../../../../../../views/b
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemeCustomizerView } from './ThemeCustomizerView.js';
-//not GWT import const ThemeCustomizerView = globalThis.views.business.context.modules.storefront.customizer.includes.style.theme.ThemeCustomizerView;
+//not GWT import - same folder const ThemeCustomizerView = globalThis.views.business.context.modules.storefront.customizer.includes.style.theme.ThemeCustomizerView;
 
                 
 export class InsertThemeValidationView extends ThemeCustomizerView implements ValidationComponentInterface {

@@ -19,7 +19,7 @@
 
 
 import { MinMaxDoubleConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxDoubleConstraintInterface.js';
-      //not GWT import const MinMaxDoubleConstraintInterface = globalThis.org.allbinary.logic.control.contraints.MinMaxDoubleConstraintInterface;
+//not GWT import const MinMaxDoubleConstraintInterface = globalThis.org.allbinary.logic.control.contraints.MinMaxDoubleConstraintInterface;
 
       
 

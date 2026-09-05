@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInput } from './SpecialGameInput.js';
-//not GWT import const SpecialGameInput = globalThis.org.allbinary.game.layer.special.SpecialGameInput;
+//not GWT import - same folder const SpecialGameInput = globalThis.org.allbinary.game.layer.special.SpecialGameInput;
 
                 
 export class SpecialGameInputFactory

@@ -21,23 +21,23 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { LayerManagerEvent } from '../../../org/allbinary/layer/event/LayerManagerEvent.js';
-      //not GWT import const LayerManagerEvent = globalThis.org.allbinary.layer.event.LayerManagerEvent;
+//not GWT import const LayerManagerEvent = globalThis.org.allbinary.layer.event.LayerManagerEvent;
 
       
 import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/LayerManagerEventHandler.js';
-      //not GWT import const LayerManagerEventHandler = globalThis.org.allbinary.layer.event.LayerManagerEventHandler;
+//not GWT import const LayerManagerEventHandler = globalThis.org.allbinary.layer.event.LayerManagerEventHandler;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -59,16 +59,16 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
-//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import - same folder const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
                 import { LayerProcessor } from './LayerProcessor.js';
-//not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
+//not GWT import - same folder const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
 
                 import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
-//not GWT import const LayerManagerNoDebug = globalThis.org.allbinary.layer.LayerManagerNoDebug;
+//not GWT import - same folder const LayerManagerNoDebug = globalThis.org.allbinary.layer.LayerManagerNoDebug;
 
                 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import - same folder const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 
 export class AllBinaryLayerManager extends LayerManager {

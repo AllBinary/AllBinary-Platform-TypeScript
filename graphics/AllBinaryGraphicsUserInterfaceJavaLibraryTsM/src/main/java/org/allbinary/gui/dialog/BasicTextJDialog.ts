@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
-      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+//not plain js import { ARunnable } 
+const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
 
@@ -41,37 +41,37 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import const JDialog = globalThis.org.allbinary.gui.dialog.JDialog;
+//not GWT import - same folder const JDialog = globalThis.org.allbinary.gui.dialog.JDialog;
 
                 import { CloseJDialogListenerInterface } from './CloseJDialogListenerInterface.js';
-//not GWT import const CloseJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.CloseJDialogListenerInterface;
+//not GWT import - same folder const CloseJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.CloseJDialogListenerInterface;
 
                 import { Frame } from './Frame.js';
-//not GWT import const Frame = globalThis.org.allbinary.gui.dialog.Frame;
+//not GWT import - same folder const Frame = globalThis.org.allbinary.gui.dialog.Frame;
 
                 import { JButton } from './JButton.js';
-//not GWT import const JButton = globalThis.org.allbinary.gui.dialog.JButton;
+//not GWT import - same folder const JButton = globalThis.org.allbinary.gui.dialog.JButton;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.gui.dialog.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.gui.dialog.JLabel;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const ActionListener = globalThis.org.allbinary.gui.dialog.ActionListener;
+//not GWT import - same folder const ActionListener = globalThis.org.allbinary.gui.dialog.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.org.allbinary.gui.dialog.ActionEvent;
+//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.gui.dialog.ActionEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.gui.dialog.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.gui.dialog.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.gui.dialog.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.gui.dialog.Short;
 
                 import { EventQueue } from './EventQueue.js';
-//not GWT import const EventQueue = globalThis.org.allbinary.gui.dialog.EventQueue;
+//not GWT import - same folder const EventQueue = globalThis.org.allbinary.gui.dialog.EventQueue;
 
                 import { JFrame } from './JFrame.js';
-//not GWT import const JFrame = globalThis.org.allbinary.gui.dialog.JFrame;
+//not GWT import - same folder const JFrame = globalThis.org.allbinary.gui.dialog.JFrame;
 
                 
 export class BasicTextJDialog extends javax.swing.JDialog {

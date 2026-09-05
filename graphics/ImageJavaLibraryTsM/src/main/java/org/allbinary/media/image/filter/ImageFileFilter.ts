@@ -19,11 +19,11 @@
 
 
 import { File } from '../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { FileFilter } from '../../../../../javax/swing/filechooser/FileFilter.js';
-      //not GWT import const FileFilter = globalThis.javax.swing.filechooser.FileFilter;
+//not GWT import const FileFilter = globalThis.javax.swing.filechooser.FileFilter;
 
       
 

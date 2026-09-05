@@ -23,51 +23,51 @@
             import { Runnable } from '../../../java/lang/Runnable.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';
-      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
+//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 import { Globals } from '../../../org/allbinary/globals/Globals.js';
-      //not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
+//not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
 
       
-//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-      //not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
+//not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
 
       
 import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
-      //not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
+//not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
 
       
 import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
-      //not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
+//not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -89,13 +89,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
-//not GWT import const AllBinaryMidlet = globalThis.org.allbinary.midlet.AllBinaryMidlet;
+//not GWT import - same folder const AllBinaryMidlet = globalThis.org.allbinary.midlet.AllBinaryMidlet;
 
                 import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
-//not GWT import const MidletExitProcessorFactory = globalThis.org.allbinary.midlet.MidletExitProcessorFactory;
+//not GWT import - same folder const MidletExitProcessorFactory = globalThis.org.allbinary.midlet.MidletExitProcessorFactory;
 
                 import { ExitRunnable } from './ExitRunnable.js';
-//not GWT import const ExitRunnable = globalThis.org.allbinary.midlet.ExitRunnable;
+//not GWT import - same folder const ExitRunnable = globalThis.org.allbinary.midlet.ExitRunnable;
 
                 
 export class ProgressMidlet extends AllBinaryMidlet {

@@ -21,7 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
-      //not GWT import const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
+//not GWT import const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
 
       
 
@@ -43,7 +43,7 @@ import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterfa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitTechnologySingletonFactory } from './UnitTechnologySingletonFactory.js';
-//not GWT import const UnitTechnologySingletonFactory = globalThis.org.allbinary.game.rts.technology.UnitTechnologySingletonFactory;
+//not GWT import - same folder const UnitTechnologySingletonFactory = globalThis.org.allbinary.game.rts.technology.UnitTechnologySingletonFactory;
 
                 
 export class DamageTechnology

@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Vector } from '../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not GWT import const Vector = globalThis.java.util.Vector;
 
       
 

@@ -21,7 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
-      //not GWT import const InputAutomationConfigurationFactory = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationFactory;
+//not GWT import const InputAutomationConfigurationFactory = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationFactory;
 
       
 
@@ -43,7 +43,7 @@ import { InputAutomationConfigurationFactory } from '../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleConfigurations } from './InputAutomationModuleConfigurations.js';
-//not GWT import const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
+//not GWT import - same folder const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
 
                 
 export class InputAutomationModuleConfigurationsSingletonFactory

@@ -21,27 +21,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
-      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
 import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
-      //not GWT import const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
+//not GWT import const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
 
       
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-      //not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
 
       
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { Document } from '../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -63,7 +63,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingAddressesView } from './ShippingAddressesView.js';
-//not GWT import const ShippingAddressesView = globalThis.views.generic.address.shipping.ShippingAddressesView;
+//not GWT import - same folder const ShippingAddressesView = globalThis.views.generic.address.shipping.ShippingAddressesView;
 
                 
 export class ValidationView extends ShippingAddressesView implements ValidationComponentInterface {

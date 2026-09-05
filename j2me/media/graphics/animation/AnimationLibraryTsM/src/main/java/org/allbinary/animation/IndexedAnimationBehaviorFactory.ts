@@ -37,13 +37,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+//not GWT import - same folder const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
                 import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
-//not GWT import const IndexedAnimationBehavior = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
+//not GWT import - same folder const IndexedAnimationBehavior = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
 
                 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
                 
 export class IndexedAnimationBehaviorFactory extends AnimationBehaviorFactory {

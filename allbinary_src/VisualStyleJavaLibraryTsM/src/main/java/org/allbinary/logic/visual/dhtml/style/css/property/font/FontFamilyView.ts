@@ -21,11 +21,11 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { CssPropertyView } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js';
-      //not GWT import const CssPropertyView = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyView;
+//not GWT import const CssPropertyView = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyView;
 
       
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -47,7 +47,7 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FontFamilyData } from './FontFamilyData.js';
-//not GWT import const FontFamilyData = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyData;
+//not GWT import - same folder const FontFamilyData = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyData;
 
                 
 export class FontFamilyView extends CssPropertyView {

@@ -23,51 +23,51 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Source } from '../../../../../javax/xml/transform/Source.js';
-      //not GWT import const Source = globalThis.javax.xml.transform.Source;
+//not GWT import const Source = globalThis.javax.xml.transform.Source;
 
       
 import { TransformerException } from '../../../../../javax/xml/transform/TransformerException.js';
-      //not GWT import const TransformerException = globalThis.javax.xml.transform.TransformerException;
+//not GWT import const TransformerException = globalThis.javax.xml.transform.TransformerException;
 
       
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
+//not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+//not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-      //not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+//not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
 
       
 import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
-      //not GWT import const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
+//not GWT import const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
 
       
 import { AbFilePath } from '../../../../../org/allbinary/logic/io/path/AbFilePath.js';
-      //not GWT import const AbFilePath = globalThis.org.allbinary.logic.io.path.AbFilePath;
+//not GWT import const AbFilePath = globalThis.org.allbinary.logic.io.path.AbFilePath;
 
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
-      //not GWT import const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
+//not GWT import const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
 
       
 
@@ -89,7 +89,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { URIResolverStrings } from './URIResolverStrings.js';
-//not GWT import const URIResolverStrings = globalThis.org.allbinary.data.tree.dom.URIResolverStrings;
+//not GWT import - same folder const URIResolverStrings = globalThis.org.allbinary.data.tree.dom.URIResolverStrings;
 
                 
 export class BasicUriResolver

@@ -21,15 +21,15 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
-      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+//not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
 import { GameInputMotionEventProcessorAPI1 } from '../../../../../org/allbinary/android/input/motion/api1/GameInputMotionEventProcessorAPI1.js';
-      //not GWT import const GameInputMotionEventProcessorAPI1 = globalThis.org.allbinary.android.input.motion.api1.GameInputMotionEventProcessorAPI1;
+//not GWT import const GameInputMotionEventProcessorAPI1 = globalThis.org.allbinary.android.input.motion.api1.GameInputMotionEventProcessorAPI1;
 
       
 import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/android/input/motion/api5/GameInputMotionEventProcessorAPI5.js';
-      //not GWT import const GameInputMotionEventProcessorAPI5 = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionEventProcessorAPI5;
+//not GWT import const GameInputMotionEventProcessorAPI5 = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionEventProcessorAPI5;
 
       
 
@@ -51,7 +51,7 @@ import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameInputMotionEventProcessor } from './BaseGameInputMotionEventProcessor.js';
-//not GWT import const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
+//not GWT import - same folder const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
 
                 
 export class GameInputMotionEventProcessorFactory

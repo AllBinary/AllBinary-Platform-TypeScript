@@ -23,19 +23,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-      //not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+//not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
 
       
 import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
-      //not GWT import const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
+//not GWT import const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

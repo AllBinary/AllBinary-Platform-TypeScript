@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
-      //not GWT import const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
+//not GWT import const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,10 +53,10 @@ import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/Sta
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
+//not GWT import - same folder const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
 
                 import { GraphicItemFactory } from './GraphicItemFactory.js';
-//not GWT import const GraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemFactory;
+//not GWT import - same folder const GraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemFactory;
 
                 
 export class ToolFactory

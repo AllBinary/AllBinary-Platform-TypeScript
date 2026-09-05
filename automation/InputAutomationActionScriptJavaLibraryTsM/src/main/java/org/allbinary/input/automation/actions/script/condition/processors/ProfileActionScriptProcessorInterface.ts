@@ -19,19 +19,19 @@
 
 
 import { MutableTreeNode } from '../../../../../../../../javax/swing/tree/MutableTreeNode.js';
-      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ProfileActionScriptItemInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
-      //not GWT import const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
+//not GWT import const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
 
       
 import { CustomTreeNodeInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
-      //not GWT import const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
+//not GWT import const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
 
       
 

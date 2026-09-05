@@ -25,63 +25,64 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not plain js import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+//not plain js import { Control } 
+const Control = globalThis.javax.microedition.media.Control;
 
       
-//not plain js import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-      const Controllable = globalThis.javax.microedition.media.Controllable;
+//not plain js import { Controllable } 
+const Controllable = globalThis.javax.microedition.media.Controllable;
 
       
-//not plain js import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      const MediaException = globalThis.javax.microedition.media.MediaException;
+//not plain js import { MediaException } 
+const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player } 
+const Player = globalThis.javax.microedition.media.Player;
+const PlayerI = globalThis.javax.microedition.media.Player;
 
       
-//not plain js import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } 
+const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not plain js import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-      const TimeBase = globalThis.javax.microedition.media.TimeBase;
+//not plain js import { TimeBase } 
+const TimeBase = globalThis.javax.microedition.media.TimeBase;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+//not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+//not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -103,10 +104,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-//not GWT import const TimeBaseInterface = globalThis.org.allbinary.media.audio.TimeBaseInterface;
+//not GWT import - same folder const TimeBaseInterface = globalThis.org.allbinary.media.audio.TimeBaseInterface;
 
                 import { Controllable2 } from './Controllable2.js';
-//not GWT import const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
+//not GWT import - same folder const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
 
                 //BasicPlayerMIDP2
 export class PlayerComposite

@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
 
@@ -43,10 +43,10 @@ import { Features } from '../../../../org/allbinary/game/configuration/feature/F
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLConfiguration } from './OpenGLConfiguration.js';
-//not GWT import const OpenGLConfiguration = globalThis.org.allbinary.graphics.opengles.OpenGLConfiguration;
+//not GWT import - same folder const OpenGLConfiguration = globalThis.org.allbinary.graphics.opengles.OpenGLConfiguration;
 
                 import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-//not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+//not GWT import - same folder const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
                 
 export class OpenGLFeatureUtil

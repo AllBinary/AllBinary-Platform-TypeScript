@@ -23,31 +23,31 @@
             import { System } from '../../../../../../java/lang/System.js';
         
 import { File } from '../../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { AbFileNativeUtil } from '../../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+//not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
 import { CommonDataFileStrings } from '../../../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
-      //not GWT import const CommonDataFileStrings = globalThis.org.allbinary.logic.io.file.CommonDataFileStrings;
+//not GWT import const CommonDataFileStrings = globalThis.org.allbinary.logic.io.file.CommonDataFileStrings;
 
       
 import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/allbinary/logic/io/file/visitor/IncludeFileExtensionsBooleanFileVisitor.js';
-      //not GWT import const IncludeFileExtensionsBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.visitor.IncludeFileExtensionsBooleanFileVisitor;
+//not GWT import const IncludeFileExtensionsBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.visitor.IncludeFileExtensionsBooleanFileVisitor;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -69,13 +69,13 @@ import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackedStrings } from './TrackedStrings.js';
-//not GWT import const TrackedStrings = globalThis.org.allbinary.logic.io.file.directory.TrackedStrings;
+//not GWT import - same folder const TrackedStrings = globalThis.org.allbinary.logic.io.file.directory.TrackedStrings;
 
                 import { ProcessBuilder } from './ProcessBuilder.js';
-//not GWT import const ProcessBuilder = globalThis.org.allbinary.logic.io.file.directory.ProcessBuilder;
+//not GWT import - same folder const ProcessBuilder = globalThis.org.allbinary.logic.io.file.directory.ProcessBuilder;
 
                 import { Process } from './Process.js';
-//not GWT import const Process = globalThis.org.allbinary.logic.io.file.directory.Process;
+//not GWT import - same folder const Process = globalThis.org.allbinary.logic.io.file.directory.Process;
 
                 
 export class DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor extends IncludeFileExtensionsBooleanFileVisitor {

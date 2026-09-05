@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { InputAutomationModuleFactoryInterface } from '../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-      //not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+//not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
 
       
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-      //not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+//not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
 
       
 
@@ -49,7 +49,7 @@ import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfigurationModuleChangeEvent } from './InputAutomationConfigurationModuleChangeEvent.js';
-//not GWT import const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
+//not GWT import - same folder const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
 
                 
 export class InputAutomationConfigurationUtil

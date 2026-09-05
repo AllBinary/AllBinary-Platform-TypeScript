@@ -21,7 +21,7 @@
             import { Object } from '../../../../../../../java/lang/Object.js';
         
 import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
-      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
 

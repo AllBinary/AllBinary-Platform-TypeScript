@@ -23,7 +23,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
-      //not GWT import const AllBinaryEventCircularPool = globalThis.org.allbinary.logic.util.event.AllBinaryEventCircularPool;
+//not GWT import const AllBinaryEventCircularPool = globalThis.org.allbinary.logic.util.event.AllBinaryEventCircularPool;
 
       
 
@@ -45,13 +45,13 @@ import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventFactory } from './TerrainEventFactory.js';
-//not GWT import const TerrainEventFactory = globalThis.org.allbinary.game.terrain.TerrainEventFactory;
+//not GWT import - same folder const TerrainEventFactory = globalThis.org.allbinary.game.terrain.TerrainEventFactory;
 
                 import { TerrainEvent } from './TerrainEvent.js';
-//not GWT import const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
+//not GWT import - same folder const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
 
                 import { BasicTerrainInfo } from './BasicTerrainInfo.js';
-//not GWT import const BasicTerrainInfo = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
+//not GWT import - same folder const BasicTerrainInfo = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
 
                 
 export class TerrainEventCircularStaticPool

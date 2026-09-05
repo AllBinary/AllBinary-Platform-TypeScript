@@ -23,7 +23,7 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 
@@ -45,7 +45,7 @@ import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/Ba
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackFrictionProperties } from './RaceTrackFrictionProperties.js';
-//not GWT import const RaceTrackFrictionProperties = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackFrictionProperties;
+//not GWT import - same folder const RaceTrackFrictionProperties = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackFrictionProperties;
 
                 
 export class RaceTrackInfo

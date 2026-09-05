@@ -20,36 +20,37 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+//not plain js import { Control } 
+const Control = globalThis.javax.microedition.media.Control;
 
       
-//not plain js import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      const MediaException = globalThis.javax.microedition.media.MediaException;
+//not plain js import { MediaException } 
+const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player } 
+const Player = globalThis.javax.microedition.media.Player;
+const PlayerI = globalThis.javax.microedition.media.Player;
 
       
-//not plain js import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } 
+const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not plain js import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-      const TimeBase = globalThis.javax.microedition.media.TimeBase;
+//not plain js import { TimeBase } 
+const TimeBase = globalThis.javax.microedition.media.TimeBase;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -71,13 +72,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-//not GWT import const TimeBaseInterface = globalThis.org.allbinary.media.audio.TimeBaseInterface;
+//not GWT import - same folder const TimeBaseInterface = globalThis.org.allbinary.media.audio.TimeBaseInterface;
 
                 import { Controllable2 } from './Controllable2.js';
-//not GWT import const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
+//not GWT import - same folder const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
 
                 import { NullControl } from './NullControl.js';
-//not GWT import const NullControl = globalThis.org.allbinary.media.audio.NullControl;
+//not GWT import - same folder const NullControl = globalThis.org.allbinary.media.audio.NullControl;
 
                 //BasicPlayerMIDP2JavaLibrary
 export class BasicPlayer

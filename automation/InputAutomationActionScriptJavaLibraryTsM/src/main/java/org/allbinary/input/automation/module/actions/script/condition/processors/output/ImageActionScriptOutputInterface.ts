@@ -37,10 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptOutputInterface } from './ProfileActionScriptOutputInterface.js';
-//not GWT import const ProfileActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ProfileActionScriptOutputInterface;
+//not GWT import - same folder const ProfileActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ProfileActionScriptOutputInterface;
 
                 import { ImageTypes } from './ImageTypes.js';
-//not GWT import const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
+//not GWT import - same folder const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
 
                 
 export interface ImageActionScriptOutputInterface extends ProfileActionScriptOutputInterface {

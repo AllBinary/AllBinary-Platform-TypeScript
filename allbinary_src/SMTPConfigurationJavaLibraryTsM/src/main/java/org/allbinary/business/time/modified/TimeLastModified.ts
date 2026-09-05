@@ -19,7 +19,7 @@
 
 
 import { Time } from '../../../../../org/allbinary/business/time/Time.js';
-      //not GWT import const Time = globalThis.org.allbinary.business.time.Time;
+//not GWT import const Time = globalThis.org.allbinary.business.time.Time;
 
       
 

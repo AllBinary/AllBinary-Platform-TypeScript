@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { Activity } from '../../../../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 
@@ -51,13 +51,13 @@ import { Activity } from '../../../../../../android/app/Activity.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressRunnable } from './ProgressRunnable.js';
-//not GWT import const ProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressRunnable;
+//not GWT import - same folder const ProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressRunnable;
 
                 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import - same folder const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 import { AndroidBasicTitleProgressBar } from './AndroidBasicTitleProgressBar.js';
-//not GWT import const AndroidBasicTitleProgressBar = globalThis.org.allbinary.graphics.canvas.transition.progress.AndroidBasicTitleProgressBar;
+//not GWT import - same folder const AndroidBasicTitleProgressBar = globalThis.org.allbinary.graphics.canvas.transition.progress.AndroidBasicTitleProgressBar;
 
                 
 export class TitleProgressBarPortionSetProgressRunnable extends ProgressRunnable {

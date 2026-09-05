@@ -21,55 +21,55 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { MultiGeographicMapBehavior } from '../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js';
-      //not GWT import const MultiGeographicMapBehavior = globalThis.org.allbinary.media.graphics.geography.map.MultiGeographicMapBehavior;
+//not GWT import const MultiGeographicMapBehavior = globalThis.org.allbinary.media.graphics.geography.map.MultiGeographicMapBehavior;
 
       
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
+//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-      //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+//not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
 import { BasicTerrainInfo } from '../../../../../org/allbinary/game/terrain/BasicTerrainInfo.js';
-      //not GWT import const BasicTerrainInfo = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
+//not GWT import const BasicTerrainInfo = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
 
       
 import { TerrainEvent } from '../../../../../org/allbinary/game/terrain/TerrainEvent.js';
-      //not GWT import const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
+//not GWT import const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
 
       
 import { TerrainEventCircularStaticPool } from '../../../../../org/allbinary/game/terrain/TerrainEventCircularStaticPool.js';
-      //not GWT import const TerrainEventCircularStaticPool = globalThis.org.allbinary.game.terrain.TerrainEventCircularStaticPool;
+//not GWT import const TerrainEventCircularStaticPool = globalThis.org.allbinary.game.terrain.TerrainEventCircularStaticPool;
 
       
 import { TerrainEventHandler } from '../../../../../org/allbinary/game/terrain/TerrainEventHandler.js';
-      //not GWT import const TerrainEventHandler = globalThis.org.allbinary.game.terrain.TerrainEventHandler;
+//not GWT import const TerrainEventHandler = globalThis.org.allbinary.game.terrain.TerrainEventHandler;
 
       
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not plain js import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
-      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+//not plain js import { AngleFactory } 
+const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-      //not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
       
 import { BasicGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-      //not GWT import const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
+//not GWT import const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
 
       
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-      //not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
       
 import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
-      //not GWT import const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+//not GWT import const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
 
       
 
@@ -91,7 +91,7 @@ import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
-//not GWT import const TopViewCharacterBehavior = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterBehavior;
+//not GWT import - same folder const TopViewCharacterBehavior = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterBehavior;
 
                 
 export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {

@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Scoreable } from './Scoreable.js';
-//not GWT import const Scoreable = globalThis.org.allbinary.game.score.Scoreable;
+//not GWT import - same folder const Scoreable = globalThis.org.allbinary.game.score.Scoreable;
 
                 
 export class NoScoreable extends Scoreable {

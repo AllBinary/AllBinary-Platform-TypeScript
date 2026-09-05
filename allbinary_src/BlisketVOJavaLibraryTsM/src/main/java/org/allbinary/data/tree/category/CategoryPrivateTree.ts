@@ -23,39 +23,39 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
-      //not GWT import const CategoryComponent = globalThis.org.allbinary.business.category.CategoryComponent;
+//not GWT import const CategoryComponent = globalThis.org.allbinary.business.category.CategoryComponent;
 
       
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-      //not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+//not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
       
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+//not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
-      //not GWT import const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
+//not GWT import const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
 
       
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

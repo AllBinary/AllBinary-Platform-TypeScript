@@ -27,39 +27,39 @@
             import { Float } from '../../../../../../../java/lang/Float.js';
         
 import { HashSet } from '../../../../../../../java/util/HashSet.js';
-      //not GWT import const HashSet = globalThis.java.util.HashSet;
+//not GWT import const HashSet = globalThis.java.util.HashSet;
 
       
 import { Set } from '../../../../../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
+//not GWT import const Set = globalThis.java.util.Set;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { Item } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js';
-      //not GWT import const Item = globalThis.org.allbinary.business.user.commerce.inventory.item.Item;
+//not GWT import const Item = globalThis.org.allbinary.business.user.commerce.inventory.item.Item;
 
       
 import { ItemView } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemView.js';
-      //not GWT import const ItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemView;
+//not GWT import const ItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemView;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -81,7 +81,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasketData } from './BasketData.js';
-//not GWT import const BasketData = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketData;
+//not GWT import - same folder const BasketData = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketData;
 
                 
 export class BasketReview

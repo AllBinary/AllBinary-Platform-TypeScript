@@ -25,63 +25,63 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 import { HashMap } from '../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { QuoteRequestData } from '../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
-      //not GWT import const QuoteRequestData = globalThis.org.allbinary.business.quoterequest.QuoteRequestData;
+//not GWT import const QuoteRequestData = globalThis.org.allbinary.business.quoterequest.QuoteRequestData;
 
       
 import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
-      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
+//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
 import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js';
-      //not GWT import const QuoteRequestIdGenerator = globalThis.org.allbinary.data.generator.QuoteRequestIdGenerator;
+//not GWT import const QuoteRequestIdGenerator = globalThis.org.allbinary.data.generator.QuoteRequestIdGenerator;
 
       
-//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
-      //not GWT import const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
+//not GWT import const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 

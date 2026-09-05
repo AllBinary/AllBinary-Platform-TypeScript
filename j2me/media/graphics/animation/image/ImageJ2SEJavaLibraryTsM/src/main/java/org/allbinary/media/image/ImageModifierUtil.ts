@@ -23,35 +23,35 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { ColorModel } from '../../../../java/awt/image/ColorModel.js';
-      //not GWT import const ColorModel = globalThis.java.awt.image.ColorModel;
+//not GWT import const ColorModel = globalThis.java.awt.image.ColorModel;
 
       
 import { WritableRaster } from '../../../../java/awt/image/WritableRaster.js';
-      //not GWT import const WritableRaster = globalThis.java.awt.image.WritableRaster;
+//not GWT import const WritableRaster = globalThis.java.awt.image.WritableRaster;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
+//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -73,9 +73,9 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
-                //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+                //not plain js - same folder import { ImageCreationUtil } 
 const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 

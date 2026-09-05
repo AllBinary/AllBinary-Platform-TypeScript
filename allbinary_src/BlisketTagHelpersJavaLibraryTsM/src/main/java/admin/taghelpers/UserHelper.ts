@@ -21,79 +21,79 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
+//not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
 import { NewUserFactory } from '../../org/allbinary/business/user/NewUserFactory.js';
-      //not GWT import const NewUserFactory = globalThis.org.allbinary.business.user.NewUserFactory;
+//not GWT import const NewUserFactory = globalThis.org.allbinary.business.user.NewUserFactory;
 
       
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
-      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
+//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
-      //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
       
 import { UserName } from '../../org/allbinary/business/user/username/UserName.js';
-      //not GWT import const UserName = globalThis.org.allbinary.business.user.username.UserName;
+//not GWT import const UserName = globalThis.org.allbinary.business.user.username.UserName;
 
       
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
-      //not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+//not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
 
       
 import { FREEBLISKET_PATH_GLOBALS } from '../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-      //not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+//not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
 
       
 import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
 import { RequestParams } from '../../org/allbinary/logic/communication/http/request/RequestParams.js';
-      //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-      //not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+//not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
 
       
-//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
-      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 
@@ -115,7 +115,7 @@ import { StringValidationUtil } from '../../org/allbinary/logic/string/StringVal
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Table } from './Table.js';
-//not GWT import const Table = globalThis.admin.taghelpers.Table;
+//not GWT import - same folder const Table = globalThis.admin.taghelpers.Table;
 
                 
 export class UserHelper extends Table {

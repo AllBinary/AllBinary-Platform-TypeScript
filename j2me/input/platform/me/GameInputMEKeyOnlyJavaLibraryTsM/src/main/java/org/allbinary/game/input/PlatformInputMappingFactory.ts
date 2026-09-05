@@ -23,15 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
-      //not GWT import const PersistentInputMapping = globalThis.org.allbinary.game.input.mapping.PersistentInputMapping;
+//not GWT import const PersistentInputMapping = globalThis.org.allbinary.game.input.mapping.PersistentInputMapping;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,7 +53,7 @@ import { PersistentInputMapping } from '../../../../org/allbinary/game/input/map
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NormalJ2MEGameInputMapping } from './NormalJ2MEGameInputMapping.js';
-//not GWT import const NormalJ2MEGameInputMapping = globalThis.org.allbinary.game.input.NormalJ2MEGameInputMapping;
+//not GWT import - same folder const NormalJ2MEGameInputMapping = globalThis.org.allbinary.game.input.NormalJ2MEGameInputMapping;
 
                 
 export class PlatformInputMappingFactory

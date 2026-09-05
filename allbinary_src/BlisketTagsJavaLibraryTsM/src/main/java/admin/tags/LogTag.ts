@@ -19,7 +19,7 @@
 
 
 import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
-      //not GWT import const LogHelperFactory = globalThis.admin.taghelpers.LogHelperFactory;
+//not GWT import const LogHelperFactory = globalThis.admin.taghelpers.LogHelperFactory;
 
       
 
@@ -41,7 +41,7 @@ import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class LogTag extends TableTag {

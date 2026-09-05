@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 
@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MusicManager } from './MusicManager.js';
-//not GWT import const MusicManager = globalThis.org.allbinary.media.audio.music.MusicManager;
+//not GWT import - same folder const MusicManager = globalThis.org.allbinary.media.audio.music.MusicManager;
 
                 import { MusicService } from './MusicService.js';
-//not GWT import const MusicService = globalThis.org.allbinary.media.audio.music.MusicService;
+//not GWT import - same folder const MusicService = globalThis.org.allbinary.media.audio.music.MusicService;
 
                 
 export class MusicManagerFactory

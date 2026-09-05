@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Serializable } from '../../../../../java/io/Serializable.js';
-      //not GWT import const Serializable = globalThis.java.io.Serializable;
+//not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
 import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
-      //not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
+//not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
 
       
 
@@ -49,7 +49,7 @@ import { UserFactoryInterface } from '../../../../../org/allbinary/business/user
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRole } from './BasicUserRole.js';
-//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
+//not GWT import - same folder const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
 
                 
 export class UserRole

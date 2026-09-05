@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CloseJDialogListenerInterface } from './CloseJDialogListenerInterface.js';
-//not GWT import const CloseJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.CloseJDialogListenerInterface;
+//not GWT import - same folder const CloseJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.CloseJDialogListenerInterface;
 
                 
 export class ExitCloseListener

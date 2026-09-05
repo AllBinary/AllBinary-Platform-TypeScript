@@ -21,75 +21,75 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
-      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
 import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
-      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
+//not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
 import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
-      //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
+//not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-//not plain js import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
-      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+//not plain js import { RecordEnumeration } 
+const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-//not plain js import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
-      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+//not plain js import { RecordStore } 
+const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
+//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not plain js import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+//not plain js import { SmallIntegerSingletonFactory } 
+const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-//not plain js import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
-      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+//not plain js import { HashtableUtil } 
+const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
 
@@ -111,16 +111,16 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPersitance } from './BasicPersitance.js';
-//not GWT import const BasicPersitance = globalThis.org.allbinary.game.configuration.persistance.BasicPersitance;
+//not GWT import - same folder const BasicPersitance = globalThis.org.allbinary.game.configuration.persistance.BasicPersitance;
 
                 import { NullRecordStore } from './NullRecordStore.js';
-//not GWT import const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
+//not GWT import - same folder const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
 
                 import { NullRecordFilter } from './NullRecordFilter.js';
-//not GWT import const NullRecordFilter = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
+//not GWT import - same folder const NullRecordFilter = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
 
                 import { NullRecordComparator } from './NullRecordComparator.js';
-//not GWT import const NullRecordComparator = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
+//not GWT import - same folder const NullRecordComparator = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
 
                 
 export class KeyValuePersistance extends BasicPersitance {

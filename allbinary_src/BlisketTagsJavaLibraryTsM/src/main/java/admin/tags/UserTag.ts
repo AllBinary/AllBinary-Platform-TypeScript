@@ -21,23 +21,23 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { UserHelperFactory } from '../../admin/taghelpers/UserHelperFactory.js';
-      //not GWT import const UserHelperFactory = globalThis.admin.taghelpers.UserHelperFactory;
+//not GWT import const UserHelperFactory = globalThis.admin.taghelpers.UserHelperFactory;
 
       
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { UserRoleData } from '../../org/allbinary/business/user/role/UserRoleData.js';
-      //not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+//not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
 
@@ -59,7 +59,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class UserTag extends TableTag {

@@ -25,71 +25,71 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
-      //not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
+//not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
 
       
 import { AuthenticationHelperFactory } from '../../admin/taghelpers/AuthenticationHelperFactory.js';
-      //not GWT import const AuthenticationHelperFactory = globalThis.admin.taghelpers.AuthenticationHelperFactory;
+//not GWT import const AuthenticationHelperFactory = globalThis.admin.taghelpers.AuthenticationHelperFactory;
 
       
 import { AuthenticationRequestHelperFactory } from '../../admin/taghelpers/AuthenticationRequestHelperFactory.js';
-      //not GWT import const AuthenticationRequestHelperFactory = globalThis.admin.taghelpers.AuthenticationRequestHelperFactory;
+//not GWT import const AuthenticationRequestHelperFactory = globalThis.admin.taghelpers.AuthenticationRequestHelperFactory;
 
       
-//not plain js import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
 import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
-      //not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+//not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-      //not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
+//not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
 
       
 

@@ -6,8 +6,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -29,7 +29,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheType } from './CacheType.js';
-//not GWT import const CacheType = globalThis.org.allbinary.logic.util.cache.CacheType;
+//not GWT import - same folder const CacheType = globalThis.org.allbinary.logic.util.cache.CacheType;
 
                 
 export class CacheTypeFactory

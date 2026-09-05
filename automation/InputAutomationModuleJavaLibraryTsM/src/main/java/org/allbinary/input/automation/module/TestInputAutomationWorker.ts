@@ -23,27 +23,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ScreenCaptureImagesWorker } from '../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
-      //not GWT import const ScreenCaptureImagesWorker = globalThis.org.allbinary.input.media.image.capture.ScreenCaptureImagesWorker;
+//not GWT import const ScreenCaptureImagesWorker = globalThis.org.allbinary.input.media.image.capture.ScreenCaptureImagesWorker;
 
       
 import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
-      //not GWT import const ImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.ImageComparisonWorker;
+//not GWT import const ImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.ImageComparisonWorker;
 
       
 import { SaveImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/SaveImageComparisonWorker.js';
-      //not GWT import const SaveImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.SaveImageComparisonWorker;
+//not GWT import const SaveImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.SaveImageComparisonWorker;
 
       
 import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
-      //not GWT import const MotionRectanglesWorker = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesWorker;
+//not GWT import const MotionRectanglesWorker = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesWorker;
 
       
 import { SaveMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/SaveMotionRectanglesResultsWorker.js';
-      //not GWT import const SaveMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.SaveMotionRectanglesResultsWorker;
+//not GWT import const SaveMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.SaveMotionRectanglesResultsWorker;
 
       
 import { TestInputForMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/TestInputForMotionRectanglesResultsWorker.js';
-      //not GWT import const TestInputForMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.TestInputForMotionRectanglesResultsWorker;
+//not GWT import const TestInputForMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.TestInputForMotionRectanglesResultsWorker;
 
       
 

@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
-      const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+//not plain js import { BasicDecimal } 
+const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 
@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVectorInterface } from './MathVectorInterface.js';
-//not GWT import const MathVectorInterface = globalThis.org.allbinary.logic.math.vector.MathVectorInterface;
+//not GWT import - same folder const MathVectorInterface = globalThis.org.allbinary.logic.math.vector.MathVectorInterface;
 
                 
 export class MathVector

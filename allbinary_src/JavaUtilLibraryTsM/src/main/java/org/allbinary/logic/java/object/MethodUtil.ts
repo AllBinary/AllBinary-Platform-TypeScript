@@ -23,11 +23,11 @@
             import { Class } from '../../../../../java/lang/Class.js';
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 
@@ -49,7 +49,7 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParamsUtil } from './ParamsUtil.js';
-//not GWT import const ParamsUtil = globalThis.org.allbinary.logic.java.anyType.ParamsUtil;
+//not GWT import - same folder const ParamsUtil = globalThis.org.allbinary.logic.java.anyType.ParamsUtil;
 
                 
 export class MethodUtil

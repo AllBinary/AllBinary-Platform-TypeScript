@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionKeys } from './PaymentTransactionKeys.js';
-//not GWT import const PaymentTransactionKeys = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionKeys;
+//not GWT import - same folder const PaymentTransactionKeys = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionKeys;
 
                 
 export class PaymentTransactionKeysFactory

@@ -21,7 +21,7 @@
             import { Object } from '../../../../../../../java/lang/Object.js';
         
 import { GeographicMapCellHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-      //not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
+//not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
 
       
 

@@ -23,31 +23,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
 import { DisplayInBrowserContraints } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraints.js';
-      //not GWT import const DisplayInBrowserContraints = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraints;
+//not GWT import const DisplayInBrowserContraints = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraints;
 
       
 import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
-      //not GWT import const DisplayInBrowserContraintsInterface = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraintsInterface;
+//not GWT import const DisplayInBrowserContraintsInterface = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraintsInterface;
 
       
 import { TwoDimensionalConstraint } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraint.js';
-      //not GWT import const TwoDimensionalConstraint = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraint;
+//not GWT import const TwoDimensionalConstraint = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraint;
 
       
 import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
-      //not GWT import const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
+//not GWT import const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -69,10 +69,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import const AdvertisementAreaConstraintsInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
+//not GWT import - same folder const AdvertisementAreaConstraintsInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
 
                 import { AdvertisementAreaData } from './AdvertisementAreaData.js';
-//not GWT import const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
+//not GWT import - same folder const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
 
                 
 export class AdvertisementAreaConstraints

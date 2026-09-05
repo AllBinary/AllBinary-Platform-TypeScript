@@ -39,16 +39,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+//not GWT import - same folder const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
 
                 import { LockablePaintable } from './LockablePaintable.js';
-//not GWT import const LockablePaintable = globalThis.org.allbinary.graphics.form.LockablePaintable;
+//not GWT import - same folder const LockablePaintable = globalThis.org.allbinary.graphics.form.LockablePaintable;
 
                 import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
+//not GWT import - same folder const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
 
                 import { PaintableForm } from './PaintableForm.js';
-//not GWT import const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
+//not GWT import - same folder const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
 
                 
 export class LockableFormPaintableFactory extends ItemPaintableFactory {

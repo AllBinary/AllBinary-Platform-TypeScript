@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponse } from './AcceptableResponse.js';
-//not GWT import const AcceptableResponse = globalThis.org.allbinary.logic.communication.http.AcceptableResponse;
+//not GWT import - same folder const AcceptableResponse = globalThis.org.allbinary.logic.communication.http.AcceptableResponse;
 
                 
 export class AcceptableResponseFactory

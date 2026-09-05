@@ -27,15 +27,15 @@
             import { Double } from '../../../../../../java/lang/Double.js';
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -57,10 +57,10 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObjectInterface } from './MeteredGameObjectInterface.js';
-//not GWT import const MeteredGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.MeteredGameObjectInterface;
+//not GWT import - same folder const MeteredGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.MeteredGameObjectInterface;
 
                 import { GraphicsAnalysisUtil } from './GraphicsAnalysisUtil.js';
-//not GWT import const GraphicsAnalysisUtil = globalThis.org.allbinary.input.automation.module.game.GraphicsAnalysisUtil;
+//not GWT import - same folder const GraphicsAnalysisUtil = globalThis.org.allbinary.input.automation.module.game.GraphicsAnalysisUtil;
 
                 
 export class MeteredGameObject

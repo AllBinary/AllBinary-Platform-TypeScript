@@ -21,23 +21,23 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
-      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
+//not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -59,10 +59,10 @@ import { Portion } from '../../../../../org/allbinary/business/installer/Portion
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-//not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+//not GWT import - same folder const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
                 import { AbSqlTable } from './AbSqlTable.js';
-//not GWT import const AbSqlTable = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
+//not GWT import - same folder const AbSqlTable = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
 
                 
 export class AbSqlTableUtil

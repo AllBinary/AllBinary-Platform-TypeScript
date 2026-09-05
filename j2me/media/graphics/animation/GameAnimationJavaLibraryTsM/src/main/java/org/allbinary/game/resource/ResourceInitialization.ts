@@ -19,11 +19,11 @@
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { Init } from '../../../../org/allbinary/init/Init.js';
-      //not GWT import const Init = globalThis.org.allbinary.init.Init;
+//not GWT import const Init = globalThis.org.allbinary.init.Init;
 
       
 

@@ -21,39 +21,39 @@
             import { Object } from '../../../../../../../java/lang/Object.js';
         
 import { Connection } from '../../../../../../../java/sql/Connection.js';
-      //not GWT import const Connection = globalThis.java.sql.Connection;
+//not GWT import const Connection = globalThis.java.sql.Connection;
 
       
 import { DriverManager } from '../../../../../../../java/sql/DriverManager.js';
-      //not GWT import const DriverManager = globalThis.java.sql.DriverManager;
+//not GWT import const DriverManager = globalThis.java.sql.DriverManager;
 
       
 import { SQLException } from '../../../../../../../java/sql/SQLException.js';
-      //not GWT import const SQLException = globalThis.java.sql.SQLException;
+//not GWT import const SQLException = globalThis.java.sql.SQLException;
 
       
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 

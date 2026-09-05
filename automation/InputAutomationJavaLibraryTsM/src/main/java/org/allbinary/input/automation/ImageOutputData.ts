@@ -22,12 +22,12 @@
         
             import { System } from '../../../../java/lang/System.js';
         
-//not plain js import { FilePathData } from '../../../../org/allbinary/logic/io/file/FilePathData.js';
-      const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+//not plain js import { FilePathData } 
+const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 

@@ -22,12 +22,12 @@
         
             import { System } from '../../../java/lang/System.js';
         
-//not plain js import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } 
+const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 

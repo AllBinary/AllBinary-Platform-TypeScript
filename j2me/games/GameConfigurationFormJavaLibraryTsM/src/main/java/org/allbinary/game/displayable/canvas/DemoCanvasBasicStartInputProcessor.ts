@@ -21,35 +21,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-      //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+//not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
 import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
-      //not GWT import const RunnableCanvas = globalThis.org.allbinary.canvas.RunnableCanvas;
+//not GWT import const RunnableCanvas = globalThis.org.allbinary.canvas.RunnableCanvas;
 
       
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-      //not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+//not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
 
       
 import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
-      //not GWT import const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
+//not GWT import const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
 
       
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-      //not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 
@@ -71,7 +71,7 @@ import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import const BasicMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+//not GWT import - same folder const BasicMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
 
                 
 export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor {

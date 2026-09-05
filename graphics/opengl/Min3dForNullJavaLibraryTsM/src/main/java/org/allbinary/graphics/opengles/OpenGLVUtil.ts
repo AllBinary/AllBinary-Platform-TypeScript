@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLVUtilBase } from './OpenGLVUtilBase.js';
-//not GWT import const OpenGLVUtilBase = globalThis.org.allbinary.graphics.opengles.OpenGLVUtilBase;
+//not GWT import - same folder const OpenGLVUtilBase = globalThis.org.allbinary.graphics.opengles.OpenGLVUtilBase;
 
                 
 export class OpenGLVUtil extends OpenGLVUtilBase {

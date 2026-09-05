@@ -23,63 +23,63 @@
             import { Long } from '../../java/lang/Long.js';
         
 import { Calendar } from '../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { DynamicObjectData } from '../../org/allbinary/business/DynamicObjectData.js';
-      //not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
+//not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
 
       
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
 import { CustomItemData } from '../../org/allbinary/business/user/commerce/inventory/item/custom/CustomItemData.js';
-      //not GWT import const CustomItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.custom.CustomItemData;
+//not GWT import const CustomItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.custom.CustomItemData;
 
       
 import { CustomItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/customs/CustomItemsEntityFactory.js';
-      //not GWT import const CustomItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.customs.CustomItemsEntityFactory;
+//not GWT import const CustomItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.customs.CustomItemsEntityFactory;
 
       
-//not plain js import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -101,7 +101,7 @@ import { CustomItemsEntityFactory } from '../../org/allbinary/data/tables/user/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
+//not GWT import - same folder const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
 
                 
 export class CustomItemsRequestHelper extends ModifyTable {

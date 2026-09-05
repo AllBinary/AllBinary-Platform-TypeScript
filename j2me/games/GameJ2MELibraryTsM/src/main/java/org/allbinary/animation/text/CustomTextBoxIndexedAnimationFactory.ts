@@ -22,48 +22,48 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } 
+const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not plain js import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      const TextField = globalThis.javax.microedition.lcdui.TextField;
+//not plain js import { TextField } 
+const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
-      //not GWT import const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
+//not GWT import const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
 
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-      //not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
       
 import { ABToGBUtil } from '../../../../org/allbinary/game/canvas/ABToGBUtil.js';
-      //not GWT import const ABToGBUtil = globalThis.org.allbinary.game.canvas.ABToGBUtil;
+//not GWT import const ABToGBUtil = globalThis.org.allbinary.game.canvas.ABToGBUtil;
 
       
 import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-      //not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+//not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
 
@@ -85,10 +85,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextBox2 } from './CustomTextBox2.js';
-//not GWT import const CustomTextBox2 = globalThis.org.allbinary.animation.text.CustomTextBox2;
+//not GWT import - same folder const CustomTextBox2 = globalThis.org.allbinary.animation.text.CustomTextBox2;
 
                 import { CustomTextBoxIndexedAnimation } from './CustomTextBoxIndexedAnimation.js';
-//not GWT import const CustomTextBoxIndexedAnimation = globalThis.org.allbinary.animation.text.CustomTextBoxIndexedAnimation;
+//not GWT import - same folder const CustomTextBoxIndexedAnimation = globalThis.org.allbinary.animation.text.CustomTextBoxIndexedAnimation;
 
                 
 export class CustomTextBoxIndexedAnimationFactory

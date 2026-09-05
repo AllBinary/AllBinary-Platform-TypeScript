@@ -19,11 +19,11 @@
 
 
 import { EGLConfig } from '../../javax/microedition/khronos/egl/EGLConfig.js';
-      //not GWT import const EGLConfig = globalThis.javax.microedition.khronos.egl.EGLConfig;
+//not GWT import const EGLConfig = globalThis.javax.microedition.khronos.egl.EGLConfig;
 
       
 import { GL10 } from '../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
 

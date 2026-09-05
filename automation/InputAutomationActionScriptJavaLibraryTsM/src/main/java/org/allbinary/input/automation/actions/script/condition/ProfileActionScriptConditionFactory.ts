@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -49,25 +49,25 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
-//not GWT import const ProfileActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
+//not GWT import - same folder const ProfileActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
 
                 import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
-//not GWT import const ColorAtActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
+//not GWT import - same folder const ColorAtActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
 
                 import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
-//not GWT import const TimeIntervalActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionData;
+//not GWT import - same folder const TimeIntervalActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionData;
 
                 import { AlwaysActionScriptConditionData } from './AlwaysActionScriptConditionData.js';
-//not GWT import const AlwaysActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionData;
+//not GWT import - same folder const AlwaysActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionData;
 
                 import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
-//not GWT import const AlwaysActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
+//not GWT import - same folder const AlwaysActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
 
                 import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
-//not GWT import const TimeIntervalActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
+//not GWT import - same folder const TimeIntervalActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
 
                 import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
-//not GWT import const ColorAtActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
+//not GWT import - same folder const ColorAtActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
 
                 
 export class ProfileActionScriptConditionFactory

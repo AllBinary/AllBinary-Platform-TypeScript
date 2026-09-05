@@ -19,11 +19,11 @@
 
 
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
+//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -45,19 +45,19 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-//not GWT import const HighScoresBase = globalThis.org.allbinary.game.score.HighScoresBase;
+//not GWT import - same folder const HighScoresBase = globalThis.org.allbinary.game.score.HighScoresBase;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import - same folder const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+//not GWT import - same folder const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
 
                 import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-//not GWT import const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
+//not GWT import - same folder const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
 
                 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+//not GWT import - same folder const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
 
                 
 export class NoHighScoresFactory extends HighScoresBase {

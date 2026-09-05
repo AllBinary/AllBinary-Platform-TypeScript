@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockableFeature } from './LockableFeature.js';
-//not GWT import const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+//not GWT import - same folder const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
                 
 export interface ThirdPartyInApplicationPurchaseInterface {

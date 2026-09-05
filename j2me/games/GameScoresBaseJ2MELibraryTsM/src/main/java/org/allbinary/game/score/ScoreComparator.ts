@@ -25,31 +25,31 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
+//not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
 import { EOFException } from '../../../../java/io/EOFException.js';
-      //not GWT import const EOFException = globalThis.java.io.EOFException;
+//not GWT import const EOFException = globalThis.java.io.EOFException;
 
       
 import { IOException } from '../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not plain js import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
-      const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+//not plain js import { RecordComparator } 
+const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 

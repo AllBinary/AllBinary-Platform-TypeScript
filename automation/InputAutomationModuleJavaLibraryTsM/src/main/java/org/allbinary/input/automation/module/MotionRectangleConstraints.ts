@@ -27,15 +27,15 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
-      //not GWT import const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
+//not GWT import const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
 
       
 
@@ -57,10 +57,10 @@ import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.input.automation.module.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.Dimension;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.input.automation.module.Rectangle;
+//not GWT import - same folder const Rectangle = globalThis.org.allbinary.input.automation.module.Rectangle;
 
                 
 export class MotionRectangleConstraints

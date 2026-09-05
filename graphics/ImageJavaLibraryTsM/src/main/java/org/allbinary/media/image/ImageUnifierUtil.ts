@@ -21,19 +21,19 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { awt } from '../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
 
@@ -55,22 +55,22 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 import { GraphicsEnvironment } from './GraphicsEnvironment.js';
-//not GWT import const GraphicsEnvironment = globalThis.org.allbinary.media.image.GraphicsEnvironment;
+//not GWT import - same folder const GraphicsEnvironment = globalThis.org.allbinary.media.image.GraphicsEnvironment;
 
                 import { GraphicsDevice } from './GraphicsDevice.js';
-//not GWT import const GraphicsDevice = globalThis.org.allbinary.media.image.GraphicsDevice;
+//not GWT import - same folder const GraphicsDevice = globalThis.org.allbinary.media.image.GraphicsDevice;
 
                 import { GraphicsConfiguration } from './GraphicsConfiguration.js';
-//not GWT import const GraphicsConfiguration = globalThis.org.allbinary.media.image.GraphicsConfiguration;
+//not GWT import - same folder const GraphicsConfiguration = globalThis.org.allbinary.media.image.GraphicsConfiguration;
 
                 import { Graphics2D } from './Graphics2D.js';
-//not GWT import const Graphics2D = globalThis.org.allbinary.media.image.Graphics2D;
+//not GWT import - same folder const Graphics2D = globalThis.org.allbinary.media.image.Graphics2D;
 
                 import { ImageUnifierProperties } from './ImageUnifierProperties.js';
-//not GWT import const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
+//not GWT import - same folder const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
 
                 
 export class ImageUnifierUtil

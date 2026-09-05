@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { WeaponLayerCircularPool } from '../../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-      //not GWT import const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
+//not GWT import const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
 
       
 import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
-      //not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
+//not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
 
       
 
@@ -49,10 +49,10 @@ import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineCountedPickedUpLayerInterfaceFactory } from './MineCountedPickedUpLayerInterfaceFactory.js';
-//not GWT import const MineCountedPickedUpLayerInterfaceFactory = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineCountedPickedUpLayerInterfaceFactory;
+//not GWT import - same folder const MineCountedPickedUpLayerInterfaceFactory = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineCountedPickedUpLayerInterfaceFactory;
 
                 import { MineLayerFactory } from './MineLayerFactory.js';
-//not GWT import const MineLayerFactory = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayerFactory;
+//not GWT import - same folder const MineLayerFactory = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayerFactory;
 
                 
 export class MineLayerCircularStaticPool

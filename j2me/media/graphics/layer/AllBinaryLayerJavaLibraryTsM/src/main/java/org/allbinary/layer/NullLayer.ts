@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 
@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
+//not GWT import - same folder const Layer = globalThis.org.allbinary.layer.Layer;
 
                 
 export class NullLayer extends Layer {

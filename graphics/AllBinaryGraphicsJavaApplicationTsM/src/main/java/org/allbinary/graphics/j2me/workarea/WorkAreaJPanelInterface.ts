@@ -21,7 +21,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 
@@ -43,7 +43,7 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyListener } from './KeyListener.js';
-//not GWT import const KeyListener = globalThis.org.allbinary.graphics.j2me.workarea.KeyListener;
+//not GWT import - same folder const KeyListener = globalThis.org.allbinary.graphics.j2me.workarea.KeyListener;
 
                 
 export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {

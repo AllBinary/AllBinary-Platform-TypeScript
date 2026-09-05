@@ -23,7 +23,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 
@@ -45,7 +45,7 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TickableInterface } from './TickableInterface.js';
-//not GWT import const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+//not GWT import - same folder const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
 
                 
 export class NullTickable

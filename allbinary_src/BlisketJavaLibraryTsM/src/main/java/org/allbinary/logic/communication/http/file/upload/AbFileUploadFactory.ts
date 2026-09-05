@@ -23,39 +23,39 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { ArrayList } from '../../../../../../../java/util/ArrayList.js';
-      //not GWT import const ArrayList = globalThis.java.util.ArrayList;
+//not GWT import const ArrayList = globalThis.java.util.ArrayList;
 
       
 import { List } from '../../../../../../../java/util/List.js';
-      //not GWT import const List = globalThis.java.util.List;
+//not GWT import const List = globalThis.java.util.List;
 
       
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js';
-      //not GWT import const AbFileItemFactory = globalThis.org.allbinary.logic.communication.http.AbFileItemFactory;
+//not GWT import const AbFileItemFactory = globalThis.org.allbinary.logic.communication.http.AbFileItemFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
-      //not GWT import const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
+//not GWT import const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
 
       
 import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
-      //not GWT import const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
+//not GWT import const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
 
       
 import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
-      //not GWT import const FileItemUtil = globalThis.org.apache.commons.fileupload.FileItemUtil;
+//not GWT import const FileItemUtil = globalThis.org.apache.commons.fileupload.FileItemUtil;
 
       
 
@@ -77,13 +77,13 @@ import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileUpload } from './AbFileUpload.js';
-//not GWT import const AbFileUpload = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUpload;
+//not GWT import - same folder const AbFileUpload = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUpload;
 
                 import { HttpFileUploadUtil } from './HttpFileUploadUtil.js';
-//not GWT import const HttpFileUploadUtil = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFileUploadUtil;
+//not GWT import - same folder const HttpFileUploadUtil = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFileUploadUtil;
 
                 import { AbFileItem } from './AbFileItem.js';
-//not GWT import const AbFileItem = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileItem;
+//not GWT import - same folder const AbFileItem = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileItem;
 
                 
 export class AbFileUploadFactory

@@ -24,8 +24,8 @@
         
             import { RuntimeException } from '../../../../../../../../java/lang/RuntimeException.js';
         
-//not plain js import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorInterface } from './TransformInfoObjectConfigGeneratorInterface.js';
-//not GWT import const TransformInfoObjectConfigGeneratorInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorInterface;
+//not GWT import - same folder const TransformInfoObjectConfigGeneratorInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorInterface;
 
                 
 export class TransformInfoObjectConfigGenerator

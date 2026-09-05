@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationClientInformation } from './InputAutomationClientInformation.js';
-//not GWT import const InputAutomationClientInformation = globalThis.org.allbinary.logic.system.security.licensing.InputAutomationClientInformation;
+//not GWT import - same folder const InputAutomationClientInformation = globalThis.org.allbinary.logic.system.security.licensing.InputAutomationClientInformation;
 
                 
 export class InputAutomationClientInformationFactory

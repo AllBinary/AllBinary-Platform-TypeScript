@@ -22,36 +22,36 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
-      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
+//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
 import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
-      //not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+//not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
-      //not GWT import const OSGIServiceInterface = globalThis.org.allbinary.osgi.OSGIServiceInterface;
+//not GWT import const OSGIServiceInterface = globalThis.org.allbinary.osgi.OSGIServiceInterface;
 
       
 import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js';
-      //not GWT import const OSGIServiceVisitorInterface = globalThis.org.allbinary.osgi.OSGIServiceVisitorInterface;
+//not GWT import const OSGIServiceVisitorInterface = globalThis.org.allbinary.osgi.OSGIServiceVisitorInterface;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -73,7 +73,7 @@ import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OSGIServiceUtil } from './OSGIServiceUtil.js';
-//not GWT import const OSGIServiceUtil = globalThis.org.allbinary.osgi.service.OSGIServiceUtil;
+//not GWT import - same folder const OSGIServiceUtil = globalThis.org.allbinary.osgi.service.OSGIServiceUtil;
 
                 
 export class InputAutomationServiceConsumer

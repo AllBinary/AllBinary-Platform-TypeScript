@@ -23,11 +23,11 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
 
@@ -49,7 +49,7 @@ import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.graphics.color.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.graphics.color.Color;
 
                 
 export class ColorCacheable

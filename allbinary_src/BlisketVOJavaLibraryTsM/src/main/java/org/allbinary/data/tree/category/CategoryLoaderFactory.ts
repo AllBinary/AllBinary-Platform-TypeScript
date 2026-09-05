@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+//not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,10 +53,10 @@ import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryLoader } from './CategoryLoader.js';
-//not GWT import const CategoryLoader = globalThis.org.allbinary.data.tree.category.CategoryLoader;
+//not GWT import - same folder const CategoryLoader = globalThis.org.allbinary.data.tree.category.CategoryLoader;
 
                 import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
-//not GWT import const CategoryLoaderInterface = globalThis.org.allbinary.data.tree.category.CategoryLoaderInterface;
+//not GWT import - same folder const CategoryLoaderInterface = globalThis.org.allbinary.data.tree.category.CategoryLoaderInterface;
 
                 
 export class CategoryLoaderFactory

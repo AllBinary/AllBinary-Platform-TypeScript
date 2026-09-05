@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
-      const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+//not plain js import { MathUtil } 
+const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       
 

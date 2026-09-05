@@ -19,7 +19,7 @@
 
 
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
 
@@ -41,10 +41,10 @@ import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerBounds } from './LayerBounds.js';
-//not GWT import const LayerBounds = globalThis.org.allbinary.bounds.LayerBounds;
+//not GWT import - same folder const LayerBounds = globalThis.org.allbinary.bounds.LayerBounds;
 
                 import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
-//not GWT import const BoundsVisitorInterface = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
+//not GWT import - same folder const BoundsVisitorInterface = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
 
                 
 export class TopULayerBounds extends LayerBounds {

@@ -4,24 +4,24 @@
         
 
 
-//not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { DisposalUtil } from '../../../org/allbinary/DisposalUtil.js';
-      const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+//not plain js import { DisposalUtil } 
+const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
 
       
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-      //not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+//not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
       
 import { SwtImmutableImage } from '../../../org/microemu/device/swt/SwtImmutableImage.js';
-      //not GWT import const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
+//not GWT import const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
 
       
 import { SwtMutableImage } from '../../../org/microemu/device/swt/SwtMutableImage.js';
-      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+//not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
 

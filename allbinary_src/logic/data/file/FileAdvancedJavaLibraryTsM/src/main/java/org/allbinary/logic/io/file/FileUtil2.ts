@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
-      //not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+//not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
       
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 
@@ -61,10 +61,10 @@ import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleFileUtil } from './SimpleFileUtil.js';
-//not GWT import const SimpleFileUtil = globalThis.org.allbinary.logic.io.file.SimpleFileUtil;
+//not GWT import - same folder const SimpleFileUtil = globalThis.org.allbinary.logic.io.file.SimpleFileUtil;
 
                 import { AbFile } from './AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import - same folder const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
                 
 export class FileUtil2

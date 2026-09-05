@@ -19,19 +19,19 @@
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { StateControlledInterface } from '../../../../org/allbinary/graphics/displayable/StateControlledInterface.js';
-      //not GWT import const StateControlledInterface = globalThis.org.allbinary.graphics.displayable.StateControlledInterface;
+//not GWT import const StateControlledInterface = globalThis.org.allbinary.graphics.displayable.StateControlledInterface;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -53,7 +53,7 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+//not GWT import - same folder const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
                 
 export class StatePaintable extends Paintable implements StateControlledInterface {

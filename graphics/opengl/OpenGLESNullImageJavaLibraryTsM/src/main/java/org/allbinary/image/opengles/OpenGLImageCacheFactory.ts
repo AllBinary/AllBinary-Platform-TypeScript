@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
+//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
 

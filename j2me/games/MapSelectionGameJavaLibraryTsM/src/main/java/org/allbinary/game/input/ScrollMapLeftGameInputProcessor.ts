@@ -21,11 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-      //not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
       
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 
@@ -47,10 +47,10 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollMapGameInputProcessor } from './ScrollMapGameInputProcessor.js';
-//not GWT import const ScrollMapGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapGameInputProcessor;
+//not GWT import - same folder const ScrollMapGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapGameInputProcessor;
 
                 import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
-//not GWT import const ScrollMapPlayerGameInput = globalThis.org.allbinary.game.input.ScrollMapPlayerGameInput;
+//not GWT import - same folder const ScrollMapPlayerGameInput = globalThis.org.allbinary.game.input.ScrollMapPlayerGameInput;
 
                 
 export class ScrollMapLeftGameInputProcessor extends ScrollMapGameInputProcessor {

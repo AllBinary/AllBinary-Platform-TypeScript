@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 
@@ -45,7 +45,7 @@ import { Animation } from '../../../../org/allbinary/animation/Animation.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitUpdatePaintable } from './InitUpdatePaintable.js';
-//not GWT import const InitUpdatePaintable = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
+//not GWT import - same folder const InitUpdatePaintable = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
 
                 
 export class AnimationCompositePaintable extends InitUpdatePaintable {

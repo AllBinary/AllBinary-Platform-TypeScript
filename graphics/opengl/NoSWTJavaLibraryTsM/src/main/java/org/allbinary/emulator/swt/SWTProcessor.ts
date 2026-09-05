@@ -23,23 +23,23 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-      //not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
+//not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
 
       
-//not plain js import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
-      const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+//not plain js import { NullRunnable } 
+const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

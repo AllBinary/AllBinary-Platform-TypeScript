@@ -21,11 +21,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -47,7 +47,7 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScalableListener } from './ScalableListener.js';
-//not GWT import const ScalableListener = globalThis.org.allbinary.graphics.displayable.ScalableListener;
+//not GWT import - same folder const ScalableListener = globalThis.org.allbinary.graphics.displayable.ScalableListener;
 
                 
 export class BaseScalable

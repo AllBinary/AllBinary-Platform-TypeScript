@@ -21,39 +21,39 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CollidableHelperFactory } from '../../../../../org/allbinary/game/collision/CollidableHelperFactory.js';
-      //not GWT import const CollidableHelperFactory = globalThis.org.allbinary.game.collision.CollidableHelperFactory;
+//not GWT import const CollidableHelperFactory = globalThis.org.allbinary.game.collision.CollidableHelperFactory;
 
       
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
-      //not GWT import const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
+//not GWT import const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
 
       
 import { CollisionHelper } from '../../../../../org/allbinary/game/collision/CollisionHelper.js';
-      //not GWT import const CollisionHelper = globalThis.org.allbinary.game.collision.CollisionHelper;
+//not GWT import const CollisionHelper = globalThis.org.allbinary.game.collision.CollisionHelper;
 
       
 import { CollisionType } from '../../../../../org/allbinary/game/collision/CollisionType.js';
-      //not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
+//not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
 
       
 import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
-      //not GWT import const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+//not GWT import const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
 
       
 import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
-      //not GWT import const DamageableInterface = globalThis.org.allbinary.game.combat.damage.DamageableInterface;
+//not GWT import const DamageableInterface = globalThis.org.allbinary.game.combat.damage.DamageableInterface;
 
       
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-      //not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
 
       
 import { CollidableDestroyableDamageableBehavior } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
-      //not GWT import const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
+//not GWT import const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
 
       
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

@@ -23,19 +23,19 @@
             import { Cloneable } from '../../../../../../java/lang/Cloneable.js';
         
 import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.java.awt.Rectangle;
+//not GWT import const Rectangle = globalThis.java.awt.Rectangle;
 
       
 import { Vector } from '../../../../../../java/util/Vector.js';
-      //not GWT import const Vector = globalThis.java.util.Vector;
+//not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 

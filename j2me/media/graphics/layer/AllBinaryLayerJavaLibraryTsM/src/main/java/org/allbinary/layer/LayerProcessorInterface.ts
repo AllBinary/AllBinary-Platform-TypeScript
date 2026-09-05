@@ -21,11 +21,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -47,16 +47,16 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicLayerProcessorInterface } from './BasicLayerProcessorInterface.js';
-//not GWT import const BasicLayerProcessorInterface = globalThis.org.allbinary.layer.BasicLayerProcessorInterface;
+//not GWT import - same folder const BasicLayerProcessorInterface = globalThis.org.allbinary.layer.BasicLayerProcessorInterface;
 
                 import { LayerManager } from './LayerManager.js';
-//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
+//not GWT import - same folder const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
                 import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+//not GWT import - same folder const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
                 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import - same folder const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
                 
 export interface LayerProcessorInterface extends BasicLayerProcessorInterface {

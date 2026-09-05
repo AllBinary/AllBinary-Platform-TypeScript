@@ -21,39 +21,39 @@
             import { Object } from '../../../../../../../../java/lang/Object.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { Set } from '../../../../../../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
+//not GWT import const Set = globalThis.java.util.Set;
 
       
-//not plain js import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
-      //not GWT import const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
+//not GWT import const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
 
       
 import { MediaIOUtil } from '../../../../../../../../org/allbinary/logic/visual/media/MediaIOUtil.js';
-      //not GWT import const MediaIOUtil = globalThis.org.allbinary.logic.visual.media.MediaIOUtil;
+//not GWT import const MediaIOUtil = globalThis.org.allbinary.logic.visual.media.MediaIOUtil;
 
       
 import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaTypeData.js';
-      //not GWT import const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
+//not GWT import const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 

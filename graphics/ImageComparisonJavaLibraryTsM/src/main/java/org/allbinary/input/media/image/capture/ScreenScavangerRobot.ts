@@ -23,39 +23,39 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Dimension } from '../../../../../../java/awt/Dimension.js';
-      //not GWT import const Dimension = globalThis.java.awt.Dimension;
+//not GWT import const Dimension = globalThis.java.awt.Dimension;
 
       
 import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.java.awt.Rectangle;
+//not GWT import const Rectangle = globalThis.java.awt.Rectangle;
 
       
 import { Toolkit } from '../../../../../../java/awt/Toolkit.js';
-      //not GWT import const Toolkit = globalThis.java.awt.Toolkit;
+//not GWT import const Toolkit = globalThis.java.awt.Toolkit;
 
       
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-      //not GWT import const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
+//not GWT import const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
 
       
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-      //not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+//not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { ABHashtable } from '../../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 

@@ -21,35 +21,35 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
-      //not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+//not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
       
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 import { ViewHelperFactory } from '../taghelpers/ViewHelperFactory.js';
-      //not GWT import const ViewHelperFactory = globalThis.taghelpers.ViewHelperFactory;
+//not GWT import const ViewHelperFactory = globalThis.taghelpers.ViewHelperFactory;
 
       
 import { TransformInfoTag } from '../tags/transform/info/TransformInfoTag.js';
-      //not GWT import const TransformInfoTag = globalThis.tags.transform.info.TransformInfoTag;
+//not GWT import const TransformInfoTag = globalThis.tags.transform.info.TransformInfoTag;
 
       
 

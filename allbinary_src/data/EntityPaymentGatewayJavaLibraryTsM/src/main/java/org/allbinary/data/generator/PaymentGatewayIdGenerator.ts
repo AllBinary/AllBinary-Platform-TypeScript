@@ -21,15 +21,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
-      //not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+//not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
 
       
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 
@@ -51,7 +51,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UniqueIdGenerator } from './UniqueIdGenerator.js';
-//not GWT import const UniqueIdGenerator = globalThis.org.allbinary.data.generator.UniqueIdGenerator;
+//not GWT import - same folder const UniqueIdGenerator = globalThis.org.allbinary.data.generator.UniqueIdGenerator;
 
                 
 export class PaymentGatewayIdGenerator extends UniqueIdGenerator {

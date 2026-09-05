@@ -21,47 +21,47 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-      //not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
+//not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
 
       
 import { MultipartRequestParamForwardHelper } from '../../admin/taghelpers/MultipartRequestParamForwardHelper.js';
-      //not GWT import const MultipartRequestParamForwardHelper = globalThis.admin.taghelpers.MultipartRequestParamForwardHelper;
+//not GWT import const MultipartRequestParamForwardHelper = globalThis.admin.taghelpers.MultipartRequestParamForwardHelper;
 
       
-//not plain js import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-      //not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
+//not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
 
       
 import { HelperTag } from '../../tags/HelperTag.js';
-      //not GWT import const HelperTag = globalThis.tags.HelperTag;
+//not GWT import const HelperTag = globalThis.tags.HelperTag;
 
       
 
@@ -83,10 +83,10 @@ import { HelperTag } from '../../tags/HelperTag.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-//not GWT import const ParentInventoryTagHelper = globalThis.admin.tags.ParentInventoryTagHelper;
+//not GWT import - same folder const ParentInventoryTagHelper = globalThis.admin.tags.ParentInventoryTagHelper;
 
                 import { AbTagData } from './AbTagData.js';
-//not GWT import const AbTagData = globalThis.admin.tags.AbTagData;
+//not GWT import - same folder const AbTagData = globalThis.admin.tags.AbTagData;
 
                 
 export class MultipartRequestParamForwardTag extends CustomTagSupport {

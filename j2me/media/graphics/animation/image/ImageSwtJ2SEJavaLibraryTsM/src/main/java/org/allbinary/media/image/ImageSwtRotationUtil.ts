@@ -21,31 +21,31 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-      //not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-      //not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
+//not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
 
       
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-      //not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
+//not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
 
       
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-      //not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+//not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
 
       
 
@@ -67,10 +67,10 @@ import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 import { Image } from './Image.js';
-//not GWT import const Image = globalThis.org.allbinary.media.image.Image;
+//not GWT import - same folder const Image = globalThis.org.allbinary.media.image.Image;
 
                 
 export class ImageSwtRotationUtil

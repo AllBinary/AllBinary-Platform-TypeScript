@@ -23,11 +23,11 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
-      //not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
       
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-      //not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+//not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
       
 
@@ -49,7 +49,7 @@ import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/Scr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerFormFactoryInterface } from './RTSLayerFormFactoryInterface.js';
-//not GWT import const RTSLayerFormFactoryInterface = globalThis.org.allbinary.game.input.RTSLayerFormFactoryInterface;
+//not GWT import - same folder const RTSLayerFormFactoryInterface = globalThis.org.allbinary.game.input.RTSLayerFormFactoryInterface;
 
                 
 export class RTSLayerFormFactory

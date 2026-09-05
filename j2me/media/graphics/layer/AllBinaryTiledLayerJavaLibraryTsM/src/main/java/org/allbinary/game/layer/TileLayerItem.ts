@@ -18,24 +18,24 @@
         
 
 
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Screen } from '../../../../javax/microedition/lcdui/Screen.js';
-      const Screen = globalThis.javax.microedition.lcdui.Screen;
+//not plain js import { Screen } 
+const Screen = globalThis.javax.microedition.lcdui.Screen;
 
       
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      //not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
       
 import { ABCustomItemInterface } from '../../../../org/allbinary/graphics/form/item/ABCustomItemInterface.js';
-      //not GWT import const ABCustomItemInterface = globalThis.org.allbinary.graphics.form.item.ABCustomItemInterface;
+//not GWT import const ABCustomItemInterface = globalThis.org.allbinary.graphics.form.item.ABCustomItemInterface;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 
@@ -57,7 +57,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import - same folder const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
                 
 export class TileLayerItem extends ABCustomItem implements ABCustomItemInterface {

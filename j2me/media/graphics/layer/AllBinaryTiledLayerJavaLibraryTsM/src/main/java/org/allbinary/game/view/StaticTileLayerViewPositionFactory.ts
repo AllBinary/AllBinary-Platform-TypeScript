@@ -23,11 +23,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
-      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
 import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
-      //not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
+//not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
 
       
 
@@ -49,7 +49,7 @@ import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/Vie
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticTileLayerIntoPositionViewPosition } from './StaticTileLayerIntoPositionViewPosition.js';
-//not GWT import const StaticTileLayerIntoPositionViewPosition = globalThis.org.allbinary.game.view.StaticTileLayerIntoPositionViewPosition;
+//not GWT import - same folder const StaticTileLayerIntoPositionViewPosition = globalThis.org.allbinary.game.view.StaticTileLayerIntoPositionViewPosition;
 
                 
 export class StaticTileLayerViewPositionFactory

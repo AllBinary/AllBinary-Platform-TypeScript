@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
-//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -55,10 +55,10 @@ import { PaintableInterface } from '../../../../../../org/allbinary/graphics/pai
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LazyProgressCanvas } from './LazyProgressCanvas.js';
-//not GWT import const LazyProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.LazyProgressCanvas;
+//not GWT import - same folder const LazyProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.LazyProgressCanvas;
 
                 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import - same folder const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 
 export class ProgressCanvasFactory

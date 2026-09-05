@@ -23,11 +23,11 @@
             import { Float } from '../../../../../../../../java/lang/Float.js';
         
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
 import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
 

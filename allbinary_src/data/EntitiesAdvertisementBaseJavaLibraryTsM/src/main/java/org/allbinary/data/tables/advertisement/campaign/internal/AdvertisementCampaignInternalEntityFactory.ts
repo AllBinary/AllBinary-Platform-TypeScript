@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInternalEntity } from './AdvertisementCampaignInternalEntity.js';
-//not GWT import const AdvertisementCampaignInternalEntity = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntity;
+//not GWT import - same folder const AdvertisementCampaignInternalEntity = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntity;
 
                 import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
-//not GWT import const AdvertisementCampaignInternalEntityInterface = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntityInterface;
+//not GWT import - same folder const AdvertisementCampaignInternalEntityInterface = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntityInterface;
 
                 
 export class AdvertisementCampaignInternalEntityFactory

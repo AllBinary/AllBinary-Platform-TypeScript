@@ -21,19 +21,19 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -55,7 +55,7 @@ import { AbResponseHandler } from '../org/allbinary/logic/communication/http/req
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationTransformTag } from './ValidationTransformTag.js';
-//not GWT import const ValidationTransformTag = globalThis.tags.ValidationTransformTag;
+//not GWT import - same folder const ValidationTransformTag = globalThis.tags.ValidationTransformTag;
 
                 
 export class StoreValidationTransformTag extends ValidationTransformTag {

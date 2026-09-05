@@ -21,51 +21,51 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { BasketHelperFactory } from '../../admin/taghelpers/BasketHelperFactory.js';
-      //not GWT import const BasketHelperFactory = globalThis.admin.taghelpers.BasketHelperFactory;
+//not GWT import const BasketHelperFactory = globalThis.admin.taghelpers.BasketHelperFactory;
 
       
 import { BasketRequestHelperFactory } from '../../admin/taghelpers/BasketRequestHelperFactory.js';
-      //not GWT import const BasketRequestHelperFactory = globalThis.admin.taghelpers.BasketRequestHelperFactory;
+//not GWT import const BasketRequestHelperFactory = globalThis.admin.taghelpers.BasketRequestHelperFactory;
 
       
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { BasketData } from '../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
-      //not GWT import const BasketData = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketData;
+//not GWT import const BasketData = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketData;
 
       
-//not plain js import { StdUtil } from '../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-      //not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
+//not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
 
       
 

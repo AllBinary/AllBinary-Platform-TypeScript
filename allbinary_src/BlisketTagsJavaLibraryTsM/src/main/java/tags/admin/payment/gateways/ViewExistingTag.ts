@@ -21,15 +21,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JspTagException } from '../../../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { AbResponseHandler } from '../../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
 import { StoreValidationTransformTag } from '../../../../tags/StoreValidationTransformTag.js';
-      //not GWT import const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
+//not GWT import const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
 
       
 

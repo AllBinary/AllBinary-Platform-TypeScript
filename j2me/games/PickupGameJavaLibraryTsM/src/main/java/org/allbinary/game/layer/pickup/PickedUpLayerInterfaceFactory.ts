@@ -19,23 +19,23 @@
 
 
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -57,13 +57,13 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactoryBase } from './PickedUpLayerInterfaceFactoryBase.js';
-//not GWT import const PickedUpLayerInterfaceFactoryBase = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryBase;
+//not GWT import - same folder const PickedUpLayerInterfaceFactoryBase = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryBase;
 
                 import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import const PickedUpLayerType = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
+//not GWT import - same folder const PickedUpLayerType = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
 
                 import { IconLayer } from './IconLayer.js';
-//not GWT import const IconLayer = globalThis.org.allbinary.game.layer.pickup.IconLayer;
+//not GWT import - same folder const IconLayer = globalThis.org.allbinary.game.layer.pickup.IconLayer;
 
                 
 export class PickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactoryBase {

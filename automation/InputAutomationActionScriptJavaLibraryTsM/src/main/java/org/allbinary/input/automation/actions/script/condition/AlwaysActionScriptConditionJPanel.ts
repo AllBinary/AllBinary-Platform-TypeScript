@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -45,40 +45,40 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.input.automation.actions.script.condition.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.actions.script.condition.JPanel;
 
                 import { AlwaysActionScriptConditionInterface } from './AlwaysActionScriptConditionInterface.js';
-//not GWT import const AlwaysActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionInterface;
+//not GWT import - same folder const AlwaysActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionInterface;
 
                 import { JDialog } from './JDialog.js';
-//not GWT import const JDialog = globalThis.org.allbinary.input.automation.actions.script.condition.JDialog;
+//not GWT import - same folder const JDialog = globalThis.org.allbinary.input.automation.actions.script.condition.JDialog;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.input.automation.actions.script.condition.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.actions.script.condition.JLabel;
 
                 import { JButton } from './JButton.js';
-//not GWT import const JButton = globalThis.org.allbinary.input.automation.actions.script.condition.JButton;
+//not GWT import - same folder const JButton = globalThis.org.allbinary.input.automation.actions.script.condition.JButton;
 
                 import { JComboBox } from './JComboBox.js';
-//not GWT import const JComboBox = globalThis.org.allbinary.input.automation.actions.script.condition.JComboBox;
+//not GWT import - same folder const JComboBox = globalThis.org.allbinary.input.automation.actions.script.condition.JComboBox;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.input.automation.actions.script.condition.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.actions.script.condition.Dimension;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const ActionListener = globalThis.org.allbinary.input.automation.actions.script.condition.ActionListener;
+//not GWT import - same folder const ActionListener = globalThis.org.allbinary.input.automation.actions.script.condition.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.org.allbinary.input.automation.actions.script.condition.ActionEvent;
+//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.input.automation.actions.script.condition.ActionEvent;
 
                 import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import const DefaultComboBoxModel = globalThis.org.allbinary.input.automation.actions.script.condition.DefaultComboBoxModel;
+//not GWT import - same folder const DefaultComboBoxModel = globalThis.org.allbinary.input.automation.actions.script.condition.DefaultComboBoxModel;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.input.automation.actions.script.condition.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.actions.script.condition.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.input.automation.actions.script.condition.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.actions.script.condition.Short;
 
                 
 export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {

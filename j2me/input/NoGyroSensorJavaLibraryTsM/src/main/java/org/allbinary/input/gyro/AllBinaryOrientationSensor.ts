@@ -21,19 +21,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
-      //not GWT import const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
+//not GWT import const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
 
       
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
-      //not GWT import const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
+//not GWT import const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
 
       
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-      //not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+//not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
 
       
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-      //not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+//not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
 
       
 

@@ -22,36 +22,36 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-      //not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+//not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
       
-//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } 
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
-//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-      //not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
+//not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
 
       
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
-      //not GWT import const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
+//not GWT import const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
 
       
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+//not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
 
@@ -73,7 +73,7 @@ import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSwtRotationUtil } from './ImageSwtRotationUtil.js';
-//not GWT import const ImageSwtRotationUtil = globalThis.org.allbinary.media.image.ImageSwtRotationUtil;
+//not GWT import - same folder const ImageSwtRotationUtil = globalThis.org.allbinary.media.image.ImageSwtRotationUtil;
 
                 
 export class ImageRotationUtil

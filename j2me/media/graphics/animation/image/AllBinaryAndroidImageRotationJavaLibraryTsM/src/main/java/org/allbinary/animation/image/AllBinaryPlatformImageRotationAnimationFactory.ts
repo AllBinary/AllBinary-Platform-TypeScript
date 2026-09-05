@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-      //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
 
@@ -47,7 +47,7 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryAndroidImageRotationAnimationFactory } from './AllBinaryAndroidImageRotationAnimationFactory.js';
-//not GWT import const AllBinaryAndroidImageRotationAnimationFactory = globalThis.org.allbinary.animation.image.AllBinaryAndroidImageRotationAnimationFactory;
+//not GWT import - same folder const AllBinaryAndroidImageRotationAnimationFactory = globalThis.org.allbinary.animation.image.AllBinaryAndroidImageRotationAnimationFactory;
 
                 
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryAndroidImageRotationAnimationFactory {

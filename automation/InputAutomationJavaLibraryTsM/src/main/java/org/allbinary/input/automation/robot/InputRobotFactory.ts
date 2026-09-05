@@ -23,63 +23,63 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GraphicsDevice } from '../../../../../java/awt/GraphicsDevice.js';
-      //not GWT import const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
+//not GWT import const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
 
       
 import { GraphicsEnvironment } from '../../../../../java/awt/GraphicsEnvironment.js';
-      //not GWT import const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
+//not GWT import const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
 
       
 import { Collection } from '../../../../../java/util/Collection.js';
-      //not GWT import const Collection = globalThis.java.util.Collection;
+//not GWT import const Collection = globalThis.java.util.Collection;
 
       
 import { Iterator } from '../../../../../java/util/Iterator.js';
-      //not GWT import const Iterator = globalThis.java.util.Iterator;
+//not GWT import const Iterator = globalThis.java.util.Iterator;
 
       
 import { Set } from '../../../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
+//not GWT import const Set = globalThis.java.util.Set;
 
       
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
+//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
 import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
-      //not GWT import const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
+//not GWT import const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
 
       
 import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
-      //not GWT import const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
+//not GWT import const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
 
       
-//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
-      //not GWT import const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
+//not GWT import const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
 
       
 import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
-      //not GWT import const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
+//not GWT import const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
 
       
 import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
-      //not GWT import const SecuredNativeLibraryInterface = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
+//not GWT import const SecuredNativeLibraryInterface = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -101,10 +101,10 @@ import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+//not GWT import - same folder const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
                 import { InputRobot } from './InputRobot.js';
-//not GWT import const InputRobot = globalThis.org.allbinary.input.automation.robot.InputRobot;
+//not GWT import - same folder const InputRobot = globalThis.org.allbinary.input.automation.robot.InputRobot;
 
                 
 export class InputRobotFactory

@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MyFrame } from './MyFrame.js';
-//not GWT import const MyFrame = globalThis.org.allbinary.graphics.j2me.MyFrame;
+//not GWT import - same folder const MyFrame = globalThis.org.allbinary.graphics.j2me.MyFrame;
 
                 
 export class StatusFactory

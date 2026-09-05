@@ -19,7 +19,7 @@
 
 
 import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
-      //not GWT import const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
+//not GWT import const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
 
       
 

@@ -21,63 +21,63 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-      //not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
+//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
 
       
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
 import { OpenGLESPostLoadPlatformImage } from '../../../../javax/microedition/lcdui/OpenGLESPostLoadPlatformImage.js';
-      //not GWT import const OpenGLESPostLoadPlatformImage = globalThis.javax.microedition.lcdui.OpenGLESPostLoadPlatformImage;
+//not GWT import const OpenGLESPostLoadPlatformImage = globalThis.javax.microedition.lcdui.OpenGLESPostLoadPlatformImage;
 
       
-//not plain js import { PostLoadImageProcessor } from '../../../../javax/microedition/lcdui/PostLoadImageProcessor.js';
-      const PostLoadImageProcessor = globalThis.javax.microedition.lcdui.PostLoadImageProcessor;
+//not plain js import { PostLoadImageProcessor } 
+const PostLoadImageProcessor = globalThis.javax.microedition.lcdui.PostLoadImageProcessor;
 
       
 import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';
-      //not GWT import const GraphicsStrings = globalThis.org.allbinary.graphics.GraphicsStrings;
+//not GWT import const GraphicsStrings = globalThis.org.allbinary.graphics.GraphicsStrings;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { PlatformBitmapBase } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-      //not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+//not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
       
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-      //not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+//not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
 
       
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-      //not GWT import const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
+//not GWT import const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -99,19 +99,19 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
-//not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+//not GWT import - same folder const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
 
-                //not plain js import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+//not GWT import - same folder const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
 
-                //not plain js import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
-const OpenGLESImageTranslate = globalThis.org.allbinary.image.opengles.OpenGLESImageTranslate;
+                import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
+//not GWT import - same folder const OpenGLESImageTranslate = globalThis.org.allbinary.image.opengles.OpenGLESImageTranslate;
 
-                //not plain js import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+//not GWT import - same folder const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
 
                 import { OpenGLImageCacheFactory } from './OpenGLImageCacheFactory.js';
-//not GWT import const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
+//not GWT import - same folder const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
 
                 //OpenGLESSWTJOGLImageJavaLibrary
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {

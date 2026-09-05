@@ -25,35 +25,35 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { File } from '../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
-      //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
+//not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
-      //not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
+//not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
 
       
 import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
-      //not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
+//not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 

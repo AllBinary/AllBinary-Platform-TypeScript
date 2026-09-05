@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
-      //not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
+//not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -48,7 +48,7 @@ import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { LogUtil } from './LogUtil.js';
+        //not plain js - same folder import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
                 

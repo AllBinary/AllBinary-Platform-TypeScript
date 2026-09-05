@@ -21,15 +21,15 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -51,13 +51,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterfaceFactoryInterface } from './GameInitializationInterfaceFactoryInterface.js';
-//not GWT import const GameInitializationInterfaceFactoryInterface = globalThis.org.allbinary.game.init.GameInitializationInterfaceFactoryInterface;
+//not GWT import - same folder const GameInitializationInterfaceFactoryInterface = globalThis.org.allbinary.game.init.GameInitializationInterfaceFactoryInterface;
 
                 import { BaseGameInitialization } from './BaseGameInitialization.js';
-//not GWT import const BaseGameInitialization = globalThis.org.allbinary.game.init.BaseGameInitialization;
+//not GWT import - same folder const BaseGameInitialization = globalThis.org.allbinary.game.init.BaseGameInitialization;
 
                 import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import const GameInitializationInterface = globalThis.org.allbinary.game.init.GameInitializationInterface;
+//not GWT import - same folder const GameInitializationInterface = globalThis.org.allbinary.game.init.GameInitializationInterface;
 
                 
 export class BasicBuildGameInitializerFactory

@@ -23,71 +23,71 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { DataOutputStream } from '../../../../../../../../java/io/DataOutputStream.js';
-      //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
+//not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
 import { File } from '../../../../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { FileInputStream } from '../../../../../../../../java/io/FileInputStream.js';
-      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
+//not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
 import { FileOutputStream } from '../../../../../../../../java/io/FileOutputStream.js';
-      //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
+//not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { Set } from '../../../../../../../../java/util/Set.js';
-      //not GWT import const Set = globalThis.java.util.Set;
+//not GWT import const Set = globalThis.java.util.Set;
 
       
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
 import { DomDocumentMappingInterface } from '../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-      //not GWT import const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+//not GWT import const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
 
       
 import { DefaultListModelHelper } from '../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
-      //not GWT import const DefaultListModelHelper = globalThis.org.allbinary.input.automation.module.DefaultListModelHelper;
+//not GWT import const DefaultListModelHelper = globalThis.org.allbinary.input.automation.module.DefaultListModelHelper;
 
       
 import { GenericProfileActionData } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
-      //not GWT import const GenericProfileActionData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
+//not GWT import const GenericProfileActionData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
 
       
-//not plain js import { StdUtil } from '../../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
+//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 
@@ -109,13 +109,13 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfilesData } from './GenericProfilesData.js';
-//not GWT import const GenericProfilesData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfilesData;
+//not GWT import - same folder const GenericProfilesData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfilesData;
 
                 import { GenericProfileData } from './GenericProfileData.js';
-//not GWT import const GenericProfileData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileData;
+//not GWT import - same folder const GenericProfileData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileData;
 
                 import { GenericProfile } from './GenericProfile.js';
-//not GWT import const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+//not GWT import - same folder const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
 
                 
 export class GenericProfiles

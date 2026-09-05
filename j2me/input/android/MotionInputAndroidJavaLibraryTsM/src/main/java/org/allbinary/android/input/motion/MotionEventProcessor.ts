@@ -23,7 +23,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { MotionEvent } from '../../../../../android/view/MotionEvent.js';
-      //not GWT import const MotionEvent = globalThis.android.view.MotionEvent;
+//not GWT import const MotionEvent = globalThis.android.view.MotionEvent;
 
       
 

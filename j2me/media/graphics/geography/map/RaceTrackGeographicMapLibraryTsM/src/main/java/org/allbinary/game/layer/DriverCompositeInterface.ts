@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Driver } from './Driver.js';
-//not GWT import const Driver = globalThis.org.allbinary.game.layer.Driver;
+//not GWT import - same folder const Driver = globalThis.org.allbinary.game.layer.Driver;
 
                 
 export interface DriverCompositeInterface {

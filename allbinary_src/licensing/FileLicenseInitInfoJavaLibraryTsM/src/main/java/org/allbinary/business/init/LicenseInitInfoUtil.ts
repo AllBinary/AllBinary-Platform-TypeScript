@@ -23,51 +23,51 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
-      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
+//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
 import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
-      //not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+//not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
 
       
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
-      //not GWT import const AbDataInputStream = globalThis.org.allbinary.logic.io.AbDataInputStream;
+//not GWT import const AbDataInputStream = globalThis.org.allbinary.logic.io.AbDataInputStream;
 
       
 import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
-      //not GWT import const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+//not GWT import const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
 
       
 import { AbFileInputStream } from '../../../../org/allbinary/logic/io/AbFileInputStream.js';
-      //not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+//not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
       
 import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
-      //not GWT import const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
+//not GWT import const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
 
       
 import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStreamFactory.js';
-      //not GWT import const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
+//not GWT import const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { DatabaseEncoder } from '../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
-      //not GWT import const DatabaseEncoder = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
+//not GWT import const DatabaseEncoder = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
 
       
 import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js';
-      //not GWT import const WeakCrypt = globalThis.org.allbinary.logic.system.security.crypt.WeakCrypt;
+//not GWT import const WeakCrypt = globalThis.org.allbinary.logic.system.security.crypt.WeakCrypt;
 
       
 
@@ -89,7 +89,7 @@ import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseInitInfo } from './LicenseInitInfo.js';
-//not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+//not GWT import - same folder const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
 
                 
 export class LicenseInitInfoUtil

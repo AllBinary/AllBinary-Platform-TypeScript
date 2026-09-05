@@ -23,23 +23,23 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-      //not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+//not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
 
       
 import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
 import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-      //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
       
 
@@ -61,7 +61,7 @@ import { RequestParams } from '../../../../../../../org/allbinary/logic/communic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Item } from './Item.js';
-//not GWT import const Item = globalThis.org.allbinary.business.user.commerce.inventory.item.Item;
+//not GWT import - same folder const Item = globalThis.org.allbinary.business.user.commerce.inventory.item.Item;
 
                 
 export class ItemFactoryUnused

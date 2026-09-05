@@ -5,35 +5,35 @@
 
 
 import { InputStream } from '../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Bitmap } from '../../../android/graphics/Bitmap.js';
-      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
+//not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
 import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
-      //not GWT import const BitmapFactory = globalThis.android.graphics.BitmapFactory;
+//not GWT import const BitmapFactory = globalThis.android.graphics.BitmapFactory;
 
       
 import { IOException } from '../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-      //not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+//not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
 
       
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-      //not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+//not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
       
 import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
-      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 
@@ -55,10 +55,10 @@ import { AndroidImageInterface } from '../../../org/microemu/android/device/Andr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { Config } from './Config.js';
-//not GWT import const Config = globalThis.org.allbinary.graphics.Config;
+//not GWT import - same folder const Config = globalThis.org.allbinary.graphics.Config;
 
                 import { OpenGLBitmap } from './OpenGLBitmap.js';
-//not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
+//not GWT import - same folder const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
 
                 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {

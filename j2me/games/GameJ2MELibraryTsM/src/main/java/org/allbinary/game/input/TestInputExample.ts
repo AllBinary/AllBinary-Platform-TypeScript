@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 
@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TestInputInterface } from './TestInputInterface.js';
-//not GWT import const TestInputInterface = globalThis.org.allbinary.game.input.TestInputInterface;
+//not GWT import - same folder const TestInputInterface = globalThis.org.allbinary.game.input.TestInputInterface;
 
                 
 export class TestInputExample

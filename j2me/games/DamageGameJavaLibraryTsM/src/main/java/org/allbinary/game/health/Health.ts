@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+//not plain js import { ForcedLogUtil } 
+const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -51,13 +51,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthInterface } from './HealthInterface.js';
-//not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
+//not GWT import - same folder const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
 
                 import { NullHealthListener } from './NullHealthListener.js';
-//not GWT import const NullHealthListener = globalThis.org.allbinary.game.health.NullHealthListener;
+//not GWT import - same folder const NullHealthListener = globalThis.org.allbinary.game.health.NullHealthListener;
 
                 import { HealthListenerInterface } from './HealthListenerInterface.js';
-//not GWT import const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
+//not GWT import - same folder const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
 
                 
 export class Health

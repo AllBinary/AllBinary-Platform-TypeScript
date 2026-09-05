@@ -23,63 +23,63 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-      //not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
+//not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
 
       
 import { Canvas } from '../../../../org/eclipse/swt/widgets/Canvas.js';
-      //not GWT import const Canvas = globalThis.org.eclipse.swt.widgets.Canvas;
+//not GWT import const Canvas = globalThis.org.eclipse.swt.widgets.Canvas;
 
       
 import { Composite } from '../../../../org/eclipse/swt/widgets/Composite.js';
-      //not GWT import const Composite = globalThis.org.eclipse.swt.widgets.Composite;
+//not GWT import const Composite = globalThis.org.eclipse.swt.widgets.Composite;
 
       
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-      //not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
+//not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
 
       
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-      //not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+//not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
 import { PaintEvent } from '../../../../org/eclipse/swt/events/PaintEvent.js';
-      //not GWT import const PaintEvent = globalThis.org.eclipse.swt.events.PaintEvent;
+//not GWT import const PaintEvent = globalThis.org.eclipse.swt.events.PaintEvent;
 
       
 import { PaintListener } from '../../../../org/eclipse/swt/events/PaintListener.js';
-      //not GWT import const PaintListener = globalThis.org.eclipse.swt.events.PaintListener;
+//not GWT import const PaintListener = globalThis.org.eclipse.swt.events.PaintListener;
 
       
 import { Transform } from '../../../../org/eclipse/swt/graphics/Transform.js';
-      //not GWT import const Transform = globalThis.org.eclipse.swt.graphics.Transform;
+//not GWT import const Transform = globalThis.org.eclipse.swt.graphics.Transform;
 
       
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-      //not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
+//not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
 
       
 import { BareMain } from '../../../../org/microemu/app/BareMain.js';
-      //not GWT import const BareMain = globalThis.org.microemu.app.BareMain;
+//not GWT import const BareMain = globalThis.org.microemu.app.BareMain;
 
       
 
@@ -101,7 +101,7 @@ import { BareMain } from '../../../../org/microemu/app/BareMain.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Image } from './Image.js';
-//not GWT import const Image = globalThis.org.allbinary.media.image.Image;
+//not GWT import - same folder const Image = globalThis.org.allbinary.media.image.Image;
 
                 
 export class ImageUtil

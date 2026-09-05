@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 
@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseType } from './LicenseType.js';
-//not GWT import const LicenseType = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
+//not GWT import - same folder const LicenseType = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
 
                 
 export interface AbeLicenseInterface {

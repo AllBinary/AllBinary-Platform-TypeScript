@@ -19,11 +19,11 @@
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
-      //not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
+//not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
 
       
 

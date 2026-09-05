@@ -23,87 +23,87 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { StoreFrontInterface } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-      //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+//not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
 
       
 import { CreateUserFactory } from '../../../../../org/allbinary/business/user/CreateUserFactory.js';
-      //not GWT import const CreateUserFactory = globalThis.org.allbinary.business.user.CreateUserFactory;
+//not GWT import const CreateUserFactory = globalThis.org.allbinary.business.user.CreateUserFactory;
 
       
 import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
-      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
+//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
 import { UserInterface } from '../../../../../org/allbinary/business/user/UserInterface.js';
-      //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
       
 import { User } from '../../../../../org/allbinary/business/user/modules/User.js';
-      //not GWT import const User = globalThis.org.allbinary.business.user.modules.User;
+//not GWT import const User = globalThis.org.allbinary.business.user.modules.User;
 
       
 import { UserRole } from '../../../../../org/allbinary/business/user/role/UserRole.js';
-      //not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+//not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
       
 import { UserRoleData } from '../../../../../org/allbinary/business/user/role/UserRoleData.js';
-      //not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+//not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
 
       
 import { UserRoleFactory } from '../../../../../org/allbinary/business/user/role/UserRoleFactory.js';
-      //not GWT import const UserRoleFactory = globalThis.org.allbinary.business.user.role.UserRoleFactory;
+//not GWT import const UserRoleFactory = globalThis.org.allbinary.business.user.role.UserRoleFactory;
 
       
 import { GLOBALS2 } from '../../../../../org/allbinary/globals/GLOBALS2.js';
-      //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+//not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
 
       
-//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-      //not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
 
       
 import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
-      //not GWT import const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
+//not GWT import const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -125,7 +125,7 @@ import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/Sup
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEntityInterface } from './UserEntityInterface.js';
-//not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
+//not GWT import - same folder const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
 
                 
 export class UserEntity extends AbSqlBean implements UserEntityInterface {

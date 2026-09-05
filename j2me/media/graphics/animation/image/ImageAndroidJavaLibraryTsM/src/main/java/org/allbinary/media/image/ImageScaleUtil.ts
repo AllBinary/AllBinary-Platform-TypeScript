@@ -25,51 +25,51 @@
             import { Float } from '../../../../java/lang/Float.js';
         
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
+//not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
+//not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-      //not GWT import const Matrix = globalThis.android.graphics.Matrix;
+//not GWT import const Matrix = globalThis.android.graphics.Matrix;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
+//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
+//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 

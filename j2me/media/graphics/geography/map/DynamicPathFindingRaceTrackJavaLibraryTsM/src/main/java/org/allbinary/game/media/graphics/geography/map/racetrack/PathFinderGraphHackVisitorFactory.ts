@@ -19,15 +19,15 @@
 
 
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-      //not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
       
 import { PathFinderGraphVisitorFactoryBase } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinderGraphVisitorFactoryBase.js';
-      //not GWT import const PathFinderGraphVisitorFactoryBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorFactoryBase;
+//not GWT import const PathFinderGraphVisitorFactoryBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorFactoryBase;
 
       
 import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinderGraphVisitorBase.js';
-      //not GWT import const PathFinderGraphVisitorBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorBase;
+//not GWT import const PathFinderGraphVisitorBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorBase;
 
       
 
@@ -49,7 +49,7 @@ import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFinderGraphHackVisitor } from './PathFinderGraphHackVisitor.js';
-//not GWT import const PathFinderGraphHackVisitor = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.PathFinderGraphHackVisitor;
+//not GWT import - same folder const PathFinderGraphHackVisitor = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.PathFinderGraphHackVisitor;
 
                 
 export class PathFinderGraphHackVisitorFactory extends PathFinderGraphVisitorFactoryBase {

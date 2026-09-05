@@ -23,23 +23,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { swing } from '../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
-      //not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
+//not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
 
       
 import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
-      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
+//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
 import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
-      //not GWT import const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
+//not GWT import const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
 
       
 import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
-      //not GWT import const BasicTextJDialog = globalThis.org.allbinary.gui.dialog.BasicTextJDialog;
+//not GWT import const BasicTextJDialog = globalThis.org.allbinary.gui.dialog.BasicTextJDialog;
 
       
 
@@ -61,7 +61,7 @@ import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicT
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import const JDialog = globalThis.org.allbinary.input.automation.osgi.JDialog;
+//not GWT import - same folder const JDialog = globalThis.org.allbinary.input.automation.osgi.JDialog;
 
                 
 export class DesktopBundle

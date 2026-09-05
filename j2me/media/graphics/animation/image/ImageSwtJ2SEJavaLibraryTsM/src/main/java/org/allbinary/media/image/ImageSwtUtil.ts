@@ -21,15 +21,15 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Color } from '../../../../org/eclipse/swt/graphics/Color.js';
-      //not GWT import const Color = globalThis.org.eclipse.swt.graphics.Color;
+//not GWT import const Color = globalThis.org.eclipse.swt.graphics.Color;
 
       
 import { RGB } from '../../../../org/eclipse/swt/graphics/RGB.js';
-      //not GWT import const RGB = globalThis.org.eclipse.swt.graphics.RGB;
+//not GWT import const RGB = globalThis.org.eclipse.swt.graphics.RGB;
 
       
 import { BareMain } from '../../../../org/microemu/app/BareMain.js';
-      //not GWT import const BareMain = globalThis.org.microemu.app.BareMain;
+//not GWT import const BareMain = globalThis.org.microemu.app.BareMain;
 
       
 

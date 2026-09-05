@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsInterface } from './PointsInterface.js';
-//not GWT import const PointsInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsInterface;
+//not GWT import - same folder const PointsInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsInterface;
 
                 
 export interface PointsCompositeInterface {

@@ -21,75 +21,75 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
-      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
 import { InputStream } from '../../../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
+//not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
 import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
-      //not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+//not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
-      //not GWT import const AbCrypt = globalThis.org.allbinary.logic.control.crypt.jcehelper.AbCrypt;
+//not GWT import const AbCrypt = globalThis.org.allbinary.logic.control.crypt.jcehelper.AbCrypt;
 
       
 import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
-      //not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.control.crypt.jcehelper.KeySpecFactory;
+//not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.control.crypt.jcehelper.KeySpecFactory;
 
       
 import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
-      //not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+//not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
       
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
-      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+//not plain js import { AbPathData } 
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
-      //not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
+//not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
-      //not GWT import const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
+//not GWT import const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
 
       
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
-      //not GWT import const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
+//not GWT import const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
 
       
 
@@ -111,7 +111,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbTransformer } from './AbTransformer.js';
-//not GWT import const AbTransformer = globalThis.org.allbinary.logic.visual.transform.AbTransformer;
+//not GWT import - same folder const AbTransformer = globalThis.org.allbinary.logic.visual.transform.AbTransformer;
 
                 
 export class BasicTransformer extends AbTransformer {

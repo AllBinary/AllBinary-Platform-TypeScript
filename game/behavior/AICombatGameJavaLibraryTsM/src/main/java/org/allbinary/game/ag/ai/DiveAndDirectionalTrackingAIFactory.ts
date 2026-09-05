@@ -23,35 +23,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-      //not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
+//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
 
       
 import { BasicRandomAIFactory } from '../../../../../org/allbinary/game/ag/ai/tactical/BasicRandomAIFactory.js';
-      //not GWT import const BasicRandomAIFactory = globalThis.org.allbinary.game.ag.ai.tactical.BasicRandomAIFactory;
+//not GWT import const BasicRandomAIFactory = globalThis.org.allbinary.game.ag.ai.tactical.BasicRandomAIFactory;
 
       
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
-      //not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
+//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
 
       
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-      //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+//not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
       
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
+//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-      //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
 
       
-//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -73,16 +73,16 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThrustAIVisitorFactory } from './ThrustAIVisitorFactory.js';
-//not GWT import const ThrustAIVisitorFactory = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitorFactory;
+//not GWT import - same folder const ThrustAIVisitorFactory = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitorFactory;
 
                 import { BasicProbabilityAIDataFactory } from './BasicProbabilityAIDataFactory.js';
-//not GWT import const BasicProbabilityAIDataFactory = globalThis.org.allbinary.game.ag.ai.BasicProbabilityAIDataFactory;
+//not GWT import - same folder const BasicProbabilityAIDataFactory = globalThis.org.allbinary.game.ag.ai.BasicProbabilityAIDataFactory;
 
                 import { LastKeyAIVisitorFactory } from './LastKeyAIVisitorFactory.js';
-//not GWT import const LastKeyAIVisitorFactory = globalThis.org.allbinary.game.ag.ai.LastKeyAIVisitorFactory;
+//not GWT import - same folder const LastKeyAIVisitorFactory = globalThis.org.allbinary.game.ag.ai.LastKeyAIVisitorFactory;
 
                 import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
-//not GWT import const DiveAndDirectionalTrackingAI = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
+//not GWT import - same folder const DiveAndDirectionalTrackingAI = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
 
                 
 export class DiveAndDirectionalTrackingAIFactory

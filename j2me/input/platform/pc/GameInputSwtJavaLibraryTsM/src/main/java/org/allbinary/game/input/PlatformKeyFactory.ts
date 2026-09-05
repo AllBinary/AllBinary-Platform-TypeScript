@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -43,13 +43,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameKey } from './PCGameKey.js';
-//not GWT import const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
+//not GWT import - same folder const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
 
                 import { PCKeyFactory } from './PCKeyFactory.js';
-//not GWT import const PCKeyFactory = globalThis.org.allbinary.game.input.PCKeyFactory;
+//not GWT import - same folder const PCKeyFactory = globalThis.org.allbinary.game.input.PCKeyFactory;
 
                 import { Input } from './Input.js';
-//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
+//not GWT import - same folder const Input = globalThis.org.allbinary.game.input.Input;
 
                 
 export class PlatformKeyFactory

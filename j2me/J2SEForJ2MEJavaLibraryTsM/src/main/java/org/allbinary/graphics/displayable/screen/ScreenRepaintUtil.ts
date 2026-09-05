@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } 
+const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 

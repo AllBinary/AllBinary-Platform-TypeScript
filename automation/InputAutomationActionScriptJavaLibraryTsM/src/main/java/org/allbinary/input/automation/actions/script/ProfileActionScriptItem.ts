@@ -25,31 +25,31 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
-      //not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
+//not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
 
       
 import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
-      //not GWT import const ActionListener = globalThis.java.awt.event.ActionListener;
+//not GWT import const ActionListener = globalThis.java.awt.event.ActionListener;
 
       
 import { swing } from '../../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-      //not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+//not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -71,13 +71,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptItemInterface } from './ProfileActionScriptItemInterface.js';
-//not GWT import const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
+//not GWT import - same folder const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
 
                 import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import const JPopupMenu = globalThis.org.allbinary.input.automation.actions.script.JPopupMenu;
+//not GWT import - same folder const JPopupMenu = globalThis.org.allbinary.input.automation.actions.script.JPopupMenu;
 
                 import { JMenuItem } from './JMenuItem.js';
-//not GWT import const JMenuItem = globalThis.org.allbinary.input.automation.actions.script.JMenuItem;
+//not GWT import - same folder const JMenuItem = globalThis.org.allbinary.input.automation.actions.script.JMenuItem;
 
                 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {

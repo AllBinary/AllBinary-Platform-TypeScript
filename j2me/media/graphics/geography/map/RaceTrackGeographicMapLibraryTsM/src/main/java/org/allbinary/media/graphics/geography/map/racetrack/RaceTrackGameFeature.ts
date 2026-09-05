@@ -19,7 +19,7 @@
 
 
 import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';
-      //not GWT import const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
+//not GWT import const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
 
       
 

@@ -41,16 +41,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AutomaticCacheInterface } from './AutomaticCacheInterface.js';
-//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+//not GWT import - same folder const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
                 import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+//not GWT import - same folder const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
 
                 import { CacheType } from './CacheType.js';
-//not GWT import const CacheType = globalThis.org.allbinary.logic.util.cache.CacheType;
+//not GWT import - same folder const CacheType = globalThis.org.allbinary.logic.util.cache.CacheType;
 
                 import { CachePolicy } from './CachePolicy.js';
-//not GWT import const CachePolicy = globalThis.org.allbinary.logic.util.cache.CachePolicy;
+//not GWT import - same folder const CachePolicy = globalThis.org.allbinary.logic.util.cache.CachePolicy;
 
                 
 export class AutomaticCacheInterfaceFactory

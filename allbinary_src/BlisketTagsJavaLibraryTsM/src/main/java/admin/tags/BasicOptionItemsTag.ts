@@ -19,15 +19,15 @@
 
 
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { BasicOptionItemsHelperFactory } from '../../admin/taghelpers/BasicOptionItemsHelperFactory.js';
-      //not GWT import const BasicOptionItemsHelperFactory = globalThis.admin.taghelpers.BasicOptionItemsHelperFactory;
+//not GWT import const BasicOptionItemsHelperFactory = globalThis.admin.taghelpers.BasicOptionItemsHelperFactory;
 
       
 import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/BasicOptionItemsRequestHelperFactory.js';
-      //not GWT import const BasicOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.BasicOptionItemsRequestHelperFactory;
+//not GWT import const BasicOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.BasicOptionItemsRequestHelperFactory;
 
       
 
@@ -49,7 +49,7 @@ import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/Bas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class BasicOptionItemsTag extends TableTag {

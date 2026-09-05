@@ -21,7 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { File } from '../../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 

@@ -21,31 +21,31 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { ContextTransformer } from '../../../org/allbinary/logic/visual/transform/ContextTransformer.js';
-      //not GWT import const ContextTransformer = globalThis.org.allbinary.logic.visual.transform.ContextTransformer;
+//not GWT import const ContextTransformer = globalThis.org.allbinary.logic.visual.transform.ContextTransformer;
 
       
 import { TransformHttpRequestDocumentFactory } from '../../../org/allbinary/logic/visual/transform/data/TransformHttpRequestDocumentFactory.js';
-      //not GWT import const TransformHttpRequestDocumentFactory = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocumentFactory;
+//not GWT import const TransformHttpRequestDocumentFactory = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocumentFactory;
 
       
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { HttpComponentView } from '../../../views/HttpComponentView.js';
-      //not GWT import const HttpComponentView = globalThis.views.HttpComponentView;
+//not GWT import const HttpComponentView = globalThis.views.HttpComponentView;
 
       
 

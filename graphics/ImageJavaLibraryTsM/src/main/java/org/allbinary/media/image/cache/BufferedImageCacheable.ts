@@ -21,15 +21,15 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
 
@@ -51,7 +51,7 @@ import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cach
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageInfo } from './BufferedImageInfo.js';
-//not GWT import const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
+//not GWT import - same folder const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
 
                 
 export class BufferedImageCacheable

@@ -23,19 +23,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedReader } from '../../../../java/io/BufferedReader.js';
-      //not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
+//not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
 
       
 import { FileReader } from '../../../../java/io/FileReader.js';
-      //not GWT import const FileReader = globalThis.java.io.FileReader;
+//not GWT import const FileReader = globalThis.java.io.FileReader;
 
       
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+//not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
 

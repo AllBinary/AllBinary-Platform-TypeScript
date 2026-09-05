@@ -19,7 +19,7 @@
 
 
 import { swing } from '../../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 
@@ -41,19 +41,19 @@ import { swing } from '../../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.properties.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.properties.JPanel;
 
                 import { JButton } from './JButton.js';
-//not GWT import const JButton = globalThis.org.allbinary.graphics.j2me.workarea.properties.JButton;
+//not GWT import - same folder const JButton = globalThis.org.allbinary.graphics.j2me.workarea.properties.JButton;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const JTextField = globalThis.org.allbinary.graphics.j2me.workarea.properties.JTextField;
+//not GWT import - same folder const JTextField = globalThis.org.allbinary.graphics.j2me.workarea.properties.JTextField;
 
                 import { GridLayout } from './GridLayout.js';
-//not GWT import const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.properties.GridLayout;
+//not GWT import - same folder const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.properties.GridLayout;
 
                 import { Font } from './Font.js';
-//not GWT import const Font = globalThis.org.allbinary.graphics.j2me.workarea.properties.Font;
+//not GWT import - same folder const Font = globalThis.org.allbinary.graphics.j2me.workarea.properties.Font;
 
                 
 export class PropertiesJPanel extends javax.swing.JPanel {

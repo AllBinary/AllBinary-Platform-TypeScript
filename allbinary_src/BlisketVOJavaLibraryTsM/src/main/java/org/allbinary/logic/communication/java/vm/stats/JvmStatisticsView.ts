@@ -21,23 +21,23 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -59,10 +59,10 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JvmStatisticsMapping } from './JvmStatisticsMapping.js';
-//not GWT import const JvmStatisticsMapping = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsMapping;
+//not GWT import - same folder const JvmStatisticsMapping = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsMapping;
 
                 import { JvmStatisticsData } from './JvmStatisticsData.js';
-//not GWT import const JvmStatisticsData = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsData;
+//not GWT import - same folder const JvmStatisticsData = globalThis.org.allbinary.logic.communication.java.vm.stats.JvmStatisticsData;
 
                 
 export class JvmStatisticsView extends JvmStatisticsMapping implements DomNodeInterface {

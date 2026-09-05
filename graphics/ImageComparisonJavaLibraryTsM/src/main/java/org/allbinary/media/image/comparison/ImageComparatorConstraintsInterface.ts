@@ -21,15 +21,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 
@@ -51,10 +51,10 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.Rectangle;
+//not GWT import - same folder const Rectangle = globalThis.org.allbinary.media.image.comparison.Rectangle;
 
                 import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.media.image.comparison.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.media.image.comparison.Color;
 
                 
 export interface ImageComparatorConstraintsInterface {

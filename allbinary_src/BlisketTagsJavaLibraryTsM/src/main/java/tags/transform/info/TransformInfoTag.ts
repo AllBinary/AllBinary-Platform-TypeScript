@@ -21,39 +21,39 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
-      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
 import { TagHelperFactoryInterface } from '../../../admin/taghelpers/TagHelperFactoryInterface.js';
-      //not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+//not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
       
 import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { OutputTypeData } from '../../../org/allbinary/logic/io/OutputTypeData.js';
-      //not GWT import const OutputTypeData = globalThis.org.allbinary.logic.io.OutputTypeData;
+//not GWT import const OutputTypeData = globalThis.org.allbinary.logic.io.OutputTypeData;
 
       
 import { TransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-      //not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
       
 import { TransformInfoRequestHelperFactory } from '../../../taghelpers/transform/info/TransformInfoRequestHelperFactory.js';
-      //not GWT import const TransformInfoRequestHelperFactory = globalThis.taghelpers.transform.info.TransformInfoRequestHelperFactory;
+//not GWT import const TransformInfoRequestHelperFactory = globalThis.taghelpers.transform.info.TransformInfoRequestHelperFactory;
 
       
 import { ModifyTag } from '../../../tags/ModifyTag.js';
-      //not GWT import const ModifyTag = globalThis.tags.ModifyTag;
+//not GWT import const ModifyTag = globalThis.tags.ModifyTag;
 
       
 

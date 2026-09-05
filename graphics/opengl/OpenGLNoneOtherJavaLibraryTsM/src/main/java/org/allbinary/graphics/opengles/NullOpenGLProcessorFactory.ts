@@ -25,7 +25,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLProcessor } from './OpenGLProcessor.js';
-//not GWT import const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
+//not GWT import - same folder const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
 
                 
 export class NullOpenGLProcessorFactory

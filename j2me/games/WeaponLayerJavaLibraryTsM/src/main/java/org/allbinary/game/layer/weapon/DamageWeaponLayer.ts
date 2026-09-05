@@ -21,23 +21,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
+//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-      //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+//not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
 import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
-      //not GWT import const Movement = globalThis.org.allbinary.physics.movement.Movement;
+//not GWT import const Movement = globalThis.org.allbinary.physics.movement.Movement;
 
       
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
-      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
 
@@ -59,10 +59,10 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
+//not GWT import - same folder const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
 
                 import { CollidableDamageWeaponBehavior } from './CollidableDamageWeaponBehavior.js';
-//not GWT import const CollidableDamageWeaponBehavior = globalThis.org.allbinary.game.layer.weapon.CollidableDamageWeaponBehavior;
+//not GWT import - same folder const CollidableDamageWeaponBehavior = globalThis.org.allbinary.game.layer.weapon.CollidableDamageWeaponBehavior;
 
                 
 export class DamageWeaponLayer extends WeaponLayer {

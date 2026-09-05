@@ -21,7 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 

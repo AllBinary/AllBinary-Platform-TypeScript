@@ -23,51 +23,51 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { ContextConfiguration } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
-      //not GWT import const ContextConfiguration = globalThis.org.allbinary.business.context.configuration.ContextConfiguration;
+//not GWT import const ContextConfiguration = globalThis.org.allbinary.business.context.configuration.ContextConfiguration;
 
       
 import { ContextConfigurationData } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationData.js';
-      //not GWT import const ContextConfigurationData = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
+//not GWT import const ContextConfigurationData = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
 
       
 import { ContextConfigurationDomDocumentMapping } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
-      //not GWT import const ContextConfigurationDomDocumentMapping = globalThis.org.allbinary.business.context.configuration.ContextConfigurationDomDocumentMapping;
+//not GWT import const ContextConfigurationDomDocumentMapping = globalThis.org.allbinary.business.context.configuration.ContextConfigurationDomDocumentMapping;
 
       
 import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
-      //not GWT import const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+//not GWT import const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
 
       
 import { ContextConfigurationInterfaceFactory } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
-      //not GWT import const ContextConfigurationInterfaceFactory = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterfaceFactory;
+//not GWT import const ContextConfigurationInterfaceFactory = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterfaceFactory;
 
       
 import { ContextConfigurationPathUtil } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationPathUtil.js';
-      //not GWT import const ContextConfigurationPathUtil = globalThis.org.allbinary.business.context.configuration.ContextConfigurationPathUtil;
+//not GWT import const ContextConfigurationPathUtil = globalThis.org.allbinary.business.context.configuration.ContextConfigurationPathUtil;
 
       
 import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-      //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
       
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
-      //not GWT import const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
+//not GWT import const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -89,10 +89,10 @@ import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/contro
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdminConfigurationInterface } from './AdminConfigurationInterface.js';
-//not GWT import const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
+//not GWT import - same folder const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
 
                 import { AdminConfigurationData } from './AdminConfigurationData.js';
-//not GWT import const AdminConfigurationData = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationData;
+//not GWT import - same folder const AdminConfigurationData = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationData;
 
                 
 export class AdminConfiguration

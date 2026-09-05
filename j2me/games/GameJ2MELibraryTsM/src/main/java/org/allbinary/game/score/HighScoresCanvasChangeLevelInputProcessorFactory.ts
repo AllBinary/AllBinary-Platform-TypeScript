@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-      //not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
+//not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
 
       
 
@@ -43,13 +43,13 @@ import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessorFactoryInterface } from './HighScoresCanvasInputProcessorFactoryInterface.js';
-//not GWT import const HighScoresCanvasInputProcessorFactoryInterface = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessorFactoryInterface;
+//not GWT import - same folder const HighScoresCanvasInputProcessorFactoryInterface = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessorFactoryInterface;
 
                 import { HighScoresCanvasLevelChangeInputProcessor } from './HighScoresCanvasLevelChangeInputProcessor.js';
-//not GWT import const HighScoresCanvasLevelChangeInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasLevelChangeInputProcessor;
+//not GWT import - same folder const HighScoresCanvasLevelChangeInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasLevelChangeInputProcessor;
 
                 import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
-//not GWT import const HighScoresCanvasInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
+//not GWT import - same folder const HighScoresCanvasInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
 
                 
 export class HighScoresCanvasChangeLevelInputProcessorFactory

@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
-      //not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+//not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
 
       
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { InventorySearch } from '../../../../views/generic/inventory/InventorySearch.js';
-      //not GWT import const InventorySearch = globalThis.views.generic.inventory.InventorySearch;
+//not GWT import const InventorySearch = globalThis.views.generic.inventory.InventorySearch;
 
       
 
@@ -61,7 +61,7 @@ import { InventorySearch } from '../../../../views/generic/inventory/InventorySe
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryViewSearchInterface } from './InventoryViewSearchInterface.js';
-//not GWT import const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
+//not GWT import - same folder const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
 
                 
 export class InventoryViewFactory

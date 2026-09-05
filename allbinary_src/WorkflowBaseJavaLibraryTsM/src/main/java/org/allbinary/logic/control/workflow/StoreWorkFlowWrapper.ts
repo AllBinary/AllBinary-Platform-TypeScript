@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';
-      //not GWT import const Method = globalThis.java.lang.reflect.Method;
+//not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,7 +53,7 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowWrapper } from './WorkFlowWrapper.js';
-//not GWT import const WorkFlowWrapper = globalThis.org.allbinary.logic.control.workflow.WorkFlowWrapper;
+//not GWT import - same folder const WorkFlowWrapper = globalThis.org.allbinary.logic.control.workflow.WorkFlowWrapper;
 
                 
 export class StoreWorkFlowWrapper extends WorkFlowWrapper {

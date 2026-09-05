@@ -21,7 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
-      //not GWT import const TiledMap = globalThis.org.mapeditor.core.TiledMap;
+//not GWT import const TiledMap = globalThis.org.mapeditor.core.TiledMap;
 
       
 

@@ -20,15 +20,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-      //not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
+//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
 
       
 
@@ -50,10 +50,10 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapitalEventListenerInterface } from './CapitalEventListenerInterface.js';
-//not GWT import const CapitalEventListenerInterface = globalThis.org.allbinary.game.layer.capital.event.CapitalEventListenerInterface;
+//not GWT import - same folder const CapitalEventListenerInterface = globalThis.org.allbinary.game.layer.capital.event.CapitalEventListenerInterface;
 
                 import { CapitalEvent } from './CapitalEvent.js';
-//not GWT import const CapitalEvent = globalThis.org.allbinary.game.layer.capital.event.CapitalEvent;
+//not GWT import - same folder const CapitalEvent = globalThis.org.allbinary.game.layer.capital.event.CapitalEvent;
 
                 
 export class CapitalEventHandler extends BasicEventHandler {

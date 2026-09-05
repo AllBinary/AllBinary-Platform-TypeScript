@@ -23,7 +23,7 @@
             import { Math } from '../../../../java/lang/Math.js';
         
 import { awt } from '../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 
@@ -45,7 +45,7 @@ import { awt } from '../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.graphics.color.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.graphics.color.Color;
 
                 
 export class ColorUtil

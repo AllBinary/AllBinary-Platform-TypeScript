@@ -21,31 +21,31 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Dimension } from '../../../java/awt/Dimension.js';
-      //not GWT import const Dimension = globalThis.java.awt.Dimension;
+//not GWT import const Dimension = globalThis.java.awt.Dimension;
 
       
 import { DisplayMode } from '../../../java/awt/DisplayMode.js';
-      //not GWT import const DisplayMode = globalThis.java.awt.DisplayMode;
+//not GWT import const DisplayMode = globalThis.java.awt.DisplayMode;
 
       
 import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
-      //not GWT import const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
+//not GWT import const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
 
       
 import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
-      //not GWT import const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
+//not GWT import const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
 
       
 import { Toolkit } from '../../../java/awt/Toolkit.js';
-      //not GWT import const Toolkit = globalThis.java.awt.Toolkit;
+//not GWT import const Toolkit = globalThis.java.awt.Toolkit;
 
       
-//not plain js import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+//not plain js import { PointFactory } 
+const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
 

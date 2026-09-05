@@ -24,36 +24,36 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
-      const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
+//not plain js import { PlaynImmutableImage } 
+const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
 
       
-//not plain js import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-      const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+//not plain js import { PlaynMutableImage } 
+const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
-      const Canvas = globalThis.playn.core.Canvas;
+//not plain js import { Canvas } 
+const Canvas = globalThis.playn.core.Canvas;
 
       
-//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
-      const ImageImpl = globalThis.playn.core.ImageImpl;
+//not plain js import { ImageImpl } 
+const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not plain js import { PlayN } from '../../../../playn/core/PlayN.js';
-      const PlayN = globalThis.playn.core.PlayN;
+//not plain js import { PlayN } 
+const PlayN = globalThis.playn.core.PlayN;
 
       
-//not plain js import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
-      const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+//not plain js import { HtmlGraphics } 
+const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
 
       
-//not plain js import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
-      const HtmlImage = globalThis.playn.html.HtmlImage;
+//not plain js import { HtmlImage } 
+const HtmlImage = globalThis.playn.html.HtmlImage;
 
       
 
@@ -74,7 +74,7 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+        //not plain js - same folder import { ImageCreationUtil } 
 const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 

@@ -22,28 +22,28 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } 
+const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 import { Notification } from '../../../android/app/Notification.js';
-      //not GWT import const Notification = globalThis.android.app.Notification;
+//not GWT import const Notification = globalThis.android.app.Notification;
 
       
 import { Builder } from '../../../android/app/Notification/Builder.js';
-      //not GWT import const Builder = globalThis.android.app.Notification.Builder;
+//not GWT import const Builder = globalThis.android.app.Notification.Builder;
 
       
 import { PendingIntent } from '../../../android/app/PendingIntent.js';
-      //not GWT import const PendingIntent = globalThis.android.app.PendingIntent;
+//not GWT import const PendingIntent = globalThis.android.app.PendingIntent;
 
       
 import { Context } from '../../../android/content/Context.js';
-      //not GWT import const Context = globalThis.android.content.Context;
+//not GWT import const Context = globalThis.android.content.Context;
 
       
 import { Parcelable } from '../../../android/os/Parcelable.js';
-      //not GWT import const Parcelable = globalThis.android.os.Parcelable;
+//not GWT import const Parcelable = globalThis.android.os.Parcelable;
 
       
 
@@ -65,7 +65,7 @@ import { Parcelable } from '../../../android/os/Parcelable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
-//not GWT import const NotificationBuilder = globalThis.org.allbinary.content.NotificationBuilder;
+//not GWT import - same folder const NotificationBuilder = globalThis.org.allbinary.content.NotificationBuilder;
 
                 
 export class NotificationBuilderAPI23 extends NotificationBuilder {

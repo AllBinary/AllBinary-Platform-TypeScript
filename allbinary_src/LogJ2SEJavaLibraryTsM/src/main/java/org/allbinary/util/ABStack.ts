@@ -19,7 +19,7 @@
 
 
 import { Stack } from '../../../java/util/Stack.js';
-      //not GWT import const Stack = globalThis.java.util.Stack;
+//not GWT import const Stack = globalThis.java.util.Stack;
 
       
 

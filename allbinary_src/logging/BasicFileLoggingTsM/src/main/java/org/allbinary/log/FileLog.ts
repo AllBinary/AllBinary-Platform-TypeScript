@@ -27,43 +27,43 @@
             import { System } from '../../../java/lang/System.js';
         
 import { BufferedReader } from '../../../java/io/BufferedReader.js';
-      //not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
+//not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
 
       
 import { BufferedWriter } from '../../../java/io/BufferedWriter.js';
-      //not GWT import const BufferedWriter = globalThis.java.io.BufferedWriter;
+//not GWT import const BufferedWriter = globalThis.java.io.BufferedWriter;
 
       
 import { File } from '../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { FileReader } from '../../../java/io/FileReader.js';
-      //not GWT import const FileReader = globalThis.java.io.FileReader;
+//not GWT import const FileReader = globalThis.java.io.FileReader;
 
       
 import { FileWriter } from '../../../java/io/FileWriter.js';
-      //not GWT import const FileWriter = globalThis.java.io.FileWriter;
+//not GWT import const FileWriter = globalThis.java.io.FileWriter;
 
       
 import { RandomAccessFile } from '../../../java/io/RandomAccessFile.js';
-      //not GWT import const RandomAccessFile = globalThis.java.io.RandomAccessFile;
+//not GWT import const RandomAccessFile = globalThis.java.io.RandomAccessFile;
 
       
-//not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { LogFormatUtil } from '../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
-      const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+//not plain js import { LogFormatUtil } 
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 

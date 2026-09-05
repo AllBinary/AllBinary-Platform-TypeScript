@@ -19,11 +19,11 @@
 
 
 import { AnimationInterface } from '../../../../org/allbinary/animation/AnimationInterface.js';
-      //not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
+//not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
 
       
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-      //not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
       
 

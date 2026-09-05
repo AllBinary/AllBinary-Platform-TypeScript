@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -43,7 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
+//not GWT import - same folder const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
 
                 
 export interface LayerPlacementInterface {

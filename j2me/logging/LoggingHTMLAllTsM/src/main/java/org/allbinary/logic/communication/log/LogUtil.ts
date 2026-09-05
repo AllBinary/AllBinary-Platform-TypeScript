@@ -22,12 +22,12 @@
         
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { PlayN } from '../../../../../playn/core/PlayN.js';
-      const PlayN = globalThis.playn.core.PlayN;
+//not plain js import { PlayN } 
+const PlayN = globalThis.playn.core.PlayN;
 
       
 
@@ -48,13 +48,13 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+        //not plain js - same folder import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
-                //not plain js import { Log } from './Log.js';
+                //not plain js - same folder import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
-                //not plain js import { PreLogUtil } from './PreLogUtil.js';
+                //not plain js - same folder import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
                 //ActualPlatform

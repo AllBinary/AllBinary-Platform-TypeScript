@@ -21,11 +21,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
-      //not GWT import const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+//not GWT import const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
 
       
 import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
-      //not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
+//not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
 
       
 

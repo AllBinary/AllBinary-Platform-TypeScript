@@ -21,15 +21,15 @@
             import { Object } from '../../java/lang/Object.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 
@@ -51,10 +51,10 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
-//not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+//not GWT import - same folder const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
                 import { HelperFactory } from './HelperFactory.js';
-//not GWT import const HelperFactory = globalThis.admin.taghelpers.HelperFactory;
+//not GWT import - same folder const HelperFactory = globalThis.admin.taghelpers.HelperFactory;
 
                 
 export class SpecialItemsRequestHelperFactory

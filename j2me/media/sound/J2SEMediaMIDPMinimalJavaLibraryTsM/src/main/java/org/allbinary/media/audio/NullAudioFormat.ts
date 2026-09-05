@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
-      //not GWT import const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
+//not GWT import const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
 
       
 

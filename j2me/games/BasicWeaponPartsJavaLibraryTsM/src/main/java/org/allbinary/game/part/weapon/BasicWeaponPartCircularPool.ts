@@ -23,19 +23,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-      //not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+//not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
 
       
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-      //not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+//not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
 
       
 import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
-      //not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+//not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
 
       
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 
@@ -57,10 +57,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
+//not GWT import - same folder const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
 
                 import { BasicWeaponPartFactoryInterface } from './BasicWeaponPartFactoryInterface.js';
-//not GWT import const BasicWeaponPartFactoryInterface = globalThis.org.allbinary.game.part.weapon.BasicWeaponPartFactoryInterface;
+//not GWT import - same folder const BasicWeaponPartFactoryInterface = globalThis.org.allbinary.game.part.weapon.BasicWeaponPartFactoryInterface;
 
                 
 export class BasicWeaponPartCircularPool

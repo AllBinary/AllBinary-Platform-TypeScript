@@ -29,51 +29,51 @@
             import { Thread } from '../../../../../java/lang/Thread.js';
         
 import { Connection } from '../../../../../java/sql/Connection.js';
-      //not GWT import const Connection = globalThis.java.sql.Connection;
+//not GWT import const Connection = globalThis.java.sql.Connection;
 
       
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
-      //not GWT import const ResultSet = globalThis.java.sql.ResultSet;
+//not GWT import const ResultSet = globalThis.java.sql.ResultSet;
 
       
 import { SQLException } from '../../../../../java/sql/SQLException.js';
-      //not GWT import const SQLException = globalThis.java.sql.SQLException;
+//not GWT import const SQLException = globalThis.java.sql.SQLException;
 
       
 import { Statement } from '../../../../../java/sql/Statement.js';
-      //not GWT import const Statement = globalThis.java.sql.Statement;
+//not GWT import const Statement = globalThis.java.sql.Statement;
 
       
 import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-      //not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
+//not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
 
       
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
-//not plain js import { StdUtil } from '../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js';
-      //not GWT import const SqlConnectionPool = globalThis.org.allbinary.logic.communication.sql.connection.pool.SqlConnectionPool;
+//not GWT import const SqlConnectionPool = globalThis.org.allbinary.logic.communication.sql.connection.pool.SqlConnectionPool;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -95,10 +95,10 @@ import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communicat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlTypeStrings } from './SqlTypeStrings.js';
-//not GWT import const SqlTypeStrings = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
+//not GWT import - same folder const SqlTypeStrings = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
 
                 import { SqlStrings } from './SqlStrings.js';
-//not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+//not GWT import - same folder const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
                 
 export class AbSqlBasic

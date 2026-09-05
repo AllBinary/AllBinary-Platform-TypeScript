@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
-      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
+//not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
 
@@ -42,16 +42,16 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { EnumerationUtil } from './EnumerationUtil.js';
+        //not plain js - same folder import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
-                //not plain js import { ABHashtable } from './ABHashtable.js';
+                //not plain js - same folder import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
-                //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
+                //not plain js - same folder import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
-                //not plain js import { BasicArrayList } from './BasicArrayList.js';
+                //not plain js - same folder import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
                 

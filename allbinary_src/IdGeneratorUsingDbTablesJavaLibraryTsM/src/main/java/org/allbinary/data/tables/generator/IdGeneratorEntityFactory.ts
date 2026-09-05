@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorEntity } from './IdGeneratorEntity.js';
-//not GWT import const IdGeneratorEntity = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
+//not GWT import - same folder const IdGeneratorEntity = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
 
                 import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
-//not GWT import const IdGeneratorEntityInterface = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityInterface;
+//not GWT import - same folder const IdGeneratorEntityInterface = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityInterface;
 
                 
 export class IdGeneratorEntityFactory

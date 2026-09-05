@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
-      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+//not plain js import { Sprite } 
+const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -50,8 +50,8 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
-const SpriteFactoryInterface = globalThis.org.allbinary.game.layer.SpriteFactoryInterface;
+        import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
+//not GWT import - same folder const SpriteFactoryInterface = globalThis.org.allbinary.game.layer.SpriteFactoryInterface;
 
                 
 export class SpriteFactory

@@ -6,12 +6,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } 
+const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { KeyEvent } from '../../../../android/view/KeyEvent.js';
-      //not GWT import const KeyEvent = globalThis.android.view.KeyEvent;
+//not GWT import const KeyEvent = globalThis.android.view.KeyEvent;
 
       
 

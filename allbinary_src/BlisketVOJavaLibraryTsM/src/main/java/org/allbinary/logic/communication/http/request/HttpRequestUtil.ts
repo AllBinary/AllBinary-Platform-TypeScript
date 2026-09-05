@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
-      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+//not plain js import { AbPathData } 
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
 

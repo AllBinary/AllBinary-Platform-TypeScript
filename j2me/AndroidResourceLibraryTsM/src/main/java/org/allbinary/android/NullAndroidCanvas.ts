@@ -23,11 +23,11 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Canvas } from '../../../android/graphics/Canvas.js';
-      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
+//not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
 import { MediaPlayer } from '../../../android/media/MediaPlayer.js';
-      //not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
+//not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
 
       
 

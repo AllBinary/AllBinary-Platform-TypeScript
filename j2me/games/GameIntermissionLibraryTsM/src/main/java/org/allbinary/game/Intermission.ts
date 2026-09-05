@@ -21,19 +21,19 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
-      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 
@@ -55,13 +55,13 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionInterface } from './IntermissionInterface.js';
-//not GWT import const IntermissionInterface = globalThis.org.allbinary.game.IntermissionInterface;
+//not GWT import - same folder const IntermissionInterface = globalThis.org.allbinary.game.IntermissionInterface;
 
                 import { NullIntermissionEnableListener } from './NullIntermissionEnableListener.js';
-//not GWT import const NullIntermissionEnableListener = globalThis.org.allbinary.game.NullIntermissionEnableListener;
+//not GWT import - same folder const NullIntermissionEnableListener = globalThis.org.allbinary.game.NullIntermissionEnableListener;
 
                 import { IntermissionEnableListenerInterface } from './IntermissionEnableListenerInterface.js';
-//not GWT import const IntermissionEnableListenerInterface = globalThis.org.allbinary.game.IntermissionEnableListenerInterface;
+//not GWT import - same folder const IntermissionEnableListenerInterface = globalThis.org.allbinary.game.IntermissionEnableListenerInterface;
 
                 
 export class Intermission

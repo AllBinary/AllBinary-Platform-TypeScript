@@ -21,15 +21,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-      //not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
       
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -51,10 +51,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryPathView } from './StoreThemeCategoryPathView.js';
-//not GWT import const StoreThemeCategoryPathView = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryPathView;
+//not GWT import - same folder const StoreThemeCategoryPathView = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryPathView;
 
                 import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
-//not GWT import const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
+//not GWT import - same folder const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
 
                 
 export class StoreThemeCategoryPathValidationView extends StoreThemeCategoryPathView implements ValidationInterface {

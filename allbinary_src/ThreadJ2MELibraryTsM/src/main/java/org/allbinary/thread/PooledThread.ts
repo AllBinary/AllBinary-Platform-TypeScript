@@ -26,20 +26,20 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -61,10 +61,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadObjectUtil } from './ThreadObjectUtil.js';
-//not GWT import const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
+//not GWT import - same folder const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
 
                 import { ThreadPool } from './ThreadPool.js';
-//not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
+//not GWT import - same folder const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
 
                 
 export class PooledThread extends Thread {

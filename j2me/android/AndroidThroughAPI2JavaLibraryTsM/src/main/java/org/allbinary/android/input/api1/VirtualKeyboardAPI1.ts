@@ -19,15 +19,15 @@
 
 
 import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
-      //not GWT import const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
+//not GWT import const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
 
       
 import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
-      //not GWT import const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+//not GWT import const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
 
       
 import { Activity } from '../../../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 

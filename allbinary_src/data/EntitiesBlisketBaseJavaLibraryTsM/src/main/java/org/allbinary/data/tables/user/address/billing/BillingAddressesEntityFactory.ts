@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
-      //not GWT import const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
+//not GWT import const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
 
       
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,7 +53,7 @@ import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BillingAddressesEntity } from './BillingAddressesEntity.js';
-//not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
+//not GWT import - same folder const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
 
                 
 export class BillingAddressesEntityFactory

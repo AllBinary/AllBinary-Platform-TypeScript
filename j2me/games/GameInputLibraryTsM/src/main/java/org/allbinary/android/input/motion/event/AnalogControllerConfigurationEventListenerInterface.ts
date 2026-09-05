@@ -21,7 +21,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 
@@ -43,7 +43,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerConfigurationEvent } from './AnalogControllerConfigurationEvent.js';
-//not GWT import const AnalogControllerConfigurationEvent = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEvent;
+//not GWT import - same folder const AnalogControllerConfigurationEvent = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEvent;
 
                 
 export interface AnalogControllerConfigurationEventListenerInterface extends EventListenerInterface {

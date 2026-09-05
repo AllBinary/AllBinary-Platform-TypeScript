@@ -20,12 +20,12 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } 
+const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
-//not plain js import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } 
+const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 
@@ -47,7 +47,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmulatorViewInterface } from './EmulatorViewInterface.js';
-//not GWT import const EmulatorViewInterface = globalThis.org.allbinary.view.EmulatorViewInterface;
+//not GWT import - same folder const EmulatorViewInterface = globalThis.org.allbinary.view.EmulatorViewInterface;
 
                 
 export class NullEmulatorView

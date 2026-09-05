@@ -22,20 +22,20 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-//not plain js import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';
-      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
-      //not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+//not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
 
       
-//not plain js import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 

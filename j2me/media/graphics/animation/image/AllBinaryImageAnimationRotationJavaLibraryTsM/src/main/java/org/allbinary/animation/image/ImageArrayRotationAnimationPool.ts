@@ -21,19 +21,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BasicArrayListResetablePool } from '../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js';
-      //not GWT import const BasicArrayListResetablePool = globalThis.org.allbinary.logic.util.cache.BasicArrayListResetablePool;
+//not GWT import const BasicArrayListResetablePool = globalThis.org.allbinary.logic.util.cache.BasicArrayListResetablePool;
 
       
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
 import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-      //not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
 
       
 import { PoolInterface } from '../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-      //not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+//not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
 
       
 
@@ -55,13 +55,13 @@ import { PoolInterface } from '../../../../org/allbinary/logic/util/cache/PoolIn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationCacheableInterfaceFactory } from './ImageArrayRotationAnimationCacheableInterfaceFactory.js';
-//not GWT import const ImageArrayRotationAnimationCacheableInterfaceFactory = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheableInterfaceFactory;
+//not GWT import - same folder const ImageArrayRotationAnimationCacheableInterfaceFactory = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheableInterfaceFactory;
 
                 import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import const ImageArrayRotationAnimationInfo = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
+//not GWT import - same folder const ImageArrayRotationAnimationInfo = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
 
                 import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
-//not GWT import const ImageArrayRotationAnimationCacheable = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheable;
+//not GWT import - same folder const ImageArrayRotationAnimationCacheable = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheable;
 
                 
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {

@@ -7,23 +7,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
+//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-      //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+//not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
 
       
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 
@@ -45,25 +45,25 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-//not GWT import const HighScoresBase = globalThis.org.allbinary.game.score.HighScoresBase;
+//not GWT import - same folder const HighScoresBase = globalThis.org.allbinary.game.score.HighScoresBase;
 
                 import { HighScores } from './HighScores.js';
-//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
+//not GWT import - same folder const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
                 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+//not GWT import - same folder const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
 
                 import { RecordStoreHighScores } from './RecordStoreHighScores.js';
-//not GWT import const RecordStoreHighScores = globalThis.org.allbinary.game.score.RecordStoreHighScores;
+//not GWT import - same folder const RecordStoreHighScores = globalThis.org.allbinary.game.score.RecordStoreHighScores;
 
                 import { ScoreComparator } from './ScoreComparator.js';
-//not GWT import const ScoreComparator = globalThis.org.allbinary.game.score.ScoreComparator;
+//not GWT import - same folder const ScoreComparator = globalThis.org.allbinary.game.score.ScoreComparator;
 
                 import { HighScoresHelper2 } from './HighScoresHelper2.js';
-//not GWT import const HighScoresHelper2 = globalThis.org.allbinary.game.score.HighScoresHelper2;
+//not GWT import - same folder const HighScoresHelper2 = globalThis.org.allbinary.game.score.HighScoresHelper2;
 
                 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+//not GWT import - same folder const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
 
                 
 export class BasicHighScoresFactory extends HighScoresBase {

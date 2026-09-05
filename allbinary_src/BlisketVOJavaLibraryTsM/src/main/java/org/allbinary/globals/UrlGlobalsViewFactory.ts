@@ -23,15 +23,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,7 +53,7 @@ import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeIn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsView } from './UrlGlobalsView.js';
-//not GWT import const UrlGlobalsView = globalThis.org.allbinary.globals.UrlGlobalsView;
+//not GWT import - same folder const UrlGlobalsView = globalThis.org.allbinary.globals.UrlGlobalsView;
 
                 
 export class UrlGlobalsViewFactory

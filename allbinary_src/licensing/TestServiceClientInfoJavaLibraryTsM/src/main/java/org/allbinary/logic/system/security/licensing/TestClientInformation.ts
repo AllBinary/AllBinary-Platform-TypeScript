@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
-//not GWT import const AbeClientInformation = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
+//not GWT import - same folder const AbeClientInformation = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
 
                 
 export class TestClientInformation extends AbeClientInformation {

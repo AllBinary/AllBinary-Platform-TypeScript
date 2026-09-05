@@ -23,27 +23,27 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
+//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
 import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
-      //not GWT import const AbstractInputRobot = globalThis.org.allbinary.input.automation.AbstractInputRobot;
+//not GWT import const AbstractInputRobot = globalThis.org.allbinary.input.automation.AbstractInputRobot;
 
       
 import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
-      //not GWT import const PointFactory = globalThis.org.allbinary.input.automation.PointFactory;
+//not GWT import const PointFactory = globalThis.org.allbinary.input.automation.PointFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -65,16 +65,16 @@ import { PointFactory } from '../../../../../org/allbinary/input/automation/Poin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+//not GWT import - same folder const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
                 import { Point } from './Point.js';
-//not GWT import const Point = globalThis.org.allbinary.input.automation.robot.Point;
+//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.robot.Point;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.input.automation.robot.Rectangle;
+//not GWT import - same folder const Rectangle = globalThis.org.allbinary.input.automation.robot.Rectangle;
 
                 import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.input.automation.robot.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.input.automation.robot.Color;
 
                 
 export class NullInputRobot extends AbstractInputRobot implements InputRobotInterface {

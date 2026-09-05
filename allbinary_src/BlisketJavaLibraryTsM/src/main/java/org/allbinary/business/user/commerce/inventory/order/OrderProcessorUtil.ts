@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { OrderIdGenerator } from '../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js';
-      //not GWT import const OrderIdGenerator = globalThis.org.allbinary.data.generator.OrderIdGenerator;
+//not GWT import const OrderIdGenerator = globalThis.org.allbinary.data.generator.OrderIdGenerator;
 
       
 import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
-      //not GWT import const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
+//not GWT import const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
 
       
 import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js';
-      //not GWT import const OrderItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntity;
+//not GWT import const OrderItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntity;
 
       
 
@@ -53,7 +53,7 @@ import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
-//not GWT import const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
+//not GWT import - same folder const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
                 
 export class OrderProcessorUtil

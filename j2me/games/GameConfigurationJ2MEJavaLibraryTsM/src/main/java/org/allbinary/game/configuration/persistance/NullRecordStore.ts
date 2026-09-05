@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
-      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+//not plain js import { RecordStore } 
+const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
 

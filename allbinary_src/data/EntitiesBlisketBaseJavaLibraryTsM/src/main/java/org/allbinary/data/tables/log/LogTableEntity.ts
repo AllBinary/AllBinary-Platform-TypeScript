@@ -19,23 +19,23 @@
 
 
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { LogDbInitInfo } from '../../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
-      //not GWT import const LogDbInitInfo = globalThis.org.allbinary.business.init.db.LogDbInitInfo;
+//not GWT import const LogDbInitInfo = globalThis.org.allbinary.business.init.db.LogDbInitInfo;
 
       
 import { AbeHttpRequestInfoData } from '../../../../../org/allbinary/logic/communication/http/request/AbeHttpRequestInfoData.js';
-      //not GWT import const AbeHttpRequestInfoData = globalThis.org.allbinary.logic.communication.http.request.AbeHttpRequestInfoData;
+//not GWT import const AbeHttpRequestInfoData = globalThis.org.allbinary.logic.communication.http.request.AbeHttpRequestInfoData;
 
       
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-      //not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 
@@ -57,7 +57,7 @@ import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogTableEntityInterface } from './LogTableEntityInterface.js';
-//not GWT import const LogTableEntityInterface = globalThis.org.allbinary.data.tables.log.LogTableEntityInterface;
+//not GWT import - same folder const LogTableEntityInterface = globalThis.org.allbinary.data.tables.log.LogTableEntityInterface;
 
                 
 export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface {

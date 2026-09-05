@@ -20,12 +20,12 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not plain js import { Image } from '../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-      const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+//not plain js import { Resource } 
+const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
 

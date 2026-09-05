@@ -19,11 +19,11 @@
 
 
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -45,7 +45,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequentialAnimationInterface } from './SequentialAnimationInterface.js';
-//not GWT import const SequentialAnimationInterface = globalThis.org.allbinary.animation.SequentialAnimationInterface;
+//not GWT import - same folder const SequentialAnimationInterface = globalThis.org.allbinary.animation.SequentialAnimationInterface;
 
                 
 export interface IndexedAnimationInterface extends SequentialAnimationInterface {

@@ -21,7 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { DomDocumentQueueInterface } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentQueueInterface.js';
-      //not GWT import const DomDocumentQueueInterface = globalThis.org.allbinary.data.tree.dom.document.DomDocumentQueueInterface;
+//not GWT import const DomDocumentQueueInterface = globalThis.org.allbinary.data.tree.dom.document.DomDocumentQueueInterface;
 
       
 

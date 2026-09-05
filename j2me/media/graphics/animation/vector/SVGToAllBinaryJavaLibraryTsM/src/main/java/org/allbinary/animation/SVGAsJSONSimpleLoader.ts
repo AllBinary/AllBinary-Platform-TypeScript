@@ -31,43 +31,43 @@
             import { Double } from '../../../java/lang/Double.js';
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
-      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
+//not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not plain js import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-      const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+//not plain js import { PrimitiveIntUtil } 
+const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { PositionStrings } from '../../../org/allbinary/math/PositionStrings.js';
-      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+//not plain js import { PositionStrings } 
+const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
 
       
-//not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { JSONArray } from '../../../org/json/me/JSONArray.js';
-      //not GWT import const JSONArray = globalThis.org.json.me.JSONArray;
+//not GWT import const JSONArray = globalThis.org.json.me.JSONArray;
 
       
 import { JSONException } from '../../../org/json/me/JSONException.js';
-      //not GWT import const JSONException = globalThis.org.json.me.JSONException;
+//not GWT import const JSONException = globalThis.org.json.me.JSONException;
 
       
 import { JSONObject } from '../../../org/json/me/JSONObject.js';
-      //not GWT import const JSONObject = globalThis.org.json.me.JSONObject;
+//not GWT import const JSONObject = globalThis.org.json.me.JSONObject;
 
       
 
@@ -89,13 +89,13 @@ import { JSONObject } from '../../../org/json/me/JSONObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShapeTypeFactory } from './ShapeTypeFactory.js';
-//not GWT import const ShapeTypeFactory = globalThis.org.allbinary.animation.ShapeTypeFactory;
+//not GWT import - same folder const ShapeTypeFactory = globalThis.org.allbinary.animation.ShapeTypeFactory;
 
                 import { ShapeType } from './ShapeType.js';
-//not GWT import const ShapeType = globalThis.org.allbinary.animation.ShapeType;
+//not GWT import - same folder const ShapeType = globalThis.org.allbinary.animation.ShapeType;
 
                 import { Number } from './Number.js';
-//not GWT import const Number = globalThis.org.allbinary.animation.Number;
+//not GWT import - same folder const Number = globalThis.org.allbinary.animation.Number;
 
                 
 export class SVGAsJSONSimpleLoader

@@ -21,19 +21,19 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Activity } from '../../../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 import { Configuration } from '../../../../../android/content/res/Configuration.js';
-      //not GWT import const Configuration = globalThis.android.content.res.Configuration;
+//not GWT import const Configuration = globalThis.android.content.res.Configuration;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
 
@@ -55,10 +55,10 @@ import { Configuration } from '../../../../../android/content/res/Configuration.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenFactory } from './TouchScreenFactory.js';
-//not GWT import const TouchScreenFactory = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
+//not GWT import - same folder const TouchScreenFactory = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
 
                 import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
-//not GWT import const TouchScreenTypesFactory = globalThis.org.allbinary.input.motion.button.TouchScreenTypesFactory;
+//not GWT import - same folder const TouchScreenTypesFactory = globalThis.org.allbinary.input.motion.button.TouchScreenTypesFactory;
 
                 
 export class TouchScreenTypeFactory

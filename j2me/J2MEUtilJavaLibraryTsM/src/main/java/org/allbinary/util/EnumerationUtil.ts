@@ -21,15 +21,15 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { Enumeration } from '../../../java/util/Enumeration.js';
-      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
+//not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -50,10 +50,10 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { BasicArrayListD } from './BasicArrayListD.js';
+        //not plain js - same folder import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
-                //not plain js import { BasicArrayList } from './BasicArrayList.js';
+                //not plain js - same folder import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
                 //ArkTs does not have this.  So this is for the ArkTs build.

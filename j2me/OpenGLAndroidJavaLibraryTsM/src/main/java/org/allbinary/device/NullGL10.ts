@@ -21,23 +21,23 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
 import { Buffer } from '../../../java/nio/Buffer.js';
-      //not GWT import const Buffer = globalThis.java.nio.Buffer;
+//not GWT import const Buffer = globalThis.java.nio.Buffer;
 
       
 import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
-      //not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
+//not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
 
       
 import { IntBuffer } from '../../../java/nio/IntBuffer.js';
-      //not GWT import const IntBuffer = globalThis.java.nio.IntBuffer;
+//not GWT import const IntBuffer = globalThis.java.nio.IntBuffer;
 
       
-//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 

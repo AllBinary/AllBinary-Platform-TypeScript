@@ -39,16 +39,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSoundsFactory } from './BaseSoundsFactory.js';
-//not GWT import const BaseSoundsFactory = globalThis.org.allbinary.media.audio.BaseSoundsFactory;
+//not GWT import - same folder const BaseSoundsFactory = globalThis.org.allbinary.media.audio.BaseSoundsFactory;
 
                 import { Sound } from './Sound.js';
-//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
+//not GWT import - same folder const Sound = globalThis.org.allbinary.media.audio.Sound;
 
                 import { SelectSound } from './SelectSound.js';
-//not GWT import const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
+//not GWT import - same folder const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
 
                 import { ErrorSound } from './ErrorSound.js';
-//not GWT import const ErrorSound = globalThis.org.allbinary.media.audio.ErrorSound;
+//not GWT import - same folder const ErrorSound = globalThis.org.allbinary.media.audio.ErrorSound;
 
                 
 export class EarlySoundsFactory extends BaseSoundsFactory {

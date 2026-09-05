@@ -19,47 +19,47 @@
 
 
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
-      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
+//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
 import { DirectionUtil } from '../../../org/allbinary/direction/DirectionUtil.js';
-      //not GWT import const DirectionUtil = globalThis.org.allbinary.direction.DirectionUtil;
+//not GWT import const DirectionUtil = globalThis.org.allbinary.direction.DirectionUtil;
 
       
-//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { Angle } from '../../../org/allbinary/math/Angle.js';
-      const Angle = globalThis.org.allbinary.math.Angle;
+//not plain js import { Angle } 
+const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { FrameUtil } from '../../../org/allbinary/math/FrameUtil.js';
-      const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+//not plain js import { FrameUtil } 
+const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
       
-//not plain js import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
-      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+//not plain js import { CircularIndexUtil } 
+const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -81,13 +81,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+//not GWT import - same folder const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
                 import { RotationAnimationInterface } from './RotationAnimationInterface.js';
-//not GWT import const RotationAnimationInterface = globalThis.org.allbinary.animation.RotationAnimationInterface;
+//not GWT import - same folder const RotationAnimationInterface = globalThis.org.allbinary.animation.RotationAnimationInterface;
 
                 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
                 
 export class RotationAnimation extends IndexedAnimation implements RotationAnimationInterface {

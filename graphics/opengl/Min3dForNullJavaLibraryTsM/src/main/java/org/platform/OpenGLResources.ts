@@ -11,7 +11,7 @@
             import { RuntimeException } from '../../java/lang/RuntimeException.js';
         
 import { InputStream } from '../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 

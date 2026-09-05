@@ -21,11 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinarySensorListener } from '../../../../org/allbinary/input/AllBinarySensorListener.js';
-      //not GWT import const AllBinarySensorListener = globalThis.org.allbinary.input.AllBinarySensorListener;
+//not GWT import const AllBinarySensorListener = globalThis.org.allbinary.input.AllBinarySensorListener;
 
       
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-      //not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+//not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
 
       
 
@@ -47,7 +47,7 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryOrientationSensor } from './AllBinaryOrientationSensor.js';
-//not GWT import const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
+//not GWT import - same folder const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
 
                 
 export class NoGyroSensor extends AllBinaryOrientationSensor implements AllBinarySensorListener {

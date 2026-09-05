@@ -23,39 +23,39 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Enumeration } from '../../../../java/util/Enumeration.js';
-      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
+//not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+//not plain js import { PointFactory } 
+const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
-      //not GWT import const LayerInterfaceFactory = globalThis.org.allbinary.layer.LayerInterfaceFactory;
+//not GWT import const LayerInterfaceFactory = globalThis.org.allbinary.layer.LayerInterfaceFactory;
 
       
 import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
-      //not GWT import const LayerInterfaceVisitor = globalThis.org.allbinary.layer.LayerInterfaceVisitor;
+//not GWT import const LayerInterfaceVisitor = globalThis.org.allbinary.layer.LayerInterfaceVisitor;
 
       
-//not plain js import { ABHashtable } from '../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
-      const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+//not plain js import { EnumerationUtil } 
+const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
       
 
@@ -77,13 +77,13 @@ import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterface } from './LayerPlacementInterface.js';
-//not GWT import const LayerPlacementInterface = globalThis.org.allbinary.game.layer.LayerPlacementInterface;
+//not GWT import - same folder const LayerPlacementInterface = globalThis.org.allbinary.game.layer.LayerPlacementInterface;
 
                 import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
+//not GWT import - same folder const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
 
                 import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
-//not GWT import const LayerPlacementTypeFactory = globalThis.org.allbinary.game.layer.LayerPlacementTypeFactory;
+//not GWT import - same folder const LayerPlacementTypeFactory = globalThis.org.allbinary.game.layer.LayerPlacementTypeFactory;
 
                 
 export class LayerPlacer

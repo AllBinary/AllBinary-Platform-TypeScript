@@ -23,23 +23,23 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
-      //not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
+//not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
 
       
-//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -61,22 +61,22 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionToolFactory } from './SelectionToolFactory.js';
-//not GWT import const SelectionToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionToolFactory;
+//not GWT import - same folder const SelectionToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionToolFactory;
 
                 import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
+//not GWT import - same folder const GraphicsItemInterfaceFactoryInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
 
                 import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+//not GWT import - same folder const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
 
                 import { LinesGraphicItemFactory } from './LinesGraphicItemFactory.js';
-//not GWT import const LinesGraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItemFactory;
+//not GWT import - same folder const LinesGraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItemFactory;
 
                 import { GraphicItemBuilder } from './GraphicItemBuilder.js';
-//not GWT import const GraphicItemBuilder = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemBuilder;
+//not GWT import - same folder const GraphicItemBuilder = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemBuilder;
 
                 import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+//not GWT import - same folder const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
                 
 export class GraphicItemFactory

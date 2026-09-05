@@ -21,15 +21,15 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-      //not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
+//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
 
       
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
-      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
+//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 
@@ -51,7 +51,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberLayersSequenceAI } from './NumberLayersSequenceAI.js';
-//not GWT import const NumberLayersSequenceAI = globalThis.org.allbinary.game.ag.ai.sequence.NumberLayersSequenceAI;
+//not GWT import - same folder const NumberLayersSequenceAI = globalThis.org.allbinary.game.ag.ai.sequence.NumberLayersSequenceAI;
 
                 
 export class NumberLayersSequenceAIFactory

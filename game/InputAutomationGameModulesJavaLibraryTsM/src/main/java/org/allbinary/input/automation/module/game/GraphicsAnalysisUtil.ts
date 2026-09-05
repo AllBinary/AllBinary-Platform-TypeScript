@@ -25,23 +25,23 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-      //not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+//not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
 
       
 import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-      //not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+//not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
       
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
 
@@ -63,7 +63,7 @@ import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/u
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.input.automation.module.game.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.input.automation.module.game.Color;
 
                 
 export class GraphicsAnalysisUtil

@@ -18,32 +18,32 @@
         
 
 
-//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } 
+const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-      //not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
 
       
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
-      //not GWT import const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
+//not GWT import const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
 
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-      //not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
       
 import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
-      //not GWT import const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
+//not GWT import const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
 
       
 
@@ -65,16 +65,16 @@ import { CommonButtons } from '../../../../org/allbinary/input/motion/button/Com
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+//not GWT import - same folder const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
                 import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import const RTSLayerCompositePaintable = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
+//not GWT import - same folder const RTSLayerCompositePaintable = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
 
                 import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
-//not GWT import const UpgradableWideRTSLayerPaintable = globalThis.org.allbinary.game.layer.UpgradableWideRTSLayerPaintable;
+//not GWT import - same folder const UpgradableWideRTSLayerPaintable = globalThis.org.allbinary.game.layer.UpgradableWideRTSLayerPaintable;
 
                 import { RTSLayer } from './RTSLayer.js';
-//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
+//not GWT import - same folder const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
                 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {

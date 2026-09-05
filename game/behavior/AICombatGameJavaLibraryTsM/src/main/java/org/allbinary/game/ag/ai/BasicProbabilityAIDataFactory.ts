@@ -22,20 +22,20 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } 
+const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not plain js import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+//not plain js import { SmallIntegerSingletonFactory } 
+const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelayHelper.js';
-      //not GWT import const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
+//not GWT import const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
 
       
-//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -57,7 +57,7 @@ import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputProbability } from './InputProbability.js';
-//not GWT import const InputProbability = globalThis.org.allbinary.game.ag.ai.InputProbability;
+//not GWT import - same folder const InputProbability = globalThis.org.allbinary.game.ag.ai.InputProbability;
 
                 
 export class BasicProbabilityAIDataFactory

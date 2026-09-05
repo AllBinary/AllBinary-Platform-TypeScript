@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { InputRobotInterface } from '../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-      //not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+//not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
       
 
@@ -43,7 +43,7 @@ import { InputRobotInterface } from '../../../../org/allbinary/input/automation/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotServiceInterface } from './InputAutomationRobotServiceInterface.js';
-//not GWT import const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
+//not GWT import - same folder const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
 
                 
 export class InputAutomationRobotService

@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } 
+const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
-      //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
       
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 
@@ -51,7 +51,7 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintProcessor } from './ScreenRepaintProcessor.js';
-//not GWT import const ScreenRepaintProcessor = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintProcessor;
+//not GWT import - same folder const ScreenRepaintProcessor = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintProcessor;
 
                 
 export class ScreenRepaintProcessorFactory

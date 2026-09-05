@@ -21,11 +21,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
-      //not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
+//not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
 
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 
@@ -47,7 +47,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactory } from './GameAdStateFactory.js';
-//not GWT import const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
+//not GWT import - same folder const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
 
                 
 export class BottomLimiter

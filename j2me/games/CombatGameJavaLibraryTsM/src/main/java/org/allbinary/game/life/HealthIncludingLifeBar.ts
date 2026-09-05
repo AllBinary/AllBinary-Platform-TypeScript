@@ -20,36 +20,36 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { Health } from '../../../../org/allbinary/game/health/Health.js';
-      //not GWT import const Health = globalThis.org.allbinary.game.health.Health;
+//not GWT import const Health = globalThis.org.allbinary.game.health.Health;
 
       
 import { HealthBarAnimation } from '../../../../org/allbinary/game/health/HealthBarAnimation.js';
-      //not GWT import const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
+//not GWT import const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
 
       
 import { HealthBarTwodAnimation } from '../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
-      //not GWT import const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
+//not GWT import const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
 
       
 import { HealthInterface } from '../../../../org/allbinary/game/health/HealthInterface.js';
-      //not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
+//not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
 
       
 import { HealthListenerInterface } from '../../../../org/allbinary/game/health/HealthListenerInterface.js';
-      //not GWT import const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
+//not GWT import const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
 
       
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 
@@ -71,7 +71,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Life } from './Life.js';
-//not GWT import const Life = globalThis.org.allbinary.game.life.Life;
+//not GWT import - same folder const Life = globalThis.org.allbinary.game.life.Life;
 
                 
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {

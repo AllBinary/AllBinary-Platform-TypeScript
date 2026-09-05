@@ -21,31 +21,31 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-      //not GWT import const Matrix = globalThis.android.graphics.Matrix;
+//not GWT import const Matrix = globalThis.android.graphics.Matrix;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not plain js import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidImageUtil.js';
-      //not GWT import const AndroidImageUtil = globalThis.org.allbinary.media.image.AndroidImageUtil;
+//not GWT import const AndroidImageUtil = globalThis.org.allbinary.media.image.AndroidImageUtil;
 
       
-//not plain js import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-      const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+//not plain js import { ImageModifierUtil } 
+const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
 
@@ -67,7 +67,7 @@ import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
+//not GWT import - same folder const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
                 
 export class AllBinaryFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {

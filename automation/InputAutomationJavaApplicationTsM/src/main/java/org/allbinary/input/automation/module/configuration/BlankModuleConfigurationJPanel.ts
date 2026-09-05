@@ -37,16 +37,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.input.automation.module.configuration.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.configuration.JPanel;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.input.automation.module.configuration.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.module.configuration.JLabel;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.input.automation.module.configuration.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.module.configuration.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.input.automation.module.configuration.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.module.configuration.Short;
 
                 
 export class BlankModuleConfigurationJPanel extends javax.swing.JPanel {

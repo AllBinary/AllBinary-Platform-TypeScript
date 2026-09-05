@@ -25,7 +25,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FixedPoint } from './FixedPoint.js';
-//not GWT import const FixedPoint = globalThis.org.allbinary.animation.FixedPoint;
+//not GWT import - same folder const FixedPoint = globalThis.org.allbinary.animation.FixedPoint;
 
                 
 export class PGUtil

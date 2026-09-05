@@ -6,12 +6,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 
@@ -33,7 +33,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogLocationInput } from './AnalogLocationInput.js';
-//not GWT import const AnalogLocationInput = globalThis.org.allbinary.game.input.analog.AnalogLocationInput;
+//not GWT import - same folder const AnalogLocationInput = globalThis.org.allbinary.game.input.analog.AnalogLocationInput;
 
                 
 export class AnalogLocationInputFactory

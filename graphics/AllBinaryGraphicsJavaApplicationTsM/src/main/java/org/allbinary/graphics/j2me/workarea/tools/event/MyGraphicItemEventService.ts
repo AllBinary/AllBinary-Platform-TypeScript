@@ -43,16 +43,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerList } from './EventListenerList.js';
-//not GWT import const EventListenerList = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventListenerList;
+//not GWT import - same folder const EventListenerList = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventListenerList;
 
                 import { EventListener } from './EventListener.js';
-//not GWT import const EventListener = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventListener;
+//not GWT import - same folder const EventListener = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventListener;
 
                 import { MyGraphicItemEventListener } from './MyGraphicItemEventListener.js';
-//not GWT import const MyGraphicItemEventListener = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventListener;
+//not GWT import - same folder const MyGraphicItemEventListener = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventListener;
 
                 import { MyGraphicItemEvent } from './MyGraphicItemEvent.js';
-//not GWT import const MyGraphicItemEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
+//not GWT import - same folder const MyGraphicItemEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
 
                 
 export class MyGraphicItemEventService

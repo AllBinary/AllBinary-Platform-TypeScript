@@ -7,31 +7,31 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { IOException } from '../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
-      //not GWT import const MalformedURLException = globalThis.java.net.MalformedURLException;
+//not GWT import const MalformedURLException = globalThis.java.net.MalformedURLException;
 
       
 import { URL } from '../../../java/net/URL.js';
-      //not GWT import const URL = globalThis.java.net.URL;
+//not GWT import const URL = globalThis.java.net.URL;
 
       
-//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
-      //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+//not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
 
       
-//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -53,7 +53,7 @@ import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/Cryp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcHandler } from './XmlRpcHandler.js';
-//not GWT import const XmlRpcHandler = globalThis.org.apache.xmlrpc.XmlRpcHandler;
+//not GWT import - same folder const XmlRpcHandler = globalThis.org.apache.xmlrpc.XmlRpcHandler;
 
                 
 export class XmlRpcClient

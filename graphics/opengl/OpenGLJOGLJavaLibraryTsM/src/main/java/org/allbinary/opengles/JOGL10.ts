@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
-      //not GWT import const GLU = globalThis.com.jogamp.opengl.glu.GLU;
+//not GWT import const GLU = globalThis.com.jogamp.opengl.glu.GLU;
 
       
 
@@ -43,22 +43,22 @@ import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
-//not GWT import const GL10 = globalThis.org.allbinary.opengles.GL10;
+//not GWT import - same folder const GL10 = globalThis.org.allbinary.opengles.GL10;
 
                 import { GL2 } from './GL2.js';
-//not GWT import const GL2 = globalThis.org.allbinary.opengles.GL2;
+//not GWT import - same folder const GL2 = globalThis.org.allbinary.opengles.GL2;
 
                 import { GL } from './GL.js';
-//not GWT import const GL = globalThis.org.allbinary.opengles.GL;
+//not GWT import - same folder const GL = globalThis.org.allbinary.opengles.GL;
 
                 import { Buffer } from './Buffer.js';
-//not GWT import const Buffer = globalThis.org.allbinary.opengles.Buffer;
+//not GWT import - same folder const Buffer = globalThis.org.allbinary.opengles.Buffer;
 
                 import { IntBuffer } from './IntBuffer.js';
-//not GWT import const IntBuffer = globalThis.org.allbinary.opengles.IntBuffer;
+//not GWT import - same folder const IntBuffer = globalThis.org.allbinary.opengles.IntBuffer;
 
                 import { FloatBuffer } from './FloatBuffer.js';
-//not GWT import const FloatBuffer = globalThis.org.allbinary.opengles.FloatBuffer;
+//not GWT import - same folder const FloatBuffer = globalThis.org.allbinary.opengles.FloatBuffer;
 
                 //JOGLEToKhronosGL10
 export class JOGL10

@@ -19,11 +19,11 @@
 
 
 import { XmlOptionItemsHelperFactory } from '../../admin/taghelpers/XmlOptionItemsHelperFactory.js';
-      //not GWT import const XmlOptionItemsHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsHelperFactory;
+//not GWT import const XmlOptionItemsHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsHelperFactory;
 
       
 import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOptionItemsRequestHelperFactory.js';
-      //not GWT import const XmlOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsRequestHelperFactory;
+//not GWT import const XmlOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsRequestHelperFactory;
 
       
 
@@ -45,7 +45,7 @@ import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class XmlOptionItemsTag extends TableTag {

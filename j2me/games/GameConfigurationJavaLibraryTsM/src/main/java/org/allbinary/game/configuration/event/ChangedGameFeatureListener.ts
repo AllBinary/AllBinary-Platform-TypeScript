@@ -19,15 +19,15 @@
 
 
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { GameConfiguration } from '../../../../../org/allbinary/game/configuration/GameConfiguration.js';
-      //not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
+//not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
 
       
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -49,7 +49,7 @@ import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseChangedGameFeatureListener } from './BaseChangedGameFeatureListener.js';
-//not GWT import const BaseChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.BaseChangedGameFeatureListener;
+//not GWT import - same folder const BaseChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.BaseChangedGameFeatureListener;
 
                 
 export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {

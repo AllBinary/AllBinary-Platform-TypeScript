@@ -23,11 +23,11 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { Calendar } from '../../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 //import { Date } from '../../../java/util/Date.js';
-      //not GWT import const Date = globalThis.java.util.Date;
+//not GWT import const Date = globalThis.java.util.Date;
 
       
 

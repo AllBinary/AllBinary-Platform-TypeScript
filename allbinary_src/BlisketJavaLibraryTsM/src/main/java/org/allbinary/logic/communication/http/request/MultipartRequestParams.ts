@@ -21,43 +21,43 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { List } from '../../../../../../java/util/List.js';
-      //not GWT import const List = globalThis.java.util.List;
+//not GWT import const List = globalThis.java.util.List;
 
       
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
 import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
-      //not GWT import const AbFileUploadFactory = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUploadFactory;
+//not GWT import const AbFileUploadFactory = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUploadFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
-      //not GWT import const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+//not GWT import const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
 
       
 import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
-      //not GWT import const InvalidContentTypeException = globalThis.org.apache.commons.fileupload.FileUploadBase.InvalidContentTypeException;
+//not GWT import const InvalidContentTypeException = globalThis.org.apache.commons.fileupload.FileUploadBase.InvalidContentTypeException;
 
       
 
@@ -79,7 +79,7 @@ import { InvalidContentTypeException } from '../../../../../../org/apache/common
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestParams } from './RequestParams.js';
-//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import - same folder const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
                 
 export class MultipartRequestParams extends RequestParams {

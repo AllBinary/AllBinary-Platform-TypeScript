@@ -23,23 +23,23 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { NullParcelable } from '../../../org/allbinary/android/NullParcelable.js';
-      //not GWT import const NullParcelable = globalThis.org.allbinary.android.NullParcelable;
+//not GWT import const NullParcelable = globalThis.org.allbinary.android.NullParcelable;
 
       
-//not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } 
+const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 import { PendingIntent } from '../../../android/app/PendingIntent.js';
-      //not GWT import const PendingIntent = globalThis.android.app.PendingIntent;
+//not GWT import const PendingIntent = globalThis.android.app.PendingIntent;
 
       
 import { Context } from '../../../android/content/Context.js';
-      //not GWT import const Context = globalThis.android.content.Context;
+//not GWT import const Context = globalThis.android.content.Context;
 
       
 import { Parcelable } from '../../../android/os/Parcelable.js';
-      //not GWT import const Parcelable = globalThis.android.os.Parcelable;
+//not GWT import const Parcelable = globalThis.android.os.Parcelable;
 
       
 

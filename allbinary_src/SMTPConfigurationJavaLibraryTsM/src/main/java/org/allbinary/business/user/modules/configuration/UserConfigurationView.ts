@@ -23,47 +23,47 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
 import { TimeCreatedView } from '../../../../../../org/allbinary/business/time/created/TimeCreatedView.js';
-      //not GWT import const TimeCreatedView = globalThis.org.allbinary.business.time.created.TimeCreatedView;
+//not GWT import const TimeCreatedView = globalThis.org.allbinary.business.time.created.TimeCreatedView;
 
       
 import { TimeLastModifiedView } from '../../../../../../org/allbinary/business/time/modified/TimeLastModifiedView.js';
-      //not GWT import const TimeLastModifiedView = globalThis.org.allbinary.business.time.modified.TimeLastModifiedView;
+//not GWT import const TimeLastModifiedView = globalThis.org.allbinary.business.time.modified.TimeLastModifiedView;
 
       
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
 import { UserEmailConfigurationData } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationData.js';
-      //not GWT import const UserEmailConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
+//not GWT import const UserEmailConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
 
       
 import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
-      //not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
+//not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
       
 import { UserEmailConfigurationView } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationView.js';
-      //not GWT import const UserEmailConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationView;
+//not GWT import const UserEmailConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationView;
 
       
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
+//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 
@@ -85,13 +85,13 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+//not GWT import - same folder const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
                 import { UserConfiguration } from './UserConfiguration.js';
-//not GWT import const UserConfiguration = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
+//not GWT import - same folder const UserConfiguration = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
 
                 import { UserConfigurationData } from './UserConfigurationData.js';
-//not GWT import const UserConfigurationData = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
+//not GWT import - same folder const UserConfigurationData = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
 
                 
 export class UserConfigurationView

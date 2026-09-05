@@ -21,19 +21,19 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
-      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+//not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
 import { VirtualKeyboardAPI1 } from '../../../../org/allbinary/android/input/api1/VirtualKeyboardAPI1.js';
-      //not GWT import const VirtualKeyboardAPI1 = globalThis.org.allbinary.android.input.api1.VirtualKeyboardAPI1;
+//not GWT import const VirtualKeyboardAPI1 = globalThis.org.allbinary.android.input.api1.VirtualKeyboardAPI1;
 
       
 import { VirtualKeyboardAPI3 } from '../../../../org/allbinary/android/input/api3/VirtualKeyboardAPI3.js';
-      //not GWT import const VirtualKeyboardAPI3 = globalThis.org.allbinary.android.input.api3.VirtualKeyboardAPI3;
+//not GWT import const VirtualKeyboardAPI3 = globalThis.org.allbinary.android.input.api3.VirtualKeyboardAPI3;
 
       
 import { Activity } from '../../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 
@@ -55,7 +55,7 @@ import { Activity } from '../../../../android/app/Activity.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VirtualKeyboard } from './VirtualKeyboard.js';
-//not GWT import const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
+//not GWT import - same folder const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
 
                 
 export class VirtualKeyboardFactory

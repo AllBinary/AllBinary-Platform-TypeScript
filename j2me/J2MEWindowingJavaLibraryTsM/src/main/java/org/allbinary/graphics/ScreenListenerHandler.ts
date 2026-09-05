@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenEmptyListener } from './ScreenEmptyListener.js';
-//not GWT import const ScreenEmptyListener = globalThis.org.allbinary.graphics.ScreenEmptyListener;
+//not GWT import - same folder const ScreenEmptyListener = globalThis.org.allbinary.graphics.ScreenEmptyListener;
 
                 import { ScreenListenerInterface } from './ScreenListenerInterface.js';
-//not GWT import const ScreenListenerInterface = globalThis.org.allbinary.graphics.ScreenListenerInterface;
+//not GWT import - same folder const ScreenListenerInterface = globalThis.org.allbinary.graphics.ScreenListenerInterface;
 
                 
 export class ScreenListenerHandler

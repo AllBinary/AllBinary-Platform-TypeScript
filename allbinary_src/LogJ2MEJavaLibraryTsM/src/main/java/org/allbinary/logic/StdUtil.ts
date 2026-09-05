@@ -20,16 +20,16 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-//not plain js import { ABStack } from '../../../org/allbinary/util/ABStack.js';
-      const ABStack = globalThis.org.allbinary.util.ABStack;
+//not plain js import { ABStack } 
+const ABStack = globalThis.org.allbinary.util.ABStack;
 
       
-//not plain js import { ABVector } from '../../../org/allbinary/util/ABVector.js';
-      const ABVector = globalThis.org.allbinary.util.ABVector;
+//not plain js import { ABVector } 
+const ABVector = globalThis.org.allbinary.util.ABVector;
 
       
 

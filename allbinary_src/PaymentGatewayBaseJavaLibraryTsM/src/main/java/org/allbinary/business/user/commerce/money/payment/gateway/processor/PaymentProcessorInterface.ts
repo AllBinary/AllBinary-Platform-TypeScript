@@ -21,11 +21,11 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { PaymentException } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js';
-      //not GWT import const PaymentException = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentException;
+//not GWT import const PaymentException = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentException;
 
       
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 

@@ -20,20 +20,20 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } 
+const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
-      //not GWT import const AppletUtil = globalThis.org.allbinary.AppletUtil;
+//not GWT import const AppletUtil = globalThis.org.allbinary.AppletUtil;
 
       
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
-      //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
       
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
+//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 
@@ -55,7 +55,7 @@ import { Processor } from '../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MidletExitProcessor } from './MidletExitProcessor.js';
-//not GWT import const MidletExitProcessor = globalThis.org.allbinary.midlet.MidletExitProcessor;
+//not GWT import - same folder const MidletExitProcessor = globalThis.org.allbinary.midlet.MidletExitProcessor;
 
                 
 export class MidletExitProcessorFactory

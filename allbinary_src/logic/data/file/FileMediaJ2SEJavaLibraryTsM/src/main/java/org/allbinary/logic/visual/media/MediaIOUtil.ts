@@ -7,7 +7,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
-      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
+//not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
 

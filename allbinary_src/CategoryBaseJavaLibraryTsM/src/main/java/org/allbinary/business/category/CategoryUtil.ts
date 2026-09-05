@@ -21,39 +21,39 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
 import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
-      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+//not plain js import { AbPathData } 
+const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
-      //not GWT import const StringUtils = globalThis.org.apache.commons.lang3.StringUtils;
+//not GWT import const StringUtils = globalThis.org.apache.commons.lang3.StringUtils;
 
       
 import { Attr } from '../../../../org/w3c/dom/Attr.js';
-      //not GWT import const Attr = globalThis.org.w3c.dom.Attr;
+//not GWT import const Attr = globalThis.org.w3c.dom.Attr;
 
       
 import { NamedNodeMap } from '../../../../org/w3c/dom/NamedNodeMap.js';
-      //not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
+//not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
 
       
 import { Node } from '../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -75,7 +75,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryData } from './CategoryData.js';
-//not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+//not GWT import - same folder const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
                 
 export class CategoryUtil

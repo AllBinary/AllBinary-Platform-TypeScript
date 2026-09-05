@@ -19,7 +19,7 @@
 
 
 import { EventObject } from '../../../../../java/util/EventObject.js';
-      //not GWT import const EventObject = globalThis.java.util.EventObject;
+//not GWT import const EventObject = globalThis.java.util.EventObject;
 
       
 

@@ -21,51 +21,51 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Category } from '../../../../../org/allbinary/business/category/Category.js';
-      //not GWT import const Category = globalThis.org.allbinary.business.category.Category;
+//not GWT import const Category = globalThis.org.allbinary.business.category.Category;
 
       
 import { CategoryAbstractFactory } from '../../../../../org/allbinary/business/category/CategoryAbstractFactory.js';
-      //not GWT import const CategoryAbstractFactory = globalThis.org.allbinary.business.category.CategoryAbstractFactory;
+//not GWT import const CategoryAbstractFactory = globalThis.org.allbinary.business.category.CategoryAbstractFactory;
 
       
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+//not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
 import { CategoryUtil } from '../../../../../org/allbinary/business/category/CategoryUtil.js';
-      //not GWT import const CategoryUtil = globalThis.org.allbinary.business.category.CategoryUtil;
+//not GWT import const CategoryUtil = globalThis.org.allbinary.business.category.CategoryUtil;
 
       
 import { CategoryPropertiesFactoryInterface } from '../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
-      //not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
+//not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
 
       
 import { RootStoreCategoryPropertiesFactory } from '../../../../../org/allbinary/business/category/properties/root/store/RootStoreCategoryPropertiesFactory.js';
-      //not GWT import const RootStoreCategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.root.store.RootStoreCategoryPropertiesFactory;
+//not GWT import const RootStoreCategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.root.store.RootStoreCategoryPropertiesFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

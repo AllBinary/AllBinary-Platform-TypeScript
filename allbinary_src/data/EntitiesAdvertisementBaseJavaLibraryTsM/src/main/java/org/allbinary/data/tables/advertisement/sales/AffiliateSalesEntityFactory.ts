@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -49,10 +49,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AffiliateSalesEntity } from './AffiliateSalesEntity.js';
-//not GWT import const AffiliateSalesEntity = globalThis.org.allbinary.data.tables.advertisement.sales.AffiliateSalesEntity;
+//not GWT import - same folder const AffiliateSalesEntity = globalThis.org.allbinary.data.tables.advertisement.sales.AffiliateSalesEntity;
 
                 import { AffiliateSalesEntityInterface } from './AffiliateSalesEntityInterface.js';
-//not GWT import const AffiliateSalesEntityInterface = globalThis.org.allbinary.data.tables.advertisement.sales.AffiliateSalesEntityInterface;
+//not GWT import - same folder const AffiliateSalesEntityInterface = globalThis.org.allbinary.data.tables.advertisement.sales.AffiliateSalesEntityInterface;
 
                 
 export class AffiliateSalesEntityFactory

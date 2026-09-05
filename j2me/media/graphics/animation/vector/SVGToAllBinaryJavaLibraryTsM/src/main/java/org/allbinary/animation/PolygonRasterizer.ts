@@ -25,10 +25,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathParser } from './PathParser.js';
-//not GWT import const PathParser = globalThis.org.allbinary.animation.PathParser;
+//not GWT import - same folder const PathParser = globalThis.org.allbinary.animation.PathParser;
 
                 import { FixedPoint } from './FixedPoint.js';
-//not GWT import const FixedPoint = globalThis.org.allbinary.animation.FixedPoint;
+//not GWT import - same folder const FixedPoint = globalThis.org.allbinary.animation.FixedPoint;
 
                 
 export class PolygonRasterizer

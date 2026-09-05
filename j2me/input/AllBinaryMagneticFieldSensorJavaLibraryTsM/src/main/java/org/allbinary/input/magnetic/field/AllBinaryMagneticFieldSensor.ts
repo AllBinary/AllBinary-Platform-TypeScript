@@ -19,7 +19,7 @@
 
 
 import { AllBinarySensor } from '../../../../../org/allbinary/input/AllBinarySensor.js';
-      //not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+//not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
 
       
 

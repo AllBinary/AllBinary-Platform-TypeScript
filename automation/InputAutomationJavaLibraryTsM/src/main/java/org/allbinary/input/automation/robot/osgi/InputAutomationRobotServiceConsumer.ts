@@ -19,15 +19,15 @@
 
 
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
+//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
 import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
-      //not GWT import const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
+//not GWT import const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
 
       
 import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
-      //not GWT import const InputAutomationServiceConsumer = globalThis.org.allbinary.osgi.service.InputAutomationServiceConsumer;
+//not GWT import const InputAutomationServiceConsumer = globalThis.org.allbinary.osgi.service.InputAutomationServiceConsumer;
 
       
 
@@ -49,7 +49,7 @@ import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotOSGIServiceVisitor } from './InputAutomationRobotOSGIServiceVisitor.js';
-//not GWT import const InputAutomationRobotOSGIServiceVisitor = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotOSGIServiceVisitor;
+//not GWT import - same folder const InputAutomationRobotOSGIServiceVisitor = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotOSGIServiceVisitor;
 
                 
 export class InputAutomationRobotServiceConsumer extends InputAutomationServiceConsumer {

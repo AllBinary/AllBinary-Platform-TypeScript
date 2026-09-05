@@ -19,15 +19,15 @@
 
 
 import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
-      //not GWT import const FilenameFilter = globalThis.java.io.FilenameFilter;
+//not GWT import const FilenameFilter = globalThis.java.io.FilenameFilter;
 
       
 import { IOException } from '../../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { URI } from '../../../../../java/net/URI.js';
-      //not GWT import const URI = globalThis.java.net.URI;
+//not GWT import const URI = globalThis.java.net.URI;
 
       
 

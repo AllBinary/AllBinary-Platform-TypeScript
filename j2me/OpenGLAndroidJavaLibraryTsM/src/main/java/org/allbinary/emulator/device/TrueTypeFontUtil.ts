@@ -21,79 +21,79 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { File } from '../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
-      //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
+//not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
+//not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
+//not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
 import { Paint } from '../../../../android/graphics/Paint.js';
-      //not GWT import const Paint = globalThis.android.graphics.Paint;
+//not GWT import const Paint = globalThis.android.graphics.Paint;
 
       
 import { Rect } from '../../../../android/graphics/Rect.js';
-      //not GWT import const Rect = globalThis.android.graphics.Rect;
+//not GWT import const Rect = globalThis.android.graphics.Rect;
 
       
 import { Typeface } from '../../../../android/graphics/Typeface.js';
-      //not GWT import const Typeface = globalThis.android.graphics.Typeface;
+//not GWT import const Typeface = globalThis.android.graphics.Typeface;
 
       
-//not plain js import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+//not plain js import { ResourceUtil } 
+const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+//not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not plain js import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//not plain js import { OpenGLESImage } 
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+//not plain js import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 import { AndroidImmutableImage } from '../../../../org/microemu/android/device/AndroidImmutableImage.js';
-      //not GWT import const AndroidImmutableImage = globalThis.org.microemu.android.device.AndroidImmutableImage;
+//not GWT import const AndroidImmutableImage = globalThis.org.microemu.android.device.AndroidImmutableImage;
 
       
 
@@ -115,7 +115,7 @@ import { AndroidImmutableImage } from '../../../../org/microemu/android/device/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
-//not GWT import const TrueTypeFontUtilBase = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
+//not GWT import - same folder const TrueTypeFontUtilBase = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
 
                 //TTF
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {

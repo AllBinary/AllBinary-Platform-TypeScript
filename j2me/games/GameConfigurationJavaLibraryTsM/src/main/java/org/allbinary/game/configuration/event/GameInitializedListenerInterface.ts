@@ -19,7 +19,7 @@
 
 
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 
@@ -41,7 +41,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializedEvent } from './GameInitializedEvent.js';
-//not GWT import const GameInitializedEvent = globalThis.org.allbinary.game.configuration.event.GameInitializedEvent;
+//not GWT import - same folder const GameInitializedEvent = globalThis.org.allbinary.game.configuration.event.GameInitializedEvent;
 
                 
 export interface GameInitializedListenerInterface extends EventListenerInterface {

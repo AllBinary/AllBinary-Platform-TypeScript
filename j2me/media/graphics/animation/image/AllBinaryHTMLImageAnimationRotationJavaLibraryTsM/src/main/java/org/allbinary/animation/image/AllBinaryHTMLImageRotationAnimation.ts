@@ -20,48 +20,48 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not plain js import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not plain js import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-      const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+//not plain js import { ImageCopyUtil } 
+const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
-//not plain js import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-      const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+//not plain js import { ImageModifierUtil } 
+const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
-//not plain js import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
-      const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
+//not plain js import { ImageRotationUtil } 
+const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
 
       
-//not plain js import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-      const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+//not plain js import { PlaynMutableImage } 
+const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not plain js import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-      const CanvasImage = globalThis.playn.core.CanvasImage;
+//not plain js import { CanvasImage } 
+const CanvasImage = globalThis.playn.core.CanvasImage;
 
       
-//not plain js import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
-      const CanvasSurface = globalThis.playn.core.CanvasSurface;
+//not plain js import { CanvasSurface } 
+const CanvasSurface = globalThis.playn.core.CanvasSurface;
 
       
 
@@ -83,13 +83,13 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
+//not GWT import - same folder const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
                 import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-//not GWT import const AlphaBaseProcessor = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
+//not GWT import - same folder const AlphaBaseProcessor = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
 
                 import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import const AlphaProcessor = globalThis.org.allbinary.animation.image.AlphaProcessor;
+//not GWT import - same folder const AlphaProcessor = globalThis.org.allbinary.animation.image.AlphaProcessor;
 
                 
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {

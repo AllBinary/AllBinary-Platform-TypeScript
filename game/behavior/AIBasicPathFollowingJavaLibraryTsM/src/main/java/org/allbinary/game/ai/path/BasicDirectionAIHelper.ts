@@ -24,24 +24,24 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } 
+const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
+//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-      //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+//not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
-//not plain js import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
-      const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
+//not plain js import { AngleIncrementInfo } 
+const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
       
-//not plain js import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+//not plain js import { AngleInfo } 
+const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 

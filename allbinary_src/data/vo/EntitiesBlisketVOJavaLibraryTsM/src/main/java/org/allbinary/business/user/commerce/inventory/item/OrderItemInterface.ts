@@ -19,7 +19,7 @@
 
 
 import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
 
@@ -41,7 +41,7 @@ import { StreetAddress } from '../../../../../../../org/allbinary/business/user/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemInterface } from './ItemInterface.js';
-//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+//not GWT import - same folder const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
                 
 export interface OrderItemInterface extends ItemInterface {

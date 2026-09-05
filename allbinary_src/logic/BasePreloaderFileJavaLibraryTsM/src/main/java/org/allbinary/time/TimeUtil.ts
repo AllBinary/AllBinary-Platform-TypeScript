@@ -23,7 +23,7 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { Calendar } from '../../../java/util/Calendar.js';
-      //not GWT import const Calendar = globalThis.java.util.Calendar;
+//not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 

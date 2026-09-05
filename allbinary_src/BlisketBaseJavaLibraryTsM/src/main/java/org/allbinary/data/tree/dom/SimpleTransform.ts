@@ -23,31 +23,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
-      //not GWT import const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
+//not GWT import const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
 
       
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+//not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
 import { AbFileLocalInputStream } from '../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
-      //not GWT import const AbFileLocalInputStream = globalThis.org.allbinary.logic.io.AbFileLocalInputStream;
+//not GWT import const AbFileLocalInputStream = globalThis.org.allbinary.logic.io.AbFileLocalInputStream;
 
       
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 
@@ -69,7 +69,7 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XslHelper } from './XslHelper.js';
-//not GWT import const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
+//not GWT import - same folder const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
 
                 
 export class SimpleTransform

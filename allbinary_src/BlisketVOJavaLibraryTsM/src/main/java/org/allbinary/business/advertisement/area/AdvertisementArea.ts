@@ -23,23 +23,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { AdvertisementCampaignData } from '../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
-      //not GWT import const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
+//not GWT import const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
 
       
 import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 
@@ -61,16 +61,16 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaInterface } from './AdvertisementAreaInterface.js';
-//not GWT import const AdvertisementAreaInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
+//not GWT import - same folder const AdvertisementAreaInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
 
                 import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import const AdvertisementAreaConstraintsInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
+//not GWT import - same folder const AdvertisementAreaConstraintsInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
 
                 import { AdvertisementAreaData } from './AdvertisementAreaData.js';
-//not GWT import const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
+//not GWT import - same folder const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
 
                 import { AdvertisementAreaConstraints } from './AdvertisementAreaConstraints.js';
-//not GWT import const AdvertisementAreaConstraints = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraints;
+//not GWT import - same folder const AdvertisementAreaConstraints = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraints;
 
                 
 export class AdvertisementArea

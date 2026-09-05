@@ -19,11 +19,11 @@
 
 
 import { swing } from '../../../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
-      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
 
@@ -45,7 +45,7 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import const JPopupMenu = globalThis.org.allbinary.input.automation.actions.script.condition.JPopupMenu;
+//not GWT import - same folder const JPopupMenu = globalThis.org.allbinary.input.automation.actions.script.condition.JPopupMenu;
 
                 
 export interface CustomTreeNodeInterface extends MutableTreeNode {

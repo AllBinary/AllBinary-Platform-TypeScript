@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
+//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
+//not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
+//not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-      //not GWT import const Matrix = globalThis.android.graphics.Matrix;
+//not GWT import const Matrix = globalThis.android.graphics.Matrix;
 
       
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 
@@ -64,7 +64,7 @@ import { AndroidImageInterface } from '../../../../org/microemu/android/device/A
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+        //not plain js - same folder import { ImageCreationUtil } 
 const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 

@@ -21,11 +21,11 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { awt } from '../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
-//not plain js import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
-      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+//not plain js import { GPoint } 
+const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 
@@ -47,7 +47,7 @@ import { awt } from '../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.collision.Rectangle;
+//not GWT import - same folder const Rectangle = globalThis.org.allbinary.collision.Rectangle;
 
                 
 export class RectangleCollisionUtil

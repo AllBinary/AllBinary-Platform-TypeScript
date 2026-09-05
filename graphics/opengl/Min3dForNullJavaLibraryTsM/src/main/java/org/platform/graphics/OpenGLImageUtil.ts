@@ -5,7 +5,7 @@
 
 
 import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
-      //not GWT import const OpenGLImageUtilBase = globalThis.org.allbinary.image.opengles.OpenGLImageUtilBase;
+//not GWT import const OpenGLImageUtilBase = globalThis.org.allbinary.image.opengles.OpenGLImageUtilBase;
 
       
 

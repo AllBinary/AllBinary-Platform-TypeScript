@@ -21,7 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Comparator } from '../../../../../java/util/Comparator.js';
-      //not GWT import const Comparator = globalThis.java.util.Comparator;
+//not GWT import const Comparator = globalThis.java.util.Comparator;
 
       
 

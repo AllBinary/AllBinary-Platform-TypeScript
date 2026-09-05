@@ -20,28 +20,28 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not plain js import { StdUtil } from '../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { HtmlInput } from '../../../../../../org/allbinary/logic/visual/dhtml/html/input/HtmlInput.js';
-      //not GWT import const HtmlInput = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInput;
+//not GWT import const HtmlInput = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInput;
 
       
 import { HtmlTable } from '../../../../../../org/allbinary/logic/visual/dhtml/html/table/HtmlTable.js';
-      //not GWT import const HtmlTable = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlTable;
+//not GWT import const HtmlTable = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlTable;
 
       
 

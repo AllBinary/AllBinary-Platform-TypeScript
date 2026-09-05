@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TestClientInformation } from './TestClientInformation.js';
-//not GWT import const TestClientInformation = globalThis.org.allbinary.logic.system.security.licensing.TestClientInformation;
+//not GWT import - same folder const TestClientInformation = globalThis.org.allbinary.logic.system.security.licensing.TestClientInformation;
 
                 import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import - same folder const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
                 
 export class ServiceClientInformationInterfaceFactory

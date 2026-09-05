@@ -23,15 +23,15 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { ValidationInterface } from '../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-      //not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
       
 import { FontFamilyValidation } from '../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/font/FontFamilyValidation.js';
-      //not GWT import const FontFamilyValidation = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyValidation;
+//not GWT import const FontFamilyValidation = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyValidation;
 
       
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

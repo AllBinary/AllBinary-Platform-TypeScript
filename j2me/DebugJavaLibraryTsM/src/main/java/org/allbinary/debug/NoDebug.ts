@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DebugInterface } from './DebugInterface.js';
-//not GWT import const DebugInterface = globalThis.org.allbinary.debug.DebugInterface;
+//not GWT import - same folder const DebugInterface = globalThis.org.allbinary.debug.DebugInterface;
 
                 
 export class NoDebug

@@ -27,39 +27,39 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { IOException } from '../../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
-      //not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
+//not GWT import const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { SpecialMessageUtil } from '../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
-      //not GWT import const SpecialMessageUtil = globalThis.org.allbinary.canvas.SpecialMessageUtil;
+//not GWT import const SpecialMessageUtil = globalThis.org.allbinary.canvas.SpecialMessageUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
-//not plain js import { ABHashtable } from '../../../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 
@@ -80,14 +80,14 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { Log } from './Log.js';
+        //not plain js - same folder import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
-                //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+                //not plain js - same folder import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
                 import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
-//not GWT import const XmlRpcRemoteLogClient = globalThis.org.allbinary.logic.communication.log.XmlRpcRemoteLogClient;
+//not GWT import - same folder const XmlRpcRemoteLogClient = globalThis.org.allbinary.logic.communication.log.XmlRpcRemoteLogClient;
 
                 //ActualPlatform
 /*actual*/ export class LogUtil

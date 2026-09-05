@@ -23,7 +23,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js';
-      //not GWT import const OperatingSystemInterface = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
+//not GWT import const OperatingSystemInterface = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
 
       
 
@@ -45,10 +45,10 @@ import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/sys
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHardware } from './NoHardware.js';
-//not GWT import const NoHardware = globalThis.org.allbinary.logic.system.hardware.NoHardware;
+//not GWT import - same folder const NoHardware = globalThis.org.allbinary.logic.system.hardware.NoHardware;
 
                 import { HardwareInterface } from './HardwareInterface.js';
-//not GWT import const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
+//not GWT import - same folder const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
 
                 
 export class HardwareFactory

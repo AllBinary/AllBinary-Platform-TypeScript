@@ -21,31 +21,31 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not plain js import { ABHashMap } from '../../../org/allbinary/util/ABHashMap.js';
-      const ABHashMap = globalThis.org.allbinary.util.ABHashMap;
+//not plain js import { ABHashMap } 
+const ABHashMap = globalThis.org.allbinary.util.ABHashMap;
 
       
-//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
-//not plain js import { ABStack } from '../../../org/allbinary/util/ABStack.js';
-      const ABStack = globalThis.org.allbinary.util.ABStack;
+//not plain js import { ABStack } 
+const ABStack = globalThis.org.allbinary.util.ABStack;
 
       
-//not plain js import { ABVector } from '../../../org/allbinary/util/ABVector.js';
-      const ABVector = globalThis.org.allbinary.util.ABVector;
+//not plain js import { ABVector } 
+const ABVector = globalThis.org.allbinary.util.ABVector;
 
       
 

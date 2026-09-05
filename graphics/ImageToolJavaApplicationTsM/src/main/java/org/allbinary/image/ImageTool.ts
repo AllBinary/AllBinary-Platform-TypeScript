@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not plain js import { ARunnable } from '../../../org/allbinary/thread/ARunnable.js';
-      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+//not plain js import { ARunnable } 
+const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
 import { ImageToolJFrame } from '../../../org/allbinary/image/gui/ImageToolJFrame.js';
-      //not GWT import const ImageToolJFrame = globalThis.org.allbinary.image.gui.ImageToolJFrame;
+//not GWT import const ImageToolJFrame = globalThis.org.allbinary.image.gui.ImageToolJFrame;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -57,7 +57,7 @@ import { ImageToolJFrame } from '../../../org/allbinary/image/gui/ImageToolJFram
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventQueue } from './EventQueue.js';
-//not GWT import const EventQueue = globalThis.org.allbinary.image.EventQueue;
+//not GWT import - same folder const EventQueue = globalThis.org.allbinary.image.EventQueue;
 
                 
 export class ImageTool

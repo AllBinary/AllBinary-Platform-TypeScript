@@ -25,51 +25,51 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { BundleActivator } from '../../../org/osgi/framework/BundleActivator.js';
-      //not GWT import const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
+//not GWT import const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
 
       
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
-      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
+//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
 import { InputAutomationConfigurationModuleChangeListener } from '../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
-      //not GWT import const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
+//not GWT import const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
 
       
 import { InputAutomationRobotChangeListener } from '../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
-      //not GWT import const InputAutomationRobotChangeListener = globalThis.bundle.input.automation.robot.InputAutomationRobotChangeListener;
+//not GWT import const InputAutomationRobotChangeListener = globalThis.bundle.input.automation.robot.InputAutomationRobotChangeListener;
 
       
 import { InputAutomationJFrame } from '../../../org/allbinary/input/automation/InputAutomationJFrame.js';
-      //not GWT import const InputAutomationJFrame = globalThis.org.allbinary.input.automation.InputAutomationJFrame;
+//not GWT import const InputAutomationJFrame = globalThis.org.allbinary.input.automation.InputAutomationJFrame;
 
       
 import { InputAutomationModuleServiceConsumer } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceConsumer.js';
-      //not GWT import const InputAutomationModuleServiceConsumer = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceConsumer;
+//not GWT import const InputAutomationModuleServiceConsumer = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceConsumer;
 
       
 import { InputAutomationNewBundleRunnable } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationNewBundleRunnable.js';
-      //not GWT import const InputAutomationNewBundleRunnable = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationNewBundleRunnable;
+//not GWT import const InputAutomationNewBundleRunnable = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationNewBundleRunnable;
 
       
 import { InputAutomationServiceFactory } from '../../../org/allbinary/input/automation/osgi/InputAutomationServiceFactory.js';
-      //not GWT import const InputAutomationServiceFactory = globalThis.org.allbinary.input.automation.osgi.InputAutomationServiceFactory;
+//not GWT import const InputAutomationServiceFactory = globalThis.org.allbinary.input.automation.osgi.InputAutomationServiceFactory;
 
       
 import { InputAutomationRobotServiceConsumer } from '../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotServiceConsumer.js';
-      //not GWT import const InputAutomationRobotServiceConsumer = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotServiceConsumer;
+//not GWT import const InputAutomationRobotServiceConsumer = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotServiceConsumer;
 
       
-//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil.js';
-      //not GWT import const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
+//not GWT import const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
 
       
-//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -91,7 +91,7 @@ import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationBundleActivatorListenerInterface } from './InputAutomationBundleActivatorListenerInterface.js';
-//not GWT import const InputAutomationBundleActivatorListenerInterface = globalThis.bundle.input.automation.InputAutomationBundleActivatorListenerInterface;
+//not GWT import - same folder const InputAutomationBundleActivatorListenerInterface = globalThis.bundle.input.automation.InputAutomationBundleActivatorListenerInterface;
 
                 
 export class InputAutomationBundleActivator

@@ -21,67 +21,67 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { UserFactory } from '../../../../../org/allbinary/business/user/modules/UserFactory.js';
-      //not GWT import const UserFactory = globalThis.org.allbinary.business.user.modules.UserFactory;
+//not GWT import const UserFactory = globalThis.org.allbinary.business.user.modules.UserFactory;
 
       
 import { AdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/AdminUserFactory.js';
-      //not GWT import const AdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.AdminUserFactory;
+//not GWT import const AdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.AdminUserFactory;
 
       
 import { StoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/StoreAdminUserFactory.js';
-      //not GWT import const StoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.StoreAdminUserFactory;
+//not GWT import const StoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.StoreAdminUserFactory;
 
       
 import { CustomerStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/customer/CustomerStoreAdminUserFactory.js';
-      //not GWT import const CustomerStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.customer.CustomerStoreAdminUserFactory;
+//not GWT import const CustomerStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.customer.CustomerStoreAdminUserFactory;
 
       
 import { OrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/OrderStoreAdminUserFactory.js';
-      //not GWT import const OrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.OrderStoreAdminUserFactory;
+//not GWT import const OrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.OrderStoreAdminUserFactory;
 
       
 import { AdjustOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/adjust/AdjustOrderStoreAdminUserFactory.js';
-      //not GWT import const AdjustOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.adjust.AdjustOrderStoreAdminUserFactory;
+//not GWT import const AdjustOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.adjust.AdjustOrderStoreAdminUserFactory;
 
       
 import { ReviewOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/review/ReviewOrderStoreAdminUserFactory.js';
-      //not GWT import const ReviewOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.review.ReviewOrderStoreAdminUserFactory;
+//not GWT import const ReviewOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.review.ReviewOrderStoreAdminUserFactory;
 
       
 import { ShipOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/ship/ShipOrderStoreAdminUserFactory.js';
-      //not GWT import const ShipOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.ship.ShipOrderStoreAdminUserFactory;
+//not GWT import const ShipOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.ship.ShipOrderStoreAdminUserFactory;
 
       
 import { PaymentStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/payment/PaymentStoreAdminUserFactory.js';
-      //not GWT import const PaymentStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.payment.PaymentStoreAdminUserFactory;
+//not GWT import const PaymentStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.payment.PaymentStoreAdminUserFactory;
 
       
 import { ProductStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/product/ProductStoreAdminUserFactory.js';
-      //not GWT import const ProductStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.product.ProductStoreAdminUserFactory;
+//not GWT import const ProductStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.product.ProductStoreAdminUserFactory;
 
       
 import { WebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/WebStoreAdminUserFactory.js';
-      //not GWT import const WebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.WebStoreAdminUserFactory;
+//not GWT import const WebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.WebStoreAdminUserFactory;
 
       
 import { ViewEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/view/editor/ViewEditorWebStoreAdminUserFactory.js';
-      //not GWT import const ViewEditorWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.view.editor.ViewEditorWebStoreAdminUserFactory;
+//not GWT import const ViewEditorWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.view.editor.ViewEditorWebStoreAdminUserFactory;
 
       
 import { WizardWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/wizard/WizardWebStoreAdminUserFactory.js';
-      //not GWT import const WizardWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.wizard.WizardWebStoreAdminUserFactory;
+//not GWT import const WizardWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.wizard.WizardWebStoreAdminUserFactory;
 
       
 import { WorkflowEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/workflow/editor/WorkflowEditorWebStoreAdminUserFactory.js';
-      //not GWT import const WorkflowEditorWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.workflow.editor.WorkflowEditorWebStoreAdminUserFactory;
+//not GWT import const WorkflowEditorWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.workflow.editor.WorkflowEditorWebStoreAdminUserFactory;
 
       
 import { SubscriberUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/subscriber/SubscriberUserFactory.js';
-      //not GWT import const SubscriberUserFactory = globalThis.org.allbinary.business.user.modules.customer.subscriber.SubscriberUserFactory;
+//not GWT import const SubscriberUserFactory = globalThis.org.allbinary.business.user.modules.customer.subscriber.SubscriberUserFactory;
 
       
 import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/wholesale/WholesaleUserFactory.js';
-      //not GWT import const WholesaleUserFactory = globalThis.org.allbinary.business.user.modules.customer.wholesale.WholesaleUserFactory;
+//not GWT import const WholesaleUserFactory = globalThis.org.allbinary.business.user.modules.customer.wholesale.WholesaleUserFactory;
 
       
 
@@ -103,13 +103,13 @@ import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
-//not GWT import const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
+//not GWT import - same folder const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
 
                 import { UserRoleB } from './UserRoleB.js';
-//not GWT import const UserRoleB = globalThis.org.allbinary.business.user.role.UserRoleB;
+//not GWT import - same folder const UserRoleB = globalThis.org.allbinary.business.user.role.UserRoleB;
 
                 import { UserRole } from './UserRole.js';
-//not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+//not GWT import - same folder const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
                 
 export class UserRoleFactory

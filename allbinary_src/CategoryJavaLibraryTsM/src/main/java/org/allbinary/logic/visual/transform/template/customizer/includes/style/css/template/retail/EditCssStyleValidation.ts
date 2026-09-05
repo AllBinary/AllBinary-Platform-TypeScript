@@ -21,35 +21,35 @@
             import { Exception } from '../../../../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { ValidationInterface } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-      //not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
       
 import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
-      //not GWT import const StyleData = globalThis.org.allbinary.logic.visual.dhtml.style.StyleData;
+//not GWT import const StyleData = globalThis.org.allbinary.logic.visual.dhtml.style.StyleData;
 
       
 import { StylesData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
-      //not GWT import const StylesData = globalThis.org.allbinary.logic.visual.dhtml.style.StylesData;
+//not GWT import const StylesData = globalThis.org.allbinary.logic.visual.dhtml.style.StylesData;
 
       
 import { ColorsView } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/color/ColorsView.js';
-      //not GWT import const ColorsView = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsView;
+//not GWT import const ColorsView = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsView;
 
       
 import { Document } from '../../../../../../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -71,7 +71,7 @@ import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssStyleValidation } from './CssStyleValidation.js';
-//not GWT import const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
+//not GWT import - same folder const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
 
                 
 export class EditCssStyleValidation extends CssStyleValidation implements ValidationInterface, DomNodeInterface {

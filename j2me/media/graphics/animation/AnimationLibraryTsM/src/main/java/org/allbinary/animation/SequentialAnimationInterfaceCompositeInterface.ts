@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimationInterfaceCompositeInterface } from './IndexedAnimationInterfaceCompositeInterface.js';
-//not GWT import const IndexedAnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.IndexedAnimationInterfaceCompositeInterface;
+//not GWT import - same folder const IndexedAnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.IndexedAnimationInterfaceCompositeInterface;
 
                 
 export interface SequentialAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {

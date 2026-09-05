@@ -19,19 +19,19 @@
 
 
 import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
+//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
 import { NullLayer } from '../../../../org/allbinary/layer/NullLayer.js';
-      //not GWT import const NullLayer = globalThis.org.allbinary.layer.NullLayer;
+//not GWT import const NullLayer = globalThis.org.allbinary.layer.NullLayer;
 
       
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-      //not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+//not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
 
       
 

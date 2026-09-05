@@ -23,19 +23,19 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { IOException } from '../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { InputStream } from '../../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
-      //not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
+//not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 

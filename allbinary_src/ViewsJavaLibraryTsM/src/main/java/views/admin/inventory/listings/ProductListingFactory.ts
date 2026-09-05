@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
-      //not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+//not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -53,10 +53,10 @@ import { SearchRequest } from '../../../../org/allbinary/logic/control/search/Se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProductListing } from './ProductListing.js';
-//not GWT import const ProductListing = globalThis.views.admin.inventory.listings.ProductListing;
+//not GWT import - same folder const ProductListing = globalThis.views.admin.inventory.listings.ProductListing;
 
                 import { ProductListingInterface } from './ProductListingInterface.js';
-//not GWT import const ProductListingInterface = globalThis.views.admin.inventory.listings.ProductListingInterface;
+//not GWT import - same folder const ProductListingInterface = globalThis.views.admin.inventory.listings.ProductListingInterface;
 
                 
 export class ProductListingFactory

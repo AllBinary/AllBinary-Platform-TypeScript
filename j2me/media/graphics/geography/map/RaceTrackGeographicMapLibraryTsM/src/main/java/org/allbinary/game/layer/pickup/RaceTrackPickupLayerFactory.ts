@@ -23,11 +23,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-      //not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
+//not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
 
       
 
@@ -49,7 +49,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackPickupLayer } from './RaceTrackPickupLayer.js';
-//not GWT import const RaceTrackPickupLayer = globalThis.org.allbinary.game.layer.pickup.RaceTrackPickupLayer;
+//not GWT import - same folder const RaceTrackPickupLayer = globalThis.org.allbinary.game.layer.pickup.RaceTrackPickupLayer;
 
                 
 export class RaceTrackPickupLayerFactory

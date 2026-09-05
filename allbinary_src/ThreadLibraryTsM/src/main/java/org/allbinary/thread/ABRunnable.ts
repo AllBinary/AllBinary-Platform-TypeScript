@@ -23,11 +23,11 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -49,7 +49,7 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RunnableInterface } from './RunnableInterface.js';
-//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+//not GWT import - same folder const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
                 
 export class ABRunnable

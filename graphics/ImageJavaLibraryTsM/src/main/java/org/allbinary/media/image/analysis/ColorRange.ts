@@ -21,15 +21,15 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { awt } from '../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -51,10 +51,10 @@ import { awt } from '../../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+//not GWT import - same folder const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
                 import { Color } from './Color.js';
-//not GWT import const Color = globalThis.org.allbinary.media.image.analysis.Color;
+//not GWT import - same folder const Color = globalThis.org.allbinary.media.image.analysis.Color;
 
                 
 export class ColorRange

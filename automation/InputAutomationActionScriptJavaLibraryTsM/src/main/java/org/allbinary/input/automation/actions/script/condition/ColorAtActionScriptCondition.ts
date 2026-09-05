@@ -25,87 +25,87 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { Color } from '../../../../../../../java/awt/Color.js';
-      //not GWT import const Color = globalThis.java.awt.Color;
+//not GWT import const Color = globalThis.java.awt.Color;
 
       
 import { Point } from '../../../../../../../java/awt/Point.js';
-      //not GWT import const Point = globalThis.java.awt.Point;
+//not GWT import const Point = globalThis.java.awt.Point;
 
       
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
 import { ColorCacheFactory } from '../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-      //not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+//not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
 
       
 import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-      //not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+//not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
       
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
-      //not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+//not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
 import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
 import { ColorRange } from '../../../../../../../org/allbinary/media/image/analysis/ColorRange.js';
-      //not GWT import const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
+//not GWT import const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
 
       
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-      //not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
       
 import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
-      //not GWT import const BufferedImageFrameCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageFrameCacheable;
+//not GWT import const BufferedImageFrameCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageFrameCacheable;
 
       
-//not plain js import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
+//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 
@@ -127,16 +127,16 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import const BasicProfileActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
+//not GWT import - same folder const BasicProfileActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
 
                 import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import const ColorAtActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
+//not GWT import - same folder const ColorAtActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
 
                 import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
-//not GWT import const ColorAtActionScriptConditionJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionJPanel;
+//not GWT import - same folder const ColorAtActionScriptConditionJPanel = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionJPanel;
 
                 import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
-//not GWT import const ColorAtActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
+//not GWT import - same folder const ColorAtActionScriptConditionData = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
 
                 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {

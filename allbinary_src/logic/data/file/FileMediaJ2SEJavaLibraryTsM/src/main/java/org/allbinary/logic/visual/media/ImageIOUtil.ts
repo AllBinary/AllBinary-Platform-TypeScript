@@ -9,23 +9,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { RenderedImage } from '../../../../../java/awt/image/RenderedImage.js';
-      //not GWT import const RenderedImage = globalThis.java.awt.image.RenderedImage;
+//not GWT import const RenderedImage = globalThis.java.awt.image.RenderedImage;
 
       
 import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
-      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
+//not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { AbFileNativeUtil } from '../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+//not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
 

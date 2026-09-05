@@ -21,11 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Serializable } from '../../../../java/io/Serializable.js';
-      //not GWT import const Serializable = globalThis.java.io.Serializable;
+//not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
 import { HashMap } from '../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 
@@ -47,7 +47,7 @@ import { HashMap } from '../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
-//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import - same folder const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
                 
 export interface UserFactoryInterface extends Serializable {

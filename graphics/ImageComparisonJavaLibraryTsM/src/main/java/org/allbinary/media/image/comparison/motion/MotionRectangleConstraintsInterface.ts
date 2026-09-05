@@ -23,11 +23,11 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 
@@ -49,10 +49,10 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.media.image.comparison.motion.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.media.image.comparison.motion.Dimension;
 
                 import { Rectangle } from './Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+//not GWT import - same folder const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
 
                 
 export interface MotionRectangleConstraintsInterface {

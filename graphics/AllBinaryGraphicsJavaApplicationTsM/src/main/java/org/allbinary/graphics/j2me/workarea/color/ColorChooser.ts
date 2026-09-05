@@ -37,13 +37,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.color.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.color.JPanel;
 
                 import { JColorChooser } from './JColorChooser.js';
-//not GWT import const JColorChooser = globalThis.org.allbinary.graphics.j2me.workarea.color.JColorChooser;
+//not GWT import - same folder const JColorChooser = globalThis.org.allbinary.graphics.j2me.workarea.color.JColorChooser;
 
                 import { BorderLayout } from './BorderLayout.js';
-//not GWT import const BorderLayout = globalThis.org.allbinary.graphics.j2me.workarea.color.BorderLayout;
+//not GWT import - same folder const BorderLayout = globalThis.org.allbinary.graphics.j2me.workarea.color.BorderLayout;
 
                 
 export class ColorChooser extends javax.swing.JPanel {

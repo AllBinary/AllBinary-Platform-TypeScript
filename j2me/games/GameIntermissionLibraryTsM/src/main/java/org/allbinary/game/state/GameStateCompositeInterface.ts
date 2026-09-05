@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameState } from './GameState.js';
-//not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
+//not GWT import - same folder const GameState = globalThis.org.allbinary.game.state.GameState;
 
                 
 export interface GameStateCompositeInterface {

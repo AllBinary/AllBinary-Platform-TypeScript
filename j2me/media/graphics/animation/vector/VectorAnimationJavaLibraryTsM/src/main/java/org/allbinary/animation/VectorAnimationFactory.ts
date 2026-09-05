@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 
@@ -43,13 +43,13 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import const VectorAnimationFactoryInterface = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
+//not GWT import - same folder const VectorAnimationFactoryInterface = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
 
                 import { VectorAnimation } from './VectorAnimation.js';
-//not GWT import const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
+//not GWT import - same folder const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
 
                 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
                 
 export class VectorAnimationFactory

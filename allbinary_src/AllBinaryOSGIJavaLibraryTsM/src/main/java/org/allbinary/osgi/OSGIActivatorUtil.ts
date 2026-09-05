@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not plain js import { StdUtil } from '../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { ABHashtable } from '../../../org/allbinary/util/ABHashtable.js';
-      const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
       
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
-      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
+//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
 import { NullServiceReferenceFactory } from '../../../org/osgi/framework/NullServiceReferenceFactory.js';
-      //not GWT import const NullServiceReferenceFactory = globalThis.org.osgi.framework.NullServiceReferenceFactory;
+//not GWT import const NullServiceReferenceFactory = globalThis.org.osgi.framework.NullServiceReferenceFactory;
 
       
 import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
-      //not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+//not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
 
       
 import { ServiceRegistration } from '../../../org/osgi/framework/ServiceRegistration.js';
-      //not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
+//not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
 
       
 

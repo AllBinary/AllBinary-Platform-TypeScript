@@ -19,47 +19,47 @@
 
 
 import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
-      //not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
+//not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
 
       
 import { ByteOrder } from '../../../../java/nio/ByteOrder.js';
-      //not GWT import const ByteOrder = globalThis.java.nio.ByteOrder;
+//not GWT import const ByteOrder = globalThis.java.nio.ByteOrder;
 
       
 import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
-      //not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
+//not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
 
       
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-      //not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
+//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
 
       
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
-      //not GWT import const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
+//not GWT import const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
 
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 import { GLUtil } from '../../../../org/allbinary/opengles/GLUtil.js';
-      //not GWT import const GLUtil = globalThis.org.allbinary.opengles.GLUtil;
+//not GWT import const GLUtil = globalThis.org.allbinary.opengles.GLUtil;
 
       
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-      //not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+//not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
 
       
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-      //not GWT import const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
+//not GWT import const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
 
       
 
@@ -80,7 +80,7 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { OpenGLESImage } from './OpenGLESImage.js';
+        //not plain js - same folder import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
                 //This is not actually VBO impl

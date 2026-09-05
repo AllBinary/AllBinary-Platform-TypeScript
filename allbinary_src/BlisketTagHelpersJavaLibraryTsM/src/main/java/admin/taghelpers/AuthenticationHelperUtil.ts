@@ -22,48 +22,48 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } from '../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
-      //not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
+//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
 
       
 import { UserRole } from '../../org/allbinary/business/user/role/UserRole.js';
-      //not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+//not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
       
 import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
-      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
 import { HttpFilePermissions } from '../../org/allbinary/logic/communication/http/file/upload/HttpFilePermissions.js';
-      //not GWT import const HttpFilePermissions = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFilePermissions;
+//not GWT import const HttpFilePermissions = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFilePermissions;
 
       
 import { HttpRequestUtil } from '../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';
-      //not GWT import const HttpRequestUtil = globalThis.org.allbinary.logic.communication.http.request.HttpRequestUtil;
+//not GWT import const HttpRequestUtil = globalThis.org.allbinary.logic.communication.http.request.HttpRequestUtil;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
-      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not plain js import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { CommonLabels } from '../../org/allbinary/string/CommonLabels.js';
-      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
 
@@ -85,7 +85,7 @@ import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthenticationHelper } from './AuthenticationHelper.js';
-//not GWT import const AuthenticationHelper = globalThis.admin.taghelpers.AuthenticationHelper;
+//not GWT import - same folder const AuthenticationHelper = globalThis.admin.taghelpers.AuthenticationHelper;
 
                 
 export class AuthenticationHelperUtil

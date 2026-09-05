@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameStateFactory } from './GameStateFactory.js';
-//not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+//not GWT import - same folder const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
                 import { GameState } from './GameState.js';
-//not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
+//not GWT import - same folder const GameState = globalThis.org.allbinary.game.state.GameState;
 
                 
 export class RaceGameStateFactory

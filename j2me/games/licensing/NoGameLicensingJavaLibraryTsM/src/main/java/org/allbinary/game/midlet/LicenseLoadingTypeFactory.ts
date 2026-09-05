@@ -21,15 +21,15 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
 
@@ -51,7 +51,7 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseLoadingType } from './LicenseLoadingType.js';
-//not GWT import const LicenseLoadingType = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
+//not GWT import - same folder const LicenseLoadingType = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
 
                 
 export class LicenseLoadingTypeFactory

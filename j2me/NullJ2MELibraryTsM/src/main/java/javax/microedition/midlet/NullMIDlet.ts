@@ -22,7 +22,7 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { MIDlet } from './MIDlet.js';
+        //not plain js - same folder import { MIDlet } 
 const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
                 

@@ -21,43 +21,43 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { InputStream } from '../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 import { URIResolver } from '../../javax/xml/transform/URIResolver.js';
-      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
+//not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
 import { BasicUriResolver } from '../../org/allbinary/data/tree/dom/BasicUriResolver.js';
-      //not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+//not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
 
       
 import { StoreUriResolver } from '../../org/allbinary/data/tree/dom/StoreUriResolver.js';
-      //not GWT import const StoreUriResolver = globalThis.org.allbinary.data.tree.dom.StoreUriResolver;
+//not GWT import const StoreUriResolver = globalThis.org.allbinary.data.tree.dom.StoreUriResolver;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+//not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
 import { AbTransformer } from '../../org/allbinary/logic/visual/transform/AbTransformer.js';
-      //not GWT import const AbTransformer = globalThis.org.allbinary.logic.visual.transform.AbTransformer;
+//not GWT import const AbTransformer = globalThis.org.allbinary.logic.visual.transform.AbTransformer;
 
       
 import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 import { CompoundContextTransformInfoObjectConfig } from '../../views/compound/objectConfig/CompoundContextTransformInfoObjectConfig.js';
-      //not GWT import const CompoundContextTransformInfoObjectConfig = globalThis.views.compound.objectConfig.CompoundContextTransformInfoObjectConfig;
+//not GWT import const CompoundContextTransformInfoObjectConfig = globalThis.views.compound.objectConfig.CompoundContextTransformInfoObjectConfig;
 
       
 

@@ -21,15 +21,15 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
-      //not GWT import const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
+//not GWT import const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
 
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-      //not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+//not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
 
       
 
@@ -51,7 +51,7 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsPaintableComposite } from './TouchButtonsPaintableComposite.js';
-//not GWT import const TouchButtonsPaintableComposite = globalThis.org.allbinary.input.motion.button.TouchButtonsPaintableComposite;
+//not GWT import - same folder const TouchButtonsPaintableComposite = globalThis.org.allbinary.input.motion.button.TouchButtonsPaintableComposite;
 
                 
 export class TouchButtonsPaintableCompositeFactory

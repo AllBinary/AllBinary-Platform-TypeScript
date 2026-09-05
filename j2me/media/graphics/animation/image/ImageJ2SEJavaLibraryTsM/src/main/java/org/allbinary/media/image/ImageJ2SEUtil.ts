@@ -21,7 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Color } from '../../../../java/awt/Color.js';
-      //not GWT import const Color = globalThis.java.awt.Color;
+//not GWT import const Color = globalThis.java.awt.Color;
 
       
 

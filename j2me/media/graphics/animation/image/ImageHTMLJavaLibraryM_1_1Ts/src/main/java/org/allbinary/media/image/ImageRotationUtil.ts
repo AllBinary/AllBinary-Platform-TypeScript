@@ -24,24 +24,24 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
-      const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
+//not plain js import { PlaynImmutableImage } 
+const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
 
       
-//not plain js import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-      const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+//not plain js import { PlaynMutableImage } 
+const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not plain js import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-      const CanvasImage = globalThis.playn.core.CanvasImage;
+//not plain js import { CanvasImage } 
+const CanvasImage = globalThis.playn.core.CanvasImage;
 
       
-//not plain js import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
-      const CanvasSurface = globalThis.playn.core.CanvasSurface;
+//not plain js import { CanvasSurface } 
+const CanvasSurface = globalThis.playn.core.CanvasSurface;
 
       
 
@@ -62,7 +62,7 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+        //not plain js - same folder import { ImageCreationUtil } 
 const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 

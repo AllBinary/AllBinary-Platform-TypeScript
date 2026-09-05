@@ -19,7 +19,7 @@
 
 
 import { Control } from '../../../../javax/sound/sampled/Control.js';
-      //not GWT import const Control = globalThis.javax.sound.sampled.Control;
+//not GWT import const Control = globalThis.javax.sound.sampled.Control;
 
       
 
@@ -41,7 +41,7 @@ import { Control } from '../../../../javax/sound/sampled/Control.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Type } from './Type.js';
-//not GWT import const Type = globalThis.org.allbinary.media.audio.Type;
+//not GWT import - same folder const Type = globalThis.org.allbinary.media.audio.Type;
 
                 
 export class NullJ2SEControl extends Control {

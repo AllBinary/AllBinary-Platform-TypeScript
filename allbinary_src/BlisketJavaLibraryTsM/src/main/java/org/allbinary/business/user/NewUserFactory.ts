@@ -23,31 +23,31 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
-      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
 import { User } from '../../../../org/allbinary/business/user/modules/User.js';
-      //not GWT import const User = globalThis.org.allbinary.business.user.modules.User;
+//not GWT import const User = globalThis.org.allbinary.business.user.modules.User;
 
       
 import { UserRoleData } from '../../../../org/allbinary/business/user/role/UserRoleData.js';
-      //not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+//not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
 
       
 import { RequestParams } from '../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-      //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
       
 import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-      //not GWT import const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+//not GWT import const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
 
       
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 
@@ -69,10 +69,10 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
-//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+//not GWT import - same folder const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
                 import { CreateUserFactory } from './CreateUserFactory.js';
-//not GWT import const CreateUserFactory = globalThis.org.allbinary.business.user.CreateUserFactory;
+//not GWT import - same folder const CreateUserFactory = globalThis.org.allbinary.business.user.CreateUserFactory;
 
                 
 export class NewUserFactory

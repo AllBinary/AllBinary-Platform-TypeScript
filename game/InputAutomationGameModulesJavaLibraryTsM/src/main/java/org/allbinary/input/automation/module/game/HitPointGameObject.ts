@@ -23,15 +23,15 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -53,10 +53,10 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObject } from './MeteredGameObject.js';
-//not GWT import const MeteredGameObject = globalThis.org.allbinary.input.automation.module.game.MeteredGameObject;
+//not GWT import - same folder const MeteredGameObject = globalThis.org.allbinary.input.automation.module.game.MeteredGameObject;
 
                 import { HitPointGameObjectInterface } from './HitPointGameObjectInterface.js';
-//not GWT import const HitPointGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.HitPointGameObjectInterface;
+//not GWT import - same folder const HitPointGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.HitPointGameObjectInterface;
 
                 
 export class HitPointGameObject extends MeteredGameObject implements HitPointGameObjectInterface {

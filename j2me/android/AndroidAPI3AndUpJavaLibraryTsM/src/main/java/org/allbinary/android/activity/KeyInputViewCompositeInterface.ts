@@ -19,7 +19,7 @@
 
 
 import { View } from '../../../../android/view/View.js';
-      //not GWT import const View = globalThis.android.view.View;
+//not GWT import const View = globalThis.android.view.View;
 
       
 
@@ -41,7 +41,7 @@ import { View } from '../../../../android/view/View.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewCompositeInterface } from './ViewCompositeInterface.js';
-//not GWT import const ViewCompositeInterface = globalThis.org.allbinary.android.activity.ViewCompositeInterface;
+//not GWT import - same folder const ViewCompositeInterface = globalThis.org.allbinary.android.activity.ViewCompositeInterface;
 
                 
 export interface KeyInputViewCompositeInterface extends ViewCompositeInterface {

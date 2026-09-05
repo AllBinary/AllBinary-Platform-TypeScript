@@ -23,7 +23,7 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-      //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
 
       
 
@@ -45,7 +45,7 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntPermutationVisitor } from './IntPermutationVisitor.js';
-//not GWT import const IntPermutationVisitor = globalThis.org.allbinary.logic.math.permutations.IntPermutationVisitor;
+//not GWT import - same folder const IntPermutationVisitor = globalThis.org.allbinary.logic.math.permutations.IntPermutationVisitor;
 
                 
 export class OrderedIntArrayPermutationUtil

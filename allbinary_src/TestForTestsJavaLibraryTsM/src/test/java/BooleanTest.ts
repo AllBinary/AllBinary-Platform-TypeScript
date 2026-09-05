@@ -7,15 +7,15 @@
             import { Object } from 'java/lang/Object.js';
         
 import { Assertions } from 'org/junit/jupiter/api/Assertions.js';
-      //not GWT import const Assertions = globalThis.org.junit.jupiter.api.Assertions;
+//not GWT import const Assertions = globalThis.org.junit.jupiter.api.Assertions;
 
       
 import { DisplayName } from 'org/junit/jupiter/api/DisplayName.js';
-      //not GWT import const DisplayName = globalThis.org.junit.jupiter.api.DisplayName;
+//not GWT import const DisplayName = globalThis.org.junit.jupiter.api.DisplayName;
 
       
 import { Test } from 'org/junit/jupiter/api/Test.js';
-      //not GWT import const Test = globalThis.org.junit.jupiter.api.Test;
+//not GWT import const Test = globalThis.org.junit.jupiter.api.Test;
 
       
 

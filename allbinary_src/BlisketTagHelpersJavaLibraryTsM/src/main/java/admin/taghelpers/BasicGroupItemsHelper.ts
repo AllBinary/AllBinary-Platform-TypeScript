@@ -21,31 +21,31 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
+//not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
 import { BasicGroupItemsEntity } from '../../org/allbinary/data/tables/user/commerce/inventory/item/groups/BasicGroupItemsEntity.js';
-      //not GWT import const BasicGroupItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntity;
+//not GWT import const BasicGroupItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntity;
 
       
 import { BasicGroupItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/groups/BasicGroupItemsEntityFactory.js';
-      //not GWT import const BasicGroupItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntityFactory;
+//not GWT import const BasicGroupItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.groups.BasicGroupItemsEntityFactory;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-      //not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+//not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
 
       
 
@@ -67,7 +67,7 @@ import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSq
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
-//not GWT import const BasicTable = globalThis.admin.taghelpers.BasicTable;
+//not GWT import - same folder const BasicTable = globalThis.admin.taghelpers.BasicTable;
 
                 
 export class BasicGroupItemsHelper extends BasicTable {

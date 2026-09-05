@@ -22,20 +22,20 @@
         
             import { System } from '../../java/lang/System.js';
         
-//not plain js import { Image } from '../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-      const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+//not plain js import { Resource } 
+const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
 import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
-      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+//not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
 

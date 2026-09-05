@@ -23,47 +23,47 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
-      //not GWT import const RenderedImage = globalThis.java.awt.image.RenderedImage;
+//not GWT import const RenderedImage = globalThis.java.awt.image.RenderedImage;
 
       
 import { File } from '../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
+//not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-      //not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
       
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-      //not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+//not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
 
       
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-      //not GWT import const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
+//not GWT import const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
 
       
 import { MirrorImageUtil } from '../../../../org/allbinary/media/image/MirrorImageUtil.js';
-      //not GWT import const MirrorImageUtil = globalThis.org.allbinary.media.image.MirrorImageUtil;
+//not GWT import const MirrorImageUtil = globalThis.org.allbinary.media.image.MirrorImageUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -85,40 +85,40 @@ import { MirrorImageUtil } from '../../../../org/allbinary/media/image/MirrorIma
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { JLayeredPane } from './JLayeredPane.js';
-//not GWT import const JLayeredPane = globalThis.org.allbinary.image.gui.JLayeredPane;
+//not GWT import - same folder const JLayeredPane = globalThis.org.allbinary.image.gui.JLayeredPane;
 
                 import { ButtonGroup } from './ButtonGroup.js';
-//not GWT import const ButtonGroup = globalThis.org.allbinary.image.gui.ButtonGroup;
+//not GWT import - same folder const ButtonGroup = globalThis.org.allbinary.image.gui.ButtonGroup;
 
                 import { Graphics } from './Graphics.js';
-//not GWT import const Graphics = globalThis.org.allbinary.image.gui.Graphics;
+//not GWT import - same folder const Graphics = globalThis.org.allbinary.image.gui.Graphics;
 
                 import { JCheckBox } from './JCheckBox.js';
-//not GWT import const JCheckBox = globalThis.org.allbinary.image.gui.JCheckBox;
+//not GWT import - same folder const JCheckBox = globalThis.org.allbinary.image.gui.JCheckBox;
 
                 import { JButton } from './JButton.js';
-//not GWT import const JButton = globalThis.org.allbinary.image.gui.JButton;
+//not GWT import - same folder const JButton = globalThis.org.allbinary.image.gui.JButton;
 
                 import { JRadioButton } from './JRadioButton.js';
-//not GWT import const JRadioButton = globalThis.org.allbinary.image.gui.JRadioButton;
+//not GWT import - same folder const JRadioButton = globalThis.org.allbinary.image.gui.JRadioButton;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.image.gui.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.image.gui.JLabel;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.image.gui.Short;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
+//not GWT import - same folder const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
+//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
 
                 
 export class MirrorImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

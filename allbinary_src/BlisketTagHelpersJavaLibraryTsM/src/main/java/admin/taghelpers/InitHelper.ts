@@ -21,19 +21,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
+//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
 import { InitInfoEntity } from '../../org/allbinary/business/init/InitInfoEntity.js';
-      //not GWT import const InitInfoEntity = globalThis.org.allbinary.business.init.InitInfoEntity;
+//not GWT import const InitInfoEntity = globalThis.org.allbinary.business.init.InitInfoEntity;
 
       
-//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -55,7 +55,7 @@ import { InitInfoEntity } from '../../org/allbinary/business/init/InitInfoEntity
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
-//not GWT import const BasicTable = globalThis.admin.taghelpers.BasicTable;
+//not GWT import - same folder const BasicTable = globalThis.admin.taghelpers.BasicTable;
 
                 
 export class InitHelper extends BasicTable {

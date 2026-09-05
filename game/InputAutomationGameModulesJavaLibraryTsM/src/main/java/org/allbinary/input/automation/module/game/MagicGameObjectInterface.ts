@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObjectInterface } from './MeteredGameObjectInterface.js';
-//not GWT import const MeteredGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.MeteredGameObjectInterface;
+//not GWT import - same folder const MeteredGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.MeteredGameObjectInterface;
 
                 
 export interface MagicGameObjectInterface extends MeteredGameObjectInterface {

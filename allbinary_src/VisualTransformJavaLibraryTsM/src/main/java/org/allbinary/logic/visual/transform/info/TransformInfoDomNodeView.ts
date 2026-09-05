@@ -21,23 +21,23 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
-      //not GWT import const Attr = globalThis.org.w3c.dom.Attr;
+//not GWT import const Attr = globalThis.org.w3c.dom.Attr;
 
       
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      //not GWT import const Document = globalThis.org.w3c.dom.Document;
+//not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
-      //not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
+//not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
 
       
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      //not GWT import const Node = globalThis.org.w3c.dom.Node;
+//not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 
@@ -59,13 +59,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoDomNode } from './TransformInfoDomNode.js';
-//not GWT import const TransformInfoDomNode = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNode;
+//not GWT import - same folder const TransformInfoDomNode = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNode;
 
                 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+//not GWT import - same folder const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
                 import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+//not GWT import - same folder const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
                 
 export class TransformInfoDomNodeView extends TransformInfoDomNode implements DomNodeInterface {

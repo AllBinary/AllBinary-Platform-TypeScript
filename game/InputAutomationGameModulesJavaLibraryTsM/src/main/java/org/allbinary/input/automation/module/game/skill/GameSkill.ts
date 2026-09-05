@@ -21,27 +21,27 @@
             import { Object } from '../../../../../../../java/lang/Object.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      //not GWT import const HashMap = globalThis.java.util.HashMap;
+//not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not plain js import { StdUtil } from '../../../../../../../org/allbinary/logic/StdUtil.js';
-      const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+//not plain js import { StdUtil } 
+const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 
@@ -63,10 +63,10 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameSkillType } from './GameSkillType.js';
-//not GWT import const GameSkillType = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillType;
+//not GWT import - same folder const GameSkillType = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillType;
 
                 import { GameSkillPropertyInterface } from './GameSkillPropertyInterface.js';
-//not GWT import const GameSkillPropertyInterface = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillPropertyInterface;
+//not GWT import - same folder const GameSkillPropertyInterface = globalThis.org.allbinary.input.automation.module.game.skill.GameSkillPropertyInterface;
 
                 
 export class GameSkill

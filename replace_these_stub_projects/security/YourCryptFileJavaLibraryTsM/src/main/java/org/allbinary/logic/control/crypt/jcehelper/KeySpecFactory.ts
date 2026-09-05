@@ -21,7 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { KeySpec } from '../../../../../../java/security/spec/KeySpec.js';
-      //not GWT import const KeySpec = globalThis.java.security.spec.KeySpec;
+//not GWT import const KeySpec = globalThis.java.security.spec.KeySpec;
 
       
 

@@ -39,10 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlLengthInput } from './HtmlLengthInput.js';
-//not GWT import const HtmlLengthInput = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlLengthInput;
+//not GWT import - same folder const HtmlLengthInput = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlLengthInput;
 
                 import { HtmlInputData } from './HtmlInputData.js';
-//not GWT import const HtmlInputData = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInputData;
+//not GWT import - same folder const HtmlInputData = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInputData;
 
                 
 export class HtmlTextInput extends HtmlLengthInput {

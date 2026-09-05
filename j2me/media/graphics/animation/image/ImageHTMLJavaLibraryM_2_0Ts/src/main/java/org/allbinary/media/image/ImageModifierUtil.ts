@@ -24,64 +24,64 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } 
+const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
+//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
-      const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
+//not plain js import { PlaynImage } 
+const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
 
       
-//not plain js import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
-      const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
+//not plain js import { ResourceCallbackStrings } 
+const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
 
       
-//not plain js import { Callback } from '../../../../playn/core/Callback.js';
-      const Callback = globalThis.playn.core.Callback;
+//not plain js import { Callback } 
+const Callback = globalThis.playn.core.Callback;
 
       
-//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
-      const Canvas = globalThis.playn.core.Canvas;
+//not plain js import { Canvas } 
+const Canvas = globalThis.playn.core.Canvas;
 
       
-//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
-      const ImageImpl = globalThis.playn.core.ImageImpl;
+//not plain js import { ImageImpl } 
+const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not plain js import { PlayN } from '../../../../playn/core/PlayN.js';
-      const PlayN = globalThis.playn.core.PlayN;
+//not plain js import { PlayN } 
+const PlayN = globalThis.playn.core.PlayN;
 
       
-//not plain js import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
-      const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+//not plain js import { HtmlGraphics } 
+const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
 
       
-//not plain js import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
-      const HtmlImage = globalThis.playn.html.HtmlImage;
+//not plain js import { HtmlImage } 
+const HtmlImage = globalThis.playn.html.HtmlImage;
 
       
 

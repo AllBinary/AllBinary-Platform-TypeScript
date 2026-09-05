@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 
@@ -43,10 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyInApplicationPurchaseInterface } from './ThirdPartyInApplicationPurchaseInterface.js';
-//not GWT import const ThirdPartyInApplicationPurchaseInterface = globalThis.org.allbinary.logic.system.security.licensing.ThirdPartyInApplicationPurchaseInterface;
+//not GWT import - same folder const ThirdPartyInApplicationPurchaseInterface = globalThis.org.allbinary.logic.system.security.licensing.ThirdPartyInApplicationPurchaseInterface;
 
                 import { LockableFeature } from './LockableFeature.js';
-//not GWT import const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+//not GWT import - same folder const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
                 
 export class ThirdPartyInApplicationPurchase

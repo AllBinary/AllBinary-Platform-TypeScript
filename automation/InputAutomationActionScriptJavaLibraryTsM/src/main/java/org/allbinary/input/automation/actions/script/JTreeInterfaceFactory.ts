@@ -31,7 +31,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JTreeInterface } from './JTreeInterface.js';
-//not GWT import const JTreeInterface = globalThis.org.allbinary.input.automation.actions.script.JTreeInterface;
+//not GWT import - same folder const JTreeInterface = globalThis.org.allbinary.input.automation.actions.script.JTreeInterface;
 
                 
 export class JTreeInterfaceFactory

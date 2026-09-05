@@ -19,7 +19,7 @@
 
 
 import { awt } from '../../../../../../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 
@@ -41,10 +41,10 @@ import { awt } from '../../../../../../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
+//not GWT import - same folder const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
 
                 import { Point } from './Point.js';
-//not GWT import const Point = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Point;
+//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Point;
 
                 
 export interface MouseActionScriptInputInterface extends ProfileActionScriptInputInterface {

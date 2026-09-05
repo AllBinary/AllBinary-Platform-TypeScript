@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthorizationType } from './AuthorizationType.js';
-//not GWT import const AuthorizationType = globalThis.org.allbinary.business.user.commerce.money.payment.types.AuthorizationType;
+//not GWT import - same folder const AuthorizationType = globalThis.org.allbinary.business.user.commerce.money.payment.types.AuthorizationType;
 
                 
 export class AuthorizationTypeFactory

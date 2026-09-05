@@ -21,15 +21,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
-      //not GWT import const Cipher = globalThis.javax.crypto.Cipher;
+//not GWT import const Cipher = globalThis.javax.crypto.Cipher;
 
       
 import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
-      //not GWT import const SecretKey = globalThis.javax.crypto.SecretKey;
+//not GWT import const SecretKey = globalThis.javax.crypto.SecretKey;
 
       
 import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
-      //not GWT import const ByteUtil = globalThis.org.allbinary.logic.java.byteutil.ByteUtil;
+//not GWT import const ByteUtil = globalThis.org.allbinary.logic.java.byteutil.ByteUtil;
 
       
 
@@ -51,7 +51,7 @@ import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
-//not GWT import const BaseSecretComposite = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.BaseSecretComposite;
+//not GWT import - same folder const BaseSecretComposite = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.BaseSecretComposite;
 
                 
 export class SecretComposite extends BaseSecretComposite {

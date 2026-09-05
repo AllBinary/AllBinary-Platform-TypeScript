@@ -7,11 +7,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { awt } from '../../../../java/awt.js';
-      //not GWT import const awt = globalThis.java.awt;
+//not GWT import const awt = globalThis.java.awt;
 
       
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 
@@ -33,10 +33,10 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
                 import { Graphics2D } from './Graphics2D.js';
-//not GWT import const Graphics2D = globalThis.org.allbinary.media.image.Graphics2D;
+//not GWT import - same folder const Graphics2D = globalThis.org.allbinary.media.image.Graphics2D;
 
                 
 export class BufferedImageUtil2

@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Life } from './Life.js';
-//not GWT import const Life = globalThis.org.allbinary.game.life.Life;
+//not GWT import - same folder const Life = globalThis.org.allbinary.game.life.Life;
 
                 
 export interface LifeVisitorInterface {

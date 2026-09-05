@@ -19,11 +19,11 @@
 
 
 import { TableTag } from '../../../admin/tags/TableTag.js';
-      //not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import const TableTag = globalThis.admin.tags.TableTag;
 
       
 import { TransformInfoHelperFactory } from '../../../taghelpers/transform/info/TransformInfoHelperFactory.js';
-      //not GWT import const TransformInfoHelperFactory = globalThis.taghelpers.transform.info.TransformInfoHelperFactory;
+//not GWT import const TransformInfoHelperFactory = globalThis.taghelpers.transform.info.TransformInfoHelperFactory;
 
       
 

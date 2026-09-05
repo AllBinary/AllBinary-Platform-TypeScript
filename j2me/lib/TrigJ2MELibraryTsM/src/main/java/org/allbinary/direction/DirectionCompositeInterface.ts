@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Direction } from './Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
+//not GWT import - same folder const Direction = globalThis.org.allbinary.direction.Direction;
 
                 
 export interface DirectionCompositeInterface {

@@ -18,24 +18,24 @@
         
 
 
-//not plain js import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-      const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+//not plain js import { MyRandomFactory } 
+const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
-      //not GWT import const TileLayer = globalThis.org.mapeditor.core.TileLayer;
+//not GWT import const TileLayer = globalThis.org.mapeditor.core.TileLayer;
 
       
 import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
-      //not GWT import const TiledMap = globalThis.org.mapeditor.core.TiledMap;
+//not GWT import const TiledMap = globalThis.org.mapeditor.core.TiledMap;
 
       
 
@@ -57,7 +57,7 @@ import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TileMapPlacementVisitor } from './TileMapPlacementVisitor.js';
-//not GWT import const TileMapPlacementVisitor = globalThis.org.allbinary.game.behavior.topview.placement.TileMapPlacementVisitor;
+//not GWT import - same folder const TileMapPlacementVisitor = globalThis.org.allbinary.game.behavior.topview.placement.TileMapPlacementVisitor;
 
                 
 export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {

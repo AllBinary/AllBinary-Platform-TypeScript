@@ -19,23 +19,23 @@
 
 
 import { FileInputStream } from '../../../../java/io/FileInputStream.js';
-      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
+//not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
 import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
-      //not GWT import const FileNotFoundException = globalThis.java.io.FileNotFoundException;
+//not GWT import const FileNotFoundException = globalThis.java.io.FileNotFoundException;
 
       
 import { IOException } from '../../../../java/io/IOException.js';
-      //not GWT import const IOException = globalThis.java.io.IOException;
+//not GWT import const IOException = globalThis.java.io.IOException;
 
       
 import { InputStream } from '../../../../java/io/InputStream.js';
-      //not GWT import const InputStream = globalThis.java.io.InputStream;
+//not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
-      //not GWT import const FileChannel = globalThis.java.nio.channels.FileChannel;
+//not GWT import const FileChannel = globalThis.java.nio.channels.FileChannel;
 
       
 

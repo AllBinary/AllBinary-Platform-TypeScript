@@ -21,11 +21,11 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
-      //not GWT import const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
+//not GWT import const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
 
       
 

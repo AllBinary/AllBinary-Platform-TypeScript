@@ -21,19 +21,19 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      //not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
       
 import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+//not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
 import { PaintableComposite } from '../../../../../org/allbinary/graphics/paint/PaintableComposite.js';
-      //not GWT import const PaintableComposite = globalThis.org.allbinary.graphics.paint.PaintableComposite;
+//not GWT import const PaintableComposite = globalThis.org.allbinary.graphics.paint.PaintableComposite;
 
       
 import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
 
@@ -55,7 +55,7 @@ import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoCanvas } from './DemoCanvas.js';
-//not GWT import const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
+//not GWT import - same folder const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
 
                 
 export class DemoCanvasProgressUtil

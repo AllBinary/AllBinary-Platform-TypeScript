@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } from '../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
-      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not plain js import { BasicArrayListD } from '../../../../../../../../../../org/allbinary/util/BasicArrayListD.js';
-      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+//not plain js import { BasicArrayListD } 
+const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
 import { swing } from '../../../../../../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-      //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
+//not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
 
       
-//not plain js import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -63,55 +63,55 @@ import { InputImageType } from '../../../../../../../../../../org/allbinary/inpu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JPanel;
 
                 import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-//not GWT import const ImageActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
+//not GWT import - same folder const ImageActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
 
                 import { ImageTypes } from './ImageTypes.js';
-//not GWT import const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
+//not GWT import - same folder const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
 
                 import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import const DefaultListModel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.DefaultListModel;
+//not GWT import - same folder const DefaultListModel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.DefaultListModel;
 
                 import { JDialog } from './JDialog.js';
-//not GWT import const JDialog = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JDialog;
+//not GWT import - same folder const JDialog = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JDialog;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JLabel;
 
                 import { JButton } from './JButton.js';
-//not GWT import const JButton = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JButton;
+//not GWT import - same folder const JButton = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JButton;
 
                 import { JCheckBox } from './JCheckBox.js';
-//not GWT import const JCheckBox = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JCheckBox;
+//not GWT import - same folder const JCheckBox = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JCheckBox;
 
                 import { JScrollPane } from './JScrollPane.js';
-//not GWT import const JScrollPane = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JScrollPane;
+//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JScrollPane;
 
                 import { JList } from './JList.js';
-//not GWT import const JList = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JList;
+//not GWT import - same folder const JList = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JList;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Dimension;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const ActionListener = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionListener;
+//not GWT import - same folder const ActionListener = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionEvent;
+//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionEvent;
 
                 import { Insets } from './Insets.js';
-//not GWT import const Insets = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Insets;
+//not GWT import - same folder const Insets = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Insets;
 
                 import { AbstractListModel } from './AbstractListModel.js';
-//not GWT import const AbstractListModel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.AbstractListModel;
+//not GWT import - same folder const AbstractListModel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.AbstractListModel;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Short;
 
                 
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {

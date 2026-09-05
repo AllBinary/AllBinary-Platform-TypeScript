@@ -19,11 +19,11 @@
 
 
 import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
-      //not GWT import const LocalPlayerInputIdFactory = globalThis.org.allbinary.game.input.LocalPlayerInputIdFactory;
+//not GWT import const LocalPlayerInputIdFactory = globalThis.org.allbinary.game.input.LocalPlayerInputIdFactory;
 
       
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 
@@ -45,7 +45,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpKeyEventHandlerBase } from './UpKeyEventHandlerBase.js';
-//not GWT import const UpKeyEventHandlerBase = globalThis.org.allbinary.game.input.event.UpKeyEventHandlerBase;
+//not GWT import - same folder const UpKeyEventHandlerBase = globalThis.org.allbinary.game.input.event.UpKeyEventHandlerBase;
 
                 
 export class UpKeyEventHandler extends UpKeyEventHandlerBase {

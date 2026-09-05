@@ -37,13 +37,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehaviorFactory } from './CollidableBaseBehaviorFactory.js';
-//not GWT import const CollidableBaseBehaviorFactory = globalThis.org.allbinary.game.collision.CollidableBaseBehaviorFactory;
+//not GWT import - same folder const CollidableBaseBehaviorFactory = globalThis.org.allbinary.game.collision.CollidableBaseBehaviorFactory;
 
                 import { CollidableAlwaysPickupNeverCollideBehavior } from './CollidableAlwaysPickupNeverCollideBehavior.js';
-//not GWT import const CollidableAlwaysPickupNeverCollideBehavior = globalThis.org.allbinary.game.collision.CollidableAlwaysPickupNeverCollideBehavior;
+//not GWT import - same folder const CollidableAlwaysPickupNeverCollideBehavior = globalThis.org.allbinary.game.collision.CollidableAlwaysPickupNeverCollideBehavior;
 
                 import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+//not GWT import - same folder const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
 
                 
 export class CollidableAlwaysPickupNeverCollideBehaviorFactory extends CollidableBaseBehaviorFactory {

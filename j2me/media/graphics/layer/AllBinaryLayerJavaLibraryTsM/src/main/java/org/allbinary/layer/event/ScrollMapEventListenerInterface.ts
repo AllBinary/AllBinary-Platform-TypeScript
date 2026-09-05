@@ -21,7 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 
@@ -43,7 +43,7 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollMapEvent } from './ScrollMapEvent.js';
-//not GWT import const ScrollMapEvent = globalThis.org.allbinary.layer.event.ScrollMapEvent;
+//not GWT import - same folder const ScrollMapEvent = globalThis.org.allbinary.layer.event.ScrollMapEvent;
 
                 
 export interface ScrollMapEventListenerInterface extends EventListenerInterface {

@@ -19,7 +19,7 @@
 
 
 import { Hashtable } from '../../../java/util/Hashtable.js';
-      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
+//not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 

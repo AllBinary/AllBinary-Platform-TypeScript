@@ -21,15 +21,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-      //not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+//not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
 
       
 import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceFactory.js';
-      //not GWT import const InputAutomationModuleServiceFactory = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceFactory;
+//not GWT import const InputAutomationModuleServiceFactory = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceFactory;
 
       
-//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 
@@ -51,7 +51,7 @@ import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericModuleFactory } from './GenericModuleFactory.js';
-//not GWT import const GenericModuleFactory = globalThis.org.allbinary.input.automation.module.generic.GenericModuleFactory;
+//not GWT import - same folder const GenericModuleFactory = globalThis.org.allbinary.input.automation.module.generic.GenericModuleFactory;
 
                 
 export class InputAutomationGenericModuleServiceFactory extends InputAutomationModuleServiceFactory {

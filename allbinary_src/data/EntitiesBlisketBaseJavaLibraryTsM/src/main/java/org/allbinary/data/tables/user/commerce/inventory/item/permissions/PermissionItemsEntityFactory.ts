@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-//not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -49,7 +49,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PermissionItemsEntity } from './PermissionItemsEntity.js';
-//not GWT import const PermissionItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.permissions.PermissionItemsEntity;
+//not GWT import - same folder const PermissionItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.permissions.PermissionItemsEntity;
 
                 
 export class PermissionItemsEntityFactory

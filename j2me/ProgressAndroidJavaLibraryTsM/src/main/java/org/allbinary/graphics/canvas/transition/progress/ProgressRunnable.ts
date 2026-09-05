@@ -19,19 +19,19 @@
 
 
 import { Activity } from '../../../../../../android/app/Activity.js';
-      //not GWT import const Activity = globalThis.android.app.Activity;
+//not GWT import const Activity = globalThis.android.app.Activity;
 
       
 import { MidletActivityBase } from '../../../../../../org/allbinary/android/activity/MidletActivityBase.js';
-      //not GWT import const MidletActivityBase = globalThis.org.allbinary.android.activity.MidletActivityBase;
+//not GWT import const MidletActivityBase = globalThis.org.allbinary.android.activity.MidletActivityBase;
 
       
 import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
-      //not GWT import const SimpleProgressActivityInterface = globalThis.org.allbinary.android.activity.SimpleProgressActivityInterface;
+//not GWT import const SimpleProgressActivityInterface = globalThis.org.allbinary.android.activity.SimpleProgressActivityInterface;
 
       
-//not plain js import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
-      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+//not plain js import { ARunnable } 
+const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
 
@@ -53,7 +53,7 @@ import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+//not GWT import - same folder const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
                 
 export class ProgressRunnable extends ARunnable {

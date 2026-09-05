@@ -19,7 +19,7 @@
 
 
 import { Init } from '../../../../../../org/allbinary/init/Init.js';
-      //not GWT import const Init = globalThis.org.allbinary.init.Init;
+//not GWT import const Init = globalThis.org.allbinary.init.Init;
 
       
 

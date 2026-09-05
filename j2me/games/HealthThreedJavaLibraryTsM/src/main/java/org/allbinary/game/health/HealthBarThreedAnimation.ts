@@ -21,51 +21,51 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } 
+const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { ColorBufferList } from '../../../../min3d/core/ColorBufferList.js';
-      //not GWT import const ColorBufferList = globalThis.min3d.core.ColorBufferList;
+//not GWT import const ColorBufferList = globalThis.min3d.core.ColorBufferList;
 
       
 import { Number3dBufferList } from '../../../../min3d/core/Number3dBufferList.js';
-      //not GWT import const Number3dBufferList = globalThis.min3d.core.Number3dBufferList;
+//not GWT import const Number3dBufferList = globalThis.min3d.core.Number3dBufferList;
 
       
 import { Rectangle } from '../../../../min3d/objectPrimitives/Rectangle.js';
-      //not GWT import const Rectangle = globalThis.min3d.objectPrimitives.Rectangle;
+//not GWT import const Rectangle = globalThis.min3d.objectPrimitives.Rectangle;
 
       
 import { Number3d } from '../../../../min3d/vos/Number3d.js';
-      //not GWT import const Number3d = globalThis.min3d.vos.Number3d;
+//not GWT import const Number3d = globalThis.min3d.vos.Number3d;
 
       
 import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
-      //not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
+//not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
 
       
 import { Object3dProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessor.js';
-      //not GWT import const Object3dProcessor = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessor;
+//not GWT import const Object3dProcessor = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessor;
 
       
 import { Object3dProcessorUtil } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessorUtil.js';
-      //not GWT import const Object3dProcessorUtil = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessorUtil;
+//not GWT import const Object3dProcessorUtil = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessorUtil;
 
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
-      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
 
@@ -87,7 +87,7 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarAnimation } from './HealthBarAnimation.js';
-//not GWT import const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
+//not GWT import - same folder const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
 
                 
 export class HealthBarThreedAnimation extends HealthBarAnimation {

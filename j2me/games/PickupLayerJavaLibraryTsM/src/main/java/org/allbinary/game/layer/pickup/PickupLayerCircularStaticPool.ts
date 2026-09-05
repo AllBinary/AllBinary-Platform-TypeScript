@@ -21,7 +21,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-      //not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
+//not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
 
       
 
@@ -43,13 +43,13 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
-//not GWT import const PickupLayer = globalThis.org.allbinary.game.layer.pickup.PickupLayer;
+//not GWT import - same folder const PickupLayer = globalThis.org.allbinary.game.layer.pickup.PickupLayer;
 
                 import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-//not GWT import const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+//not GWT import - same folder const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
 
                 import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
+//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
 
                 
 export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {

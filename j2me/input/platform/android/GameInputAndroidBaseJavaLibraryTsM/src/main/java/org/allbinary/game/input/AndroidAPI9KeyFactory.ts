@@ -5,11 +5,11 @@
 
 
 import { KeyEvent } from '../../../../android/view/KeyEvent.js';
-      //not GWT import const KeyEvent = globalThis.android.view.KeyEvent;
+//not GWT import const KeyEvent = globalThis.android.view.KeyEvent;
 
       
-//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
 
@@ -31,10 +31,10 @@ import { KeyEvent } from '../../../../android/view/KeyEvent.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import const AndroidKeyFactory = globalThis.org.allbinary.game.input.AndroidKeyFactory;
+//not GWT import - same folder const AndroidKeyFactory = globalThis.org.allbinary.game.input.AndroidKeyFactory;
 
                 import { AndroidGameKey } from './AndroidGameKey.js';
-//not GWT import const AndroidGameKey = globalThis.org.allbinary.game.input.AndroidGameKey;
+//not GWT import - same folder const AndroidGameKey = globalThis.org.allbinary.game.input.AndroidGameKey;
 
                 
 export class AndroidAPI9KeyFactory extends AndroidKeyFactory {

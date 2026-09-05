@@ -19,7 +19,7 @@
 
 
 import { AdvertisementImageInterface } from '../../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
-      //not GWT import const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
+//not GWT import const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
 
       
 

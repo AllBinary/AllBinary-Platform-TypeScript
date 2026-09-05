@@ -24,12 +24,12 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } 
+const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not plain js import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
-      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } 
+const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 
@@ -51,7 +51,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RatioProcessor } from './RatioProcessor.js';
-//not GWT import const RatioProcessor = globalThis.org.allbinary.graphics.threed.RatioProcessor;
+//not GWT import - same folder const RatioProcessor = globalThis.org.allbinary.graphics.threed.RatioProcessor;
 
                 //OpenGLNone
 export class SWTJOGLProcessor

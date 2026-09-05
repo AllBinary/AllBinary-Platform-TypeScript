@@ -25,79 +25,79 @@
             import { Double } from '../../../../java/lang/Double.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
+//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 import { File } from '../../../../java/io/File.js';
-      //not GWT import const File = globalThis.java.io.File;
+//not GWT import const File = globalThis.java.io.File;
 
       
 import { swing } from '../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
-//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
 import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-      //not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+//not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
       
-//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-      //not GWT import const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
+//not GWT import const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
 
       
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-      //not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
       
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-      //not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+//not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
 
       
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-      //not GWT import const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
+//not GWT import const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
 
       
 import { ImageUnifierCell } from '../../../../org/allbinary/media/image/ImageUnifierCell.js';
-      //not GWT import const ImageUnifierCell = globalThis.org.allbinary.media.image.ImageUnifierCell;
+//not GWT import const ImageUnifierCell = globalThis.org.allbinary.media.image.ImageUnifierCell;
 
       
 import { ImageUnifierProperties } from '../../../../org/allbinary/media/image/ImageUnifierProperties.js';
-      //not GWT import const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
+//not GWT import const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
 
       
 import { ImageUnifierUtil } from '../../../../org/allbinary/media/image/ImageUnifierUtil.js';
-      //not GWT import const ImageUnifierUtil = globalThis.org.allbinary.media.image.ImageUnifierUtil;
+//not GWT import const ImageUnifierUtil = globalThis.org.allbinary.media.image.ImageUnifierUtil;
 
       
 import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
-      //not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+//not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
       
 import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRatioUtil.js';
-      //not GWT import const ImagesRatioUtil = globalThis.org.allbinary.media.image.ImagesRatioUtil;
+//not GWT import const ImagesRatioUtil = globalThis.org.allbinary.media.image.ImagesRatioUtil;
 
       
-//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+//not plain js import { CommonPhoneStrings } 
+const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -119,61 +119,61 @@ import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.image.gui.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.image.gui.JPanel;
 
                 import { ImageIconUnique } from './ImageIconUnique.js';
-//not GWT import const ImageIconUnique = globalThis.org.allbinary.image.gui.ImageIconUnique;
+//not GWT import - same folder const ImageIconUnique = globalThis.org.allbinary.image.gui.ImageIconUnique;
 
                 import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import const DefaultListModel = globalThis.org.allbinary.image.gui.DefaultListModel;
+//not GWT import - same folder const DefaultListModel = globalThis.org.allbinary.image.gui.DefaultListModel;
 
                 import { ImageIcon } from './ImageIcon.js';
-//not GWT import const ImageIcon = globalThis.org.allbinary.image.gui.ImageIcon;
+//not GWT import - same folder const ImageIcon = globalThis.org.allbinary.image.gui.ImageIcon;
 
                 import { Icon } from './Icon.js';
-//not GWT import const Icon = globalThis.org.allbinary.image.gui.Icon;
+//not GWT import - same folder const Icon = globalThis.org.allbinary.image.gui.Icon;
 
                 import { JLabel } from './JLabel.js';
-//not GWT import const JLabel = globalThis.org.allbinary.image.gui.JLabel;
+//not GWT import - same folder const JLabel = globalThis.org.allbinary.image.gui.JLabel;
 
                 import { JScrollPane } from './JScrollPane.js';
-//not GWT import const JScrollPane = globalThis.org.allbinary.image.gui.JScrollPane;
+//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.image.gui.JScrollPane;
 
                 import { JList } from './JList.js';
-//not GWT import const JList = globalThis.org.allbinary.image.gui.JList;
+//not GWT import - same folder const JList = globalThis.org.allbinary.image.gui.JList;
 
                 import { JButton } from './JButton.js';
-//not GWT import const JButton = globalThis.org.allbinary.image.gui.JButton;
+//not GWT import - same folder const JButton = globalThis.org.allbinary.image.gui.JButton;
 
                 import { JTextField } from './JTextField.js';
-//not GWT import const JTextField = globalThis.org.allbinary.image.gui.JTextField;
+//not GWT import - same folder const JTextField = globalThis.org.allbinary.image.gui.JTextField;
 
                 import { Dimension } from './Dimension.js';
-//not GWT import const Dimension = globalThis.org.allbinary.image.gui.Dimension;
+//not GWT import - same folder const Dimension = globalThis.org.allbinary.image.gui.Dimension;
 
                 import { ActionListener } from './ActionListener.js';
-//not GWT import const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
+//not GWT import - same folder const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
 
                 import { ActionEvent } from './ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
+//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
 
                 import { PropertyChangeListener } from './PropertyChangeListener.js';
-//not GWT import const PropertyChangeListener = globalThis.org.allbinary.image.gui.PropertyChangeListener;
+//not GWT import - same folder const PropertyChangeListener = globalThis.org.allbinary.image.gui.PropertyChangeListener;
 
                 import { PropertyChangeEvent } from './PropertyChangeEvent.js';
-//not GWT import const PropertyChangeEvent = globalThis.org.allbinary.image.gui.PropertyChangeEvent;
+//not GWT import - same folder const PropertyChangeEvent = globalThis.org.allbinary.image.gui.PropertyChangeEvent;
 
                 import { KeyAdapter } from './KeyAdapter.js';
-//not GWT import const KeyAdapter = globalThis.org.allbinary.image.gui.KeyAdapter;
+//not GWT import - same folder const KeyAdapter = globalThis.org.allbinary.image.gui.KeyAdapter;
 
                 import { KeyEvent } from './KeyEvent.js';
-//not GWT import const KeyEvent = globalThis.org.allbinary.image.gui.KeyEvent;
+//not GWT import - same folder const KeyEvent = globalThis.org.allbinary.image.gui.KeyEvent;
 
                 import { GroupLayout } from './GroupLayout.js';
-//not GWT import const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
+//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
 
                 import { Short } from './Short.js';
-//not GWT import const Short = globalThis.org.allbinary.image.gui.Short;
+//not GWT import - same folder const Short = globalThis.org.allbinary.image.gui.Short;
 
                 
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

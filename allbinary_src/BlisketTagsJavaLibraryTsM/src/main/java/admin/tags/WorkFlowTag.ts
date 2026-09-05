@@ -19,7 +19,7 @@
 
 
 import { WorkFlowHelperFactory } from '../../admin/taghelpers/WorkFlowHelperFactory.js';
-      //not GWT import const WorkFlowHelperFactory = globalThis.admin.taghelpers.WorkFlowHelperFactory;
+//not GWT import const WorkFlowHelperFactory = globalThis.admin.taghelpers.WorkFlowHelperFactory;
 
       
 
@@ -41,7 +41,7 @@ import { WorkFlowHelperFactory } from '../../admin/taghelpers/WorkFlowHelperFact
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import const TableTag = globalThis.admin.tags.TableTag;
+//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
 
                 
 export class WorkFlowTag extends TableTag {

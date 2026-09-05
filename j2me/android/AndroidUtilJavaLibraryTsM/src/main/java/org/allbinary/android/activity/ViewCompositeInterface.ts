@@ -21,7 +21,7 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { View } from '../../../../android/view/View.js';
-      //not GWT import const View = globalThis.android.view.View;
+//not GWT import const View = globalThis.android.view.View;
 
       
 

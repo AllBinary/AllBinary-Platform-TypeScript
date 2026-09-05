@@ -21,23 +21,23 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { swing } from '../../../../../../../javax/swing.js';
-      //not GWT import const swing = globalThis.javax.swing;
+//not GWT import const swing = globalThis.javax.swing;
 
       
 import { AbstractInputAutomationFactory } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
-      //not GWT import const AbstractInputAutomationFactory = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationFactory;
+//not GWT import const AbstractInputAutomationFactory = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationFactory;
 
       
 import { InputAutomationModuleData } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-      //not GWT import const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
+//not GWT import const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
 
       
 import { BlankModuleConfigurationJPanel } from '../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js';
-      //not GWT import const BlankModuleConfigurationJPanel = globalThis.org.allbinary.input.automation.module.configuration.BlankModuleConfigurationJPanel;
+//not GWT import const BlankModuleConfigurationJPanel = globalThis.org.allbinary.input.automation.module.configuration.BlankModuleConfigurationJPanel;
 
       
 import { RunnableInterface } from '../../../../../../../org/allbinary/thread/RunnableInterface.js';
-      //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
       
 
@@ -59,7 +59,7 @@ import { RunnableInterface } from '../../../../../../../org/allbinary/thread/Run
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import const JPanel = globalThis.org.allbinary.input.automation.module.game.test.JPanel;
+//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.game.test.JPanel;
 
                 
 export class TestModuleFactory extends AbstractInputAutomationFactory {
