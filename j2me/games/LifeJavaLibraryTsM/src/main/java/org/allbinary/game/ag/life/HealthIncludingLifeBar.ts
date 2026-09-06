@@ -77,6 +77,18 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {
         
 
+                //@Throws(Exception.constructor)
+            
+    public static createHealthIncludingLifeBar(layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, location: number, direction: number): HealthIncludingLifeBar{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new HealthIncludingLifeBar(layerInterface, life, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction);
+    
+}
+
+
     private readonly animationInterface: HealthBarAnimation;
 
     private readonly life: Life;
@@ -100,15 +112,6 @@ this.healthInterface!.addListener(this);
     
 this.onHealthChange();
     
-}
-
-
-public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, location: number, direction: number){
-            this(layerInterface, life, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 
