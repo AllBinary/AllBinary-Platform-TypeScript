@@ -56,18 +56,6 @@ import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/sy
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
 
 
 
@@ -92,8 +80,6 @@ import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.j
                 // This is the information sent to the license server
 export class AbeClientInformation extends ClientInformation {
         
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
 public constructor (name: string, version: string, specialName: string, shortName: string){
             super(name, version, specialName, shortName);
@@ -146,7 +132,7 @@ PreLogUtil.put(new StringMaker().append("Special Name: ")!.append(this.getSpecia
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 

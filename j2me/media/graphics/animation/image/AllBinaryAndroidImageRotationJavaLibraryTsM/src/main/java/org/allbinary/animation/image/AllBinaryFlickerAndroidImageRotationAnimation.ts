@@ -44,8 +44,8 @@ import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidI
 //not GWT import const AndroidImageUtil = globalThis.org.allbinary.media.image.AndroidImageUtil;
 
       
-//not plain js import { ImageModifierUtil } 
-const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
 

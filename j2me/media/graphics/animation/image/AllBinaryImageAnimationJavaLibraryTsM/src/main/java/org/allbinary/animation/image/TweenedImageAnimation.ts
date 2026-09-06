@@ -30,8 +30,8 @@ const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { DisposalUtil } 
-const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
+//not GWT import const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';

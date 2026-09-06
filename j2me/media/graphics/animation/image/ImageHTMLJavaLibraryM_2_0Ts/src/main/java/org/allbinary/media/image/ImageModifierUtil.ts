@@ -72,16 +72,8 @@ const Canvas = globalThis.playn.core.Canvas;
 const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not plain js import { PlayN } 
-const PlayN = globalThis.playn.core.PlayN;
-
-      
-//not plain js import { HtmlGraphics } 
-const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
-
-      
-//not plain js import { HtmlImage } 
-const HtmlImage = globalThis.playn.html.HtmlImage;
+//not plain js import { HTMLPlaynUtil } 
+const HTMLPlaynUtil = globalThis.playn.html.HTMLPlaynUtil;
 
       
 
@@ -123,6 +115,8 @@ export class ImageModifierUtil
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly resourceCallbackStrings: ResourceCallbackStrings = ResourceCallbackStrings.getInstance()!;
+
+    private readonly playnUtil: HTMLPlaynUtil = HTMLPlaynUtil.getInstance()!;
 
     private alphaArray: boolean[];
 
@@ -172,10 +166,7 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
     var originalPlaynImage: playn.core.Image = (originalImage as PlaynImage).getImage() as playn.core.Image;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
-    
-
-    var canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
     
 canvas.clear();
     
@@ -200,10 +191,7 @@ canvas.draw(originalPlaynImage, 0, 0);
     var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
-    
-
-    var canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
     
 canvas.setAlpha(alphaFloat);
     

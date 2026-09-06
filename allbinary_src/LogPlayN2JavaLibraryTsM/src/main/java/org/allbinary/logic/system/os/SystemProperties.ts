@@ -22,6 +22,10 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 
 
 
@@ -40,8 +44,8 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //ActualPlatform
-/*actual*/ export class SystemProperties
+        
+export class SystemProperties
             extends Object
          {
         

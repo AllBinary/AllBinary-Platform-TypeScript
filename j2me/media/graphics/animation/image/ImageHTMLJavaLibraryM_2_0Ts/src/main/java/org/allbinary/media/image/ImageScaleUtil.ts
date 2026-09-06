@@ -46,16 +46,8 @@ const Canvas = globalThis.playn.core.Canvas;
 const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not plain js import { PlayN } 
-const PlayN = globalThis.playn.core.PlayN;
-
-      
-//not plain js import { HtmlGraphics } 
-const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
-
-      
-//not plain js import { HtmlImage } 
-const HtmlImage = globalThis.playn.html.HtmlImage;
+//not plain js import { HTMLPlaynUtil } 
+const HTMLPlaynUtil = globalThis.playn.html.HTMLPlaynUtil;
 
       
 
@@ -76,8 +68,8 @@ const HtmlImage = globalThis.playn.html.HtmlImage;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ImageCreationUtil } 
-const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
+        import { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageScaleUtil
@@ -96,6 +88,8 @@ export class ImageScaleUtil
     
 }
 
+
+    private readonly playnUtil: HTMLPlaynUtil = HTMLPlaynUtil.getInstance()!;
 
 private constructor (){
 
@@ -188,10 +182,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
-    
-
-    var canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
     
 canvas.draw(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight());
     

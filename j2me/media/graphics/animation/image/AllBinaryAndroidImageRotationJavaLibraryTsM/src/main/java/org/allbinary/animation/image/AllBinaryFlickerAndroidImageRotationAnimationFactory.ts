@@ -46,8 +46,8 @@ import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/an
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not plain js import { ImageCopyUtil } 
-const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+//not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
 //not plain js import { AngleFactory } 

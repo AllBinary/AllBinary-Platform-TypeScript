@@ -18,11 +18,11 @@
         
 
 
-import { HashMap } from '../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
+            import { Object } from '../../../../../java/lang/Object.js';
+        
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
+        
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
 //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
@@ -45,8 +45,20 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class ABHashMap extends HashMap<K, V> {
+export class ExceptionFactory
+            extends Object
+         {
         
+
+    public static createThrowable(message: string): Throwable{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new Throwable(message);
+    
+}
+
 
 }
 

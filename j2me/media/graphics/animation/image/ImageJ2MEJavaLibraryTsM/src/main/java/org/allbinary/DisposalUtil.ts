@@ -24,8 +24,8 @@
 const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { Resource } 
-const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
+//not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
 

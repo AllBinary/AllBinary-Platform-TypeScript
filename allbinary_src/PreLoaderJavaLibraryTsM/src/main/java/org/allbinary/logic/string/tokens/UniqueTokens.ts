@@ -30,18 +30,6 @@ import { HashSet } from '../../../../../java/util/HashSet.js';
 //not GWT import const HashSet = globalThis.java.util.HashSet;
 
       
-//not plain js import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
-//not plain js import { BasicArrayListD } 
-const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
-//not plain js import { StdUtil } 
-const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 

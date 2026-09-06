@@ -70,8 +70,8 @@ const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ImageCompleteUtil } 
-const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
+        import { ImageCompleteUtil } from './ImageCompleteUtil.js';
+//not GWT import - same folder const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
 
                 
 export class ImageWaitCompleteUtil extends ImageCompleteUtil {

@@ -48,12 +48,12 @@ import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidI
 //not GWT import const AndroidImageUtil = globalThis.org.allbinary.media.image.AndroidImageUtil;
 
       
-//not plain js import { ImageCopyUtil } 
-const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+//not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
-//not plain js import { ImageModifierUtil } 
-const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
 

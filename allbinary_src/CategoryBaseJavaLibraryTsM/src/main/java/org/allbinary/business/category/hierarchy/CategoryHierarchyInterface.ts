@@ -19,7 +19,7 @@
 
 
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
 

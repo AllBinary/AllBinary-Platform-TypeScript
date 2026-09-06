@@ -48,8 +48,8 @@ import { ScreenRelationalUtil } from '../../../../org/allbinary/graphics/display
 const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-//not plain js import { ImageScaleUtil } 
-const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+//not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';

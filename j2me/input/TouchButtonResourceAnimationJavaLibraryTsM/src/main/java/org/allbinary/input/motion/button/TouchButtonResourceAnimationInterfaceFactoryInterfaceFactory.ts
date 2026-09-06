@@ -80,8 +80,8 @@ import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/syste
 //not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
 
       
-//not plain js import { ImageCompleteUtil } 
-const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
+import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/ImageCompleteUtil.js';
+//not GWT import const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
 
       
 

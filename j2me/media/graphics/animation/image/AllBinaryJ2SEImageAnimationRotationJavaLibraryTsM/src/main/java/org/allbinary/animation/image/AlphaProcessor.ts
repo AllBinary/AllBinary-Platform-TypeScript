@@ -22,8 +22,8 @@
 const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { ImageModifierUtil } 
-const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
 

@@ -34,8 +34,8 @@ import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not plain js import { DisposalUtil } 
-const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
+//not GWT import const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
@@ -58,8 +58,8 @@ const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { ImageModifierUtil } 
-const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
 //not plain js import { CircularIndexUtil } 

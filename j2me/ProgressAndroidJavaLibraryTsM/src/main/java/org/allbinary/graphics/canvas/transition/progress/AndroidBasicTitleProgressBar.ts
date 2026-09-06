@@ -100,8 +100,8 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
 //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
-//not plain js import { ImageScaleUtil } 
-const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+import { ImageScaleUtil } from '../../../../../../org/allbinary/media/image/ImageScaleUtil.js';
+//not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';

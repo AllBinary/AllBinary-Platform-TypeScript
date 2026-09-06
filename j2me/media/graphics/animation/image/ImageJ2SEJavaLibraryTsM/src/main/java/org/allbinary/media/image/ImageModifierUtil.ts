@@ -75,8 +75,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         import { ImageUtil } from './ImageUtil.js';
 //not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
-                //not plain js - same folder import { ImageCreationUtil } 
-const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
+                import { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageModifierUtil

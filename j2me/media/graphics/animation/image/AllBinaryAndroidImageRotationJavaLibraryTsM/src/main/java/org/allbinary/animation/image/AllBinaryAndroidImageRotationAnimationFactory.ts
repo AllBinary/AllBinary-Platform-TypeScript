@@ -48,8 +48,8 @@ import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengle
 const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-//not plain js import { ImageCopyUtil } 
-const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+//not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
 //not plain js import { AngleFactory } 

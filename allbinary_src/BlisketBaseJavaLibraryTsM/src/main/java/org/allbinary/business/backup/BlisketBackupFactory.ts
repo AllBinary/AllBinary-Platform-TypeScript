@@ -22,14 +22,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
-//not plain js import { BasicArrayListD } 
-const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 

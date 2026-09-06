@@ -48,8 +48,8 @@ import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/Ga
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ImageScaleUtil } 
-const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+        import { ImageScaleUtil } from './ImageScaleUtil.js';
+//not GWT import - same folder const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
                 
 export class ImageJ2MEScaleUtil

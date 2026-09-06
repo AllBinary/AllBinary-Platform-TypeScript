@@ -44,8 +44,8 @@ const Image = globalThis.javax.microedition.lcdui.Image;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ImageCopyUtil } 
-const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+        import { ImageCopyUtil } from './ImageCopyUtil.js';
+//not GWT import - same folder const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
                 
 export class ImageJ2MEScaleUtil

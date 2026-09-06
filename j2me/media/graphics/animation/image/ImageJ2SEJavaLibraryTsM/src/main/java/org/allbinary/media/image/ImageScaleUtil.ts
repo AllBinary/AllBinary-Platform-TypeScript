@@ -66,8 +66,8 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
                 import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
 //not GWT import - same folder const ImageJ2SEUtil = globalThis.org.allbinary.media.image.ImageJ2SEUtil;
 
-                //not plain js - same folder import { ImageCreationUtil } 
-const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
+                import { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageScaleUtil

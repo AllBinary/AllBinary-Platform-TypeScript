@@ -56,8 +56,8 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ImageCreationUtil } 
-const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
+        import { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
                 
 export class ImageCopyUtil

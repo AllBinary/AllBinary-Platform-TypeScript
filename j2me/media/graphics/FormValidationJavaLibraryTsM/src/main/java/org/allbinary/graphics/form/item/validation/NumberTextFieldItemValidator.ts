@@ -22,14 +22,6 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not plain js import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
-//not plain js import { BasicArrayListD } 
-const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
 //not GWT import const ABTextFieldItem = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
 

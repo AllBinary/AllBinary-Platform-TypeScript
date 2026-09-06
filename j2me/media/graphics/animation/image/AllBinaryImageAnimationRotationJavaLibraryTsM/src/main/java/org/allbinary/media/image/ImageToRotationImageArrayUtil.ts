@@ -44,8 +44,8 @@ const Image = globalThis.javax.microedition.lcdui.Image;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ImageRotationUtil } 
-const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
+        import { ImageRotationUtil } from './ImageRotationUtil.js';
+//not GWT import - same folder const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
 
                 
 export class ImageToRotationImageArrayUtil

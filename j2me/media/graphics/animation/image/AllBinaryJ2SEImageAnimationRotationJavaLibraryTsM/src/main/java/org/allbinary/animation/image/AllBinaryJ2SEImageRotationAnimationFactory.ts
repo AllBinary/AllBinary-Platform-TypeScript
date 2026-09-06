@@ -56,8 +56,8 @@ const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { ImageCopyUtil } 
-const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+//not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
 

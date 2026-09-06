@@ -26,18 +26,6 @@
 const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 

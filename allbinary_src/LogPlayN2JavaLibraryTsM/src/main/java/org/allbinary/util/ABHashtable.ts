@@ -49,7 +49,7 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class ABHashtable extends Hashtable {
+export class ABHashtable extends Hashtable<K, V> {
         
 
 public constructor (){

@@ -30,8 +30,8 @@ const Image = globalThis.javax.microedition.lcdui.Image;
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not plain js import { Resource } 
-const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
+//not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
 import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
