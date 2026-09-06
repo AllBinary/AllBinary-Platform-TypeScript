@@ -1,6 +1,7 @@
 node_modules
 *.xml
 !pom.xml
+!assembly.xml
 *.java
 .github/*.md
 *.class

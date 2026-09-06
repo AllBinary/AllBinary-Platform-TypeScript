@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<assembly>
+    <id>dependencies</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+
+        <dependencySet>
+            
+           <excludes>
+               <!--
+               <exclude>org.allbinary:LoggingJ2MEAll</exclude>
+               -->
+               
+               <exclude>org.osgi:YourOSGIComponentLibrary</exclude>
+               <exclude>org.allbinary.logging:LogConfigTypeFreeblisketJavaLibrary</exclude>
+   
+               <exclude>org.allbinary:allbinary:InputAutomationGeneric2ModuleJavaLibrary</exclude>
+               <exclude>org.allbinary:allbinary:InputAutomationActionScriptJavaLibrary</exclude>
+               <exclude>org.allbinary:allbinary:InputAutomationJavaLibrary</exclude>
+               <exclude>org.allbinary:allbinary:InputAutomationModuleJavaLibrary</exclude>
+               <exclude>org.allbinary:allbinary:InputAutomationGenericModuleJavaLibrary</exclude>
+               
+               <exclude>org.allbinary:InputAutomationGeneric2ModuleJavaLibrary</exclude>
+               <exclude>org.allbinary:InputAutomationActionScriptJavaLibrary</exclude>
+               <exclude>org.allbinary:InputAutomationJavaLibrary</exclude>
+               <exclude>org.allbinary:InputAutomationModuleJavaLibrary</exclude>
+               <exclude>org.allbinary:InputAutomationGenericModuleJavaLibrary</exclude>
+
+           </excludes>
+
+            <unpack>true</unpack>
+            <scope>runtime</scope>
+            <outputDirectory></outputDirectory>
+            <outputFileNameMapping></outputFileNameMapping>
+        </dependencySet>
+    </dependencySets>
+    
+    <fileSets>
+        <fileSet>
+<!--            <directory>${project.basedir}/scripts</directory>
+            <outputDirectory>bin</outputDirectory>-->
+            <includes>
+                <include>*.ts</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
