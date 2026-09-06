@@ -4,10 +4,6 @@
         
 
 
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Canvas } 
 const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -26,14 +22,6 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
       
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

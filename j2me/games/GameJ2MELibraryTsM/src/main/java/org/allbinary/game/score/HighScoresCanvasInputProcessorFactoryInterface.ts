@@ -18,16 +18,8 @@
         
 
 
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
 //not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

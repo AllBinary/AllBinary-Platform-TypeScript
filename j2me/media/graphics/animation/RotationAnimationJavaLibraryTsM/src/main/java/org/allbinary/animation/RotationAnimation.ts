@@ -18,10 +18,6 @@
         
 
 
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
@@ -48,18 +44,6 @@ const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
       
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

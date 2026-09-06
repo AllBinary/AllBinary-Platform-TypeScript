@@ -20,10 +20,7 @@
 
             import { IllegalArgumentException } from '../../../java/lang/IllegalArgumentException.js';
         
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
-      
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
@@ -32,10 +29,7 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
-      
 
 
 

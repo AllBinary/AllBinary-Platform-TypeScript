@@ -18,10 +18,6 @@
         
 
 
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Image } 
 const Image = globalThis.javax.microedition.lcdui.Image;
 
@@ -48,14 +44,6 @@ const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
       
 //not plain js import { AngleInfo } 
 const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

@@ -30,10 +30,7 @@ import { Random } from '../../../../java/util/Random.js';
 //not GWT import const Random = globalThis.java.util.Random;
 
       
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
-      
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
@@ -46,14 +43,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
-      
 
 
 

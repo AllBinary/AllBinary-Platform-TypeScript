@@ -18,18 +18,9 @@
         
 
 
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
-      
 
 
 

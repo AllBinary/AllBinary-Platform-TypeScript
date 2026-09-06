@@ -24,10 +24,6 @@
         
             import { Math } from '../../../../../java/lang/Math.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { GPoint } 
 const GPoint = globalThis.org.allbinary.graphics.GPoint;
 

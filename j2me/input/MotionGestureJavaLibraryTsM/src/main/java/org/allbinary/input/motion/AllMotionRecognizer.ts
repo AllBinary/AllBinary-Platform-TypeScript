@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
 //not GWT import const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
 

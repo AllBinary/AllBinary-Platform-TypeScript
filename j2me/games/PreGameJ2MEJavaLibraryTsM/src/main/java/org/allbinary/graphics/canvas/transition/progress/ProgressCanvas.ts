@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { CommandListener } 
 const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
@@ -118,18 +114,6 @@ import { PathFindingThreadPool } from '../../../../../../org/allbinary/thread/Pa
       
 import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js';
 //not GWT import const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
-
-      
-import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

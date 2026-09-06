@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
 
@@ -34,10 +30,6 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
       
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
 //not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

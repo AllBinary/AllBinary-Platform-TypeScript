@@ -30,18 +30,6 @@ import { Enumeration } from '../../../../../java/util/Enumeration.js';
 const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
-
-      
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 

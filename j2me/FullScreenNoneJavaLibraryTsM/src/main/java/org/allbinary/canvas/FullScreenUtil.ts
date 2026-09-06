@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Canvas } 
 const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -40,10 +36,6 @@ import { Features } from '../../../org/allbinary/game/configuration/feature/Feat
       
 import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 //not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

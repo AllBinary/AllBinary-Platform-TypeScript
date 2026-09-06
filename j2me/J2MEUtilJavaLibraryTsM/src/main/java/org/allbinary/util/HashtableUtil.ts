@@ -40,6 +40,7 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { EnumerationUtil } 

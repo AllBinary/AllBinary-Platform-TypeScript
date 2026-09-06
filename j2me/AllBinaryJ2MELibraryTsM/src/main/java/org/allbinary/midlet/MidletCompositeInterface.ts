@@ -18,20 +18,12 @@
         
 
 
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Displayable } 
 const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 //not plain js import { MIDlet } 
 const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

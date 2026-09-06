@@ -24,10 +24,6 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
@@ -46,14 +42,6 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
       
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

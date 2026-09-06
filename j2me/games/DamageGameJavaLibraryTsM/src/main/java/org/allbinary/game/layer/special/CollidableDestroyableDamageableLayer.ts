@@ -22,10 +22,6 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Graphics } 
 const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
@@ -120,18 +116,6 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
       
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

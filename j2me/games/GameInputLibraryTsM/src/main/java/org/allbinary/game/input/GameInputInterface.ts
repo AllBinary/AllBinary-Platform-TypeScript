@@ -20,20 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
 //not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

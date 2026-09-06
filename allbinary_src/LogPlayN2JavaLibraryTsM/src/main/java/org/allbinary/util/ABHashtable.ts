@@ -22,14 +22,8 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
 //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
-      
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
-      
 
 
 

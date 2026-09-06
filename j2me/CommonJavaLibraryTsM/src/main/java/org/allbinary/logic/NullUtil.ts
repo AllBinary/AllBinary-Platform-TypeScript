@@ -22,10 +22,7 @@
         
             import { Class } from '../../../java/lang/Class.js';
         
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
-      
 
 
 

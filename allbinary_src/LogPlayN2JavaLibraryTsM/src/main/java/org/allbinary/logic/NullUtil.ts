@@ -34,18 +34,9 @@ import { Vector } from '../../../java/util/Vector.js';
 //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
-      
 
 
 

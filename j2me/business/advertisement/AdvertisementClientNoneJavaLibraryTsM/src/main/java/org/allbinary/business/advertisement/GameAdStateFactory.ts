@@ -8,20 +8,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
 //not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
 
       
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
 //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

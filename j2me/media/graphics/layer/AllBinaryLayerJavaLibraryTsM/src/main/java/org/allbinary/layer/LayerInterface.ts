@@ -18,20 +18,12 @@
         
 
 
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { GroupInterfaceCompositeInterface } from '../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
 //not GWT import const GroupInterfaceCompositeInterface = globalThis.org.allbinary.game.identification.GroupInterfaceCompositeInterface;
 
       
 import { PaintableInterface } from '../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 
@@ -55,8 +47,8 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
         import { NamedInterface } from './NamedInterface.js';
 //not GWT import - same folder const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
 
-                //not plain js - same folder import { PositionInterface } 
-const PositionInterface = globalThis.org.allbinary.layer.PositionInterface;
+                import { PositionInterface } from './PositionInterface.js';
+//not GWT import - same folder const PositionInterface = globalThis.org.allbinary.layer.PositionInterface;
 
                 
 export interface LayerInterface extends NamedInterface, PaintableInterface, GroupInterfaceCompositeInterface, PositionInterface {

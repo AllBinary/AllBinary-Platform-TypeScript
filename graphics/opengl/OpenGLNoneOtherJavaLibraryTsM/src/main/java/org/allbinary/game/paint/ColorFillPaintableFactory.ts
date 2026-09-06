@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 

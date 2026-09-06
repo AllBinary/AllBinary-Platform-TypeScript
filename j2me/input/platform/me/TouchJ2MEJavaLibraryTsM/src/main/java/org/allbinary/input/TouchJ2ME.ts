@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { AllMotionRecognizer } from '../../../org/allbinary/input/motion/AllMotionRecognizer.js';
 //not GWT import const AllMotionRecognizer = globalThis.org.allbinary.input.motion.AllMotionRecognizer;
 
@@ -48,18 +44,6 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
       
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 //not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
 
@@ -80,6 +76,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                 // This is the information sent to the license server
 export class AbeClientInformation extends ClientInformation {
         
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
 public constructor (name: string, version: string, specialName: string, shortName: string){
             super(name, version, specialName, shortName);

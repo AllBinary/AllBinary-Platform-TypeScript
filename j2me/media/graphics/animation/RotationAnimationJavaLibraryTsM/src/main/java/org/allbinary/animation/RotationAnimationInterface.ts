@@ -18,20 +18,12 @@
         
 
 
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { DirectionalInterface } from '../../../org/allbinary/direction/DirectionalInterface.js';
 //not GWT import const DirectionalInterface = globalThis.org.allbinary.direction.DirectionalInterface;
 
       
 //not plain js import { AngleInfo } 
 const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

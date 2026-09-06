@@ -18,16 +18,8 @@
         
 
 
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
 //not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

@@ -18,10 +18,6 @@
         
 
 
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
@@ -32,10 +28,6 @@ const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
       
 //not plain js import { Angle } 
 const Angle = globalThis.org.allbinary.math.Angle;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

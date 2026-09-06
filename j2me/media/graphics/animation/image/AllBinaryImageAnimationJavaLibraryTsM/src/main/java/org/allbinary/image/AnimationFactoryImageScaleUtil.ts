@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Image } 
 const Image = globalThis.javax.microedition.lcdui.Image;
 
@@ -44,10 +40,6 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
       
 import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
 //not GWT import const ImageJ2MEScaleUtil = globalThis.org.allbinary.media.image.ImageJ2MEScaleUtil;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

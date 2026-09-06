@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Graphics } 
 const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
@@ -90,10 +86,6 @@ const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLog
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { StringMaker } 
-const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
@@ -104,18 +96,6 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
       
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
@@ -160,7 +140,7 @@ export class BasicHud
 
     readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
-    myFontProcessor: MyFontProcessor = updateMyFontProcessor;
+    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
 
     private location: number= 0;
 

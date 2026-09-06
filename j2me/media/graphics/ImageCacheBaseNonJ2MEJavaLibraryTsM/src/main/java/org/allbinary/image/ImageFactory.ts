@@ -22,20 +22,12 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JsType } from '../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { InputStream } from '../../../java/io/InputStream.js';
 //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
 //not plain js import { Image } 
 const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
-import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

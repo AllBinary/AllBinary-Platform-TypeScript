@@ -20,10 +20,6 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
 //not GWT import const EGLConfig = globalThis.javax.microedition.khronos.egl.EGLConfig;
 
@@ -38,14 +34,6 @@ import { RendererStrings } from '../../../../../org/allbinary/graphics/opengles/
       
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

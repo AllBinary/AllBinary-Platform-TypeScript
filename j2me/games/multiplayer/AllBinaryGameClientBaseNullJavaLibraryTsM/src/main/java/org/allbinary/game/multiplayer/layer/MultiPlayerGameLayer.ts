@@ -18,10 +18,6 @@
         
 
 
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
 
@@ -36,14 +32,6 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
       
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

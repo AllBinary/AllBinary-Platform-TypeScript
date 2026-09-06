@@ -34,8 +34,8 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
 //not GWT import const ColorCompositeInterface = globalThis.org.allbinary.graphics.color.ColorCompositeInterface;
 
       
-//not plain js import { PositionInterface } 
-const PositionInterface = globalThis.org.allbinary.layer.PositionInterface;
+import { PositionInterface } from '../../../../org/allbinary/layer/PositionInterface.js';
+//not GWT import const PositionInterface = globalThis.org.allbinary.layer.PositionInterface;
 
       
 //not plain js import { NullUtil } 

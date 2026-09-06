@@ -20,18 +20,6 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-//not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
-
-      
-import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { KotlinUtil } from '../../../../org/allbinary/KotlinUtil.js';
 //not GWT import const KotlinUtil = globalThis.org.allbinary.KotlinUtil;
 

@@ -20,10 +20,6 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { CommandListener } 
 const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
@@ -42,10 +38,6 @@ import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/
       
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 //not plain js import { ABHashtable } 

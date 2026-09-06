@@ -18,16 +18,8 @@
         
 
 
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 import { GameConfiguration } from '../../../../../org/allbinary/game/configuration/GameConfiguration.js';
 //not GWT import const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

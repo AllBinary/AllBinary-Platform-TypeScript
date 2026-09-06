@@ -22,10 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-//not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
-
-      
 //not plain js import { Canvas } 
 const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
@@ -56,14 +52,6 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
       
 //not plain js import { PlayN } 
 const PlayN = globalThis.playn.core.PlayN;
-
-      
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-//not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
-
-      
-import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-//not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 
