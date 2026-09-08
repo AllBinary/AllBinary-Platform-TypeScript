@@ -36,8 +36,8 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
 //not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
 
       
-//not plain js import { PrimitiveFloatUtil } 
-const PrimitiveFloatUtil = globalThis.org.allbinary.logic.math.PrimitiveFloatUtil;
+import { PrimitiveFloatUtil } from '../../../../org/allbinary/logic/math/PrimitiveFloatUtil.js';
+//not GWT import const PrimitiveFloatUtil = globalThis.org.allbinary.logic.math.PrimitiveFloatUtil;
 
       
 

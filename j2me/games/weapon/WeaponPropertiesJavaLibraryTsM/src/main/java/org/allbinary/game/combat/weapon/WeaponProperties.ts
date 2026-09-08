@@ -22,8 +22,8 @@
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 //not plain js import { StringMaker } 

@@ -74,8 +74,8 @@ import { TouchButtonLocationHelper } from '../../../../org/allbinary/input/motio
 //not GWT import const TouchButtonLocationHelper = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
 
       
-//not plain js import { PrimitiveLongUtil } 
-const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
 

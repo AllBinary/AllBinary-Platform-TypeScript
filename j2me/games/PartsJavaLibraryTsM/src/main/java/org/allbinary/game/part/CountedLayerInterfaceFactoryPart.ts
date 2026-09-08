@@ -62,8 +62,8 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not plain js import { PrimitiveLongUtil } 
-const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
 //not plain js import { ABHashtable } 

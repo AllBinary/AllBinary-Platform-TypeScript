@@ -22,7 +22,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
@@ -51,13 +50,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
-
-
-
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { PrimitiveLongSingleton } 
-const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
+        import { PrimitiveLongSingleton } from './PrimitiveLongSingleton.js';
+//not GWT import - same folder const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
                 //not plain js - same folder import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;

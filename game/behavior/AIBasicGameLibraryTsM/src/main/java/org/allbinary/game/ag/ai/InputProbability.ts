@@ -26,8 +26,8 @@
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';

@@ -32,8 +32,8 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
 //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 

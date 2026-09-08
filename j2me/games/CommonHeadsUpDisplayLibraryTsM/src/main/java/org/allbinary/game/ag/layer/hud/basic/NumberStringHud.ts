@@ -48,12 +48,12 @@ import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/
 //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
-//not plain js import { PrimitiveLongSingleton } 
-const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
+import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+//not GWT import const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
       
-//not plain js import { PrimitiveLongUtil } 
-const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+import { PrimitiveLongUtil } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
 

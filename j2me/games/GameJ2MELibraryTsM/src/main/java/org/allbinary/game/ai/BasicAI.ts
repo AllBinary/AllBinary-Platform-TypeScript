@@ -54,8 +54,8 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 //not plain js import { StringMaker } 

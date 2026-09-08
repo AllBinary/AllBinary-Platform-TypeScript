@@ -46,8 +46,8 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 //not plain js import { CircularIndexUtil } 

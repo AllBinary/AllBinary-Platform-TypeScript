@@ -24,10 +24,6 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-
-
-
-
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
 //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
 

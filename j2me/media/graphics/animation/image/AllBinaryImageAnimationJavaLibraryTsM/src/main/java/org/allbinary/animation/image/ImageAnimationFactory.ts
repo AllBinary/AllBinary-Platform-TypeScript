@@ -36,8 +36,8 @@ import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUt
 //not GWT import const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 

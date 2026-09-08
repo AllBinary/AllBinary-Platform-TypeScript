@@ -32,8 +32,8 @@ import { DirectionUtil } from '../../../../../org/allbinary/direction/DirectionU
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 import { AxisMathVectorUtil } from '../../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';

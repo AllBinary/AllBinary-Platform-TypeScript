@@ -22,13 +22,10 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-
-
 
 
 

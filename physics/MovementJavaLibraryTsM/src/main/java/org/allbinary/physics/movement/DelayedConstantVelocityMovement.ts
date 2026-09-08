@@ -28,8 +28,8 @@ import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/
 //not GWT import const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
 
       
-//not plain js import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';

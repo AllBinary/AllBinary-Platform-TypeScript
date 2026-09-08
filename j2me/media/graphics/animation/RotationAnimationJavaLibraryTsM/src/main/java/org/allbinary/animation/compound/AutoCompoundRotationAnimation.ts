@@ -44,8 +44,8 @@ import { Direction } from '../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 //not plain js import { Angle } 

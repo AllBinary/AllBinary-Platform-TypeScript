@@ -30,8 +30,8 @@ import { AnalogControllerConfigurationEventHandler } from '../../../../../org/al
 //not GWT import const AnalogControllerConfigurationEventHandler = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEventHandler;
 
       
-//not plain js import { ScaleFactorFactory } 
-const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
+import { ScaleFactorFactory } from '../../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
+//not GWT import const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
 
       
 

@@ -50,8 +50,8 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 //not plain js import { ABHashtable } 

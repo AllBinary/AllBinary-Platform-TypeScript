@@ -60,8 +60,8 @@ import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/im
 //not GWT import const AnimationFactorySpriteScaleUtil = globalThis.org.allbinary.image.sprite.AnimationFactorySpriteScaleUtil;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 

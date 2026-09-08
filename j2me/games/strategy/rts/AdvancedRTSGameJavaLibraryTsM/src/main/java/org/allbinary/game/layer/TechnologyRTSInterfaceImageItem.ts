@@ -60,8 +60,8 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
 //not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
 
       
-//not plain js import { PrimitiveLongUtil } 
-const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
 

@@ -52,8 +52,8 @@ import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosit
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 //not plain js import { StringUtil } 

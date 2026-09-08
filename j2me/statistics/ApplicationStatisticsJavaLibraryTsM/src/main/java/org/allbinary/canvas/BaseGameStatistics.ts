@@ -24,12 +24,12 @@
         
             import { Long } from '../../../java/lang/Long.js';
         
-//not plain js import { PrimitiveLongSingleton } 
-const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
+import { PrimitiveLongSingleton } from '../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+//not GWT import const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
       
-//not plain js import { ScaleFactorFactory } 
-const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
+import { ScaleFactorFactory } from '../../../org/allbinary/logic/math/ScaleFactorFactory.js';
+//not GWT import const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
 
       
 //not plain js import { StringMaker } 

@@ -30,8 +30,8 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 import { AllBinaryTiledLayerFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/AllBinaryTiledLayerFactoryInterface.js';

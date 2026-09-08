@@ -56,8 +56,8 @@ const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 

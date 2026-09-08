@@ -40,8 +40,8 @@ import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/Boolea
 //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 import { ErrorSound } from '../../../../org/allbinary/media/audio/ErrorSound.js';

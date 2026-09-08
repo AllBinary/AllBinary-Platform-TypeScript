@@ -372,12 +372,12 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
       
-//not plain js import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 //not plain js import { AngleFactory } 

@@ -50,8 +50,8 @@ import { CharArrayFactory } from '../../../../../org/allbinary/logic/java/charac
 //not GWT import const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
 
       
-//not plain js import { PrimitiveLongUtil } 
-const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
 //not plain js import { CircularIndexUtil } 

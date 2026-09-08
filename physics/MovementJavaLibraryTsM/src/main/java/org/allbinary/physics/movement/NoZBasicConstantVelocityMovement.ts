@@ -36,8 +36,8 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not plain js import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';

@@ -40,8 +40,8 @@ import { MyFontProcessor } from '../../../../../../../../org/allbinary/graphics/
 //not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
       
-//not plain js import { PrimitiveLongSingleton } 
-const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
+import { PrimitiveLongSingleton } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+//not GWT import const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
       
 

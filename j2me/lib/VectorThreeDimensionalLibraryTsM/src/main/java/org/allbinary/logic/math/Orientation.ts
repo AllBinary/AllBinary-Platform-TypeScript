@@ -42,8 +42,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+        import { BasicDecimal } from './BasicDecimal.js';
+//not GWT import - same folder const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
                 
 export class Orientation

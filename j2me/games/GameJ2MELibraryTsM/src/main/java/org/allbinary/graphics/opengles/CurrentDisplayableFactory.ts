@@ -366,7 +366,7 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 
 
     public setUsedRunnable(usedRunnable: GameRunnable){
-PreLogUtil.put(new StringMaker().append(this.RUNNABLE)!.append(this.stringUtil!.toString(this.runnable))!.toString(), this, this.SET_USED_RUNNABLE);
+PreLogUtil.put(new StringMaker().append(this.RUNNABLE)!.append(this.stringUtil!.toString(this.runnable))!.append(CommonSeps.getInstance()!.COLON_SEP)!.append(this.stringUtil!.toString(usedRunnable))!.toString(), this, this.SET_USED_RUNNABLE);
     
 this.usedRunnable= usedRunnable;
     
@@ -375,5 +375,11 @@ this.usedRunnable= usedRunnable;
 
 }
 
-
+//JSNI Expose so JSNI can access this class *** 
+ globalThis.org = globalThis.org || {}; 
+ globalThis.org.allbinary = globalThis.org.allbinary || {}; 
+ globalThis.org.allbinary.graphics = globalThis.org.allbinary.graphics || {}; 
+ globalThis.org.allbinary.graphics.opengles = globalThis.org.allbinary.graphics.opengles || {}; 
+ globalThis.org.allbinary.graphics.opengles.CurrentDisplayableFactory = CurrentDisplayableFactory; 
+ 
 

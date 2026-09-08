@@ -40,8 +40,8 @@ import { RotationAnimation } from '../../../../../org/allbinary/animation/Rotati
 //not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
 
       
-//not plain js import { PrimitiveIntUtil } 
-const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
 //not plain js import { AngleInfo } 

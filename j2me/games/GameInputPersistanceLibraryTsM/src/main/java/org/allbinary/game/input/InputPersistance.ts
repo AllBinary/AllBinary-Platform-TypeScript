@@ -70,8 +70,8 @@ import { NullRecordStore } from '../../../../org/allbinary/game/configuration/pe
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 //not plain js import { StringMaker } 

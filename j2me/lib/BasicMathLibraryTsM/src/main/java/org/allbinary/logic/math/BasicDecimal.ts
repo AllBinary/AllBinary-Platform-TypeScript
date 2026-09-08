@@ -38,14 +38,10 @@
 
 
 
-
-
-
-
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ScaleFactorFactory } 
-const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
+        import { ScaleFactorFactory } from './ScaleFactorFactory.js';
+//not GWT import - same folder const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
 
                 
 export class BasicDecimal

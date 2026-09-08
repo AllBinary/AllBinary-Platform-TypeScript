@@ -114,7 +114,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        // MIDlet methods not overridden are final
+        
 export class AllBinaryMidlet extends MIDlet implements CommandListener {
         
 
@@ -322,5 +322,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
 
 }
 
-
+//JSNI Expose so JSNI can access this class *** 
+ globalThis.org = globalThis.org || {}; 
+ globalThis.org.allbinary = globalThis.org.allbinary || {}; 
+ globalThis.org.allbinary.midlet = globalThis.org.allbinary.midlet || {}; 
+ globalThis.org.allbinary.midlet.AllBinaryMidlet = AllBinaryMidlet; 
+ console.log('Exported AllBinaryMidlet as globalThis'); 
 

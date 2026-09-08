@@ -1,0 +1,369 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+
+        
+
+
+            import { Object } from '../../../../java/lang/Object.js';
+        
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
+        
+            import { System } from '../../../../java/lang/System.js';
+        
+            import { Integer } from '../../../../java/lang/Integer.js';
+        
+import { Random } from '../../../../java/util/Random.js';
+//not GWT import const Random = globalThis.java.util.Random;
+
+      
+
+//not plain js import { MathUtil } 
+const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+
+      
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
+      
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        //Do not use in client code for money related things.
+export class MyRandomFactory
+            extends Object
+         {
+        
+
+    private static readonly instance: MyRandomFactory = new MyRandomFactory();
+
+    public static getInstance(): MyRandomFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return MyRandomFactory.instance;
+    
+}
+
+
+    public static main(args: string[]){
+
+    var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
+    
+
+    var stringBuilder: StringMaker = new StringMaker();;
+    
+
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    
+
+    var size2: number = 100;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size2; index++)
+        {
+stringBuilder!.appendint(randomFactory!.getAbsoluteNextInt(3))!.append(commonSeps!.COMMA);
+    
+}
+
+console.log(stringBuilder!.toString());
+    
+stringBuilder!.delete(0, stringBuilder!.length());
+    
+
+    var intArray: number[] = new Array(52);;
+    
+
+    var intArray2: number[] = new Array(52);;
+    
+
+    var size: number = intArray!.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+intArray[index]= index;
+    
+intArray2[index]= index;
+    
+}
+
+randomFactory!.shuffle2(intArray, intArray2);
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+stringBuilder!.appendint(intArray[index]!)!.append(commonSeps!.COMMA);
+    
+}
+
+console.log(stringBuilder!.toString());
+    
+stringBuilder!.delete(0, stringBuilder!.length());
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+stringBuilder!.appendint(intArray2[index]!)!.append(commonSeps!.COMMA);
+    
+}
+
+console.log(stringBuilder!.toString());
+    
+
+    var found: boolean= false;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+found= false;
+    
+
+
+
+
+                        for (
+    var index2: number = 0;index2 < size; index2++)
+        {
+
+                        if(intArray[index2] == index)
+                        
+                                    {
+                                    found= true;
+    
+
+                                    }
+                                
+}
+
+
+                        if(!found)
+                        
+                                    throw new RuntimeException();
+                                
+}
+
+}
+
+
+    private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
+
+    private rand: Random;
+
+private constructor (){
+
+            super();
+        this.rand= new Random(Date.now());
+    
+}
+
+
+    public setSeed(seed: number){
+this.rand= new Random(seed);
+    
+}
+
+
+    public getNextInt(range: number): number{
+
+    var div: number = (Integer.MAX_VALUE /range) +1;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return Math.round((this.rand.nextInt() /div));
+    
+}
+
+
+    public getAbsoluteNextInt(range: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.mathUtil!.abs(this.getNextInt(range));;
+    
+}
+
+
+    public getAbsoluteNextIntAllowZero(range: number): number{
+
+                        if(range == 0)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return 0;
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.mathUtil!.abs(this.getNextInt(range));;
+    
+
+                        }
+                            
+}
+
+
+    public shuffle(intArray: number[]){
+this.shuffleTotal(intArray, intArray!.length *7);
+    
+}
+
+
+    public shuffleTotal(intArray: number[], shuffleTotal: number){
+
+    var size: number = intArray!.length
+                ;;
+    
+
+    var randomIndex: number= 0;;
+    
+
+    var randomIndex2: number= 0;;
+    
+
+    var value: number= 0;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < shuffleTotal; index++)
+        {
+randomIndex= this.getAbsoluteNextIntAllowZero(size);
+    
+randomIndex2= this.getAbsoluteNextIntAllowZero(size);
+    
+value= intArray[randomIndex]!;
+    
+intArray[randomIndex]= intArray[randomIndex2]!;
+    
+intArray[randomIndex2]= value;
+    
+}
+
+}
+
+
+    public shuffle2(intArray: number[], intArray2: number[]){
+this.shuffle2Total(intArray, intArray2, intArray!.length *7);
+    
+}
+
+
+    public shuffle2Total(intArray: number[], intArray2: number[], shuffleTotal: number){
+
+    var size: number = intArray!.length
+                ;;
+    
+
+    var randomIndex: number= 0;;
+    
+
+    var randomIndex2: number= 0;;
+    
+
+    var value: number= 0;;
+    
+
+    var value2: number= 0;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < shuffleTotal; index++)
+        {
+randomIndex= this.getAbsoluteNextIntAllowZero(size);
+    
+randomIndex2= this.getAbsoluteNextIntAllowZero(size);
+    
+value= intArray[randomIndex]!;
+    
+value2= intArray2[randomIndex]!;
+    
+intArray[randomIndex]= intArray[randomIndex2]!;
+    
+intArray[randomIndex2]= value;
+    
+intArray2[randomIndex]= intArray2[randomIndex2]!;
+    
+intArray2[randomIndex2]= value2;
+    
+}
+
+}
+
+
+}
+
+
+

@@ -32,8 +32,8 @@ import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.j
 //not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
 
       
-//not plain js import { BasicDecimal } 
-const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';

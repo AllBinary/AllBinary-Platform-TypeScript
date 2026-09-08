@@ -26,8 +26,8 @@
 const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not plain js import { SmallIntegerSingletonFactory } 
-const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
 import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelayHelper.js';
