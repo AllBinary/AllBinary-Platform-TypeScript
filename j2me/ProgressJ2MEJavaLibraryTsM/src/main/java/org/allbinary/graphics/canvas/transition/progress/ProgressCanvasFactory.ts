@@ -100,5 +100,12 @@ export class ProgressCanvasFactory
 
 }
 
-
+//JSNI Expose so JSNI can access this class *** 
+ globalThis.org.allbinary = globalThis.org.allbinary || {}; 
+ globalThis.org.allbinary.graphics globalThis.org.allbinary.graphics || {}; 
+ globalThis.org.allbinary.graphics.canvas = globalThis.org.allbinary.graphics.canvas || {}; 
+ globalThis.org.allbinary.graphics.canvas.transition = globalThis.org.allbinary.graphics.canvas.transition || {}; 
+ globalThis.org.allbinary.graphics.canvas.transition.progress = globalThis.org.allbinary.graphics.canvas.transition.progress || {}; 
+ globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory = ProgressCanvasFactory; 
+ console.log('Exported ProgressCanvasFactory as globalThis'); 
 
