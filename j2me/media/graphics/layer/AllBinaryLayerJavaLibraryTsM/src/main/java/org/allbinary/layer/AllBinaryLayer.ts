@@ -34,8 +34,8 @@ import { Group } from '../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';

@@ -36,12 +36,12 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';

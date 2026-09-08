@@ -40,8 +40,8 @@ import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/
 //not GWT import const AxisMathVectorUtil = globalThis.org.allbinary.logic.math.vector.AxisMathVectorUtil;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 

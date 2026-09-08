@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { NoDecimalTrigTable } 
-const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
+import { NoDecimalTrigTable } from '../../../../org/allbinary/math/NoDecimalTrigTable.js';
+//not GWT import const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
 
       
 //not plain js import { BasicArrayList } 

@@ -52,11 +52,11 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+        import { AngleFactory } from './AngleFactory.js';
+//not GWT import - same folder const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
-                //not plain js - same folder import { FrameUtil } 
-const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+                import { FrameUtil } from './FrameUtil.js';
+//not GWT import - same folder const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
                 
 export class AngleIncrementInfo

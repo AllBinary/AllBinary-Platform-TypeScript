@@ -56,8 +56,8 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not plain js import { NoDecimalTrigTable } 
-const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
+import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalTrigTable.js';
+//not GWT import const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
 
       
 

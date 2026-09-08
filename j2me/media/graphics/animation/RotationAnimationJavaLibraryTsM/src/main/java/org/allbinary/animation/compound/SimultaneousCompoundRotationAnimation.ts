@@ -44,16 +44,16 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 //not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 //not plain js import { CircularIndexUtil } 

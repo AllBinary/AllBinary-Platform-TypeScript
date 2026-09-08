@@ -42,8 +42,8 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not plain js import { AngleIncrementInfo } 
-const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
+import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
+//not GWT import const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
       
 

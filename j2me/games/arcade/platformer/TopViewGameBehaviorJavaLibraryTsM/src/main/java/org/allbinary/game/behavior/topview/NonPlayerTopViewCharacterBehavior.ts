@@ -52,8 +52,8 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';

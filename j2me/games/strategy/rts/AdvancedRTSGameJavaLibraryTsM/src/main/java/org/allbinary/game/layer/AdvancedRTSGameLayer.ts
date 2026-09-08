@@ -160,12 +160,12 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { FrameUtil } 
-const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+import { FrameUtil } from '../../../../org/allbinary/math/FrameUtil.js';
+//not GWT import const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
       
 import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';

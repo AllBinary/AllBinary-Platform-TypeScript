@@ -38,11 +38,11 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+        import { GPoint } from './GPoint.js';
+//not GWT import - same folder const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
-                //not plain js - same folder import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+                import { PointFactory } from './PointFactory.js';
+//not GWT import - same folder const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
                 
 export class Line

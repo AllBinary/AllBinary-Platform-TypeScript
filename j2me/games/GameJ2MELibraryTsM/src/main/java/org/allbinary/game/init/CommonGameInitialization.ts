@@ -32,8 +32,8 @@ import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/reso
 //not GWT import const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
@@ -52,8 +52,8 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
 //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 //not plain js import { CommonStrings } 

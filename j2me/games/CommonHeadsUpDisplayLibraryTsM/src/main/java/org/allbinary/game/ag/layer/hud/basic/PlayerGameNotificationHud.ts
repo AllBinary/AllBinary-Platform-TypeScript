@@ -58,8 +58,8 @@ import { CustomGPoint } from '../../../../../../../org/allbinary/graphics/Custom
 //not GWT import const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';

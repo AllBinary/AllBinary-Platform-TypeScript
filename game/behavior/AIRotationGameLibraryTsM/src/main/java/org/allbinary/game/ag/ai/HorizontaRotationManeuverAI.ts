@@ -78,8 +78,8 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not plain js import { AngleIncrementInfo } 
-const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
+import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
+//not GWT import const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
       
 //not plain js import { CircularIndexUtil } 

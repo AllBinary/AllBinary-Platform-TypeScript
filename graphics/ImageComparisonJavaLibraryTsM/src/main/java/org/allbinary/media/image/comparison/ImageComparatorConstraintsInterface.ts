@@ -28,8 +28,8 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 

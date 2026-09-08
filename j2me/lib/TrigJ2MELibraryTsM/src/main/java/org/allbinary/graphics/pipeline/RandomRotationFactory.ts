@@ -26,8 +26,8 @@
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 //not plain js import { BasicArrayList } 

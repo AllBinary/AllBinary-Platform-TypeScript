@@ -32,12 +32,12 @@ import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition
 //not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';

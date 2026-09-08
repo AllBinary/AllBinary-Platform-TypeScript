@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 

@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
@@ -38,12 +38,12 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 //not plain js import { CommonStrings } 

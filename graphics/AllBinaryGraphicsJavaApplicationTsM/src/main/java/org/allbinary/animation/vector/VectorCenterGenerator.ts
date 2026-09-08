@@ -28,8 +28,8 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { GraphicItemInterface } from '../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';

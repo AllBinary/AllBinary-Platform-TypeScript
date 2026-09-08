@@ -72,8 +72,8 @@ import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/Boo
 //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';

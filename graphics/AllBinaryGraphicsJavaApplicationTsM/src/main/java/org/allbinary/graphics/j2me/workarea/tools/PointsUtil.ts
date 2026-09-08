@@ -28,12 +28,12 @@ import { VectorRotationGenerator } from '../../../../../../org/allbinary/animati
 //not GWT import const VectorRotationGenerator = globalThis.org.allbinary.animation.VectorRotationGenerator;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 //not plain js import { BasicArrayList } 

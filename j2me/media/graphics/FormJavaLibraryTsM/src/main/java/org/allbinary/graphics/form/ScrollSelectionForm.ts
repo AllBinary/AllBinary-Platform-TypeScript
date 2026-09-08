@@ -30,8 +30,8 @@ const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
@@ -62,8 +62,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { RectangleCollisionUtil } 
-const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
+import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
+//not GWT import const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
 
       
 //not plain js import { CommonLabels } 

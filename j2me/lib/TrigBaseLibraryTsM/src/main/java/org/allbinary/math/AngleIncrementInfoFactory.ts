@@ -38,11 +38,11 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+        import { AngleFactory } from './AngleFactory.js';
+//not GWT import - same folder const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
-                //not plain js - same folder import { AngleIncrementInfo } 
-const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
+                import { AngleIncrementInfo } from './AngleIncrementInfo.js';
+//not GWT import - same folder const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
                 
 export class AngleIncrementInfoFactory

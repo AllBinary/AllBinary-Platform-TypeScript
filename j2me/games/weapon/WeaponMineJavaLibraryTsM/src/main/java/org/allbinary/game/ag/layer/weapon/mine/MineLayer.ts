@@ -36,8 +36,8 @@ import { RemoteInfo } from '../../../../../../../org/allbinary/game/multiplayer/
 //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../../../../../org/allbinary/graphics/Rectangle.js';

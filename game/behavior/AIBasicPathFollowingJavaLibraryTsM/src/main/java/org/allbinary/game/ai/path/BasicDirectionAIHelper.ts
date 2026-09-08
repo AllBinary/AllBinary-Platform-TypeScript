@@ -36,12 +36,12 @@ import { DirectionFactory } from '../../../../../org/allbinary/direction/Directi
 //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
-//not plain js import { AngleIncrementInfo } 
-const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
+import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
+//not GWT import const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 

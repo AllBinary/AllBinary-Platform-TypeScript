@@ -26,8 +26,8 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
 //not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
 

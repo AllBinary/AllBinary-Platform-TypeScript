@@ -40,8 +40,8 @@ import { TickableInterface } from '../../../../../../org/allbinary/game/tick/Tic
 //not GWT import const TickableInterface = globalThis.org?.allbinary?.game?.tick?.TickableInterface;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';

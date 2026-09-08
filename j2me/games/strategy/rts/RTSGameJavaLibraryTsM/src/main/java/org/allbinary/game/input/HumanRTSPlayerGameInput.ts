@@ -112,12 +112,12 @@ import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/
 //not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
@@ -176,8 +176,8 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { RectangleCollisionUtil } 
-const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
+import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
+//not GWT import const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
 
       
 import { ErrorSound } from '../../../../org/allbinary/media/audio/ErrorSound.js';

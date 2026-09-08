@@ -52,8 +52,8 @@ import { SWTUtil } from '../../../../../org/allbinary/game/layer/SWTUtil.js';
 //not GWT import const SWTUtil = globalThis.org.allbinary.game.layer.SWTUtil;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';

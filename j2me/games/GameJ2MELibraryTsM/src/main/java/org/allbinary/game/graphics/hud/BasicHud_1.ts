@@ -30,12 +30,12 @@ import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';

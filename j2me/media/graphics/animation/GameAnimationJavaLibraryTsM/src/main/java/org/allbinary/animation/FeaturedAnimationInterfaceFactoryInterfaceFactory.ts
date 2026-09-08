@@ -32,8 +32,8 @@ import { FeaturedResourceFactory } from '../../../org/allbinary/game/resource/Fe
 //not GWT import const FeaturedResourceFactory = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';

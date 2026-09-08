@@ -41,8 +41,8 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+        import { AngleFactory } from './AngleFactory.js';
+//not GWT import - same folder const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
                 
 export class FrameUtil

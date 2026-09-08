@@ -24,8 +24,8 @@ import { awt } from '../../../java/awt.js';
 //not GWT import const awt = globalThis.java.awt;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 

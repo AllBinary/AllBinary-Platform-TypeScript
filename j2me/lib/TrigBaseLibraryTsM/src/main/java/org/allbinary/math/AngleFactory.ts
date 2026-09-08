@@ -64,14 +64,14 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+        import { Angle } from './Angle.js';
+//not GWT import - same folder const Angle = globalThis.org.allbinary.math.Angle;
 
-                //not plain js - same folder import { NamedAngle } 
-const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
+                import { NamedAngle } from './NamedAngle.js';
+//not GWT import - same folder const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
 
-                //not plain js - same folder import { FrameUtil } 
-const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+                import { FrameUtil } from './FrameUtil.js';
+//not GWT import - same folder const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
                 
 export class AngleFactory

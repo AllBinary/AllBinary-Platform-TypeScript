@@ -40,8 +40,8 @@ import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/
 //not GWT import const TileLayerPositionIntoViewPosition = globalThis.org.allbinary.game.view.TileLayerPositionIntoViewPosition;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';

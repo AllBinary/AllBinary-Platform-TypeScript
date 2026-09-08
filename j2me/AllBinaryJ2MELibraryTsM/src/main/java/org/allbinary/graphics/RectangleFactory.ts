@@ -41,8 +41,8 @@
         import { Rectangle } from './Rectangle.js';
 //not GWT import - same folder const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
-                //not plain js - same folder import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+                import { PointFactory } from './PointFactory.js';
+//not GWT import - same folder const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
                 
 export class RectangleFactory

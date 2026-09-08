@@ -332,8 +332,8 @@ import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellP
 //not GWT import const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
@@ -380,24 +380,24 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
 //not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { FrameUtil } 
-const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+import { FrameUtil } from '../../../../../org/allbinary/math/FrameUtil.js';
+//not GWT import const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
       
 import { LayerDistanceUtil } from '../../../../../org/allbinary/math/LayerDistanceUtil.js';
 //not GWT import const LayerDistanceUtil = globalThis.org.allbinary.math.LayerDistanceUtil;
 
       
-//not plain js import { NamedAngle } 
-const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
+import { NamedAngle } from '../../../../../org/allbinary/math/NamedAngle.js';
+//not GWT import const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
 
       
 import { AttackSound } from '../../../../../org/allbinary/media/audio/AttackSound.js';

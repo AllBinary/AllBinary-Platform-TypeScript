@@ -28,8 +28,8 @@ import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';

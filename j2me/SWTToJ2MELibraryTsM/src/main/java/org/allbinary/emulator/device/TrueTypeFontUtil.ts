@@ -58,8 +58,8 @@ import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';

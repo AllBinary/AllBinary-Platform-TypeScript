@@ -34,8 +34,8 @@ import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/e
 //not GWT import const UpGameKeyEventHandler = globalThis.org.allbinary.game.input.event.UpGameKeyEventHandler;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
@@ -46,8 +46,8 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not plain js import { RectangleCollisionUtil } 
-const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
+import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
+//not GWT import const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
 
       
 //not plain js import { BasicArrayList } 

@@ -48,8 +48,8 @@ import { RaceTrackPickupLayer } from '../../../../../../../../org/allbinary/game
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';

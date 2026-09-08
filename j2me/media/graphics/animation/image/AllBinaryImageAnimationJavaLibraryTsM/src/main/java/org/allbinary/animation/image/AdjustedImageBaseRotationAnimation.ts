@@ -32,8 +32,8 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
 //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 

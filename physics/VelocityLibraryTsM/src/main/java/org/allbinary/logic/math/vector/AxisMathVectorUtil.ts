@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { NoDecimalTrigTable } 
-const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
+import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalTrigTable.js';
+//not GWT import const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
 
       
 

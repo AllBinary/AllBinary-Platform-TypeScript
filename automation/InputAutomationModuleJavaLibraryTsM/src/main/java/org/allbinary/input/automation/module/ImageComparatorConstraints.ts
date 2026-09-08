@@ -48,8 +48,8 @@ import { RectangleCollisionUtil } from '../../../../../org/allbinary/collision/R
 //not GWT import const RectangleCollisionUtil = globalThis.org.allbinary.collision.RectangleCollisionUtil;
 
       
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 //not plain js import { LogUtil } 

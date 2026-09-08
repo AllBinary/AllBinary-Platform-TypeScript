@@ -53,14 +53,14 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { AngleIncrementInfo } 
-const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
+        import { AngleIncrementInfo } from './AngleIncrementInfo.js';
+//not GWT import - same folder const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
-                //not plain js - same folder import { AngleIncrementInfoFactory } 
-const AngleIncrementInfoFactory = globalThis.org.allbinary.math.AngleIncrementInfoFactory;
+                import { AngleIncrementInfoFactory } from './AngleIncrementInfoFactory.js';
+//not GWT import - same folder const AngleIncrementInfoFactory = globalThis.org.allbinary.math.AngleIncrementInfoFactory;
 
-                //not plain js - same folder import { FrameUtil } 
-const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+                import { FrameUtil } from './FrameUtil.js';
+//not GWT import - same folder const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
                 
 export class AngleInfo

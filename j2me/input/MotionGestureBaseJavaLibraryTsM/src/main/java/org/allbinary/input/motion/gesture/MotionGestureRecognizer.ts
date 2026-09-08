@@ -24,16 +24,16 @@
         
             import { Math } from '../../../../../java/lang/Math.js';
         
-//not plain js import { GPoint } 
-const GPoint = globalThis.org.allbinary.graphics.GPoint;
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
 import { Line } from '../../../../../org/allbinary/graphics/Line.js';
 //not GWT import const Line = globalThis.org.allbinary.graphics.Line;
 
       
-//not plain js import { PointFactory } 
-const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
 import { MotionGestureConfiguration } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';

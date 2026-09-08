@@ -46,8 +46,8 @@ import { GameConfigurationCentral } from '../../../../org/allbinary/game/configu
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not plain js import { AngleFactory } 
-const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';

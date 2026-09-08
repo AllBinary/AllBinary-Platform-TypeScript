@@ -46,8 +46,8 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';

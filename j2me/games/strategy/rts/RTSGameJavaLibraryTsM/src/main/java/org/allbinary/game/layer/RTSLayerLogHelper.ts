@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { NamedAngle } 
-const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
+import { NamedAngle } from '../../../../org/allbinary/math/NamedAngle.js';
+//not GWT import const NamedAngle = globalThis.org.allbinary.math.NamedAngle;
 
       
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';

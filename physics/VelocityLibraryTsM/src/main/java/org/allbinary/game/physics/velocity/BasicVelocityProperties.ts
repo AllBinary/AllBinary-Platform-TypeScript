@@ -48,8 +48,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
 //not plain js import { PositionStrings } 

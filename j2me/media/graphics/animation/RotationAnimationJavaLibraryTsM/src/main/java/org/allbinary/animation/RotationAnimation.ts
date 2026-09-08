@@ -30,16 +30,16 @@ import { DirectionUtil } from '../../../org/allbinary/direction/DirectionUtil.js
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not plain js import { Angle } 
-const Angle = globalThis.org.allbinary.math.Angle;
+import { Angle } from '../../../org/allbinary/math/Angle.js';
+//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not plain js import { AngleInfo } 
-const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
+//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not plain js import { FrameUtil } 
-const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+import { FrameUtil } from '../../../org/allbinary/math/FrameUtil.js';
+//not GWT import const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
 
       
 //not plain js import { CircularIndexUtil } 
