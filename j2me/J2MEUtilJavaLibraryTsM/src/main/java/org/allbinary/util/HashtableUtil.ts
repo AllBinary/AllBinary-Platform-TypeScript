@@ -75,7 +75,7 @@ export class HashtableUtil
 
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
-    public putAll(fromHashtable: ABHashtable, hashtable: ABHashtable){
+    public putAll(fromHashtable: ABHashtable<any, any>, hashtable: ABHashtable<any, any>){
 
     var enumeration: Enumeration<any> = fromHashtable!.keys()!;;
     
@@ -112,7 +112,7 @@ valueCanBeNull= hashtable.get(keyCanBeNull);
 }
 
 
-    public getKeysAsArray(hashtable: ABHashtable): any[]{
+    public getKeysAsArray(hashtable: ABHashtable<any, any>): any[]{
 
     var objectArray: any[] = new Array(hashtable.size());;
     
@@ -138,7 +138,7 @@ objectArray[index++]= this.enumerationUtil!.nextElement(enumeration)!;
 }
 
 
-    public getKeysAsList(hashtable: ABHashtable): BasicArrayList{
+    public getKeysAsList(hashtable: ABHashtable<any, any>): BasicArrayList{
 
     var list: BasicArrayList = new BasicArrayListS(hashtable.size());;
     

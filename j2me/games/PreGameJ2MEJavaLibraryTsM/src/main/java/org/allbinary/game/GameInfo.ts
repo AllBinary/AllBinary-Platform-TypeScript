@@ -243,9 +243,9 @@ this.logUtil!.putF(new StringMaker().append(this.NEXT)!.append(this.NEW_LEVEL)!.
 }
 
 
-    public toHashtable(): ABHashtable{
+    public toHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString());
     

@@ -99,7 +99,7 @@ export class ImageCacheBase
 
     readonly imageFactory: ImageFactory = ImageFactory.getInstance()!;
 
-    readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     readonly SIZE: number = 128;
 
@@ -362,7 +362,7 @@ stringBuffer!.appendint(totalAvailable);
 }
 
 
-    public getHashtableP(): ABHashtable{
+    public getHashtableP(): ABHashtable<any, any>{
 
 
 

@@ -60,7 +60,7 @@ export interface ArtificialIntelligenceInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
+    getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
 
 }
 

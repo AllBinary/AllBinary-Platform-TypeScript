@@ -52,7 +52,7 @@ export interface ValidatorBaseInterface {
 
     validationInfo(): string
 
-    toHashtable(): ABHashtable
+    toHashtable(): ABHashtable<any, any>
 
     toList(): BasicArrayList
 

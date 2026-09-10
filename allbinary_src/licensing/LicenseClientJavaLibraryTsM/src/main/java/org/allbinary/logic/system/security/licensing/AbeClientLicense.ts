@@ -84,7 +84,7 @@ export class AbeClientLicense
          implements AbeLicenseInterface {
         
 
-    public static hasRequiredKeys(resultHashtable: ABHashtable): boolean{
+    public static hasRequiredKeys(resultHashtable: ABHashtable<any, any>): boolean{
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
@@ -114,7 +114,7 @@ export class AbeClientLicense
 }
 
 
-    private hashtable: ABHashtable;
+    private hashtable: ABHashtable<any, any>;
 
     private id: string;
 
@@ -124,7 +124,7 @@ export class AbeClientLicense
 
     private licenseType: LicenseType;
 
-public constructor (hashtable: ABHashtable){
+public constructor (hashtable: ABHashtable<any, any>){
 
             super();
         this.hashtable= StdUtil.getInstance()!.createHashtable();

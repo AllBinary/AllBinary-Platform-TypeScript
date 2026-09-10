@@ -71,7 +71,7 @@ export class RandomPatrolAI extends BasePatrolAI {
 
     private changedDirection: boolean = true;
 
-public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
 

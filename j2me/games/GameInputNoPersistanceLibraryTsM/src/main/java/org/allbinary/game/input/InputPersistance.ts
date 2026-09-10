@@ -122,7 +122,7 @@ public constructor (name: string){
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: ABHashtable;;
+    var hashtable: ABHashtable<any, any>;;
     
 
     var stringBuffer: StringMaker = new StringMaker();;
@@ -157,7 +157,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Exception.constructor)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable<any, any>){
 PreLogUtil.put(new StringMaker().append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 

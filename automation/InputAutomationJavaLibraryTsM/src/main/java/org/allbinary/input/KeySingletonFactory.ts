@@ -68,7 +68,7 @@ export class KeySingletonFactory
          {
         
 
-    private static keyStringHashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private static keyStringHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private static keyArray: Integer[] = 
                                                         [
@@ -116,7 +116,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
                     return 0;
                 }
             
-    public static getHashtable(): ABHashtable{
+    public static getHashtable(): ABHashtable<any, any>{
 
 
 

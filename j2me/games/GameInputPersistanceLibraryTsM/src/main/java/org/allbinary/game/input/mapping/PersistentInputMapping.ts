@@ -262,7 +262,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
     var size: number = list.size()!;;
     
 
-    var hashtable: ABHashtable;;
+    var hashtable: ABHashtable<any, any>;;
     
 
     var enumeration: Enumeration<any>;;
@@ -280,7 +280,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
                         for (
     var index: number = 0;index < size; index++)
         {
-hashtable= list.objectArray[index]! as ABHashtable;
+hashtable= list.objectArray[index]! as ABHashtable<any, any>;
     
 enumeration= hashtable.keys();
     

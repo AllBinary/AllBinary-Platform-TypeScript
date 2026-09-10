@@ -54,7 +54,7 @@ export interface HardwareInterface {
 
     compareTo(hardwareInterface: HardwareInterface): boolean
 
-    difference(hardwareInterface: HardwareInterface): ABHashtable
+    difference(hardwareInterface: HardwareInterface): ABHashtable<any, any>
 
 }
 

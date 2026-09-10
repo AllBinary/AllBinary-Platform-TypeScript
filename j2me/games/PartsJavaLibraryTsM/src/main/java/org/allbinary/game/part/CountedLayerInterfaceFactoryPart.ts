@@ -146,7 +146,7 @@ this.total= total;
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
                         if(this.total > 0)
                         

@@ -80,7 +80,7 @@ export class GameFeatureChoiceGroups
 }
 
 
-    private hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 
@@ -88,7 +88,7 @@ private constructor (){
         }
 
 
-    public get(): ABHashtable{
+    public get(): ABHashtable<any, any>{
 
 
 

@@ -137,7 +137,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var properties: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;;

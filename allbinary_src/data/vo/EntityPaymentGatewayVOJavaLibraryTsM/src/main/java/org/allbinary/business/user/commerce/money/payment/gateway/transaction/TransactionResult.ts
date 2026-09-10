@@ -113,7 +113,7 @@ public constructor (result: string){
     var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);;
     
 
-    var hashtable: ABHashtable = tokenizer2.getTokens(tokens)!;;
+    var hashtable: ABHashtable<any, any> = tokenizer2.getTokens(tokens)!;;
     
 this.keyValuePairs!.putAll(hashtable);
     

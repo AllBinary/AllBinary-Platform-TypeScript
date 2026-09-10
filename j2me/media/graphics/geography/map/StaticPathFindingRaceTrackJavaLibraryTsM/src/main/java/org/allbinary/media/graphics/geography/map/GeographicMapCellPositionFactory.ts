@@ -75,9 +75,9 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         
 
-    private static readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private static readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
-    public static getHashtable(): ABHashtable{
+    public static getHashtable(): ABHashtable<any, any>{
 
 
 

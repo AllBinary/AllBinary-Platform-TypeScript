@@ -391,7 +391,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
     
 
-    var hashtable: ABHashtable = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
+    var hashtable: ABHashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;

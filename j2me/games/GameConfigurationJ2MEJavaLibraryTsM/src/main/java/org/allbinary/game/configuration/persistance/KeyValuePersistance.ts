@@ -253,7 +253,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Exception.constructor)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable<any, any>){
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
@@ -343,9 +343,9 @@ recordStore!.closeRecordStore();
 }
 
 
-    public get(index: number): ABHashtable{
+    public get(index: number): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable = this.valueList!.objectArray[index]! as ABHashtable;;
+    var hashtable: ABHashtable<any, any> = this.valueList!.objectArray[index]! as ABHashtable<any, any>;;
     
 
 

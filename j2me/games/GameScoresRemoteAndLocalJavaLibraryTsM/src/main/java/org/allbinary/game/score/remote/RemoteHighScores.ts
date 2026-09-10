@@ -105,7 +105,7 @@ const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 export class RemoteHighScores extends HighScores {
         
 
-    private static readonly hashTable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private static readonly hashTable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
@@ -209,7 +209,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 }
 
 
-    public update(hashtable: ABHashtable){
+    public update(hashtable: ABHashtable<any, any>){
 this.getList()!.clear();
     
 

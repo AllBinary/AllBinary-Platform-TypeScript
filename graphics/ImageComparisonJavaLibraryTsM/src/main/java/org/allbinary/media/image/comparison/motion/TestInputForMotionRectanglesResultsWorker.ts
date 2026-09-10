@@ -199,7 +199,7 @@ timeHelper!.setStartTimeTNT();
     var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;;
     
 
-    var robotHashtable: ABHashtable = InputRobotFactory.getInstance()!.get()!;;
+    var robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
     var inputTypeNameArray: any[] = robotHashtable!.keys().()!;;

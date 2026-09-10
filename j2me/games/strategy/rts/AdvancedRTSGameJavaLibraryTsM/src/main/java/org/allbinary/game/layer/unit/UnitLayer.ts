@@ -666,7 +666,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
 
-    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.groupCommonFactory!.ID, this.getGroupInterface());
     

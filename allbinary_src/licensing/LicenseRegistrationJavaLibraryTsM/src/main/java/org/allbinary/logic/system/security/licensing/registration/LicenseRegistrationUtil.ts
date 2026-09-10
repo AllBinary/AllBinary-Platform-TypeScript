@@ -93,7 +93,7 @@ registrationConfiguration!.setRegistrationCode(registrationId);
 registrationConfiguration!.write();
     
 
-    var hashtable: ABHashtable = abeClientInformation!.toHashtable()!;;
+    var hashtable: ABHashtable<any, any> = abeClientInformation!.toHashtable()!;;
     
 hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);
     

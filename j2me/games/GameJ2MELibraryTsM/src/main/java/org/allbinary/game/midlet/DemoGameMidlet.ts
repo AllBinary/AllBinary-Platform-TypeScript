@@ -100,7 +100,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
             
     isContinue(): boolean{
 
-    var hashtable: ABHashtable = this.getStartStateHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.getStartStateHashtable()!;;
     
 
                         if(hashtable != 
@@ -216,7 +216,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, CREATE_GAME);
 progressCanvas!.start();
     
 
-    var hashtable: ABHashtable = this.getStartStateHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.getStartStateHashtable()!;;
     
 this.setStartStateHashtable(StdUtil.getInstance()!.NULL_TABLE);
     

@@ -195,7 +195,7 @@ this.save(abeClientInformation);
     var key: string = OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT;;
     
 
-    var hashtable: ABHashtable = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
+    var hashtable: ABHashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
                         if(hashtable != 
@@ -235,7 +235,7 @@ this.save(abeClientInformation);
 
     addTextFields(){
 
-    var hashtable: ABHashtable = GameConfigurationTextInput.getHashtable()!;;
+    var hashtable: ABHashtable<any, any> = GameConfigurationTextInput.getHashtable()!;;
     
 
     var size: number = hashtable.size()!;;
@@ -374,7 +374,7 @@ item= this.get(index);
 GameConfigurationUtil.getInstance()!.updateCompetitionValue();
     
 
-    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;;

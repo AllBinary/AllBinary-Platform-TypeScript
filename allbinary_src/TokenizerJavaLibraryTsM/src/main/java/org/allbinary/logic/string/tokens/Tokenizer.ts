@@ -209,9 +209,9 @@ break;
 }
 
 
-    public getTokens(stringVector: BasicArrayList): ABHashtable{
+    public getTokens(stringVector: BasicArrayList): ABHashtable<any, any>{
 
-    var tokenHashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var tokenHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var string: string = StringUtil.getInstance()!.EMPTY_STRING;;

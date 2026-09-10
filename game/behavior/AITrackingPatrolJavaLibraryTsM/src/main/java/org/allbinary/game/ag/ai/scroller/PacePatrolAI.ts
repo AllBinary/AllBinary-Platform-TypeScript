@@ -121,7 +121,7 @@ export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerI
 
     isFollowLimitedByTerrain: boolean = false;
 
-public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
 

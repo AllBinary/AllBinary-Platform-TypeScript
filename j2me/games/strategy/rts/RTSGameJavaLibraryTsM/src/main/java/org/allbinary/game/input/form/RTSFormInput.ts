@@ -130,7 +130,7 @@ export class RTSFormInput
 
     private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
 
-    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     readonly newUnconstructedRTSLayerInterfaceArray: CollidableDestroyableDamageableLayer[] = new Array(7);
 
@@ -440,7 +440,7 @@ this.selectedStickyItemIndex= selectedStickyItemIndex;
 }
 
 
-    public getHashtable(): ABHashtable{
+    public getHashtable(): ABHashtable<any, any>{
 
 
 

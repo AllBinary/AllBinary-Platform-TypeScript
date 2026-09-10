@@ -77,7 +77,7 @@ export class GameConfigurationSingleton
 
     private list: BasicArrayList;
 
-    private hashtable: ABHashtable;
+    private hashtable: ABHashtable<any, any>;
 
 private constructor (){
 
@@ -115,7 +115,7 @@ this.list.add(gameConfiguration);
 }
 
 
-    public getHashtable(): ABHashtable{
+    public getHashtable(): ABHashtable<any, any>{
 
 
 

@@ -176,7 +176,7 @@ public constructor (name: string){
     var input: Input;;
     
 
-    var hashtable: ABHashtable;;
+    var hashtable: ABHashtable<any, any>;;
     
 
     var gameKeyFactory: GameKeyMappingFactory = GameKeyMappingFactory.getInstance()!;;
@@ -352,7 +352,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Exception.constructor)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable<any, any>){
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     

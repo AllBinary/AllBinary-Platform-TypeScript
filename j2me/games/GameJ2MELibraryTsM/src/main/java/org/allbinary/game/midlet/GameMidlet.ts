@@ -1709,7 +1709,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.SAVE);
     
 
-    var hashtable: ABHashtable = this.getCurrentStateHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.getCurrentStateHashtable()!;;
     
 GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtable);
     
@@ -1718,18 +1718,18 @@ GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtabl
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): ABHashtable{
+    public getCurrentStateHashtable(): ABHashtable<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getCurrentStateHashtable");
     
 
-    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
                         if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
                                     
-    var currentHashtable: ABHashtable = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;;
+    var currentHashtable: ABHashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;;
     
 
     var enumeration: Enumeration<any> = currentHashtable!.keys()!;;

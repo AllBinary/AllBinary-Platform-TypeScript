@@ -213,7 +213,7 @@ keyValuePersistance!.loadAll(abeClientInformation);
                         
                                     {
                                     
-    var hashtable: ABHashtable = keyValuePersistance!.get(0)!;;
+    var hashtable: ABHashtable<any, any> = keyValuePersistance!.get(0)!;;
     
 
     var anyType: any = this.SCALE.getName();;

@@ -147,7 +147,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: ABHashtable = this.getClientInfo()!.toHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.getClientInfo()!.toHashtable()!;;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     
@@ -159,7 +159,7 @@ param.add(hashtable);
 this.logUtil!.putF(RESULT +result.toString(), this, this.commonStrings!.GET);
     
 
-    var resultHashtable: ABHashtable = result as ABHashtable;;
+    var resultHashtable: ABHashtable<any, any> = result as ABHashtable<any, any>;;
     
 
                         if(!AbeClientLicense.hasRequiredKeys(resultHashtable))

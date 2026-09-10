@@ -104,7 +104,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages")
     var rectScreenSize: Rectangle = new Rectangle(dimScreenSize);;
     
 
-    var robotHashtable: ABHashtable = InputRobotFactory.getInstance()!.get()!;;
+    var robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
     var bufferedImageArray: BufferedImage[] = new Array(1);;

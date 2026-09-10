@@ -174,7 +174,7 @@ this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.C
     var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;;
     
 
-    var hashtable: ABHashtable = inputRobotFactory!.get() as ABHashtable;;
+    var hashtable: ABHashtable<any, any> = inputRobotFactory!.get() as ABHashtable<any, any>;;
     
 
     var set: Set = hashtable.keys()!;;

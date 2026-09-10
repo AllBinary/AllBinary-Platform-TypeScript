@@ -93,7 +93,7 @@ export class InputMapping
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private readonly mappedList: BasicArrayList = new BasicArrayListD();
 
@@ -275,7 +275,7 @@ this.hashtable.put(id, list);
 }
 
 
-    public getHashtable(): ABHashtable{
+    public getHashtable(): ABHashtable<any, any>{
 
 
 

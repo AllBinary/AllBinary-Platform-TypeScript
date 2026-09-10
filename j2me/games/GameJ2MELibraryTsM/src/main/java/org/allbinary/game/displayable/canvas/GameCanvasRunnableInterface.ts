@@ -92,15 +92,15 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
 
                 //@Throws(Exception.constructor)
             
-    getCurrentStateHashtable(): ABHashtable
+    getCurrentStateHashtable(): ABHashtable<any, any>
 
                 //@Throws(Exception.constructor)
             
-    getLoadStateHashtable(): ABHashtable
+    getLoadStateHashtable(): ABHashtable<any, any>
 
                 //@Throws(Exception.constructor)
             
-    setLoadStateHashtable(hashtable: ABHashtable)
+    setLoadStateHashtable(hashtable: ABHashtable<any, any>)
 
     getType(): number
 

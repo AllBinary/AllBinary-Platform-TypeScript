@@ -151,7 +151,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 export class RecordStoreHighScores extends HighScores {
         
 
-    private static readonly hashTable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private static readonly hashTable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{

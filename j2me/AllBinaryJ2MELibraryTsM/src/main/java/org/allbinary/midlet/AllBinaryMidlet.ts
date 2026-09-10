@@ -151,7 +151,7 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 
     private readonly SETTING_NO_TITLE: string = "Setting: No Title, Display: ";
 
-    private hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private midletDestroyed: boolean= false;
 
@@ -280,7 +280,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 
                 //@Throws(Exception.constructor)
             
-    public setStartStateHashtable(hashtable: ABHashtable){
+    public setStartStateHashtable(hashtable: ABHashtable<any, any>){
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
     
 this.hashtable= hashtable;
@@ -290,7 +290,7 @@ this.hashtable= hashtable;
 
                 //@Throws(Exception.constructor)
             
-    public getStartStateHashtable(): ABHashtable{
+    public getStartStateHashtable(): ABHashtable<any, any>{
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
     
 
@@ -304,7 +304,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LA
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): ABHashtable{
+    public getCurrentStateHashtable(): ABHashtable<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
     
 

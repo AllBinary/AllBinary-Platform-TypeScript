@@ -72,7 +72,7 @@ export class BasicColorCacheFactory
 }
 
 
-    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 

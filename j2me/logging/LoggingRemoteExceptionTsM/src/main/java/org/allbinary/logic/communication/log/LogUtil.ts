@@ -241,7 +241,7 @@ this.isFirstException= false;
                                     }
                                 
 
-    var hashtable: ABHashtable = this.abeClientInformation!.toHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.abeClientInformation!.toHashtable()!;;
     
 this.stringBuffer!.delete(0, this.stringBuffer!.length());
     

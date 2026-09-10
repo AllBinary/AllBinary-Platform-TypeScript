@@ -36,6 +36,10 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
+import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
+      
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
@@ -229,10 +233,10 @@ this.listOfList[foundIndex]!.add(image);
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as string)!;;
+    var resourceInputStream: InputStream = resourceUtil!.getResourceAsStream(key as string)!;;
     
 
-                        if(inputStream == 
+                        if(resourceInputStream == 
                                     null
                                 )
                         
@@ -247,7 +251,7 @@ this.listOfList[foundIndex]!.add(image);
                                 
 
         try {
-            image= this.createImageFromInputStream(key, inputStream);
+            image= this.createImageFromInputStream(key, resourceInputStream);
     
 
                 //: 
@@ -255,7 +259,7 @@ this.listOfList[foundIndex]!.add(image);
             {
 this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.GET, e);
     
-this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, this.commonStrings!.GET);
+this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(resourceInputStream))!.toString(), this, this.commonStrings!.GET);
     
 this.systemWrapper!.gc();
     
@@ -265,12 +269,23 @@ this.logUtil!.putF(Memory.getInfo(), this, this.commonStrings!.GET);
     
 Thread.sleep(100);
     
-image= this.createImageFromInputStream(key, inputStream);
+image= this.createImageFromInputStream(key, resourceInputStream);
     
 }
 
-inputStream!.close();
+
+                        if(J2MEUtil.isHTML())
+                        
+                                    {
+                                    
+                                    }
+                                
+                        else {
+                            resourceInputStream!.close();
     
+
+                        }
+                            
 this.hashtable.put(key, image);
     
 

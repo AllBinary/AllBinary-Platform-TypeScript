@@ -97,17 +97,17 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: ABHashtable;
+    private readonly hashtable: ABHashtable<any, any>;
 
-    private readonly rectangleHashtable: ABHashtable;
+    private readonly rectangleHashtable: ABHashtable<any, any>;
 
-    private readonly rectangleArrayOfArraysHashtable: ABHashtable;
+    private readonly rectangleArrayOfArraysHashtable: ABHashtable<any, any>;
 
     private readonly name: string;
 
     private initialized: boolean= false;
 
-public constructor (name: string, hashtable: ABHashtable, rectangleHashtable: ABHashtable, rectangleArrayHashtable: ABHashtable){
+public constructor (name: string, hashtable: ABHashtable<any, any>, rectangleHashtable: ABHashtable<any, any>, rectangleArrayHashtable: ABHashtable<any, any>){
 
             super();
         this.hashtable= hashtable;
@@ -308,7 +308,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getHashtable(): ABHashtable{
+    public getHashtable(): ABHashtable<any, any>{
 
 
 
@@ -318,7 +318,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getRectangleHashtable(): ABHashtable{
+    public getRectangleHashtable(): ABHashtable<any, any>{
 
 
 
@@ -328,7 +328,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getRectangleArrayOfArraysHashtable(): ABHashtable{
+    public getRectangleArrayOfArraysHashtable(): ABHashtable<any, any>{
 
 
 

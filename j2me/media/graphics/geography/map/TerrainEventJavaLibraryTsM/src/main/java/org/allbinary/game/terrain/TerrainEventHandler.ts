@@ -83,7 +83,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 export class TerrainEventHandler extends BasicEventHandler {
         
 
-    private static hashtable: ABHashtable = StdUtil.getInstance()!.NULL_TABLE;
+    private static hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.NULL_TABLE;
 
     public static init(){
 TerrainEventHandler.hashtable= StdUtil.getInstance()!.createHashtable();

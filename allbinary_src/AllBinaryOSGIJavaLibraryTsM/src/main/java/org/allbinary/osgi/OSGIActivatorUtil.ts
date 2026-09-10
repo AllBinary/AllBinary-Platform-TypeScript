@@ -80,7 +80,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, StdUtil
 
                 //@Throws(Exception.constructor)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: ABHashtable){
+    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: ABHashtable<any, any>){
 
     var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;;
     

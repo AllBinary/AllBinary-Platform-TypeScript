@@ -174,7 +174,7 @@ securedNativeLibraryInterface!.load();
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private helpSetListenerInterface: HelpSetListener;
 
@@ -361,7 +361,7 @@ securedNativeLibraryInterface!.unload();
 
                 //@Throws(Exception.constructor)
             
-    public get(): ABHashtable{
+    public get(): ABHashtable<any, any>{
 
 
 

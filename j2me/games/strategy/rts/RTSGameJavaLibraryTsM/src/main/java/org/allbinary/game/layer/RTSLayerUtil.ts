@@ -425,9 +425,9 @@ list.clear();
 }
 
 
-    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): ABHashtable{
+    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
     var layerManager: FakeLayerManager = new FakeLayerManager(GameInfo.NONE);;

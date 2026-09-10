@@ -85,7 +85,7 @@ export class CommandUriAction
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public add(command: Command, url: string){
 this.hashtable.put(command, url);

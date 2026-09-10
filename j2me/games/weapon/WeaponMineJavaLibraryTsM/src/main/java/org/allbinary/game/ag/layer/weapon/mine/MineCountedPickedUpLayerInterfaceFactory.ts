@@ -141,7 +141,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getNextInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
     var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0)) as AllBinaryLayer;;
     

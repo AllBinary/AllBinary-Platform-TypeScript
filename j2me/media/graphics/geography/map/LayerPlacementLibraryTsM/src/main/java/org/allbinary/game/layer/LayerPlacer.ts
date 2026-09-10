@@ -142,7 +142,7 @@ this.process(layerPlacementInterface);
     var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;;
     
 
-    var hashtable: ABHashtable = layerPlacementInterface!.getInstance()!;;
+    var hashtable: ABHashtable<any, any> = layerPlacementInterface!.getInstance()!;;
     
 
     var enumeration: Enumeration<any> = hashtable.keys()!;;
@@ -151,7 +151,7 @@ this.process(layerPlacementInterface);
     var point: GPoint;;
     
 
-    var layerHashtable: ABHashtable;;
+    var layerHashtable: ABHashtable<any, any>;;
     
 
     var x: number= 0;;
@@ -170,7 +170,7 @@ this.process(layerPlacementInterface);
         {
 point= this.enumerationUtil!.nextElement(enumeration)! as GPoint;
     
-layerHashtable= hashtable.get(point) as ABHashtable;
+layerHashtable= hashtable.get(point) as ABHashtable<any, any>;
     
 x= point.getX() +relativePoint!.getX();
     

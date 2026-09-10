@@ -60,22 +60,28 @@ export class VectorUtil
 }
 
 
-    public getSize(vector: any = {}): number{
+    public getSize(anyType: any = {}): number{
+
+    var vector: Vector<any> = anyType as Vector<any>;;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (vector as Vector).size();;
+                        return vector.length;;
     
 }
 
 
-    public elementAt(vector: any = {}, index: number): any{
+    public elementAt(anyType: any = {}, index: number): any{
+
+    var vector: Vector<any> = anyType as Vector<any>;;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (vector as Vector).elementAt(index);;
+                        return vector.elementAt(index);;
     
 }
 

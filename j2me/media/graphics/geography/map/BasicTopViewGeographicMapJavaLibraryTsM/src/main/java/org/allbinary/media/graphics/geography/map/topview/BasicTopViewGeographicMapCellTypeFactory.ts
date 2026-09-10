@@ -94,7 +94,7 @@ export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellT
 
     private readonly maxTileId: number;
 
-public constructor (tileTypeToTileIdsMap: ABHashtable, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: ABHashtable<any, any>, maxTileId: number){
 
             super();
         

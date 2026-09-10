@@ -109,7 +109,7 @@ public constructor (){
 }
 
 
-    public toHashtable(): ABHashtable{
+    public toHashtable(): ABHashtable<any, any>{
 
 
 

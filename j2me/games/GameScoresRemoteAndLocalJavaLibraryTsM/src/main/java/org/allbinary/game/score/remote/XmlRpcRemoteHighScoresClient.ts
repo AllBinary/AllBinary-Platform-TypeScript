@@ -146,7 +146,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: ABHashtable = anyType as ABHashtable;;
+    var hashtable: ABHashtable<any, any> = anyType as ABHashtable<any, any>;;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     

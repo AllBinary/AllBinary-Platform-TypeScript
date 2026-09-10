@@ -163,7 +163,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 this.allTimeDelayHelper!.setStartTimeTNT();
     
 
-    var hashtable: ABHashtable = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;;
+    var hashtable: ABHashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;

@@ -60,7 +60,7 @@ export class GameConfigurationTextInput
          {
         
 
-    private static hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private static hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public static SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
 
@@ -78,7 +78,7 @@ gameConfigurationTextInput!.setText(textField!.getString());
 }
 
 
-    public static getHashtable(): ABHashtable{
+    public static getHashtable(): ABHashtable<any, any>{
 
 
 

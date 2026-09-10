@@ -232,7 +232,7 @@ break;
 }
 
 
-    private readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
                 //@Throws(Exception.constructor)
             

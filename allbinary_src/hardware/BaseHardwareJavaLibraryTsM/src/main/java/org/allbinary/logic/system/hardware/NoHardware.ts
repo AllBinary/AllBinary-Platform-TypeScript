@@ -105,7 +105,7 @@ export class NoHardware
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): ABHashtable{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable<any, any>{
 
 
 

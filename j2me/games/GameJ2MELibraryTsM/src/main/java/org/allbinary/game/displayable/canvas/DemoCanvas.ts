@@ -1075,7 +1075,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonStrings!.NOT_IMPLEMENTED)
 
                 //@Throws(Exception.constructor)
             
-    public setLoadStateHashtable(hashtable: ABHashtable){
+    public setLoadStateHashtable(hashtable: ABHashtable<any, any>){
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
     
 }
@@ -1083,7 +1083,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): ABHashtable{
+    public getLoadStateHashtable(): ABHashtable<any, any>{
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
     
 
@@ -1097,7 +1097,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): ABHashtable{
+    public getCurrentStateHashtable(): ABHashtable<any, any>{
 this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
     
 

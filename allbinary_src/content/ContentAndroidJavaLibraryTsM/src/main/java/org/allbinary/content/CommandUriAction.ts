@@ -92,7 +92,7 @@ export class CommandUriAction
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public add(command: Command, url: string){
 this.hashtable.put(command, url);

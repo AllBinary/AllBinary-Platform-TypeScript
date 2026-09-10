@@ -115,7 +115,7 @@ this.list= new BasicArrayListD();
 
                 //@Throws(Exception.constructor)
             
-    public getNexInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getNexInstance(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     

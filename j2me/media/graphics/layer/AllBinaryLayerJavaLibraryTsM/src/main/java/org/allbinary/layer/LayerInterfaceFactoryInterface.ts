@@ -51,7 +51,7 @@ export interface LayerInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getNextInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer
+    getNextInstance(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer
 
 }
 

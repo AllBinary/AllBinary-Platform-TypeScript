@@ -98,7 +98,7 @@ export class BasePatrolAI extends BasicAI {
 
     keyDirection: number = Canvas.RIGHT;
 
-public constructor (hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
 

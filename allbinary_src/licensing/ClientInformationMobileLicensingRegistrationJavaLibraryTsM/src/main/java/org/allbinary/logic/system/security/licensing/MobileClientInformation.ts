@@ -116,9 +116,9 @@ public constructor (name: string, version: string, specialName: string, shortNam
 }
 
 
-    public toHashtable(): ABHashtable{
+    public toHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable = super.toHashtable()!;;
+    var hashtable: ABHashtable<any, any> = super.toHashtable()!;;
     
 
     var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;

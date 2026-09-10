@@ -106,7 +106,7 @@ list.add(this);
 
                 //@Throws(Exception.constructor)
             
-    public getNextInstance(hashtable: ABHashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
 
 

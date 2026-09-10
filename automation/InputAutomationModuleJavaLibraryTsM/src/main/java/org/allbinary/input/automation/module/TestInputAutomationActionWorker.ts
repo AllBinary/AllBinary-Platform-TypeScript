@@ -109,7 +109,7 @@ Thread.sleep(2000);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
-    var hashtable: ABHashtable = InputRobotFactory.getInstance()!.get()!;;
+    var hashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
     var set: Set = hashtable.keys()!;;

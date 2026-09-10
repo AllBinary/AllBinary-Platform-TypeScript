@@ -64,7 +64,7 @@ export class ThreedObjResources
 }
 
 
-    public readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    public readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public get(resourceName: string): string{
 

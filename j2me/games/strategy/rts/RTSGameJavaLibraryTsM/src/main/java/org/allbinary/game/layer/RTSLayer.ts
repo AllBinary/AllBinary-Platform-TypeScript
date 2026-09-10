@@ -370,7 +370,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     private readonly rootName: string;
 
-    readonly hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    readonly hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     private readonly BUILD_VALUE: number = 63;
 

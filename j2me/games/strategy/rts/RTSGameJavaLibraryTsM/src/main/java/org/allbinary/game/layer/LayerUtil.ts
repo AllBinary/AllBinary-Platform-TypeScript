@@ -66,7 +66,7 @@ export class LayerUtil
 
     private static readonly HASHTABLE: string = "Hashtable: ";
 
-    public static toString(hashtable: ABHashtable, x: number, y: number, z: number): string{
+    public static toString(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     

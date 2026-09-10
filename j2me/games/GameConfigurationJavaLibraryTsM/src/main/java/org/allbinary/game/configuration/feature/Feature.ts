@@ -56,7 +56,7 @@ export class Feature
          {
         
 
-    private static hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private static hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public static getInstance(name: string): Feature{
 

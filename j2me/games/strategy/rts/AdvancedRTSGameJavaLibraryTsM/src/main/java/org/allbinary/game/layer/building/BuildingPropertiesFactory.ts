@@ -179,7 +179,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-    public getHashtable(): ABHashtable{
+    public getHashtable(): ABHashtable<any, any>{
 
 
 

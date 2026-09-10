@@ -117,7 +117,7 @@ export class GameFeatureFormUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public getChoiceGroup(hashtable: ABHashtable, name: string, option: number): ChoiceGroup{
+    public getChoiceGroup(hashtable: ABHashtable<any, any>, name: string, option: number): ChoiceGroup{
 
     var stringMaker: StringMaker = new StringMaker();;
     
@@ -175,7 +175,7 @@ choiceGroup!.append(gameFeature!.toString(), NullImage.NULL_IMAGE);
 }
 
 
-    public addChoiceGroup(form: CommandForm, hashtable: ABHashtable, option: number){
+    public addChoiceGroup(form: CommandForm, hashtable: ABHashtable<any, any>, option: number){
 
     var stringMaker: StringMaker = new StringMaker();;
     

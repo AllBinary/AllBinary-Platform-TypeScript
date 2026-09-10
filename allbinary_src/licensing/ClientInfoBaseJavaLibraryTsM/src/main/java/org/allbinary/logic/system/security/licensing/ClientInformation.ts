@@ -216,7 +216,7 @@ this.init();
 }
 
 
-    public toHashtable(): ABHashtable{
+    public toHashtable(): ABHashtable<any, any>{
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
@@ -224,7 +224,7 @@ this.init();
     var genericOperatingSystem: GenericOperatingSystem = this.getOperatingSystemInterface()!;;
     
 
-    var clientInfoHashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var clientInfoHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
     

@@ -57,7 +57,7 @@ export interface LayerPlacementInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(): ABHashtable
+    getInstance(): ABHashtable<any, any>
 
 }
 

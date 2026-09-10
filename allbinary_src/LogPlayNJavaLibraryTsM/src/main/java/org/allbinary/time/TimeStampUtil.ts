@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -20,6 +20,14 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
+import { DateTimeFormat } from '../../../com/google/gwt/i18n/client/DateTimeFormat.js';
+//not GWT import const DateTimeFormat = globalThis.com.google.gwt.i18n.client.DateTimeFormat;
+
+      
+//import { Date } from '../../../java/util/Date.js';
+//not GWT import const Date = globalThis.java.util.Date;
+
+      
 
 
 
@@ -62,12 +70,18 @@ private constructor (){
         }
 
 
-    /*actual*/ public getAsString(): string{
+    public getAsString(): string{
+
+    var simpleDataFormat: DateTimeFormat = DateTimeFormat.getFormat("yyyy-MM-dd HH:mm:ss.SSS")!;;
+    
+
+    var date: Date = new Date();;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "JavaScript version";
+                        return simpleDataFormat!.format(date);;
     
 }
 

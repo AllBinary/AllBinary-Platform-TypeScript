@@ -55,7 +55,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 
-    getHashtable(): ABHashtable
+    getHashtable(): ABHashtable<any, any>
 
 }
 

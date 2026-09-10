@@ -130,7 +130,7 @@ export class ResourceUtil
 
     private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private hashMap: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    private hashMap: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
 private constructor (){
 

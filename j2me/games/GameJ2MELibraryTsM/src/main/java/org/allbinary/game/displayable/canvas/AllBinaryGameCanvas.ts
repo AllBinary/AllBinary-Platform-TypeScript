@@ -717,7 +717,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private isCheating: boolean= false;
 
-    private hashtable: ABHashtable = this.stdUtil!.NULL_TABLE;
+    private hashtable: ABHashtable<any, any> = this.stdUtil!.NULL_TABLE;
 
     private isSingleKeyRepeatableProcessing: boolean= false;
 
@@ -2213,7 +2213,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
     
 
-    var hashtable: ABHashtable = this.getLoadStateHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.getLoadStateHashtable()!;;
     
 
                         if(hashtable != 
@@ -2240,7 +2240,7 @@ gameInfo!.setCurrentLevel(level);
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): ABHashtable{
+    public getLoadStateHashtable(): ABHashtable<any, any>{
 this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
 
@@ -2252,7 +2252,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.app
 }
 
 
-    public setLoadStateHashtable(hashtable: ABHashtable){
+    public setLoadStateHashtable(hashtable: ABHashtable<any, any>){
 this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
 this.hashtable= hashtable;
@@ -2260,9 +2260,9 @@ this.hashtable= hashtable;
 }
 
 
-    public getCurrentStateHashtable(): ABHashtable{
+    public getCurrentStateHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable = this.stdUtil!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = this.stdUtil!.createHashtable()!;;
     
 
     var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;;

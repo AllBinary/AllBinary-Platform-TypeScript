@@ -75,7 +75,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
 
-    var hashtable: ABHashtable = GeographicMapCellPositionFactory.getHashtable()!;;
+    var hashtable: ABHashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;;
     
 
     var cellPositionKey: string = CellPosition.toStringColRow(i_column, i_row)!;;

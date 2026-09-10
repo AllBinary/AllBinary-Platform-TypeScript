@@ -662,7 +662,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): ABHashtable{
+    public difference(hardwareInterface: HardwareInterface): ABHashtable<any, any>{
 
 
 

@@ -77,9 +77,9 @@ const ABVector = globalThis.org.allbinary.util.ABVector;
 
     /*actual*/ public readonly EMPTY_VECTOR: ABVector<any> = this.createVector()!;
 
-    /*actual*/ public readonly NULL_TABLE: ABHashtable = this.createHashtable()!;
+    /*actual*/ public readonly NULL_TABLE: ABHashtable<any, any> = this.createHashtable()!;
 
-    /*actual*/ public readonly NULL_MAP: ABHashMap = this.createHashMap()!;
+    /*actual*/ public readonly NULL_MAP: ABHashMap<any, any> = this.createHashMap()!;
 
     public createStack(): ABStack<any>{
 

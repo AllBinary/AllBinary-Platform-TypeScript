@@ -163,7 +163,7 @@ export class NullGameCanvasRunnable
 
                 //@Throws(Exception.constructor)
             
-    public getCurrentStateHashtable(): ABHashtable{
+    public getCurrentStateHashtable(): ABHashtable<any, any>{
 
 
 
@@ -175,7 +175,7 @@ export class NullGameCanvasRunnable
 
                 //@Throws(Exception.constructor)
             
-    public getLoadStateHashtable(): ABHashtable{
+    public getLoadStateHashtable(): ABHashtable<any, any>{
 
 
 
@@ -187,7 +187,7 @@ export class NullGameCanvasRunnable
 
                 //@Throws(Exception.constructor)
             
-    public setLoadStateHashtable(hashtable: ABHashtable){
+    public setLoadStateHashtable(hashtable: ABHashtable<any, any>){
 }
 
 

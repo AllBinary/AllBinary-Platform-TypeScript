@@ -64,7 +64,7 @@ export class KeyValueFactory
 }
 
 
-    public readonly MAP: ABHashtable = StdUtil.getInstance()!.createHashtable()!;
+    public readonly MAP: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;
 
     public get(key: string): string{
 

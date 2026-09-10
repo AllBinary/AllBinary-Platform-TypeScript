@@ -92,7 +92,7 @@ export class DiveAndDirectionalTrackingAIFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(hashtable: ABHashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
     var visitorCanBeNull: any = hashtable.get(BasicAI.AI_VISITOR);;
     
@@ -108,7 +108,7 @@ export class DiveAndDirectionalTrackingAIFactory
                                     }
                                 
 
-    var hashtable2: ABHashtable = new BasicProbabilityAIDataFactory().getInstance()!;;
+    var hashtable2: ABHashtable<any, any> = new BasicProbabilityAIDataFactory().getInstance()!;;
     
 hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
     

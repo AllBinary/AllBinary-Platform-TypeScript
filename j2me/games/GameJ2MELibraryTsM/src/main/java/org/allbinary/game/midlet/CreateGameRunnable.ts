@@ -90,11 +90,11 @@ export class CreateGameRunnable
 
     private readonly demoGameMidlet: DemoGameMidlet;
 
-    private readonly hashtable: ABHashtable;
+    private readonly hashtable: ABHashtable<any, any>;
 
     private readonly startGameMidletEvent: DemoGameMidletEvent;
 
-public constructor (demoGameMidlet: DemoGameMidlet, hashtable: ABHashtable){
+public constructor (demoGameMidlet: DemoGameMidlet, hashtable: ABHashtable<any, any>){
 
             super();
         this.demoGameMidlet= demoGameMidlet;

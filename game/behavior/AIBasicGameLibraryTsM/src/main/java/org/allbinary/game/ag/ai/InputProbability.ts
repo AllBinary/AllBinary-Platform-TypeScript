@@ -126,9 +126,9 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public toHashtable(): ABHashtable{
+    public toHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable = StdUtil.getInstance()!.createHashtable()!;;
+    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(InputProbability.INPUT_PROBABILITY, this);
     

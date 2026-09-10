@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { ABVector } 
-const ABVector = globalThis.org.allbinary.util.ABVector;
+import { Vector } from '../../../java/util/Vector.js';
+//not GWT import const Vector = globalThis.java.util.Vector;
 
       
 
@@ -60,22 +60,28 @@ export class VectorUtil
 }
 
 
-    public getSize(vector: any = {}): number{
+    public getSize(anyType: any = {}): number{
+
+    var vector: Vector<any> = anyType as Vector<any>;;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (vector as ABVector).size();;
+                        return vector.length;;
     
 }
 
 
-    public elementAt(vector: any = {}, index: number): any{
+    public elementAt(anyType: any = {}, index: number): any{
+
+    var vector: Vector<any> = anyType as Vector<any>;;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (vector as ABVector).elementAt(index);;
+                        return vector.elementAt(index);;
     
 }
 

@@ -66,9 +66,9 @@ expect export class StdUtil
 
     /*actual*/ public readonly EMPTY_VECTOR: ABVector<any>
 
-    /*actual*/ public readonly NULL_TABLE: ABHashtable
+    /*actual*/ public readonly NULL_TABLE: ABHashtable<any, any>
 
-    /*actual*/ public readonly NULL_MAP: ABHashMap
+    /*actual*/ public readonly NULL_MAP: ABHashMap<any, any>
 
     public createStack(): ABStack<any>
 
