@@ -51,7 +51,7 @@ export class RemoteErrorHighScoresSingletonFactory
          {
         
 
-    private static readonly SINGLETON: HighScores = new HighScores("Loading", "Remote High Scores Did Not Load", CommonStrings.getInstance()!.PERIODS);
+    private static readonly SINGLETON: HighScores = new HighScores(CommonStrings.getInstance()!.LOADING, "Remote High Scores Did Not Load", CommonStrings.getInstance()!.PERIODS);
 
     public static getInstance(): HighScores{
 

@@ -46,6 +46,10 @@ import { CommandForm } from '../../../../../org/allbinary/graphics/displayable/s
 //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
 
       
+import { MEUtil } from '../../../../../org/allbinary/logic/MEUtil.js';
+//not GWT import const MEUtil = globalThis.org.allbinary.logic.MEUtil;
+
+      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -116,6 +120,8 @@ export class GameFeatureFormUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly meUtil: MEUtil = MEUtil.getInstance()!;
 
     public getChoiceGroup(hashtable: ABHashtable<any, any>, name: string, option: number): ChoiceGroup{
 
@@ -192,20 +198,22 @@ choiceGroup!.append(gameFeature!.toString(), NullImage.NULL_IMAGE);
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
+    var name: string;;
+    
+
 
 
 
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var name: string = objectArray[index]! as string;;
+name= objectArray[index]! as string;
     
 stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP);
     
-form.append(this.getChoiceGroup(hashtable, name, option));
+this.meUtil!.appendItem(form, this.getChoiceGroup(hashtable, name, option));
     
 }
 

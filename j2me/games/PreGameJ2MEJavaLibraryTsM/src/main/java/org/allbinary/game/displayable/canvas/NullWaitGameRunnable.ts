@@ -57,5 +57,13 @@ export class NullWaitGameRunnable extends GameRunnable {
 
 }
 
-
+//JSNI Expose so JSNI can access this class *** 
+ globalThis.org = globalThis.org || {}; 
+ globalThis.org.allbinary = globalThis.org.allbinary || {}; 
+ globalThis.org.allbinary.game = globalThis.org.allbinary.game || {}; 
+ globalThis.org.allbinary.game.displayable = globalThis.org.allbinary.game.displayable || {}; 
+ globalThis.org.allbinary.game.displayable.canvas = globalThis.org.allbinary.game.displayable.canvas || {}; 
+ globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable = NullWaitGameRunnable; 
+ console.log('Exported NullWaitGameRunnable as globalThis'); 
+ 
 

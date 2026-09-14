@@ -2,7 +2,7 @@
         /*
                 *  
                 *  AllBinary Open License Version 1 
-                *  Copyright (c) 2025 AllBinary 
+                *  Copyright (c) 2026 AllBinary 
                 *   
                 *  By agreeing to this license you and any business entity you represent are 
                 *  legally bound to the AllBinary Open License Version 1 legal agreement. 
@@ -18,10 +18,16 @@
         
 
 
-            import { Object } from '../../java/lang/Object.js';
+            import { Object } from '../../../java/lang/Object.js';
         
-            import { InterruptedException } from '../../java/lang/InterruptedException.js';
-        
+//not plain js import { Item } 
+const Item = globalThis.javax.microedition.lcdui.Item;
+
+      
+import { CommandForm } from '../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+//not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+
+      
 
 
 
@@ -40,41 +46,26 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //TempBase
-export class TsUtil
+        //Handle the differences in the public platform vs the raw JS build
+export class MEUtil
             extends Object
          {
         
 
-    private static readonly instance: TsUtil = new TsUtil();
-
-    public static getInstance(): TsUtil{
+    public static getInstance(): MEUtil{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TsUtil.instance;
+                        return instance;
     
 }
 
 
-    public hashCode(anyType: any = {}): number{
+    private static readonly instance: MEUtil = new MEUtil();
 
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType!.hashCode();;
-    
-}
-
-
-                //@Throws(InterruptedException.constructor)
-            
-    public waitFor(any: any = {}, timeoutMillis: number){
-
-    var anyType: any = any;;
-    
-anyType!.wait(timeoutMillis);
+    public appendItem(form: CommandForm, item: Item){
+form.append(item);
     
 }
 

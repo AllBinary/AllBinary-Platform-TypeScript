@@ -46,6 +46,10 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
       
+import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
+//not GWT import const MEUtil = globalThis.org.allbinary.logic.MEUtil;
+
+      
 
 
 
@@ -94,6 +98,8 @@ SaveGameForm.FORM= new SaveGameForm(commandListener, title, backgrounBasicColor,
 }
 
 
+    private readonly meUtil: MEUtil = MEUtil.getInstance()!;
+
 private constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     
@@ -105,7 +111,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
 
     var timeString: string = (ABSystemWrapper.getInstance()!.currentTimeMillis()).toString()!;;
     
-this.append(new TextField("Name: ", timeString, 30, TextField.ANY));
+this.meUtil!.appendItem(this, new TextField("Name: ", timeString, 30, TextField.ANY));
     
 this.initCommands(commandListener);
     

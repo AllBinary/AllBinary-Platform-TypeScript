@@ -62,6 +62,10 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
 //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
 
       
+import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
+//not GWT import const MEUtil = globalThis.org.allbinary.logic.MEUtil;
+
+      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -95,6 +99,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         
 export class LoadGameForm extends CommandForm {
         
+
+    private readonly meUtil: MEUtil = MEUtil.getInstance()!;
 
     private areChoices: boolean= false;
 
@@ -150,7 +156,7 @@ this.areChoices= true;
                                     }
                                 
                         else {
-                            this.append(new StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING, Item.PLAIN));
+                            this.meUtil!.appendItem(this, new StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING, Item.PLAIN));
     
 this.areChoices= false;
     
@@ -175,7 +181,7 @@ super.update();
 
                                     }
                                 
-this.append(choiceGroup);
+this.meUtil!.appendItem(this, choiceGroup);
     
 }
 

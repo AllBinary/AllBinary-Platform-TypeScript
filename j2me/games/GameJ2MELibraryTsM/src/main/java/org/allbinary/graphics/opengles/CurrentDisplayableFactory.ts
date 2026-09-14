@@ -381,5 +381,6 @@ this.usedRunnable= usedRunnable;
  globalThis.org.allbinary.graphics = globalThis.org.allbinary.graphics || {}; 
  globalThis.org.allbinary.graphics.opengles = globalThis.org.allbinary.graphics.opengles || {}; 
  globalThis.org.allbinary.graphics.opengles.CurrentDisplayableFactory = CurrentDisplayableFactory; 
+ console.log('Exported CurrentDisplayableFactory as globalThis'); 
  
 

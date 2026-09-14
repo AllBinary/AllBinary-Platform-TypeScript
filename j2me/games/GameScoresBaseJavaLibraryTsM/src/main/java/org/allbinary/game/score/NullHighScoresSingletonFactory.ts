@@ -51,7 +51,7 @@ export class NullHighScoresSingletonFactory
          {
         
 
-    private static readonly SINGLETON: HighScores = new HighScores("Loading", "High Scores Not Loaded", CommonStrings.getInstance()!.PERIODS);
+    private static readonly SINGLETON: HighScores = new HighScores(CommonStrings.getInstance()!.LOADING, "High Scores Not Loaded", CommonStrings.getInstance()!.PERIODS);
 
     public static getInstance(): HighScores{
 

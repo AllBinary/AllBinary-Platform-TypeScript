@@ -54,6 +54,10 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
 //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
 
       
+import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
+//not GWT import const MEUtil = globalThis.org.allbinary.logic.MEUtil;
+
+      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -87,6 +91,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         
 export class GameDifficultyOptions extends CommandForm {
         
+
+    private readonly meUtil: MEUtil = MEUtil.getInstance()!;
 
     private readonly list: BasicArrayList;
 
@@ -175,7 +181,7 @@ super.update();
 
                                     }
                                 
-this.append(choiceGroup);
+this.meUtil!.appendItem(this, choiceGroup);
     
 }
 
@@ -194,14 +200,16 @@ this.append(choiceGroup);
     var size: number = list.size()!;;
     
 
+    var anyType: any;;
+    
+
 
 
 
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var anyType: any = list.objectArray[index]!;;
+anyType= list.objectArray[index]!;
     
 this.logUtil!.putF(new StringMaker().append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     

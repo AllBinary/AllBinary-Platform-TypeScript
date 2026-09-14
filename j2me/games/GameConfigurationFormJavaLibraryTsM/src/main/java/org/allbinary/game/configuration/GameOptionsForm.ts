@@ -90,6 +90,10 @@ import { OrientationData } from '../../../../org/allbinary/input/gyro/Orientatio
 //not GWT import const OrientationData = globalThis.org.allbinary.input.gyro.OrientationData;
 
       
+import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
+//not GWT import const MEUtil = globalThis.org.allbinary.logic.MEUtil;
+
+      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -153,6 +157,8 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                 
 export class GameOptionsForm extends CommandForm {
         
+
+    private readonly meUtil: MEUtil = MEUtil.getInstance()!;
 
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
@@ -260,7 +266,7 @@ gameConfigurationTextInput= hashtable.get(objectArray[index]!) as GameConfigurat
     
 textField= new TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY);
     
-this.append(textField);
+this.meUtil!.appendItem(this, textField);
     
 }
 
@@ -311,7 +317,7 @@ gauge.setDefaultCommand(GAUGE_CHANGE);
     
 gauge.setItemCommandListener(new GameFeatureItemCommandListener(this));
     
-this.append(gauge);
+this.meUtil!.appendItem(this, gauge);
     
 }
 

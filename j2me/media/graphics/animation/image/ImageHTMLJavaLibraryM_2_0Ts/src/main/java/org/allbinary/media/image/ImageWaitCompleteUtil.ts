@@ -36,6 +36,10 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
@@ -78,8 +82,6 @@ export class ImageWaitCompleteUtil extends ImageCompleteUtil {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
-    private readonly METHOD_NAME: string = "waitForLoad";
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(18000);
 

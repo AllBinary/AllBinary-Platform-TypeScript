@@ -68,7 +68,7 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //J2ME
 export class TsUtil
             extends Object
          {
@@ -229,6 +229,10 @@ recordStore!.getRecord(recordId, data, 0);
 
                         }
                             
+}
+
+
+    public printAvailableMethods(anyType: any = {}){
 }
 
 

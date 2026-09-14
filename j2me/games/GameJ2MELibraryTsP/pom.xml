@@ -92,6 +92,7 @@
         <module>../../input/platform/me/GameInputMEJavaLibraryTsM</module>
         <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryTsM</module>
         <module>../../input/platform/me/GameInputMEMotionJavaLibraryTsM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryTsM</module>
         <module>../../input/platform/pc/GameInputPCJavaLibraryTsM</module>
         <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryTsM</module>
         <module>../../input/platform/pc/GameInputPCMotionJavaLibraryTsM</module>
