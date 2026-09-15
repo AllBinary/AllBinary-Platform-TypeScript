@@ -22,8 +22,8 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';

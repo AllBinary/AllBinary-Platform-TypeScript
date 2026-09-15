@@ -24,8 +24,8 @@ import { Matrix } from '../../../../android/graphics/Matrix.js';
 //not GWT import const Matrix = globalThis.android.graphics.Matrix;
 
       
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';

@@ -24,8 +24,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not plain js import { Player } 
-const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+//not GWT import const Player = globalThis.javax.microedition.media.Player;
 const PlayerI = globalThis.javax.microedition.media.Player;
 
       

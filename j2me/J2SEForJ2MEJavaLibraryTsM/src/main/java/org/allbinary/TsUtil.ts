@@ -24,28 +24,28 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
-//not plain js import { Displayable } 
-const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
+//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
-//not plain js import { Form } 
-const Form = globalThis.javax.microedition.lcdui.Form;
+import { Form } from '../../javax/microedition/lcdui/Form.js';
+//not GWT import const Form = globalThis.javax.microedition.lcdui.Form;
 
       
-//not plain js import { InvalidRecordIDException } 
-const InvalidRecordIDException = globalThis.javax.microedition.rms.InvalidRecordIDException;
+import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
+//not GWT import const InvalidRecordIDException = globalThis.javax.microedition.rms.InvalidRecordIDException;
 
       
-//not plain js import { RecordStore } 
-const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
+//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-//not plain js import { RecordStoreException } 
-const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
+//not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
 
       
-//not plain js import { RecordStoreNotOpenException } 
-const RecordStoreNotOpenException = globalThis.javax.microedition.rms.RecordStoreNotOpenException;
+import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
+//not GWT import const RecordStoreNotOpenException = globalThis.javax.microedition.rms.RecordStoreNotOpenException;
 
       
 //not plain js import { NullUtil } 

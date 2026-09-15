@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
@@ -38,12 +38,12 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not plain js import { PlaynImmutableImage } 
-const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
+import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
+//not GWT import const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
 
       
-//not plain js import { PlaynMutableImage } 
-const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not GWT import const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
 //not plain js import { CanvasImage } 

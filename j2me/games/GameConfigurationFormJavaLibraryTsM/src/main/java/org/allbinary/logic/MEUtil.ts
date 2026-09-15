@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not plain js import { Item } 
-const Item = globalThis.javax.microedition.lcdui.Item;
+import { Item } from '../../../javax/microedition/lcdui/Item.js';
+//not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
 
       
 import { CommandForm } from '../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
@@ -57,7 +57,7 @@ export class MEUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MEUtil.instance;
     
 }
 

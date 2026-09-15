@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { Item } 
-const Item = globalThis.javax.microedition.lcdui.Item;
+import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+//not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
 
       
-//not plain js import { ItemCommandListener } 
-const ItemCommandListener = globalThis.javax.microedition.lcdui.ItemCommandListener;
+import { ItemCommandListener } from '../../../../../javax/microedition/lcdui/ItemCommandListener.js';
+//not GWT import const ItemCommandListener = globalThis.javax.microedition.lcdui.ItemCommandListener;
 
       
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';

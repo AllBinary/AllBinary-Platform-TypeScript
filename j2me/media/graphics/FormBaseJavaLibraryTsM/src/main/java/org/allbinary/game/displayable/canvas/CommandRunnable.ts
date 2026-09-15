@@ -24,12 +24,12 @@
         
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';

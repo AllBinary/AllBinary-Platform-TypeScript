@@ -24,12 +24,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
@@ -60,12 +60,12 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { PlaynImage } 
-const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
+import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+//not GWT import const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
 
       
-//not plain js import { ResourceCallbackStrings } 
-const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
+import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
+//not GWT import const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
 
       
 //not plain js import { Callback } 

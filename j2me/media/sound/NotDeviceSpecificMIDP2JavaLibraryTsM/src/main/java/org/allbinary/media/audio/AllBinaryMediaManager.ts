@@ -26,16 +26,16 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not plain js import { Manager } 
-const Manager = globalThis.javax.microedition.media.Manager;
+import { Manager } from '../../../../javax/microedition/media/Manager.js';
+//not GWT import const Manager = globalThis.javax.microedition.media.Manager;
 
       
-//not plain js import { MediaException } 
-const MediaException = globalThis.javax.microedition.media.MediaException;
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+//not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not plain js import { Player } 
-const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+//not GWT import const Player = globalThis.javax.microedition.media.Player;
 const PlayerI = globalThis.javax.microedition.media.Player;
 
       

@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';

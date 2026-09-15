@@ -30,17 +30,17 @@ import { Stack } from '../../../java/util/Stack.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { Canvas } 
-const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+        import { Canvas } from './Canvas.js';
+//not GWT import - same folder const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
-                //not plain js - same folder import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+                import { Command } from './Command.js';
+//not GWT import - same folder const Command = globalThis.javax.microedition.lcdui.Command;
 
-                //not plain js - same folder import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+                import { CommandListener } from './CommandListener.js';
+//not GWT import - same folder const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
-                //not plain js - same folder import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+                import { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
                 
 export class NullCanvas extends Canvas {

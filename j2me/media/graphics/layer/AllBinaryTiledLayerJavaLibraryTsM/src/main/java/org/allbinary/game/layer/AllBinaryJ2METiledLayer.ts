@@ -20,16 +20,16 @@
 
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not plain js import { Font } 
-const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { TiledLayer } 
-const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
+//not GWT import const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
 
       
 //not plain js import { CommonSeps } 

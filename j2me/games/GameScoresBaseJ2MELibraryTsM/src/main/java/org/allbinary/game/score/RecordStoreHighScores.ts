@@ -36,24 +36,24 @@ import { IOException } from '../../../../java/io/IOException.js';
 //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not plain js import { RecordComparator } 
-const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
+//not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
 
       
-//not plain js import { RecordEnumeration } 
-const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+//not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-//not plain js import { RecordStore } 
-const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-//not plain js import { RecordStoreException } 
-const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
+//not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
 
       
-//not plain js import { RecordStoreNotFoundException } 
-const RecordStoreNotFoundException = globalThis.javax.microedition.rms.RecordStoreNotFoundException;
+import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
+//not GWT import const RecordStoreNotFoundException = globalThis.javax.microedition.rms.RecordStoreNotFoundException;
 
       
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';

@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';

@@ -24,16 +24,16 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not plain js import { PlaynImmutableImage } 
-const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
+import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
+//not GWT import const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
 
       
-//not plain js import { PlaynMutableImage } 
-const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not GWT import const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
 //not plain js import { CanvasImage } 

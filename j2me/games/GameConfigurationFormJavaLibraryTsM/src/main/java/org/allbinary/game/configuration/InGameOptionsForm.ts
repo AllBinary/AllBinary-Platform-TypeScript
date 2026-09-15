@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { Choice } 
-const Choice = globalThis.javax.microedition.lcdui.Choice;
+import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+//not GWT import const Choice = globalThis.javax.microedition.lcdui.Choice;
 
       
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';

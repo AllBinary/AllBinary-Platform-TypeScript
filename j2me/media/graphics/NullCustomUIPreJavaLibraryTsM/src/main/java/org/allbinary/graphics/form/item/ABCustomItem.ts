@@ -6,12 +6,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { Screen } 
-const Screen = globalThis.javax.microedition.lcdui.Screen;
+import { Screen } from '../../../../../javax/microedition/lcdui/Screen.js';
+//not GWT import const Screen = globalThis.javax.microedition.lcdui.Screen;
 
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';

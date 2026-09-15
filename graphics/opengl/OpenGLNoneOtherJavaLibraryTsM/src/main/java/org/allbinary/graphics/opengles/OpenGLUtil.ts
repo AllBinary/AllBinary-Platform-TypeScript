@@ -8,8 +8,8 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 

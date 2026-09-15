@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { ImageItem } 
-const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
+import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
+//not GWT import const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
 
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';

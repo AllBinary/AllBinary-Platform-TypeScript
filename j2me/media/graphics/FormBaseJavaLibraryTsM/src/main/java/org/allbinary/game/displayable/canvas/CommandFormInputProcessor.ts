@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { Canvas } 
-const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';

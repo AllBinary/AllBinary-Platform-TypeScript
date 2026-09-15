@@ -38,8 +38,8 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+        import { Image } from './Image.js';
+//not GWT import - same folder const Image = globalThis.javax.microedition.lcdui.Image;
 
                 
 export class ChoiceGroupImageFactory

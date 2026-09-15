@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Player } 
-const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+//not GWT import const Player = globalThis.javax.microedition.media.Player;
 const PlayerI = globalThis.javax.microedition.media.Player;
 
       

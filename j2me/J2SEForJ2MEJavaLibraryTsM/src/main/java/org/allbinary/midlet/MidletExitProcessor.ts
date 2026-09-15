@@ -22,8 +22,8 @@
         
             import { System } from '../../../java/lang/System.js';
         
-//not plain js import { MIDlet } 
-const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';

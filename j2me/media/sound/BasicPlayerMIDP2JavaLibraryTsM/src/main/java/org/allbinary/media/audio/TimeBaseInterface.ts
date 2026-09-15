@@ -18,12 +18,12 @@
         
 
 
-//not plain js import { MediaException } 
-const MediaException = globalThis.javax.microedition.media.MediaException;
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+//not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not plain js import { TimeBase } 
-const TimeBase = globalThis.javax.microedition.media.TimeBase;
+import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
+//not GWT import const TimeBase = globalThis.javax.microedition.media.TimeBase;
 
       
 

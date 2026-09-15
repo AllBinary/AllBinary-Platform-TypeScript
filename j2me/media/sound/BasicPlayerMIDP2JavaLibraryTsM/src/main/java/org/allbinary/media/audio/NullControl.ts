@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Control } 
-const Control = globalThis.javax.microedition.media.Control;
+import { Control } from '../../../../javax/microedition/media/Control.js';
+//not GWT import const Control = globalThis.javax.microedition.media.Control;
 
       
 

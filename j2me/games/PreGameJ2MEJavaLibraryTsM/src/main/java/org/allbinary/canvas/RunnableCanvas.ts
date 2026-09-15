@@ -22,8 +22,8 @@
         
             import { Thread } from '../../../java/lang/Thread.js';
         
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';

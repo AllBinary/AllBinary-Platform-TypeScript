@@ -32,8 +32,8 @@ import { PorterDuffColorFilter } from '../../../../android/graphics/PorterDuffCo
 //not GWT import const PorterDuffColorFilter = globalThis.android.graphics.PorterDuffColorFilter;
 
       
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';

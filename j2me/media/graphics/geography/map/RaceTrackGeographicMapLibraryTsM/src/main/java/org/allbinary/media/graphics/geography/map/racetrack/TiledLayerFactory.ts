@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not plain js import { TiledLayer } 
-const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
+//not GWT import const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
 
       
 

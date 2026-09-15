@@ -24,8 +24,8 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 //not plain js import { ResourceUtil } 

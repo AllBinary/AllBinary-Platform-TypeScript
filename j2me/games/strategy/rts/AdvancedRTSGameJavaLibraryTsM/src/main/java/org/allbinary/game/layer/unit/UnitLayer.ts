@@ -24,12 +24,12 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not plain js import { Canvas } 
-const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';

@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { Display } 
-const Display = globalThis.javax.microedition.lcdui.Display;
+import { Display } from '../../../javax/microedition/lcdui/Display.js';
+//not GWT import const Display = globalThis.javax.microedition.lcdui.Display;
 
       
-//not plain js import { Displayable } 
-const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
 //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-//not plain js import { MIDlet } 
-const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
-//not plain js import { MIDletStateChangeException } 
-const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
+import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
+//not GWT import const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
 
       
 //not plain js import { StdUtil } 

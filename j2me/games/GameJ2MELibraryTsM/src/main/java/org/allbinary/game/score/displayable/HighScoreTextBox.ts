@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { Font } 
-const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not plain js import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not plain js import { TextField } 
-const TextField = globalThis.javax.microedition.lcdui.TextField;
+import { TextField } from '../../../../../javax/microedition/lcdui/TextField.js';
+//not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 import { PostGameCommandFactory } from '../../../../../org/allbinary/PostGameCommandFactory.js';

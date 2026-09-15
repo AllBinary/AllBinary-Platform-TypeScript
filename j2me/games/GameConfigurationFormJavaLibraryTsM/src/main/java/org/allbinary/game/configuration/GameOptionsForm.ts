@@ -22,24 +22,24 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not plain js import { Choice } 
-const Choice = globalThis.javax.microedition.lcdui.Choice;
+import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+//not GWT import const Choice = globalThis.javax.microedition.lcdui.Choice;
 
       
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { Item } 
-const Item = globalThis.javax.microedition.lcdui.Item;
+import { Item } from '../../../../javax/microedition/lcdui/Item.js';
+//not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
 
       
-//not plain js import { TextField } 
-const TextField = globalThis.javax.microedition.lcdui.TextField;
+import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+//not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';

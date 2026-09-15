@@ -38,16 +38,16 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not plain js import { Control } 
-const Control = globalThis.javax.microedition.media.Control;
+import { Control } from '../../../../javax/microedition/media/Control.js';
+//not GWT import const Control = globalThis.javax.microedition.media.Control;
 
       
-//not plain js import { MediaException } 
-const MediaException = globalThis.javax.microedition.media.MediaException;
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+//not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not plain js import { PlayerListener } 
-const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+//not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
 import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';

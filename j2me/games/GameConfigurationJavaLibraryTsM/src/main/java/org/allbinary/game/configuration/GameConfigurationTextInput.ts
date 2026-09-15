@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { TextField } 
-const TextField = globalThis.javax.microedition.lcdui.TextField;
+import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+//not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 //not plain js import { StdUtil } 

@@ -26,28 +26,28 @@ import { Enumeration } from '../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not plain js import { Canvas } 
-const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not plain js import { Command } 
-const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { Displayable } 
-const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
+//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-//not plain js import { MIDletStateChangeException } 
-const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
+import { MIDletStateChangeException } from '../../../../javax/microedition/midlet/MIDletStateChangeException.js';
+//not GWT import const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
 
       
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';

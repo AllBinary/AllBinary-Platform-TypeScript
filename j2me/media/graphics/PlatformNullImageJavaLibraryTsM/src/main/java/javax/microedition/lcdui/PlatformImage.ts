@@ -47,11 +47,11 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
         import { NullImage } from './NullImage.js';
 //not GWT import - same folder const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
-                //not plain js - same folder import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+                import { Image } from './Image.js';
+//not GWT import - same folder const Image = globalThis.javax.microedition.lcdui.Image;
 
-                //not plain js - same folder import { Graphics } 
-const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+                import { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
                 //PlatformNullImageJavaLibrary
 export class PlatformImage

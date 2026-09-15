@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not plain js import { RecordEnumeration } 
-const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+//not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-//not plain js import { RecordStore } 
-const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
 import { BasicPersitance } from '../../../../org/allbinary/game/configuration/persistance/BasicPersitance.js';

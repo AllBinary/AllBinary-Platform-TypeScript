@@ -22,8 +22,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not plain js import { Canvas } 
-const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
+//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';

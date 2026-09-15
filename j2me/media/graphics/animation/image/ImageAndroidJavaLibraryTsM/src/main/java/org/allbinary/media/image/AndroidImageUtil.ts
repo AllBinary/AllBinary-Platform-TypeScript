@@ -42,8 +42,8 @@ import { Paint } from '../../../../android/graphics/Paint.js';
 //not GWT import const Paint = globalThis.android.graphics.Paint;
 
       
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';

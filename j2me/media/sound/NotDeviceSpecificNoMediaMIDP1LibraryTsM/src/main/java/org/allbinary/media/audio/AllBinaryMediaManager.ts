@@ -26,8 +26,8 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not plain js import { Player } 
-const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+//not GWT import const Player = globalThis.javax.microedition.media.Player;
 const PlayerI = globalThis.javax.microedition.media.Player;
 
       

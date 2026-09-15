@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not plain js import { CommandListener } 
-const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not plain js import { ItemStateListener } 
-const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
+import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+//not GWT import const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
 
       
 import { GameStateCompositeInterface } from '../../../../../org/allbinary/game/state/GameStateCompositeInterface.js';

@@ -6,8 +6,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not plain js import { Canvas } 
-const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { KeyEvent } from '../../../../android/view/KeyEvent.js';

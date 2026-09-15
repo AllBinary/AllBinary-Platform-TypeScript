@@ -18,8 +18,8 @@ import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not plain js import { Font } 
-const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../javax/microedition/lcdui/Font.js';
+//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';

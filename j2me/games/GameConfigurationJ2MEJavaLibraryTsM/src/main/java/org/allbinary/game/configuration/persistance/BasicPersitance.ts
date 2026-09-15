@@ -24,8 +24,8 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not plain js import { RecordStore } 
-const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
 //not plain js import { LogUtil } 

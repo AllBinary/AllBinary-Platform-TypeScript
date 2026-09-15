@@ -30,8 +30,8 @@ import { InputStream } from '../../../java/io/InputStream.js';
 //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not plain js import { Image } 
-const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';

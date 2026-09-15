@@ -18,8 +18,8 @@
         
 
 
-//not plain js import { Gauge } 
-const Gauge = globalThis.javax.microedition.lcdui.Gauge;
+import { Gauge } from '../../../../javax/microedition/lcdui/Gauge.js';
+//not GWT import const Gauge = globalThis.javax.microedition.lcdui.Gauge;
 
       
 

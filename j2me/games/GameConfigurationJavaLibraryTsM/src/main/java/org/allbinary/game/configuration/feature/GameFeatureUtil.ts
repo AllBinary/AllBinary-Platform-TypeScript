@@ -26,8 +26,8 @@ import { Enumeration } from '../../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not plain js import { ChoiceGroup } 
-const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+//not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
