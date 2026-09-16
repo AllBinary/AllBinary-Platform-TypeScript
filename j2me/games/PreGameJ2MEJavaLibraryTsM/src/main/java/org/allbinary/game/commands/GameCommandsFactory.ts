@@ -28,6 +28,10 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
 //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
+      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
@@ -60,14 +64,23 @@ export class GameCommandsFactory
          {
         
 
-    private static readonly instance: GameCommandsFactory = new GameCommandsFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameCommandsFactory{
+
+                        if(GameCommandsFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameCommandsFactory.instance= new GameCommandsFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameCommandsFactory.instance;
+                        return GameCommandsFactory.instance as GameCommandsFactory;
     
 }
 
