@@ -24,24 +24,34 @@
         
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
 //not GWT import const BasicGraphicsPipeline
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { Angle } from '../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
+
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
 import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
 //not GWT import const VectorInfo
+
 
 
 
@@ -62,6 +72,7 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationUtil } from './VectorAnimationUtil.js';
 //not GWT import - same folder const VectorAnimationUtil
+
 export class VectorRotationGenerator
             extends Object
          {

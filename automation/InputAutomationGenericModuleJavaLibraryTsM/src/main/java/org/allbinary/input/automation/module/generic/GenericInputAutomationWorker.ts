@@ -24,38 +24,55 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { AbstractInputAutomationWorker } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
 //not GWT import const AbstractInputAutomationWorker
+
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 //not GWT import const InputAutomationActionInterface
+
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 //not GWT import const GenericProfile
+
 import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
 //not GWT import const GenericProfileDataWorkerType
+
 import { GenericProfileAction } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
 //not GWT import const GenericProfileAction
+
 import { GenericProfileActionScript } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
 //not GWT import const GenericProfileActionScript
+
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
 //not GWT import const CapturedBufferedImagesCacheSingleton
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { J2SECacheInterface } from '../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
 //not GWT import const J2SECacheInterface
+
 import { ImageComparatorConstraintsInterface } from '../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 //not GWT import const ImageComparatorConstraintsInterface
+
 import { ImageComparisonWorker } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
 //not GWT import const ImageComparisonWorker
+
 import { MotionRectangleConstraintsInterface } from '../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
 //not GWT import const MotionRectangleConstraintsInterface
+
 import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
 //not GWT import const MotionRectanglesWorker
+
 
 
 
@@ -75,8 +92,10 @@ import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileCaptureWorkerFactory } from './GenericProfileCaptureWorkerFactory.js';
-//not GWT import - same folder const GenericProfileCaptureWorkerFactoryimport { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
+//not GWT import - same folder const GenericProfileCaptureWorkerFactory
+import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
 //not GWT import - same folder const CaptureWorkerUtil
+
 export class GenericInputAutomationWorker extends AbstractInputAutomationWorker {
         
 

@@ -22,14 +22,19 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
+
 import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
 //not GWT import const UserEmailEventListenerInterface
+
 import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
+
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -50,6 +55,7 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
 //not GWT import - same folder const UserEmailEventConfigurationInterface
+
 export interface UserEmailEventsConfigurationInterface {
         
 

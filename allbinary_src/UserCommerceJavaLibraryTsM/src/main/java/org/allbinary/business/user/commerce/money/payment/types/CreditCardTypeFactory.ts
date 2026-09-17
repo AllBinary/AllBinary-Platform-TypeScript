@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CreditCardType } from './CreditCardType.js';
 //not GWT import - same folder const CreditCardType
+
 export class CreditCardTypeFactory
             extends Object
          {

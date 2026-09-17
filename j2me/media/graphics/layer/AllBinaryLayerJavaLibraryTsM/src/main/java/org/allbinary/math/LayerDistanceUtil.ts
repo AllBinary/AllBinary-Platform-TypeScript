@@ -22,10 +22,13 @@
         
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+
 
 
 

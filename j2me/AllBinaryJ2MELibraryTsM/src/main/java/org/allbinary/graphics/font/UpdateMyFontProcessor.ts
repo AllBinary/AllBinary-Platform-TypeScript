@@ -36,11 +36,14 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MyFontProcessor } from './MyFontProcessor.js';
-//not GWT import - same folder const MyFontProcessorimport { UpdateMyFontInterface } from './UpdateMyFontInterface.js';
+//not GWT import - same folder const MyFontProcessor
+import { UpdateMyFontInterface } from './UpdateMyFontInterface.js';
 //not GWT import - same folder const UpdateMyFontInterface
+
 export class UpdateMyFontProcessor extends MyFontProcessor {
         
 

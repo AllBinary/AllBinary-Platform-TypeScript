@@ -26,10 +26,13 @@
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 
 
 

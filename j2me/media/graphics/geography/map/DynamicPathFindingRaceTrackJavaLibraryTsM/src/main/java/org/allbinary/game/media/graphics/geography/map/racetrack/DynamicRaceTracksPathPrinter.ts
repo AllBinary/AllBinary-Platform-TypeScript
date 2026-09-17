@@ -24,24 +24,34 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SmallIntegerSingletonFactory } from '../../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { RaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapInterfaceFactoryInterface.js';
 //not GWT import const RaceTrackGeographicMapInterfaceFactoryInterface
+
 import { RaceTrackRoadsGeographicMapCellHistoryFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackRoadsGeographicMapCellHistoryFactory.js';
 //not GWT import const RaceTrackRoadsGeographicMapCellHistoryFactory
+
 import { RaceTracksPathPrinter } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTracksPathPrinter.js';
 //not GWT import const RaceTracksPathPrinter
+
 import { PathFindingInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
 //not GWT import const PathFindingInfo
+
 import { PathGenerator } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathGenerator.js';
 //not GWT import const PathGenerator
+
 
 
 

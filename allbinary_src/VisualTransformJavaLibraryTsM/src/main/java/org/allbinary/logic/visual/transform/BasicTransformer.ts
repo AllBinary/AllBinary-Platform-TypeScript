@@ -22,40 +22,58 @@
         
 import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
 //not GWT import const ByteArrayInputStream
+
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream
+
 import { InputStream } from '../../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 //not GWT import const URIResolver
+
 import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
 //not GWT import const BasicUriResolver
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
 //not GWT import const AbCrypt
+
 import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
 //not GWT import const KeySpecFactory
+
 import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
 //not GWT import const AbFileInputStream
+
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 //not GWT import const StreamUtil
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
 //not GWT import const PathUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
 //not GWT import const AbKeys
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
 //not GWT import const TransformInfoTemplateData
+
 
 
 
@@ -76,6 +94,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbTransformer } from './AbTransformer.js';
 //not GWT import - same folder const AbTransformer
+
 export class BasicTransformer extends AbTransformer {
         
 

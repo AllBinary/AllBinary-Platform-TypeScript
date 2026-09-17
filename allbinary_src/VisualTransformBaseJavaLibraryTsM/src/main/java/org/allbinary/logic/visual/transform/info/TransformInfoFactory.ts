@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
 //not GWT import - same folder const TransformInfoInterface
+
 export class TransformInfoFactory
             extends Object
          {

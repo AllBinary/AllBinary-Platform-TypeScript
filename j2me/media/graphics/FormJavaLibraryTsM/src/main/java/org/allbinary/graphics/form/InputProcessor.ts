@@ -22,8 +22,10 @@
         
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
 //not GWT import const PlayerGameInputCompositeInterface
+
 
 
 

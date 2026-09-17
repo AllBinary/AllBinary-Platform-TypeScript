@@ -24,36 +24,52 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
 //not GWT import const BasicItemView
+
 import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 //not GWT import const ItemInterface
+
 import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
 //not GWT import const InventoryEntity
+
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 //not GWT import const InventoryEntityFactory
+
 import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
+
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { StoreTransformer } from '../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
 //not GWT import const StoreTransformer
+
 import { TransformDocumentInterface } from '../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 //not GWT import const TransformDocumentInterface
+
 import { TransformStoreDocumentFactory } from '../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js';
 //not GWT import const TransformStoreDocumentFactory
+
 import { TransformInfoHttpSearch } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpSearch.js';
 //not GWT import const TransformInfoHttpSearch
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

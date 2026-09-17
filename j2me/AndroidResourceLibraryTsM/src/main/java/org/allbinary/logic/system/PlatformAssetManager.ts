@@ -24,8 +24,10 @@
         
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 
 
 

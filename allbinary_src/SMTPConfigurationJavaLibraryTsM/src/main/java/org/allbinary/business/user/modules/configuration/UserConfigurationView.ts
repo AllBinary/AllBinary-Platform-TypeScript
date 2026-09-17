@@ -24,26 +24,37 @@
         
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { TimeCreatedView } from '../../../../../../org/allbinary/business/time/created/TimeCreatedView.js';
 //not GWT import const TimeCreatedView
+
 import { TimeLastModifiedView } from '../../../../../../org/allbinary/business/time/modified/TimeLastModifiedView.js';
 //not GWT import const TimeLastModifiedView
+
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { UserEmailConfigurationData } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationData.js';
 //not GWT import const UserEmailConfigurationData
+
 import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 //not GWT import const UserEmailConfigurationInterface
+
 import { UserEmailConfigurationView } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationView.js';
 //not GWT import const UserEmailConfigurationView
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -63,9 +74,12 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import - same folder const UserConfigurationInterfaceimport { UserConfiguration } from './UserConfiguration.js';
-//not GWT import - same folder const UserConfigurationimport { UserConfigurationData } from './UserConfigurationData.js';
+//not GWT import - same folder const UserConfigurationInterface
+import { UserConfiguration } from './UserConfiguration.js';
+//not GWT import - same folder const UserConfiguration
+import { UserConfigurationData } from './UserConfigurationData.js';
 //not GWT import - same folder const UserConfigurationData
+
 export class UserConfigurationView
             extends Object
          implements DomNodeInterface {

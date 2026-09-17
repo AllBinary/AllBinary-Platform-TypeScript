@@ -22,14 +22,19 @@
         
 import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
 //not GWT import const DebugFactory
+
 import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
 //not GWT import const NoDebug
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 

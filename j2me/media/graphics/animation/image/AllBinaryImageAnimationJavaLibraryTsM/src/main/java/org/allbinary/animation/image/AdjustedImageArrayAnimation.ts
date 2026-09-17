@@ -22,10 +22,13 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 
 
 
@@ -46,6 +49,7 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
 //not GWT import - same folder const ImageArrayAnimation
+
 export class AdjustedImageArrayAnimation extends ImageArrayAnimation {
         
 

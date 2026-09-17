@@ -24,20 +24,28 @@
         
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { BooleanUtil } from '../../../../org/allbinary/logic/java/bool/BooleanUtil.js';
 //not GWT import const BooleanUtil
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -58,6 +66,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitInfoEntity } from './InitInfoEntity.js';
 //not GWT import - same folder const InitInfoEntity
+
 export class InitInfo
             extends Object
          {

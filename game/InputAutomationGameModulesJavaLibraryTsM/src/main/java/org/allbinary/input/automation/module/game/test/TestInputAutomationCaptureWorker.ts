@@ -22,32 +22,46 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { AbstractInputAutomationWorker } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
 //not GWT import const AbstractInputAutomationWorker
+
 import { InputAutomationActionInterface } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 //not GWT import const InputAutomationActionInterface
+
 import { GenericProfileAction } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
 //not GWT import const GenericProfileAction
+
 import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
 //not GWT import const GenericProfileActions
+
 import { GenericProfileActionScript } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
 //not GWT import const GenericProfileActionScript
+
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
 //not GWT import const CapturedBufferedImagesCacheSingleton
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { J2SECacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
 //not GWT import const J2SECacheInterface
+
 import { ImageComparatorConstraintsInterface } from '../../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 //not GWT import const ImageComparatorConstraintsInterface
+
 import { MotionRectangleConstraintsInterface } from '../../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
 //not GWT import const MotionRectangleConstraintsInterface
+
 
 
 

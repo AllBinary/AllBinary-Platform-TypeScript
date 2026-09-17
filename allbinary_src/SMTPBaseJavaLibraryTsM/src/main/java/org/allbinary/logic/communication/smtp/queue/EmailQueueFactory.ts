@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEmailQueue } from './BasicEmailQueue.js';
-//not GWT import - same folder const BasicEmailQueueimport { EmailQueueInterface } from './EmailQueueInterface.js';
+//not GWT import - same folder const BasicEmailQueue
+import { EmailQueueInterface } from './EmailQueueInterface.js';
 //not GWT import - same folder const EmailQueueInterface
+
 export class EmailQueueFactory
             extends Object
          {

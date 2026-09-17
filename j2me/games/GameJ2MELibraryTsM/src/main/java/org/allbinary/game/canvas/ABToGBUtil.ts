@@ -22,10 +22,13 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 //not GWT import const NullCanvas
+
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 
 
 

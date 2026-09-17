@@ -22,8 +22,10 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -43,7 +45,8 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { Log } 
-const Log = globalThis.org.allbinary.logic.communication.log.Log;//ActualPlatform
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
+//ActualPlatform
 /*actual*/ export class LogFactory
             extends Object
          {

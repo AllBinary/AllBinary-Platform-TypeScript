@@ -38,10 +38,12 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TestInputInterface } from './TestInputInterface.js';
 //not GWT import - same folder const TestInputInterface
+
 export class TestInputExample
             extends Object
          implements TestInputInterface {

@@ -24,18 +24,25 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 //not GWT import const GenericProfile
+
 import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
 //not GWT import const GenericProfileDataWorkerType
+
 import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
 //not GWT import const SavedCaptureGenericProfileDataWorkerType
+
 import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
 //not GWT import const CaptureWorkerInterface
+
 import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
 //not GWT import const ScreenCaptureImagesWorker
+
 
 
 
@@ -56,6 +63,7 @@ import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SavedCaptureImagesWorker } from './SavedCaptureImagesWorker.js';
 //not GWT import - same folder const SavedCaptureImagesWorker
+
 export class GenericProfileCaptureWorkerFactory
             extends Object
          {

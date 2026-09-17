@@ -22,10 +22,13 @@
         
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 //not GWT import const ScoreableInterface
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 

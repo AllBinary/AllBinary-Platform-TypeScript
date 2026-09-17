@@ -22,8 +22,10 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
+
 
 
 

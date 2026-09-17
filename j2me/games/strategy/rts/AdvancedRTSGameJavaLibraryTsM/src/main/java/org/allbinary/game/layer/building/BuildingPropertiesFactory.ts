@@ -24,30 +24,43 @@
         
 import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
 //not GWT import const DamageFloaters
+
 import { PtsDamageFloaters } from '../../../../../org/allbinary/game/combat/damage/PtsDamageFloaters.js';
 //not GWT import const PtsDamageFloaters
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 //not GWT import const GameFeatureFactory
+
 import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 //not GWT import const BasicHudFactory
+
 import { HealthBar } from '../../../../../org/allbinary/game/health/HealthBar.js';
 //not GWT import const HealthBar
+
 import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
 //not GWT import const HealthBarTwodAnimation
+
 import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
 //not GWT import const TrackingEvent
+
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -68,6 +81,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingLayer } from './BuildingLayer.js';
 //not GWT import - same folder const BuildingLayer
+
 export class BuildingPropertiesFactory
             extends Object
          {

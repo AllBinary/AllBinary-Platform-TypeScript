@@ -22,12 +22,16 @@
         
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -48,6 +52,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryView } from './InventoryView.js';
 //not GWT import - same folder const InventoryView
+
 export class AutoValidationInventoryView extends InventoryView implements ValidationComponentInterface {
         
 

@@ -39,10 +39,14 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.js';
-//not GWT import - same folder const CustomMapGeneratorBaseFactoryimport { CustomMapGenerator } from './CustomMapGenerator.js';
-//not GWT import - same folder const CustomMapGeneratorimport { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-//not GWT import - same folder const CustomMapGeneratorBaseimport { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
+//not GWT import - same folder const CustomMapGeneratorBaseFactory
+import { CustomMapGenerator } from './CustomMapGenerator.js';
+//not GWT import - same folder const CustomMapGenerator
+import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
+//not GWT import - same folder const CustomMapGeneratorBase
+import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
 //not GWT import - same folder const RaceTrackGeographicMap
+
 export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
         
 

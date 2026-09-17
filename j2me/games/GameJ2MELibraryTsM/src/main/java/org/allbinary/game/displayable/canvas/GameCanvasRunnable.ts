@@ -22,14 +22,19 @@
         
 import { GameTickDisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js';
 //not GWT import const GameTickDisplayInfoSingleton
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
+
 import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
+
 
 
 
@@ -49,8 +54,10 @@ import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/tim
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
-//not GWT import - same folder const GameRunnableimport { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import - same folder const GameRunnable
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class GameCanvasRunnable extends GameRunnable {
         
 

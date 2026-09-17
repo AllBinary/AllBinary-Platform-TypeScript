@@ -22,8 +22,10 @@
         
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

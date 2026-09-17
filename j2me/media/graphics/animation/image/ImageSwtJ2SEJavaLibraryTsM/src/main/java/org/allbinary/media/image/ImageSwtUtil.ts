@@ -22,10 +22,13 @@
         
 import { Color } from '../../../../org/eclipse/swt/graphics/Color.js';
 //not GWT import const Color
+
 import { RGB } from '../../../../org/eclipse/swt/graphics/RGB.js';
 //not GWT import const RGB
+
 import { BareMain } from '../../../../org/microemu/app/BareMain.js';
 //not GWT import const BareMain
+
 
 
 

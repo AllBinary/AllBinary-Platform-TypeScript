@@ -24,8 +24,10 @@
         
 import { File } from '../../../../../java/io/File.js';
 //not GWT import const File
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 
 
 
@@ -46,6 +48,7 @@ const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
 //not GWT import - same folder const AbFile
+
 export class FileWrapperUtil
             extends Object
          {

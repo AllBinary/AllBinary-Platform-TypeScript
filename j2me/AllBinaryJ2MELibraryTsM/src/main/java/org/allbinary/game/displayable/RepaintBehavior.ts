@@ -26,20 +26,28 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+
 
 
 

@@ -38,10 +38,12 @@ import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 export class StringValidationUtil
             extends Object
          {

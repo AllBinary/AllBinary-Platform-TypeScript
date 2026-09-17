@@ -22,8 +22,10 @@
         
 import { AllBinarySensorListener } from '../../../../org/allbinary/input/AllBinarySensorListener.js';
 //not GWT import const AllBinarySensorListener
+
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
 //not GWT import const Orientation
+
 
 
 
@@ -44,6 +46,7 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryOrientationSensor } from './AllBinaryOrientationSensor.js';
 //not GWT import - same folder const AllBinaryOrientationSensor
+
 export class NoGyroSensor extends AllBinaryOrientationSensor implements AllBinarySensorListener {
         
 

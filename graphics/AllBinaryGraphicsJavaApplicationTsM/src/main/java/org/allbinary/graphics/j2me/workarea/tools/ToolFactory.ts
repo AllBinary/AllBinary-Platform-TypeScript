@@ -24,10 +24,13 @@
         
 import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
 //not GWT import const StatusFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,8 +50,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import - same folder const GraphicsItemInterfaceFactoryInterfaceimport { GraphicItemFactory } from './GraphicItemFactory.js';
+//not GWT import - same folder const GraphicsItemInterfaceFactoryInterface
+import { GraphicItemFactory } from './GraphicItemFactory.js';
 //not GWT import - same folder const GraphicItemFactory
+
 export class ToolFactory
             extends Object
          {

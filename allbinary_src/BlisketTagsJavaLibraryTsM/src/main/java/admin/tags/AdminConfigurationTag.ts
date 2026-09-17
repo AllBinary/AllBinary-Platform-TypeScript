@@ -20,8 +20,10 @@
 
 import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
 //not GWT import const AdminConfigurationHelperFactory
+
 import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
 //not GWT import const AdminConfigurationRequestHelperFactory
+
 
 
 
@@ -42,6 +44,7 @@ import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/A
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 //not GWT import - same folder const TableTag
+
 export class AdminConfigurationTag extends TableTag {
         
 

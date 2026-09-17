@@ -26,226 +26,337 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
+
 import { ExplosionBasicSound } from '../../../../../org/allbinary/ag/weapon/media/audio/ExplosionBasicSound.js';
 //not GWT import const ExplosionBasicSound
+
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { NullIndexedAnimationFactory } from '../../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
 //not GWT import const NullIndexedAnimationFactory
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { RotationAnimation } from '../../../../../org/allbinary/animation/RotationAnimation.js';
 //not GWT import const RotationAnimation
+
 import { CaptionAnimationHelper } from '../../../../../org/allbinary/animation/caption/CaptionAnimationHelper.js';
 //not GWT import const CaptionAnimationHelper
+
 import { CaptionAnimationHelperBase } from '../../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js';
 //not GWT import const CaptionAnimationHelperBase
+
 import { AdjustedCircleAnimation } from '../../../../../org/allbinary/animation/vector/AdjustedCircleAnimation.js';
 //not GWT import const AdjustedCircleAnimation
+
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
 //not GWT import const DamageFloaters
+
 import { PtsDamageFloaters } from '../../../../../org/allbinary/game/combat/damage/PtsDamageFloaters.js';
 //not GWT import const PtsDamageFloaters
+
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 //not GWT import const GameFeatureFactory
+
 import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 //not GWT import const BasicHudFactory
+
 import { Health } from '../../../../../org/allbinary/game/health/Health.js';
 //not GWT import const Health
+
 import { HealthBar } from '../../../../../org/allbinary/game/health/HealthBar.js';
 //not GWT import const HealthBar
+
 import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
 //not GWT import const HealthBarTwodAnimation
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { GroupCommonFactory } from '../../../../../org/allbinary/game/identification/GroupCommonFactory.js';
 //not GWT import const GroupCommonFactory
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 //not GWT import const GameKeyEventFactory
+
 import { GameKeyEventUtil } from '../../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
 //not GWT import const GameKeyEventUtil
+
 import { VisibleCellPositionsSingleton } from '../../../../../org/allbinary/game/input/form/VisibleCellPositionsSingleton.js';
 //not GWT import const VisibleCellPositionsSingleton
+
 import { WaypointRTSFormInput } from '../../../../../org/allbinary/game/input/form/WaypointRTSFormInput.js';
 //not GWT import const WaypointRTSFormInput
+
 import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { AdvancedRTSProperties } from '../../../../../org/allbinary/game/layer/AdvancedRTSProperties.js';
 //not GWT import const AdvancedRTSProperties
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { CaptionResources } from '../../../../../org/allbinary/game/layer/CaptionResources.js';
 //not GWT import const CaptionResources
+
 import { LinePathRelativeAnimation } from '../../../../../org/allbinary/game/layer/LinePathRelativeAnimation.js';
 //not GWT import const LinePathRelativeAnimation
+
 import { PathAnimation } from '../../../../../org/allbinary/game/layer/PathAnimation.js';
 //not GWT import const PathAnimation
+
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 //not GWT import const PathFindingLayerInterface
+
 import { RTSLayer2LogHelper } from '../../../../../org/allbinary/game/layer/RTSLayer2LogHelper.js';
 //not GWT import const RTSLayer2LogHelper
+
 import { RTSLayer2SelectedLogHelper } from '../../../../../org/allbinary/game/layer/RTSLayer2SelectedLogHelper.js';
 //not GWT import const RTSLayer2SelectedLogHelper
+
 import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 //not GWT import const RTSLayerEvent
+
 import { RTSLayerHudPaintable } from '../../../../../org/allbinary/game/layer/RTSLayerHudPaintable.js';
 //not GWT import const RTSLayerHudPaintable
+
 import { RTSLayerLogHelper } from '../../../../../org/allbinary/game/layer/RTSLayerLogHelper.js';
 //not GWT import const RTSLayerLogHelper
+
 import { RTSLayerSelectedLogHelper } from '../../../../../org/allbinary/game/layer/RTSLayerSelectedLogHelper.js';
 //not GWT import const RTSLayerSelectedLogHelper
+
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
 //not GWT import const SelectionHudPaintable
+
 import { SensorActionFactory } from '../../../../../org/allbinary/game/layer/SensorActionFactory.js';
 //not GWT import const SensorActionFactory
+
 import { SteeringVisitor } from '../../../../../org/allbinary/game/layer/SteeringVisitor.js';
 //not GWT import const SteeringVisitor
+
 import { TiledLayerUtil } from '../../../../../org/allbinary/game/layer/TiledLayerUtil.js';
 //not GWT import const TiledLayerUtil
+
 import { VehicleFrictionProperties } from '../../../../../org/allbinary/game/layer/VehicleFrictionProperties.js';
 //not GWT import const VehicleFrictionProperties
+
 import { VehicleProperties } from '../../../../../org/allbinary/game/layer/VehicleProperties.js';
 //not GWT import const VehicleProperties
+
 import { WaypointBehaviorBase } from '../../../../../org/allbinary/game/layer/WaypointBehaviorBase.js';
 //not GWT import const WaypointBehaviorBase
+
 import { BuildingLayer } from '../../../../../org/allbinary/game/layer/building/BuildingLayer.js';
 //not GWT import const BuildingLayer
+
 import { BuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
 //not GWT import const BuildingEventHandler
+
 import { BuildingEventListenerInterface } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js';
 //not GWT import const BuildingEventListenerInterface
+
 import { CapitalEvent } from '../../../../../org/allbinary/game/layer/capital/event/CapitalEvent.js';
 //not GWT import const CapitalEvent
+
 import { CapitalEventHandlerFactory } from '../../../../../org/allbinary/game/layer/capital/event/CapitalEventHandlerFactory.js';
 //not GWT import const CapitalEventHandlerFactory
+
 import { LayerPartialCellPositionsUtil } from '../../../../../org/allbinary/game/layer/geographic/map/LayerPartialCellPositionsUtil.js';
 //not GWT import const LayerPartialCellPositionsUtil
+
 import { SpecialDownGameInputProcessor } from '../../../../../org/allbinary/game/layer/special/SpecialDownGameInputProcessor.js';
 //not GWT import const SpecialDownGameInputProcessor
+
 import { SpecialFireGameInputProcessor } from '../../../../../org/allbinary/game/layer/special/SpecialFireGameInputProcessor.js';
 //not GWT import const SpecialFireGameInputProcessor
+
 import { SpecialLeftGameInputProcessor } from '../../../../../org/allbinary/game/layer/special/SpecialLeftGameInputProcessor.js';
 //not GWT import const SpecialLeftGameInputProcessor
+
 import { SpecialRightGameInputProcessor } from '../../../../../org/allbinary/game/layer/special/SpecialRightGameInputProcessor.js';
 //not GWT import const SpecialRightGameInputProcessor
+
 import { SpecialUpGameInputProcessor } from '../../../../../org/allbinary/game/layer/special/SpecialUpGameInputProcessor.js';
 //not GWT import const SpecialUpGameInputProcessor
+
 import { MultipassNoCacheWaypoint } from '../../../../../org/allbinary/game/layer/waypoint/MultipassNoCacheWaypoint.js';
 //not GWT import const MultipassNoCacheWaypoint
+
 import { NoCacheWaypoint } from '../../../../../org/allbinary/game/layer/waypoint/NoCacheWaypoint.js';
 //not GWT import const NoCacheWaypoint
+
 import { WaypointBase } from '../../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
 //not GWT import const WaypointBase
+
 import { WaypointEventHandlerFactory } from '../../../../../org/allbinary/game/layer/waypoint/event/WaypointEventHandlerFactory.js';
 //not GWT import const WaypointEventHandlerFactory
+
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 import { BasicWeaponPart } from '../../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
 //not GWT import const BasicWeaponPart
+
 import { SalvoInterface } from '../../../../../org/allbinary/game/part/weapon/SalvoInterface.js';
 //not GWT import const SalvoInterface
+
 import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
 //not GWT import const VelocityProperties
+
 import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
 //not GWT import const TrackingEvent
+
 import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 //not GWT import const TrackingEventHandler
+
 import { TrackingEventListenerInterface } from '../../../../../org/allbinary/game/tracking/TrackingEventListenerInterface.js';
 //not GWT import const TrackingEventListenerInterface
+
 import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
 //not GWT import const CellPositionFactory
+
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { Layer } from '../../../../../org/allbinary/layer/Layer.js';
 //not GWT import const Layer
+
 import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
 //not GWT import const LayerInterfaceFactoryInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
+
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { FrameUtil } from '../../../../../org/allbinary/math/FrameUtil.js';
 //not GWT import const FrameUtil
+
 import { LayerDistanceUtil } from '../../../../../org/allbinary/math/LayerDistanceUtil.js';
 //not GWT import const LayerDistanceUtil
+
 import { NamedAngle } from '../../../../../org/allbinary/math/NamedAngle.js';
 //not GWT import const NamedAngle
+
 import { AttackSound } from '../../../../../org/allbinary/media/audio/AttackSound.js';
 //not GWT import const AttackSound
+
 import { SecondaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
 //not GWT import const SecondaryPlayerQueueFactory
+
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 //not GWT import const Sound
+
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { BasicGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 //not GWT import const BasicGeographicMapCellPositionFactory
+
 import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 //not GWT import const GeographicMapCellHistory
+
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
 //not GWT import const SimpleGeographicMapCellPositionFactory
+
 import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 //not GWT import const DropCellPositionHistory
+
 import { RaceTrackGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMap.js';
 //not GWT import const RaceTrackGeographicMap
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -265,9 +376,12 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableUnitBehavior } from './CollidableUnitBehavior.js';
-//not GWT import - same folder const CollidableUnitBehaviorimport { UnitWaypointBehavior2 } from './UnitWaypointBehavior2.js';
-//not GWT import - same folder const UnitWaypointBehavior2import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
+//not GWT import - same folder const CollidableUnitBehavior
+import { UnitWaypointBehavior2 } from './UnitWaypointBehavior2.js';
+//not GWT import - same folder const UnitWaypointBehavior2
+import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
 //not GWT import - same folder const UnitWaypointBehavior
+
 export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventListenerInterface, TrackingEventListenerInterface {
         
 

@@ -24,22 +24,31 @@
         
 import { Enumeration } from '../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
+
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
 //not GWT import const LayerInterfaceFactory
+
 import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
 //not GWT import const LayerInterfaceVisitor
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
 
 
 
@@ -59,9 +68,12 @@ const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterface } from './LayerPlacementInterface.js';
-//not GWT import - same folder const LayerPlacementInterfaceimport { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import - same folder const LayerPlacementTypeimport { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
+//not GWT import - same folder const LayerPlacementInterface
+import { LayerPlacementType } from './LayerPlacementType.js';
+//not GWT import - same folder const LayerPlacementType
+import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
 //not GWT import - same folder const LayerPlacementTypeFactory
+
 export class LayerPlacer
             extends Object
          {

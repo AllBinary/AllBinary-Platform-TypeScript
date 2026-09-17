@@ -24,8 +24,10 @@
         
 import { ValidationInterface } from '../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 //not GWT import const ValidationInterface
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -46,6 +48,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssElementValidation } from './CssElementValidation.js';
 //not GWT import - same folder const CssElementValidation
+
 export class CssElementValidationFactory
             extends Object
          {

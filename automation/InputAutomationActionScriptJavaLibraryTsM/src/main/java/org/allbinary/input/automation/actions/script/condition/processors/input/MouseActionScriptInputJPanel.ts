@@ -24,24 +24,34 @@
         
 import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
 //not GWT import const InputEvent
+
 import { swing } from '../../../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { InputRobot } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobot.js';
 //not GWT import const InputRobot
+
 import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 //not GWT import const InputRobotFactory
+
 import { TempInputRobotNames } from '../../../../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
 //not GWT import const TempInputRobotNames
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -61,22 +71,38 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-//not GWT import - same folder const MouseActionScriptInputInterfaceimport { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModelimport { ComboBoxModel } from './ComboBoxModel.js';
-//not GWT import - same folder const ComboBoxModelimport { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialogimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBoximport { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextFieldimport { JComboBox } from './JComboBox.js';
-//not GWT import - same folder const JComboBoximport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { Insets } from './Insets.js';
-//not GWT import - same folder const Insetsimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const JPanel
+import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
+//not GWT import - same folder const MouseActionScriptInputInterface
+import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import - same folder const DefaultComboBoxModel
+import { ComboBoxModel } from './ComboBoxModel.js';
+//not GWT import - same folder const ComboBoxModel
+import { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialog
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JCheckBox } from './JCheckBox.js';
+//not GWT import - same folder const JCheckBox
+import { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextField
+import { JComboBox } from './JComboBox.js';
+//not GWT import - same folder const JComboBox
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { Insets } from './Insets.js';
+//not GWT import - same folder const Insets
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
 //not GWT import - same folder const Short
+
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
         
 

@@ -24,16 +24,22 @@
         
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { SequenceAI } from '../../../../../org/allbinary/game/ag/ai/sequence/SequenceAI.js';
 //not GWT import const SequenceAI
+
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { GroupLayerManagerListener } from '../../../../../org/allbinary/game/layer/identification/GroupLayerManagerListener.js';
 //not GWT import const GroupLayerManagerListener
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 

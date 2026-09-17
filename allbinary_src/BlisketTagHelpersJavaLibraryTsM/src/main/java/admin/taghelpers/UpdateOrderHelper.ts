@@ -22,34 +22,49 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { BillingAddressData } from '../../org/allbinary/business/user/address/BillingAddressData.js';
 //not GWT import const BillingAddressData
+
 import { ShippingAddressData } from '../../org/allbinary/business/user/address/ShippingAddressData.js';
 //not GWT import const ShippingAddressData
+
 import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
 //not GWT import const OrderData
+
 import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
 //not GWT import const OrderHistoryData
+
 import { PaymentData } from '../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 //not GWT import const PaymentData
+
 import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 //not GWT import const ShippingMethodData
+
 import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
 //not GWT import const OrderHistoryEntityFactory
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -70,6 +85,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
 //not GWT import - same folder const TagHelper
+
 export class UpdateOrderHelper extends TagHelper {
         
 

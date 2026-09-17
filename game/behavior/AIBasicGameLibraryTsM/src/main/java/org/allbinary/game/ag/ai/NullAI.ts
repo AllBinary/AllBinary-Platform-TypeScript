@@ -22,8 +22,10 @@
         
 import { ArtificialIntelligence } from '../../../../../org/allbinary/ai/ArtificialIntelligence.js';
 //not GWT import const ArtificialIntelligence
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 

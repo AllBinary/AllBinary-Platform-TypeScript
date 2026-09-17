@@ -22,14 +22,19 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { AdvertisementAreaInterface } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaInterface.js';
 //not GWT import const AdvertisementAreaInterface
+
 import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
 //not GWT import const BasicDataTableInterface
+
 
 
 

@@ -24,38 +24,55 @@
         
 import { FileReader } from '../../../../../../../java/io/FileReader.js';
 //not GWT import const FileReader
+
 import { LineNumberReader } from '../../../../../../../java/io/LineNumberReader.js';
 //not GWT import const LineNumberReader
+
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { LogConfigTypes } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+
 import { SubDirectory } from '../../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
 //not GWT import const SubDirectory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { CpuInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/CpuInterface.js';
 //not GWT import const CpuInterface
+
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
 //not GWT import const HardwareComponentInterface
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -76,6 +93,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CpuInfo } from './CpuInfo.js';
 //not GWT import - same folder const CpuInfo
+
 export class Cpu
             extends Object
          implements CpuInterface, HardwareComponentInterface {

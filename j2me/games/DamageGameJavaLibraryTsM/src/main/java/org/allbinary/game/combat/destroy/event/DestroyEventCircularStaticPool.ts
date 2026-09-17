@@ -24,10 +24,13 @@
         
 import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 //not GWT import const AllBinaryGameCanvas
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
 //not GWT import const AllBinaryEventCircularPool
+
 
 
 
@@ -47,8 +50,10 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyEventFactory } from './DestroyEventFactory.js';
-//not GWT import - same folder const DestroyEventFactoryimport { DestroyedEvent } from './DestroyedEvent.js';
+//not GWT import - same folder const DestroyEventFactory
+import { DestroyedEvent } from './DestroyedEvent.js';
 //not GWT import - same folder const DestroyedEvent
+
 export class DestroyEventCircularStaticPool
             extends Object
          {

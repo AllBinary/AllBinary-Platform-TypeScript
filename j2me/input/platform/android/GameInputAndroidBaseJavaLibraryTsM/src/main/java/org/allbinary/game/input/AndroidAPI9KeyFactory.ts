@@ -6,8 +6,10 @@
 
 import { KeyEvent } from '../../../../android/view/KeyEvent.js';
 //not GWT import const KeyEvent
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 
@@ -27,8 +29,10 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import - same folder const AndroidKeyFactoryimport { AndroidGameKey } from './AndroidGameKey.js';
+//not GWT import - same folder const AndroidKeyFactory
+import { AndroidGameKey } from './AndroidGameKey.js';
 //not GWT import - same folder const AndroidGameKey
+
 export class AndroidAPI9KeyFactory extends AndroidKeyFactory {
         
 

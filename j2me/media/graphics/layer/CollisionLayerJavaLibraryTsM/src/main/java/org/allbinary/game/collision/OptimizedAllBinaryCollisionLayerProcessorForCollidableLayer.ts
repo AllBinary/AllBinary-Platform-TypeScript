@@ -22,14 +22,19 @@
         
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
 //not GWT import const LayerManager
+
 import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
 //not GWT import const LayerProcessor
+
 
 
 
@@ -49,8 +54,10 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OptimizedAllBinaryCollisionLayerManager } from './OptimizedAllBinaryCollisionLayerManager.js';
-//not GWT import - same folder const OptimizedAllBinaryCollisionLayerManagerimport { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+//not GWT import - same folder const OptimizedAllBinaryCollisionLayerManager
+import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 //not GWT import - same folder const CollidableBaseBehavior
+
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {
         
 

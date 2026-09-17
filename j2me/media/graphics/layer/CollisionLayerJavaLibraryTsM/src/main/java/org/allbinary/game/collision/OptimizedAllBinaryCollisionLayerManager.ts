@@ -20,8 +20,10 @@
 
 import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
 //not GWT import const LayerManager
+
 import { LayerManagerNoDebug } from '../../../../org/allbinary/layer/LayerManagerNoDebug.js';
 //not GWT import const LayerManagerNoDebug
+
 
 
 

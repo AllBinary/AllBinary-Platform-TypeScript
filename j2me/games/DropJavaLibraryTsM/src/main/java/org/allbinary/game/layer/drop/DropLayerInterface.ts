@@ -22,8 +22,10 @@
         
 import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
 //not GWT import const PickedUpLayerInterface
+
 import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
 //not GWT import const LayerInterface
+
 
 
 

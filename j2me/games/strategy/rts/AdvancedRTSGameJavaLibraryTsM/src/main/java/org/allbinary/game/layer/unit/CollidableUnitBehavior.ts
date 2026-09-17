@@ -22,40 +22,58 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { SteeringVisitor } from '../../../../../org/allbinary/game/layer/SteeringVisitor.js';
 //not GWT import const SteeringVisitor
+
 import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { CollidableRTSBehavior } from '../../../../../org/allbinary/game/layer/CollidableRTSBehavior.js';
 //not GWT import const CollidableRTSBehavior
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 //not GWT import const GameKeyEventFactory
+
 import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { TiledLayerUtil } from '../../../../../org/allbinary/game/layer/TiledLayerUtil.js';
 //not GWT import const TiledLayerUtil
+
 import { LayerPartialCellPositionsUtil } from '../../../../../org/allbinary/game/layer/geographic/map/LayerPartialCellPositionsUtil.js';
 //not GWT import const LayerPartialCellPositionsUtil
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 //not GWT import const DropCellPositionHistory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -75,8 +93,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitLayer } from './UnitLayer.js';
-//not GWT import - same folder const UnitLayer//import { SimpleSteeringVisitor } from './SimpleSteeringVisitor.js';
+//not GWT import - same folder const UnitLayer
+//import { SimpleSteeringVisitor } from './SimpleSteeringVisitor.js';
 //not GWT import - same folder const SimpleSteeringVisitor
+
 export class CollidableUnitBehavior extends CollidableRTSBehavior {
         
 

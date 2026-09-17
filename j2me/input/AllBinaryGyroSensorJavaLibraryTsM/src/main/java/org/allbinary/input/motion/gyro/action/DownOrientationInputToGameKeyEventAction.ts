@@ -20,12 +20,16 @@
 
 import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
 //not GWT import const PlatformInputMappingFactory
+
 import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
 //not GWT import const GameKeyCompleteMotionGestureInputEvent
+
 import { OrientationMotionGestureFactory } from '../../../../../../org/allbinary/input/gyro/OrientationMotionGestureFactory.js';
 //not GWT import const OrientationMotionGestureFactory
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 

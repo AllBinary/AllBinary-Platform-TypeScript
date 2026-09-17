@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitUpdatePaintable } from './InitUpdatePaintable.js';
 //not GWT import - same folder const InitUpdatePaintable
+
 export class NullInitUpdatePaintable extends InitUpdatePaintable {
         
 

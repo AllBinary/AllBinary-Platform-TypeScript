@@ -22,22 +22,31 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 import { LayerCoveringCellPositionsUtil } from '../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js';
 //not GWT import const LayerCoveringCellPositionsUtil
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { CellPositionsUtil } from '../../../../org/allbinary/media/graphics/geography/map/CellPositionsUtil.js';
 //not GWT import const CellPositionsUtil
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 
 
 
@@ -58,6 +67,7 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
 //not GWT import - same folder const GeographicMapCellPositionAreaBase
+
 export class GeographicMapCellPositionArea extends GeographicMapCellPositionAreaBase {
         
 

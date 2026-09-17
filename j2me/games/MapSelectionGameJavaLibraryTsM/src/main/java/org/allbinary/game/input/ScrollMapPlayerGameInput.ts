@@ -22,32 +22,46 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
 //not GWT import const InputFeatureFactory
+
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { ScrollMapEvent } from '../../../../org/allbinary/layer/event/ScrollMapEvent.js';
 //not GWT import const ScrollMapEvent
+
 import { ScrollMapEventHandler } from '../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
 //not GWT import const ScrollMapEventHandler
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -67,14 +81,22 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInputimport { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactoryimport { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessorimport { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapUpGameInputProcessorimport { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapDownGameInputProcessorimport { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapRightGameInputProcessorimport { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapLeftGameInputProcessorimport { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
+//not GWT import - same folder const PlayerGameInput
+import { InputFactory } from './InputFactory.js';
+//not GWT import - same folder const InputFactory
+import { GameInputProcessor } from './GameInputProcessor.js';
+//not GWT import - same folder const GameInputProcessor
+import { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapUpGameInputProcessor
+import { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapDownGameInputProcessor
+import { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapRightGameInputProcessor
+import { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapLeftGameInputProcessor
+import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
 //not GWT import - same folder const GameInputProcessorUtil
+
 export class ScrollMapPlayerGameInput extends PlayerGameInput {
         
 

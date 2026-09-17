@@ -22,24 +22,34 @@
         
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DirectionUtil } from '../../../../../org/allbinary/direction/DirectionUtil.js';
 //not GWT import const DirectionUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
+
 import { AxisMathVectorUtil } from '../../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
 //not GWT import const AxisMathVectorUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
+
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -60,6 +70,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicVelocityInterface } from './BasicVelocityInterface.js';
 //not GWT import - same folder const BasicVelocityInterface
+
 export class BasicVelocityProperties
             extends Object
          implements BasicVelocityInterface {

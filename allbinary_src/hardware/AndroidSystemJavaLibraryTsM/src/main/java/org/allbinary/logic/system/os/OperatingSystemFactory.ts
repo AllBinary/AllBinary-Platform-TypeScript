@@ -24,12 +24,16 @@
         
 import { AndroidOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/android/AndroidOperatingSystemFactory.js';
 //not GWT import const AndroidOperatingSystemFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,10 +53,14 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoOperatingSystem } from './NoOperatingSystem.js';
-//not GWT import - same folder const NoOperatingSystemimport { GenericOperatingSystem } from './GenericOperatingSystem.js';
-//not GWT import - same folder const GenericOperatingSystem//not plain js - same folder import { SystemProperties } 
-const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;import { OperatingSystems } from './OperatingSystems.js';
+//not GWT import - same folder const NoOperatingSystem
+import { GenericOperatingSystem } from './GenericOperatingSystem.js';
+//not GWT import - same folder const GenericOperatingSystem
+//not plain js - same folder import { SystemProperties } 
+const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+import { OperatingSystems } from './OperatingSystems.js';
 //not GWT import - same folder const OperatingSystems
+
 export class OperatingSystemFactory
             extends Object
          {

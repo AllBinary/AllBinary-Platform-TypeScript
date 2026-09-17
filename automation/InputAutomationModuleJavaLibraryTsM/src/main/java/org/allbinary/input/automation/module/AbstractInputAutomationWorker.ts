@@ -28,20 +28,28 @@
         
 import { CaptureWorkerInterface } from '../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
 //not GWT import const CaptureWorkerInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
 //not GWT import const ImageComparisonWorker
+
 import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
 //not GWT import const MotionRectanglesWorker
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
+
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -62,6 +70,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationActionInterface } from './InputAutomationActionInterface.js';
 //not GWT import - same folder const InputAutomationActionInterface
+
 export class AbstractInputAutomationWorker
             extends Object
          implements RunnableInterface {

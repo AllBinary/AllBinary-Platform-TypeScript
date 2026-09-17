@@ -38,10 +38,12 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerEvent } from './LayerManagerEvent.js';
 //not GWT import - same folder const LayerManagerEvent
+
 export interface LayerManagerEventListenerInterface extends EventListenerInterface {
         
 

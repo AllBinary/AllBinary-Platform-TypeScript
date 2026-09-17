@@ -22,10 +22,13 @@
         
 import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 //not GWT import const GamePersistanceStrings
+
 import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 //not GWT import const PersistentInputMapping
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -45,9 +48,12 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { J2MEKeyFactory } from './J2MEKeyFactory.js';
-//not GWT import - same folder const J2MEKeyFactoryimport { GameKeyFactory } from './GameKeyFactory.js';
-//not GWT import - same folder const GameKeyFactoryimport { Input } from './Input.js';
+//not GWT import - same folder const J2MEKeyFactory
+import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import - same folder const GameKeyFactory
+import { Input } from './Input.js';
 //not GWT import - same folder const Input
+
 export class J2MEGameInputMapping extends PersistentInputMapping {
         
 

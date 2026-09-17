@@ -22,14 +22,19 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -50,6 +55,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Input } from './Input.js';
 //not GWT import - same folder const Input
+
 export class InputFactory
             extends Object
          {

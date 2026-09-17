@@ -26,14 +26,19 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
+
 import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
 //not GWT import const AngleIncrementInfo
+
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 
 
 

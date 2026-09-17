@@ -37,8 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessorimport { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
+//not GWT import - same folder const GameInputProcessor
+import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
 //not GWT import - same folder const RTSPlayerGameInput
+
 export class RTSPlayerGameInputProcessor extends GameInputProcessor {
         
 

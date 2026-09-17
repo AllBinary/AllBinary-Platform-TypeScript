@@ -24,48 +24,70 @@
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream
+
 import { PrintStream } from '../../../../../java/io/PrintStream.js';
 //not GWT import const PrintStream
+
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Properties } from '../../../../../java/util/Properties.js';
 //not GWT import const Properties
+
 import { Address } from '../../../../../javax/mail/Address.js';
 //not GWT import const Address
+
 import { Authenticator } from '../../../../../javax/mail/Authenticator.js';
 //not GWT import const Authenticator
+
 import { Message } from '../../../../../javax/mail/Message.js';
 //not GWT import const Message
+
 import { MessagingException } from '../../../../../javax/mail/MessagingException.js';
 //not GWT import const MessagingException
+
 import { Session } from '../../../../../javax/mail/Session.js';
 //not GWT import const Session
+
 import { InternetAddress } from '../../../../../javax/mail/internet/InternetAddress.js';
 //not GWT import const InternetAddress
+
 import { InternetHeaders } from '../../../../../javax/mail/internet/InternetHeaders.js';
 //not GWT import const InternetHeaders
+
 import { MimeBodyPart } from '../../../../../javax/mail/internet/MimeBodyPart.js';
 //not GWT import const MimeBodyPart
+
 import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
 //not GWT import const MimeMessage
+
 import { MimeMultipart } from '../../../../../javax/mail/internet/MimeMultipart.js';
 //not GWT import const MimeMultipart
+
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -85,8 +107,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailInterface } from './EmailInterface.js';
-//not GWT import - same folder const EmailInterfaceimport { EmailData } from './EmailData.js';
+//not GWT import - same folder const EmailInterface
+import { EmailData } from './EmailData.js';
 //not GWT import - same folder const EmailData
+
 export class Email
             extends Object
          implements EmailInterface {

@@ -6,16 +6,22 @@
 
 import { IOException } from '../../../java/io/IOException.js';
 //not GWT import const IOException
+
 import { InputStream } from '../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 //not GWT import const PlatformBitmapBase
+
 import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 //not GWT import const PlatformBitmapBaseFactory
+
 
 
 
@@ -35,8 +41,10 @@ import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { Config } from './Config.js';
-//not GWT import - same folder const Configimport { OpenGLBitmap } from './OpenGLBitmap.js';
+//not GWT import - same folder const Config
+import { OpenGLBitmap } from './OpenGLBitmap.js';
 //not GWT import - same folder const OpenGLBitmap
+
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
 

@@ -26,20 +26,28 @@
         
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas
+
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -59,9 +67,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundStrings } from './SoundStrings.js';
-//not GWT import - same folder const SoundStringsimport { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterfaceimport { Sound } from './Sound.js';
+//not GWT import - same folder const SoundStrings
+import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import - same folder const SoundsFactoryInterface
+import { Sound } from './Sound.js';
 //not GWT import - same folder const Sound
+
 export class Sounds
             extends Object
          {

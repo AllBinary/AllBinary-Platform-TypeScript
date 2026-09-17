@@ -22,18 +22,25 @@
         
 import { PickedUpLayerInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
 //not GWT import const PickedUpLayerInterface
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 //not GWT import const CollidableInterfaceCompositeInterface
+
 import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
 //not GWT import const CollisionType
+
 import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
 //not GWT import const CollisionTypeFactory
+
 import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
 //not GWT import const CollidableDestroyableDamageableBehavior
+
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 
 
 
@@ -53,10 +60,14 @@ import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
-//not GWT import - same folder const VehiclePropertiesCompositeInterfaceimport { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
-//not GWT import - same folder const CollidableCompositeLayerimport { VehicleProperties } from './VehicleProperties.js';
-//not GWT import - same folder const VehiclePropertiesimport { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
+//not GWT import - same folder const VehiclePropertiesCompositeInterface
+import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
+//not GWT import - same folder const CollidableCompositeLayer
+import { VehicleProperties } from './VehicleProperties.js';
+//not GWT import - same folder const VehicleProperties
+import { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
 //not GWT import - same folder const VehicleFrictionProperties
+
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {
         
 

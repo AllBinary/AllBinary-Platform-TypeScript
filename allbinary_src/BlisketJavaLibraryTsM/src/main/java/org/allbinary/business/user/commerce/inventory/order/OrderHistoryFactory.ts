@@ -24,10 +24,13 @@
         
 import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
 //not GWT import const OrderHistoryEntity
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,7 +50,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistory } from './OrderHistory.js';
-//not GWT import - same folder const OrderHistory//Retrieves a single order for a user
+//not GWT import - same folder const OrderHistory
+//Retrieves a single order for a user
 export class OrderHistoryFactory
             extends Object
          {

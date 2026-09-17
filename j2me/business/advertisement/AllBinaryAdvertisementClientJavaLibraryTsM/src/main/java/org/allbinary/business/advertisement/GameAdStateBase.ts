@@ -24,14 +24,19 @@
         
 import { GameType } from '../../../../org/allbinary/game/GameType.js';
 //not GWT import const GameType
+
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
 //not GWT import const GameState
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 
 
 
@@ -51,8 +56,10 @@ import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventSt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
-//not GWT import - same folder const AdConfigurationimport { Advertisements } from './Advertisements.js';
+//not GWT import - same folder const AdConfiguration
+import { Advertisements } from './Advertisements.js';
 //not GWT import - same folder const Advertisements
+
 export class GameAdStateBase
             extends Object
          {

@@ -40,10 +40,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+
 export class NullThread
             extends Object
          {

@@ -22,8 +22,10 @@
         
 import { Angle } from '../../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
+
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 
 
 

@@ -24,8 +24,10 @@
         
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 //not GWT import const ScrollSelectionForm
+
 
 
 
@@ -46,6 +48,7 @@ import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/Scr
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerFormFactoryInterface } from './RTSLayerFormFactoryInterface.js';
 //not GWT import - same folder const RTSLayerFormFactoryInterface
+
 export class RTSLayerFormFactory
             extends Object
          implements RTSLayerFormFactoryInterface {

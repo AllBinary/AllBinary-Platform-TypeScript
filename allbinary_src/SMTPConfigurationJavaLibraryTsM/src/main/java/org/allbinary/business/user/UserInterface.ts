@@ -20,16 +20,22 @@
 
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { UserConfigurationInterface } from '../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
 //not GWT import const UserConfigurationInterface
+
 import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
 //not GWT import const UserRole
+
 import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 import { WeblisketSessionInterface } from '../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
 //not GWT import const WeblisketSessionInterface
+
 import { ValidationInterface } from '../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 //not GWT import const ValidationInterface
+
 
 
 

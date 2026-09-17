@@ -22,38 +22,55 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
 //not GWT import const GameKey
+
 import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 //not GWT import const GameKeyEventSourceInterface
+
 import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
 //not GWT import const GameKeyFactory
+
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 //not GWT import const Input
+
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
 //not GWT import const InputFactory
+
 import { InputProcessor } from '../../../../../org/allbinary/game/input/InputProcessor.js';
 //not GWT import const InputProcessor
+
 import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
 //not GWT import const PlatformKeyFactory
+
 import { DownKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownKeyEventHandler.js';
 //not GWT import const DownKeyEventHandler
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 //not GWT import const GameKeyEventFactory
+
 import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
 //not GWT import const UpGameKeyEventHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -74,6 +91,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class FormInputProcessor extends InputProcessor {
         
 

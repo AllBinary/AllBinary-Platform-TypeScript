@@ -22,34 +22,49 @@
         
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { GroupInterfaceCompositeInterface } from '../../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
 //not GWT import const GroupInterfaceCompositeInterface
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { LayerManagerEvent } from '../../../../../org/allbinary/layer/event/LayerManagerEvent.js';
 //not GWT import const LayerManagerEvent
+
 import { LayerManagerEventHandler } from '../../../../../org/allbinary/layer/event/LayerManagerEventHandler.js';
 //not GWT import const LayerManagerEventHandler
+
 import { LayerManagerEventListener } from '../../../../../org/allbinary/layer/event/LayerManagerEventListener.js';
 //not GWT import const LayerManagerEventListener
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 

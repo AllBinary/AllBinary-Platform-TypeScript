@@ -22,28 +22,40 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 //not GWT import const Portion
+
 import { PaymentGatewayInterface } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 //not GWT import const PaymentGatewayInterface
+
 import { PaymentGatewayInterfaceFactory } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js';
 //not GWT import const PaymentGatewayInterfaceFactory
+
 import { BasicPaymentTypeUtil } from '../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
 //not GWT import const BasicPaymentTypeUtil
+
 import { PaymentGatewayEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 //not GWT import const PaymentGatewayEntityFactory
+
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -64,6 +76,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
 //not GWT import - same folder const BasicTable
+
 export class PaymentGatewayHelper extends BasicTable {
         
 

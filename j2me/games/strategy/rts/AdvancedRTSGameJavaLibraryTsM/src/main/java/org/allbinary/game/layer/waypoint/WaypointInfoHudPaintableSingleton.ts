@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
 //not GWT import - same folder const WaypointInfoHudPaintable
+
 export class WaypointInfoHudPaintableSingleton
             extends Object
          {

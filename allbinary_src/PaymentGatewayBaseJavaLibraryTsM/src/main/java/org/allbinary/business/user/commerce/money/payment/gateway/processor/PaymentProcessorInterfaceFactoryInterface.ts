@@ -22,8 +22,10 @@
         
 import { PaymentTransactionInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js';
 //not GWT import const PaymentTransactionInterface
+
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 
 
 
@@ -44,6 +46,7 @@ import { TransformInfoInterface } from '../../../../../../../../../org/allbinary
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
 //not GWT import - same folder const PaymentProcessorInterface
+
 export interface PaymentProcessorInterfaceFactoryInterface {
         
 

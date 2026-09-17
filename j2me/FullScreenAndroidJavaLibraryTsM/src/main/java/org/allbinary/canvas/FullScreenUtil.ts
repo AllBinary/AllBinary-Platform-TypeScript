@@ -24,8 +24,10 @@
         
 import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 
 
 

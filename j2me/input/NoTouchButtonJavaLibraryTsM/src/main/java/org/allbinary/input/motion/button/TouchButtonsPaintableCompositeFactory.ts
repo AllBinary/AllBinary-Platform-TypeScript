@@ -22,10 +22,13 @@
         
 import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
 //not GWT import const InputMappingInterface
+
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 //not GWT import const ProcessPaintable
+
 
 
 

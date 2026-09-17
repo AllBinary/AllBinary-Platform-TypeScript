@@ -22,14 +22,19 @@
         
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 //not GWT import const HttpStoreComponentView
+
 
 
 
@@ -50,6 +55,7 @@ import { HttpStoreComponentView } from '../../../../views/business/context/modul
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectNewView } from './SelectNewView.js';
 //not GWT import - same folder const SelectNewView
+
 export class SelectNewValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         
 

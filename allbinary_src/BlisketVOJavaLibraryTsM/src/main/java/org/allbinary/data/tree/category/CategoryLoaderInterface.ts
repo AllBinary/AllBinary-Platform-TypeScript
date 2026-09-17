@@ -20,8 +20,10 @@
 
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -42,6 +44,7 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
 //not GWT import - same folder const CategoryModifierTreeInterface
+
 export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
         
 

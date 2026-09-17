@@ -22,12 +22,16 @@
         
 import { InputStream } from '../../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 //not GWT import const URIResolver
+
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 //not GWT import const StreamSource
+
 import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
 //not GWT import const CompositeTransformInfoInterface
+
 
 
 

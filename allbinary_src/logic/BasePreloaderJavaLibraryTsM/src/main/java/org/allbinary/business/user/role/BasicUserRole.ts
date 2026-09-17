@@ -24,10 +24,13 @@
         
 import { Serializable } from '../../../../../java/io/Serializable.js';
 //not GWT import const Serializable
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 

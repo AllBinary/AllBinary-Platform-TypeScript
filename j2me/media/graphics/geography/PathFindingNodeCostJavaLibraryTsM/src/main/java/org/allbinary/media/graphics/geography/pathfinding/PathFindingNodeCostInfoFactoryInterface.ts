@@ -38,11 +38,14 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNodeCostInfoFactoryBaseInterface } from './PathFindingNodeCostInfoFactoryBaseInterface.js';
-//not GWT import - same folder const PathFindingNodeCostInfoFactoryBaseInterfaceimport { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
+//not GWT import - same folder const PathFindingNodeCostInfoFactoryBaseInterface
+import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
 //not GWT import - same folder const PathFindingNodeCostInfo
+
 export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNodeCostInfoFactoryBaseInterface {
         
 

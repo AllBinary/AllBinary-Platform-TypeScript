@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
 //not GWT import - same folder const CompositeShaderUpdater
+
 export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
         
 

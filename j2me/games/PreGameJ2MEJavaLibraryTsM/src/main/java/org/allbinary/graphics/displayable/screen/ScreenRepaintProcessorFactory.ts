@@ -22,10 +22,13 @@
         
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
+
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
+
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 
 
 
@@ -46,6 +49,7 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintProcessor } from './ScreenRepaintProcessor.js';
 //not GWT import - same folder const ScreenRepaintProcessor
+
 export class ScreenRepaintProcessorFactory
             extends Object
          {

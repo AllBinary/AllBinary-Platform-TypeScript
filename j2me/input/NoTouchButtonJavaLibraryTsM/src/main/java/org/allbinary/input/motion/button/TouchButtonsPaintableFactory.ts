@@ -22,8 +22,10 @@
         
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 
 
 

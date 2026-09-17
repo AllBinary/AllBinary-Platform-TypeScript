@@ -22,26 +22,37 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { AbTagData } from '../../admin/tags/AbTagData.js';
 //not GWT import const AbTagData
+
 import { DownloadableItem } from '../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
 //not GWT import const DownloadableItem
+
 import { DownloadItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/downloads/DownloadItemsEntityFactory.js';
 //not GWT import const DownloadItemsEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 import { HelperTag } from '../../tags/HelperTag.js';
 //not GWT import const HelperTag
+
 import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
 //not GWT import const DownloadableInventoryItemView
+
 
 
 
@@ -61,8 +72,10 @@ import { DownloadableInventoryItemView } from '../../views/admin/inventory/downl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import - same folder const ModifyTableimport { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
+//not GWT import - same folder const ModifyTable
+import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
 //not GWT import - same folder const InventoryItemViewParentTagHelper
+
 export class DownloadItemsRequestHelper extends ModifyTable {
         
 

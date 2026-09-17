@@ -24,12 +24,16 @@
         
 import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
 //not GWT import const CollidableBaseBehavior
+
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 //not GWT import const CollidableInterfaceCompositeInterface
+
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
 //not GWT import const LayerManager
+
 
 
 

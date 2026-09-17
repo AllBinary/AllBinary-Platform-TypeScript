@@ -22,14 +22,19 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
 //not GWT import const UserFactoryInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 
 
 
@@ -49,9 +54,12 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserRole } from './UserRole.js';
-//not GWT import - same folder const UserRoleimport { BasicUserRole } from './BasicUserRole.js';
-//not GWT import - same folder const BasicUserRoleimport { UserRoleFactory } from './UserRoleFactory.js';
+//not GWT import - same folder const UserRole
+import { BasicUserRole } from './BasicUserRole.js';
+//not GWT import - same folder const BasicUserRole
+import { UserRoleFactory } from './UserRoleFactory.js';
 //not GWT import - same folder const UserRoleFactory
+
 export class UserRoleB extends UserRole {
         
 

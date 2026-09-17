@@ -24,16 +24,22 @@
         
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
 //not GWT import const AndroidHardware
+
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
+
 import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
 //not GWT import const OperatingSystems
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -53,8 +59,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHardware } from './NoHardware.js';
-//not GWT import - same folder const NoHardwareimport { HardwareInterface } from './HardwareInterface.js';
+//not GWT import - same folder const NoHardware
+import { HardwareInterface } from './HardwareInterface.js';
 //not GWT import - same folder const HardwareInterface
+
 export class HardwareFactory
             extends Object
          {

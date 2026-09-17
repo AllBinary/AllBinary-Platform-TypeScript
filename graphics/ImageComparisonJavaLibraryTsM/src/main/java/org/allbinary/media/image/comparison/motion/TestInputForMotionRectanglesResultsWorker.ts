@@ -26,32 +26,46 @@
         
 import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
 //not GWT import const Rectangle
+
 import { InputEvent } from '../../../../../../java/awt/event/InputEvent.js';
 //not GWT import const InputEvent
+
 import { KeyEvent } from '../../../../../../java/awt/event/KeyEvent.js';
 //not GWT import const KeyEvent
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 //not GWT import const InputRobotFactory
+
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 //not GWT import const InputRobotInterface
+
 import { TempInputRobotNames } from '../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
 //not GWT import const TempInputRobotNames
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -71,9 +85,12 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
-//not GWT import - same folder const MotionRectanglesResultsListenerimport { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import - same folder const MotionRectanglesResultsEventimport { MotionRectangles } from './MotionRectangles.js';
+//not GWT import - same folder const MotionRectanglesResultsListener
+import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+//not GWT import - same folder const MotionRectanglesResultsEvent
+import { MotionRectangles } from './MotionRectangles.js';
 //not GWT import - same folder const MotionRectangles
+
 export class TestInputForMotionRectanglesResultsWorker
             extends Object
          implements MotionRectanglesResultsListener {

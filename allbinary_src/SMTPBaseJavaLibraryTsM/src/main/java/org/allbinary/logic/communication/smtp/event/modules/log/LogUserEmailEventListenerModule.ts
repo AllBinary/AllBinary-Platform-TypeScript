@@ -24,10 +24,13 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
 //not GWT import const EmailEvent
+
 import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
 //not GWT import const UserEmailEventListenerInterface
+
 
 
 

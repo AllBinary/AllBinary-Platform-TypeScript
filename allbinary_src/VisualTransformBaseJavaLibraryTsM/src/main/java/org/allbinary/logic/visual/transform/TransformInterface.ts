@@ -22,10 +22,13 @@
         
 import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 //not GWT import const DomDocumentMappingInterface
+
 import { TransformDocumentInterface } from '../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 //not GWT import const TransformDocumentInterface
+
 import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
 //not GWT import const CompositeTransformInfoInterface
+
 
 
 

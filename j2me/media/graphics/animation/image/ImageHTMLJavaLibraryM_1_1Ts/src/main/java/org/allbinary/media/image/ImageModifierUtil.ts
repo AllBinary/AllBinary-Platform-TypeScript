@@ -26,28 +26,40 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 //not GWT import const PlaynImage
+
 import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
 //not GWT import const ResourceCallbackStrings
+
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
+
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+
 //not plain js import { Callback } 
 const Callback = globalThis.playn.core.util.Callback;
+
 
 
 

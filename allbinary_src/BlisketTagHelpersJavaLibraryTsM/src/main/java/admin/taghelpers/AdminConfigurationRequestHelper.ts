@@ -22,16 +22,22 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { AdminConfiguration } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
 //not GWT import const AdminConfiguration
+
 import { AdminConfigurationInterface } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
 //not GWT import const AdminConfigurationInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -52,6 +58,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
 //not GWT import - same folder const ModifyTable
+
 export class AdminConfigurationRequestHelper extends ModifyTable {
         
 

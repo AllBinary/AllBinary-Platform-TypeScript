@@ -26,12 +26,16 @@
         
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
 //not GWT import const MotionEventCircularPool
+
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 //not GWT import const MotionGestureEvent
+
 
 
 

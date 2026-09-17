@@ -26,18 +26,25 @@
         
 import { awt } from '../../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
 //not GWT import const ColorCacheFactory
+
 import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
 //not GWT import const ColorCacheable
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -57,11 +64,16 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageAnalysisResults } from './ImageAnalysisResults.js';
-//not GWT import - same folder const ImageAnalysisResultsimport { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import - same folder const ColorRangeInterfaceimport { Color } from './Color.js';
-//not GWT import - same folder const Colorimport { ColorAverage } from './ColorAverage.js';
-//not GWT import - same folder const ColorAverageimport { ImageColorResults } from './ImageColorResults.js';
+//not GWT import - same folder const ImageAnalysisResults
+import { ColorRangeInterface } from './ColorRangeInterface.js';
+//not GWT import - same folder const ColorRangeInterface
+import { Color } from './Color.js';
+//not GWT import - same folder const Color
+import { ColorAverage } from './ColorAverage.js';
+//not GWT import - same folder const ColorAverage
+import { ImageColorResults } from './ImageColorResults.js';
 //not GWT import - same folder const ImageColorResults
+
 export class ImageAnalysis
             extends Object
          {

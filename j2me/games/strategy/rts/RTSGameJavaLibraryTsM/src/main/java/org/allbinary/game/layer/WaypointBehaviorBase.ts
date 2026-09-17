@@ -26,22 +26,31 @@
         
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
 //not GWT import const WaypointBase
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 //not GWT import const TickableInterface
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 //not GWT import const GeographicMapCellHistory
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
 
 
 
@@ -62,6 +71,7 @@ const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 //not GWT import - same folder const PathFindingLayerInterface
+
 export class WaypointBehaviorBase
             extends Object
          implements TickableInterface {

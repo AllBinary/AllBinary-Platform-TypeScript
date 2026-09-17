@@ -22,16 +22,22 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
 //not GWT import const CellPositionFactory
+
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -51,11 +57,16 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-//not GWT import - same folder const TouchButtonLocationHelperimport { CommonButtons } from './CommonButtons.js';
-//not GWT import - same folder const CommonButtonsimport { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButtonimport { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactoryimport { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
+//not GWT import - same folder const TouchButtonLocationHelper
+import { CommonButtons } from './CommonButtons.js';
+//not GWT import - same folder const CommonButtons
+import { TouchButton } from './TouchButton.js';
+//not GWT import - same folder const TouchButton
+import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import - same folder const BasicTouchInputFactory
+import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
 //not GWT import - same folder const TouchButtonBlankResource
+
 export class TouchButtonsMappingPaintable extends Paintable {
         
 

@@ -26,14 +26,19 @@
         
 import { Item } from '../../../../javax/microedition/lcdui/Item.js';
 //not GWT import const Item
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -53,11 +58,16 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import - same folder const GameConfigurationSingletonimport { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfigurationimport { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import - same folder const GameOptionsFormimport { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import - same folder const GameConfigurationGaugeimport { GameConfigurationCentral } from './GameConfigurationCentral.js';
+//not GWT import - same folder const GameConfigurationSingleton
+import { GameConfiguration } from './GameConfiguration.js';
+//not GWT import - same folder const GameConfiguration
+import { GameOptionsForm } from './GameOptionsForm.js';
+//not GWT import - same folder const GameOptionsForm
+import { GameConfigurationGauge } from './GameConfigurationGauge.js';
+//not GWT import - same folder const GameConfigurationGauge
+import { GameConfigurationCentral } from './GameConfigurationCentral.js';
 //not GWT import - same folder const GameConfigurationCentral
+
 export class GameConfigurationUtil
             extends Object
          {

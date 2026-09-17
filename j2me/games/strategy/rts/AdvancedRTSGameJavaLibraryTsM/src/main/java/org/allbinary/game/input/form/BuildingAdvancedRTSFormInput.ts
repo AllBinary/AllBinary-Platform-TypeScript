@@ -21,46 +21,67 @@
         
 import { AdvancedPlayerOwnedRTSLayers } from '../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js';
 //not GWT import const AdvancedPlayerOwnedRTSLayers
+
 import { AdvancedRTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/AdvancedRTSPlayerLayerInterface.js';
 //not GWT import const AdvancedRTSPlayerLayerInterface
+
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 //not GWT import const RTSLayerEvent
+
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { BuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
 //not GWT import const BuildingEventHandler
+
 import { LocalPlayerBuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/LocalPlayerBuildingEventHandler.js';
 //not GWT import const LocalPlayerBuildingEventHandler
+
 import { WaypointCellPositionHistory } from '../../../../../org/allbinary/game/layer/waypoint/WaypointCellPositionHistory.js';
 //not GWT import const WaypointCellPositionHistory
+
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
 //not GWT import const NullPathFindingLayer
+
 import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 //not GWT import const GameNotificationEvent
+
 import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 //not GWT import const GameNotificationEventHandler
+
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
+
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 //not GWT import const DropCellPositionHistory
+
 
 
 
@@ -81,6 +102,7 @@ import { DropCellPositionHistory } from '../../../../../org/allbinary/media/grap
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingRTSFormInput } from './BuildingRTSFormInput.js';
 //not GWT import - same folder const BuildingRTSFormInput
+
 export class BuildingAdvancedRTSFormInput extends BuildingRTSFormInput {
         
 

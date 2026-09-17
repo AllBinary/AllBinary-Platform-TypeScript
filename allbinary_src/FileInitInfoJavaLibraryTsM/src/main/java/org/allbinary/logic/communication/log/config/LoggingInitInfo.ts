@@ -24,28 +24,40 @@
         
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 //not GWT import const PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { AbFileLocalInputStream } from '../../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
 //not GWT import const AbFileLocalInputStream
+
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -65,9 +77,12 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigsData } from './LogConfigsData.js';
-//not GWT import - same folder const LogConfigsDataimport { LogConfigData } from './LogConfigData.js';
-//not GWT import - same folder const LogConfigDataimport { LogConfig } from './LogConfig.js';
+//not GWT import - same folder const LogConfigsData
+import { LogConfigData } from './LogConfigData.js';
+//not GWT import - same folder const LogConfigData
+import { LogConfig } from './LogConfig.js';
 //not GWT import - same folder const LogConfig
+
 export class LoggingInitInfo
             extends Object
          {

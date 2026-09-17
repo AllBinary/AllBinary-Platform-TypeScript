@@ -6,12 +6,16 @@
 
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BaseGameStatistics } from '../../../../../org/allbinary/canvas/BaseGameStatistics.js';
 //not GWT import const BaseGameStatistics
+
 import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
 //not GWT import const GameStatisticsFactory
+
 
 
 

@@ -24,8 +24,10 @@
         
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -45,9 +47,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-//not GWT import - same folder const PlayerGameInputCompositeInterfaceimport { NoPlayerGameInput } from './NoPlayerGameInput.js';
-//not GWT import - same folder const NoPlayerGameInputimport { PlayerGameInput } from './PlayerGameInput.js';
+//not GWT import - same folder const PlayerGameInputCompositeInterface
+import { NoPlayerGameInput } from './NoPlayerGameInput.js';
+//not GWT import - same folder const NoPlayerGameInput
+import { PlayerGameInput } from './PlayerGameInput.js';
 //not GWT import - same folder const PlayerGameInput
+
 export class NullPlayerGameInputComposite
             extends Object
          implements PlayerGameInputCompositeInterface {

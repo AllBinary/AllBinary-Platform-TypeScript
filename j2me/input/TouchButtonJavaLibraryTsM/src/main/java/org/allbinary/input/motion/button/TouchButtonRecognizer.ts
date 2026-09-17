@@ -24,20 +24,28 @@
         
 import { DownGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownGameKeyEventHandler.js';
 //not GWT import const DownGameKeyEventHandler
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
 //not GWT import const UpGameKeyEventHandler
+
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
 //not GWT import const RectangleCollisionUtil
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -57,15 +65,24 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactoryimport { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInputimport { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
-//not GWT import - same folder const CurrentlyPressedTouchButtonSingleton//import { ReleaseHelper } from './ReleaseHelper.js';
-//not GWT import - same folder const ReleaseHelperimport { CancelTouchButtonInputFactory } from './CancelTouchButtonInputFactory.js';
-//not GWT import - same folder const CancelTouchButtonInputFactoryimport { TouchScreenFactory } from './TouchScreenFactory.js';
-//not GWT import - same folder const TouchScreenFactory//import { MultitouchReleaseHelper } from './MultitouchReleaseHelper.js';
-//not GWT import - same folder const MultitouchReleaseHelperimport { TouchButtonFactory } from './TouchButtonFactory.js';
-//not GWT import - same folder const TouchButtonFactoryimport { TouchButton } from './TouchButton.js';
+//not GWT import - same folder const BasicTouchInputFactory
+import { TouchButtonInput } from './TouchButtonInput.js';
+//not GWT import - same folder const TouchButtonInput
+import { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
+//not GWT import - same folder const CurrentlyPressedTouchButtonSingleton
+//import { ReleaseHelper } from './ReleaseHelper.js';
+//not GWT import - same folder const ReleaseHelper
+import { CancelTouchButtonInputFactory } from './CancelTouchButtonInputFactory.js';
+//not GWT import - same folder const CancelTouchButtonInputFactory
+import { TouchScreenFactory } from './TouchScreenFactory.js';
+//not GWT import - same folder const TouchScreenFactory
+//import { MultitouchReleaseHelper } from './MultitouchReleaseHelper.js';
+//not GWT import - same folder const MultitouchReleaseHelper
+import { TouchButtonFactory } from './TouchButtonFactory.js';
+//not GWT import - same folder const TouchButtonFactory
+import { TouchButton } from './TouchButton.js';
 //not GWT import - same folder const TouchButton
+
 export class TouchButtonRecognizer
             extends Object
          {

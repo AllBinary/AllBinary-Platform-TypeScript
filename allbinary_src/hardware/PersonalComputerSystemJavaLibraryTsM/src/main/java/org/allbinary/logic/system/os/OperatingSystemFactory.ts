@@ -26,26 +26,37 @@
         
 //not plain js import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
+
 //not plain js import { LogFactory } 
 const LogFactory = globalThis.org.allbinary.logic.communication.log.LogFactory;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { LinuxOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/linux/LinuxOperatingSystemFactory.js';
 //not GWT import const LinuxOperatingSystemFactory
+
 import { SolarisOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/solaris/SolarisOperatingSystemFactory.js';
 //not GWT import const SolarisOperatingSystemFactory
+
 import { WindowsOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/windows/WindowsOperatingSystemFactory.js';
 //not GWT import const WindowsOperatingSystemFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -65,10 +76,14 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoOperatingSystem } from './NoOperatingSystem.js';
-//not GWT import - same folder const NoOperatingSystemimport { GenericOperatingSystem } from './GenericOperatingSystem.js';
-//not GWT import - same folder const GenericOperatingSystemimport { OperatingSystems } from './OperatingSystems.js';
-//not GWT import - same folder const OperatingSystems//not plain js - same folder import { SystemProperties } 
+//not GWT import - same folder const NoOperatingSystem
+import { GenericOperatingSystem } from './GenericOperatingSystem.js';
+//not GWT import - same folder const GenericOperatingSystem
+import { OperatingSystems } from './OperatingSystems.js';
+//not GWT import - same folder const OperatingSystems
+//not plain js - same folder import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+
 export class OperatingSystemFactory
             extends Object
          {

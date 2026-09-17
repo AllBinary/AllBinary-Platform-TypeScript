@@ -22,14 +22,19 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
 //not GWT import const CellPositionFactory
+
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 

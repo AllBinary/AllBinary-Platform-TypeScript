@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoPaintableInterface } from './DemoPaintableInterface.js';
 //not GWT import - same folder const DemoPaintableInterface
+
 export class NullDemoPaintable
             extends Object
          implements DemoPaintableInterface {

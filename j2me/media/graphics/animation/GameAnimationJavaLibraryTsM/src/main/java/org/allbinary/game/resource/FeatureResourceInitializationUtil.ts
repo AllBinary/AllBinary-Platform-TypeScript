@@ -24,10 +24,13 @@
         
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,8 +50,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-//not GWT import - same folder const FeaturedResourceFactoryimport { FeaturedResourceRelativeRelationshipFactory } from './FeaturedResourceRelativeRelationshipFactory.js';
+//not GWT import - same folder const FeaturedResourceFactory
+import { FeaturedResourceRelativeRelationshipFactory } from './FeaturedResourceRelativeRelationshipFactory.js';
 //not GWT import - same folder const FeaturedResourceRelativeRelationshipFactory
+
 export class FeatureResourceInitializationUtil
             extends Object
          {

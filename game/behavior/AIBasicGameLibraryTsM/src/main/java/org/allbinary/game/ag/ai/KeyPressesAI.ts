@@ -24,16 +24,22 @@
         
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 

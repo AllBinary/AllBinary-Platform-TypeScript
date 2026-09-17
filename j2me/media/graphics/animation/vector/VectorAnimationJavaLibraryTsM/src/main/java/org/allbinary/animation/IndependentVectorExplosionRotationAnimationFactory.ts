@@ -24,10 +24,13 @@
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
 //not GWT import const VectorInfo
+
 
 
 
@@ -47,12 +50,18 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterfaceimport { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import - same folder const VectorAnimationFactoryInterfaceimport { VectorRotationGenerator } from './VectorRotationGenerator.js';
-//not GWT import - same folder const VectorRotationGeneratorimport { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-//not GWT import - same folder const VectorExplosionGeneratorimport { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimationimport { Animation } from './Animation.js';
+//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
+import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
+//not GWT import - same folder const VectorAnimationFactoryInterface
+import { VectorRotationGenerator } from './VectorRotationGenerator.js';
+//not GWT import - same folder const VectorRotationGenerator
+import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
+//not GWT import - same folder const VectorExplosionGenerator
+import { IndexedAnimation } from './IndexedAnimation.js';
+//not GWT import - same folder const IndexedAnimation
+import { Animation } from './Animation.js';
 //not GWT import - same folder const Animation
+
 export class IndependentVectorExplosionRotationAnimationFactory
             extends Object
          implements ProceduralAnimationInterfaceFactoryInterface {

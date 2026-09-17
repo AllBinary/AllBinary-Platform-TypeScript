@@ -24,30 +24,43 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { UserInterface } from '../../../../../../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
+
 import { UserConfigurationInterface } from '../../../../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
 //not GWT import const UserConfigurationInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { UserEmailConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 //not GWT import const UserEmailConfigurationInterface
+
 import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js';
 //not GWT import const UserEmailEventsConfigurationInterface
+
 import { UserEmailEventListenerInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
 //not GWT import const UserEmailEventListenerInterface
+
 import { UserEmailEventNameData } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
+
 import { LogUserEmailEventListenerModule } from '../../../../../../../org/allbinary/logic/communication/smtp/event/modules/log/LogUserEmailEventListenerModule.js';
 //not GWT import const LogUserEmailEventListenerModule
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -68,6 +81,7 @@ import { AbeClientInformationInterface } from '../../../../../../../org/allbinar
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventHandler } from './UserEmailEventHandler.js';
 //not GWT import - same folder const UserEmailEventHandler
+
 export class EmailEventHandlerUtil
             extends Object
          {

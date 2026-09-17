@@ -22,14 +22,19 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 
 
 
@@ -50,6 +55,7 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSegmentAnimation } from './ImageSegmentAnimation.js';
 //not GWT import - same folder const ImageSegmentAnimation
+
 export class LeftToRightImageAnimation extends ImageSegmentAnimation {
         
 

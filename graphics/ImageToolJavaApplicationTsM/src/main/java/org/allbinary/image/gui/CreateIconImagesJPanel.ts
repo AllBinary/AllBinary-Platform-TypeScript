@@ -28,32 +28,46 @@
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { Raster } from '../../../../java/awt/image/Raster.js';
 //not GWT import const Raster
+
 import { File } from '../../../../java/io/File.js';
 //not GWT import const File
+
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 //not GWT import const CanvasStrings
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 //not GWT import const ImagePersistanceUtil
+
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 //not GWT import const ImageProcessorInput
+
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 //not GWT import const ImageProcessorInputCompositeInterface
+
 import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 //not GWT import const ImageUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -73,12 +87,18 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const JPanel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
 //not GWT import - same folder const Short
+
 export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 

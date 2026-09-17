@@ -24,26 +24,37 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { AnimationFactoryImageScaleUtil } from '../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
 //not GWT import const AnimationFactoryImageScaleUtil
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -64,6 +75,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationFactoryInitializationVisitor } from './AnimationFactoryInitializationVisitor.js';
 //not GWT import - same folder const AnimationFactoryInitializationVisitor
+
 export class BaseImageAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

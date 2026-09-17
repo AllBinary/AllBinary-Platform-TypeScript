@@ -24,18 +24,25 @@
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
 //not GWT import const TextField
+
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 //not GWT import const CommandForm
+
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
 import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
 //not GWT import const MEUtil
+
 
 
 

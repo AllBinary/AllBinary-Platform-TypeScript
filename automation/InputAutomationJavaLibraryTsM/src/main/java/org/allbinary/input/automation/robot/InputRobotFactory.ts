@@ -24,34 +24,49 @@
         
 import { GraphicsDevice } from '../../../../../java/awt/GraphicsDevice.js';
 //not GWT import const GraphicsDevice
+
 import { GraphicsEnvironment } from '../../../../../java/awt/GraphicsEnvironment.js';
 //not GWT import const GraphicsEnvironment
+
 import { Collection } from '../../../../../java/util/Collection.js';
 //not GWT import const Collection
+
 import { Iterator } from '../../../../../java/util/Iterator.js';
 //not GWT import const Iterator
+
 import { Set } from '../../../../../java/util/Set.js';
 //not GWT import const Set
+
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
+
 import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
 //not GWT import const HelpSetEvent
+
 import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
 //not GWT import const HelpSetListener
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
 //not GWT import const JavaHelpSetNotifier
+
 import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
 //not GWT import const InterfaceUtil
+
 import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
 //not GWT import const SecuredNativeLibraryInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -71,8 +86,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import - same folder const InputRobotInterfaceimport { InputRobot } from './InputRobot.js';
+//not GWT import - same folder const InputRobotInterface
+import { InputRobot } from './InputRobot.js';
 //not GWT import - same folder const InputRobot
+
 export class InputRobotFactory
             extends Object
          {

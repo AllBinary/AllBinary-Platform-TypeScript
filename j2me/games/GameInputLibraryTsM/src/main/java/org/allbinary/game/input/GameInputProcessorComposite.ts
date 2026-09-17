@@ -22,12 +22,16 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -47,8 +51,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInputimport { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
+//not GWT import - same folder const PlayerGameInput
+import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
 //not GWT import - same folder const GameInputProcessorInterface
+
 export class GameInputProcessorComposite extends PlayerGameInput {
         
 

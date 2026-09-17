@@ -24,44 +24,64 @@
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
 //not GWT import const SWT
+
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
 //not GWT import const ImageData
+
 import { ImageLoader } from '../../../../org/eclipse/swt/graphics/ImageLoader.js';
 //not GWT import const ImageLoader
+
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
 //not GWT import const SwtMutableImage
+
 import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
 //not GWT import const AvianUtil
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 //not GWT import const CanvasStrings
+
 import { OpenGLCapabilities } from '../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
 //not GWT import const OpenGLCapabilities
+
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
 //not GWT import const PreResourceImageUtil
+
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -81,7 +101,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
-//not GWT import - same folder const TrueTypeFontUtilBase//TTF
+//not GWT import - same folder const TrueTypeFontUtilBase
+//TTF
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 

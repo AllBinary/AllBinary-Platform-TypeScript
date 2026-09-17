@@ -22,10 +22,13 @@
         
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 
 
 
@@ -45,8 +48,10 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayChangeEventListener } from './DisplayChangeEventListener.js';
-//not GWT import - same folder const DisplayChangeEventListenerimport { DisplayChangeEvent } from './DisplayChangeEvent.js';
+//not GWT import - same folder const DisplayChangeEventListener
+import { DisplayChangeEvent } from './DisplayChangeEvent.js';
 //not GWT import - same folder const DisplayChangeEvent
+
 export class LastDisplayChangeEventHandler extends BasicEventHandler {
         
 

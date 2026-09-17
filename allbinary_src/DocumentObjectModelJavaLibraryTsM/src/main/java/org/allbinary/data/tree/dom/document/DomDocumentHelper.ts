@@ -24,24 +24,34 @@
         
 import { ByteArrayOutputStream } from '../../../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream
+
 import { InputStream } from '../../../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { StringBufferInputStream } from '../../../../../../java/io/StringBufferInputStream.js';
 //not GWT import const StringBufferInputStream
+
 import { DocumentBuilder } from '../../../../../../javax/xml/parsers/DocumentBuilder.js';
 //not GWT import const DocumentBuilder
+
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
 //not GWT import const DocumentBuilderFactory
+
 import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
 //not GWT import const Transformer
+
 import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
 //not GWT import const TransformerFactory
+
 import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
 //not GWT import const DOMSource
+
 import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
 //not GWT import const StreamResult
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 

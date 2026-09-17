@@ -22,28 +22,40 @@
         
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
 //not GWT import const MyFontProcessor
+
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { SWTJOGLProcessor } from '../../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
 //not GWT import const SWTJOGLProcessor
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

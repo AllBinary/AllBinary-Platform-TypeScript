@@ -22,32 +22,46 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
 //not GWT import const MyFontProcessor
+
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
 //not GWT import const UpdateMyFontInterface
+
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
 //not GWT import const UpdateMyFontProcessor
+
 import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
 //not GWT import const SWTJOGLProcessor
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -68,6 +82,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextChangeListener } from './TextChangeListener.js';
 //not GWT import - same folder const TextChangeListener
+
 export class TextAnimation extends IndexedAnimation implements UpdateMyFontInterface {
         
 

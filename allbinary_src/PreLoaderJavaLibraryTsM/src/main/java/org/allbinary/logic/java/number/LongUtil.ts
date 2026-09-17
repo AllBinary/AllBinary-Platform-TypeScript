@@ -22,8 +22,10 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 
 
 
@@ -44,6 +46,7 @@ const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LongData } from './LongData.js';
 //not GWT import - same folder const LongData
+
 export class LongUtil
             extends Object
          {

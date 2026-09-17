@@ -22,18 +22,25 @@
         
 import { Graphics } from '../../../../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Animation } from '../../../../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { Life } from '../../../../../../../../org/allbinary/game/ag/life/Life.js';
 //not GWT import const Life
+
 import { BasicHud } from '../../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 //not GWT import const BasicHud
+
 import { BasicColorFactory } from '../../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { DisplayChangeEvent } from '../../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
 //not GWT import const DisplayChangeEvent
+
 import { PaintableInterface } from '../../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface
+
 
 
 

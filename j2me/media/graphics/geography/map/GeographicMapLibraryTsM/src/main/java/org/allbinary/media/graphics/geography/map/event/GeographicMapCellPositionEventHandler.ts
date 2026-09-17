@@ -22,18 +22,25 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { MiniMapLayer } from '../../../../../../../org/allbinary/game/layer/geographic/map/MiniMapLayer.js';
 //not GWT import const MiniMapLayer
+
 import { AllBinaryEventObject } from '../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventListenerInterface } from '../../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 import { EventStrings } from '../../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 import { BasicEventHandler } from '../../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 
 
 
@@ -53,8 +60,10 @@ import { BasicEventHandler } from '../../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-//not GWT import - same folder const GeographicMapCellPositionEventimport { GeographicMapCellPositionEventListenerInterface } from './GeographicMapCellPositionEventListenerInterface.js';
+//not GWT import - same folder const GeographicMapCellPositionEvent
+import { GeographicMapCellPositionEventListenerInterface } from './GeographicMapCellPositionEventListenerInterface.js';
 //not GWT import - same folder const GeographicMapCellPositionEventListenerInterface
+
 export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
         
 

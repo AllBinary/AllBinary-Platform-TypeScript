@@ -43,6 +43,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleFactory } from './AngleFactory.js';
 //not GWT import - same folder const AngleFactory
+
 export class FrameUtil
             extends Object
          {

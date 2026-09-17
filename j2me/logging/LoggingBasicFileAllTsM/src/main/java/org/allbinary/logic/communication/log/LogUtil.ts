@@ -24,12 +24,16 @@
         
 import { FileLog } from '../../../../../org/allbinary/log/FileLog.js';
 //not GWT import const FileLog
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -49,7 +53,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { Log } 
-const Log = globalThis.org.allbinary.logic.communication.log.Log;//ActualPlatform
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

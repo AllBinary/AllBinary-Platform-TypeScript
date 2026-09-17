@@ -22,10 +22,13 @@
         
 import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
 //not GWT import const CustomGPoint
+
 import { GPointCircularPool } from '../../../../org/allbinary/graphics/GPointCircularPool.js';
 //not GWT import const GPointCircularPool
+
 import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/gesture/MotionGestureRecognizer.js';
 //not GWT import const MotionGestureRecognizer
+
 
 
 
@@ -46,6 +49,7 @@ import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRecognizer } from './MotionRecognizer.js';
 //not GWT import - same folder const MotionRecognizer
+
 export class GestureOnlyMotionRecognizer extends MotionRecognizer {
         
 

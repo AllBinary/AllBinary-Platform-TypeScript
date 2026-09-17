@@ -24,8 +24,10 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
+
 
 
 

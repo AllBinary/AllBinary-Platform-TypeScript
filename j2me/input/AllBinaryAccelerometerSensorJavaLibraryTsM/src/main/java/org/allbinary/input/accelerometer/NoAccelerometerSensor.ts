@@ -22,8 +22,10 @@
         
 import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
 //not GWT import const AllBinaryOrientationSensor
+
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
 //not GWT import const Orientation
+
 
 
 

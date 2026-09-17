@@ -24,18 +24,25 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 
 
 
@@ -55,8 +62,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
-//not GWT import - same folder const ImageArrayAnimationimport { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
+//not GWT import - same folder const ImageArrayAnimation
+import { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
 //not GWT import - same folder const AdjustedImageArrayAnimation
+
 export class ImageArrayAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

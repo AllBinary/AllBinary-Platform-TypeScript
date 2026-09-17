@@ -20,8 +20,10 @@
 
 import { swing } from '../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
 //not GWT import const MutableTreeNode
+
 
 
 
@@ -42,6 +44,7 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPopupMenu } from './JPopupMenu.js';
 //not GWT import - same folder const JPopupMenu
+
 export interface CustomTreeNodeInterface extends MutableTreeNode {
         
 

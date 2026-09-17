@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -52,6 +57,7 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontAdvertisementsStatisticsInterface } from './StoreFrontAdvertisementsStatisticsInterface.js';
 //not GWT import - same folder const StoreFrontAdvertisementsStatisticsInterface
+
 export class StoreFrontAdvertisementsStatistics
             extends Object
          implements StoreFrontAdvertisementsStatisticsInterface {

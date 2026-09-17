@@ -24,24 +24,34 @@
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { Notification } from '../../../android/app/Notification.js';
 //not GWT import const Notification
+
 import { NotificationManager } from '../../../android/app/NotificationManager.js';
 //not GWT import const NotificationManager
+
 import { PendingIntent } from '../../../android/app/PendingIntent.js';
 //not GWT import const PendingIntent
+
 import { Context } from '../../../android/content/Context.js';
 //not GWT import const Context
+
 import { Intent } from '../../../android/content/Intent.js';
 //not GWT import const Intent
+
 import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFactory.js';
 //not GWT import const AndroidInfoFactory
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -61,9 +71,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
-//not GWT import - same folder const NotificationBuilderimport { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
-//not GWT import - same folder const NotificationBuilderAPI23import { CommandUriAction } from './CommandUriAction.js';
+//not GWT import - same folder const NotificationBuilder
+import { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
+//not GWT import - same folder const NotificationBuilderAPI23
+import { CommandUriAction } from './CommandUriAction.js';
 //not GWT import - same folder const CommandUriAction
+
 export class NotificationUtil
             extends Object
          {

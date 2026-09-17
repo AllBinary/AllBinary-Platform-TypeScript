@@ -22,36 +22,52 @@
         
 import { HashMap } from '../../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 //not GWT import const DefaultMutableTreeNode
+
 import { DomSearchHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { ProfileActionScriptNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
 //not GWT import const ProfileActionScriptNodeInterface
+
 import { ProfileActionScriptConditionFactory } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionFactory.js';
 //not GWT import const ProfileActionScriptConditionFactory
+
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
 //not GWT import const ProfileActionScriptConditionInterface
+
 import { GenericProfileActionData } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
 //not GWT import const GenericProfileActionData
+
 import { GenericProfileActionJPanel } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionJPanel.js';
 //not GWT import const GenericProfileActionJPanel
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 

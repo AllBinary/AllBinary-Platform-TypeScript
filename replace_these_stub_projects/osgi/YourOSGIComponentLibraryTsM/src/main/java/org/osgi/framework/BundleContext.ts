@@ -22,12 +22,16 @@ import { Dictionary } from '../../../java/util/Dictionary.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Bundle } from './Bundle.js';
-//not GWT import - same folder const Bundleimport { ServiceRegistration } from './ServiceRegistration.js';
-//not GWT import - same folder const ServiceRegistrationimport { ServiceReference } from './ServiceReference.js';
+//not GWT import - same folder const Bundle
+import { ServiceRegistration } from './ServiceRegistration.js';
+//not GWT import - same folder const ServiceRegistration
+import { ServiceReference } from './ServiceReference.js';
 //not GWT import - same folder const ServiceReference
+
 export interface BundleContext {
         
 

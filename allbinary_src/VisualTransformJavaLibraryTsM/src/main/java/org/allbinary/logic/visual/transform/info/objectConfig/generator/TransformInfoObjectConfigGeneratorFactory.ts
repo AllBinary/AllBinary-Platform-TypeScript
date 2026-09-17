@@ -24,12 +24,16 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
+
 import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,10 +53,14 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorFactoryInterface } from './TransformInfoObjectConfigGeneratorFactoryInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigGeneratorFactoryInterfaceimport { StoreFileGenerator } from './StoreFileGenerator.js';
-//not GWT import - same folder const StoreFileGeneratorimport { BasicGenerator } from './BasicGenerator.js';
-//not GWT import - same folder const BasicGeneratorimport { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
+//not GWT import - same folder const TransformInfoObjectConfigGeneratorFactoryInterface
+import { StoreFileGenerator } from './StoreFileGenerator.js';
+//not GWT import - same folder const StoreFileGenerator
+import { BasicGenerator } from './BasicGenerator.js';
+//not GWT import - same folder const BasicGenerator
+import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
 //not GWT import - same folder const TransformInfoObjectConfigGenerator
+
 export class TransformInfoObjectConfigGeneratorFactory
             extends Object
          implements TransformInfoObjectConfigGeneratorFactoryInterface {

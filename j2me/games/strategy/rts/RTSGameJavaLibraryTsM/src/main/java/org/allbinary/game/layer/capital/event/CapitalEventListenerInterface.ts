@@ -37,10 +37,12 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapitalEvent } from './CapitalEvent.js';
 //not GWT import - same folder const CapitalEvent
+
 export interface CapitalEventListenerInterface extends EventListenerInterface {
         
 

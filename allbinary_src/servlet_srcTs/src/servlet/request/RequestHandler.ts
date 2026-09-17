@@ -22,20 +22,28 @@
         
 import { io } from '../../java/io.js';
 //not GWT import const io
+
 import { net } from '../../java/net.js';
 //not GWT import const net
+
 import { servlet } from '../../javax/servlet.js';
 //not GWT import const servlet
+
 import { http } from '../../javax/servlet/http.js';
 //not GWT import const http
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 //not GWT import const WorkFlowInterface
+
 import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
 //not GWT import const RequestWorkFlowFactory
+
 
 
 
@@ -55,13 +63,20 @@ import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workfl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HttpServlet } from './HttpServlet.js';
-//not GWT import - same folder const HttpServletimport { ServletConfig } from './ServletConfig.js';
-//not GWT import - same folder const ServletConfigimport { PrintWriter } from './PrintWriter.js';
-//not GWT import - same folder const PrintWriterimport { ServletRequest } from './ServletRequest.js';
-//not GWT import - same folder const ServletRequestimport { ServletResponse } from './ServletResponse.js';
-//not GWT import - same folder const ServletResponseimport { HttpServletRequest } from './HttpServletRequest.js';
-//not GWT import - same folder const HttpServletRequestimport { HttpServletResponse } from './HttpServletResponse.js';
+//not GWT import - same folder const HttpServlet
+import { ServletConfig } from './ServletConfig.js';
+//not GWT import - same folder const ServletConfig
+import { PrintWriter } from './PrintWriter.js';
+//not GWT import - same folder const PrintWriter
+import { ServletRequest } from './ServletRequest.js';
+//not GWT import - same folder const ServletRequest
+import { ServletResponse } from './ServletResponse.js';
+//not GWT import - same folder const ServletResponse
+import { HttpServletRequest } from './HttpServletRequest.js';
+//not GWT import - same folder const HttpServletRequest
+import { HttpServletResponse } from './HttpServletResponse.js';
 //not GWT import - same folder const HttpServletResponse
+
 export class RequestHandler extends HttpServlet {
         
 

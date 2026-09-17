@@ -20,8 +20,10 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -41,8 +43,10 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-//not GWT import - same folder const RTSLayer2LogHelperimport { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import - same folder const RTSLayer2LogHelper
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 //not GWT import - same folder const PathFindingLayerInterface
+
 export class RTSLayer2SelectedLogHelper extends RTSLayer2LogHelper {
         
 

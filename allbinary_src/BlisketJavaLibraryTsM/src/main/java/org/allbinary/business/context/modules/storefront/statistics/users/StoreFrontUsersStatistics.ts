@@ -26,24 +26,34 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
+
 import { UserRole } from '../../../../../../../../org/allbinary/business/user/role/UserRole.js';
 //not GWT import const UserRole
+
 import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
 //not GWT import const UserEntityFactory
+
 import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js';
 //not GWT import const UserEntityInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -63,8 +73,10 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontUsersStatisticsInterface } from './StoreFrontUsersStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontUsersStatisticsInterfaceimport { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';
+//not GWT import - same folder const StoreFrontUsersStatisticsInterface
+import { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';
 //not GWT import - same folder const StoreFrontUsersStatisticsData
+
 export class StoreFrontUsersStatistics
             extends Object
          implements StoreFrontUsersStatisticsInterface {

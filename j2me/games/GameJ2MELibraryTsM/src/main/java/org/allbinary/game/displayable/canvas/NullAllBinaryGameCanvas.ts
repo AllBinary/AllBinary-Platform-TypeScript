@@ -24,10 +24,13 @@
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 
 
 
@@ -48,6 +51,7 @@ import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/lay
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvasInterface } from './AllBinaryGameCanvasInterface.js';
 //not GWT import - same folder const AllBinaryGameCanvasInterface
+
 export class NullAllBinaryGameCanvas
             extends Object
          implements AllBinaryGameCanvasInterface {

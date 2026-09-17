@@ -22,12 +22,16 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 
@@ -47,8 +51,10 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LazyProgressCanvas } from './LazyProgressCanvas.js';
-//not GWT import - same folder const LazyProgressCanvasimport { ProgressCanvas } from './ProgressCanvas.js';
+//not GWT import - same folder const LazyProgressCanvas
+import { ProgressCanvas } from './ProgressCanvas.js';
 //not GWT import - same folder const ProgressCanvas
+
 export class ProgressCanvasFactory
             extends Object
          {

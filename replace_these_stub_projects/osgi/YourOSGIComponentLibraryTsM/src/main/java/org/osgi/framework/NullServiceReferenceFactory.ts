@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullServiceReference } from './NullServiceReference.js';
 //not GWT import - same folder const NullServiceReference
+
 export class NullServiceReferenceFactory
             extends Object
          {

@@ -22,18 +22,25 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlData } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
+
 import { Validation } from '../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -54,6 +61,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadableItem } from './DownloadableItem.js';
 //not GWT import - same folder const DownloadableItem
+
 export class DownloadableItemValidation extends Validation {
         
 

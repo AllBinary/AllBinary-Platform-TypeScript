@@ -22,8 +22,10 @@
         
 import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
 //not GWT import const GuiLog
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 

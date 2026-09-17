@@ -22,12 +22,16 @@
         
 import { HashMap } from '../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
 //not GWT import const StoreWorkFlowInterface
+
 
 
 
@@ -48,6 +52,7 @@ import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/wor
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWorkFlow } from './BasicWorkFlow.js';
 //not GWT import - same folder const BasicWorkFlow
+
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         
 

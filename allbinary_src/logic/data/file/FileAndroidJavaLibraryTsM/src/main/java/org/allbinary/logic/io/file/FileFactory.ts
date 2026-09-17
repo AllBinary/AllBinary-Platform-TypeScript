@@ -24,10 +24,13 @@
         
 import { FileNotFoundException } from '../../../../../java/io/FileNotFoundException.js';
 //not GWT import const FileNotFoundException
+
 import { Context } from '../../../../../android/content/Context.js';
 //not GWT import const Context
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 
 
 
@@ -48,6 +51,7 @@ const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
 //not GWT import - same folder const AbFile
+
 export class FileFactory
             extends Object
          {

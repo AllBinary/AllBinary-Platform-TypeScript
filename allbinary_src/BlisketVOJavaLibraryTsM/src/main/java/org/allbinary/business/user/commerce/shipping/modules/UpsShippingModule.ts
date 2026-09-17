@@ -22,8 +22,10 @@
         
 import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 //not GWT import const OrderInterface
+
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 //not GWT import const Money
+
 
 
 
@@ -44,6 +46,7 @@ import { Money } from '../../../../../../../org/allbinary/business/user/commerce
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingInterface } from './ShippingInterface.js';
 //not GWT import - same folder const ShippingInterface
+
 export class UpsShippingModule
             extends Object
          implements ShippingInterface {

@@ -20,8 +20,10 @@
 
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 
 
 

@@ -24,10 +24,13 @@
         
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -48,6 +51,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
 //not GWT import - same folder const BasicGraphicsPipeline
+
 export class RandomRotationFactory
             extends Object
          {

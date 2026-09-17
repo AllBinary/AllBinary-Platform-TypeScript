@@ -36,10 +36,12 @@ import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionBase } from './ViewPositionBase.js';
 //not GWT import - same folder const ViewPositionBase
+
 export class ViewPosition extends ViewPositionBase {
         
 

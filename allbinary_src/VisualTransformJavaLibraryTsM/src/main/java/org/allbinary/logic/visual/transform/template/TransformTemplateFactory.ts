@@ -24,20 +24,28 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { TransformInfoEntity } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 //not GWT import const TransformInfoEntity
+
 import { TransformInfoEntityBuilder } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
 //not GWT import const TransformInfoEntityBuilder
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { TransformInfoObjectFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js';
 //not GWT import const TransformInfoObjectFactory
+
 
 
 
@@ -58,6 +66,7 @@ import { TransformInfoObjectFactory } from '../../../../../../org/allbinary/logi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTemplateInterface } from './TransformTemplateInterface.js';
 //not GWT import - same folder const TransformTemplateInterface
+
 export class TransformTemplateFactory
             extends Object
          {

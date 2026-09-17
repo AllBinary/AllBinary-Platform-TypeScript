@@ -37,15 +37,24 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JList } from './JList.js';
-//not GWT import - same folder const JListimport { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayoutimport { Font } from './Font.js';
-//not GWT import - same folder const Fontimport { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import - same folder const LinesGraphicItemimport { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapterimport { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEventimport { ToolFactory } from './ToolFactory.js';
+//not GWT import - same folder const JPanel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JList } from './JList.js';
+//not GWT import - same folder const JList
+import { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayout
+import { Font } from './Font.js';
+//not GWT import - same folder const Font
+import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import - same folder const LinesGraphicItem
+import { MouseAdapter } from './MouseAdapter.js';
+//not GWT import - same folder const MouseAdapter
+import { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEvent
+import { ToolFactory } from './ToolFactory.js';
 //not GWT import - same folder const ToolFactory
+
 export class ToolJPanel extends javax.swing.JPanel {
         
 

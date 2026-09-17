@@ -38,10 +38,12 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
 //not GWT import - same folder const Comparable
+
 export class ComparableObject
             extends Object
          implements Comparable<any> {

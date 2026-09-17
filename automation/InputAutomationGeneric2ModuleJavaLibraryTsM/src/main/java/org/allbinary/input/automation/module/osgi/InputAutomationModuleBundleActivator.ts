@@ -26,28 +26,40 @@
         
 import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
 //not GWT import const BundleActivator
+
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
+
 import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
 //not GWT import const ServiceFactory
+
 import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
 //not GWT import const ServiceReference
+
 import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
 //not GWT import const InputAutomationModuleServiceInterface
+
 import { InputAutomationConfigurationModuleChangeListener } from '../../../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
 //not GWT import const InputAutomationConfigurationModuleChangeListener
+
 import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
 //not GWT import const InputAutomationConfigurationModuleChangeEvent
+
 import { InputAutomationConfigurationUtil } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationUtil.js';
 //not GWT import const InputAutomationConfigurationUtil
+
 import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 //not GWT import const InputAutomationModuleFactoryInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 //not GWT import const OSGIActivatorUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

@@ -6,8 +6,10 @@
 
 import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
+
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 //not GWT import const MIDlet
+
 
 
 

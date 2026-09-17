@@ -22,34 +22,49 @@
         
 import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
 //not GWT import const TransformFactory
+
 import { TransformInterface } from '../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
+
 import { GeneratorTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/GeneratorTransformInfoData.js';
 //not GWT import const GeneratorTransformInfoData
+
 import { RootTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/RootTransformInfoData.js';
 //not GWT import const RootTransformInfoData
+
 import { TransformInfoHttp } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttp.js';
 //not GWT import const TransformInfoHttp
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
 //not GWT import const TransformInfoObjectConfigAndManipulatorFactory
+
 import { TransformInfoObjectConfigInterface } from '../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
 //not GWT import const TransformInfoObjectConfigInterface
+
 import { TransformTemplateInterface } from '../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
 //not GWT import const TransformTemplateInterface
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 //not GWT import const HttpStoreComponentView
+
 
 
 

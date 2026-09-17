@@ -26,22 +26,31 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
 //not GWT import const DynamicObjectData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -61,8 +70,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowWrapper } from './WorkFlowWrapper.js';
-//not GWT import - same folder const WorkFlowWrapperimport { WorkFlowInterface } from './WorkFlowInterface.js';
+//not GWT import - same folder const WorkFlowWrapper
+import { WorkFlowInterface } from './WorkFlowInterface.js';
 //not GWT import - same folder const WorkFlowInterface
+
 export class NewWorkFlowFactory
             extends Object
          {

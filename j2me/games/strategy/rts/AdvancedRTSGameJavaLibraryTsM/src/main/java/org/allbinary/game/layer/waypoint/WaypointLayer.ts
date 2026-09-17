@@ -22,34 +22,49 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { Health } from '../../../../../org/allbinary/game/health/Health.js';
 //not GWT import const Health
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { NullRTSFormInputFactory } from '../../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
 //not GWT import const NullRTSFormInputFactory
+
 import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { AdvancedRTSProperties } from '../../../../../org/allbinary/game/layer/AdvancedRTSProperties.js';
 //not GWT import const AdvancedRTSProperties
+
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 //not GWT import const PathFindingLayerInterface
+
 import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
 //not GWT import const TileLayerPositionIntoViewPosition
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 import { AttackSound } from '../../../../../org/allbinary/media/audio/AttackSound.js';
 //not GWT import const AttackSound
+
 
 
 
@@ -69,9 +84,12 @@ import { AttackSound } from '../../../../../org/allbinary/media/audio/AttackSoun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableWaypointBehavior } from './CollidableWaypointBehavior.js';
-//not GWT import - same folder const CollidableWaypointBehaviorimport { Waypoint } from './Waypoint.js';
-//not GWT import - same folder const Waypointimport { WaypointCellPositionHistory } from './WaypointCellPositionHistory.js';
+//not GWT import - same folder const CollidableWaypointBehavior
+import { Waypoint } from './Waypoint.js';
+//not GWT import - same folder const Waypoint
+import { WaypointCellPositionHistory } from './WaypointCellPositionHistory.js';
 //not GWT import - same folder const WaypointCellPositionHistory
+
 export class WaypointLayer extends AdvancedRTSGameLayer {
         
 

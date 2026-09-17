@@ -24,14 +24,19 @@
         
 import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
 //not GWT import const InputToGameKeyMapping
+
 import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
 //not GWT import const BasicTouchInputFactory
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -51,8 +56,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCKeyFactory } from './PCKeyFactory.js';
-//not GWT import - same folder const PCKeyFactoryimport { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import - same folder const PCKeyFactory
+import { GameKeyFactory } from './GameKeyFactory.js';
 //not GWT import - same folder const GameKeyFactory
+
 export class PlatformFormInputMappingFactory
             extends Object
          {

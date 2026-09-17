@@ -22,54 +22,79 @@
         
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 //not GWT import const ByteArrayInputStream
+
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
 //not GWT import const DataInputStream
+
 import { EOFException } from '../../../../java/io/EOFException.js';
 //not GWT import const EOFException
+
 import { IOException } from '../../../../java/io/IOException.js';
 //not GWT import const IOException
+
 import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
 //not GWT import const RecordComparator
+
 import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
 //not GWT import const RecordEnumeration
+
 import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
 //not GWT import const RecordStore
+
 import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
 //not GWT import const RecordStoreException
+
 import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
 //not GWT import const RecordStoreNotFoundException
+
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
 //not GWT import const NullRecordComparator
+
 import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
 //not GWT import const NullRecordFilter
+
 import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
 //not GWT import const NullRecordStore
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
 //not GWT import const PlatformRecordIdUtil
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -89,9 +114,12 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScoresimport { HighScore } from './HighScore.js';
-//not GWT import - same folder const HighScoreimport { ScoreComparator } from './ScoreComparator.js';
+//not GWT import - same folder const HighScores
+import { HighScore } from './HighScore.js';
+//not GWT import - same folder const HighScore
+import { ScoreComparator } from './ScoreComparator.js';
 //not GWT import - same folder const ScoreComparator
+
 export class RecordStoreHighScores extends HighScores {
         
 

@@ -24,24 +24,34 @@
         
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 //not GWT import const MotionGestureInput
+
 import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 //not GWT import const TouchMotionGestureFactory
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -61,9 +71,12 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureEventListener } from './MotionGestureEventListener.js';
-//not GWT import - same folder const MotionGestureEventListenerimport { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
-//not GWT import - same folder const CompleteMotionGestureListenerInterfaceimport { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import - same folder const MotionGestureEventListener
+import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
+//not GWT import - same folder const CompleteMotionGestureListenerInterface
+import { MotionGestureEvent } from './MotionGestureEvent.js';
 //not GWT import - same folder const MotionGestureEvent
+
 export class ReleaseControlledMotionGestureListener
             extends Object
          implements MotionGestureEventListener {

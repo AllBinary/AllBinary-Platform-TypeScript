@@ -22,12 +22,16 @@
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
 
 
 
@@ -48,6 +52,7 @@ const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
 //not GWT import - same folder const TrueTypeFontUtilBase
+
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 

@@ -24,36 +24,52 @@
         
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
+
 import { GamePersistanceStrings } from '../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 //not GWT import const GamePersistanceStrings
+
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 //not GWT import const Input
+
 import { InputPersistance } from '../../../../../org/allbinary/game/input/InputPersistance.js';
 //not GWT import const InputPersistance
+
 import { InputMappingEvent } from '../../../../../org/allbinary/game/input/mapping/event/InputMappingEvent.js';
 //not GWT import const InputMappingEvent
+
 import { InputMappingEventListenerInterface } from '../../../../../org/allbinary/game/input/mapping/event/InputMappingEventListenerInterface.js';
 //not GWT import const InputMappingEventListenerInterface
+
 import { NullInputMappingEventListener } from '../../../../../org/allbinary/game/input/mapping/event/NullInputMappingEventListener.js';
 //not GWT import const NullInputMappingEventListener
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -73,7 +89,8 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputToGameKeyMapping } from './InputToGameKeyMapping.js';
-//not GWT import - same folder const InputToGameKeyMapping//GameInputNoPersistanceLibrary
+//not GWT import - same folder const InputToGameKeyMapping
+//GameInputNoPersistanceLibrary
 export class PersistentInputMapping
             extends Object
          {

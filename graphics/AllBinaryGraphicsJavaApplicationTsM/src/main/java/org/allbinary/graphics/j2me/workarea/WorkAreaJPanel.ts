@@ -28,46 +28,67 @@
         
 import { awt } from '../../../../../java/awt.js';
 //not GWT import const awt
+
 import { EventListener } from '../../../../../java/util/EventListener.js';
 //not GWT import const EventListener
+
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { LinkedList } from '../../../../../java/util/LinkedList.js';
 //not GWT import const LinkedList
+
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
 //not GWT import const MutableTreeNode
+
 import { DomHelper } from '../../../../../org/allbinary/dom/DomHelper.js';
 //not GWT import const DomHelper
+
 import { StatusFactory } from '../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
 //not GWT import const StatusFactory
+
 import { CanvasDom } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 //not GWT import const CanvasDom
+
 import { CanvasJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
 //not GWT import const CanvasJPanel
+
 import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
 //not GWT import const MyCanvasEvent
+
 import { MyCanvasEventListener } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventListener.js';
 //not GWT import const MyCanvasEventListener
+
 import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
 //not GWT import const MyCanvasEventService
+
 import { PropertiesJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/properties/PropertiesJPanel.js';
 //not GWT import const PropertiesJPanel
+
 import { ToolJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolJPanel.js';
 //not GWT import const ToolJPanel
+
 import { LOGGING } from '../../../../../org/allbinary/log/LOGGING.js';
 //not GWT import const LOGGING
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -87,17 +108,28 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { WorkAreaJPanelInterface } from './WorkAreaJPanelInterface.js';
-//not GWT import - same folder const WorkAreaJPanelInterfaceimport { WorkAreaJTreeJPanel } from './WorkAreaJTreeJPanel.js';
-//not GWT import - same folder const WorkAreaJTreeJPanelimport { Component } from './Component.js';
-//not GWT import - same folder const Componentimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { WorkAreaDom } from './WorkAreaDom.js';
-//not GWT import - same folder const WorkAreaDomimport { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayoutimport { GridBagLayout } from './GridBagLayout.js';
-//not GWT import - same folder const GridBagLayoutimport { GridBagConstraints } from './GridBagConstraints.js';
-//not GWT import - same folder const GridBagConstraintsimport { KeyAdapter } from './KeyAdapter.js';
-//not GWT import - same folder const KeyAdapterimport { KeyEvent } from './KeyEvent.js';
+//not GWT import - same folder const JPanel
+import { WorkAreaJPanelInterface } from './WorkAreaJPanelInterface.js';
+//not GWT import - same folder const WorkAreaJPanelInterface
+import { WorkAreaJTreeJPanel } from './WorkAreaJTreeJPanel.js';
+//not GWT import - same folder const WorkAreaJTreeJPanel
+import { Component } from './Component.js';
+//not GWT import - same folder const Component
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { WorkAreaDom } from './WorkAreaDom.js';
+//not GWT import - same folder const WorkAreaDom
+import { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayout
+import { GridBagLayout } from './GridBagLayout.js';
+//not GWT import - same folder const GridBagLayout
+import { GridBagConstraints } from './GridBagConstraints.js';
+//not GWT import - same folder const GridBagConstraints
+import { KeyAdapter } from './KeyAdapter.js';
+//not GWT import - same folder const KeyAdapter
+import { KeyEvent } from './KeyEvent.js';
 //not GWT import - same folder const KeyEvent
+
 export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {
         
 

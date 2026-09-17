@@ -22,14 +22,19 @@
         
 import { Collection } from '../../../java/util/Collection.js';
 //not GWT import const Collection
+
 import { Map } from '../../../java/util/Map.js';
 //not GWT import const Map
+
 import { Set } from '../../../java/util/Set.js';
 //not GWT import const Set
+
 import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
 //not GWT import const ServiceReference
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 

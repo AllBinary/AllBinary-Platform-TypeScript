@@ -26,28 +26,40 @@
         
 import { BundleActivator } from '../../../org/osgi/framework/BundleActivator.js';
 //not GWT import const BundleActivator
+
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
+
 import { InputAutomationConfigurationModuleChangeListener } from '../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
 //not GWT import const InputAutomationConfigurationModuleChangeListener
+
 import { InputAutomationRobotChangeListener } from '../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
 //not GWT import const InputAutomationRobotChangeListener
+
 import { InputAutomationJFrame } from '../../../org/allbinary/input/automation/InputAutomationJFrame.js';
 //not GWT import const InputAutomationJFrame
+
 import { InputAutomationModuleServiceConsumer } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceConsumer.js';
 //not GWT import const InputAutomationModuleServiceConsumer
+
 import { InputAutomationNewBundleRunnable } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationNewBundleRunnable.js';
 //not GWT import const InputAutomationNewBundleRunnable
+
 import { InputAutomationServiceFactory } from '../../../org/allbinary/input/automation/osgi/InputAutomationServiceFactory.js';
 //not GWT import const InputAutomationServiceFactory
+
 import { InputAutomationRobotServiceConsumer } from '../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotServiceConsumer.js';
 //not GWT import const InputAutomationRobotServiceConsumer
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 //not GWT import const OSGIActivatorUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -68,6 +80,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationBundleActivatorListenerInterface } from './InputAutomationBundleActivatorListenerInterface.js';
 //not GWT import - same folder const InputAutomationBundleActivatorListenerInterface
+
 export class InputAutomationBundleActivator
             extends Object
          implements BundleActivator, InputAutomationBundleActivatorListenerInterface {

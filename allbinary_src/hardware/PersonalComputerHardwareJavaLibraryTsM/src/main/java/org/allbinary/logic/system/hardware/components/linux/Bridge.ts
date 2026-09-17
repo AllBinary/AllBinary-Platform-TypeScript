@@ -22,8 +22,10 @@
         
 import { BridgeInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/BridgeInterface.js';
 //not GWT import const BridgeInterface
+
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
 //not GWT import const HardwareComponentInterface
+
 
 
 

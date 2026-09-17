@@ -24,30 +24,43 @@
         
 import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
 //not GWT import const ChoiceGroup
+
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
 //not GWT import const Item
+
 import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
 //not GWT import const GameConfigurationGauge
+
 import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
 //not GWT import const GameConfigurationUtil
+
 import { CommandForm } from '../../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 //not GWT import const CommandForm
+
 import { MEUtil } from '../../../../../org/allbinary/logic/MEUtil.js';
 //not GWT import const MEUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 
 
 
@@ -67,9 +80,12 @@ const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-//not GWT import - same folder const Featuresimport { Feature } from './Feature.js';
-//not GWT import - same folder const Featureimport { GameFeatureUtil } from './GameFeatureUtil.js';
+//not GWT import - same folder const Features
+import { Feature } from './Feature.js';
+//not GWT import - same folder const Feature
+import { GameFeatureUtil } from './GameFeatureUtil.js';
 //not GWT import - same folder const GameFeatureUtil
+
 export class GameFeatureFormUtil
             extends Object
          {

@@ -24,20 +24,28 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
+
 import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
 //not GWT import const ServiceReference
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 //not GWT import const OSGIServiceInterface
+
 import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js';
 //not GWT import const OSGIServiceVisitorInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -58,6 +66,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OSGIServiceUtil } from './OSGIServiceUtil.js';
 //not GWT import - same folder const OSGIServiceUtil
+
 export class InputAutomationServiceConsumer
             extends Object
          {

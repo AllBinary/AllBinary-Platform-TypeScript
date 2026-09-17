@@ -24,14 +24,19 @@
         
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
 //not GWT import const Bundle
+
 import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
+
 import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
 //not GWT import const InputAutomationBundleActivator
+
 import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
 //not GWT import const BasicTextJDialog
+
 
 
 
@@ -52,6 +57,7 @@ import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicT
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
 //not GWT import - same folder const JDialog
+
 export class DesktopBundle
             extends Object
          {

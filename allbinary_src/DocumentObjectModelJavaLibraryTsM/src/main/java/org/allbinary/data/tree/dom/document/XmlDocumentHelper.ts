@@ -24,34 +24,49 @@
         
 import { StringReader } from '../../../../../../java/io/StringReader.js';
 //not GWT import const StringReader
+
 import { StringWriter } from '../../../../../../java/io/StringWriter.js';
 //not GWT import const StringWriter
+
 import { Writer } from '../../../../../../java/io/Writer.js';
 //not GWT import const Writer
+
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
 //not GWT import const DocumentBuilderFactory
+
 import { OutputKeys } from '../../../../../../javax/xml/transform/OutputKeys.js';
 //not GWT import const OutputKeys
+
 import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
 //not GWT import const Transformer
+
 import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
 //not GWT import const TransformerFactory
+
 import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
 //not GWT import const DOMSource
+
 import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
 //not GWT import const StreamResult
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { CharacterSetData } from '../../../../../../org/allbinary/logic/java/characters/CharacterSetData.js';
 //not GWT import const CharacterSetData
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { InputSource } from '../../../../../../org/xml/sax/InputSource.js';
 //not GWT import const InputSource
+
 
 
 

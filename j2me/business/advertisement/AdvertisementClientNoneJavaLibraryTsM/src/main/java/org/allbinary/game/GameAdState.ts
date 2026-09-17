@@ -22,14 +22,19 @@
         
 import { GameAdStateBase } from '../../../org/allbinary/business/advertisement/GameAdStateBase.js';
 //not GWT import const GameAdStateBase
+
 import { AdConfiguration } from '../../../org/allbinary/business/advertisement/AdConfiguration.js';
 //not GWT import const AdConfiguration
+
 import { VirtualKeyboardEvent } from '../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
 //not GWT import const VirtualKeyboardEvent
+
 import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
 //not GWT import const VirtualKeyboardEventHandler
+
 import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
 //not GWT import const VirtualKeyboardEventListenerInterface
+
 
 
 

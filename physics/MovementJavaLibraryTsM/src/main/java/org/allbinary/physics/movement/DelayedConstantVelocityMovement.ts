@@ -22,14 +22,19 @@
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
 //not GWT import const AllBinaryGameLayer
+
 import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
 //not GWT import const BasicVelocityProperties
+
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
+
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
+
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -50,6 +55,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicConstantVelocityMovement } from './BasicConstantVelocityMovement.js';
 //not GWT import - same folder const BasicConstantVelocityMovement
+
 export class DelayedConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 

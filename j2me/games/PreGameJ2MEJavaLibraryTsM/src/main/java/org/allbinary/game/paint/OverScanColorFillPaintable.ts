@@ -20,8 +20,10 @@
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 
 
 
@@ -42,6 +44,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
 //not GWT import - same folder const ColorFillPaintable
+
 export class OverScanColorFillPaintable extends ColorFillPaintable {
         
 

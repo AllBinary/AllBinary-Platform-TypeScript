@@ -20,12 +20,16 @@
 
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
 //not GWT import const ProfileActionScriptConditionInterface
+
 import { GenericProfileAction } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
 //not GWT import const GenericProfileAction
+
 import { GenericProfileActionJPanel } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionJPanel.js';
 //not GWT import const GenericProfileActionJPanel
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -45,11 +49,16 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Panel } from './Panel.js';
-//not GWT import - same folder const Panelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayoutimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const Panel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayout
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
 //not GWT import - same folder const ActionEvent
+
 export class RemoveActionScriptItemJPanel extends java.awt.Panel {
         
 

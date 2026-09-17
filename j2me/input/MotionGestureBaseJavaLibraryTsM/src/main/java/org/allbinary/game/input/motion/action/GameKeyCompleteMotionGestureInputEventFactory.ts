@@ -22,14 +22,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -50,6 +55,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyCompleteMotionGestureInputEvent } from './GameKeyCompleteMotionGestureInputEvent.js';
 //not GWT import - same folder const GameKeyCompleteMotionGestureInputEvent
+
 export class GameKeyCompleteMotionGestureInputEventFactory
             extends Object
          {

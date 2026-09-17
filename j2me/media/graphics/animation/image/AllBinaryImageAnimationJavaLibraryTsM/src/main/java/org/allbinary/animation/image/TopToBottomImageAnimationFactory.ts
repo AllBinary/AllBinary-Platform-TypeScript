@@ -22,10 +22,13 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 
 
 
@@ -45,8 +48,10 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactoryimport { TopToBottomImageAnimation } from './TopToBottomImageAnimation.js';
+//not GWT import - same folder const BaseImageAnimationFactory
+import { TopToBottomImageAnimation } from './TopToBottomImageAnimation.js';
 //not GWT import - same folder const TopToBottomImageAnimation
+
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {
         
 

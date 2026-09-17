@@ -26,6 +26,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FixedPoint } from './FixedPoint.js';
 //not GWT import - same folder const FixedPoint
+
 export class PGUtil
             extends Object
          {

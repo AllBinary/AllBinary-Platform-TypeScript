@@ -39,10 +39,14 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicLayerProcessorInterface } from './BasicLayerProcessorInterface.js';
-//not GWT import - same folder const BasicLayerProcessorInterfaceimport { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManagerimport { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import - same folder const AllBinaryLayerManagerimport { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import - same folder const BasicLayerProcessorInterface
+import { LayerManager } from './LayerManager.js';
+//not GWT import - same folder const LayerManager
+import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
+//not GWT import - same folder const AllBinaryLayerManager
+import { AllBinaryLayer } from './AllBinaryLayer.js';
 //not GWT import - same folder const AllBinaryLayer
+
 export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
         
 

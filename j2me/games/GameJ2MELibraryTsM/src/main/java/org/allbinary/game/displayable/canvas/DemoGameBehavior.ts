@@ -24,14 +24,19 @@
         
 import { GameTypeFactory } from '../../../../../org/allbinary/game/GameTypeFactory.js';
 //not GWT import const GameTypeFactory
+
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -52,6 +57,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class DemoGameBehavior
             extends Object
          {

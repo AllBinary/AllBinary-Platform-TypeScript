@@ -24,10 +24,13 @@
         
 import { OrderIdGenerator } from '../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js';
 //not GWT import const OrderIdGenerator
+
 import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
 //not GWT import const OrderHistoryEntity
+
 import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js';
 //not GWT import const OrderItemsEntity
+
 
 
 
@@ -48,6 +51,7 @@ import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
 //not GWT import - same folder const Order
+
 export class OrderProcessorUtil
             extends Object
          {

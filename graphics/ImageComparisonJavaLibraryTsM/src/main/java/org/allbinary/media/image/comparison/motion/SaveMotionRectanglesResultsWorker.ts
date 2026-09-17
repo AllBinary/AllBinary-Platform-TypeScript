@@ -24,20 +24,28 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -57,10 +65,14 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
-//not GWT import - same folder const MotionRectanglesResultsListenerimport { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import - same folder const MotionRectanglesResultsEventimport { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectanglesimport { MotionRectanglesImageInputOutput } from './MotionRectanglesImageInputOutput.js';
+//not GWT import - same folder const MotionRectanglesResultsListener
+import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+//not GWT import - same folder const MotionRectanglesResultsEvent
+import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import - same folder const MotionRectangles
+import { MotionRectanglesImageInputOutput } from './MotionRectanglesImageInputOutput.js';
 //not GWT import - same folder const MotionRectanglesImageInputOutput
+
 export class SaveMotionRectanglesResultsWorker
             extends Object
          implements MotionRectanglesResultsListener {

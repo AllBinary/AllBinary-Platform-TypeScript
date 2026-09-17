@@ -22,10 +22,13 @@
         
 import { GameInputMotionEventProcessorFactory } from '../../../../../org/allbinary/android/input/motion/GameInputMotionEventProcessorFactory.js';
 //not GWT import const GameInputMotionEventProcessorFactory
+
 import { GameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
 //not GWT import const GameKeyEventHandler
+
 import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
 //not GWT import const BasicMotionGesturesHandler
+
 
 
 

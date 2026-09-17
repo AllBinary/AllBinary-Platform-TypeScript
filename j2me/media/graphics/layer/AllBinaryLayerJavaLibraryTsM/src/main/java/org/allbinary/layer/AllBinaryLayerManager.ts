@@ -22,8 +22,10 @@
         
 import { LayerManagerEvent } from '../../../org/allbinary/layer/event/LayerManagerEvent.js';
 //not GWT import const LayerManagerEvent
+
 import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/LayerManagerEventHandler.js';
 //not GWT import const LayerManagerEventHandler
+
 
 
 
@@ -43,10 +45,14 @@ import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/Lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManagerimport { LayerProcessor } from './LayerProcessor.js';
-//not GWT import - same folder const LayerProcessorimport { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
-//not GWT import - same folder const LayerManagerNoDebugimport { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import - same folder const LayerManager
+import { LayerProcessor } from './LayerProcessor.js';
+//not GWT import - same folder const LayerProcessor
+import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
+//not GWT import - same folder const LayerManagerNoDebug
+import { AllBinaryLayer } from './AllBinaryLayer.js';
 //not GWT import - same folder const AllBinaryLayer
+
 export class AllBinaryLayerManager extends LayerManager {
         
 

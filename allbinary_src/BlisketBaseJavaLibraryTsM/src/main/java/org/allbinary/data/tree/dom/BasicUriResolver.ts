@@ -24,28 +24,40 @@
         
 import { Source } from '../../../../../javax/xml/transform/Source.js';
 //not GWT import const Source
+
 import { TransformerException } from '../../../../../javax/xml/transform/TransformerException.js';
 //not GWT import const TransformerException
+
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 //not GWT import const URIResolver
+
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 //not GWT import const StreamSource
+
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
+
 import { AbFilePath } from '../../../../../org/allbinary/logic/io/path/AbFilePath.js';
 //not GWT import const AbFilePath
+
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
 //not GWT import const TransformInfoTemplateData
+
 
 
 
@@ -66,6 +78,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { URIResolverStrings } from './URIResolverStrings.js';
 //not GWT import - same folder const URIResolverStrings
+
 export class BasicUriResolver
             extends Object
          implements URIResolver {

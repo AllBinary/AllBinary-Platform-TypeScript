@@ -20,16 +20,22 @@
 
 import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { RTSLayer } from '../../../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { WaypointInfoHudPaintable } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointInfoHudPaintable.js';
 //not GWT import const WaypointInfoHudPaintable
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/draw/KeyValueDrawCharArray.js';
 //not GWT import const KeyValueDrawCharArray
+
 
 
 
@@ -50,6 +56,7 @@ import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
 //not GWT import - same folder const GeologicalGeographicMapCellPosition
+
 export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable {
         
 

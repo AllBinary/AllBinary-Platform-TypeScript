@@ -24,12 +24,16 @@
         
 import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
 //not GWT import const InputFactory
+
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 //not GWT import const MotionGestureInput
+
 import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 //not GWT import const TouchMotionGestureFactory
+
 import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
 //not GWT import const AllBinaryEventCircularPool
+
 
 
 
@@ -49,8 +53,10 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventFactory } from './MotionEventFactory.js';
-//not GWT import - same folder const MotionEventFactoryimport { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import - same folder const MotionEventFactory
+import { MotionGestureEvent } from './MotionGestureEvent.js';
 //not GWT import - same folder const MotionGestureEvent
+
 export class MotionEventCircularPool
             extends Object
          {

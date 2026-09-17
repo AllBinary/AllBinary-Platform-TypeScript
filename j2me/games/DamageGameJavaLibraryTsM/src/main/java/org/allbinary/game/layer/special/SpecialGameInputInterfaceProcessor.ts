@@ -36,10 +36,12 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 //not GWT import - same folder const SpecialGameInputInterface
+
 export class SpecialGameInputInterfaceProcessor extends GameInputProcessor {
         
 

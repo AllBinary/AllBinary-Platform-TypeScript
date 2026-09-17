@@ -26,28 +26,40 @@
         
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Map } from '../../../../java/util/Map.js';
 //not GWT import const Map
+
 import { Set } from '../../../../java/util/Set.js';
 //not GWT import const Set
+
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
 //not GWT import const DatabaseConnectionInfoInterface
+
 import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 //not GWT import const DbConnectionInfo
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -67,8 +79,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DynamicInitDb } from './DynamicInitDb.js';
-//not GWT import - same folder const DynamicInitDbimport { InitializerData } from './InitializerData.js';
+//not GWT import - same folder const DynamicInitDb
+import { InitializerData } from './InitializerData.js';
 //not GWT import - same folder const InitializerData
+
 export class InitializerDatabase
             extends Object
          {

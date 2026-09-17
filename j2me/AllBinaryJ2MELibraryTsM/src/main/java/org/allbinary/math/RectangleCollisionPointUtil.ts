@@ -22,8 +22,10 @@
         
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -44,6 +46,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RectangleCollisionUtil } from './RectangleCollisionUtil.js';
 //not GWT import - same folder const RectangleCollisionUtil
+
 export class RectangleCollisionPointUtil
             extends Object
          {

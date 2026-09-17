@@ -24,20 +24,28 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
+
 import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js';
 //not GWT import const NoOperatingSystem
+
 import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
 //not GWT import const OperatingSystems
+
 //not plain js import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -58,6 +66,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SolarisOS } from './SolarisOS.js';
 //not GWT import - same folder const SolarisOS
+
 export class SolarisOperatingSystemFactory
             extends Object
          {

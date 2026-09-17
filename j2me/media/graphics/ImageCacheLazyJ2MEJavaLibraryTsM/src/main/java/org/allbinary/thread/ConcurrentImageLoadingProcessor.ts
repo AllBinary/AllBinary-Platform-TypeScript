@@ -22,14 +22,19 @@
         
 import { ProgressCanvas } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas
+
 import { ProgressCanvasFactory } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 import { ImageCache } from '../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,9 +54,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageLoadingProcessor } from './BaseImageLoadingProcessor.js';
-//not GWT import - same folder const BaseImageLoadingProcessorimport { ABRunnable } from './ABRunnable.js';
-//not GWT import - same folder const ABRunnableimport { ImageThreadPool } from './ImageThreadPool.js';
+//not GWT import - same folder const BaseImageLoadingProcessor
+import { ABRunnable } from './ABRunnable.js';
+//not GWT import - same folder const ABRunnable
+import { ImageThreadPool } from './ImageThreadPool.js';
 //not GWT import - same folder const ImageThreadPool
+
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
         
 

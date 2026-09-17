@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
 //not GWT import - same folder const ScrollSelectionForm
+
 export class ScrollSelectionFormNoneFactory
             extends Object
          {

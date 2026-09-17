@@ -28,10 +28,13 @@
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -51,8 +54,10 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObjectInterface } from './MeteredGameObjectInterface.js';
-//not GWT import - same folder const MeteredGameObjectInterfaceimport { GraphicsAnalysisUtil } from './GraphicsAnalysisUtil.js';
+//not GWT import - same folder const MeteredGameObjectInterface
+import { GraphicsAnalysisUtil } from './GraphicsAnalysisUtil.js';
 //not GWT import - same folder const GraphicsAnalysisUtil
+
 export class MeteredGameObject
             extends Object
          implements MeteredGameObjectInterface {

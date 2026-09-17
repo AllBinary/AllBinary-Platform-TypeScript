@@ -24,20 +24,28 @@
         
 import { GameNotificationEvent } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 //not GWT import const GameNotificationEvent
+
 import { GameNotificationEventHandler } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 //not GWT import const GameNotificationEventHandler
+
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { ErrorSound } from '../../../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
+
 import { PrimaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
 //not GWT import const PrimaryPlayerQueueFactory
+
 
 
 
@@ -58,6 +66,7 @@ import { PrimaryPlayerQueueFactory } from '../../../../../../org/allbinary/media
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseStrings } from './LicenseStrings.js';
 //not GWT import - same folder const LicenseStrings
+
 export class LockedFeatureNotificationUtil
             extends Object
          {

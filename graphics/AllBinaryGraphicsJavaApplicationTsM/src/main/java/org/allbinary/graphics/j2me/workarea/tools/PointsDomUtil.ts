@@ -28,18 +28,25 @@
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { WorkAreaJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
 //not GWT import const WorkAreaJPanel
+
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 //not GWT import const CanvasDom
+
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -59,8 +66,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsUtil } from './PointsUtil.js';
-//not GWT import - same folder const PointsUtilimport { Document } from './Document.js';
+//not GWT import - same folder const PointsUtil
+import { Document } from './Document.js';
 //not GWT import - same folder const Document
+
 export class PointsDomUtil
             extends Object
          {

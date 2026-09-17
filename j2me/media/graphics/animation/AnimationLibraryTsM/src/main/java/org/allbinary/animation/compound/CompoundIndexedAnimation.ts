@@ -22,18 +22,25 @@
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 
 
 
@@ -54,6 +61,7 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterface } from './CompoundAnimationInterface.js';
 //not GWT import - same folder const CompoundAnimationInterface
+
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         
 

@@ -24,22 +24,31 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 //not GWT import const GameConfigurationCentral
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js';
 //not GWT import const ImageToRotationImageArrayUtil
+
 
 
 
@@ -59,8 +68,10 @@ import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import - same folder const ImageArrayRotationAnimationInfoimport { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import - same folder const AdjustedImageArrayRotationAnimation//TWB - Adjustments should be done in the resource creation and not at the animation level
+//not GWT import - same folder const ImageArrayRotationAnimationInfo
+import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
+//not GWT import - same folder const AdjustedImageArrayRotationAnimation
+//TWB - Adjustments should be done in the resource creation and not at the animation level
 export class PooledImageArrayRotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

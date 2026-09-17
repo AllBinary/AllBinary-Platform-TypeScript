@@ -22,36 +22,52 @@
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { OneRowSpriteIndexedAnimationFactory } from '../../../../../org/allbinary/animation/image/sprite/OneRowSpriteIndexedAnimationFactory.js';
 //not GWT import const OneRowSpriteIndexedAnimationFactory
+
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const BaseResourceAnimationInterfaceFactoryInterfaceFactory
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 //not GWT import const ResourceLoadingLevelFactory
+
 import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas
+
 import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
+
 import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
 //not GWT import const ImageCacheFactory
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 //not GWT import const OperatingSystemFactory
+
 import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/ImageCompleteUtil.js';
 //not GWT import const ImageCompleteUtil
+
 
 
 
@@ -71,16 +87,26 @@ import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/Imag
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
-//not GWT import - same folder const TouchButtonBlankResourceimport { TouchButtonResource } from './TouchButtonResource.js';
-//not GWT import - same folder const TouchButtonResourceimport { TouchButtonGenericActionResource } from './TouchButtonGenericActionResource.js';
-//not GWT import - same folder const TouchButtonGenericActionResourceimport { TouchButtonStartResource } from './TouchButtonStartResource.js';
-//not GWT import - same folder const TouchButtonStartResourceimport { TouchButtonUpResource } from './TouchButtonUpResource.js';
-//not GWT import - same folder const TouchButtonUpResourceimport { TouchButtonDownResource } from './TouchButtonDownResource.js';
-//not GWT import - same folder const TouchButtonDownResourceimport { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
-//not GWT import - same folder const TouchButtonTurnLeftResourceimport { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
-//not GWT import - same folder const TouchButtonTurnRightResourceimport { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
-//not GWT import - same folder const TouchButtonStrafeLeftResourceimport { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
+//not GWT import - same folder const TouchButtonBlankResource
+import { TouchButtonResource } from './TouchButtonResource.js';
+//not GWT import - same folder const TouchButtonResource
+import { TouchButtonGenericActionResource } from './TouchButtonGenericActionResource.js';
+//not GWT import - same folder const TouchButtonGenericActionResource
+import { TouchButtonStartResource } from './TouchButtonStartResource.js';
+//not GWT import - same folder const TouchButtonStartResource
+import { TouchButtonUpResource } from './TouchButtonUpResource.js';
+//not GWT import - same folder const TouchButtonUpResource
+import { TouchButtonDownResource } from './TouchButtonDownResource.js';
+//not GWT import - same folder const TouchButtonDownResource
+import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
+//not GWT import - same folder const TouchButtonTurnLeftResource
+import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
+//not GWT import - same folder const TouchButtonTurnRightResource
+import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
+//not GWT import - same folder const TouchButtonStrafeLeftResource
+import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
 //not GWT import - same folder const TouchButtonStrafeRightResource
+
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 

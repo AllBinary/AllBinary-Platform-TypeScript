@@ -24,18 +24,25 @@
         
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -55,9 +62,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import - same folder const Soundsimport { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterfaceimport { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer//NotDeviceSpecificNoMediaMIDP1Library
+//not GWT import - same folder const Sounds
+import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import - same folder const SoundsFactoryInterface
+import { NoPlayer } from './NoPlayer.js';
+//not GWT import - same folder const NoPlayer
+//NotDeviceSpecificNoMediaMIDP1Library
 export class AllBinaryMediaManager
             extends Object
          {

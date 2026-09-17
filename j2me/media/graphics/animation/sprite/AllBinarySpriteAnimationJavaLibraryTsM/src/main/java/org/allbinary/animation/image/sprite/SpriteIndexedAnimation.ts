@@ -24,26 +24,37 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { ColorCompositeInterface } from '../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
 //not GWT import const ColorCompositeInterface
+
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 
 
 

@@ -24,14 +24,19 @@
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream
+
 import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
 //not GWT import const StreamResult
+
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 //not GWT import const StreamSource
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 
 
 
@@ -52,6 +57,7 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XslHelper } from './XslHelper.js';
 //not GWT import - same folder const XslHelper
+
 export class AbXslHelper
             extends Object
          {

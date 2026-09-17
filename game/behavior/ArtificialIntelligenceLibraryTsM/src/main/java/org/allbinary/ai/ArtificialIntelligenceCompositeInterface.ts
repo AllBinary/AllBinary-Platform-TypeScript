@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceInterface } from './ArtificialIntelligenceInterface.js';
 //not GWT import - same folder const ArtificialIntelligenceInterface
+
 export interface ArtificialIntelligenceCompositeInterface {
         
 

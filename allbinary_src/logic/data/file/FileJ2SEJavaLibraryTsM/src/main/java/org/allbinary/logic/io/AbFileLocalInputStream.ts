@@ -20,10 +20,13 @@
 
 import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
 //not GWT import const FileNotFoundException
+
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
 //not GWT import const AbFileNativeUtil
+
 
 
 
@@ -44,6 +47,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
 //not GWT import - same folder const AbFileInputStream
+
 export class AbFileLocalInputStream extends AbFileInputStream {
         
 

@@ -40,11 +40,14 @@ import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/sys
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHardware } from './NoHardware.js';
-//not GWT import - same folder const NoHardwareimport { HardwareInterface } from './HardwareInterface.js';
+//not GWT import - same folder const NoHardware
+import { HardwareInterface } from './HardwareInterface.js';
 //not GWT import - same folder const HardwareInterface
+
 export class HardwareFactory
             extends Object
          {

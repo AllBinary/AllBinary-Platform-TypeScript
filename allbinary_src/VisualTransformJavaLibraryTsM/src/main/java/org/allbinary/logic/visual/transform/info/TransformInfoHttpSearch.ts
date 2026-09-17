@@ -22,18 +22,25 @@
         
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -54,6 +61,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttp } from './TransformInfoHttp.js';
 //not GWT import - same folder const TransformInfoHttp
+
 export class TransformInfoHttpSearch extends TransformInfoHttp {
         
 

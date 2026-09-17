@@ -40,10 +40,12 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCopyUtil } from './ImageCopyUtil.js';
 //not GWT import - same folder const ImageCopyUtil
+
 export class ImageJ2MEScaleUtil
             extends Object
          {

@@ -32,16 +32,22 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 
 
 
@@ -61,11 +67,16 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { NullRunnable } 
-const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;import { ThreadPoolStrings } from './ThreadPoolStrings.js';
-//not GWT import - same folder const ThreadPoolStringsimport { ThreadObjectUtil } from './ThreadObjectUtil.js';
-//not GWT import - same folder const ThreadObjectUtilimport { PooledThread } from './PooledThread.js';
-//not GWT import - same folder const PooledThreadimport { PriorityRunnable } from './PriorityRunnable.js';
+const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+import { ThreadPoolStrings } from './ThreadPoolStrings.js';
+//not GWT import - same folder const ThreadPoolStrings
+import { ThreadObjectUtil } from './ThreadObjectUtil.js';
+//not GWT import - same folder const ThreadObjectUtil
+import { PooledThread } from './PooledThread.js';
+//not GWT import - same folder const PooledThread
+import { PriorityRunnable } from './PriorityRunnable.js';
 //not GWT import - same folder const PriorityRunnable
+
 export class ThreadPool
             extends Object
          {

@@ -22,8 +22,10 @@
         
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 //not GWT import const DbConnectionInfo
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -44,6 +46,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBasic } from './AbSqlBasic.js';
 //not GWT import - same folder const AbSqlBasic
+
 export class AbSqlTable extends AbSqlBasic {
         
 

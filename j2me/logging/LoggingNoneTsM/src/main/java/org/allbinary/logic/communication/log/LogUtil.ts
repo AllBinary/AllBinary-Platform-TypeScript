@@ -39,7 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { Log } 
-const Log = globalThis.org.allbinary.logic.communication.log.Log;//ActualPlatform
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

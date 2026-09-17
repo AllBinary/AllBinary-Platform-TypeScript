@@ -22,14 +22,19 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
 //not GWT import const TiledLayer
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -50,6 +55,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
 //not GWT import - same folder const AllBinaryTiledLayer
+
 export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
         
 

@@ -24,12 +24,16 @@
         
 import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 //not GWT import const MainFeatureFactory
+
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 
 
 
@@ -50,6 +54,7 @@ import { CommandListener } from '../../../javax/microedition/lcdui/CommandListen
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RunnableCanvas } from './RunnableCanvas.js';
 //not GWT import - same folder const RunnableCanvas
+
 export class FullScreenUtil
             extends Object
          {

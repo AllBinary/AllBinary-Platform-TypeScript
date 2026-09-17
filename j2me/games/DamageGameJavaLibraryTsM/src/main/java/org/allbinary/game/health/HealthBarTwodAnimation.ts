@@ -22,8 +22,10 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -44,6 +46,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarAnimation } from './HealthBarAnimation.js';
 //not GWT import - same folder const HealthBarAnimation
+
 export class HealthBarTwodAnimation extends HealthBarAnimation {
         
 

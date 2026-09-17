@@ -37,8 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptOutputInterface } from './ProfileActionScriptOutputInterface.js';
-//not GWT import - same folder const ProfileActionScriptOutputInterfaceimport { ImageTypes } from './ImageTypes.js';
+//not GWT import - same folder const ProfileActionScriptOutputInterface
+import { ImageTypes } from './ImageTypes.js';
 //not GWT import - same folder const ImageTypes
+
 export interface ImageActionScriptOutputInterface extends ProfileActionScriptOutputInterface {
         
 

@@ -22,12 +22,16 @@
         
 import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
 //not GWT import const AppletUtil
+
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
+
 import { GameCommandsFactory } from '../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
 //not GWT import const MyCanvas
+
 
 
 

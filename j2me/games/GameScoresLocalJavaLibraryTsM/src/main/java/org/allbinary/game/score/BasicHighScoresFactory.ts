@@ -8,12 +8,16 @@
         
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
 //not GWT import const SoftwareInformation
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -33,13 +37,20 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-//not GWT import - same folder const HighScoresBaseimport { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScoresimport { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListenerimport { RecordStoreHighScores } from './RecordStoreHighScores.js';
-//not GWT import - same folder const RecordStoreHighScoresimport { ScoreComparator } from './ScoreComparator.js';
-//not GWT import - same folder const ScoreComparatorimport { HighScoresHelper2 } from './HighScoresHelper2.js';
-//not GWT import - same folder const HighScoresHelper2import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import - same folder const HighScoresBase
+import { HighScores } from './HighScores.js';
+//not GWT import - same folder const HighScores
+import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+//not GWT import - same folder const HighScoresResultsListener
+import { RecordStoreHighScores } from './RecordStoreHighScores.js';
+//not GWT import - same folder const RecordStoreHighScores
+import { ScoreComparator } from './ScoreComparator.js';
+//not GWT import - same folder const ScoreComparator
+import { HighScoresHelper2 } from './HighScoresHelper2.js';
+//not GWT import - same folder const HighScoresHelper2
+import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 //not GWT import - same folder const HighScoresHelperBaseInterface
+
 export class BasicHighScoresFactory extends HighScoresBase {
         
 

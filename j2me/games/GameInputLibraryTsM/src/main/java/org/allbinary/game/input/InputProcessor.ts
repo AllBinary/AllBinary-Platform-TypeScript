@@ -38,10 +38,12 @@ import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputStrings } from './GameInputStrings.js';
 //not GWT import - same folder const GameInputStrings
+
 export class InputProcessor
             extends Object
          {

@@ -24,16 +24,22 @@
         
 import { AllMotionRecognizer } from '../../../org/allbinary/input/motion/AllMotionRecognizer.js';
 //not GWT import const AllMotionRecognizer
+
 import { BasicMotionGesturesHandler } from '../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
 //not GWT import const BasicMotionGesturesHandler
+
 import { GameMotionGestureListener } from '../../../org/allbinary/input/motion/gesture/observer/GameMotionGestureListener.js';
 //not GWT import const GameMotionGestureListener
+
 import { MotionGestureReceiveInterfaceFactory } from '../../../org/allbinary/input/motion/gesture/observer/MotionGestureReceiveInterfaceFactory.js';
 //not GWT import const MotionGestureReceiveInterfaceFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

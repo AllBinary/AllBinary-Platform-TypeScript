@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRole } from './BasicUserRole.js';
 //not GWT import - same folder const BasicUserRole
+
 export class BasicUserRoleFactory
             extends Object
          {

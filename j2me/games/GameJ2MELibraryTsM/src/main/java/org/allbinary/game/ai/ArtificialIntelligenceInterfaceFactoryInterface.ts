@@ -22,12 +22,16 @@
         
 import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 

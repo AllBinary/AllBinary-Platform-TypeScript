@@ -22,18 +22,25 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 
 
 
@@ -53,9 +60,12 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RotationAnimation } from './RotationAnimation.js';
-//not GWT import - same folder const RotationAnimationimport { VectorAnimationInterface } from './VectorAnimationInterface.js';
-//not GWT import - same folder const VectorAnimationInterfaceimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const RotationAnimation
+import { VectorAnimationInterface } from './VectorAnimationInterface.js';
+//not GWT import - same folder const VectorAnimationInterface
+import { AnimationBehavior } from './AnimationBehavior.js';
 //not GWT import - same folder const AnimationBehavior
+
 export class VectorBaseRotationAnimation extends RotationAnimation implements VectorAnimationInterface {
         
 

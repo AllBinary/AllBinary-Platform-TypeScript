@@ -24,36 +24,52 @@
         
 import { BufferedInputStream } from '../../../../java/io/BufferedInputStream.js';
 //not GWT import const BufferedInputStream
+
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 //not GWT import const ByteArrayInputStream
+
 import { IOException } from '../../../../java/io/IOException.js';
 //not GWT import const IOException
+
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { Manager } from '../../../../javax/microedition/media/Manager.js';
 //not GWT import const Manager
+
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
+
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/AudioContentTypeDataFactory.js';
 //not GWT import const AudioContentTypeDataFactory
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 //not GWT import const GameFeatureFactory
+
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -73,10 +89,14 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import - same folder const Soundsimport { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterfaceimport { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayerimport { PCClipWavPlayer } from './PCClipWavPlayer.js';
-//not GWT import - same folder const PCClipWavPlayer//J2SEMediaMIDPMinimalJavaLibrary
+//not GWT import - same folder const Sounds
+import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import - same folder const SoundsFactoryInterface
+import { NoPlayer } from './NoPlayer.js';
+//not GWT import - same folder const NoPlayer
+import { PCClipWavPlayer } from './PCClipWavPlayer.js';
+//not GWT import - same folder const PCClipWavPlayer
+//J2SEMediaMIDPMinimalJavaLibrary
 export class AllBinaryMediaManager
             extends Object
          {

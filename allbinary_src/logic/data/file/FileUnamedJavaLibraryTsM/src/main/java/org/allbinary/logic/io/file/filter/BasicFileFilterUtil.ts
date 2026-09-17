@@ -22,12 +22,16 @@
         
 import { FileFilter } from '../../../../../../java/io/FileFilter.js';
 //not GWT import const FileFilter
+
 import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/allbinary/logic/io/file/visitor/IncludeFileExtensionsBooleanFileVisitor.js';
 //not GWT import const IncludeFileExtensionsBooleanFileVisitor
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -48,6 +52,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VisitorFileFilter } from './VisitorFileFilter.js';
 //not GWT import - same folder const VisitorFileFilter
+
 export class BasicFileFilterUtil
             extends Object
          {

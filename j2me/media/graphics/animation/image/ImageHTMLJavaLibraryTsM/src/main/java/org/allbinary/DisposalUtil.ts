@@ -38,6 +38,7 @@ import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         

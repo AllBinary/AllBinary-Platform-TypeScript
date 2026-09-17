@@ -22,10 +22,13 @@
         
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 
 
 
@@ -46,6 +49,7 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RelativeLayerRelationship } from './RelativeLayerRelationship.js';
 //not GWT import - same folder const RelativeLayerRelationship
+
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {
         
 

@@ -24,22 +24,31 @@
         
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 //not GWT import const PathFindingLayerInterface
+
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { GeologicalGeographicMapCellPosition } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalGeographicMapCellPosition.js';
 //not GWT import const GeologicalGeographicMapCellPosition
+
 import { GeologicalResource } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalResource.js';
 //not GWT import const GeologicalResource
+
 import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 //not GWT import const UnitLayer
+
 import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
 //not GWT import const UnitWaypointBehavior
+
 import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js';
 //not GWT import const WorkSound
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 
 
 
@@ -59,8 +68,10 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Waypoint } from './Waypoint.js';
-//not GWT import - same folder const Waypointimport { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
+//not GWT import - same folder const Waypoint
+import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
 //not GWT import - same folder const WaypointInfoHudPaintable
+
 export class WorkWaypoint extends Waypoint {
         
 

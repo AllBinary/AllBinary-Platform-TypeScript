@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
 //not GWT import - same folder const LayerManagerLoggingBase
+
 export class LayerManagerNoDebug extends LayerManagerLoggingBase {
         
 

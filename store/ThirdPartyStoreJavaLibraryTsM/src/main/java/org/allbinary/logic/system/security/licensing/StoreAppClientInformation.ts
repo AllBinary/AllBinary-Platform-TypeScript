@@ -36,10 +36,12 @@ import { LongArrayIdentifierInterface } from '../../../../../../org/allbinary/th
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
 //not GWT import - same folder const AbeClientInformation
+
 export class StoreAppClientInformation extends AbeClientInformation implements LongArrayIdentifierInterface {
         
 

@@ -22,26 +22,37 @@
         
 import { DynamicObjectData } from '../../../org/allbinary/business/DynamicObjectData.js';
 //not GWT import const DynamicObjectData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 import { NewWorkFlowFactory } from '../../../org/allbinary/logic/control/workflow/NewWorkFlowFactory.js';
 //not GWT import const NewWorkFlowFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 //not GWT import const TransformInfoHttpInterface
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -62,6 +73,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowView } from './WorkFlowView.js';
 //not GWT import - same folder const WorkFlowView
+
 export class NewView extends WorkFlowView implements ValidationComponentInterface {
         
 

@@ -10,18 +10,25 @@
         
 import { Feature } from '../../../org/allbinary/game/configuration/feature/Feature.js';
 //not GWT import const Feature
+
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 //not GWT import const MainFeatureFactory
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

@@ -22,26 +22,37 @@
         
 import { HashMap } from '../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 //not GWT import const InventoryEntityFactory
+
 import { RequestParams } from '../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -62,6 +73,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryItemView } from './InventoryItemView.js';
 //not GWT import - same folder const InventoryItemView
+
 export class DeleteFileValidationView extends InventoryItemView implements ValidationComponentInterface {
         
 

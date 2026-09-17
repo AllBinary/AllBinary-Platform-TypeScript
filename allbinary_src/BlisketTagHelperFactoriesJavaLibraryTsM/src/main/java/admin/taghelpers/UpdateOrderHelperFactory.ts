@@ -22,12 +22,16 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -47,8 +51,10 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactory } from './TagHelperFactory.js';
-//not GWT import - same folder const TagHelperFactoryimport { UpdateOrderHelper } from './UpdateOrderHelper.js';
+//not GWT import - same folder const TagHelperFactory
+import { UpdateOrderHelper } from './UpdateOrderHelper.js';
 //not GWT import - same folder const UpdateOrderHelper
+
 export class UpdateOrderHelperFactory extends TagHelperFactory {
         
 

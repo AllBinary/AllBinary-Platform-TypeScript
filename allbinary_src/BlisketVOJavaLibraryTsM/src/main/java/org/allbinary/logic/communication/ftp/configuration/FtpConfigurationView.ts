@@ -24,18 +24,25 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -55,10 +62,14 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import - same folder const FtpConfigurationInterfaceimport { FtpConfiguration } from './FtpConfiguration.js';
-//not GWT import - same folder const FtpConfigurationimport { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import - same folder const FtpConfigurationDataimport { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
+//not GWT import - same folder const FtpConfigurationInterface
+import { FtpConfiguration } from './FtpConfiguration.js';
+//not GWT import - same folder const FtpConfiguration
+import { FtpConfigurationData } from './FtpConfigurationData.js';
+//not GWT import - same folder const FtpConfigurationData
+import { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
 //not GWT import - same folder const FtpConfigurationMapping
+
 export class FtpConfigurationView
             extends Object
          implements DomNodeInterface {

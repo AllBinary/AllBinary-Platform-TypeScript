@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -51,8 +56,10 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontInventoryStatisticsInterface } from './StoreFrontInventoryStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontInventoryStatisticsInterfaceimport { StoreFrontInventoryStatisticsData } from './StoreFrontInventoryStatisticsData.js';
+//not GWT import - same folder const StoreFrontInventoryStatisticsInterface
+import { StoreFrontInventoryStatisticsData } from './StoreFrontInventoryStatisticsData.js';
 //not GWT import - same folder const StoreFrontInventoryStatisticsData
+
 export class StoreFrontInventoryStatisticsView
             extends Object
          implements DomNodeInterface {

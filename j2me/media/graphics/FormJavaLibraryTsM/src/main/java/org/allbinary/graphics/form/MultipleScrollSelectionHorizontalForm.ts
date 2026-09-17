@@ -8,32 +8,46 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
 //not GWT import const MyFontProcessor
+
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
 //not GWT import const UpdateMyFontInterface
+
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
 //not GWT import const UpdateMyFontProcessor
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -53,13 +67,20 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import - same folder const ScrollSelectionFormimport { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactoryimport { FormType } from './FormType.js';
-//not GWT import - same folder const FormTypeimport { ItemIndexPaintable } from './ItemIndexPaintable.js';
-//not GWT import - same folder const ItemIndexPaintableimport { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory//import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
-//not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable//import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
+//not GWT import - same folder const ScrollSelectionForm
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import - same folder const ItemPaintableFactory
+import { FormType } from './FormType.js';
+//not GWT import - same folder const FormType
+import { ItemIndexPaintable } from './ItemIndexPaintable.js';
+//not GWT import - same folder const ItemIndexPaintable
+import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import - same folder const FormTypeFactory
+//import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
+//not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable
+//import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
 //not GWT import - same folder const MultipleScrollSelectionFormHorizontalPaintable
+
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 

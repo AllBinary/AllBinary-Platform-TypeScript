@@ -22,14 +22,19 @@
         
 import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
 //not GWT import const AndroidUtil
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,8 +54,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
-//not GWT import - same folder const GameRunnableimport { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import - same folder const GameRunnable
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class GameCanvasPauseRunnable extends GameRunnable {
         
 

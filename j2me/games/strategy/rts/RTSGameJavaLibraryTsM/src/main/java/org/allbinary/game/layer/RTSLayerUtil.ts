@@ -26,32 +26,46 @@
         
 import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
 //not GWT import const GroupCommonFactory
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
+
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 //not GWT import const BasicGroupFactory
+
 import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
 //not GWT import const PartInterface
+
 import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
 //not GWT import const BasicWeaponPart
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
 //not GWT import const BaseRaceTrackGeographicMap
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -71,9 +85,12 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayerimport { FakeLayerManager } from './FakeLayerManager.js';
-//not GWT import - same folder const FakeLayerManagerimport { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
+//not GWT import - same folder const RTSLayer
+import { FakeLayerManager } from './FakeLayerManager.js';
+//not GWT import - same folder const FakeLayerManager
+import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
 //not GWT import - same folder const AllBinaryGameLayerManager
+
 export class RTSLayerUtil
             extends Object
          {

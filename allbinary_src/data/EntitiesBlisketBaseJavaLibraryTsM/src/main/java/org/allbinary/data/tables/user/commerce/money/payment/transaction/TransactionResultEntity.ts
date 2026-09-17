@@ -24,34 +24,49 @@
         
 import { Calendar } from '../../../../../../../../../java/util/Calendar.js';
 //not GWT import const Calendar
+
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
+
 import { UserData } from '../../../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { OrderData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
 //not GWT import const OrderData
+
 import { PaymentTransactionKeysFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionKeysFactory.js';
 //not GWT import const PaymentTransactionKeysFactory
+
 import { TransactionResult } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/TransactionResult.js';
 //not GWT import const TransactionResult
+
 import { TransactionResultInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/TransactionResultInterface.js';
 //not GWT import const TransactionResultInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -72,6 +87,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionResultEntityInterface } from './TransactionResultEntityInterface.js';
 //not GWT import - same folder const TransactionResultEntityInterface
+
 export class TransactionResultEntity extends AbSqlBean implements TransactionResultEntityInterface {
         
 

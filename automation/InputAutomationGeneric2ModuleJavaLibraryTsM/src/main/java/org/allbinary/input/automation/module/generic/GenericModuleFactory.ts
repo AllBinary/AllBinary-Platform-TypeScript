@@ -22,20 +22,28 @@
         
 import { AbstractInputAutomationFactory } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
 //not GWT import const AbstractInputAutomationFactory
+
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 //not GWT import const InputAutomationActionInterface
+
 import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
 //not GWT import const InputAutomationModuleData
+
 import { GenericModuleConfigurationJPanel } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/GenericModuleConfigurationJPanel.js';
 //not GWT import const GenericModuleConfigurationJPanel
+
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 //not GWT import const GenericProfile
+
 import { NoImageComparatorConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoImageComparatorConstraints.js';
 //not GWT import const NoImageComparatorConstraints
+
 import { NoMotionRectangleConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoMotionRectangleConstraints.js';
 //not GWT import const NoMotionRectangleConstraints
+
 import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
+
 
 
 
@@ -55,8 +63,10 @@ import { RunnableInterface } from '../../../../../../org/allbinary/thread/Runnab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericInputAutomationAction } from './GenericInputAutomationAction.js';
-//not GWT import - same folder const GenericInputAutomationActionimport { GenericInputAutomationWorker } from './GenericInputAutomationWorker.js';
+//not GWT import - same folder const GenericInputAutomationAction
+import { GenericInputAutomationWorker } from './GenericInputAutomationWorker.js';
 //not GWT import - same folder const GenericInputAutomationWorker
+
 export class GenericModuleFactory extends AbstractInputAutomationFactory {
         
 

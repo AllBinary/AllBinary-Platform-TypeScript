@@ -24,26 +24,37 @@
         
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { AcceptableResponseGenerator } from '../../../../../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
 //not GWT import const AcceptableResponseGenerator
+
 import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -64,6 +75,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformDocumentInterface } from './TransformDocumentInterface.js';
 //not GWT import - same folder const TransformDocumentInterface
+
 export class TransformHttpRequestDocument
             extends Object
          implements TransformDocumentInterface {

@@ -22,10 +22,13 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 
 
 
@@ -45,8 +48,10 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayBaseRotationAnimation } from './ImageArrayBaseRotationAnimation.js';
-//not GWT import - same folder const ImageArrayBaseRotationAnimationimport { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
+//not GWT import - same folder const ImageArrayBaseRotationAnimation
+import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
 //not GWT import - same folder const ImageArrayRotationAnimationInfo
+
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {
         
 

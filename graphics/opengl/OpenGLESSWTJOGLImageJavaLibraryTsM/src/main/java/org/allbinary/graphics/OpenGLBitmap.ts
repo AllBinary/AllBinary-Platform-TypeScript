@@ -6,14 +6,19 @@
 
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { DisposalUtil } from '../../../org/allbinary/DisposalUtil.js';
 //not GWT import const DisposalUtil
+
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 //not GWT import const PlatformBitmapBase
+
 import { SwtImmutableImage } from '../../../org/microemu/device/swt/SwtImmutableImage.js';
 //not GWT import const SwtImmutableImage
+
 import { SwtMutableImage } from '../../../org/microemu/device/swt/SwtMutableImage.js';
 //not GWT import const SwtMutableImage
+
 
 
 

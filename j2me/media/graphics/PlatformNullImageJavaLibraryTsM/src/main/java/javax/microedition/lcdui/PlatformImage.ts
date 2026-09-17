@@ -40,12 +40,16 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullImage } from './NullImage.js';
-//not GWT import - same folder const NullImageimport { Image } from './Image.js';
-//not GWT import - same folder const Imageimport { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics//PlatformNullImageJavaLibrary
+//not GWT import - same folder const NullImage
+import { Image } from './Image.js';
+//not GWT import - same folder const Image
+import { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics
+//PlatformNullImageJavaLibrary
 export class PlatformImage
             extends Object
          {

@@ -20,12 +20,16 @@
 
 import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
 //not GWT import const StoreFrontAdvertisementsStatisticsInterface
+
 import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
 //not GWT import const StoreFrontInventoryStatisticsInterface
+
 import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
 //not GWT import const StoreFrontOrdersHistoryStatisticsInterface
+
 import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
 //not GWT import const StoreFrontUsersStatisticsInterface
+
 
 
 

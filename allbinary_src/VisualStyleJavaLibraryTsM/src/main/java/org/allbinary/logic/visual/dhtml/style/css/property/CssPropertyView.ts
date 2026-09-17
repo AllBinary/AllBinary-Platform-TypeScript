@@ -24,12 +24,16 @@
         
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -50,6 +54,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssProperty } from './CssProperty.js';
 //not GWT import - same folder const CssProperty
+
 export class CssPropertyView
             extends Object
          implements DomNodeInterface {

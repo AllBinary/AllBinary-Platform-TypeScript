@@ -22,8 +22,10 @@
         
 import { LogConfigTypes } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 
 
 
@@ -44,6 +46,7 @@ import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/c
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
 //not GWT import - same folder const LogConfigType
+
 export class LogConfigTypeFactory
             extends Object
          {

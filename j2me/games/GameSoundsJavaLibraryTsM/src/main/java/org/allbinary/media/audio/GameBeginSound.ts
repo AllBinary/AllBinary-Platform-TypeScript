@@ -37,8 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompositeSound } from './CompositeSound.js';
-//not GWT import - same folder const CompositeSoundimport { Sound } from './Sound.js';
-//not GWT import - same folder const Sound//Use 8hz16bitmono for most J2ME
+//not GWT import - same folder const CompositeSound
+import { Sound } from './Sound.js';
+//not GWT import - same folder const Sound
+//Use 8hz16bitmono for most J2ME
 export class GameBeginSound extends CompositeSound {
         
 

@@ -22,16 +22,22 @@
         
 import { ActionEvent } from '../../../../../../../../java/awt/event/ActionEvent.js';
 //not GWT import const ActionEvent
+
 import { JTreeInterfaceFactory } from '../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
 //not GWT import const JTreeInterfaceFactory
+
 import { ProfileActionScriptItem } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
 //not GWT import const ProfileActionScriptItem
+
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
 //not GWT import const ProfileActionScriptConditionInterface
+
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -51,8 +57,10 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptProcessorInterface } from './ProfileActionScriptProcessorInterface.js';
-//not GWT import - same folder const ProfileActionScriptProcessorInterfaceimport { GenericProfileActionScriptProcessorData } from './GenericProfileActionScriptProcessorData.js';
+//not GWT import - same folder const ProfileActionScriptProcessorInterface
+import { GenericProfileActionScriptProcessorData } from './GenericProfileActionScriptProcessorData.js';
 //not GWT import - same folder const GenericProfileActionScriptProcessorData
+
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {
         
 

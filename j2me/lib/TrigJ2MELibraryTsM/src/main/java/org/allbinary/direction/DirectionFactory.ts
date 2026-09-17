@@ -22,10 +22,13 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -46,6 +49,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Direction } from './Direction.js';
 //not GWT import - same folder const Direction
+
 export class DirectionFactory
             extends Object
          {

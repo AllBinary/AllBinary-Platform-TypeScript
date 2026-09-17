@@ -22,58 +22,85 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { RTSGameStrings } from '../../../../org/allbinary/game/layer/RTSGameStrings.js';
 //not GWT import const RTSGameStrings
+
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { RTSLayerInfoPaintable } from '../../../../org/allbinary/game/layer/RTSLayerInfoPaintable.js';
 //not GWT import const RTSLayerInfoPaintable
+
 import { RTSPlayerLayerInterface } from '../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
 //not GWT import const Capital
+
 import { DowngradeSound } from '../../../../org/allbinary/media/audio/DowngradeSound.js';
 //not GWT import const DowngradeSound
+
 import { UpgradeSound } from '../../../../org/allbinary/media/audio/UpgradeSound.js';
 //not GWT import const UpgradeSound
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
 //not GWT import const InputFeatureFactory
+
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { GameNotificationEvent } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 //not GWT import const GameNotificationEvent
+
 import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 //not GWT import const GameNotificationEventHandler
+
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { ErrorSound } from '../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 
 
 
@@ -93,14 +120,22 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInputimport { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactoryimport { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessorimport { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterfaceimport { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-//not GWT import - same folder const RTSPlayerGameInputimport { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from './SelectedRTSLayersPlayerUpgradeGameInputProcessor.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerUpgradeGameInputProcessorimport { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from './SelectedRTSLayersPlayerDowngradeGameInputProcessor.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerDowngradeGameInputProcessorimport { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
+//not GWT import - same folder const PlayerGameInput
+import { InputFactory } from './InputFactory.js';
+//not GWT import - same folder const InputFactory
+import { GameInputProcessor } from './GameInputProcessor.js';
+//not GWT import - same folder const GameInputProcessor
+import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
+//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
+import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
+//not GWT import - same folder const RTSPlayerGameInput
+import { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from './SelectedRTSLayersPlayerUpgradeGameInputProcessor.js';
+//not GWT import - same folder const SelectedRTSLayersPlayerUpgradeGameInputProcessor
+import { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from './SelectedRTSLayersPlayerDowngradeGameInputProcessor.js';
+//not GWT import - same folder const SelectedRTSLayersPlayerDowngradeGameInputProcessor
+import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
 //not GWT import - same folder const GameInputProcessorUtil
+
 export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {
         
 

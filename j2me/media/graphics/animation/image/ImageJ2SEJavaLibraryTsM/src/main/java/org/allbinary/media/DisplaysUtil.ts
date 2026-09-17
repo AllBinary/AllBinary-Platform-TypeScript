@@ -22,18 +22,25 @@
         
 import { Dimension } from '../../../java/awt/Dimension.js';
 //not GWT import const Dimension
+
 import { DisplayMode } from '../../../java/awt/DisplayMode.js';
 //not GWT import const DisplayMode
+
 import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
 //not GWT import const GraphicsDevice
+
 import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
 //not GWT import const GraphicsEnvironment
+
 import { Toolkit } from '../../../java/awt/Toolkit.js';
 //not GWT import const Toolkit
+
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 
 
 

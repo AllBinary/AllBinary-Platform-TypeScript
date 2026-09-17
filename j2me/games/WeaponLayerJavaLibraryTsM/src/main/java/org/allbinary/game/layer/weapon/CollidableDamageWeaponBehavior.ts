@@ -22,22 +22,31 @@
         
 import { CollidableHelperFactory } from '../../../../../org/allbinary/game/collision/CollidableHelperFactory.js';
 //not GWT import const CollidableHelperFactory
+
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 //not GWT import const CollidableInterfaceCompositeInterface
+
 import { CollisionHelper } from '../../../../../org/allbinary/game/collision/CollisionHelper.js';
 //not GWT import const CollisionHelper
+
 import { CollisionType } from '../../../../../org/allbinary/game/collision/CollisionType.js';
 //not GWT import const CollisionType
+
 import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
 //not GWT import const CollisionTypeFactory
+
 import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
 //not GWT import const DamageableInterface
+
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { CollidableDestroyableDamageableBehavior } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
 //not GWT import const CollidableDestroyableDamageableBehavior
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 

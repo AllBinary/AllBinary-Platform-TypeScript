@@ -22,16 +22,22 @@
         
 import { TextNotificationUtil } from '../../../../../../org/allbinary/game/input/TextNotificationUtil.js';
 //not GWT import const TextNotificationUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

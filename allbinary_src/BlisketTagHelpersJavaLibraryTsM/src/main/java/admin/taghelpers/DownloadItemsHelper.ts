@@ -22,16 +22,22 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 //not GWT import const Portion
+
 import { DownloadItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/downloads/DownloadItemsEntityFactory.js';
 //not GWT import const DownloadItemsEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
+
 
 
 
@@ -52,6 +58,7 @@ import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSq
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
 //not GWT import - same folder const BasicTable
+
 export class DownloadItemsHelper extends BasicTable {
         
 

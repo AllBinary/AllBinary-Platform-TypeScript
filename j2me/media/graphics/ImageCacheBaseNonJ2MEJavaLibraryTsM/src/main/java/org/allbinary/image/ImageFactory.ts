@@ -24,8 +24,10 @@
         
 import { InputStream } from '../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 
 
 

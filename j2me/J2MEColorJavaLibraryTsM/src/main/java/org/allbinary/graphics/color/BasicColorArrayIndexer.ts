@@ -41,10 +41,12 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
 //not GWT import - same folder const BasicColor
+
 export class BasicColorArrayIndexer
             extends Object
          {

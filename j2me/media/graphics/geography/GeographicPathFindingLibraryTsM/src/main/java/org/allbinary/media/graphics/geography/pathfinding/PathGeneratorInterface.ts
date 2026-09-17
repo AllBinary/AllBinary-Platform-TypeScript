@@ -22,10 +22,13 @@
         
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 //not GWT import const GeographicMapCellHistory
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -46,6 +49,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingInfo } from './PathFindingInfo.js';
 //not GWT import - same folder const PathFindingInfo
+
 export interface PathGeneratorInterface {
         
 

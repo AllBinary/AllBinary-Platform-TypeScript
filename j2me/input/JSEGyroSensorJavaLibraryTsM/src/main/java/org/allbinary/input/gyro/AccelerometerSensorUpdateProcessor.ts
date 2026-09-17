@@ -22,16 +22,22 @@
         
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 //not GWT import const SensorFeatureFactory
+
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
 //not GWT import const NoCompleteMotionGestureInputEventListener
+
 import { SingleKeyPressGameKeyFromMotionGestureEventListener } from '../../../../org/allbinary/game/input/motion/action/SingleKeyPressGameKeyFromMotionGestureEventListener.js';
 //not GWT import const SingleKeyPressGameKeyFromMotionGestureEventListener
+
 import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
 //not GWT import const AccelerometerSensorFactory
+
 
 
 

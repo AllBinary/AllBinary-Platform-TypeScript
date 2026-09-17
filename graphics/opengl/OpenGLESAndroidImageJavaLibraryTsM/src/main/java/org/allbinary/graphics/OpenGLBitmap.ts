@@ -6,8 +6,10 @@
 
 import { Bitmap } from '../../../android/graphics/Bitmap.js';
 //not GWT import const Bitmap
+
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 //not GWT import const PlatformBitmapBase
+
 
 
 

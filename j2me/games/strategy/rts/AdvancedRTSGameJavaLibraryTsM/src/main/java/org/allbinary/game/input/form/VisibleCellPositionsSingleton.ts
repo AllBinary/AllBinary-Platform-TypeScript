@@ -24,32 +24,46 @@
         
 import { SimpleTiledLayer } from '../../../../../javax/microedition/lcdui/game/SimpleTiledLayer.js';
 //not GWT import const SimpleTiledLayer
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 //not GWT import const RTSLayerEvent
+
 import { BuildingEventListenerInterface } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js';
 //not GWT import const BuildingEventListenerInterface
+
 import { LocalPlayerBuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/LocalPlayerBuildingEventHandler.js';
 //not GWT import const LocalPlayerBuildingEventHandler
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 import { ScrollMapEvent } from '../../../../../org/allbinary/layer/event/ScrollMapEvent.js';
 //not GWT import const ScrollMapEvent
+
 import { ScrollMapEventHandler } from '../../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
 //not GWT import const ScrollMapEventHandler
+
 import { ScrollMapEventListenerInterface } from '../../../../../org/allbinary/layer/event/ScrollMapEventListenerInterface.js';
 //not GWT import const ScrollMapEventListenerInterface
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 
 
 

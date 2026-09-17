@@ -22,18 +22,25 @@
         
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StoreTransformer } from '../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
 //not GWT import const StoreTransformer
+
 import { TransformStoreDocumentFactory } from '../../../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js';
 //not GWT import const TransformStoreDocumentFactory
+
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { HttpComponentView } from '../../../../../views/HttpComponentView.js';
 //not GWT import const HttpComponentView
+
 
 
 

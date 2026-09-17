@@ -20,8 +20,10 @@
 
 import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
 //not GWT import const LocalPlayerInputIdFactory
+
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 
 
 
@@ -42,6 +44,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpGameKeyEventHandlerBase } from './UpGameKeyEventHandlerBase.js';
 //not GWT import - same folder const UpGameKeyEventHandlerBase
+
 export class UpGameKeyEventHandler extends UpGameKeyEventHandlerBase {
         
 

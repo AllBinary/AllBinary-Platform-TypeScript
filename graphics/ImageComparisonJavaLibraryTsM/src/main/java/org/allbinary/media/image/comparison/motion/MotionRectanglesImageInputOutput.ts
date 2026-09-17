@@ -26,42 +26,61 @@
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
 //not GWT import const ImageOutputData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 //not GWT import const LongUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
+
 import { PoolInterface } from '../../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
 //not GWT import const PoolInterface
+
 import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
 //not GWT import const MediaDataFactory
+
 import { ImagePersistanceUtil } from '../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 //not GWT import const ImagePersistanceUtil
+
 import { BufferedImageCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
 //not GWT import const BufferedImageCacheable
+
 import { BufferedImageInfo } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
 //not GWT import const BufferedImageInfo
+
 import { BufferedImageInfoFactory } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
 //not GWT import const BufferedImageInfoFactory
+
 import { BufferedImagePoolSingleton } from '../../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
 //not GWT import const BufferedImagePoolSingleton
+
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
 //not GWT import const ImageComparisonResult
+
 import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 //not GWT import const ImageIOInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -81,15 +100,24 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const AllMotionRectanglesResultsCacheSingletonimport { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-//not GWT import - same folder const MotionRectanglesResultsFrameCacheableimport { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectanglesimport { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingletonimport { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingletonimport { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphicsimport { MotionRectangle } from './MotionRectangle.js';
-//not GWT import - same folder const MotionRectangleimport { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangleimport { Color } from './Color.js';
+//not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton
+import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
+//not GWT import - same folder const MotionRectanglesResultsFrameCacheable
+import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import - same folder const MotionRectangles
+import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton
+import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton
+import { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics
+import { MotionRectangle } from './MotionRectangle.js';
+//not GWT import - same folder const MotionRectangle
+import { Rectangle } from './Rectangle.js';
+//not GWT import - same folder const Rectangle
+import { Color } from './Color.js';
 //not GWT import - same folder const Color
+
 export class MotionRectanglesImageInputOutput
             extends Object
          implements ImageIOInterface {

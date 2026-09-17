@@ -24,10 +24,13 @@
         
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInitVisitorInterface.js';
 //not GWT import const GeographicMapCellPositionFactoryInitVisitorInterface
+
 
 
 
@@ -48,6 +51,7 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
 //not GWT import - same folder const GeologicalGeographicMapCellPosition
+
 export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             extends Object
          implements GeographicMapCellPositionFactoryInitVisitorInterface {

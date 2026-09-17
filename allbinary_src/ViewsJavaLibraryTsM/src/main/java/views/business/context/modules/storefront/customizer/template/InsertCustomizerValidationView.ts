@@ -22,48 +22,70 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { TransformInfoEntityBuilder } from '../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
 //not GWT import const TransformInfoEntityBuilder
+
 import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationComponentInterface } from '../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { TransformFactory } from '../../../../../../../org/allbinary/logic/visual/transform/TransformFactory.js';
 //not GWT import const TransformFactory
+
 import { TransformInterface } from '../../../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
+
 import { GeneratorTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/GeneratorTransformInfoData.js';
 //not GWT import const GeneratorTransformInfoData
+
 import { TransformInfo } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
 //not GWT import const TransformInfo
+
 import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 //not GWT import const TransformInfoData
+
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { TransformInfosData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
 //not GWT import const TransformInfosData
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { HttpStoreComponentView } from '../../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 //not GWT import const HttpStoreComponentView
+
 import { InsertTemplateCustomizerTransformInfoObjectConfig } from '../../../../../../../views/business/context/modules/storefront/customizer/template/objectConfig/InsertTemplateCustomizerTransformInfoObjectConfig.js';
 //not GWT import const InsertTemplateCustomizerTransformInfoObjectConfig
+
 import { NoTemplateTransformInfoObjectConfig } from '../../../../../../../views/business/context/modules/storefront/customizer/template/objectConfig/NoTemplateTransformInfoObjectConfig.js';
 //not GWT import const NoTemplateTransformInfoObjectConfig
+
 
 
 

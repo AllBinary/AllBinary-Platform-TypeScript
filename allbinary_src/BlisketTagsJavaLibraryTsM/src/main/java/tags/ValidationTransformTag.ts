@@ -24,20 +24,28 @@
         
 import { Method } from '../java/lang/reflect/Method.js';
 //not GWT import const Method
+
 import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 import { ValidatedViewHelperFactory } from '../taghelpers/ValidatedViewHelperFactory.js';
 //not GWT import const ValidatedViewHelperFactory
+
 
 
 
@@ -58,6 +66,7 @@ import { ValidatedViewHelperFactory } from '../taghelpers/ValidatedViewHelperFac
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTag } from './TransformTag.js';
 //not GWT import - same folder const TransformTag
+
 export class ValidationTransformTag extends TransformTag {
         
 

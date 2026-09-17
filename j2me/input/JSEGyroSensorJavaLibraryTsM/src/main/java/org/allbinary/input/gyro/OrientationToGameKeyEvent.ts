@@ -24,10 +24,13 @@
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 //not GWT import const SensorFeatureFactory
+
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
 //not GWT import const Orientation
+
 
 
 
@@ -47,8 +50,10 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryOrientationSensor } from './AllBinaryOrientationSensor.js';
-//not GWT import - same folder const AllBinaryOrientationSensorimport { NoGyroSensor } from './NoGyroSensor.js';
+//not GWT import - same folder const AllBinaryOrientationSensor
+import { NoGyroSensor } from './NoGyroSensor.js';
 //not GWT import - same folder const NoGyroSensor
+
 export class OrientationToGameKeyEvent
             extends Object
          {

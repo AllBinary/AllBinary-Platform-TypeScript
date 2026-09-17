@@ -42,6 +42,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationListenerInterface } from './AnimationListenerInterface.js';
 //not GWT import - same folder const AnimationListenerInterface
+
 export class RunAtEndAnimationListener
             extends Object
          implements AnimationListenerInterface {

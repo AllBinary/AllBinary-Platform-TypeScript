@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionEnableListenerInterface } from './IntermissionEnableListenerInterface.js';
 //not GWT import - same folder const IntermissionEnableListenerInterface
+
 export class NullIntermissionEnableListener
             extends Object
          implements IntermissionEnableListenerInterface {

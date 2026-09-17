@@ -38,10 +38,12 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScore } from './HighScore.js';
 //not GWT import - same folder const HighScore
+
 export interface HighScoresInterface {
         
 

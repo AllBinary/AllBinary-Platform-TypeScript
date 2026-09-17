@@ -22,28 +22,40 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
 //not GWT import const ImageComparisonResult
+
 import { ImageComparisonResultsEvent } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsEvent.js';
 //not GWT import const ImageComparisonResultsEvent
+
 import { ImageComparisonResultsListener } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsListener.js';
 //not GWT import const ImageComparisonResultsListener
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -63,16 +75,26 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
-//not GWT import - same folder const MotionRectangleConstraintsInterfaceimport { AllMotionRectangles } from './AllMotionRectangles.js';
-//not GWT import - same folder const AllMotionRectanglesimport { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const AllMotionRectanglesResultsCacheSingletonimport { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-//not GWT import - same folder const MotionRectanglesResultsFrameCacheableimport { ConsolidateMotionRectangles } from './ConsolidateMotionRectangles.js';
-//not GWT import - same folder const ConsolidateMotionRectanglesimport { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingletonimport { ConstrainedMotionRectangles } from './ConstrainedMotionRectangles.js';
-//not GWT import - same folder const ConstrainedMotionRectanglesimport { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingletonimport { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import - same folder const MotionRectanglesResultsEventimport { MotionRectangles } from './MotionRectangles.js';
+//not GWT import - same folder const MotionRectangleConstraintsInterface
+import { AllMotionRectangles } from './AllMotionRectangles.js';
+//not GWT import - same folder const AllMotionRectangles
+import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
+//not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton
+import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
+//not GWT import - same folder const MotionRectanglesResultsFrameCacheable
+import { ConsolidateMotionRectangles } from './ConsolidateMotionRectangles.js';
+//not GWT import - same folder const ConsolidateMotionRectangles
+import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton
+import { ConstrainedMotionRectangles } from './ConstrainedMotionRectangles.js';
+//not GWT import - same folder const ConstrainedMotionRectangles
+import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton
+import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+//not GWT import - same folder const MotionRectanglesResultsEvent
+import { MotionRectangles } from './MotionRectangles.js';
 //not GWT import - same folder const MotionRectangles
+
 export class MotionRectanglesWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         
 

@@ -24,12 +24,16 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,8 +53,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
-//not GWT import - same folder const TouchScreenTypesFactoryimport { TouchScreenType } from './TouchScreenType.js';
+//not GWT import - same folder const TouchScreenTypesFactory
+import { TouchScreenType } from './TouchScreenType.js';
 //not GWT import - same folder const TouchScreenType
+
 export class TouchScreenFactory
             extends Object
          {

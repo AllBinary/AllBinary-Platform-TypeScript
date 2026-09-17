@@ -22,12 +22,16 @@
         
 import { AboutPaintable } from '../../../../../org/allbinary/game/paint/AboutPaintable.js';
 //not GWT import const AboutPaintable
+
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 

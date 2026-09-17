@@ -22,20 +22,28 @@
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
 //not GWT import const Control
+
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
+
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 //not GWT import const PlayerListener
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -55,8 +63,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Controllable2 } from './Controllable2.js';
-//not GWT import - same folder const Controllable2import { NullControl } from './NullControl.js';
-//not GWT import - same folder const NullControl//BasicPlayerJavaLibrary
+//not GWT import - same folder const Controllable2
+import { NullControl } from './NullControl.js';
+//not GWT import - same folder const NullControl
+//BasicPlayerJavaLibrary
 export class BasicPlayer
             extends Object
          implements Player, Controllable2 {

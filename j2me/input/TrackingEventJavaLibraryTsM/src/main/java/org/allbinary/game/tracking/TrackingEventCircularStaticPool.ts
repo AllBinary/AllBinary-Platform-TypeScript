@@ -24,8 +24,10 @@
         
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
 //not GWT import const AllBinaryEventCircularPool
+
 
 
 
@@ -45,8 +47,10 @@ import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEventFactory } from './TrackingEventFactory.js';
-//not GWT import - same folder const TrackingEventFactoryimport { TrackingEvent } from './TrackingEvent.js';
+//not GWT import - same folder const TrackingEventFactory
+import { TrackingEvent } from './TrackingEvent.js';
 //not GWT import - same folder const TrackingEvent
+
 export class TrackingEventCircularStaticPool
             extends Object
          {

@@ -22,14 +22,19 @@
         
 import { DomDocumentHelper } from '../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { TransformInterface } from '../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
+
 import { TransformDocumentInterface } from '../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 //not GWT import const TransformDocumentInterface
+
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -49,8 +54,10 @@ import { Document } from '../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryView } from './CategoryView.js';
-//not GWT import - same folder const CategoryViewimport { CategoryInterface } from './CategoryInterface.js';
+//not GWT import - same folder const CategoryView
+import { CategoryInterface } from './CategoryInterface.js';
 //not GWT import - same folder const CategoryInterface
+
 export class CategoryComponent extends CategoryView implements TransformInterface {
         
 

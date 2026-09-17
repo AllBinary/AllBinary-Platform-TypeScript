@@ -24,60 +24,88 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { StoreFront } from '../../org/allbinary/business/context/modules/storefront/StoreFront.js';
 //not GWT import const StoreFront
+
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 //not GWT import const Portion
+
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
+
 import { QuoteRequest } from '../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
 //not GWT import const QuoteRequest
+
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
 //not GWT import const UserEntityFactory
+
 import { QuoteRequestEntity } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntity.js';
 //not GWT import const QuoteRequestEntity
+
 import { QuoteRequestEntityFactory } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
 //not GWT import const QuoteRequestEntityFactory
+
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
+
 import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
 //not GWT import const UserEmailEventHandler
+
 import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
 //not GWT import const AdminUserEmailEventHandlerSingletons
+
 import { StoreAdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
 //not GWT import const StoreAdminUserEmailEventHandlerSingletons
+
 import { UserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js';
 //not GWT import const UserEmailEventHandlerSingletons
+
 import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
 //not GWT import const BasicEmailInfo
+
 import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 //not GWT import const EmailInfo
+
 import { StoreEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
 //not GWT import const StoreEmailInfo
+
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 
 
 
@@ -98,6 +126,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
 //not GWT import - same folder const BasicTable
+
 export class QuoteHelper extends BasicTable {
         
 

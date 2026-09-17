@@ -38,11 +38,14 @@ import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayabl
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticViewPosition } from './StaticViewPosition.js';
-//not GWT import - same folder const StaticViewPositionimport { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import - same folder const StaticViewPosition
+import { ViewPositionBase } from './ViewPositionBase.js';
 //not GWT import - same folder const ViewPositionBase
+
 export class CenterStaticViewPositionFactory
             extends Object
          {

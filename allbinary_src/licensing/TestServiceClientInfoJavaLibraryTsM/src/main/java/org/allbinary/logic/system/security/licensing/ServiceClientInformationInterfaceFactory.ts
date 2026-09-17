@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TestClientInformation } from './TestClientInformation.js';
-//not GWT import - same folder const TestClientInformationimport { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
+//not GWT import - same folder const TestClientInformation
+import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
 //not GWT import - same folder const AbeClientInformationInterface
+
 export class ServiceClientInformationInterfaceFactory
             extends Object
          {

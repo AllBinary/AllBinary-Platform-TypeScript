@@ -22,14 +22,19 @@
         
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 //not GWT import const URIResolver
+
 import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
 //not GWT import const BasicUriResolver
+
 import { StoreUriResolver } from '../../../../../org/allbinary/data/tree/dom/StoreUriResolver.js';
 //not GWT import const StoreUriResolver
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 
 
 
@@ -50,6 +55,7 @@ import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visua
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTransformer } from './BasicTransformer.js';
 //not GWT import - same folder const BasicTransformer
+
 export class StoreTransformer extends BasicTransformer {
         
 

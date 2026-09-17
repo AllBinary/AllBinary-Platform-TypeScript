@@ -22,28 +22,40 @@
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { ColorBufferList } from '../../../../min3d/core/ColorBufferList.js';
 //not GWT import const ColorBufferList
+
 import { Number3dBufferList } from '../../../../min3d/core/Number3dBufferList.js';
 //not GWT import const Number3dBufferList
+
 import { Rectangle } from '../../../../min3d/objectPrimitives/Rectangle.js';
 //not GWT import const Rectangle
+
 import { Number3d } from '../../../../min3d/vos/Number3d.js';
 //not GWT import const Number3d
+
 import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
 //not GWT import const OpenGLESGraphics
+
 import { Object3dProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessor.js';
 //not GWT import const Object3dProcessor
+
 import { Object3dProcessorUtil } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessorUtil.js';
 //not GWT import const Object3dProcessorUtil
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -64,6 +76,7 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarAnimation } from './HealthBarAnimation.js';
 //not GWT import - same folder const HealthBarAnimation
+
 export class HealthBarThreedAnimation extends HealthBarAnimation {
         
 

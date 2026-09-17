@@ -22,16 +22,22 @@
         
 import { MotionEvent } from '../../../../../../android/view/MotionEvent.js';
 //not GWT import const MotionEvent
+
 import { BaseGameInputMotionEventProcessor } from '../../../../../../org/allbinary/android/input/motion/BaseGameInputMotionEventProcessor.js';
 //not GWT import const BaseGameInputMotionEventProcessor
+
 import { AllMotionRecognizer } from '../../../../../../org/allbinary/input/motion/AllMotionRecognizer.js';
 //not GWT import const AllMotionRecognizer
+
 import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/MotionRecognizer.js';
 //not GWT import const MotionRecognizer
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 

@@ -22,20 +22,28 @@
         
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 import { CountedPickedUpLayerInterfaceFactory } from '../../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
 //not GWT import const CountedPickedUpLayerInterfaceFactory
+
 import { IconLayerFactory } from '../../../../../../../org/allbinary/game/layer/pickup/IconLayerFactory.js';
 //not GWT import const IconLayerFactory
+
 import { PickedUpLayerInterfaceFactory } from '../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactory.js';
 //not GWT import const PickedUpLayerInterfaceFactory
+
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 //not GWT import const PickedUpLayerInterfaceFactoryInterface
+
 import { PickedUpLayerTypeFactory } from '../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerTypeFactory.js';
 //not GWT import const PickedUpLayerTypeFactory
+
 import { PickupProcessorInterface } from '../../../../../../../org/allbinary/game/layer/pickup/PickupProcessorInterface.js';
 //not GWT import const PickupProcessorInterface
+
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -55,9 +63,12 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LifeLayerCircularStaticPool } from './LifeLayerCircularStaticPool.js';
-//not GWT import - same folder const LifeLayerCircularStaticPoolimport { LifeLayerFactory } from './LifeLayerFactory.js';
-//not GWT import - same folder const LifeLayerFactoryimport { LifeResources } from './LifeResources.js';
+//not GWT import - same folder const LifeLayerCircularStaticPool
+import { LifeLayerFactory } from './LifeLayerFactory.js';
+//not GWT import - same folder const LifeLayerFactory
+import { LifeResources } from './LifeResources.js';
 //not GWT import - same folder const LifeResources
+
 export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 

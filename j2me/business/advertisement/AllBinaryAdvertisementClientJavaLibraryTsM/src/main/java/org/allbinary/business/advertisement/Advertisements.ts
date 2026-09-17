@@ -22,12 +22,16 @@
         
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
 //not GWT import const LockedUtil
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -48,6 +52,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementProcessorInterface } from './AdvertisementProcessorInterface.js';
 //not GWT import - same folder const AdvertisementProcessorInterface
+
 export class Advertisements
             extends Object
          {

@@ -20,16 +20,22 @@
 
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
 //not GWT import const CompleteMotionGestureInputEvent
+
 import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
 //not GWT import const GameKey
+
 import { GameKeyEventSourceInterface } from '../../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 //not GWT import const GameKeyEventSourceInterface
+
 import { GameKeyEvent } from '../../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { InputToGameKeyMapping } from '../../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
 //not GWT import const InputToGameKeyMapping
+
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 //not GWT import const MotionGestureInput
+
 
 
 

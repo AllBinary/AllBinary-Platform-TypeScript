@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlForm } from './HtmlForm.js';
 //not GWT import - same folder const HtmlForm
+
 export class HtmlPostForm extends HtmlForm {
         
 

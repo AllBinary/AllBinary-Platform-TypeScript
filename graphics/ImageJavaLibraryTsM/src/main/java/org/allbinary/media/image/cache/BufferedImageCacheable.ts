@@ -22,10 +22,13 @@
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 //not GWT import const CacheableInterface
+
 
 
 
@@ -46,6 +49,7 @@ import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cach
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageInfo } from './BufferedImageInfo.js';
 //not GWT import - same folder const BufferedImageInfo
+
 export class BufferedImageCacheable
             extends Object
          implements CacheableInterface {

@@ -38,12 +38,16 @@ import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displa
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMenuBehavior } from './BaseMenuBehavior.js';
-//not GWT import - same folder const BaseMenuBehaviorimport { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvasimport { GameCanvasNonBotPaintable } from './GameCanvasNonBotPaintable.js';
+//not GWT import - same folder const BaseMenuBehavior
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import - same folder const AllBinaryGameCanvas
+import { GameCanvasNonBotPaintable } from './GameCanvasNonBotPaintable.js';
 //not GWT import - same folder const GameCanvasNonBotPaintable
+
 export class InGameMenuBehavior extends BaseMenuBehavior {
         
 

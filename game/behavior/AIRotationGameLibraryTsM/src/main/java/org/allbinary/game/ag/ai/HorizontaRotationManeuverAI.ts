@@ -24,36 +24,52 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { ArtificialIntelligence } from '../../../../../org/allbinary/ai/ArtificialIntelligence.js';
 //not GWT import const ArtificialIntelligence
+
 import { ArtificialIntelligenceTransitionInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceTransitionInterface.js';
 //not GWT import const ArtificialIntelligenceTransitionInterface
+
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { RotationAnimationInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterface.js';
 //not GWT import const RotationAnimationInterface
+
 import { RotationAnimationInterfaceCompositeInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
 //not GWT import const RotationAnimationInterfaceCompositeInterface
+
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { BasicVelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
 //not GWT import const BasicVelocityProperties
+
 import { VelocityInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
 //not GWT import const VelocityInterface
+
 import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
 //not GWT import const VelocityInterfaceCompositeInterface
+
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
 //not GWT import const AngleIncrementInfo
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 
 
 

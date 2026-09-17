@@ -24,30 +24,43 @@
         
 import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
 //not GWT import const StoreFrontAdvertisementsStatisticsInterface
+
 import { StoreFrontAdvertisementsStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsView.js';
 //not GWT import const StoreFrontAdvertisementsStatisticsView
+
 import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
 //not GWT import const StoreFrontInventoryStatisticsInterface
+
 import { StoreFrontInventoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsView.js';
 //not GWT import const StoreFrontInventoryStatisticsView
+
 import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
 //not GWT import const StoreFrontOrdersHistoryStatisticsInterface
+
 import { StoreFrontOrdersHistoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsView.js';
 //not GWT import const StoreFrontOrdersHistoryStatisticsView
+
 import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
 //not GWT import const StoreFrontUsersStatisticsInterface
+
 import { StoreFrontUsersStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsView.js';
 //not GWT import const StoreFrontUsersStatisticsView
+
 import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
 //not GWT import const UserRole
+
 import { UserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/UserRoleFactory.js';
 //not GWT import const UserRoleFactory
+
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -67,8 +80,10 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontStatisticsInterface } from './StoreFrontStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontStatisticsInterfaceimport { StoreFrontStatisticsData } from './StoreFrontStatisticsData.js';
+//not GWT import - same folder const StoreFrontStatisticsInterface
+import { StoreFrontStatisticsData } from './StoreFrontStatisticsData.js';
 //not GWT import - same folder const StoreFrontStatisticsData
+
 export class RealTimeStoreFrontStatisticsView
             extends Object
          implements DomNodeInterface {

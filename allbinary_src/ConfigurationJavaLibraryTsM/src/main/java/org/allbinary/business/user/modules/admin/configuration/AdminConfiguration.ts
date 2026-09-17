@@ -24,28 +24,40 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { ContextConfiguration } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
 //not GWT import const ContextConfiguration
+
 import { ContextConfigurationData } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationData.js';
 //not GWT import const ContextConfigurationData
+
 import { ContextConfigurationDomDocumentMapping } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
 //not GWT import const ContextConfigurationDomDocumentMapping
+
 import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 //not GWT import const ContextConfigurationInterface
+
 import { ContextConfigurationInterfaceFactory } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
 //not GWT import const ContextConfigurationInterfaceFactory
+
 import { ContextConfigurationPathUtil } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationPathUtil.js';
 //not GWT import const ContextConfigurationPathUtil
+
 import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
 //not GWT import const CryptFileWriter
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -65,8 +77,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdminConfigurationInterface } from './AdminConfigurationInterface.js';
-//not GWT import - same folder const AdminConfigurationInterfaceimport { AdminConfigurationData } from './AdminConfigurationData.js';
+//not GWT import - same folder const AdminConfigurationInterface
+import { AdminConfigurationData } from './AdminConfigurationData.js';
 //not GWT import - same folder const AdminConfigurationData
+
 export class AdminConfiguration
             extends Object
          implements AdminConfigurationInterface {

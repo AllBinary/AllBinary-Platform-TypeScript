@@ -22,24 +22,34 @@
         
 import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
 //not GWT import const GameKeyFactory
+
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
 //not GWT import const PlayerGameInput
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { GameKeyEventUtil } from '../../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
 //not GWT import const GameKeyEventUtil
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { SpecialGameInputFactory } from '../../../../../org/allbinary/game/layer/special/SpecialGameInputFactory.js';
 //not GWT import const SpecialGameInputFactory
+
 import { SpecialGameInputInterface } from '../../../../../org/allbinary/game/layer/special/SpecialGameInputInterface.js';
 //not GWT import const SpecialGameInputInterface
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -60,6 +70,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class CheatGameInputProcessor extends PlayerGameInput {
         
 

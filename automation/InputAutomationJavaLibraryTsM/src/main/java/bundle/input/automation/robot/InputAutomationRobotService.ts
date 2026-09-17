@@ -38,10 +38,12 @@ import { InputRobotInterface } from '../../../../org/allbinary/input/automation/
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotServiceInterface } from './InputAutomationRobotServiceInterface.js';
 //not GWT import - same folder const InputAutomationRobotServiceInterface
+
 export class InputAutomationRobotService
             extends Object
          implements InputAutomationRobotServiceInterface {

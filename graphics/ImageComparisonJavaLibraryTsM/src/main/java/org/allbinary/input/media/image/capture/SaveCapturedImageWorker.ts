@@ -22,24 +22,34 @@
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -59,9 +69,12 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedImageWorkerResultsListener } from './CapturedImageWorkerResultsListener.js';
-//not GWT import - same folder const CapturedImageWorkerResultsListenerimport { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
-//not GWT import - same folder const CapturedImageWorkerResultsEventimport { CapturedImageInputOutput } from './CapturedImageInputOutput.js';
+//not GWT import - same folder const CapturedImageWorkerResultsListener
+import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
+//not GWT import - same folder const CapturedImageWorkerResultsEvent
+import { CapturedImageInputOutput } from './CapturedImageInputOutput.js';
 //not GWT import - same folder const CapturedImageInputOutput
+
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 

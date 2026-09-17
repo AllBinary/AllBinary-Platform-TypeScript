@@ -22,26 +22,37 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
 //not GWT import const AllBinaryGameLayer
+
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
+
 
 
 
@@ -61,11 +72,16 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputInterface } from './GameInputInterface.js';
-//not GWT import - same folder const GameInputInterfaceimport { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactoryimport { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessorimport { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import - same folder const GameInputProcessorUtilimport { TestInputInterface } from './TestInputInterface.js';
+//not GWT import - same folder const GameInputInterface
+import { InputFactory } from './InputFactory.js';
+//not GWT import - same folder const InputFactory
+import { GameInputProcessor } from './GameInputProcessor.js';
+//not GWT import - same folder const GameInputProcessor
+import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
+//not GWT import - same folder const GameInputProcessorUtil
+import { TestInputInterface } from './TestInputInterface.js';
 //not GWT import - same folder const TestInputInterface
+
 export class TestingInputSingleton extends AllBinaryGameLayer implements GameInputInterface {
         
 

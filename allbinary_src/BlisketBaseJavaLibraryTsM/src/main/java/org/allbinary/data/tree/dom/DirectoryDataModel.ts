@@ -24,24 +24,34 @@
         
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 //not GWT import const Directory
+
 import { TransformInterface } from '../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
+
 import { TransformDocumentFactory } from '../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentFactory.js';
 //not GWT import const TransformDocumentFactory
+
 import { TransformDocumentInterface } from '../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 //not GWT import const TransformDocumentInterface
+
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -61,8 +71,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-//not GWT import - same folder const DomNodeInterfaceimport { FileDomDataModel } from './FileDomDataModel.js';
+//not GWT import - same folder const DomNodeInterface
+import { FileDomDataModel } from './FileDomDataModel.js';
 //not GWT import - same folder const FileDomDataModel
+
 export class DirectoryDataModel
             extends Object
          implements DomNodeInterface, TransformInterface {

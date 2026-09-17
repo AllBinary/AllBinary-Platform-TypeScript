@@ -36,11 +36,14 @@ import { GeographicMapInterface } from '../../../../../../../org/allbinary/media
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfoimport { RaceTrackData } from './RaceTrackData.js';
+//not GWT import - same folder const RaceTrackInfo
+import { RaceTrackData } from './RaceTrackData.js';
 //not GWT import - same folder const RaceTrackData
+
 export interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
         
 

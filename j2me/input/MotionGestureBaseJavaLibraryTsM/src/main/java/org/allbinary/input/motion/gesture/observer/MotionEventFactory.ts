@@ -22,16 +22,22 @@
         
 import { Input } from '../../../../../../org/allbinary/game/input/Input.js';
 //not GWT import const Input
+
 import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
 //not GWT import const InputFactory
+
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 //not GWT import const MotionGestureInput
+
 import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 //not GWT import const TouchMotionGestureFactory
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
 //not GWT import const AllBinaryEventObjectFactoryInterface
+
 
 
 
@@ -52,6 +58,7 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allb
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureEvent } from './MotionGestureEvent.js';
 //not GWT import - same folder const MotionGestureEvent
+
 export class MotionEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {

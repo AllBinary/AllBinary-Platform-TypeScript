@@ -24,12 +24,16 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -49,8 +53,10 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import - same folder const DefaultListModelimport { ListModel } from './ListModel.js';
+//not GWT import - same folder const DefaultListModel
+import { ListModel } from './ListModel.js';
 //not GWT import - same folder const ListModel
+
 export class DefaultListModelHelper
             extends Object
          {

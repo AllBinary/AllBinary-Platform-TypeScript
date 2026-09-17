@@ -20,8 +20,10 @@
 
 import { TransactionResultInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/TransactionResultInterface.js';
 //not GWT import const TransactionResultInterface
+
 import { BasicDataTableInterface } from '../../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
 //not GWT import const BasicDataTableInterface
+
 
 
 

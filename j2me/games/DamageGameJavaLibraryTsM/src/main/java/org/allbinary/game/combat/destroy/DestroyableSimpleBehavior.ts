@@ -36,11 +36,14 @@ import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/laye
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyableBaseBehavior } from './DestroyableBaseBehavior.js';
-//not GWT import - same folder const DestroyableBaseBehaviorimport { DestroyedLayerProcessor } from './DestroyedLayerProcessor.js';
+//not GWT import - same folder const DestroyableBaseBehavior
+import { DestroyedLayerProcessor } from './DestroyedLayerProcessor.js';
 //not GWT import - same folder const DestroyedLayerProcessor
+
 export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {
         
 

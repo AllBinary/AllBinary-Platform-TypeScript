@@ -22,10 +22,13 @@
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 //not GWT import const GameFeatureFactory
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -45,8 +48,10 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SourceCollisionHelper } from './SourceCollisionHelper.js';
-//not GWT import - same folder const SourceCollisionHelperimport { CollisionHelper } from './CollisionHelper.js';
+//not GWT import - same folder const SourceCollisionHelper
+import { CollisionHelper } from './CollisionHelper.js';
 //not GWT import - same folder const CollisionHelper
+
 export class CollidableHelperFactory
             extends Object
          {

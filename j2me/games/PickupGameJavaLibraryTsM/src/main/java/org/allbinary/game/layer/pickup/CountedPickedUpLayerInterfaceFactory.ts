@@ -22,16 +22,22 @@
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -51,12 +57,18 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactory } from './PickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactoryimport { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterfaceimport { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
-//not GWT import - same folder const PickedUpLayerTypeFactoryimport { IconLayer } from './IconLayer.js';
-//not GWT import - same folder const IconLayerimport { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryPoolimport { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import - same folder const PickedUpLayerInterfaceFactory
+import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterface
+import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
+//not GWT import - same folder const PickedUpLayerTypeFactory
+import { IconLayer } from './IconLayer.js';
+//not GWT import - same folder const IconLayer
+import { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
+//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryPool
+import { PickedUpLayerType } from './PickedUpLayerType.js';
 //not GWT import - same folder const PickedUpLayerType
+
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {
         
 

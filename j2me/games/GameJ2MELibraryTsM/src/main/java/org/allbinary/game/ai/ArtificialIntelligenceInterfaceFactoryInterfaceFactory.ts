@@ -24,12 +24,16 @@
         
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 
 
 
@@ -49,8 +53,10 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAI } from './BasicAI.js';
-//not GWT import - same folder const BasicAIimport { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
+//not GWT import - same folder const BasicAI
+import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
 //not GWT import - same folder const ArtificialIntelligenceInterfaceFactoryInterface
+
 export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
             extends Object
          {

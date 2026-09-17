@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequentialAnimationInterface } from './SequentialAnimationInterface.js';
 //not GWT import - same folder const SequentialAnimationInterface
+
 export interface IndexedAnimationInterface extends SequentialAnimationInterface {
         
 

@@ -22,20 +22,28 @@
         
 import { OrderHistoryFactory } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryFactory.js';
 //not GWT import const OrderHistoryFactory
+
 import { OrderItemsEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js';
 //not GWT import const OrderItemsEntity
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -56,6 +64,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderView } from './OrderView.js';
 //not GWT import - same folder const OrderView
+
 export class ValidationView extends OrderView implements ValidationComponentInterface {
         
 

@@ -24,16 +24,22 @@
         
 import { Method } from '../../java/lang/reflect/Method.js';
 //not GWT import const Method
+
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { PaymentGatewayHelperFactory } from '../../admin/taghelpers/PaymentGatewayHelperFactory.js';
 //not GWT import const PaymentGatewayHelperFactory
+
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -54,6 +60,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 //not GWT import - same folder const TableTag
+
 export class PaymentGatewayTag extends TableTag {
         
 

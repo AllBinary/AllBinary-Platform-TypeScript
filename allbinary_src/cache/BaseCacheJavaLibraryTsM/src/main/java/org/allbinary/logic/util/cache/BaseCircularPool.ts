@@ -25,8 +25,10 @@
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 
 
 
@@ -49,6 +51,7 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryObjectFactoryInterface } from './AllBinaryObjectFactoryInterface.js';
 //not GWT import - same folder const AllBinaryObjectFactoryInterface
+
 export class BaseCircularPool
             extends Object
          {

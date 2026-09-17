@@ -38,12 +38,16 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
-//not GWT import - same folder const PickupLayerimport { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceimport { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import - same folder const PickupLayer
+import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+//not GWT import - same folder const PickedUpLayerInterface
+import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
 //not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
+
 export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

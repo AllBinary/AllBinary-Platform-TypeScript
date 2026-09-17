@@ -28,38 +28,55 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 //not GWT import const ByteArrayInputStream
+
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { Control } from '../../../../javax/microedition/media/Control.js';
 //not GWT import const Control
+
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
+
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 //not GWT import const PlayerListener
+
 import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
 //not GWT import const AudioInputStream
+
 import { AudioSystem } from '../../../../javax/sound/sampled/AudioSystem.js';
 //not GWT import const AudioSystem
+
 import { Clip } from '../../../../javax/sound/sampled/Clip.js';
 //not GWT import const Clip
+
 import { FloatControl } from '../../../../javax/sound/sampled/FloatControl.js';
 //not GWT import const FloatControl
+
 import { LineEvent } from '../../../../javax/sound/sampled/LineEvent.js';
 //not GWT import const LineEvent
+
 import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
 //not GWT import const LineListener
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPool.js';
 //not GWT import const MusicThreadPool
+
 
 
 
@@ -79,10 +96,14 @@ import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPoo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import - same folder const BasicPlayerimport { NullAudioFormat } from './NullAudioFormat.js';
-//not GWT import - same folder const NullAudioFormatimport { NullClip } from './NullClip.js';
-//not GWT import - same folder const NullClipimport { NullControl } from './NullControl.js';
+//not GWT import - same folder const BasicPlayer
+import { NullAudioFormat } from './NullAudioFormat.js';
+//not GWT import - same folder const NullAudioFormat
+import { NullClip } from './NullClip.js';
+//not GWT import - same folder const NullClip
+import { NullControl } from './NullControl.js';
 //not GWT import - same folder const NullControl
+
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         
 

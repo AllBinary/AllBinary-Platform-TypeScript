@@ -24,26 +24,37 @@
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream
+
 import { File } from '../../../../../java/io/File.js';
 //not GWT import const File
+
 import { OutputStream } from '../../../../../java/io/OutputStream.js';
 //not GWT import const OutputStream
+
 import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
 //not GWT import const StringBufferInputStream
+
 import { Transformer } from '../../../../../javax/xml/transform/Transformer.js';
 //not GWT import const Transformer
+
 import { TransformerFactory } from '../../../../../javax/xml/transform/TransformerFactory.js';
 //not GWT import const TransformerFactory
+
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 //not GWT import const URIResolver
+
 import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
 //not GWT import const StreamResult
+
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 //not GWT import const StreamSource
+
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 

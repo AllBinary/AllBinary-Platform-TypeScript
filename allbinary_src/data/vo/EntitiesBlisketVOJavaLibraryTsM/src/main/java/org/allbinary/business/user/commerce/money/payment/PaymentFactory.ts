@@ -24,10 +24,13 @@
         
 import { ServletRequest } from '../../../../../../../javax/servlet/ServletRequest.js';
 //not GWT import const ServletRequest
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,8 +50,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Payment } from './Payment.js';
-//not GWT import - same folder const Paymentimport { PaymentInterface } from './PaymentInterface.js';
+//not GWT import - same folder const Payment
+import { PaymentInterface } from './PaymentInterface.js';
 //not GWT import - same folder const PaymentInterface
+
 export class PaymentFactory
             extends Object
          {

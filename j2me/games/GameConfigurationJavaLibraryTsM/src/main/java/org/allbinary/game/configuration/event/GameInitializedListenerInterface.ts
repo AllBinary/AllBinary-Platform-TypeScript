@@ -36,10 +36,12 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializedEvent } from './GameInitializedEvent.js';
 //not GWT import - same folder const GameInitializedEvent
+
 export interface GameInitializedListenerInterface extends EventListenerInterface {
         
 

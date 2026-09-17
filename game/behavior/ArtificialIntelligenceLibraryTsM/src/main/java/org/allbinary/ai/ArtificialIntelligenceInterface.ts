@@ -22,8 +22,10 @@
         
 import { IdentifierInterface } from '../../../org/allbinary/graphics/IdentifierInterface.js';
 //not GWT import const IdentifierInterface
+
 import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 

@@ -24,30 +24,43 @@
         
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
 //not GWT import const HighScore
+
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
 //not GWT import const HighScores
+
 import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js';
 //not GWT import const RemoteErrorHighScoresSingletonFactory
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
 //not GWT import const SoftwareInformation
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
 
 
 
@@ -67,9 +80,12 @@ const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessorFactory } from './RemoteHighScoresProcessorFactory.js';
-//not GWT import - same folder const RemoteHighScoresProcessorFactoryimport { RemoteHighScoresSubmissionProcessorFactory } from './RemoteHighScoresSubmissionProcessorFactory.js';
-//not GWT import - same folder const RemoteHighScoresSubmissionProcessorFactoryimport { RemoteHighScoresData } from './RemoteHighScoresData.js';
+//not GWT import - same folder const RemoteHighScoresProcessorFactory
+import { RemoteHighScoresSubmissionProcessorFactory } from './RemoteHighScoresSubmissionProcessorFactory.js';
+//not GWT import - same folder const RemoteHighScoresSubmissionProcessorFactory
+import { RemoteHighScoresData } from './RemoteHighScoresData.js';
 //not GWT import - same folder const RemoteHighScoresData
+
 export class RemoteHighScores extends HighScores {
         
 

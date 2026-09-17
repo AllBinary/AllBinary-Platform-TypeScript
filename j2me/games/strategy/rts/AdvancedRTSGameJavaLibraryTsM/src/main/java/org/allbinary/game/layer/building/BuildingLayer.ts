@@ -22,96 +22,142 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { ExplosionBasicSound } from '../../../../../org/allbinary/ag/weapon/media/audio/ExplosionBasicSound.js';
 //not GWT import const ExplosionBasicSound
+
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { NullIndexedAnimationFactory } from '../../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
 //not GWT import const NullIndexedAnimationFactory
+
 import { GroupFactory } from '../../../../../org/allbinary/game/identification/GroupFactory.js';
 //not GWT import const GroupFactory
+
 import { NullRTSFormInputFactory } from '../../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
 //not GWT import const NullRTSFormInputFactory
+
 import { RTSFormInput } from '../../../../../org/allbinary/game/input/form/RTSFormInput.js';
 //not GWT import const RTSFormInput
+
 import { VisibleCellPositionsSingleton } from '../../../../../org/allbinary/game/input/form/VisibleCellPositionsSingleton.js';
 //not GWT import const VisibleCellPositionsSingleton
+
 import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { AdvancedRTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/AdvancedRTSPlayerLayerInterface.js';
 //not GWT import const AdvancedRTSPlayerLayerInterface
+
 import { AdvancedRTSProperties } from '../../../../../org/allbinary/game/layer/AdvancedRTSProperties.js';
 //not GWT import const AdvancedRTSProperties
+
 import { CollidableRTSBehavior } from '../../../../../org/allbinary/game/layer/CollidableRTSBehavior.js';
 //not GWT import const CollidableRTSBehavior
+
 import { RTSLayerUtil } from '../../../../../org/allbinary/game/layer/RTSLayerUtil.js';
 //not GWT import const RTSLayerUtil
+
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
 //not GWT import const SelectionHudPaintable
+
 import { Waypoint } from '../../../../../org/allbinary/game/layer/waypoint/Waypoint.js';
 //not GWT import const Waypoint
+
 import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
 //not GWT import const TileLayerPositionIntoViewPosition
+
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { RotationAnimationInterfaceCompositeInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
 //not GWT import const RotationAnimationInterfaceCompositeInterface
+
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
+
 import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
 //not GWT import const DamageFloaters
+
 import { Health } from '../../../../../org/allbinary/game/health/Health.js';
 //not GWT import const Health
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { GeographicMapCellPositionAreaBase } from '../../../../../org/allbinary/game/layer/GeographicMapCellPositionAreaBase.js';
 //not GWT import const GeographicMapCellPositionAreaBase
+
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
 //not GWT import const NullPathFindingLayer
+
 import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
 //not GWT import const TrackingEvent
+
 import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 //not GWT import const TrackingEventHandler
+
 import { TrackingEventListenerInterface } from '../../../../../org/allbinary/game/tracking/TrackingEventListenerInterface.js';
 //not GWT import const TrackingEventListenerInterface
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { SecondaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
 //not GWT import const SecondaryPlayerQueueFactory
+
 import { SelectSound } from '../../../../../org/allbinary/media/audio/SelectSound.js';
 //not GWT import const SelectSound
+
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
 //not GWT import const GeographicMapDirectionUtil
+
 import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 //not GWT import const DropCellPositionHistory
+
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -131,9 +177,12 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimulatedBuildingPropertiesFactory } from './SimulatedBuildingPropertiesFactory.js';
-//not GWT import - same folder const SimulatedBuildingPropertiesFactoryimport { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';
-//not GWT import - same folder const BuildingPropertiesFactoryimport { BuildingInfoHudPaintable } from './BuildingInfoHudPaintable.js';
+//not GWT import - same folder const SimulatedBuildingPropertiesFactory
+import { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';
+//not GWT import - same folder const BuildingPropertiesFactory
+import { BuildingInfoHudPaintable } from './BuildingInfoHudPaintable.js';
 //not GWT import - same folder const BuildingInfoHudPaintable
+
 export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {
         
 

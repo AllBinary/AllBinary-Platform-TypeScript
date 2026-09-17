@@ -24,30 +24,43 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { NameSpaceRequestParamData } from '../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParamData.js';
 //not GWT import const NameSpaceRequestParamData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CssElementData } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementData.js';
 //not GWT import const CssElementData
+
 import { CssElementsValidationFactory } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementsValidationFactory.js';
 //not GWT import const CssElementsValidationFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -67,8 +80,10 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StylesData } from './StylesData.js';
-//not GWT import - same folder const StylesDataimport { StyleData } from './StyleData.js';
+//not GWT import - same folder const StylesData
+import { StyleData } from './StyleData.js';
 //not GWT import - same folder const StyleData
+
 export class StylesValidationFactory
             extends Object
          {

@@ -38,10 +38,12 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEvent } from './TerrainEvent.js';
 //not GWT import - same folder const TerrainEvent
+
 export interface TerrainEventListenerInterface extends EventListenerInterface {
         
 

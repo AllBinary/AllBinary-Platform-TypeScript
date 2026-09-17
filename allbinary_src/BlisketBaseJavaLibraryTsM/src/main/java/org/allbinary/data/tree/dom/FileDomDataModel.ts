@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -51,9 +56,12 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-//not GWT import - same folder const DomNodeInterfaceimport { FileTableMapping } from './FileTableMapping.js';
-//not GWT import - same folder const FileTableMappingimport { ModDomHelper } from './ModDomHelper.js';
+//not GWT import - same folder const DomNodeInterface
+import { FileTableMapping } from './FileTableMapping.js';
+//not GWT import - same folder const FileTableMapping
+import { ModDomHelper } from './ModDomHelper.js';
 //not GWT import - same folder const ModDomHelper
+
 export class FileDomDataModel
             extends Object
          implements DomNodeInterface {

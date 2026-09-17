@@ -22,16 +22,22 @@
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 //not GWT import const CacheableInterface
+
 import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
 //not GWT import const ColorDelta
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 

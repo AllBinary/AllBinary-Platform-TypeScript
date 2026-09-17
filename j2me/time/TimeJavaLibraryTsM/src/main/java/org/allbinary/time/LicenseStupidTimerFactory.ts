@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StupidTimer } from './StupidTimer.js';
 //not GWT import - same folder const StupidTimer
+
 export class LicenseStupidTimerFactory
             extends Object
          {

@@ -26,74 +26,109 @@
         
 import { Calendar } from '../../../../../../java/util/Calendar.js';
 //not GWT import const Calendar
+
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { ContextConfiguration } from '../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
 //not GWT import const ContextConfiguration
+
 import { ContextConfigurationDomDocumentMapping } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
 //not GWT import const ContextConfigurationDomDocumentMapping
+
 import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 //not GWT import const ContextConfigurationInterface
+
 import { ContextConfigurationInterfaceFactory } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
 //not GWT import const ContextConfigurationInterfaceFactory
+
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserData } from '../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { FileUtil } from '../../../../../../org/allbinary/logic/io/file/FileUtil.js';
 //not GWT import const FileUtil
+
 import { Directory } from '../../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 //not GWT import const Directory
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
 import { AbPathUtil } from '../../../../../../org/allbinary/logic/io/path/AbPathUtil.js';
 //not GWT import const AbPathUtil
+
 import { SpecialCharacterUtil } from '../../../../../../org/allbinary/logic/string/SpecialCharacterUtil.js';
 //not GWT import const SpecialCharacterUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
+
 import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 //not GWT import const Tokenizer
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StringEscapeUtils } from '../../../../../../org/apache/commons/lang3/StringEscapeUtils.js';
 //not GWT import const StringEscapeUtils
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -113,8 +148,10 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontInterface } from './StoreFrontInterface.js';
-//not GWT import - same folder const StoreFrontInterfaceimport { StoreFrontData } from './StoreFrontData.js';
+//not GWT import - same folder const StoreFrontInterface
+import { StoreFrontData } from './StoreFrontData.js';
 //not GWT import - same folder const StoreFrontData
+
 export class StoreFront
             extends Object
          implements StoreFrontInterface {

@@ -38,6 +38,7 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import org.allbinary.business.user.commerce.money.Money;

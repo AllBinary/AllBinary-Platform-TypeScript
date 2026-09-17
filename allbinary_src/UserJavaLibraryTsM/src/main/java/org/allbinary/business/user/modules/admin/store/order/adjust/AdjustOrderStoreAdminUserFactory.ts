@@ -24,10 +24,13 @@
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { UserFactoryInterface } from '../../../../../../../../../org/allbinary/business/user/UserFactoryInterface.js';
 //not GWT import const UserFactoryInterface
+
 import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
+
 
 
 
@@ -48,6 +51,7 @@ import { UserInterface } from '../../../../../../../../../org/allbinary/business
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdjustOrderStoreAdminUser } from './AdjustOrderStoreAdminUser.js';
 //not GWT import - same folder const AdjustOrderStoreAdminUser
+
 export class AdjustOrderStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {

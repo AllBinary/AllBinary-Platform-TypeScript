@@ -10,18 +10,25 @@
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Font } from '../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
 //not GWT import const FontDebugBase
+
 import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
 //not GWT import const OpenGLSurfaceChangedInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -41,8 +48,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsInterface } from './GraphicsInterface.js';
-//not GWT import - same folder const GraphicsInterfaceimport { NullGL10 } from './NullGL10.js';
+//not GWT import - same folder const GraphicsInterface
+import { NullGL10 } from './NullGL10.js';
 //not GWT import - same folder const NullGL10
+
 export class OpenGLESGraphics extends Graphics implements OpenGLSurfaceChangedInterface, GraphicsInterface {
         
 

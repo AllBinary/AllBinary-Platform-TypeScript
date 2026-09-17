@@ -22,22 +22,31 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
 //not GWT import const DynamicObjectData
+
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
+
 import { GroupData } from '../../../../../../org/allbinary/business/user/group/GroupData.js';
 //not GWT import const GroupData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -58,6 +67,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AffiliateSalesEntityInterface } from './AffiliateSalesEntityInterface.js';
 //not GWT import - same folder const AffiliateSalesEntityInterface
+
 export class AffiliateSalesEntity extends AbSqlBean implements AffiliateSalesEntityInterface {
         
 

@@ -24,8 +24,10 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+
 
 
 

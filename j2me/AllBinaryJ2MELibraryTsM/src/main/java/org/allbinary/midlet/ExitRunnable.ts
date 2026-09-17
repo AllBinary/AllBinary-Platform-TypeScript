@@ -26,12 +26,16 @@
         
 import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
 //not GWT import const NullCanvas
+
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -52,6 +56,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
 //not GWT import - same folder const AllBinaryMidlet
+
 export class ExitRunnable
             extends Object
          implements Runnable {

@@ -24,16 +24,22 @@
         
 import { ScreenCaptureImagesWorker } from '../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
 //not GWT import const ScreenCaptureImagesWorker
+
 import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
 //not GWT import const ImageComparisonWorker
+
 import { SaveImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/SaveImageComparisonWorker.js';
 //not GWT import const SaveImageComparisonWorker
+
 import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
 //not GWT import const MotionRectanglesWorker
+
 import { SaveMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/SaveMotionRectanglesResultsWorker.js';
 //not GWT import const SaveMotionRectanglesResultsWorker
+
 import { TestInputForMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/TestInputForMotionRectanglesResultsWorker.js';
 //not GWT import const TestInputForMotionRectanglesResultsWorker
+
 
 
 

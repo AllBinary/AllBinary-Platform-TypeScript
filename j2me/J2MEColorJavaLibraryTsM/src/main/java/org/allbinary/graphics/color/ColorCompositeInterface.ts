@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColorCompositeSetterInterface } from './BasicColorCompositeSetterInterface.js';
-//not GWT import - same folder const BasicColorCompositeSetterInterfaceimport { BasicColor } from './BasicColor.js';
+//not GWT import - same folder const BasicColorCompositeSetterInterface
+import { BasicColor } from './BasicColor.js';
 //not GWT import - same folder const BasicColor
+
 export interface ColorCompositeInterface extends BasicColorCompositeSetterInterface {
         
 

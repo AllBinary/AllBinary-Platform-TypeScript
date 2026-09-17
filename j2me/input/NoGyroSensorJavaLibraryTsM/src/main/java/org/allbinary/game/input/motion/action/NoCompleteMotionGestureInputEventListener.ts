@@ -22,14 +22,19 @@
         
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
 //not GWT import const CompleteMotionGestureInputEvent
+
 import { CompleteMotionGestureInputEventListenerInterface } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
 //not GWT import const CompleteMotionGestureInputEventListenerInterface
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 
 
 

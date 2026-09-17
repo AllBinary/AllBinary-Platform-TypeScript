@@ -22,18 +22,25 @@
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { PaintableToImageUtil } from '../../../../../../org/allbinary/image/PaintableToImageUtil.js';
 //not GWT import const PaintableToImageUtil
+
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -54,6 +61,7 @@ import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPosit
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MiniMapLayer } from './MiniMapLayer.js';
 //not GWT import - same folder const MiniMapLayer
+
 export class ImageMiniMapLayer extends MiniMapLayer {
         
 

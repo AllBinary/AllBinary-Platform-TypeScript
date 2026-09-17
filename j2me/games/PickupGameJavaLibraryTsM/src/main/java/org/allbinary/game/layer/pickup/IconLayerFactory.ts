@@ -40,10 +40,12 @@ import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IconLayer } from './IconLayer.js';
 //not GWT import - same folder const IconLayer
+
 export class IconLayerFactory
             extends Object
          {

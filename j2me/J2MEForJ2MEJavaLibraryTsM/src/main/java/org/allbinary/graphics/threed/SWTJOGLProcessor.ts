@@ -26,8 +26,10 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
 //not GWT import const MIDlet
+
 
 
 
@@ -47,7 +49,8 @@ import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RatioProcessor } from './RatioProcessor.js';
-//not GWT import - same folder const RatioProcessor//OpenGLNone
+//not GWT import - same folder const RatioProcessor
+//OpenGLNone
 export class SWTJOGLProcessor
             extends Object
          implements Runnable {

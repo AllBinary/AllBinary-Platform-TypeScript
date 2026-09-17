@@ -22,36 +22,52 @@
         
 import { UserFactory } from '../../../../../org/allbinary/business/user/modules/UserFactory.js';
 //not GWT import const UserFactory
+
 import { AdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/AdminUserFactory.js';
 //not GWT import const AdminUserFactory
+
 import { StoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/StoreAdminUserFactory.js';
 //not GWT import const StoreAdminUserFactory
+
 import { CustomerStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/customer/CustomerStoreAdminUserFactory.js';
 //not GWT import const CustomerStoreAdminUserFactory
+
 import { OrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/OrderStoreAdminUserFactory.js';
 //not GWT import const OrderStoreAdminUserFactory
+
 import { AdjustOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/adjust/AdjustOrderStoreAdminUserFactory.js';
 //not GWT import const AdjustOrderStoreAdminUserFactory
+
 import { ReviewOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/review/ReviewOrderStoreAdminUserFactory.js';
 //not GWT import const ReviewOrderStoreAdminUserFactory
+
 import { ShipOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/ship/ShipOrderStoreAdminUserFactory.js';
 //not GWT import const ShipOrderStoreAdminUserFactory
+
 import { PaymentStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/payment/PaymentStoreAdminUserFactory.js';
 //not GWT import const PaymentStoreAdminUserFactory
+
 import { ProductStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/product/ProductStoreAdminUserFactory.js';
 //not GWT import const ProductStoreAdminUserFactory
+
 import { WebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/WebStoreAdminUserFactory.js';
 //not GWT import const WebStoreAdminUserFactory
+
 import { ViewEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/view/editor/ViewEditorWebStoreAdminUserFactory.js';
 //not GWT import const ViewEditorWebStoreAdminUserFactory
+
 import { WizardWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/wizard/WizardWebStoreAdminUserFactory.js';
 //not GWT import const WizardWebStoreAdminUserFactory
+
 import { WorkflowEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/workflow/editor/WorkflowEditorWebStoreAdminUserFactory.js';
 //not GWT import const WorkflowEditorWebStoreAdminUserFactory
+
 import { SubscriberUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/subscriber/SubscriberUserFactory.js';
 //not GWT import const SubscriberUserFactory
+
 import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/wholesale/WholesaleUserFactory.js';
 //not GWT import const WholesaleUserFactory
+
 
 
 
@@ -71,9 +87,12 @@ import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
-//not GWT import - same folder const BasicUserRoleFactoryimport { UserRoleB } from './UserRoleB.js';
-//not GWT import - same folder const UserRoleBimport { UserRole } from './UserRole.js';
+//not GWT import - same folder const BasicUserRoleFactory
+import { UserRoleB } from './UserRoleB.js';
+//not GWT import - same folder const UserRoleB
+import { UserRole } from './UserRole.js';
 //not GWT import - same folder const UserRole
+
 export class UserRoleFactory
             extends Object
          {

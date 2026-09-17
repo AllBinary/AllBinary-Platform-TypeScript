@@ -22,16 +22,22 @@
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 
 
 
@@ -51,9 +57,12 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButtonimport { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInputimport { TouchButtonResource } from './TouchButtonResource.js';
+//not GWT import - same folder const TouchButton
+import { TouchButtonInput } from './TouchButtonInput.js';
+//not GWT import - same folder const TouchButtonInput
+import { TouchButtonResource } from './TouchButtonResource.js';
 //not GWT import - same folder const TouchButtonResource
+
 export class FullTouchButton extends TouchButton {
         
 

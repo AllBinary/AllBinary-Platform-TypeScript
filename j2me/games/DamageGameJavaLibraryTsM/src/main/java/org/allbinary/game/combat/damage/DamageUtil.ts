@@ -24,12 +24,16 @@
         
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -50,6 +54,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DamageableInterface } from './DamageableInterface.js';
 //not GWT import - same folder const DamageableInterface
+
 export class DamageUtil
             extends Object
          {

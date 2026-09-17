@@ -24,18 +24,25 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { PaymentGatewayData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 //not GWT import const PaymentGatewayData
+
 import { PaymentProcessorInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterfaceFactoryInterface.js';
 //not GWT import const PaymentProcessorInterfaceFactoryInterface
+
 import { PaymentTransactionInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceFactoryInterface.js';
 //not GWT import const PaymentTransactionInterfaceFactoryInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -55,8 +62,10 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPaymentType } from './BasicPaymentType.js';
-//not GWT import - same folder const BasicPaymentTypeimport { PaymentTypeUtil } from './PaymentTypeUtil.js';
+//not GWT import - same folder const BasicPaymentType
+import { PaymentTypeUtil } from './PaymentTypeUtil.js';
 //not GWT import - same folder const PaymentTypeUtil
+
 export class PaymentType
             extends Object
          {

@@ -22,16 +22,22 @@
         
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
 //not GWT import const HighScores
+
 import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
 //not GWT import const HighScoresHelperBase
+
 import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
 //not GWT import const NullHighScoresSingletonFactory
+
 import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
 //not GWT import const GameStateFactory
+
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 
 
 
@@ -52,6 +58,7 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class EndGameProcessor extends Processor {
         
 

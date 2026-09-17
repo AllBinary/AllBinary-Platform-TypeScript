@@ -22,8 +22,10 @@
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
+
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 //not GWT import const InputAutomationActionInterface
+
 
 
 
@@ -44,6 +46,7 @@ import { InputAutomationActionInterface } from '../../../../../../org/allbinary/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
 //not GWT import - same folder const Rectangle
+
 export interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
         
 

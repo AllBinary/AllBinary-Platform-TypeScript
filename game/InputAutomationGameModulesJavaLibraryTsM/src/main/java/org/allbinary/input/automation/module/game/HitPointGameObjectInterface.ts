@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObjectInterface } from './MeteredGameObjectInterface.js';
 //not GWT import - same folder const MeteredGameObjectInterface
+
 export interface HitPointGameObjectInterface extends MeteredGameObjectInterface {
         
 

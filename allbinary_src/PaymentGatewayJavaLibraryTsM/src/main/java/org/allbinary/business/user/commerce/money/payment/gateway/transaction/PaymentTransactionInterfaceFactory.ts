@@ -24,14 +24,19 @@
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
 //not GWT import const OrderHistory
+
 import { PaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js';
 //not GWT import const PaymentType
+
 import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
 //not GWT import const PaymentTypeUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -51,8 +56,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterfaceFactoryInterface } from './PaymentTransactionInterfaceFactoryInterface.js';
-//not GWT import - same folder const PaymentTransactionInterfaceFactoryInterfaceimport { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
+//not GWT import - same folder const PaymentTransactionInterfaceFactoryInterface
+import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
 //not GWT import - same folder const PaymentTransactionInterface
+
 export class PaymentTransactionInterfaceFactory
             extends Object
          {

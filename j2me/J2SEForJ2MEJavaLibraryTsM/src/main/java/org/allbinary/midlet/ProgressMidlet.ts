@@ -24,14 +24,19 @@
         
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 //not GWT import const ClientInformationFactory
+
 import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
 //not GWT import const PrimaryThreadPool
+
 import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
 //not GWT import const ThreadPool
+
 
 
 
@@ -51,9 +56,12 @@ import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
-//not GWT import - same folder const AllBinaryMidletimport { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
-//not GWT import - same folder const MidletExitProcessorFactoryimport { ExitRunnable } from './ExitRunnable.js';
-//not GWT import - same folder const ExitRunnable//J2SEForJ2ME
+//not GWT import - same folder const AllBinaryMidlet
+import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
+//not GWT import - same folder const MidletExitProcessorFactory
+import { ExitRunnable } from './ExitRunnable.js';
+//not GWT import - same folder const ExitRunnable
+//J2SEForJ2ME
 export class ProgressMidlet extends AllBinaryMidlet {
         
 

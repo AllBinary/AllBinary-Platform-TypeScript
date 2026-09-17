@@ -22,14 +22,19 @@
         
 import { JspTagException } from '../../../../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { DynamicObjectData } from '../../../../org/allbinary/business/DynamicObjectData.js';
 //not GWT import const DynamicObjectData
+
 import { AbResponseHandler } from '../../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StoreWorkFlowTag } from '../../../../tags/StoreWorkFlowTag.js';
 //not GWT import const StoreWorkFlowTag
+
 
 
 

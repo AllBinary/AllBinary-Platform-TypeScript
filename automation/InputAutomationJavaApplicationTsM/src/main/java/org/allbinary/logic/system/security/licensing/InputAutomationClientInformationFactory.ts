@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationClientInformation } from './InputAutomationClientInformation.js';
 //not GWT import - same folder const InputAutomationClientInformation
+
 export class InputAutomationClientInformationFactory
             extends Object
          {

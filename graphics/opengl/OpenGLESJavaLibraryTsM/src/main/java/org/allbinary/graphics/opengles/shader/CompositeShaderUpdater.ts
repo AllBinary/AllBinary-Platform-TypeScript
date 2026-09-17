@@ -20,14 +20,19 @@
 
 import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
 //not GWT import const EGLConfig
+
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -47,8 +52,10 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderUpdater } from './ShaderUpdater.js';
-//not GWT import - same folder const ShaderUpdaterimport { ShaderStrings } from './ShaderStrings.js';
+//not GWT import - same folder const ShaderUpdater
+import { ShaderStrings } from './ShaderStrings.js';
 //not GWT import - same folder const ShaderStrings
+
 export class CompositeShaderUpdater extends ShaderUpdater {
         
 

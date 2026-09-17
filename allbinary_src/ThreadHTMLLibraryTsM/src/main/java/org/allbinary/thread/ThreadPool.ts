@@ -28,12 +28,16 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -53,10 +57,14 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { NullRunnable } 
-const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;import { ThreadPoolStrings } from './ThreadPoolStrings.js';
-//not GWT import - same folder const ThreadPoolStringsimport { ThreadObjectUtil } from './ThreadObjectUtil.js';
-//not GWT import - same folder const ThreadObjectUtilimport { PriorityRunnable } from './PriorityRunnable.js';
+const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+import { ThreadPoolStrings } from './ThreadPoolStrings.js';
+//not GWT import - same folder const ThreadPoolStrings
+import { ThreadObjectUtil } from './ThreadObjectUtil.js';
+//not GWT import - same folder const ThreadObjectUtil
+import { PriorityRunnable } from './PriorityRunnable.js';
 //not GWT import - same folder const PriorityRunnable
+
 export class ThreadPool
             extends Object
          {

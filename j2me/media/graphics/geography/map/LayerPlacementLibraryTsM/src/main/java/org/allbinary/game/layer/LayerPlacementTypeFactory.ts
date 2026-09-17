@@ -40,10 +40,12 @@ import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionF
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
 //not GWT import - same folder const LayerPlacementType
+
 export class LayerPlacementTypeFactory
             extends Object
          {

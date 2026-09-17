@@ -20,12 +20,16 @@
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 import { StatePaintable } from '../../../../org/allbinary/graphics/paint/StatePaintable.js';
 //not GWT import const StatePaintable
+
 
 
 

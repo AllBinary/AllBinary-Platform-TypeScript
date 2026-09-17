@@ -20,8 +20,10 @@
 
 import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 //not GWT import const InputAutomationModuleFactoryInterface
+
 import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 //not GWT import const OSGIServiceInterface
+
 
 
 

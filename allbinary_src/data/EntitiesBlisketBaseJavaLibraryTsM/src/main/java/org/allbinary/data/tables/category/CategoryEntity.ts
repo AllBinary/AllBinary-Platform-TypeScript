@@ -22,26 +22,37 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { Category } from '../../../../../org/allbinary/business/category/Category.js';
 //not GWT import const Category
+
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
+
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 //not GWT import const CategoryFactoryInterface
+
 import { InventoryDbInitInfo } from '../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
 //not GWT import const InventoryDbInitInfo
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -62,6 +73,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryEntityInterface } from './CategoryEntityInterface.js';
 //not GWT import - same folder const CategoryEntityInterface
+
 export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface {
         
 

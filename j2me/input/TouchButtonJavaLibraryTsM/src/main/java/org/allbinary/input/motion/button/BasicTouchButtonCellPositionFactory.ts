@@ -22,12 +22,16 @@
         
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
 //not GWT import const CellPositionFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +52,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
 //not GWT import - same folder const TouchButtonLocationHelper
+
 export class BasicTouchButtonCellPositionFactory
             extends Object
          {

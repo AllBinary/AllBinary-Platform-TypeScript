@@ -24,20 +24,28 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
 //not GWT import const GC
+
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
 //not GWT import const SwtImmutableImage
+
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
 //not GWT import const SwtMutableImage
+
 
 
 
@@ -58,6 +66,7 @@ import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableI
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSwtRotationUtil } from './ImageSwtRotationUtil.js';
 //not GWT import - same folder const ImageSwtRotationUtil
+
 export class ImageRotationUtil
             extends Object
          {

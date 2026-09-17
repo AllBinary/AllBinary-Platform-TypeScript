@@ -24,16 +24,22 @@
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
+
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
 //not GWT import const MutableTreeNode
+
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 //not GWT import const CanvasDom
+
 import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
 //not GWT import const IntegerDimension
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -53,11 +59,16 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import - same folder const Colorimport { Points } from './Points.js';
-//not GWT import - same folder const Pointsimport { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphicsimport { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEventimport { KeyEvent } from './KeyEvent.js';
+//not GWT import - same folder const Color
+import { Points } from './Points.js';
+//not GWT import - same folder const Points
+import { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics
+import { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEvent
+import { KeyEvent } from './KeyEvent.js';
 //not GWT import - same folder const KeyEvent
+
 export interface GraphicItemInterface {
         
 

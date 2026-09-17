@@ -22,32 +22,46 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { VectorAnimation } from '../../../../org/allbinary/animation/VectorAnimation.js';
 //not GWT import const VectorAnimation
+
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 //not GWT import const GameConfigurationCentral
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
 //not GWT import const AnimationFrameToImageUtil
+
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js';
 //not GWT import const ImageToRotationImageArrayUtil
+
 import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
 //not GWT import const VectorInfo
+
 
 
 
@@ -67,8 +81,10 @@ import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactoryimport { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
+//not GWT import - same folder const BaseImageAnimationFactory
+import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
 //not GWT import - same folder const AdjustedImageArrayRotationAnimation
+
 export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

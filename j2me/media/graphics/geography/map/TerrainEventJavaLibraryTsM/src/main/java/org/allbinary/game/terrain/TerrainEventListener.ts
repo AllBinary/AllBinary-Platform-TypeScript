@@ -8,14 +8,19 @@
         
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -35,8 +40,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventListenerInterface } from './TerrainEventListenerInterface.js';
-//not GWT import - same folder const TerrainEventListenerInterfaceimport { TerrainEvent } from './TerrainEvent.js';
+//not GWT import - same folder const TerrainEventListenerInterface
+import { TerrainEvent } from './TerrainEvent.js';
 //not GWT import - same folder const TerrainEvent
+
 export class TerrainEventListener
             extends Object
          implements TerrainEventListenerInterface {

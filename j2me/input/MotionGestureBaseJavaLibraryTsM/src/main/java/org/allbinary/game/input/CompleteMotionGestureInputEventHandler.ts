@@ -22,16 +22,22 @@
         
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -51,9 +57,12 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputEventListener } from './CompleteMotionGestureInputEventListener.js';
-//not GWT import - same folder const CompleteMotionGestureInputEventListenerimport { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
-//not GWT import - same folder const CompleteMotionGestureInputEventimport { CompleteMotionGestureInputEventListenerInterface } from './CompleteMotionGestureInputEventListenerInterface.js';
+//not GWT import - same folder const CompleteMotionGestureInputEventListener
+import { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
+//not GWT import - same folder const CompleteMotionGestureInputEvent
+import { CompleteMotionGestureInputEventListenerInterface } from './CompleteMotionGestureInputEventListenerInterface.js';
 //not GWT import - same folder const CompleteMotionGestureInputEventListenerInterface
+
 export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
         
 

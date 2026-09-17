@@ -22,30 +22,43 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { AbTagData } from '../../admin/tags/AbTagData.js';
 //not GWT import const AbTagData
+
 import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { ItemInterface } from '../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 //not GWT import const ItemInterface
+
 import { TableMappingInterface } from '../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 //not GWT import const InventoryEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { HelperTag } from '../../tags/HelperTag.js';
 //not GWT import const HelperTag
+
 import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
 //not GWT import const InventoryItemView
+
 
 
 
@@ -65,8 +78,10 @@ import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import - same folder const ModifyTableimport { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
+//not GWT import - same folder const ModifyTable
+import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
 //not GWT import - same folder const InventoryItemViewParentTagHelper
+
 export class InventoryRequestHelper extends ModifyTable {
         
 

@@ -38,10 +38,12 @@ import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterfa
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitTechnologySingletonFactory } from './UnitTechnologySingletonFactory.js';
 //not GWT import - same folder const UnitTechnologySingletonFactory
+
 export class DamageTechnology
             extends Object
          implements RTSInterface {

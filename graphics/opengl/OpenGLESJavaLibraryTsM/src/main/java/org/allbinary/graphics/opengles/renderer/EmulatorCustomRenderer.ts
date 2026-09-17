@@ -26,16 +26,22 @@
         
 import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
 //not GWT import const EGLConfig
+
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { InitEmulatorFactory } from '../../../../../org/allbinary/emulator/InitEmulatorFactory.js';
 //not GWT import const InitEmulatorFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 
 
 
@@ -56,6 +62,7 @@ const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RendererStrings } from './RendererStrings.js';
 //not GWT import - same folder const RendererStrings
+
 export class EmulatorCustomRenderer
             extends Object
          {

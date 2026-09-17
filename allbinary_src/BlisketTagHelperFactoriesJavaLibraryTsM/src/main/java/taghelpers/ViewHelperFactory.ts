@@ -22,14 +22,19 @@
         
 import { HashMap } from '../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { TagHelperFactory } from '../admin/taghelpers/TagHelperFactory.js';
 //not GWT import const TagHelperFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -50,6 +55,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewHelper } from './ViewHelper.js';
 //not GWT import - same folder const ViewHelper
+
 export class ViewHelperFactory extends TagHelperFactory {
         
 

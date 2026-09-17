@@ -22,20 +22,28 @@
         
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CryptFileReader } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
+
 import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -55,11 +63,16 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigAndManipulatorFactoryBase } from './TransformInfoObjectConfigAndManipulatorFactoryBase.js';
-//not GWT import - same folder const TransformInfoObjectConfigAndManipulatorFactoryBaseimport { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-//not GWT import - same folder const TransformInfoObjectConfigDataimport { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigInterfaceimport { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
-//not GWT import - same folder const TransformInfoObjectConfigimport { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
+//not GWT import - same folder const TransformInfoObjectConfigAndManipulatorFactoryBase
+import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
+//not GWT import - same folder const TransformInfoObjectConfigData
+import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
+//not GWT import - same folder const TransformInfoObjectConfigInterface
+import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
+//not GWT import - same folder const TransformInfoObjectConfig
+import { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
 //not GWT import - same folder const GenericStoreTransformInfoObjectConfig
+
 export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInfoObjectConfigAndManipulatorFactoryBase {
         
 

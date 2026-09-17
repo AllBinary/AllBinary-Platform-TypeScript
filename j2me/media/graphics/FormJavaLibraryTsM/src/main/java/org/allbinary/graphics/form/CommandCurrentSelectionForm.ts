@@ -22,28 +22,40 @@
         
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js';
 //not GWT import const RectangleAdjustedAnimation
+
 import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
 //not GWT import const RectangleFilledAdjustedAnimation
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
 //not GWT import const UpdateMyFontInterface
+
 import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
 //not GWT import const CommandTextItem
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 
 
 
@@ -63,8 +75,10 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
-//not GWT import - same folder const ScrollCurrentSelectionFormimport { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import - same folder const ScrollCurrentSelectionForm
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
 //not GWT import - same folder const ItemPaintableFactory
+
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {
         
 

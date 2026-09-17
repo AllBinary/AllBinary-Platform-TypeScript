@@ -26,14 +26,19 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
 //not GWT import const PlaynImmutableImage
+
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 //not GWT import const PlaynMutableImage
+
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+
 //not plain js import { CanvasSurface } 
 const CanvasSurface = globalThis.playn.core.CanvasSurface;
+
 
 
 
@@ -54,6 +59,7 @@ const CanvasSurface = globalThis.playn.core.CanvasSurface;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCreationUtil } from './ImageCreationUtil.js';
 //not GWT import - same folder const ImageCreationUtil
+
 export class ImageRotationUtil
             extends Object
          {

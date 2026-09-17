@@ -36,11 +36,14 @@ import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLObject3dProcessor } from './OpenGLObject3dProcessor.js';
-//not GWT import - same folder const OpenGLObject3dProcessorimport { ShaderComposite } from './ShaderComposite.js';
+//not GWT import - same folder const OpenGLObject3dProcessor
+import { ShaderComposite } from './ShaderComposite.js';
 //not GWT import - same folder const ShaderComposite
+
 export class UniformTextureOpenGLProcessor extends OpenGLObject3dProcessor {
         
 

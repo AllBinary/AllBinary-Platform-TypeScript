@@ -24,14 +24,19 @@
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -52,6 +57,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Intent } from './Intent.js';
 //not GWT import - same folder const Intent
+
 export class CommandUriAction
             extends Object
          {

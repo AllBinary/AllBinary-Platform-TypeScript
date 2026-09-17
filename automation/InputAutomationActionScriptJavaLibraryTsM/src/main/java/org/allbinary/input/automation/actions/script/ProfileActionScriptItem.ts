@@ -26,18 +26,25 @@
         
 import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
 //not GWT import const ActionEvent
+
 import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
 //not GWT import const ActionListener
+
 import { swing } from '../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 //not GWT import const DefaultMutableTreeNode
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -57,9 +64,12 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptItemInterface } from './ProfileActionScriptItemInterface.js';
-//not GWT import - same folder const ProfileActionScriptItemInterfaceimport { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenuimport { JMenuItem } from './JMenuItem.js';
+//not GWT import - same folder const ProfileActionScriptItemInterface
+import { JPopupMenu } from './JPopupMenu.js';
+//not GWT import - same folder const JPopupMenu
+import { JMenuItem } from './JMenuItem.js';
 //not GWT import - same folder const JMenuItem
+
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         
 

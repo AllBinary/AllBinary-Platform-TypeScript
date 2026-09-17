@@ -22,44 +22,64 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { Order } from '../../org/allbinary/business/user/commerce/inventory/order/Order.js';
 //not GWT import const Order
+
 import { OrderInterface } from '../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 //not GWT import const OrderInterface
+
 import { OrderProcessorUtil } from '../../org/allbinary/business/user/commerce/inventory/order/OrderProcessorUtil.js';
 //not GWT import const OrderProcessorUtil
+
 import { PaymentGatewayData } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 //not GWT import const PaymentGatewayData
+
 import { PaymentGatewayInterface } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 //not GWT import const PaymentGatewayInterface
+
 import { BasicPaymentType } from '../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
 //not GWT import const BasicPaymentType
+
 import { PaymentGatewayEntity } from '../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntity.js';
 //not GWT import const PaymentGatewayEntity
+
 import { PaymentGatewayEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 //not GWT import const PaymentGatewayEntityFactory
+
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 
 
 
@@ -80,6 +100,7 @@ import { StringValidationUtil } from '../../org/allbinary/logic/string/StringVal
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
 //not GWT import - same folder const TagHelper
+
 export class OrderHelper extends TagHelper {
         
 

@@ -26,26 +26,37 @@
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
 //not GWT import const Control
+
 import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
 //not GWT import const Controllable
+
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
+
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 //not GWT import const PlayerListener
+
 import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
 //not GWT import const TimeBase
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
+
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
+
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -65,8 +76,10 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-//not GWT import - same folder const TimeBaseInterfaceimport { Controllable2 } from './Controllable2.js';
-//not GWT import - same folder const Controllable2//BasicPlayerMIDP2
+//not GWT import - same folder const TimeBaseInterface
+import { Controllable2 } from './Controllable2.js';
+//not GWT import - same folder const Controllable2
+//BasicPlayerMIDP2
 export class PlayerComposite
             extends Object
          implements Controllable, Player {

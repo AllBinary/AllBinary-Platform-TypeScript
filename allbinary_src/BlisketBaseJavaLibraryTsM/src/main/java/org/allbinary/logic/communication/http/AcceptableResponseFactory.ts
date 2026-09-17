@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponse } from './AcceptableResponse.js';
 //not GWT import - same folder const AcceptableResponse
+
 export class AcceptableResponseFactory
             extends Object
          {

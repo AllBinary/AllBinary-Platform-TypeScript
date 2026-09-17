@@ -24,22 +24,31 @@
         
 import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { InputProbability } from '../../../../../../org/allbinary/game/ag/ai/InputProbability.js';
 //not GWT import const InputProbability
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
+
 import { GameTickTimeDelayHelperFactory } from '../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
+
 
 
 

@@ -24,16 +24,22 @@
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
 //not GWT import const ArtificialIntelligenceInterfaceFactoryInterface
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -53,8 +59,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
-//not GWT import - same folder const BasePatrolAIimport { PacePatrolAI } from './PacePatrolAI.js';
+//not GWT import - same folder const BasePatrolAI
+import { PacePatrolAI } from './PacePatrolAI.js';
 //not GWT import - same folder const PacePatrolAI
+
 export class PacePatrolAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

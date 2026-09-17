@@ -24,24 +24,34 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 //not GWT import const PaymentData
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -61,9 +71,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-//not GWT import - same folder const PaymentGatewayInterfaceimport { PaymentGatewayData } from './PaymentGatewayData.js';
-//not GWT import - same folder const PaymentGatewayDataimport { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
+//not GWT import - same folder const PaymentGatewayInterface
+import { PaymentGatewayData } from './PaymentGatewayData.js';
+//not GWT import - same folder const PaymentGatewayData
+import { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
 //not GWT import - same folder const PaymentGatewayPrimaryKey
+
 export class PaymentGateway
             extends Object
          implements PaymentGatewayInterface {

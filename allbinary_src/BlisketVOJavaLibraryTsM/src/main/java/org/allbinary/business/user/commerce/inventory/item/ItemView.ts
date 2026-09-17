@@ -24,22 +24,31 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
 //not GWT import const StreetAddressData
+
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -59,9 +68,12 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderItemInterface } from './OrderItemInterface.js';
-//not GWT import - same folder const OrderItemInterfaceimport { ItemData } from './ItemData.js';
-//not GWT import - same folder const ItemDataimport { BasicItemView } from './BasicItemView.js';
+//not GWT import - same folder const OrderItemInterface
+import { ItemData } from './ItemData.js';
+//not GWT import - same folder const ItemData
+import { BasicItemView } from './BasicItemView.js';
 //not GWT import - same folder const BasicItemView
+
 export class ItemView
             extends Object
          {

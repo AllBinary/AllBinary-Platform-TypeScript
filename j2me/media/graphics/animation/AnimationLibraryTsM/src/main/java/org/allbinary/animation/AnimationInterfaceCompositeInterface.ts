@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Animation } from './Animation.js';
 //not GWT import - same folder const Animation
+
 export interface AnimationInterfaceCompositeInterface {
         
 

@@ -22,14 +22,19 @@
         
 import { AdvertisementImageInterface } from '../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
 //not GWT import const AdvertisementImageInterface
+
 import { AdvertisementProductInterface } from '../../../../org/allbinary/business/advertisement/product/AdvertisementProductInterface.js';
 //not GWT import const AdvertisementProductInterface
+
 import { AdvertisementThumbnailInterface } from '../../../../org/allbinary/business/advertisement/thumbnail/AdvertisementThumbnailInterface.js';
 //not GWT import const AdvertisementThumbnailInterface
+
 import { Money } from '../../../../org/allbinary/business/user/commerce/money/Money.js';
 //not GWT import const Money
+
 import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
 //not GWT import const DisplayInBrowserContraintsInterface
+
 
 
 
@@ -50,6 +55,7 @@ import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/l
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementInterface } from './AdvertisementInterface.js';
 //not GWT import - same folder const AdvertisementInterface
+
 export class Advertisement
             extends Object
          implements AdvertisementInterface {

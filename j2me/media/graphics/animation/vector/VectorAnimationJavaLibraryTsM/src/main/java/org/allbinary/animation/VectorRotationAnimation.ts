@@ -22,14 +22,19 @@
         
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { Angle } from '../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
+
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 
 
 
@@ -49,8 +54,10 @@ import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorBaseRotationAnimation } from './VectorBaseRotationAnimation.js';
-//not GWT import - same folder const VectorBaseRotationAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const VectorBaseRotationAnimation
+import { AnimationBehavior } from './AnimationBehavior.js';
 //not GWT import - same folder const AnimationBehavior
+
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
 

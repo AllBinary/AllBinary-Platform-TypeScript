@@ -39,13 +39,18 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { EnumerationUtil } 
-const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;//not plain js - same folder import { ABHashtable } 
-const ABHashtable = globalThis.org.allbinary.util.ABHashtable;//not plain js - same folder import { BasicArrayListS } 
-const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;//not plain js - same folder import { BasicArrayList } 
+const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+//not plain js - same folder import { ABHashtable } 
+const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+//not plain js - same folder import { BasicArrayListS } 
+const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+//not plain js - same folder import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 export class HashtableUtil
             extends Object
          {

@@ -22,16 +22,22 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -52,6 +58,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
 //not GWT import - same folder const SpriteFactoryInterface
+
 export class SpriteFactory
             extends Object
          implements SpriteFactoryInterface {

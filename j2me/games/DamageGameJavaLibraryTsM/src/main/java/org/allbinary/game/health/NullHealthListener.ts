@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthListenerInterface } from './HealthListenerInterface.js';
 //not GWT import - same folder const HealthListenerInterface
+
 export class NullHealthListener
             extends Object
          implements HealthListenerInterface {

@@ -24,8 +24,10 @@
         
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 //not GWT import const InputAutomationActionInterface
+
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 //not GWT import const InputRobotInterface
+
 
 
 

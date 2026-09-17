@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationBehavior } from './AnimationBehavior.js';
 //not GWT import - same folder const AnimationBehavior
+
 export class AnimationBehaviorFactory
             extends Object
          {

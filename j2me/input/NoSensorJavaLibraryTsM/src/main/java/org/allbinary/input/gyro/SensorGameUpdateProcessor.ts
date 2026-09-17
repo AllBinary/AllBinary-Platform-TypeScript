@@ -24,8 +24,10 @@
         
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
 //not GWT import const AllBinarySensor
+
 import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
 //not GWT import const NoAllBinarySensor
+
 
 
 

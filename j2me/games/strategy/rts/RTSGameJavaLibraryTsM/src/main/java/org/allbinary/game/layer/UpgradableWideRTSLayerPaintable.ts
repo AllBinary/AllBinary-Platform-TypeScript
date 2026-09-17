@@ -20,12 +20,16 @@
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -45,9 +49,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import - same folder const RTSLayerCompositePaintableimport { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
-//not GWT import - same folder const UpgradableRTSLayerHudPaintableimport { RTSLayer } from './RTSLayer.js';
+//not GWT import - same folder const RTSLayerCompositePaintable
+import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
+//not GWT import - same folder const UpgradableRTSLayerHudPaintable
+import { RTSLayer } from './RTSLayer.js';
 //not GWT import - same folder const RTSLayer
+
 export class UpgradableWideRTSLayerPaintable extends RTSLayerCompositePaintable {
         
 

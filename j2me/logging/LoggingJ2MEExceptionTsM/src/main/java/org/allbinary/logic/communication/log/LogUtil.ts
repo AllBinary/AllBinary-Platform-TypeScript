@@ -40,12 +40,16 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogFormatUtil } 
-const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;//not plain js - same folder import { LogFactory } 
-const LogFactory = globalThis.org.allbinary.logic.communication.log.LogFactory;//not plain js - same folder import { Log } 
-const Log = globalThis.org.allbinary.logic.communication.log.Log;//ActualPlatform
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+//not plain js - same folder import { LogFactory } 
+const LogFactory = globalThis.org.allbinary.logic.communication.log.LogFactory;
+//not plain js - same folder import { Log } 
+const Log = globalThis.org.allbinary.logic.communication.log.Log;
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

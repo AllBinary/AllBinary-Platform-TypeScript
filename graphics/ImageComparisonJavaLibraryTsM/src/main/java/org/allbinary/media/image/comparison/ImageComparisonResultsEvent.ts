@@ -36,10 +36,12 @@ import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/ev
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResult } from './ImageComparisonResult.js';
 //not GWT import - same folder const ImageComparisonResult
+
 export class ImageComparisonResultsEvent extends AllBinaryEventObject {
         
 

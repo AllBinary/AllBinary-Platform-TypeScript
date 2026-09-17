@@ -20,22 +20,31 @@
 
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { RawKeyEventListener } from '../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
 //not GWT import const RawKeyEventListener
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
 //not GWT import const UpdateMyFontInterface
+
 import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
 //not GWT import const CustomTextBox
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -55,8 +64,10 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextInterface } from './TextInterface.js';
-//not GWT import - same folder const TextInterfaceimport { TextChangeListener } from './TextChangeListener.js';
+//not GWT import - same folder const TextInterface
+import { TextChangeListener } from './TextChangeListener.js';
 //not GWT import - same folder const TextChangeListener
+
 export class CustomTextBoxIndexedAnimation extends IndexedAnimation implements RawKeyEventListener, UpdateMyFontInterface, TextInterface {
         
 

@@ -24,26 +24,37 @@
         
 import { HashMap } from '../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 import { TransformFactory } from '../org/allbinary/logic/visual/transform/TransformFactory.js';
 //not GWT import const TransformFactory
+
 import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
+
 import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 //not GWT import const TransformDocumentInterface
+
 import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 

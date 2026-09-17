@@ -22,10 +22,13 @@
         
 import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 //not GWT import const AllBinaryGameCanvas
+
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 
 
 
@@ -45,8 +48,10 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
-//not GWT import - same folder const GeographicMapCompositeInterfaceimport { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import - same folder const GeographicMapCompositeInterface
+import { BasicGeographicMap } from './BasicGeographicMap.js';
 //not GWT import - same folder const BasicGeographicMap
+
 export class ColorFromEventUtil
             extends Object
          {

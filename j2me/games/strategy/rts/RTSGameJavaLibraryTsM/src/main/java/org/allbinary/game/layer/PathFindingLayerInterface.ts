@@ -22,14 +22,19 @@
         
 import { DestroyableInterface } from '../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
 //not GWT import const DestroyableInterface
+
 import { GroupInterfaceCompositeInterface } from '../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
 //not GWT import const GroupInterfaceCompositeInterface
+
 import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 //not GWT import const GameKeyEventSourceInterface
+
 import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/waypoint/WaypointLayerInterface.js';
 //not GWT import const WaypointLayerInterface
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -49,9 +54,12 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaBaseimport { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintableimport { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
+//not GWT import - same folder const GeographicMapCellPositionAreaBase
+import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+//not GWT import - same folder const SelectionHudPaintable
+import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
 //not GWT import - same folder const RTSLayer2LogHelper
+
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         
 

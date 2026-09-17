@@ -24,18 +24,25 @@
         
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
 //not GWT import const RandomRotationFactory
+
 import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
 //not GWT import const RandomTranslation
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
 
 
 
@@ -55,8 +62,10 @@ const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorExplosionType } from './VectorExplosionType.js';
-//not GWT import - same folder const VectorExplosionTypeimport { VectorAnimationUtil } from './VectorAnimationUtil.js';
+//not GWT import - same folder const VectorExplosionType
+import { VectorAnimationUtil } from './VectorAnimationUtil.js';
 //not GWT import - same folder const VectorAnimationUtil
+
 export class VectorExplosionGenerator
             extends Object
          {

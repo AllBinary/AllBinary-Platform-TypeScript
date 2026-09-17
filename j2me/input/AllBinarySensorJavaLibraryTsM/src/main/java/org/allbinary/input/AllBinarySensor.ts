@@ -24,10 +24,13 @@
         
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySensorListener } from './AllBinarySensorListener.js';
 //not GWT import - same folder const AllBinarySensorListener
+
 export class AllBinarySensor
             extends Object
          implements AllBinarySensorListener {

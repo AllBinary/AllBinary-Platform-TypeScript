@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonResource } from './TouchButtonResource.js';
 //not GWT import - same folder const TouchButtonResource
+
 export class TouchButtonStrafeRightResource extends TouchButtonResource {
         
 

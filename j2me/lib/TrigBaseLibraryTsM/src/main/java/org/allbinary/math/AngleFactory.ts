@@ -25,14 +25,19 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -55,9 +60,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Angle } from './Angle.js';
-//not GWT import - same folder const Angleimport { NamedAngle } from './NamedAngle.js';
-//not GWT import - same folder const NamedAngleimport { FrameUtil } from './FrameUtil.js';
+//not GWT import - same folder const Angle
+import { NamedAngle } from './NamedAngle.js';
+//not GWT import - same folder const NamedAngle
+import { FrameUtil } from './FrameUtil.js';
 //not GWT import - same folder const FrameUtil
+
 export class AngleFactory
             extends Object
          {

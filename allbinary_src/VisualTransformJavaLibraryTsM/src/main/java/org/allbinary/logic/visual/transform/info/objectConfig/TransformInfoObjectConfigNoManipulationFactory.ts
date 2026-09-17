@@ -24,16 +24,22 @@
         
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CryptFileReader } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
+
 import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -53,9 +59,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-//not GWT import - same folder const TransformInfoObjectConfigDataimport { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
-//not GWT import - same folder const TransformInfoObjectConfigimport { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
+//not GWT import - same folder const TransformInfoObjectConfigData
+import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
+//not GWT import - same folder const TransformInfoObjectConfig
+import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
 //not GWT import - same folder const TransformInfoObjectConfigInterface
+
 export class TransformInfoObjectConfigNoManipulationFactory
             extends Object
          {

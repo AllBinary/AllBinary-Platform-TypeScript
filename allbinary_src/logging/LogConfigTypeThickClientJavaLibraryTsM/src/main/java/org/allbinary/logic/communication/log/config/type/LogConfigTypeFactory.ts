@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
-//not GWT import - same folder const LogConfigTypeimport { LogConfigTypes } from './LogConfigTypes.js';
+//not GWT import - same folder const LogConfigType
+import { LogConfigTypes } from './LogConfigTypes.js';
 //not GWT import - same folder const LogConfigTypes
+
 export class LogConfigTypeFactory
             extends Object
          {

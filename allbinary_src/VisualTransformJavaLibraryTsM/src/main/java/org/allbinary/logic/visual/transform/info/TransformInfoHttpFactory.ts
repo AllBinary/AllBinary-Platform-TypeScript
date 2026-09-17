@@ -24,20 +24,28 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { StoreFrontFactory } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -57,9 +65,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpContext } from './TransformInfoHttpContext.js';
-//not GWT import - same folder const TransformInfoHttpContextimport { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterfaceimport { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
+//not GWT import - same folder const TransformInfoHttpContext
+import { TransformInfoInterface } from './TransformInfoInterface.js';
+//not GWT import - same folder const TransformInfoInterface
+import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
 //not GWT import - same folder const TransformInfoHttpStore
+
 export class TransformInfoHttpFactory
             extends Object
          {

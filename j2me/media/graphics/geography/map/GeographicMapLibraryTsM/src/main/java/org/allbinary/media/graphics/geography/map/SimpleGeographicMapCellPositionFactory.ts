@@ -39,9 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryInterfaceimport { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPositionimport { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import - same folder const GeographicMapCellPositionFactoryInterface
+import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import - same folder const GeographicMapCellPosition
+import { BasicGeographicMap } from './BasicGeographicMap.js';
 //not GWT import - same folder const BasicGeographicMap
+
 export class SimpleGeographicMapCellPositionFactory
             extends Object
          implements GeographicMapCellPositionFactoryInterface {

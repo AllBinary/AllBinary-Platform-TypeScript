@@ -26,22 +26,31 @@
         
 import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
 //not GWT import const RecordStore
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { PlatformRecordIdUtil } from '../../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
 //not GWT import const PlatformRecordIdUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -61,8 +70,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PersistanceStrings } from './PersistanceStrings.js';
-//not GWT import - same folder const PersistanceStringsimport { NullRecordStore } from './NullRecordStore.js';
+//not GWT import - same folder const PersistanceStrings
+import { NullRecordStore } from './NullRecordStore.js';
 //not GWT import - same folder const NullRecordStore
+
 export class BasicPersitance
             extends Object
          {

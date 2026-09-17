@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeNoLicense } from './AbeNoLicense.js';
-//not GWT import - same folder const AbeNoLicenseimport { AbeLicenseInterface } from './AbeLicenseInterface.js';
+//not GWT import - same folder const AbeNoLicense
+import { AbeLicenseInterface } from './AbeLicenseInterface.js';
 //not GWT import - same folder const AbeLicenseInterface
+
 export class LicenseInterfaceSingleton
             extends Object
          {

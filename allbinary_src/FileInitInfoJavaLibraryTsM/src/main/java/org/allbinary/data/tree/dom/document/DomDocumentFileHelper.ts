@@ -24,24 +24,34 @@
         
 import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
 //not GWT import const Transformer
+
 import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
 //not GWT import const TransformerFactory
+
 import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
 //not GWT import const DOMSource
+
 import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
 //not GWT import const StreamResult
+
 import { AbDataOutputStream } from '../../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
 //not GWT import const AbDataOutputStream
+
 import { AbFileInputStream } from '../../../../../../org/allbinary/logic/io/AbFileInputStream.js';
 //not GWT import const AbFileInputStream
+
 import { DataOutputStreamFactory } from '../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
 //not GWT import const DataOutputStreamFactory
+
 import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
 //not GWT import const StreamUtil
+
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -62,6 +72,7 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomDocumentHelper } from './DomDocumentHelper.js';
 //not GWT import - same folder const DomDocumentHelper
+
 export class DomDocumentFileHelper
             extends Object
          {

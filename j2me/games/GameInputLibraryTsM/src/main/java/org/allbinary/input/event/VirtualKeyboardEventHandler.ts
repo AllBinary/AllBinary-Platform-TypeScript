@@ -24,12 +24,16 @@
         
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 
 
 
@@ -49,8 +53,10 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VirtualKeyboardEvent } from './VirtualKeyboardEvent.js';
-//not GWT import - same folder const VirtualKeyboardEventimport { VirtualKeyboardEventListenerInterface } from './VirtualKeyboardEventListenerInterface.js';
+//not GWT import - same folder const VirtualKeyboardEvent
+import { VirtualKeyboardEventListenerInterface } from './VirtualKeyboardEventListenerInterface.js';
 //not GWT import - same folder const VirtualKeyboardEventListenerInterface
+
 export class VirtualKeyboardEventHandler extends BasicEventHandler {
         
 

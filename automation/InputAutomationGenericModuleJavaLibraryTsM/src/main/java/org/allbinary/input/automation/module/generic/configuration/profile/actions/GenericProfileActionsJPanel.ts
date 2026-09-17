@@ -22,10 +22,13 @@
         
 import { DefaultListModelHelper } from '../../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
 //not GWT import const DefaultListModelHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -45,23 +48,40 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { GenericProfileActions } from './GenericProfileActions.js';
-//not GWT import - same folder const GenericProfileActionsimport { GenericProfileActionJPanel } from './GenericProfileActionJPanel.js';
-//not GWT import - same folder const GenericProfileActionJPanelimport { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialogimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextFieldimport { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPaneimport { JList } from './JList.js';
-//not GWT import - same folder const JListimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
-//not GWT import - same folder const Shortimport { ListSelectionListener } from './ListSelectionListener.js';
-//not GWT import - same folder const ListSelectionListenerimport { ListSelectionEvent } from './ListSelectionEvent.js';
-//not GWT import - same folder const ListSelectionEventimport { GenericProfileAction } from './GenericProfileAction.js';
+//not GWT import - same folder const JPanel
+import { GenericProfileActions } from './GenericProfileActions.js';
+//not GWT import - same folder const GenericProfileActions
+import { GenericProfileActionJPanel } from './GenericProfileActionJPanel.js';
+//not GWT import - same folder const GenericProfileActionJPanel
+import { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialog
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextField
+import { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPane
+import { JList } from './JList.js';
+//not GWT import - same folder const JList
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
+//not GWT import - same folder const Short
+import { ListSelectionListener } from './ListSelectionListener.js';
+//not GWT import - same folder const ListSelectionListener
+import { ListSelectionEvent } from './ListSelectionEvent.js';
+//not GWT import - same folder const ListSelectionEvent
+import { GenericProfileAction } from './GenericProfileAction.js';
 //not GWT import - same folder const GenericProfileAction
+
 export class GenericProfileActionsJPanel extends javax.swing.JPanel {
         
 

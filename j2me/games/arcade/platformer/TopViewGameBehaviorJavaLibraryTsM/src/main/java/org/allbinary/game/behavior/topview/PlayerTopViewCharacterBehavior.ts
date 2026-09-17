@@ -22,24 +22,34 @@
         
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { TrackingEventCircularStaticPool } from '../../../../../org/allbinary/game/tracking/TrackingEventCircularStaticPool.js';
 //not GWT import const TrackingEventCircularStaticPool
+
 import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 //not GWT import const TrackingEventHandler
+
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { BasicGeographicMapUtil } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapUtil.js';
 //not GWT import const BasicGeographicMapUtil
+
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 
 
 
@@ -60,6 +70,7 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
 //not GWT import - same folder const TopViewCharacterBehavior
+
 export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         
 

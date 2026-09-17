@@ -22,8 +22,10 @@
         
 import { Image } from '../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
 //not GWT import const Resource
+
 
 
 

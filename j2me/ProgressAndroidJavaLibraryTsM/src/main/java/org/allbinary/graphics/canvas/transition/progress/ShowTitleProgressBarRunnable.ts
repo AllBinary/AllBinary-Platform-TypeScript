@@ -22,12 +22,16 @@
         
 import { TransistionTypes } from '../../../../../../org/allbinary/animation/transition/TransistionTypes.js';
 //not GWT import const TransistionTypes
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { Activity } from '../../../../../../android/app/Activity.js';
 //not GWT import const Activity
+
 
 
 
@@ -47,8 +51,10 @@ import { Activity } from '../../../../../../android/app/Activity.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressRunnable } from './ProgressRunnable.js';
-//not GWT import - same folder const ProgressRunnableimport { ProgressCanvas } from './ProgressCanvas.js';
+//not GWT import - same folder const ProgressRunnable
+import { ProgressCanvas } from './ProgressCanvas.js';
 //not GWT import - same folder const ProgressCanvas
+
 export class ShowTitleProgressBarRunnable extends ProgressRunnable {
         
 

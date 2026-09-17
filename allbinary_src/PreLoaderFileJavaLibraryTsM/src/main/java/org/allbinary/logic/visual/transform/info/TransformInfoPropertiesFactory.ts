@@ -24,18 +24,25 @@
         
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
 //not GWT import const Attr
+
 import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
 //not GWT import const NamedNodeMap
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -55,8 +62,10 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoDataimport { TransformInfoProperties } from './TransformInfoProperties.js';
+//not GWT import - same folder const TransformInfoData
+import { TransformInfoProperties } from './TransformInfoProperties.js';
 //not GWT import - same folder const TransformInfoProperties
+
 export class TransformInfoPropertiesFactory
             extends Object
          {

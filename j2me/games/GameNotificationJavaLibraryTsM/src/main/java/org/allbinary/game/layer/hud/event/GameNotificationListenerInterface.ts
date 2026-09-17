@@ -38,10 +38,12 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotificationEvent } from './GameNotificationEvent.js';
 //not GWT import - same folder const GameNotificationEvent
+
 export interface GameNotificationListenerInterface extends EventListenerInterface {
         
 

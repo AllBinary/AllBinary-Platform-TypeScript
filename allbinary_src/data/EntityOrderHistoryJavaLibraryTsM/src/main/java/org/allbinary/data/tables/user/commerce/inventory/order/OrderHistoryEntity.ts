@@ -28,84 +28,124 @@
         
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
 //not GWT import const Calendar
+
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Random } from '../../../../../../../../java/util/Random.js';
 //not GWT import const Random
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { StoreFrontFactory } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
 //not GWT import const HistoryDbInitInfo
+
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { BillingAddressData } from '../../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
 //not GWT import const BillingAddressData
+
 import { ShippingAddressData } from '../../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
 //not GWT import const ShippingAddressData
+
 import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
 //not GWT import const StreetAddress
+
 import { Basket } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
 //not GWT import const Basket
+
 import { BasketInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
 //not GWT import const BasketInterface
+
 import { Order } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/Order.js';
 //not GWT import const Order
+
 import { OrderData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
 //not GWT import const OrderData
+
 import { OrderHistory } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
 //not GWT import const OrderHistory
+
 import { OrderHistoryData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
 //not GWT import const OrderHistoryData
+
 import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 //not GWT import const Money
+
 import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 //not GWT import const PaymentData
+
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
 //not GWT import const PaymentInterface
+
 import { TaxFactory } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/TaxFactory.js';
 //not GWT import const TaxFactory
+
 import { ShippingMethodData } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 //not GWT import const ShippingMethodData
+
 import { ShippingMethods } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethods.js';
 //not GWT import const ShippingMethods
+
 import { ShippingInterface } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
 //not GWT import const ShippingInterface
+
 import { OrderHistoryIdGenerator } from '../../../../../../../../org/allbinary/data/generator/OrderHistoryIdGenerator.js';
 //not GWT import const OrderHistoryIdGenerator
+
 import { TableDataFactory } from '../../../../../../../../org/allbinary/data/tables/TableDataFactory.js';
 //not GWT import const TableDataFactory
+
 import { BillingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js';
 //not GWT import const BillingAddressesEntity
+
 import { ShippingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
 //not GWT import const ShippingAddressesEntity
+
 import { PaymentEntity } from '../../../../../../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
 //not GWT import const PaymentEntity
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../../../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 
 
 
@@ -126,6 +166,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../../../../.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryEntityInterface } from './OrderHistoryEntityInterface.js';
 //not GWT import - same folder const OrderHistoryEntityInterface
+
 export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityInterface {
         
 

@@ -24,12 +24,16 @@
         
 import { Image } from '../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
 //not GWT import const Resource
+
 import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
 //not GWT import const SwtMutableImage
+
 
 
 

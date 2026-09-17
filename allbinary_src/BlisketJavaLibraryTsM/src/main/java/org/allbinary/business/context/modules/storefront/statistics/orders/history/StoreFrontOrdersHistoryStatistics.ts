@@ -26,22 +26,31 @@
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { OrderHistoryInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js';
 //not GWT import const OrderHistoryInterface
+
 import { Money } from '../../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 //not GWT import const Money
+
 import { OrderHistoryEntityFactory } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
 //not GWT import const OrderHistoryEntityFactory
+
 import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
 //not GWT import const OrderHistoryEntityInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -61,8 +70,10 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontOrdersHistoryStatisticsInterface } from './StoreFrontOrdersHistoryStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontOrdersHistoryStatisticsInterfaceimport { StoreFrontOrdersHistoryStatisticsData } from './StoreFrontOrdersHistoryStatisticsData.js';
+//not GWT import - same folder const StoreFrontOrdersHistoryStatisticsInterface
+import { StoreFrontOrdersHistoryStatisticsData } from './StoreFrontOrdersHistoryStatisticsData.js';
 //not GWT import - same folder const StoreFrontOrdersHistoryStatisticsData
+
 export class StoreFrontOrdersHistoryStatistics
             extends Object
          implements StoreFrontOrdersHistoryStatisticsInterface {

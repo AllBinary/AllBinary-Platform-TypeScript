@@ -24,52 +24,76 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { CollidableNeverCollideBehaviorFactory } from '../../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
 //not GWT import const CollidableNeverCollideBehaviorFactory
+
 import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
 //not GWT import const DamageableInterface
+
 import { DestroyableInterface } from '../../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
 //not GWT import const DestroyableInterface
+
 import { DestroyedEvent } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
 //not GWT import const DestroyedEvent
+
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 //not GWT import const BasicGroupFactory
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 //not GWT import const PickedUpLayerInterfaceFactoryInterface
+
 import { PickupBehavior } from '../../../../../org/allbinary/game/layer/pickup/PickupBehavior.js';
 //not GWT import const PickupBehavior
+
 import { PickupCompositeInterface } from '../../../../../org/allbinary/game/layer/pickup/PickupCompositeInterface.js';
 //not GWT import const PickupCompositeInterface
+
 import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
 //not GWT import const PartInterface
+
 import { PartInterfaceUtil } from '../../../../../org/allbinary/game/part/PartInterfaceUtil.js';
 //not GWT import const PartInterfaceUtil
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -90,6 +114,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 //not GWT import - same folder const SpecialGameInputInterface
+
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer implements DestroyableInterface, DamageableInterface, PickupCompositeInterface, SpecialGameInputInterface {
         
 

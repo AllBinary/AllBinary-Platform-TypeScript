@@ -22,22 +22,31 @@
         
 import { Connection } from '../../../../../../../java/sql/Connection.js';
 //not GWT import const Connection
+
 import { DriverManager } from '../../../../../../../java/sql/DriverManager.js';
 //not GWT import const DriverManager
+
 import { SQLException } from '../../../../../../../java/sql/SQLException.js';
 //not GWT import const SQLException
+
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 

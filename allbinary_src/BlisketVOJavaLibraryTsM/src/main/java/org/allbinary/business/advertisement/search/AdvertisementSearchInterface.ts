@@ -20,14 +20,19 @@
 
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
 //not GWT import const AdvertisementCategoryInterface
+
 import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
 //not GWT import const AdvertisementWebsiteInterface
+
 import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
 //not GWT import const PriceConstraintInterface
+
 import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
 //not GWT import const TwoDimensionalConstraintInterface
+
 
 
 

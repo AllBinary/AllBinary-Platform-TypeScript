@@ -24,10 +24,13 @@
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 //not GWT import const SensorFeatureFactory
+
 import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
 //not GWT import const AllBinaryOrientationSensor
+
 
 
 
@@ -48,6 +51,7 @@ import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoAccelerometerSensor } from './NoAccelerometerSensor.js';
 //not GWT import - same folder const NoAccelerometerSensor
+
 export class AccelerometerSensorFactory
             extends Object
          {

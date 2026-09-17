@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementInterface } from './AdvertisementInterface.js';
 //not GWT import - same folder const AdvertisementInterface
+
 export interface AdvertisementsInterface {
         
 

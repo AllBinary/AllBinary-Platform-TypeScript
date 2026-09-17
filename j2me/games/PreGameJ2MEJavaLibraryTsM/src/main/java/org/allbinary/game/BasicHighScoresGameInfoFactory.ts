@@ -39,10 +39,14 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInfo } from './GameInfo.js';
-//not GWT import - same folder const GameInfoimport { GameTypeFactory } from './GameTypeFactory.js';
-//not GWT import - same folder const GameTypeFactoryimport { GameMode } from './GameMode.js';
-//not GWT import - same folder const GameModeimport { PlayerTypesFactory } from './PlayerTypesFactory.js';
+//not GWT import - same folder const GameInfo
+import { GameTypeFactory } from './GameTypeFactory.js';
+//not GWT import - same folder const GameTypeFactory
+import { GameMode } from './GameMode.js';
+//not GWT import - same folder const GameMode
+import { PlayerTypesFactory } from './PlayerTypesFactory.js';
 //not GWT import - same folder const PlayerTypesFactory
+
 export class BasicHighScoresGameInfoFactory
             extends Object
          {

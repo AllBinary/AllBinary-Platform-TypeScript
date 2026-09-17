@@ -26,10 +26,13 @@
         
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,8 +52,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundInterface } from './SoundInterface.js';
-//not GWT import - same folder const SoundInterfaceimport { NoPlayer } from './NoPlayer.js';
+//not GWT import - same folder const SoundInterface
+import { NoPlayer } from './NoPlayer.js';
 //not GWT import - same folder const NoPlayer
+
 export class Sound
             extends Object
          implements SoundInterface, Runnable {

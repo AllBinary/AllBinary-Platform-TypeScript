@@ -24,26 +24,37 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
 //not GWT import const TextField
+
 import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
 //not GWT import const CustomTextBox
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { ABToGBUtil } from '../../../../org/allbinary/game/canvas/ABToGBUtil.js';
 //not GWT import const ABToGBUtil
+
 import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 //not GWT import const AllBinaryGameCanvas
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 
 
 
@@ -63,8 +74,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextBox2 } from './CustomTextBox2.js';
-//not GWT import - same folder const CustomTextBox2import { CustomTextBoxIndexedAnimation } from './CustomTextBoxIndexedAnimation.js';
+//not GWT import - same folder const CustomTextBox2
+import { CustomTextBoxIndexedAnimation } from './CustomTextBoxIndexedAnimation.js';
 //not GWT import - same folder const CustomTextBoxIndexedAnimation
+
 export class CustomTextBoxIndexedAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

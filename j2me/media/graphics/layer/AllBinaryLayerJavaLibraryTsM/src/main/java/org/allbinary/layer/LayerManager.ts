@@ -10,18 +10,25 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
 //not GWT import const SynchObject
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
 
 
 
@@ -41,9 +48,12 @@ const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import - same folder const LayerManagerLoggingBaseimport { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayerimport { Layer } from './Layer.js';
+//not GWT import - same folder const LayerManagerLoggingBase
+import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import - same folder const AllBinaryLayer
+import { Layer } from './Layer.js';
 //not GWT import - same folder const Layer
+
 export class LayerManager
             extends Object
          {

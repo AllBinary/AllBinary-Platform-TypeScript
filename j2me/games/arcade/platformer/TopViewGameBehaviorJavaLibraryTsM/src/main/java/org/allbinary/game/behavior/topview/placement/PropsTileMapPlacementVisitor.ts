@@ -20,14 +20,19 @@
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
 //not GWT import const TileLayer
+
 import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
 //not GWT import const TiledMap
+
 
 
 
@@ -48,6 +53,7 @@ import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TileMapPlacementVisitor } from './TileMapPlacementVisitor.js';
 //not GWT import - same folder const TileMapPlacementVisitor
+
 export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
         
 

@@ -22,8 +22,10 @@
         
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -43,10 +45,14 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactoryimport { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMapimport { GeographicMapCellPositionFactory } from './GeographicMapCellPositionFactory.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryimport { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import - same folder const BasicGeographicMapCellPositionFactory
+import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import - same folder const BasicGeographicMap
+import { GeographicMapCellPositionFactory } from './GeographicMapCellPositionFactory.js';
+//not GWT import - same folder const GeographicMapCellPositionFactory
+import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
 //not GWT import - same folder const GeographicMapCellPosition
+
 export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapCellPositionFactory {
         
 

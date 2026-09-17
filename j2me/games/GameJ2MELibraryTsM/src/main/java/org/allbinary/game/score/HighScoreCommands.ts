@@ -22,8 +22,10 @@
         
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 

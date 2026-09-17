@@ -22,8 +22,10 @@
         
 import { Item } from '../../../javax/microedition/lcdui/Item.js';
 //not GWT import const Item
+
 import { CommandForm } from '../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 //not GWT import const CommandForm
+
 
 
 

@@ -22,22 +22,31 @@
         
 import { Matrix } from '../../../../android/graphics/Matrix.js';
 //not GWT import const Matrix
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidImageUtil.js';
 //not GWT import const AndroidImageUtil
+
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
 //not GWT import const ImageCopyUtil
+
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
 //not GWT import const ImageModifierUtil
+
 
 
 
@@ -58,6 +67,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
 //not GWT import - same folder const ImageBaseRotationAnimation
+
 export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

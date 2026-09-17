@@ -24,8 +24,10 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -46,6 +48,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
 //not GWT import - same folder const ThreadPool
+
 export class PrimaryThreadPool extends ThreadPool {
         
 

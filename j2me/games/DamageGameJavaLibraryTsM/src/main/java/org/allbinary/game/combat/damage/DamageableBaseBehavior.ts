@@ -42,6 +42,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DamageableInterface } from './DamageableInterface.js';
 //not GWT import - same folder const DamageableInterface
+
 export class DamageableBaseBehavior
             extends Object
          implements DamageableInterface {

@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlMetaAttributeData } from './HtmlMetaAttributeData.js';
 //not GWT import - same folder const HtmlMetaAttributeData
+
 export class HtmlMetaAttributeDataFactory
             extends Object
          {

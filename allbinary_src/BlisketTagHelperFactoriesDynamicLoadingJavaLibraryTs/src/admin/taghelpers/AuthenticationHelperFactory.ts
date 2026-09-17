@@ -22,12 +22,16 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 
 
 
@@ -47,8 +51,10 @@ import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
-//not GWT import - same folder const TagHelperFactoryInterfaceimport { HelperFactory } from './HelperFactory.js';
+//not GWT import - same folder const TagHelperFactoryInterface
+import { HelperFactory } from './HelperFactory.js';
 //not GWT import - same folder const HelperFactory
+
 export class AuthenticationHelperFactory
             extends Object
          implements TagHelperFactoryInterface {

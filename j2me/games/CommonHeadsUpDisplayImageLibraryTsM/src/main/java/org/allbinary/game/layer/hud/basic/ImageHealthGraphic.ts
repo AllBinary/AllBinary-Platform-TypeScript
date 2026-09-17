@@ -22,16 +22,22 @@
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
 //not GWT import const AnimationInterface
+
 import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
 //not GWT import const HealthInterface
+
 import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
 //not GWT import const ImageCacheFactory
+
 
 
 
@@ -52,6 +58,7 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthGraphic } from './HealthGraphic.js';
 //not GWT import - same folder const HealthGraphic
+
 export class ImageHealthGraphic extends HealthGraphic {
         
 

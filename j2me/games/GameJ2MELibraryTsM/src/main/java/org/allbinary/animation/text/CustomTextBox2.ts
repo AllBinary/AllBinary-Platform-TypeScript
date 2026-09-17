@@ -22,12 +22,16 @@
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
 //not GWT import const CustomTextBox
+
 
 
 

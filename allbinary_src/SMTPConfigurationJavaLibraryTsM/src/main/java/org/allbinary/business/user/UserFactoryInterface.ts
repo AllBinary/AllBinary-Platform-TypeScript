@@ -22,8 +22,10 @@
         
 import { Serializable } from '../../../../java/io/Serializable.js';
 //not GWT import const Serializable
+
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 
 
 
@@ -44,6 +46,7 @@ import { HashMap } from '../../../../java/util/HashMap.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
 //not GWT import - same folder const UserInterface
+
 export interface UserFactoryInterface extends Serializable {
         
 

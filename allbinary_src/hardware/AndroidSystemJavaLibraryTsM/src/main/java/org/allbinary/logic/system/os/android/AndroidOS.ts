@@ -24,12 +24,16 @@
         
 import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';
 //not GWT import const AndroidInfoFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -50,6 +54,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidSystemProperties } from './AndroidSystemProperties.js';
 //not GWT import - same folder const AndroidSystemProperties
+
 export class AndroidOS extends GenericOperatingSystem {
         
 

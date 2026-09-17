@@ -22,8 +22,10 @@
         
 import { EthernetInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/EthernetInterface.js';
 //not GWT import const EthernetInterface
+
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
 //not GWT import const HardwareComponentInterface
+
 
 
 

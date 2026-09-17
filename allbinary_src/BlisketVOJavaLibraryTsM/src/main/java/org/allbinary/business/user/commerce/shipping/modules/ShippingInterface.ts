@@ -20,8 +20,10 @@
 
 import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 //not GWT import const OrderInterface
+
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 //not GWT import const Money
+
 
 
 

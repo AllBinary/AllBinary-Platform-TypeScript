@@ -24,10 +24,13 @@
         
 import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
 //not GWT import const StreetAddressesEntity
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BillingAddressesEntity } from './BillingAddressesEntity.js';
 //not GWT import - same folder const BillingAddressesEntity
+
 export class BillingAddressesEntityFactory
             extends Object
          {

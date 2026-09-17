@@ -20,14 +20,19 @@
 
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 //not GWT import const RotationAnimation
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 
 
 
@@ -47,8 +52,10 @@ const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLog
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import - same folder const CompoundAnimationInterfaceFactoryimport { CompoundRotationAnimation } from './CompoundRotationAnimation.js';
+//not GWT import - same folder const CompoundAnimationInterfaceFactory
+import { CompoundRotationAnimation } from './CompoundRotationAnimation.js';
 //not GWT import - same folder const CompoundRotationAnimation
+
 export class CompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
 

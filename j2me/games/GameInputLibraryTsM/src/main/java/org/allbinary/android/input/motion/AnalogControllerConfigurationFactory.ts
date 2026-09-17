@@ -24,10 +24,13 @@
         
 import { AnalogControllerConfigurationEvent } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEvent.js';
 //not GWT import const AnalogControllerConfigurationEvent
+
 import { AnalogControllerConfigurationEventHandler } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEventHandler.js';
 //not GWT import const AnalogControllerConfigurationEventHandler
+
 import { ScaleFactorFactory } from '../../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
 //not GWT import const ScaleFactorFactory
+
 
 
 

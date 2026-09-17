@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StatePaintable } from './StatePaintable.js';
 //not GWT import - same folder const StatePaintable
+
 export class StatePaintableFactory
             extends Object
          {

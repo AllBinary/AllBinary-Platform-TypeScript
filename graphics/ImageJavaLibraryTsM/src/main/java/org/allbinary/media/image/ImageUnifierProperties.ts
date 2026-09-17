@@ -42,6 +42,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUnifierCell } from './ImageUnifierCell.js';
 //not GWT import - same folder const ImageUnifierCell
+
 export class ImageUnifierProperties
             extends Object
          {

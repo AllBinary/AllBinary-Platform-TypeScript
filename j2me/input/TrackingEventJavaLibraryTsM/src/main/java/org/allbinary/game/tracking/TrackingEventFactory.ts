@@ -22,8 +22,10 @@
         
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
 //not GWT import const AllBinaryEventObjectFactoryInterface
+
 
 
 
@@ -43,8 +45,10 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEvent } from './TrackingEvent.js';
-//not GWT import - same folder const TrackingEventimport { TrackingEventHandler } from './TrackingEventHandler.js';
+//not GWT import - same folder const TrackingEvent
+import { TrackingEventHandler } from './TrackingEventHandler.js';
 //not GWT import - same folder const TrackingEventHandler
+
 export class TrackingEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {

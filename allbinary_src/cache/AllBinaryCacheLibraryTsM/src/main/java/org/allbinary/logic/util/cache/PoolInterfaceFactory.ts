@@ -41,10 +41,14 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PoolInterface } from './PoolInterface.js';
-//not GWT import - same folder const PoolInterfaceimport { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import - same folder const CacheableInterfaceFactoryInterfaceimport { PoolType } from './PoolType.js';
-//not GWT import - same folder const PoolTypeimport { CachePolicy } from './CachePolicy.js';
+//not GWT import - same folder const PoolInterface
+import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
+//not GWT import - same folder const CacheableInterfaceFactoryInterface
+import { PoolType } from './PoolType.js';
+//not GWT import - same folder const PoolType
+import { CachePolicy } from './CachePolicy.js';
 //not GWT import - same folder const CachePolicy
+
 export class PoolInterfaceFactory
             extends Object
          {

@@ -22,26 +22,37 @@
         
 import { DropWeaponSound } from '../../../../../../../org/allbinary/ag/weapon/media/audio/DropWeaponSound.js';
 //not GWT import const DropWeaponSound
+
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 import { SimpleWeaponLayer } from '../../../../../../../org/allbinary/game/layer/weapon/SimpleWeaponLayer.js';
 //not GWT import const SimpleWeaponLayer
+
 import { RemoteInfo } from '../../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { Rectangle } from '../../../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { SecondaryPlayerQueueFactory } from '../../../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
 //not GWT import const SecondaryPlayerQueueFactory
+
 import { NoMovementFactory } from '../../../../../../../org/allbinary/physics/movement/NoMovementFactory.js';
 //not GWT import const NoMovementFactory
+
 import { ViewPositionBase } from '../../../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 import { ViewPositionEventHandler } from '../../../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
 //not GWT import const ViewPositionEventHandler
+
 
 
 
@@ -62,6 +73,7 @@ import { ViewPositionEventHandler } from '../../../../../../../org/allbinary/vie
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineWeaponResources } from './MineWeaponResources.js';
 //not GWT import - same folder const MineWeaponResources
+
 export class MineLayer extends SimpleWeaponLayer {
         
 

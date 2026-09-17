@@ -22,10 +22,13 @@
         
 import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
 //not GWT import const ActivityFractureUtil
+
 import { Activity } from '../../../../android/app/Activity.js';
 //not GWT import const Activity
+
 import { WindowManager } from '../../../../android/view/WindowManager.js';
 //not GWT import const WindowManager
+
 
 
 

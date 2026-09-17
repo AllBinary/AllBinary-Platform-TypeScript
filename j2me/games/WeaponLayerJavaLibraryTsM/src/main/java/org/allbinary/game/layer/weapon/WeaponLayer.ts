@@ -22,46 +22,67 @@
         
 import { GL } from '../../../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
 //not GWT import const CollidableBaseBehavior
+
 import { DestroyedLayerProcessor } from '../../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js';
 //not GWT import const DestroyedLayerProcessor
+
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
 //not GWT import const GameConfigurationUtil
+
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 //not GWT import const BasicGroupFactory
+
 import { MultiPlayerGameLayer } from '../../../../../org/allbinary/game/multiplayer/layer/MultiPlayerGameLayer.js';
 //not GWT import const MultiPlayerGameLayer
+
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
 //not GWT import const NoScoreable
+
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 //not GWT import const ScoreableInterface
+
 import { TickableInterface } from '../../../../../org/allbinary/game/tick/TickableInterface.js';
 //not GWT import const TickableInterface
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
 //not GWT import const Movement
+
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
+
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -82,6 +103,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableWeaponBehavior } from './CollidableWeaponBehavior.js';
 //not GWT import - same folder const CollidableWeaponBehavior
+
 export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterface {
         
 

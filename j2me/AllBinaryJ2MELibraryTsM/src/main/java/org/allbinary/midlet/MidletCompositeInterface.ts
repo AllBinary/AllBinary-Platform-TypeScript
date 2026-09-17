@@ -20,8 +20,10 @@
 
 import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
+
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 //not GWT import const MIDlet
+
 
 
 
@@ -42,6 +44,7 @@ import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
 //not GWT import - same folder const AllBinaryMidlet
+
 export interface MidletCompositeInterface {
         
 

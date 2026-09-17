@@ -38,10 +38,12 @@ import { TransformInfoInterface } from '../../../../../../../../org/allbinary/lo
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
 //not GWT import - same folder const TransformInfoObjectConfigGenerator
+
 export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 

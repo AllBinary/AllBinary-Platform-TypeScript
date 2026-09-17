@@ -24,16 +24,22 @@
         
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { SmallIntegerSingletonFactory } from '../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPositionBaseFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionBaseFactory.js';
 //not GWT import const GeographicMapCellPositionBaseFactory
+
 import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 //not GWT import const GeographicMapCellPositionFactoryInterface
+
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 //not GWT import const GeographicMapCellTypeFactory
+
 
 
 
@@ -53,9 +59,12 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfoimport { RaceTrackData } from './RaceTrackData.js';
-//not GWT import - same folder const RaceTrackDataimport { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
+//not GWT import - same folder const RaceTrackInfo
+import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import - same folder const RaceTrackData
+import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
 //not GWT import - same folder const AllBinaryTiledLayerFactoryInterface
+
 export class BasicGeographicMapFactory
             extends Object
          {

@@ -24,12 +24,16 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
+
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -50,6 +54,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryHierarchyInterface } from './CategoryHierarchyInterface.js';
 //not GWT import - same folder const CategoryHierarchyInterface
+
 export class CategoryHierarchy
             extends Object
          implements CategoryHierarchyInterface {

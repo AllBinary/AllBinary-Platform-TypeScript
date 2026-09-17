@@ -24,18 +24,25 @@
         
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { LoggingInitInfo } from '../../../../../../../org/allbinary/logic/communication/log/config/LoggingInitInfo.js';
 //not GWT import const LoggingInitInfo
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -55,9 +62,12 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigTypeFactory } from './LogConfigTypeFactory.js';
-//not GWT import - same folder const LogConfigTypeFactoryimport { LogConfigTypeData } from './LogConfigTypeData.js';
-//not GWT import - same folder const LogConfigTypeDataimport { LogConfigType } from './LogConfigType.js';
+//not GWT import - same folder const LogConfigTypeFactory
+import { LogConfigTypeData } from './LogConfigTypeData.js';
+//not GWT import - same folder const LogConfigTypeData
+import { LogConfigType } from './LogConfigType.js';
 //not GWT import - same folder const LogConfigType
+
 export class LogConfigTypes
             extends Object
          {

@@ -41,9 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import - same folder const GeographicMapCellTypeimport { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMapimport { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import - same folder const GeographicMapCellType
+import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import - same folder const BasicGeographicMap
+import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
 //not GWT import - same folder const GeographicMapCellPosition
+
 export class MultiGeographicMapBehavior
             extends Object
          {

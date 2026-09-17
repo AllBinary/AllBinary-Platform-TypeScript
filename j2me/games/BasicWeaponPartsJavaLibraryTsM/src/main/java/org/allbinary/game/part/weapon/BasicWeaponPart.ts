@@ -24,28 +24,40 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
 //not GWT import const PartInterface
+
 import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
 //not GWT import const NoScoreable
+
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 //not GWT import const ScoreableInterface
+
 import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
 //not GWT import const RelativeRelationship
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -66,6 +78,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SalvoInterface } from './SalvoInterface.js';
 //not GWT import - same folder const SalvoInterface
+
 export class BasicWeaponPart
             extends Object
          implements PartInterface, SalvoInterface {

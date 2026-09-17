@@ -38,10 +38,12 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
 //not GWT import - same folder const MotionRectangles
+
 export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
         
 

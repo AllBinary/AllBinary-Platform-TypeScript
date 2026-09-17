@@ -26,32 +26,46 @@
         
 import { awt } from '../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
 //not GWT import const RenderedImage
+
 import { File } from '../../../../java/io/File.js';
 //not GWT import const File
+
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 //not GWT import const ImageIO
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
 //not GWT import const ImageJ2SERotationUtil
+
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 //not GWT import const ImageProcessorInput
+
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 //not GWT import const ImageProcessorInputCompositeInterface
+
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
 //not GWT import const ImageStrings
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -71,17 +85,28 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphicsimport { JComboBox } from './JComboBox.js';
-//not GWT import - same folder const JComboBoximport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBoximport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
-//not GWT import - same folder const Shortimport { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModelimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const JPanel
+import { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics
+import { JComboBox } from './JComboBox.js';
+//not GWT import - same folder const JComboBox
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JCheckBox } from './JCheckBox.js';
+//not GWT import - same folder const JCheckBox
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
+//not GWT import - same folder const Short
+import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import - same folder const DefaultComboBoxModel
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
 //not GWT import - same folder const ActionEvent
+
 export class RotationSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 

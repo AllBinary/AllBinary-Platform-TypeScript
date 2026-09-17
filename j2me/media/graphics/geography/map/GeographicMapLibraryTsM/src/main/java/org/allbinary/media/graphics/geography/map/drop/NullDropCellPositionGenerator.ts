@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseDropCellPositionGenerator } from './BaseDropCellPositionGenerator.js';
 //not GWT import - same folder const BaseDropCellPositionGenerator
+
 export class NullDropCellPositionGenerator extends BaseDropCellPositionGenerator {
         
 

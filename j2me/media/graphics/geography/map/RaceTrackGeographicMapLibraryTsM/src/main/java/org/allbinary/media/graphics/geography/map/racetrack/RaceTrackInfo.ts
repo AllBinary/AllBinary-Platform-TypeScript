@@ -40,10 +40,12 @@ import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/Ba
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackFrictionProperties } from './RaceTrackFrictionProperties.js';
 //not GWT import - same folder const RaceTrackFrictionProperties
+
 export class RaceTrackInfo
             extends Object
          {

@@ -20,8 +20,10 @@
 
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -42,6 +44,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerType } from './PickedUpLayerType.js';
 //not GWT import - same folder const PickedUpLayerType
+
 export interface PickedUpLayerInterfaceFactoryInterface {
         
 

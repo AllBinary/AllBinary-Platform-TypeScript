@@ -26,28 +26,40 @@
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
 //not GWT import const ImageOutputData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 //not GWT import const LongUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
+
 import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
 //not GWT import const MediaDataFactory
+
 import { ImagePersistanceUtil } from '../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 //not GWT import const ImagePersistanceUtil
+
 import { ImageUtil } from '../../../../../../org/allbinary/media/image/ImageUtil.js';
 //not GWT import const ImageUtil
+
 import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 //not GWT import const BufferedImageFrameCacheable
+
 import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 //not GWT import const ImageIOInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -68,6 +80,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
 //not GWT import - same folder const CapturedBufferedImagesCacheSingleton
+
 export class CapturedImageInputOutput
             extends Object
          implements ImageIOInterface {

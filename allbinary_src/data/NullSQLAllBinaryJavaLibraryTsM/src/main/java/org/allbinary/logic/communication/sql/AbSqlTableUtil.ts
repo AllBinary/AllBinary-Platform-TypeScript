@@ -22,14 +22,19 @@
         
 import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
 //not GWT import const Portion
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -49,8 +54,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-//not GWT import - same folder const SqlStringsimport { AbSqlTable } from './AbSqlTable.js';
+//not GWT import - same folder const SqlStrings
+import { AbSqlTable } from './AbSqlTable.js';
 //not GWT import - same folder const AbSqlTable
+
 export class AbSqlTableUtil
             extends Object
          {

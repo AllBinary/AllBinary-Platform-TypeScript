@@ -24,40 +24,58 @@
         
 import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
+
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
 //not GWT import const AndroidUtil
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { DisplayChangeEvent } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
 //not GWT import const DisplayChangeEvent
+
 import { DisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
 //not GWT import const DisplayChangeEventHandler
+
 import { LastDisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/LastDisplayChangeEventHandler.js';
 //not GWT import const LastDisplayChangeEventHandler
+
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
 //not GWT import const SWTJOGLProcessor
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { GenericOperatingSystem } from '../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
+
 import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 //not GWT import const OperatingSystemFactory
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -77,8 +95,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseScalable } from './BaseScalable.js';
-//not GWT import - same folder const BaseScalableimport { ScalableListener } from './ScalableListener.js';
+//not GWT import - same folder const BaseScalable
+import { ScalableListener } from './ScalableListener.js';
 //not GWT import - same folder const ScalableListener
+
 export class DisplayInfoSingleton
             extends Object
          {

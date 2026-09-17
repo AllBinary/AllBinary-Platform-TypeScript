@@ -22,18 +22,25 @@
         
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PaymentGatewayInterface } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 //not GWT import const PaymentGatewayInterface
+
 import { BasicPaymentTypeUtil } from '../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
 //not GWT import const BasicPaymentTypeUtil
+
 import { PaymentGatewayEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 //not GWT import const PaymentGatewayEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 
 
 
@@ -53,8 +60,10 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayViewAbstract } from './PaymentGatewayViewAbstract.js';
-//not GWT import - same folder const PaymentGatewayViewAbstractimport { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
+//not GWT import - same folder const PaymentGatewayViewAbstract
+import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
 //not GWT import - same folder const PaymentGatewayComponent
+
 export class GatewayView extends PaymentGatewayViewAbstract {
         
 

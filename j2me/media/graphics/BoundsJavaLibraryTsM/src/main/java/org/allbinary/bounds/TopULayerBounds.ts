@@ -36,11 +36,14 @@ import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerBounds } from './LayerBounds.js';
-//not GWT import - same folder const LayerBoundsimport { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
+//not GWT import - same folder const LayerBounds
+import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
 //not GWT import - same folder const BoundsVisitorInterface
+
 export class TopULayerBounds extends LayerBounds {
         
 

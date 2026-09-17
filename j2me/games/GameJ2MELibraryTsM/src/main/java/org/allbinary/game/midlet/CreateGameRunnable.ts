@@ -26,16 +26,22 @@
         
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas
+
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
 //not GWT import const MyCommandsFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -55,10 +61,14 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-//not GWT import - same folder const DemoGameMidletimport { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-//not GWT import - same folder const DemoGameMidletEventimport { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
-//not GWT import - same folder const DemoGameMidletStateFactoryimport { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
+//not GWT import - same folder const DemoGameMidlet
+import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import - same folder const DemoGameMidletEvent
+import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
+//not GWT import - same folder const DemoGameMidletStateFactory
+import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
 //not GWT import - same folder const DemoGameMidletEventHandler
+
 export class CreateGameRunnable
             extends Object
          implements Runnable {

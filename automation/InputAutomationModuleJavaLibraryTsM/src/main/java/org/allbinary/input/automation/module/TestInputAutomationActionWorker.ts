@@ -24,18 +24,25 @@
         
 import { Set } from '../../../../../java/util/Set.js';
 //not GWT import const Set
+
 import { InputRobotFactory } from '../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 //not GWT import const InputRobotFactory
+
 import { InputRobotInterface } from '../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 //not GWT import const InputRobotInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 //not GWT import const ImageComparatorConstraintsInterface
+
 import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
 //not GWT import const MotionRectangleConstraintsInterface
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -55,8 +62,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbstractInputAutomationWorker } from './AbstractInputAutomationWorker.js';
-//not GWT import - same folder const AbstractInputAutomationWorkerimport { InputAutomationActionInterface } from './InputAutomationActionInterface.js';
+//not GWT import - same folder const AbstractInputAutomationWorker
+import { InputAutomationActionInterface } from './InputAutomationActionInterface.js';
 //not GWT import - same folder const InputAutomationActionInterface
+
 export class TestInputAutomationActionWorker extends AbstractInputAutomationWorker {
         
 

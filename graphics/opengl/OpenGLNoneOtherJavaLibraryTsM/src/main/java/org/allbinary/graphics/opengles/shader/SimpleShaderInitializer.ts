@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderInitializer } from './ShaderInitializer.js';
 //not GWT import - same folder const ShaderInitializer
+
 export class SimpleShaderInitializer extends ShaderInitializer {
         
 

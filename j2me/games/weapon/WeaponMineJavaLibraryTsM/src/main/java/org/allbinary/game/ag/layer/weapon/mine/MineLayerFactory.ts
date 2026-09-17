@@ -24,10 +24,13 @@
         
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
 //not GWT import const AllBinaryLayerFactoryInterface
+
 import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
 //not GWT import const ViewPositionFactoryInterface
+
 
 
 
@@ -48,6 +51,7 @@ import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayer } from './MineLayer.js';
 //not GWT import - same folder const MineLayer
+
 export class MineLayerFactory
             extends Object
          implements AllBinaryLayerFactoryInterface {

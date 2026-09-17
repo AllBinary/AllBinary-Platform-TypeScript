@@ -22,12 +22,16 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
 //not GWT import const ColorRangeInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,17 +51,28 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import - same folder const ColorAtActionScriptConditionInterfaceimport { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextFieldimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialogimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const JPanel
+import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
+//not GWT import - same folder const ColorAtActionScriptConditionInterface
+import { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextField
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialog
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
 //not GWT import - same folder const Short
+
 export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
         
 

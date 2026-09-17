@@ -22,14 +22,19 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -49,8 +54,10 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactory } from './TagHelperFactory.js';
-//not GWT import - same folder const TagHelperFactoryimport { AuthenticationRequestHelper } from './AuthenticationRequestHelper.js';
+//not GWT import - same folder const TagHelperFactory
+import { AuthenticationRequestHelper } from './AuthenticationRequestHelper.js';
 //not GWT import - same folder const AuthenticationRequestHelper
+
 export class AuthenticationRequestHelperFactory extends TagHelperFactory {
         
 

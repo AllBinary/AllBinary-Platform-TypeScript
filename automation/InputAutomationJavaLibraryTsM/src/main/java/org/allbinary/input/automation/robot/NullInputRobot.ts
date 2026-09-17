@@ -24,16 +24,22 @@
         
 import { awt } from '../../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
+
 import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
 //not GWT import const AbstractInputRobot
+
 import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
 //not GWT import const PointFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -53,10 +59,14 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import - same folder const InputRobotInterfaceimport { Point } from './Point.js';
-//not GWT import - same folder const Pointimport { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangleimport { Color } from './Color.js';
+//not GWT import - same folder const InputRobotInterface
+import { Point } from './Point.js';
+//not GWT import - same folder const Point
+import { Rectangle } from './Rectangle.js';
+//not GWT import - same folder const Rectangle
+import { Color } from './Color.js';
 //not GWT import - same folder const Color
+
 export class NullInputRobot extends AbstractInputRobot implements InputRobotInterface {
         
 

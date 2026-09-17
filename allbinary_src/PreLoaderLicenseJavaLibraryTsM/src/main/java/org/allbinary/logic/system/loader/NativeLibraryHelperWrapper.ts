@@ -30,10 +30,13 @@
         
 import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
 //not GWT import const Constructor
+
 import { Method } from '../../../../../java/lang/reflect/Method.js';
 //not GWT import const Method
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -54,6 +57,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NativeLibraryClassLoader } from './NativeLibraryClassLoader.js';
 //not GWT import - same folder const NativeLibraryClassLoader
+
 export class NativeLibraryHelperWrapper
             extends Object
          {

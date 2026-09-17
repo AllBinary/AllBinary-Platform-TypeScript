@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProcessPaintable } from './ProcessPaintable.js';
 //not GWT import - same folder const ProcessPaintable
+
 export class ProcessPaintableSingletonFactory
             extends Object
          {

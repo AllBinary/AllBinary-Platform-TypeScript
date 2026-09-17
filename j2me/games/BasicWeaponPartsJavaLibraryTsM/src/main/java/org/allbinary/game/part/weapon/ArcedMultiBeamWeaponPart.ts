@@ -22,22 +22,31 @@
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
 //not GWT import const WeaponLayer
+
 import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
 //not GWT import const WeaponLayerCircularPool
+
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 //not GWT import const ScoreableInterface
+
 import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
 //not GWT import const RelativeRelationship
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 
 
 
@@ -58,6 +67,7 @@ import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js'
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
 //not GWT import - same folder const BasicWeaponPart
+
 export class ArcedMultiBeamWeaponPart extends BasicWeaponPart {
         
 

@@ -22,14 +22,19 @@
         
 import { awt } from '../../../../java/awt.js';
 //not GWT import const awt
+
 import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
 //not GWT import const AffineTransform
+
 import { AffineTransformOp } from '../../../../java/awt/image/AffineTransformOp.js';
 //not GWT import const AffineTransformOp
+
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -49,8 +54,10 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtilimport { Graphics2D } from './Graphics2D.js';
+//not GWT import - same folder const ImageUtil
+import { Graphics2D } from './Graphics2D.js';
 //not GWT import - same folder const Graphics2D
+
 export class MirrorImageUtil
             extends Object
          {

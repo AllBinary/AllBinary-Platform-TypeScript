@@ -22,24 +22,34 @@
         
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -59,8 +69,10 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitSql } from './InitSql.js';
-//not GWT import - same folder const InitSqlimport { InitInfo } from './InitInfo.js';
+//not GWT import - same folder const InitSql
+import { InitInfo } from './InitInfo.js';
 //not GWT import - same folder const InitInfo
+
 export class InitInfoEntity extends InitSql {
         
 

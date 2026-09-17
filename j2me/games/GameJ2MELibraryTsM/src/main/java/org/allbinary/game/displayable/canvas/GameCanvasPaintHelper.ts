@@ -20,8 +20,10 @@
 
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 //not GWT import const ProcessPaintable
+
 
 
 
@@ -42,6 +44,7 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class GameCanvasPaintHelper extends ProcessPaintable {
         
 

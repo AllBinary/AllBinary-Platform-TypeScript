@@ -22,22 +22,31 @@
         
 import { ArtificialIntelligence } from '../../../../../../org/allbinary/ai/ArtificialIntelligence.js';
 //not GWT import const ArtificialIntelligence
+
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { ArtificialIntelligenceTransitionInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceTransitionInterface.js';
 //not GWT import const ArtificialIntelligenceTransitionInterface
+
 import { ArrayAI } from '../../../../../../org/allbinary/game/ag/ai/ArrayAI.js';
 //not GWT import const ArrayAI
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 

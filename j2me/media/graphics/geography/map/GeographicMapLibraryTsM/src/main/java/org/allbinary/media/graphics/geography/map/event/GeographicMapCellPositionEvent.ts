@@ -20,16 +20,22 @@
 
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
 //not GWT import const CellPositionFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AllBinaryEventObject } from '../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 
 
 

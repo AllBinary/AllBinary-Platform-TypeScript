@@ -32,24 +32,34 @@
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
+
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { JSONArray } from '../../../org/json/me/JSONArray.js';
 //not GWT import const JSONArray
+
 import { JSONException } from '../../../org/json/me/JSONException.js';
 //not GWT import const JSONException
+
 import { JSONObject } from '../../../org/json/me/JSONObject.js';
 //not GWT import const JSONObject
+
 
 
 
@@ -69,9 +79,12 @@ import { JSONObject } from '../../../org/json/me/JSONObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShapeTypeFactory } from './ShapeTypeFactory.js';
-//not GWT import - same folder const ShapeTypeFactoryimport { ShapeType } from './ShapeType.js';
-//not GWT import - same folder const ShapeTypeimport { Number } from './Number.js';
+//not GWT import - same folder const ShapeTypeFactory
+import { ShapeType } from './ShapeType.js';
+//not GWT import - same folder const ShapeType
+import { Number } from './Number.js';
 //not GWT import - same folder const Number
+
 export class SVGAsJSONSimpleLoader
             extends Object
          {

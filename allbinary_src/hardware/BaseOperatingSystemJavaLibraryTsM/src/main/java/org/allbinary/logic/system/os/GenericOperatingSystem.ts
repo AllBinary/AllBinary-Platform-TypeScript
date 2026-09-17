@@ -22,14 +22,19 @@
         
 import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/CharacterSet.js';
 //not GWT import const CharacterSet
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -49,8 +54,10 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OperatingSystemInterface } from './OperatingSystemInterface.js';
-//not GWT import - same folder const OperatingSystemInterface//not plain js - same folder import { SystemProperties } 
+//not GWT import - same folder const OperatingSystemInterface
+//not plain js - same folder import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+
 export class GenericOperatingSystem
             extends Object
          implements OperatingSystemInterface {

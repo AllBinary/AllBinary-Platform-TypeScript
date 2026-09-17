@@ -24,28 +24,40 @@
         
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { NullXmlRpcHandler } from '../../../../../org/apache/xmlrpc/NullXmlRpcHandler.js';
 //not GWT import const NullXmlRpcHandler
+
 import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
 //not GWT import const XmlRpcClient
+
 import { XmlRpcHandler } from '../../../../../org/apache/xmlrpc/XmlRpcHandler.js';
 //not GWT import const XmlRpcHandler
+
 
 
 

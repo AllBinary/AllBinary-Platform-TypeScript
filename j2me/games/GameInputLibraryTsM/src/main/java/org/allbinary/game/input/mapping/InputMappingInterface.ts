@@ -22,8 +22,10 @@
         
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
 //not GWT import const GameKey
+
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 //not GWT import const Input
+
 
 
 

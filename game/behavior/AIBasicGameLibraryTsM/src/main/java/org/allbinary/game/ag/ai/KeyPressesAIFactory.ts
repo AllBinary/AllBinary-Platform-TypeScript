@@ -24,16 +24,22 @@
         
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
 //not GWT import const ArtificialIntelligenceInterfaceFactoryInterface
+
 import { InputFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
 //not GWT import const InputFeatureFactory
+
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -53,8 +59,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiKeyPressesAI } from './MultiKeyPressesAI.js';
-//not GWT import - same folder const MultiKeyPressesAIimport { KeyPressesAI } from './KeyPressesAI.js';
+//not GWT import - same folder const MultiKeyPressesAI
+import { KeyPressesAI } from './KeyPressesAI.js';
 //not GWT import - same folder const KeyPressesAI
+
 export class KeyPressesAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

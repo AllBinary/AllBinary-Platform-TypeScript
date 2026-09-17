@@ -24,10 +24,13 @@
         
 import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 //not GWT import const PersistentInputMapping
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionLaptopGameInputMapping } from './MotionLaptopGameInputMapping.js';
 //not GWT import - same folder const MotionLaptopGameInputMapping
+
 export class PlatformInputMappingFactory
             extends Object
          {

@@ -24,16 +24,22 @@
         
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
 //not GWT import const RelativeRelationship
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 
 
 
@@ -54,6 +60,7 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
 //not GWT import - same folder const ResourceRelativeRelationshipFactoryInterface
+
 export class ResourceRelativeRelationshipFactory
             extends Object
          implements ResourceRelativeRelationshipFactoryInterface {

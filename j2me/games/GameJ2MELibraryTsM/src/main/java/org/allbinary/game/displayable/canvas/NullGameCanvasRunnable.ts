@@ -26,20 +26,28 @@
         
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
 //not GWT import const Item
+
 import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
 //not GWT import const GameState
+
 import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
 //not GWT import const GameStateFactory
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -60,6 +68,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
 //not GWT import - same folder const GameCanvasRunnableInterface
+
 export class NullGameCanvasRunnable
             extends Object
          implements GameCanvasRunnableInterface {

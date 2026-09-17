@@ -24,14 +24,19 @@
         
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AnimationFactoryInitializationVisitor } from '../../../org/allbinary/animation/image/AnimationFactoryInitializationVisitor.js';
 //not GWT import const AnimationFactoryInitializationVisitor
+
 import { BaseImageAnimationFactory } from '../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 //not GWT import const BaseImageAnimationFactory
+
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
 //not GWT import const ImageJ2MEScaleUtil
+
 
 
 

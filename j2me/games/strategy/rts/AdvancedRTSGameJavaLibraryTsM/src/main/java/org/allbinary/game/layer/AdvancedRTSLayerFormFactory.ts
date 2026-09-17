@@ -22,16 +22,22 @@
         
 import { RTSLayerFormFactory } from '../../../../org/allbinary/game/input/RTSLayerFormFactory.js';
 //not GWT import const RTSLayerFormFactory
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 //not GWT import const ScrollSelectionForm
+
 import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
 //not GWT import const ItemArraySingletonFactoryInterface
+
 
 
 
@@ -51,8 +57,10 @@ import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSScrollSelectionFormFactory } from './RTSScrollSelectionFormFactory.js';
-//not GWT import - same folder const RTSScrollSelectionFormFactoryimport { RTSLayer } from './RTSLayer.js';
+//not GWT import - same folder const RTSScrollSelectionFormFactory
+import { RTSLayer } from './RTSLayer.js';
 //not GWT import - same folder const RTSLayer
+
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
         
 

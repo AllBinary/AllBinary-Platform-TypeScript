@@ -24,32 +24,46 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 //not GWT import const Portion
+
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { StreetAddress } from '../../org/allbinary/business/user/address/StreetAddress.js';
 //not GWT import const StreetAddress
+
 import { BillingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
 //not GWT import const BillingAddressesEntityFactory
+
 import { ShippingAddressesEntity } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
 //not GWT import const ShippingAddressesEntity
+
 import { ShippingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
 //not GWT import const ShippingAddressesEntityFactory
+
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
 //not GWT import const WeblisketSessionData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -70,6 +84,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
 //not GWT import - same folder const BasicTable
+
 export class ShippingAddressHelper extends BasicTable {
         
 

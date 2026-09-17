@@ -22,22 +22,31 @@
         
 import { MultiGeographicMapBehavior } from '../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js';
 //not GWT import const MultiGeographicMapBehavior
+
 import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { GravityUtil } from '../../../../../org/allbinary/game/physics/acceleration/GravityUtil.js';
 //not GWT import const GravityUtil
+
 import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
 //not GWT import const VelocityProperties
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
+
 
 
 
@@ -57,8 +66,10 @@ import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapTopViewLayerBehavior } from './GeographicMapTopViewLayerBehavior.js';
-//not GWT import - same folder const GeographicMapTopViewLayerBehaviorimport { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
+//not GWT import - same folder const GeographicMapTopViewLayerBehavior
+import { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
 //not GWT import - same folder const TopViewCharacterInterface
+
 export class GeographicMapTopViewGameLayerBehavior1 extends GeographicMapTopViewLayerBehavior {
         
 

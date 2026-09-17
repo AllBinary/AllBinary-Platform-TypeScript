@@ -22,8 +22,10 @@
         
 import { BaseCircularPool } from '../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
 //not GWT import const BaseCircularPool
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 
 
 
@@ -44,6 +46,7 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerFactoryInterface } from './AllBinaryLayerFactoryInterface.js';
 //not GWT import - same folder const AllBinaryLayerFactoryInterface
+
 export class AllBinaryLayerCircularPool extends BaseCircularPool {
         
 

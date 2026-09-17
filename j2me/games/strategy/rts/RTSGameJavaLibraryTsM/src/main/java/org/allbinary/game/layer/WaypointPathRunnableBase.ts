@@ -28,12 +28,16 @@
         
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
 //not GWT import const LayerDistanceUtil
+
 import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
 //not GWT import const PriorityRunnable
+
 import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
+
 
 
 
@@ -53,8 +57,10 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import - same folder const NullPathFindingLayerimport { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import - same folder const NullPathFindingLayer
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 //not GWT import - same folder const PathFindingLayerInterface
+
 export class WaypointPathRunnableBase
             extends Object
          implements RunnableInterface, PriorityRunnable {

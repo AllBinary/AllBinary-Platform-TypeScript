@@ -24,24 +24,34 @@
         
 import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
 //not GWT import const NullPathFindingLayer
+
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 //not GWT import const PathFindingLayerInterface
+
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 //not GWT import const RTSLayerEvent
+
 import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 //not GWT import const UnitLayer
+
 import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
 //not GWT import const UnitWaypointBehavior
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -62,6 +72,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PrimaryWaypointHelper } from './PrimaryWaypointHelper.js';
 //not GWT import - same folder const PrimaryWaypointHelper
+
 export class AssignWaypointsUtil
             extends Object
          {

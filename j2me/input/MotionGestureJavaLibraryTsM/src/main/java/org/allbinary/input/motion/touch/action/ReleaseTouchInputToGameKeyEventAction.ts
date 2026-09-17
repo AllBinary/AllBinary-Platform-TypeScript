@@ -22,20 +22,28 @@
         
 import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
 //not GWT import const GameKey
+
 import { GameKeyFactory } from '../../../../../../org/allbinary/game/input/GameKeyFactory.js';
 //not GWT import const GameKeyFactory
+
 import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
 //not GWT import const PlatformInputMappingFactory
+
 import { GameKeyEventFactory } from '../../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 //not GWT import const GameKeyEventFactory
+
 import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
 //not GWT import const GameKeyCompleteMotionGestureInputEvent
+
 import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 //not GWT import const TouchMotionGestureFactory
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

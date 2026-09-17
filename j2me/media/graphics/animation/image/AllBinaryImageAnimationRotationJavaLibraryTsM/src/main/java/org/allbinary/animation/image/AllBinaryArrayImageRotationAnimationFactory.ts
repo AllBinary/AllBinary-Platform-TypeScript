@@ -22,22 +22,31 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 //not GWT import const GameConfigurationCentral
+
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js';
 //not GWT import const ImageToRotationImageArrayUtil
+
 
 
 
@@ -57,9 +66,12 @@ import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactoryimport { ImageArrayRotationAnimation } from './ImageArrayRotationAnimation.js';
-//not GWT import - same folder const ImageArrayRotationAnimationimport { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
+//not GWT import - same folder const BaseImageAnimationFactory
+import { ImageArrayRotationAnimation } from './ImageArrayRotationAnimation.js';
+//not GWT import - same folder const ImageArrayRotationAnimation
+import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
 //not GWT import - same folder const AdjustedImageArrayRotationAnimation
+
 export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

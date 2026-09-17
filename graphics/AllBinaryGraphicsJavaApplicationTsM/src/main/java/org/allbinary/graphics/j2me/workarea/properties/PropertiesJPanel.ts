@@ -36,14 +36,20 @@ import { swing } from '../../../../../../javax/swing.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextFieldimport { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayoutimport { Font } from './Font.js';
+//not GWT import - same folder const JPanel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextField
+import { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayout
+import { Font } from './Font.js';
 //not GWT import - same folder const Font
+
 export class PropertiesJPanel extends javax.swing.JPanel {
         
 

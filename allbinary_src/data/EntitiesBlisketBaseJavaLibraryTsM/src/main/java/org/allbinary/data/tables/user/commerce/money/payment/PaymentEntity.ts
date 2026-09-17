@@ -26,40 +26,58 @@
         
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
 //not GWT import const Calendar
+
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Random } from '../../../../../../../../java/util/Random.js';
 //not GWT import const Random
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
+
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { Payment } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
 //not GWT import const Payment
+
 import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 //not GWT import const PaymentData
+
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
 //not GWT import const PaymentInterface
+
 import { PaymentIdGenerator } from '../../../../../../../../org/allbinary/data/generator/PaymentIdGenerator.js';
 //not GWT import const PaymentIdGenerator
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -80,6 +98,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentEntityInterface } from './PaymentEntityInterface.js';
 //not GWT import - same folder const PaymentEntityInterface
+
 export class PaymentEntity extends AbSqlBean implements PaymentEntityInterface {
         
 

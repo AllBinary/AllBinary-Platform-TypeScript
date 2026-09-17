@@ -24,12 +24,16 @@
         
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
 //not GWT import const DataInputStream
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -50,6 +54,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
 //not GWT import - same folder const AbFileInputStream
+
 export class LineReader
             extends Object
          {

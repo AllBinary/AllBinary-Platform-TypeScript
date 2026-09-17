@@ -20,10 +20,13 @@
 
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 //not GWT import const PlatformBitmapBaseFactory
+
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
 //not GWT import const PlatformTextureBaseFactory
+
 
 
 
@@ -43,8 +46,10 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLImageFactory } from './OpenGLImageFactory.js';
-//not GWT import - same folder const OpenGLImageFactoryimport { OpenGLESGL10Image } from './OpenGLESGL10Image.js';
+//not GWT import - same folder const OpenGLImageFactory
+import { OpenGLESGL10Image } from './OpenGLESGL10Image.js';
 //not GWT import - same folder const OpenGLESGL10Image
+
 export class OpenGLESGL11VBOImageFactory extends OpenGLImageFactory {
         
 

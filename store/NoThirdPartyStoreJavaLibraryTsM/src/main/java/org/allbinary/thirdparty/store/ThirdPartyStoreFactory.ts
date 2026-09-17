@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoThirdPartyStore } from './NoThirdPartyStore.js';
-//not GWT import - same folder const NoThirdPartyStoreimport { ThirdPartyStore } from './ThirdPartyStore.js';
+//not GWT import - same folder const NoThirdPartyStore
+import { ThirdPartyStore } from './ThirdPartyStore.js';
 //not GWT import - same folder const ThirdPartyStore
+
 export class ThirdPartyStoreFactory
             extends Object
          {

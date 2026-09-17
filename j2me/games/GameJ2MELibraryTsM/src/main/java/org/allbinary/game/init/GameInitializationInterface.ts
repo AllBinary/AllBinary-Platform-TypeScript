@@ -22,8 +22,10 @@
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 

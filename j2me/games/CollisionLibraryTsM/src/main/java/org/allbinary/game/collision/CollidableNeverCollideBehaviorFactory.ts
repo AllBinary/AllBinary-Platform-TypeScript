@@ -37,9 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehaviorFactory } from './CollidableBaseBehaviorFactory.js';
-//not GWT import - same folder const CollidableBaseBehaviorFactoryimport { CollidableNeverCollideBehavior } from './CollidableNeverCollideBehavior.js';
-//not GWT import - same folder const CollidableNeverCollideBehaviorimport { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+//not GWT import - same folder const CollidableBaseBehaviorFactory
+import { CollidableNeverCollideBehavior } from './CollidableNeverCollideBehavior.js';
+//not GWT import - same folder const CollidableNeverCollideBehavior
+import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 //not GWT import - same folder const CollidableBaseBehavior
+
 export class CollidableNeverCollideBehaviorFactory extends CollidableBaseBehaviorFactory {
         
 

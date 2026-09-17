@@ -24,14 +24,19 @@
         
 import { Method } from '../java/lang/reflect/Method.js';
 //not GWT import const Method
+
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -52,6 +57,7 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTag } from './TransformTag.js';
 //not GWT import - same folder const TransformTag
+
 export class XmlValidationTransformTag extends TransformTag {
         
 

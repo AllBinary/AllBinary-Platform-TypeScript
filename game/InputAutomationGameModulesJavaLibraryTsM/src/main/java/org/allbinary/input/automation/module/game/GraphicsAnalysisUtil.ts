@@ -26,14 +26,19 @@
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
 //not GWT import const ColorCacheFactory
+
 import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
 //not GWT import const ColorCacheable
+
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
+
 
 
 
@@ -54,6 +59,7 @@ import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/u
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
 //not GWT import - same folder const Color
+
 export class GraphicsAnalysisUtil
             extends Object
          {

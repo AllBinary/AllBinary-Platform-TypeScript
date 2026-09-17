@@ -24,12 +24,16 @@
         
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 //not GWT import const DomDocumentMappingInterface
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -49,8 +53,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterfaceimport { ContextConfigurationView } from './ContextConfigurationView.js';
+//not GWT import - same folder const ContextConfigurationInterface
+import { ContextConfigurationView } from './ContextConfigurationView.js';
 //not GWT import - same folder const ContextConfigurationView
+
 export class ContextConfigurationDomDocumentMapping
             extends Object
          implements DomDocumentMappingInterface {

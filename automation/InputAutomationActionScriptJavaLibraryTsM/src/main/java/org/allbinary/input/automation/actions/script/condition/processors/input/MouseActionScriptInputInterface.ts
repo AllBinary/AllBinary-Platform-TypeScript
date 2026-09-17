@@ -36,11 +36,14 @@ import { awt } from '../../../../../../../../../java/awt.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import - same folder const ProfileActionScriptInputInterfaceimport { Point } from './Point.js';
+//not GWT import - same folder const ProfileActionScriptInputInterface
+import { Point } from './Point.js';
 //not GWT import - same folder const Point
+
 export interface MouseActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 

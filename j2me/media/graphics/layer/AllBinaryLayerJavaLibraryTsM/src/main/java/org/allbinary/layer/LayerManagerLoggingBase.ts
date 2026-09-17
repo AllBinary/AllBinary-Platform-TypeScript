@@ -41,8 +41,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayerimport { LayerManager } from './LayerManager.js';
+//not GWT import - same folder const AllBinaryLayer
+import { LayerManager } from './LayerManager.js';
 //not GWT import - same folder const LayerManager
+
 export class LayerManagerLoggingBase
             extends Object
          {

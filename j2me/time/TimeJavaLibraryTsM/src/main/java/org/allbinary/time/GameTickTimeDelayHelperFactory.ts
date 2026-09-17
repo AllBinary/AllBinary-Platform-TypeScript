@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameTickTimeDelayHelper } from './GameTickTimeDelayHelper.js';
 //not GWT import - same folder const GameTickTimeDelayHelper
+
 export class GameTickTimeDelayHelperFactory
             extends Object
          {

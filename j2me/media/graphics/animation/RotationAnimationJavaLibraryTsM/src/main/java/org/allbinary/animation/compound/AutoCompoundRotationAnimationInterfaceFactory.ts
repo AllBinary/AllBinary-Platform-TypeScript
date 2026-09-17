@@ -20,12 +20,16 @@
 
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 //not GWT import const RotationAnimation
+
 
 
 
@@ -45,8 +49,10 @@ import { RotationAnimation } from '../../../../org/allbinary/animation/RotationA
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import - same folder const CompoundAnimationInterfaceFactoryimport { AutoCompoundRotationAnimation } from './AutoCompoundRotationAnimation.js';
+//not GWT import - same folder const CompoundAnimationInterfaceFactory
+import { AutoCompoundRotationAnimation } from './AutoCompoundRotationAnimation.js';
 //not GWT import - same folder const AutoCompoundRotationAnimation
+
 export class AutoCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
 

@@ -39,9 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionFactoryInterface } from './ViewPositionFactoryInterface.js';
-//not GWT import - same folder const ViewPositionFactoryInterfaceimport { ViewPosition } from './ViewPosition.js';
-//not GWT import - same folder const ViewPositionimport { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import - same folder const ViewPositionFactoryInterface
+import { ViewPosition } from './ViewPosition.js';
+//not GWT import - same folder const ViewPosition
+import { ViewPositionBase } from './ViewPositionBase.js';
 //not GWT import - same folder const ViewPositionBase
+
 export class ViewPositionFactory
             extends Object
          implements ViewPositionFactoryInterface {

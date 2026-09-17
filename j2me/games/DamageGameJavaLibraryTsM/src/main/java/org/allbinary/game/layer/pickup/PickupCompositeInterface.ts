@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupBehavior } from './PickupBehavior.js';
 //not GWT import - same folder const PickupBehavior
+
 export interface PickupCompositeInterface {
         
 

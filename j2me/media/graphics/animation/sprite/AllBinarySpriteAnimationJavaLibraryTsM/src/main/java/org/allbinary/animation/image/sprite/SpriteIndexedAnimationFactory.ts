@@ -22,26 +22,37 @@
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
 //not GWT import const AndroidUtil
+
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 //not GWT import const BaseImageAnimationFactory
+
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
 //not GWT import const BasicColorUtil
+
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
 //not GWT import const AnimationFactorySpriteScaleUtil
+
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 
 
 
@@ -61,8 +72,10 @@ import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/Primit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-//not GWT import - same folder const SpriteIndexedAnimationimport { AdjustedSpriteIndexedAnimation } from './AdjustedSpriteIndexedAnimation.js';
+//not GWT import - same folder const SpriteIndexedAnimation
+import { AdjustedSpriteIndexedAnimation } from './AdjustedSpriteIndexedAnimation.js';
 //not GWT import - same folder const AdjustedSpriteIndexedAnimation
+
 export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 

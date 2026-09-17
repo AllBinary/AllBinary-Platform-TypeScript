@@ -24,12 +24,16 @@
         
 import { awt } from '../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 
 
 
@@ -49,9 +53,12 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtilimport { Point } from './Point.js';
-//not GWT import - same folder const Pointimport { Graphics2D } from './Graphics2D.js';
+//not GWT import - same folder const ImageUtil
+import { Point } from './Point.js';
+//not GWT import - same folder const Point
+import { Graphics2D } from './Graphics2D.js';
 //not GWT import - same folder const Graphics2D
+
 export class ImagesRatioUtil
             extends Object
          {

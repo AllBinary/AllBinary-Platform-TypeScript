@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { AdvertisementCampaignData } from '../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
 //not GWT import const AdvertisementCampaignData
+
 import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -51,10 +56,14 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaInterface } from './AdvertisementAreaInterface.js';
-//not GWT import - same folder const AdvertisementAreaInterfaceimport { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import - same folder const AdvertisementAreaConstraintsInterfaceimport { AdvertisementAreaData } from './AdvertisementAreaData.js';
-//not GWT import - same folder const AdvertisementAreaDataimport { AdvertisementAreaConstraints } from './AdvertisementAreaConstraints.js';
+//not GWT import - same folder const AdvertisementAreaInterface
+import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
+//not GWT import - same folder const AdvertisementAreaConstraintsInterface
+import { AdvertisementAreaData } from './AdvertisementAreaData.js';
+//not GWT import - same folder const AdvertisementAreaData
+import { AdvertisementAreaConstraints } from './AdvertisementAreaConstraints.js';
 //not GWT import - same folder const AdvertisementAreaConstraints
+
 export class AdvertisementArea
             extends Object
          implements AdvertisementAreaInterface {

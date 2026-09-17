@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenListenerInterface } from './ScreenListenerInterface.js';
 //not GWT import - same folder const ScreenListenerInterface
+
 export class ScreenEmptyListener
             extends Object
          implements ScreenListenerInterface {

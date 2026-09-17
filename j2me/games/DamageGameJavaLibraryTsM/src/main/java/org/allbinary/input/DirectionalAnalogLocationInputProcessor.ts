@@ -22,26 +22,37 @@
         
 import { AnalogLocationInputProcessor } from '../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js';
 //not GWT import const AnalogLocationInputProcessor
+
 import { GameInputProcessor } from '../../../org/allbinary/game/input/GameInputProcessor.js';
 //not GWT import const GameInputProcessor
+
 import { GameKeyEventSourceInterface } from '../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 //not GWT import const GameKeyEventSourceInterface
+
 import { GameKeyFactory } from '../../../org/allbinary/game/input/GameKeyFactory.js';
 //not GWT import const GameKeyFactory
+
 import { AnalogLocationInput } from '../../../org/allbinary/game/input/analog/AnalogLocationInput.js';
 //not GWT import const AnalogLocationInput
+
 import { GameKeyEvent } from '../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { GameKeyEventFactory } from '../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 //not GWT import const GameKeyEventFactory
+
 import { CustomGPoint } from '../../../org/allbinary/graphics/CustomGPoint.js';
 //not GWT import const CustomGPoint
+
 import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

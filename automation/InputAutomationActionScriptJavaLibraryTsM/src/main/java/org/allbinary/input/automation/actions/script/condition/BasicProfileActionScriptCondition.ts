@@ -24,46 +24,67 @@
         
 import { ActionEvent } from '../../../../../../../java/awt/event/ActionEvent.js';
 //not GWT import const ActionEvent
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { swing } from '../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { TreePath } from '../../../../../../../javax/swing/tree/TreePath.js';
 //not GWT import const TreePath
+
 import { JTreeInterfaceFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
 //not GWT import const JTreeInterfaceFactory
+
 import { ProfileActionScriptItem } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
 //not GWT import const ProfileActionScriptItem
+
 import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
 //not GWT import const ProfileActionScriptNodeInterface
+
 import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
 //not GWT import const ProfileActionScriptProcessorInterface
+
 import { GenericProfileActionScriptInputData } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/GenericProfileActionScriptInputData.js';
 //not GWT import const GenericProfileActionScriptInputData
+
 import { KeyboardActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/KeyboardActionScriptInput.js';
 //not GWT import const KeyboardActionScriptInput
+
 import { MouseActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/MouseActionScriptInput.js';
 //not GWT import const MouseActionScriptInput
+
 import { ProfileActionScriptInputFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/ProfileActionScriptInputFactory.js';
 //not GWT import const ProfileActionScriptInputFactory
+
 import { GenericProfileActionScriptOutputData } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/GenericProfileActionScriptOutputData.js';
 //not GWT import const GenericProfileActionScriptOutputData
+
 import { ImageActionScriptOutput } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ImageActionScriptOutput.js';
 //not GWT import const ImageActionScriptOutput
+
 import { ProfileActionScriptOutputFactory } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ProfileActionScriptOutputFactory.js';
 //not GWT import const ProfileActionScriptOutputFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -83,14 +104,22 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
-//not GWT import - same folder const ProfileActionScriptConditionInterfaceimport { GenericProfileActionScriptConditionData } from './GenericProfileActionScriptConditionData.js';
-//not GWT import - same folder const GenericProfileActionScriptConditionDataimport { ProfileActionScriptConditionFactory } from './ProfileActionScriptConditionFactory.js';
-//not GWT import - same folder const ProfileActionScriptConditionFactoryimport { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenuimport { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItemimport { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
-//not GWT import - same folder const TimeIntervalActionScriptConditionimport { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
-//not GWT import - same folder const AlwaysActionScriptConditionimport { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
+//not GWT import - same folder const ProfileActionScriptConditionInterface
+import { GenericProfileActionScriptConditionData } from './GenericProfileActionScriptConditionData.js';
+//not GWT import - same folder const GenericProfileActionScriptConditionData
+import { ProfileActionScriptConditionFactory } from './ProfileActionScriptConditionFactory.js';
+//not GWT import - same folder const ProfileActionScriptConditionFactory
+import { JMenu } from './JMenu.js';
+//not GWT import - same folder const JMenu
+import { JMenuItem } from './JMenuItem.js';
+//not GWT import - same folder const JMenuItem
+import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
+//not GWT import - same folder const TimeIntervalActionScriptCondition
+import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
+//not GWT import - same folder const AlwaysActionScriptCondition
+import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
 //not GWT import - same folder const ColorAtActionScriptCondition
+
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {
         
 

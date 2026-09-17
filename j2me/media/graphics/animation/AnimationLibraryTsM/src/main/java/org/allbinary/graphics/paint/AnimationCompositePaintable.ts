@@ -20,8 +20,10 @@
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 
 
 
@@ -42,6 +44,7 @@ import { Animation } from '../../../../org/allbinary/animation/Animation.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitUpdatePaintable } from './InitUpdatePaintable.js';
 //not GWT import - same folder const InitUpdatePaintable
+
 export class AnimationCompositePaintable extends InitUpdatePaintable {
         
 

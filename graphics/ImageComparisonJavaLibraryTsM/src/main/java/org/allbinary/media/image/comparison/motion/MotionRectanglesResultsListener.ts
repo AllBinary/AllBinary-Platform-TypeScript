@@ -36,10 +36,12 @@ import { BasicEventListenerInterface } from '../../../../../../org/allbinary/log
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
 //not GWT import - same folder const MotionRectanglesResultsEvent
+
 export interface MotionRectanglesResultsListener extends BasicEventListenerInterface {
         
 

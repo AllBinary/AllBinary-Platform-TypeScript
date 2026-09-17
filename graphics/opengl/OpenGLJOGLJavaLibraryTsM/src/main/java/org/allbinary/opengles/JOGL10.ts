@@ -38,15 +38,22 @@ import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
-//not GWT import - same folder const GL10import { GL2 } from './GL2.js';
-//not GWT import - same folder const GL2import { GL } from './GL.js';
-//not GWT import - same folder const GLimport { Buffer } from './Buffer.js';
-//not GWT import - same folder const Bufferimport { IntBuffer } from './IntBuffer.js';
-//not GWT import - same folder const IntBufferimport { FloatBuffer } from './FloatBuffer.js';
-//not GWT import - same folder const FloatBuffer//JOGLEToKhronosGL10
+//not GWT import - same folder const GL10
+import { GL2 } from './GL2.js';
+//not GWT import - same folder const GL2
+import { GL } from './GL.js';
+//not GWT import - same folder const GL
+import { Buffer } from './Buffer.js';
+//not GWT import - same folder const Buffer
+import { IntBuffer } from './IntBuffer.js';
+//not GWT import - same folder const IntBuffer
+import { FloatBuffer } from './FloatBuffer.js';
+//not GWT import - same folder const FloatBuffer
+//JOGLEToKhronosGL10
 export class JOGL10
             extends Object
          implements javax.microedition.khronos.opengles.GL10 {

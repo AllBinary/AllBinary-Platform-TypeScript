@@ -24,22 +24,31 @@
         
 import { Activity } from '../../../../android/app/Activity.js';
 //not GWT import const Activity
+
 import { MotionEvent } from '../../../../android/view/MotionEvent.js';
 //not GWT import const MotionEvent
+
 import { View } from '../../../../android/view/View.js';
 //not GWT import const View
+
 import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
 //not GWT import const GenericMotionEventVerifyInterface
+
 import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
 //not GWT import const GameFeatureEvent
+
 import { GameFeatureListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameFeatureListenerInterface.js';
 //not GWT import const GameFeatureListenerInterface
+
 import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
 //not GWT import const GameInitializedEvent
+
 import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
 //not GWT import const GameInitializedListenerInterface
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 
 
 
@@ -59,8 +68,10 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleProgressActivityInterface } from './SimpleProgressActivityInterface.js';
-//not GWT import - same folder const SimpleProgressActivityInterfaceimport { KeyInputViewCompositeInterface } from './KeyInputViewCompositeInterface.js';
+//not GWT import - same folder const SimpleProgressActivityInterface
+import { KeyInputViewCompositeInterface } from './KeyInputViewCompositeInterface.js';
 //not GWT import - same folder const KeyInputViewCompositeInterface
+
 export class MidletActivityBase extends Activity implements GameFeatureListenerInterface, GameInitializedListenerInterface, SimpleProgressActivityInterface, KeyInputViewCompositeInterface, GenericMotionEventVerifyInterface {
         
 

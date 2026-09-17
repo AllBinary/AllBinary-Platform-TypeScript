@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
 //not GWT import - same folder const AllBinaryTiledLayer
+
 export class TiledLayerUtil
             extends Object
          {

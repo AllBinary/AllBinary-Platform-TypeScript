@@ -21,10 +21,13 @@
         
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 
 
 
@@ -45,6 +48,7 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TechEventListenerInterface } from './TechEventListenerInterface.js';
 //not GWT import - same folder const TechEventListenerInterface
+
 export class TechEventHandler extends BasicEventHandler {
         
 

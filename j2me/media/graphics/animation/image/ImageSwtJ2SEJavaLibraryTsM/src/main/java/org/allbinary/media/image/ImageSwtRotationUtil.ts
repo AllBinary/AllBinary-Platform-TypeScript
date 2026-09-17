@@ -22,18 +22,25 @@
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 //not GWT import const GameFeatureFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
 //not GWT import const SWT
+
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
 //not GWT import const GC
+
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
 //not GWT import const ImageData
+
 
 
 
@@ -53,8 +60,10 @@ import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtilimport { Image } from './Image.js';
+//not GWT import - same folder const ImageUtil
+import { Image } from './Image.js';
 //not GWT import - same folder const Image
+
 export class ImageSwtRotationUtil
             extends Object
          {

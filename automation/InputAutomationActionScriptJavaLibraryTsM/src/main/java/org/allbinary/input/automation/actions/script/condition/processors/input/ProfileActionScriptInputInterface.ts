@@ -20,8 +20,10 @@
 
 import { ProfileActionScriptProcessorInterface } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
 //not GWT import const ProfileActionScriptProcessorInterface
+
 import { InputRobotInterface } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 //not GWT import const InputRobotInterface
+
 
 
 

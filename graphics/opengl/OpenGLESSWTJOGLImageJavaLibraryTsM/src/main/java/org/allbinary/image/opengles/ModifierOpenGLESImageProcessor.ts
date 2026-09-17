@@ -36,10 +36,12 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
 //not GWT import - same folder const OpenGLESImageProcessor
+
 export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {
         
 

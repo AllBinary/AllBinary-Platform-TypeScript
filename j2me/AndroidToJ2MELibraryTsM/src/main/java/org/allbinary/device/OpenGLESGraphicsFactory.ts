@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESNullGraphicsFactory } from './OpenGLESNullGraphicsFactory.js';
-//not GWT import - same folder const OpenGLESNullGraphicsFactoryimport { OpenGLESGraphics } from './OpenGLESGraphics.js';
+//not GWT import - same folder const OpenGLESNullGraphicsFactory
+import { OpenGLESGraphics } from './OpenGLESGraphics.js';
 //not GWT import - same folder const OpenGLESGraphics
+
 export class OpenGLESGraphicsFactory
             extends Object
          {

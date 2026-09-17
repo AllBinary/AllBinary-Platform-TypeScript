@@ -10,26 +10,37 @@
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { RenderedImage } from '../../../../../java/awt/image/RenderedImage.js';
 //not GWT import const RenderedImage
+
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
 //not GWT import const ImageUtil
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 
 
 
@@ -49,8 +60,10 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIOUtil } from './ImageIOUtil.js';
-//not GWT import - same folder const ImageIOUtilimport { MediaData } from './MediaData.js';
-//not GWT import - same folder const MediaData//import com.sun.imageio.plugins.common.ImageUtil;
+//not GWT import - same folder const ImageIOUtil
+import { MediaData } from './MediaData.js';
+//not GWT import - same folder const MediaData
+//import com.sun.imageio.plugins.common.ImageUtil;
 export class MediaUtil
             extends Object
          {

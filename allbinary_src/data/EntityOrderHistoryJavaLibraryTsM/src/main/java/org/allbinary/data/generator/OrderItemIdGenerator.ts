@@ -22,10 +22,13 @@
         
 import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
 //not GWT import const PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -46,6 +49,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UniqueIdGenerator } from './UniqueIdGenerator.js';
 //not GWT import - same folder const UniqueIdGenerator
+
 export class OrderItemIdGenerator extends UniqueIdGenerator {
         
 

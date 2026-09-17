@@ -22,60 +22,88 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { ListIterator } from '../../../../../../../../java/util/ListIterator.js';
 //not GWT import const ListIterator
+
 import { Set } from '../../../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
 //not GWT import const HistoryDbInitInfo
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { ShippingAddressData } from '../../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
 //not GWT import const ShippingAddressData
+
 import { BasketInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
 //not GWT import const BasketInterface
+
 import { BasketReview } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js';
 //not GWT import const BasketReview
+
 import { BasicItemData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { Item } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js';
 //not GWT import const Item
+
 import { ItemInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 //not GWT import const ItemInterface
+
 import { OrderData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
 //not GWT import const OrderData
+
 import { OrderHistoryData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
 //not GWT import const OrderHistoryData
+
 import { OrderInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 //not GWT import const OrderInterface
+
 import { ShippingMethodData } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 //not GWT import const ShippingMethodData
+
 import { OrderItemIdGenerator } from '../../../../../../../../org/allbinary/data/generator/OrderItemIdGenerator.js';
 //not GWT import const OrderItemIdGenerator
+
 import { TableDataFactory } from '../../../../../../../../org/allbinary/data/tables/TableDataFactory.js';
 //not GWT import const TableDataFactory
+
 import { InventoryEntity } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
 //not GWT import const InventoryEntity
+
 import { InventoryEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 //not GWT import const InventoryEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -96,6 +124,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderItemsEntityInterface } from './OrderItemsEntityInterface.js';
 //not GWT import - same folder const OrderItemsEntityInterface
+
 export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInterface {
         
 

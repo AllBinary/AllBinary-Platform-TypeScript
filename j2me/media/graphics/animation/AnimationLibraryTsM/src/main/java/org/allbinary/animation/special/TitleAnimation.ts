@@ -22,24 +22,34 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { IndexedAnimationBehavior } from '../../../../org/allbinary/animation/IndexedAnimationBehavior.js';
 //not GWT import const IndexedAnimationBehavior
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 
 
 
@@ -60,6 +70,7 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialAnimation } from './SpecialAnimation.js';
 //not GWT import - same folder const SpecialAnimation
+
 export class TitleAnimation extends SpecialAnimation {
         
 

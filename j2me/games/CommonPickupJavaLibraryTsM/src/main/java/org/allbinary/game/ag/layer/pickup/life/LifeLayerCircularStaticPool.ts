@@ -22,14 +22,19 @@
         
 import { Life } from '../../../../../../../org/allbinary/game/ag/life/Life.js';
 //not GWT import const Life
+
 import { LifeInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/ag/life/LifeInterfaceCompositeInterface.js';
 //not GWT import const LifeInterfaceCompositeInterface
+
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerCircularPool } from '../../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
 //not GWT import const AllBinaryLayerCircularPool
+
 import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
 //not GWT import const AllBinaryLayerFactoryInterface
+
 
 
 
@@ -50,6 +55,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LifeLayer } from './LifeLayer.js';
 //not GWT import - same folder const LifeLayer
+
 export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

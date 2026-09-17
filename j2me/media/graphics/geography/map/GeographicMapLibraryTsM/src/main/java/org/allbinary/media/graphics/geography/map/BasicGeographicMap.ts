@@ -24,14 +24,19 @@
         
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
 //not GWT import const Layer
+
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -51,15 +56,24 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleGeographicMap } from './SimpleGeographicMap.js';
-//not GWT import - same folder const SimpleGeographicMapimport { GeographicMapInterface } from './GeographicMapInterface.js';
-//not GWT import - same folder const GeographicMapInterfaceimport { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactoryimport { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryInterfaceimport { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
-//not GWT import - same folder const GeographicMapCellTypeFactoryimport { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
-//not GWT import - same folder const GeographicMapCellPositionBaseFactoryimport { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPositionimport { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const SimpleGeographicMapCellPositionFactoryimport { GeographicMapCellType } from './GeographicMapCellType.js';
+//not GWT import - same folder const SimpleGeographicMap
+import { GeographicMapInterface } from './GeographicMapInterface.js';
+//not GWT import - same folder const GeographicMapInterface
+import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
+//not GWT import - same folder const BasicGeographicMapCellPositionFactory
+import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
+//not GWT import - same folder const GeographicMapCellPositionFactoryInterface
+import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
+//not GWT import - same folder const GeographicMapCellTypeFactory
+import { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
+//not GWT import - same folder const GeographicMapCellPositionBaseFactory
+import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import - same folder const GeographicMapCellPosition
+import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
+//not GWT import - same folder const SimpleGeographicMapCellPositionFactory
+import { GeographicMapCellType } from './GeographicMapCellType.js';
 //not GWT import - same folder const GeographicMapCellType
+
 export class BasicGeographicMap extends SimpleGeographicMap implements GeographicMapInterface {
         
 

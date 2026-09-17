@@ -20,10 +20,13 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { InputOutputTypeData } from '../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
+
 import { TransformTag } from '../../tags/TransformTag.js';
 //not GWT import const TransformTag
+
 
 
 

@@ -26,13 +26,18 @@ import { Stack } from '../../../java/util/Stack.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Canvas } from './Canvas.js';
-//not GWT import - same folder const Canvasimport { Command } from './Command.js';
-//not GWT import - same folder const Commandimport { CommandListener } from './CommandListener.js';
-//not GWT import - same folder const CommandListenerimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Canvas
+import { Command } from './Command.js';
+//not GWT import - same folder const Command
+import { CommandListener } from './CommandListener.js';
+//not GWT import - same folder const CommandListener
+import { Graphics } from './Graphics.js';
 //not GWT import - same folder const Graphics
+
 export class NullCanvas extends Canvas {
         
 

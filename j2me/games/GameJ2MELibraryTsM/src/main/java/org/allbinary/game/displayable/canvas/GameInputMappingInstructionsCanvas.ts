@@ -22,22 +22,31 @@
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
 //not GWT import const ColorFillBasePaintable
+
 import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
 //not GWT import const ColorFillPaintableFactory
+
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { DrawStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawStringUtil.js';
 //not GWT import const DrawStringUtil
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -58,6 +67,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCommandCanvas } from './GameCommandCanvas.js';
 //not GWT import - same folder const GameCommandCanvas
+
 export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
         
 

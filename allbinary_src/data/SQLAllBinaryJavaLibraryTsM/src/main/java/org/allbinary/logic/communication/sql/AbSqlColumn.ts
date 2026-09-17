@@ -24,16 +24,22 @@
         
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 //not GWT import const ResultSet
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 //not GWT import const DbConnectionInfo
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -54,6 +60,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlTable } from './AbSqlTable.js';
 //not GWT import - same folder const AbSqlTable
+
 export class AbSqlColumn extends AbSqlTable {
         
 

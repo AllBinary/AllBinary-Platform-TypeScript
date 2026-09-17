@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShakeEvent } from './ShakeEvent.js';
 //not GWT import - same folder const ShakeEvent
+
 export class ShakeEventFactory
             extends Object
          {

@@ -26,24 +26,34 @@
         
 import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
 //not GWT import const BundleActivator
+
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
+
 import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
 //not GWT import const ServiceFactory
+
 import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
 //not GWT import const ServiceReference
+
 import { InputAutomationRobotChangeListener } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
 //not GWT import const InputAutomationRobotChangeListener
+
 import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
 //not GWT import const InputAutomationRobotServiceInterface
+
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 //not GWT import const InputRobotInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 //not GWT import const OSGIActivatorUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -63,8 +73,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotUtil } from './InputAutomationRobotUtil.js';
-//not GWT import - same folder const InputAutomationRobotUtilimport { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
+//not GWT import - same folder const InputAutomationRobotUtil
+import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
 //not GWT import - same folder const InputAutomationRobotChangeEvent
+
 export class InputAutomationRobotBundleActivator
             extends Object
          implements BundleActivator {

@@ -24,38 +24,55 @@
         
 import { DataOutputStream } from '../../../../../../../../java/io/DataOutputStream.js';
 //not GWT import const DataOutputStream
+
 import { File } from '../../../../../../../../java/io/File.js';
 //not GWT import const File
+
 import { FileInputStream } from '../../../../../../../../java/io/FileInputStream.js';
 //not GWT import const FileInputStream
+
 import { FileOutputStream } from '../../../../../../../../java/io/FileOutputStream.js';
 //not GWT import const FileOutputStream
+
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { DomDocumentMappingInterface } from '../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 //not GWT import const DomDocumentMappingInterface
+
 import { DefaultListModelHelper } from '../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
 //not GWT import const DefaultListModelHelper
+
 import { GenericProfileActionData } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
 //not GWT import const GenericProfileActionData
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -75,9 +92,12 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfilesData } from './GenericProfilesData.js';
-//not GWT import - same folder const GenericProfilesDataimport { GenericProfileData } from './GenericProfileData.js';
-//not GWT import - same folder const GenericProfileDataimport { GenericProfile } from './GenericProfile.js';
+//not GWT import - same folder const GenericProfilesData
+import { GenericProfileData } from './GenericProfileData.js';
+//not GWT import - same folder const GenericProfileData
+import { GenericProfile } from './GenericProfile.js';
 //not GWT import - same folder const GenericProfile
+
 export class GenericProfiles
             extends Object
          implements DomNodeInterface, DomDocumentMappingInterface {

@@ -20,8 +20,10 @@
 
 import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
 //not GWT import const DisplayInBrowserContraintsInterface
+
 import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
 //not GWT import const TwoDimensionalConstraintInterface
+
 
 
 

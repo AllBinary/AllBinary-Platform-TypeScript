@@ -22,14 +22,19 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
 //not GWT import const TransformInfoObjectConfigInterface
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 

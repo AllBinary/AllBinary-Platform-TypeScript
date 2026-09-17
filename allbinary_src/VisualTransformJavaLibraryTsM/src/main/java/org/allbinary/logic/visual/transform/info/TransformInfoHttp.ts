@@ -22,32 +22,46 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { AbContext } from '../../../../../../org/allbinary/business/context/AbContext.js';
 //not GWT import const AbContext
+
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
 //not GWT import const WeblisketSessionInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlData } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfig.js';
 //not GWT import const TransformInfoObjectConfig
+
 
 
 
@@ -67,9 +81,12 @@ import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
-//not GWT import - same folder const TransformInfoimport { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
-//not GWT import - same folder const TransformInfoHttpInterfaceimport { TransformInfoData } from './TransformInfoData.js';
+//not GWT import - same folder const TransformInfo
+import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
+//not GWT import - same folder const TransformInfoHttpInterface
+import { TransformInfoData } from './TransformInfoData.js';
 //not GWT import - same folder const TransformInfoData
+
 export class TransformInfoHttp extends TransformInfo implements TransformInfoHttpInterface {
         
 

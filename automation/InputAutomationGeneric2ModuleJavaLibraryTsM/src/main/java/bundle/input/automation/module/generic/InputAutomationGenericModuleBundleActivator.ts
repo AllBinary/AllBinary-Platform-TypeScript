@@ -22,8 +22,10 @@
         
 import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
 //not GWT import const InputAutomationGenericModuleServiceFactory
+
 import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
 //not GWT import const InputAutomationModuleBundleActivator
+
 
 
 

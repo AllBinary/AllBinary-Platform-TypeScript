@@ -26,36 +26,52 @@
         
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { Activity } from '../../../../android/app/Activity.js';
 //not GWT import const Activity
+
 import { Context } from '../../../../android/content/Context.js';
 //not GWT import const Context
+
 import { Resources } from '../../../../android/content/res/Resources.js';
 //not GWT import const Resources
+
 import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
 //not GWT import const DebugFactory
+
 import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
 //not GWT import const NoDebug
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 
 
 

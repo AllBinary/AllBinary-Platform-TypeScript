@@ -24,8 +24,10 @@
         
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -45,11 +47,16 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import - same folder const ProfileActionScriptInputInterfaceimport { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-//not GWT import - same folder const KeyboardActionScriptInputDataimport { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-//not GWT import - same folder const MouseActionScriptInputDataimport { MouseActionScriptInput } from './MouseActionScriptInput.js';
-//not GWT import - same folder const MouseActionScriptInputimport { KeyboardActionScriptInput } from './KeyboardActionScriptInput.js';
+//not GWT import - same folder const ProfileActionScriptInputInterface
+import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
+//not GWT import - same folder const KeyboardActionScriptInputData
+import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
+//not GWT import - same folder const MouseActionScriptInputData
+import { MouseActionScriptInput } from './MouseActionScriptInput.js';
+//not GWT import - same folder const MouseActionScriptInput
+import { KeyboardActionScriptInput } from './KeyboardActionScriptInput.js';
 //not GWT import - same folder const KeyboardActionScriptInput
+
 export class ProfileActionScriptInputFactory
             extends Object
          {

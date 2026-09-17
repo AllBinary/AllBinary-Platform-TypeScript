@@ -24,10 +24,13 @@
         
 import { ProfileActionScriptItemInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
 //not GWT import const ProfileActionScriptItemInterface
+
 import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
 //not GWT import const ProfileActionScriptNodeInterface
+
 import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
 //not GWT import const ProfileActionScriptProcessorInterface
+
 
 
 
@@ -48,6 +51,7 @@ import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTreeNodeInterface } from './CustomTreeNodeInterface.js';
 //not GWT import - same folder const CustomTreeNodeInterface
+
 export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         
 

@@ -24,14 +24,19 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
 //not GWT import const PlaynImmutableImage
+
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 //not GWT import const PlaynMutableImage
+
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
+
 
 
 

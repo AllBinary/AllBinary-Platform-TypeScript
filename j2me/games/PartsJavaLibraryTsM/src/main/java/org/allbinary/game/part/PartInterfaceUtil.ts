@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
 //not GWT import - same folder const PartInterface
+
 export class PartInterfaceUtil
             extends Object
          {

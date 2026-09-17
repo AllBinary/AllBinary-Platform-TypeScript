@@ -24,26 +24,37 @@
         
 import { awt } from '../../../../../java/awt.js';
 //not GWT import const awt
+
 import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
 //not GWT import const ActionEvent
+
 import { File } from '../../../../../java/io/File.js';
 //not GWT import const File
+
 import { URI } from '../../../../../java/net/URI.js';
 //not GWT import const URI
+
 import { URL } from '../../../../../java/net/URL.js';
 //not GWT import const URL
+
 import { CSH } from '../../../../../javax/help/CSH.js';
 //not GWT import const CSH
+
 import { HelpBroker } from '../../../../../javax/help/HelpBroker.js';
 //not GWT import const HelpBroker
+
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
+
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -63,10 +74,14 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import - same folder const Pointimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { DisplayHelpFromSource } from './DisplayHelpFromSource.js';
+//not GWT import - same folder const Point
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { DisplayHelpFromSource } from './DisplayHelpFromSource.js';
 //not GWT import - same folder const DisplayHelpFromSource
+
 export class JavaHelpUtil
             extends Object
          {

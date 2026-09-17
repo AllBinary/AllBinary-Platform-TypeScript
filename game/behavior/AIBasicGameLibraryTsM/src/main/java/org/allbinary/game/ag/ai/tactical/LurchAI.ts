@@ -22,16 +22,22 @@
         
 import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 

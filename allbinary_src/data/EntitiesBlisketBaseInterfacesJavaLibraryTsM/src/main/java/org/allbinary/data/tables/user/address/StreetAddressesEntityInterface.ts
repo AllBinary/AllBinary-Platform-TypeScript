@@ -22,8 +22,10 @@
         
 import { StreetAddress } from '../../../../../../org/allbinary/business/user/address/StreetAddress.js';
 //not GWT import const StreetAddress
+
 import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
 //not GWT import const BasicDataTableInterface
+
 
 
 

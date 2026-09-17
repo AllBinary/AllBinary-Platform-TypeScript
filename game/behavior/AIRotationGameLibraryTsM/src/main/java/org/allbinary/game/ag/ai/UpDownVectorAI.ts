@@ -22,18 +22,25 @@
         
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { BasicVelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
 //not GWT import const BasicVelocityProperties
+
 import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
 //not GWT import const VelocityInterfaceCompositeInterface
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
+
 
 
 

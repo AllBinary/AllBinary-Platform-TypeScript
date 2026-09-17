@@ -22,8 +22,10 @@
         
 import { DamageableBaseBehavior } from '../../../../org/allbinary/game/combat/damage/DamageableBaseBehavior.js';
 //not GWT import const DamageableBaseBehavior
+
 import { DestroyableBaseBehavior } from '../../../../org/allbinary/game/combat/destroy/DestroyableBaseBehavior.js';
 //not GWT import const DestroyableBaseBehavior
+
 
 
 

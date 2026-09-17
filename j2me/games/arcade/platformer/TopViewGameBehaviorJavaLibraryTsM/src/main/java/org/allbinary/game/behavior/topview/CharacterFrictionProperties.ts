@@ -20,8 +20,10 @@
 
 import { FrictionProperties } from '../../../../../org/allbinary/game/physics/FrictionProperties.js';
 //not GWT import const FrictionProperties
+
 import { FrictionData } from '../../../../../org/allbinary/game/physics/friction/FrictionData.js';
 //not GWT import const FrictionData
+
 
 
 

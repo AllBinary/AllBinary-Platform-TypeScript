@@ -30,24 +30,34 @@
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { Raster } from '../../../../java/awt/image/Raster.js';
 //not GWT import const Raster
+
 import { File } from '../../../../java/io/File.js';
 //not GWT import const File
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 //not GWT import const FileWrapperUtil
+
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 //not GWT import const ImagePersistanceUtil
+
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 //not GWT import const ImageProcessorInput
+
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 //not GWT import const ImageProcessorInputCompositeInterface
+
 import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 //not GWT import const ImageUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -67,17 +77,28 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModelimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JComboBox } from './JComboBox.js';
-//not GWT import - same folder const JComboBoximport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextFieldimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const JPanel
+import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import - same folder const DefaultComboBoxModel
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JComboBox } from './JComboBox.js';
+//not GWT import - same folder const JComboBox
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextField
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
 //not GWT import - same folder const Short
+
 export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 

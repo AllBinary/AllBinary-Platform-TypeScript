@@ -24,30 +24,43 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { CategoryFactoryInterface } from '../../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 //not GWT import const CategoryFactoryInterface
+
 import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 import { CategoryUtil } from '../../../../../../org/allbinary/business/category/CategoryUtil.js';
 //not GWT import const CategoryUtil
+
 import { CategoryPropertiesFactory } from '../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactory.js';
 //not GWT import const CategoryPropertiesFactory
+
 import { CategoryPropertiesFactoryInterface } from '../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
 //not GWT import const CategoryPropertiesFactoryInterface
+
 import { RootStoreThemeCategoryPropertiesFactory } from '../../../../../../org/allbinary/business/category/properties/root/store/theme/RootStoreThemeCategoryPropertiesFactory.js';
 //not GWT import const RootStoreThemeCategoryPropertiesFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -68,6 +81,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategory } from './StoreThemeCategory.js';
 //not GWT import - same folder const StoreThemeCategory
+
 export class StoreThemeCategoryFactory
             extends Object
          implements CategoryFactoryInterface {

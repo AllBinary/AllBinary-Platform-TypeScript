@@ -22,8 +22,10 @@
         
 import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
 //not GWT import const MultiPlayerGameFeatureFactory
+
 import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';
 //not GWT import const MyCanvas
+
 
 
 

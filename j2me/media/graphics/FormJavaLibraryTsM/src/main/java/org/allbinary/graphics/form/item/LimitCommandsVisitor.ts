@@ -20,16 +20,22 @@
 
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
 //not GWT import const ScreenInfo
+
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
+
 
 
 

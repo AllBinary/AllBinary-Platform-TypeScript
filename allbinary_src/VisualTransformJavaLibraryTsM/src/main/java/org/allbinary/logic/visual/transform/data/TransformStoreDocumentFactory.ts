@@ -24,10 +24,13 @@
         
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
+
 import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
+
 
 
 
@@ -47,8 +50,10 @@ import { SearchRequest } from '../../../../../../org/allbinary/logic/control/sea
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformStoreDocument } from './TransformStoreDocument.js';
-//not GWT import - same folder const TransformStoreDocumentimport { TransformDocumentInterface } from './TransformDocumentInterface.js';
+//not GWT import - same folder const TransformStoreDocument
+import { TransformDocumentInterface } from './TransformDocumentInterface.js';
 //not GWT import - same folder const TransformDocumentInterface
+
 export class TransformStoreDocumentFactory
             extends Object
          {

@@ -22,22 +22,31 @@
         
 import { NullAnimationFactory } from '../../../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { CountedPickedUpLayerInterfaceFactory } from '../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
 //not GWT import const CountedPickedUpLayerInterfaceFactory
+
 import { PickupLayer } from '../../../../../../org/allbinary/game/layer/pickup/PickupLayer.js';
 //not GWT import const PickupLayer
+
 import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 import { TickableInterface } from '../../../../../../org/allbinary/game/tick/TickableInterface.js';
 //not GWT import const TickableInterface
+
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
+
 
 
 

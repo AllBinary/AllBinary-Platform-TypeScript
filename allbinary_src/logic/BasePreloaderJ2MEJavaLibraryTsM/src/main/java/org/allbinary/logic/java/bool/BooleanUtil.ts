@@ -24,10 +24,13 @@
         
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 
 
 
@@ -48,6 +51,7 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BooleanFactory } from './BooleanFactory.js';
 //not GWT import - same folder const BooleanFactory
+
 export class BooleanUtil
             extends Object
          {

@@ -24,28 +24,40 @@
         
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { NullGL10 } from '../../../../org/allbinary/device/NullGL10.js';
 //not GWT import const NullGL10
+
 import { AllBinaryRendererBase3 } from '../../../../org/allbinary/graphics/opengles/renderer/AllBinaryRendererBase3.js';
 //not GWT import const AllBinaryRendererBase3
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
+
 import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
 //not GWT import const ImageCacheFactory
+
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
 //not GWT import const PreResourceImageUtil
+
 import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
 //not GWT import const SynchObject
+
 
 
 
@@ -65,7 +77,8 @@ import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;//ImageCacheOpenGLESJavaLibrary
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//ImageCacheOpenGLESJavaLibrary
 export class OpenGLImageCache extends ImageCache {
         
 

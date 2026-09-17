@@ -24,14 +24,19 @@
         
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 
 
 
@@ -51,8 +56,10 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarThreedAnimation } from './HealthBarThreedAnimation.js';
-//not GWT import - same folder const HealthBarThreedAnimationimport { HealthBarAnimation } from './HealthBarAnimation.js';
+//not GWT import - same folder const HealthBarThreedAnimation
+import { HealthBarAnimation } from './HealthBarAnimation.js';
 //not GWT import - same folder const HealthBarAnimation
+
 export class HealthBarAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {

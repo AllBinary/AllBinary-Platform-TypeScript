@@ -24,10 +24,13 @@
         
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 
 
 
@@ -47,8 +50,10 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import - same folder const AbFileInputStreamimport { AbFileLocalInputStream } from './AbFileLocalInputStream.js';
+//not GWT import - same folder const AbFileInputStream
+import { AbFileLocalInputStream } from './AbFileLocalInputStream.js';
 //not GWT import - same folder const AbFileLocalInputStream
+
 export class CloudStreamUtil
             extends Object
          {

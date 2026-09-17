@@ -24,20 +24,28 @@
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { ColorModel } from '../../../../java/awt/image/ColorModel.js';
 //not GWT import const ColorModel
+
 import { WritableRaster } from '../../../../java/awt/image/WritableRaster.js';
 //not GWT import const WritableRaster
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -57,8 +65,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtilimport { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageUtil
+import { ImageCreationUtil } from './ImageCreationUtil.js';
 //not GWT import - same folder const ImageCreationUtil
+
 export class ImageModifierUtil
             extends Object
          {

@@ -24,22 +24,31 @@
         
 import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { StoreFrontAdvertisementsStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatistics.js';
 //not GWT import const StoreFrontAdvertisementsStatistics
+
 import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
 //not GWT import const StoreFrontAdvertisementsStatisticsInterface
+
 import { StoreFrontInventoryStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatistics.js';
 //not GWT import const StoreFrontInventoryStatistics
+
 import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
 //not GWT import const StoreFrontInventoryStatisticsInterface
+
 import { StoreFrontOrdersHistoryStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatistics.js';
 //not GWT import const StoreFrontOrdersHistoryStatistics
+
 import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
 //not GWT import const StoreFrontOrdersHistoryStatisticsInterface
+
 import { StoreFrontUsersStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatistics.js';
 //not GWT import const StoreFrontUsersStatistics
+
 import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
 //not GWT import const StoreFrontUsersStatisticsInterface
+
 
 
 
@@ -60,6 +69,7 @@ import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/all
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontStatisticsInterface } from './StoreFrontStatisticsInterface.js';
 //not GWT import - same folder const StoreFrontStatisticsInterface
+
 export class RealTimeStoreFrontStatistics
             extends Object
          implements StoreFrontStatisticsInterface {

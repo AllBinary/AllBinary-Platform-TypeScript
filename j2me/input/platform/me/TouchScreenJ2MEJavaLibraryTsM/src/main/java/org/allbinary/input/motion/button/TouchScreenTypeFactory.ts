@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenFactory } from './TouchScreenFactory.js';
 //not GWT import - same folder const TouchScreenFactory
+
 export class TouchScreenTypeFactory
             extends Object
          {

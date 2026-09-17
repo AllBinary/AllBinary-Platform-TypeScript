@@ -22,16 +22,22 @@
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { ChoiceGroupImageFactory } from '../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js';
 //not GWT import const ChoiceGroupImageFactory
+
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 
 
 
@@ -52,6 +58,7 @@ import { Features } from '../../../org/allbinary/game/configuration/feature/Feat
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreResourceImageUtil } from './PreResourceImageUtil.js';
 //not GWT import - same folder const PreResourceImageUtil
+
 export class ChoiceGroupImageUtil
             extends Object
          {

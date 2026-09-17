@@ -42,6 +42,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CloseJDialogListenerInterface } from './CloseJDialogListenerInterface.js';
 //not GWT import - same folder const CloseJDialogListenerInterface
+
 export class ExitCloseListener
             extends Object
          implements CloseJDialogListenerInterface {

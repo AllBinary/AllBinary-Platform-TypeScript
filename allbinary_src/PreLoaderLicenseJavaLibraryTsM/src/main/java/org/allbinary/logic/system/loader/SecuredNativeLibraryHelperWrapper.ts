@@ -20,10 +20,13 @@
 
 import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
 //not GWT import const AbKeys
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -43,8 +46,10 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NativeLibraryHelperWrapper } from './NativeLibraryHelperWrapper.js';
-//not GWT import - same folder const NativeLibraryHelperWrapperimport { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.js';
+//not GWT import - same folder const NativeLibraryHelperWrapper
+import { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.js';
 //not GWT import - same folder const SecuredNativeLibraryInterface
+
 export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrapper {
         
 

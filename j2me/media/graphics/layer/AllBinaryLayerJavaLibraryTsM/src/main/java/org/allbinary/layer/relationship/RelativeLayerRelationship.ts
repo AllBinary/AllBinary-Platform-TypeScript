@@ -20,12 +20,16 @@
 
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
 //not GWT import const RelativeRelationship
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 

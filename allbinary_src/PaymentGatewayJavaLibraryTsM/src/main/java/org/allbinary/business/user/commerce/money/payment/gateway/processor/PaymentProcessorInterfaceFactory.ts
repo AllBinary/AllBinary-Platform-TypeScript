@@ -24,20 +24,28 @@
         
 import { PaymentTransactionInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js';
 //not GWT import const PaymentTransactionInterface
+
 import { PaymentTransactionInterfaceRequestFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceRequestFactory.js';
 //not GWT import const PaymentTransactionInterfaceRequestFactory
+
 import { PaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js';
 //not GWT import const PaymentType
+
 import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
 //not GWT import const PaymentTypeUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -57,8 +65,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentProcessorInterfaceFactoryInterface } from './PaymentProcessorInterfaceFactoryInterface.js';
-//not GWT import - same folder const PaymentProcessorInterfaceFactoryInterfaceimport { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
+//not GWT import - same folder const PaymentProcessorInterfaceFactoryInterface
+import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
 //not GWT import - same folder const PaymentProcessorInterface
+
 export class PaymentProcessorInterfaceFactory
             extends Object
          {

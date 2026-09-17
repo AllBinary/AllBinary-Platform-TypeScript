@@ -36,11 +36,14 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VelocityBehaviorBase } from './VelocityBehaviorBase.js';
-//not GWT import - same folder const VelocityBehaviorBaseimport { BasicVelocityProperties } from './BasicVelocityProperties.js';
+//not GWT import - same folder const VelocityBehaviorBase
+import { BasicVelocityProperties } from './BasicVelocityProperties.js';
 //not GWT import - same folder const BasicVelocityProperties
+
 export class DragVelocityBehavior extends VelocityBehaviorBase {
         
 

@@ -24,16 +24,22 @@
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { BasicColorSetUtil } from '../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
 //not GWT import const BasicColorSetUtil
+
 import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
 //not GWT import const OpenGLSurfaceChangedInterface
+
 
 
 
@@ -54,6 +60,7 @@ import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/open
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterface } from './AnimationInterface.js';
 //not GWT import - same folder const AnimationInterface
+
 export class Animation
             extends Object
          implements AnimationInterface, OpenGLSurfaceChangedInterface {

@@ -24,8 +24,10 @@
         
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -45,9 +47,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresFactoryInterface } from './HighScoresFactoryInterface.js';
-//not GWT import - same folder const HighScoresFactoryInterfaceimport { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListenerimport { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import - same folder const HighScoresFactoryInterface
+import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+//not GWT import - same folder const HighScoresResultsListener
+import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 //not GWT import - same folder const HighScoresHelperBaseInterface
+
 export class HighScoresBase
             extends Object
          implements HighScoresFactoryInterface {

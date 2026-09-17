@@ -26,28 +26,40 @@
         
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
 //not GWT import const Bitmap
+
 import { Canvas } from '../../../../android/graphics/Canvas.js';
 //not GWT import const Canvas
+
 import { Matrix } from '../../../../android/graphics/Matrix.js';
 //not GWT import const Matrix
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 //not GWT import const AndroidImageInterface
+
 
 
 

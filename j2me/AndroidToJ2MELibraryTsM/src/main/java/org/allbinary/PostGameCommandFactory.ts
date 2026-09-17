@@ -22,14 +22,19 @@
         
 import { GameCommandsFactory } from '../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
 //not GWT import const MultiPlayerGameFeatureFactory
+
 import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';
 //not GWT import const MyCanvas
+
 import { GenericOperatingSystem } from '../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
+
 import { OperatingSystemFactory } from '../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 //not GWT import const OperatingSystemFactory
+
 
 
 

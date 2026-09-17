@@ -22,16 +22,22 @@
         
 import { GameAdStateFactory } from '../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
 //not GWT import const GameAdStateFactory
+
 import { GameAdState } from '../../../../../org/allbinary/game/GameAdState.js';
 //not GWT import const GameAdState
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { CurrentDisplayableFactory } from '../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js';
 //not GWT import const CurrentDisplayableFactory
+
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -51,8 +57,10 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameBehavior } from './DemoGameBehavior.js';
-//not GWT import - same folder const DemoGameBehaviorimport { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import - same folder const DemoGameBehavior
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 //not GWT import - same folder const AllBinaryGameCanvas
+
 export class BaseGameBehavior extends DemoGameBehavior {
         
 

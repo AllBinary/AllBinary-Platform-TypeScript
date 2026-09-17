@@ -20,8 +20,10 @@
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -42,6 +44,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheableInterface } from './CacheableInterface.js';
 //not GWT import - same folder const CacheableInterface
+
 export class BasicArrayListCacheable extends BasicArrayListD implements CacheableInterface {
         
 

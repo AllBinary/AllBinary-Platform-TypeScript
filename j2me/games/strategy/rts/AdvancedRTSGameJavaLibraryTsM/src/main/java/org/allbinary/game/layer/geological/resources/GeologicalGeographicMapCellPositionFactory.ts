@@ -24,14 +24,19 @@
         
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCellPositionFactoryInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 //not GWT import const GeographicMapCellPositionFactoryInterface
+
 
 
 
@@ -51,8 +56,10 @@ import { GeographicMapCellPositionFactoryInterface } from '../../../../../../org
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
-//not GWT import - same folder const GeologicalGeographicMapCellPositionimport { GeologicalResource } from './GeologicalResource.js';
+//not GWT import - same folder const GeologicalGeographicMapCellPosition
+import { GeologicalResource } from './GeologicalResource.js';
 //not GWT import - same folder const GeologicalResource
+
 export class GeologicalGeographicMapCellPositionFactory
             extends Object
          implements GeographicMapCellPositionFactoryInterface {

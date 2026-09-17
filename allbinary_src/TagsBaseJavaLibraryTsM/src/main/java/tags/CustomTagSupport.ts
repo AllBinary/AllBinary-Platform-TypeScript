@@ -20,8 +20,10 @@
 
 import { TagSupport } from '../javax/servlet/jsp/tagext/TagSupport.js';
 //not GWT import const TagSupport
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -42,6 +44,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagStrings } from './TagStrings.js';
 //not GWT import - same folder const TagStrings
+
 export class CustomTagSupport extends TagSupport {
         
 

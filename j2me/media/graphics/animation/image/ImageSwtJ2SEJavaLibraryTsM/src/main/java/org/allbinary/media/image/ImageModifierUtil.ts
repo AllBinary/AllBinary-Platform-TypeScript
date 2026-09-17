@@ -24,28 +24,40 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { ModifierOpenGLESImageProcessor } from '../../../../org/allbinary/image/opengles/ModifierOpenGLESImageProcessor.js';
 //not GWT import const ModifierOpenGLESImageProcessor
+
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
 //not GWT import const ImageData
+
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
 //not GWT import const SwtImmutableImage
+
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
 //not GWT import const SwtMutableImage
+
 
 
 
@@ -66,6 +78,7 @@ import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableI
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCopyUtil } from './ImageCopyUtil.js';
 //not GWT import - same folder const ImageCopyUtil
+
 export class ImageModifierUtil
             extends Object
          {

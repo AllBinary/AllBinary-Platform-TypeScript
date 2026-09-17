@@ -24,32 +24,46 @@
         
 import { Calendar } from '../../java/util/Calendar.js';
 //not GWT import const Calendar
+
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { BasicOptionItemData } from '../../org/allbinary/business/user/commerce/inventory/item/option/BasicOptionItemData.js';
 //not GWT import const BasicOptionItemData
+
 import { BasicOptionItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntityFactory.js';
 //not GWT import const BasicOptionItemsEntityFactory
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -70,6 +84,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
 //not GWT import - same folder const ModifyTable
+
 export class BasicOptionItemsRequestHelper extends ModifyTable {
         
 

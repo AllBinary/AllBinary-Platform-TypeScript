@@ -24,16 +24,22 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -53,12 +59,18 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameTypeFactory } from './GameTypeFactory.js';
-//not GWT import - same folder const GameTypeFactoryimport { GameMode } from './GameMode.js';
-//not GWT import - same folder const GameModeimport { PlayerTypesFactory } from './PlayerTypesFactory.js';
-//not GWT import - same folder const PlayerTypesFactoryimport { GameInfoData } from './GameInfoData.js';
-//not GWT import - same folder const GameInfoDataimport { GameType } from './GameType.js';
-//not GWT import - same folder const GameTypeimport { PlayerType } from './PlayerType.js';
+//not GWT import - same folder const GameTypeFactory
+import { GameMode } from './GameMode.js';
+//not GWT import - same folder const GameMode
+import { PlayerTypesFactory } from './PlayerTypesFactory.js';
+//not GWT import - same folder const PlayerTypesFactory
+import { GameInfoData } from './GameInfoData.js';
+//not GWT import - same folder const GameInfoData
+import { GameType } from './GameType.js';
+//not GWT import - same folder const GameType
+import { PlayerType } from './PlayerType.js';
 //not GWT import - same folder const PlayerType
+
 export class GameInfo
             extends Object
          {

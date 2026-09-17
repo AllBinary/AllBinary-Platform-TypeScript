@@ -24,24 +24,34 @@
         
 import { GameNotificationHud } from '../../../../org/allbinary/game/ag/layer/hud/basic/notification/GameNotificationHud.js';
 //not GWT import const GameNotificationHud
+
 import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
 //not GWT import const DestroyedEvent
+
 import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
 //not GWT import const PlayerGameInput
+
 import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
 //not GWT import const NullRTSFormInputFactory
+
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 //not GWT import const RTSFormInput
+
 import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
 //not GWT import const Capital
+
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 //not GWT import const ScrollSelectionForm
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
 //not GWT import const Sound
+
 
 
 
@@ -61,9 +71,12 @@ import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import - same folder const NullPathFindingLayerimport { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterfaceimport { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
+//not GWT import - same folder const NullPathFindingLayer
+import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
+//not GWT import - same folder const RTSPlayerLayerInterface
+import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
 //not GWT import - same folder const PlayerOwnedRTSLayers
+
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {
         
 

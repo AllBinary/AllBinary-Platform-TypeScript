@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMotionGestureEventListener } from './BaseMotionGestureEventListener.js';
-//not GWT import - same folder const BaseMotionGestureEventListenerimport { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import - same folder const BaseMotionGestureEventListener
+import { MotionGestureEvent } from './MotionGestureEvent.js';
 //not GWT import - same folder const MotionGestureEvent
+
 export interface MotionGestureEventListener extends BaseMotionGestureEventListener {
         
 

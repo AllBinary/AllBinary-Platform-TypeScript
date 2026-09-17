@@ -26,30 +26,43 @@
         
 import { awt } from '../../../../../../../../../java/awt.js';
 //not GWT import const awt
+
 import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
 //not GWT import const InputEvent
+
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BooleanFactory } from '../../../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -69,12 +82,18 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-//not GWT import - same folder const BasicProfileActionScriptInputimport { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-//not GWT import - same folder const MouseActionScriptInputInterfaceimport { Point } from './Point.js';
-//not GWT import - same folder const Pointimport { MouseActionScriptInputJPanel } from './MouseActionScriptInputJPanel.js';
-//not GWT import - same folder const MouseActionScriptInputJPanelimport { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-//not GWT import - same folder const MouseActionScriptInputDataimport { MouseInputAutomationProcessor } from './MouseInputAutomationProcessor.js';
+//not GWT import - same folder const BasicProfileActionScriptInput
+import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
+//not GWT import - same folder const MouseActionScriptInputInterface
+import { Point } from './Point.js';
+//not GWT import - same folder const Point
+import { MouseActionScriptInputJPanel } from './MouseActionScriptInputJPanel.js';
+//not GWT import - same folder const MouseActionScriptInputJPanel
+import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
+//not GWT import - same folder const MouseActionScriptInputData
+import { MouseInputAutomationProcessor } from './MouseInputAutomationProcessor.js';
 //not GWT import - same folder const MouseInputAutomationProcessor
+
 export class MouseActionScriptInput extends BasicProfileActionScriptInput implements MouseActionScriptInputInterface {
         
 

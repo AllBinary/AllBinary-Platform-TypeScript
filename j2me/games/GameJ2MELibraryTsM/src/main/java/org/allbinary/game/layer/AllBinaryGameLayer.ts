@@ -22,44 +22,64 @@
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { BasicColorSetUtil } from '../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
 //not GWT import const BasicColorSetUtil
+
 import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 import { OpenGLSurfaceChangedInterface } from '../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
 //not GWT import const OpenGLSurfaceChangedInterface
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 import { ViewPositionEvent } from '../../../../org/allbinary/view/event/ViewPositionEvent.js';
 //not GWT import const ViewPositionEvent
+
 import { ViewPositionEventListenerInterface } from '../../../../org/allbinary/view/event/ViewPositionEventListenerInterface.js';
 //not GWT import const ViewPositionEventListenerInterface
+
 
 
 
@@ -79,8 +99,10 @@ import { ViewPositionEventListenerInterface } from '../../../../org/allbinary/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTUtil } from './SWTUtil.js';
-//not GWT import - same folder const SWTUtilimport { GameLayerUtil } from './GameLayerUtil.js';
+//not GWT import - same folder const SWTUtil
+import { GameLayerUtil } from './GameLayerUtil.js';
 //not GWT import - same folder const GameLayerUtil
+
 export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEventListenerInterface, OpenGLSurfaceChangedInterface {
         
 

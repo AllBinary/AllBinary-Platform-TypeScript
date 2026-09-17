@@ -24,72 +24,106 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
 import { URI } from '../../../../java/net/URI.js';
 //not GWT import const URI
+
 import { URL } from '../../../../java/net/URL.js';
 //not GWT import const URL
+
 import { Desktop } from '../../../../java/awt/Desktop.js';
 //not GWT import const Desktop
+
 import { List } from '../../../../java/util/List.js';
 //not GWT import const List
+
 import { ImageIcon } from '../../../../javax/swing/ImageIcon.js';
 //not GWT import const ImageIcon
+
 import { JDialog } from '../../../../javax/swing/JDialog.js';
 //not GWT import const JDialog
+
 import { HelpSet } from '../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
+
 import { HelpSetEvent } from '../../../../javax/help/event/HelpSetEvent.js';
 //not GWT import const HelpSetEvent
+
 import { HelpSetListener } from '../../../../javax/help/event/HelpSetListener.js';
 //not GWT import const HelpSetListener
+
 import { InputAutomationBundleActivatorListenerInterface } from '../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js';
 //not GWT import const InputAutomationBundleActivatorListenerInterface
+
 import { InputAutomationConfigurationModuleChangeListener } from '../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
 //not GWT import const InputAutomationConfigurationModuleChangeListener
+
 import { InputAutomationRobotChangeListener } from '../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
 //not GWT import const InputAutomationRobotChangeListener
+
 import { AppUrlGlobals } from '../../../../org/allbinary/globals/AppUrlGlobals.js';
 //not GWT import const AppUrlGlobals
+
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { BasicTextJDialog } from '../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
 //not GWT import const BasicTextJDialog
+
 import { JListSwingWorker } from '../../../../org/allbinary/gui/swing/workers/JListSwingWorker.js';
 //not GWT import const JListSwingWorker
+
 import { InputAutomationConfiguration } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfiguration.js';
 //not GWT import const InputAutomationConfiguration
+
 import { InputAutomationConfigurationFactory } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
 //not GWT import const InputAutomationConfigurationFactory
+
 import { InputAutomationConfigurationModuleChangeEvent } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
 //not GWT import const InputAutomationConfigurationModuleChangeEvent
+
 import { InputAutomationModuleFactoryFactory } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryFactory.js';
 //not GWT import const InputAutomationModuleFactoryFactory
+
 import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 //not GWT import const InputAutomationModuleFactoryInterface
+
 import { InputAutomationModuleConfiguration } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
 //not GWT import const InputAutomationModuleConfiguration
+
 import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
 //not GWT import const InputAutomationModuleConfigurations
+
 import { DesktopBundle } from '../../../../org/allbinary/input/automation/osgi/DesktopBundle.js';
 //not GWT import const DesktopBundle
+
 import { InputRobotFactory } from '../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 //not GWT import const InputRobotFactory
+
 import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
 //not GWT import const InputAutomationRobotChangeEvent
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
+
 import { JavaHelpUtil } from '../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
 //not GWT import const JavaHelpUtil
+
 import { WebappClassLoaderInfo } from '../../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
 //not GWT import const WebappClassLoaderInfo
+
 import { InputAutomationClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/InputAutomationClientInformationFactory.js';
 //not GWT import const InputAutomationClientInformationFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
+
 
 
 
@@ -109,28 +143,50 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrameimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JTabbedPane } from './JTabbedPane.js';
-//not GWT import - same folder const JTabbedPaneimport { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPaneimport { JList } from './JList.js';
-//not GWT import - same folder const JListimport { JMenuBar } from './JMenuBar.js';
-//not GWT import - same folder const JMenuBarimport { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenuimport { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItemimport { JCheckBoxMenuItem } from './JCheckBoxMenuItem.js';
-//not GWT import - same folder const JCheckBoxMenuItemimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
-//not GWT import - same folder const Shortimport { WindowFocusListener } from './WindowFocusListener.js';
-//not GWT import - same folder const WindowFocusListenerimport { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEventimport { FocusAdapter } from './FocusAdapter.js';
-//not GWT import - same folder const FocusAdapterimport { FocusEvent } from './FocusEvent.js';
-//not GWT import - same folder const FocusEventimport { ListSelectionListener } from './ListSelectionListener.js';
-//not GWT import - same folder const ListSelectionListenerimport { ListSelectionEvent } from './ListSelectionEvent.js';
-//not GWT import - same folder const ListSelectionEventimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { EventQueue } from './EventQueue.js';
+//not GWT import - same folder const JFrame
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JTabbedPane } from './JTabbedPane.js';
+//not GWT import - same folder const JTabbedPane
+import { JPanel } from './JPanel.js';
+//not GWT import - same folder const JPanel
+import { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPane
+import { JList } from './JList.js';
+//not GWT import - same folder const JList
+import { JMenuBar } from './JMenuBar.js';
+//not GWT import - same folder const JMenuBar
+import { JMenu } from './JMenu.js';
+//not GWT import - same folder const JMenu
+import { JMenuItem } from './JMenuItem.js';
+//not GWT import - same folder const JMenuItem
+import { JCheckBoxMenuItem } from './JCheckBoxMenuItem.js';
+//not GWT import - same folder const JCheckBoxMenuItem
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
+//not GWT import - same folder const Short
+import { WindowFocusListener } from './WindowFocusListener.js';
+//not GWT import - same folder const WindowFocusListener
+import { WindowEvent } from './WindowEvent.js';
+//not GWT import - same folder const WindowEvent
+import { FocusAdapter } from './FocusAdapter.js';
+//not GWT import - same folder const FocusAdapter
+import { FocusEvent } from './FocusEvent.js';
+//not GWT import - same folder const FocusEvent
+import { ListSelectionListener } from './ListSelectionListener.js';
+//not GWT import - same folder const ListSelectionListener
+import { ListSelectionEvent } from './ListSelectionEvent.js';
+//not GWT import - same folder const ListSelectionEvent
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { EventQueue } from './EventQueue.js';
 //not GWT import - same folder const EventQueue
+
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         
 

@@ -42,10 +42,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTableInterface } from './BasicTableInterface.js';
 //not GWT import - same folder const BasicTableInterface
+
 export class BasicTable
             extends Object
          implements BasicTableInterface {

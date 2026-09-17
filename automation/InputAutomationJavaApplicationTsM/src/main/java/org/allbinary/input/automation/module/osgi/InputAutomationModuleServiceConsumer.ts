@@ -20,10 +20,13 @@
 
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
+
 import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
 //not GWT import const InputAutomationModuleServiceInterface
+
 import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
 //not GWT import const InputAutomationServiceConsumer
+
 
 
 
@@ -44,6 +47,7 @@ import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleOSGIServiceVisitor } from './InputAutomationModuleOSGIServiceVisitor.js';
 //not GWT import - same folder const InputAutomationModuleOSGIServiceVisitor
+
 export class InputAutomationModuleServiceConsumer extends InputAutomationServiceConsumer {
         
 

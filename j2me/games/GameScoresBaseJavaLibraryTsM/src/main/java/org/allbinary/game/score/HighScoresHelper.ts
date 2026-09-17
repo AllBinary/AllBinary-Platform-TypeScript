@@ -36,11 +36,14 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-//not GWT import - same folder const HighScoresHelperBaseimport { HighScores } from './HighScores.js';
+//not GWT import - same folder const HighScoresHelperBase
+import { HighScores } from './HighScores.js';
 //not GWT import - same folder const HighScores
+
 export class HighScoresHelper extends HighScoresHelperBase {
         
 

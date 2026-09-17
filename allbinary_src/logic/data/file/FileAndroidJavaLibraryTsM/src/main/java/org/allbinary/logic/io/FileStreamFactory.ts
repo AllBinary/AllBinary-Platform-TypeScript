@@ -24,10 +24,13 @@
         
 import { Context } from '../../../../android/content/Context.js';
 //not GWT import const Context
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 
@@ -47,8 +50,10 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import - same folder const AbFileInputStreamimport { AbFileOutputStream } from './AbFileOutputStream.js';
+//not GWT import - same folder const AbFileInputStream
+import { AbFileOutputStream } from './AbFileOutputStream.js';
 //not GWT import - same folder const AbFileOutputStream
+
 export class FileStreamFactory
             extends Object
          {

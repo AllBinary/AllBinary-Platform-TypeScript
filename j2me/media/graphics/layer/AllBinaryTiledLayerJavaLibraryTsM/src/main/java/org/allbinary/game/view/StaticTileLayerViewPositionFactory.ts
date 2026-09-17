@@ -24,8 +24,10 @@
         
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
 //not GWT import const ViewPositionFactoryInterface
+
 
 
 
@@ -46,6 +48,7 @@ import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/Vie
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticTileLayerIntoPositionViewPosition } from './StaticTileLayerIntoPositionViewPosition.js';
 //not GWT import - same folder const StaticTileLayerIntoPositionViewPosition
+
 export class StaticTileLayerViewPositionFactory
             extends Object
          implements ViewPositionFactoryInterface {

@@ -38,10 +38,12 @@ const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DbConnectionInfo } from './DbConnectionInfo.js';
-//not GWT import - same folder const DbConnectionInfo//import org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+//not GWT import - same folder const DbConnectionInfo
+//import org.allbinary.logic.communication.log.config.type.LogConfigTypes;
 export class DbInitInfo extends DbConnectionInfo {
         
 

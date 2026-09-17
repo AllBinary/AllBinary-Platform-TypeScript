@@ -24,32 +24,46 @@
         
 import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
 //not GWT import const Choice
+
 import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
 //not GWT import const ChoiceGroup
+
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { Item } from '../../../../javax/microedition/lcdui/Item.js';
 //not GWT import const Item
+
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
 //not GWT import const StringItem
+
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
 //not GWT import const GamePersistanceSingleton
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 //not GWT import const CommandForm
+
 import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
 //not GWT import const MEUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 

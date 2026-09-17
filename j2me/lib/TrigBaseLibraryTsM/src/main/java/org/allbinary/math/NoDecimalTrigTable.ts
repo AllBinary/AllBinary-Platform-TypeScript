@@ -27,14 +27,19 @@
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -57,9 +62,12 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleFactory } from './AngleFactory.js';
-//not GWT import - same folder const AngleFactory//not plain js - same folder import { PositionStrings } 
-const PositionStrings = globalThis.org.allbinary.math.PositionStrings;import { Angle } from './Angle.js';
+//not GWT import - same folder const AngleFactory
+//not plain js - same folder import { PositionStrings } 
+const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+import { Angle } from './Angle.js';
 //not GWT import - same folder const Angle
+
 export class NoDecimalTrigTable
             extends Object
          {

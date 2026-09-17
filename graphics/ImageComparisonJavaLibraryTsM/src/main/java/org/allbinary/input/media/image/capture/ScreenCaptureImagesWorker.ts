@@ -26,18 +26,25 @@
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 //not GWT import const BufferedImageFrameCacheable
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -57,11 +64,16 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptureWorkerInterface } from './CaptureWorkerInterface.js';
-//not GWT import - same folder const CaptureWorkerInterfaceimport { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
-//not GWT import - same folder const ScreenScavangerRobotimport { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
-//not GWT import - same folder const ProcessingFrameIndexFactoryimport { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
-//not GWT import - same folder const CapturedBufferedImagesCacheSingletonimport { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
+//not GWT import - same folder const CaptureWorkerInterface
+import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
+//not GWT import - same folder const ScreenScavangerRobot
+import { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
+//not GWT import - same folder const ProcessingFrameIndexFactory
+import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
+//not GWT import - same folder const CapturedBufferedImagesCacheSingleton
+import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
 //not GWT import - same folder const CapturedImageWorkerResultsEvent
+
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 

@@ -10,20 +10,28 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Visitor } from '../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
 //not GWT import const ThreadObjectUtil
+
 
 
 
@@ -44,6 +52,7 @@ import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeDelayHelper } from './TimeDelayHelper.js';
 //not GWT import - same folder const TimeDelayHelper
+
 export class StupidTimer
             extends Object
          {

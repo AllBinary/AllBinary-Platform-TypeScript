@@ -6,8 +6,10 @@
 
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
 //not GWT import const OpenGLProcessor
+
 
 
 

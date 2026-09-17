@@ -20,10 +20,13 @@
 
 import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
 //not GWT import const VirtualKeyboard
+
 import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
 //not GWT import const VirtualKeyboardEventListenerInterface
+
 import { Activity } from '../../../../../android/app/Activity.js';
 //not GWT import const Activity
+
 
 
 

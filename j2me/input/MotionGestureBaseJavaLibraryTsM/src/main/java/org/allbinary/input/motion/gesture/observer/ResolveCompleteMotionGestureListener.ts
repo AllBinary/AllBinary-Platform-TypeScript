@@ -24,22 +24,31 @@
         
 import { CompleteMotionGestureInputEventHandler } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
 //not GWT import const CompleteMotionGestureInputEventHandler
+
 import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
 //not GWT import const GameKeyCompleteMotionGestureInputEvent
+
 import { GameKeyFromMotionGestureEventListener } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyFromMotionGestureEventListener.js';
 //not GWT import const GameKeyFromMotionGestureEventListener
+
 import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
 //not GWT import const MotionGestureToMotionGestureActionAssociation
+
 import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
 //not GWT import const MotionGestureConfiguration
+
 import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
 //not GWT import const MotionGestureConfigurationFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -60,6 +69,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
 //not GWT import - same folder const CompleteMotionGestureListenerInterface
+
 export class ResolveCompleteMotionGestureListener
             extends Object
          implements CompleteMotionGestureListenerInterface {

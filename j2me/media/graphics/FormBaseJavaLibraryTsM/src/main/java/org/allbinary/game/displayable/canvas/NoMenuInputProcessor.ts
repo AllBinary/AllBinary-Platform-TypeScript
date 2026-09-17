@@ -20,12 +20,16 @@
 
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
 //not GWT import const NullCanvas
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 //not GWT import const MotionGestureEvent
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 
 
 
@@ -46,6 +50,7 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 //not GWT import - same folder const BasicMenuInputProcessor
+
 export class NoMenuInputProcessor extends BasicMenuInputProcessor {
         
 

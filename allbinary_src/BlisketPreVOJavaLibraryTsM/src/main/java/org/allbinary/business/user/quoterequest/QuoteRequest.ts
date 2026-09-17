@@ -26,34 +26,49 @@
         
 import { Calendar } from '../../../../../java/util/Calendar.js';
 //not GWT import const Calendar
+
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { QuoteRequestData } from '../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
 //not GWT import const QuoteRequestData
+
 import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js';
 //not GWT import const QuoteRequestIdGenerator
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

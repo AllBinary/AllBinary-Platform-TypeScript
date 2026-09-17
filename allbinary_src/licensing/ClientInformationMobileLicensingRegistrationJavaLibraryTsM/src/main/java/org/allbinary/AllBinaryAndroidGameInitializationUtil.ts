@@ -24,10 +24,13 @@
         
 import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
 //not GWT import const LicenseInitInfoUtil
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
 import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
 //not GWT import const PartnerIdentifierFileUtil
+
 
 
 
@@ -48,6 +51,7 @@ import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/secu
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidResources } from './AndroidResources.js';
 //not GWT import - same folder const AndroidResources
+
 export class AllBinaryAndroidGameInitializationUtil
             extends Object
          {

@@ -20,10 +20,13 @@
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
 //not GWT import const Layer
+
 
 
 
@@ -44,6 +47,7 @@ import { Layer } from '../../../../org/allbinary/layer/Layer.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
 //not GWT import - same folder const LinePathAnimation
+
 export class LinePathRelativeAnimation extends LinePathAnimation {
         
 

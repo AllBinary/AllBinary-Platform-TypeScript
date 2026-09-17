@@ -38,10 +38,12 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
 //not GWT import - same folder const LayerPlacementType
+
 export interface LayerPlacementInterface {
         
 

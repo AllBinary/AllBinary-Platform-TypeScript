@@ -22,14 +22,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationInterface } from '../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 //not GWT import const ValidationInterface
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -49,8 +54,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPropertiesView } from './CategoryPropertiesView.js';
-//not GWT import - same folder const CategoryPropertiesViewimport { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
+//not GWT import - same folder const CategoryPropertiesView
+import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
 //not GWT import - same folder const CategoryPropertiesInterface
+
 export class CategoryPropertiesValidationView extends CategoryPropertiesView implements ValidationInterface {
         
 

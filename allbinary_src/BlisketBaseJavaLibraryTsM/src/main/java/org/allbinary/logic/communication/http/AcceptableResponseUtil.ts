@@ -22,12 +22,16 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -48,6 +52,7 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseFactory } from './AcceptableResponseFactory.js';
 //not GWT import - same folder const AcceptableResponseFactory
+
 export class AcceptableResponseUtil
             extends Object
          {

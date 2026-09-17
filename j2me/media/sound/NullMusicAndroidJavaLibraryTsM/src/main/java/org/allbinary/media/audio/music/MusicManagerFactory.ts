@@ -38,11 +38,14 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MusicManager } from './MusicManager.js';
-//not GWT import - same folder const MusicManagerimport { MusicService } from './MusicService.js';
+//not GWT import - same folder const MusicManager
+import { MusicService } from './MusicService.js';
 //not GWT import - same folder const MusicService
+
 export class MusicManagerFactory
             extends Object
          {

@@ -38,12 +38,16 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactoryimport { GameKey } from './GameKey.js';
-//not GWT import - same folder const GameKeyimport { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import - same folder const InputFactory
+import { GameKey } from './GameKey.js';
+//not GWT import - same folder const GameKey
+import { GameKeyFactory } from './GameKeyFactory.js';
 //not GWT import - same folder const GameKeyFactory
+
 export class GameKeyMappingFactory
             extends Object
          {

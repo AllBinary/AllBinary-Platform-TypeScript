@@ -26,30 +26,43 @@
         
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Map } from '../../../../java/util/Map.js';
 //not GWT import const Map
+
 import { Set } from '../../../../java/util/Set.js';
 //not GWT import const Set
+
 import { HistoryDbInitInfo } from '../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
 //not GWT import const HistoryDbInitInfo
+
 import { InventoryDbInitInfo } from '../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
 //not GWT import const InventoryDbInitInfo
+
 import { LogDbInitInfo } from '../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
 //not GWT import const LogDbInitInfo
+
 import { StaticPagesDbInitInfo } from '../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
 //not GWT import const StaticPagesDbInitInfo
+
 import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -70,6 +83,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitializerData } from './InitializerData.js';
 //not GWT import - same folder const InitializerData
+
 export class Initializer
             extends Object
          {

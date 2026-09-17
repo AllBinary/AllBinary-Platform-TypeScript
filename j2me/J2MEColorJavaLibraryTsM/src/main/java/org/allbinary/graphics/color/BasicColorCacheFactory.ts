@@ -24,8 +24,10 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -45,8 +47,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-//not GWT import - same folder const BasicColorimport { BasicColorFactory } from './BasicColorFactory.js';
+//not GWT import - same folder const BasicColor
+import { BasicColorFactory } from './BasicColorFactory.js';
 //not GWT import - same folder const BasicColorFactory
+
 export class BasicColorCacheFactory
             extends Object
          {

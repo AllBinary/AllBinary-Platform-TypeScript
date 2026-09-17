@@ -24,10 +24,13 @@
         
 import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
 //not GWT import const OpenGLFeatureUtil
+
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -47,10 +50,14 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBar } from './HealthBar.js';
-//not GWT import - same folder const HealthBarimport { HealthBarTwodAnimation } from './HealthBarTwodAnimation.js';
-//not GWT import - same folder const HealthBarTwodAnimationimport { Health } from './Health.js';
-//not GWT import - same folder const Healthimport { HealthBarAnimationInterfaceFactory } from './HealthBarAnimationInterfaceFactory.js';
+//not GWT import - same folder const HealthBar
+import { HealthBarTwodAnimation } from './HealthBarTwodAnimation.js';
+//not GWT import - same folder const HealthBarTwodAnimation
+import { Health } from './Health.js';
+//not GWT import - same folder const Health
+import { HealthBarAnimationInterfaceFactory } from './HealthBarAnimationInterfaceFactory.js';
 //not GWT import - same folder const HealthBarAnimationInterfaceFactory
+
 export class HealthBarFactory
             extends Object
          {

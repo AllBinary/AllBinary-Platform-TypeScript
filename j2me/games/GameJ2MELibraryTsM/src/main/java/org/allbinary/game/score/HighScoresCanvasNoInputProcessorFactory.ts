@@ -38,11 +38,14 @@ import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayab
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessorFactoryInterface } from './HighScoresCanvasInputProcessorFactoryInterface.js';
-//not GWT import - same folder const HighScoresCanvasInputProcessorFactoryInterfaceimport { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
+//not GWT import - same folder const HighScoresCanvasInputProcessorFactoryInterface
+import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
 //not GWT import - same folder const HighScoresCanvasInputProcessor
+
 export class HighScoresCanvasNoInputProcessorFactory
             extends Object
          implements HighScoresCanvasInputProcessorFactoryInterface {

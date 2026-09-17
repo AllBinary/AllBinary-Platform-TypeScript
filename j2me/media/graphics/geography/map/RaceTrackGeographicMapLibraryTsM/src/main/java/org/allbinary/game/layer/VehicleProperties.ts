@@ -38,10 +38,12 @@ import { VelocityProperties } from '../../../../org/allbinary/game/physics/veloc
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
 //not GWT import - same folder const VehicleFrictionProperties
+
 export class VehicleProperties
             extends Object
          {

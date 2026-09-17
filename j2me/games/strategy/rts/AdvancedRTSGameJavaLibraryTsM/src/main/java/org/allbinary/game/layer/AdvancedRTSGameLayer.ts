@@ -22,92 +22,136 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 //not GWT import const NullAnimationFactory
+
 import { NullIndexedAnimationFactory } from '../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
 //not GWT import const NullIndexedAnimationFactory
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
 //not GWT import const ShakeAnimationListener
+
 import { Direction } from '../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
+
 import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
 //not GWT import const GameTypeFactory
+
 import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
 //not GWT import const DestroyedEvent
+
 import { DestroyedEventHandler } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js';
 //not GWT import const DestroyedEventHandler
+
 import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
 //not GWT import const DestroyedEventListenerInterface
+
 import { Health } from '../../../../org/allbinary/game/health/Health.js';
 //not GWT import const Health
+
 import { Group } from '../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { GroupFactory } from '../../../../org/allbinary/game/identification/GroupFactory.js';
 //not GWT import const GroupFactory
+
 import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 //not GWT import const GameKeyEventFactory
+
 import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
 //not GWT import const NullRTSFormInputFactory
+
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 //not GWT import const RTSFormInput
+
 import { BuildingEventHandler } from '../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
 //not GWT import const BuildingEventHandler
+
 import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 //not GWT import const UnitLayer
+
 import { Waypoint2LogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2LogHelper.js';
 //not GWT import const Waypoint2LogHelper
+
 import { Waypoint2SelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2SelectedLogHelper.js';
 //not GWT import const Waypoint2SelectedLogHelper
+
 import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
 //not GWT import const WaypointBase
+
 import { WaypointLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointLogHelper.js';
 //not GWT import const WaypointLogHelper
+
 import { WaypointRunnableLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableLogHelper.js';
 //not GWT import const WaypointRunnableLogHelper
+
 import { WaypointRunnableSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableSelectedLogHelper.js';
 //not GWT import const WaypointRunnableSelectedLogHelper
+
 import { WaypointSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointSelectedLogHelper.js';
 //not GWT import const WaypointSelectedLogHelper
+
 import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 import { NullTickable } from '../../../../org/allbinary/game/tick/NullTickable.js';
 //not GWT import const NullTickable
+
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 //not GWT import const TickableInterface
+
 import { TileLayerPositionIntoViewPosition } from '../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
 //not GWT import const TileLayerPositionIntoViewPosition
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { FrameUtil } from '../../../../org/allbinary/math/FrameUtil.js';
 //not GWT import const FrameUtil
+
 import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
 //not GWT import const AllBinaryVibrationME
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 import { GeographicMapDirectionUtil } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
 //not GWT import const GeographicMapDirectionUtil
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -127,14 +171,22 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayerimport { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import - same folder const NullPathFindingLayerimport { AdvancedRTSProperties } from './AdvancedRTSProperties.js';
-//not GWT import - same folder const AdvancedRTSPropertiesimport { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterfaceimport { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBaseimport { AdvancedRTSPlayerLayerInterface } from './AdvancedRTSPlayerLayerInterface.js';
-//not GWT import - same folder const AdvancedRTSPlayerLayerInterfaceimport { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterfaceimport { RTSLayerUtil } from './RTSLayerUtil.js';
+//not GWT import - same folder const RTSLayer
+import { NullPathFindingLayer } from './NullPathFindingLayer.js';
+//not GWT import - same folder const NullPathFindingLayer
+import { AdvancedRTSProperties } from './AdvancedRTSProperties.js';
+//not GWT import - same folder const AdvancedRTSProperties
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import - same folder const PathFindingLayerInterface
+import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import - same folder const WaypointBehaviorBase
+import { AdvancedRTSPlayerLayerInterface } from './AdvancedRTSPlayerLayerInterface.js';
+//not GWT import - same folder const AdvancedRTSPlayerLayerInterface
+import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
+//not GWT import - same folder const RTSPlayerLayerInterface
+import { RTSLayerUtil } from './RTSLayerUtil.js';
 //not GWT import - same folder const RTSLayerUtil
+
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         
 

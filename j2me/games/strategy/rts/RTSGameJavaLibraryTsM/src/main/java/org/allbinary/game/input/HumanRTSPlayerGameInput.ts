@@ -22,94 +22,139 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 //not GWT import const RTSFormInput
+
 import { MultiSelectPaintable } from '../../../../org/allbinary/game/layer/MultiSelectPaintable.js';
 //not GWT import const MultiSelectPaintable
+
 import { RTSGameStrings } from '../../../../org/allbinary/game/layer/RTSGameStrings.js';
 //not GWT import const RTSGameStrings
+
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { RTSLayerInfoPaintable } from '../../../../org/allbinary/game/layer/RTSLayerInfoPaintable.js';
 //not GWT import const RTSLayerInfoPaintable
+
 import { RTSPlayerLayerInterface } from '../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
 //not GWT import const GameStateFactory
+
 import { EndLevelNoBuildingSelectedTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/EndLevelNoBuildingSelectedTouchButtonsBuilder.js';
 //not GWT import const EndLevelNoBuildingSelectedTouchButtonsBuilder
+
 import { EndLevelTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/EndLevelTouchButtonsBuilder.js';
 //not GWT import const EndLevelTouchButtonsBuilder
+
 import { NoBuildingSelectedTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/NoBuildingSelectedTouchButtonsBuilder.js';
 //not GWT import const NoBuildingSelectedTouchButtonsBuilder
+
 import { RTSTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/RTSTouchButtonsBuilder.js';
 //not GWT import const RTSTouchButtonsBuilder
+
 import { SelectBuildingSound } from '../../../../org/allbinary/media/audio/SelectBuildingSound.js';
 //not GWT import const SelectBuildingSound
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 //not GWT import const AllBinaryGameCanvas
+
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { GameNotificationEvent } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 //not GWT import const GameNotificationEvent
+
 import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 //not GWT import const GameNotificationEventHandler
+
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 //not GWT import const ScrollSelectionForm
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
 //not GWT import const NullInitUpdatePaintable
+
 import { TouchButtonsBuilderFactory } from '../../../../org/allbinary/input/motion/button/TouchButtonsBuilderFactory.js';
 //not GWT import const TouchButtonsBuilderFactory
+
 import { MotionGestureInput } from '../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 //not GWT import const MotionGestureInput
+
 import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 //not GWT import const TouchMotionGestureFactory
+
 import { BaseMotionGestureEventListener } from '../../../../org/allbinary/input/motion/gesture/observer/BaseMotionGestureEventListener.js';
 //not GWT import const BaseMotionGestureEventListener
+
 import { BasicMotionGesturesHandler } from '../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
 //not GWT import const BasicMotionGesturesHandler
+
 import { MotionGestureEvent } from '../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 //not GWT import const MotionGestureEvent
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
 //not GWT import const RectangleCollisionUtil
+
 import { ErrorSound } from '../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -129,9 +174,12 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-//not GWT import - same folder const RTSPlayerGameInputimport { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
-//not GWT import - same folder const LayerPositionFinderInterfaceimport { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
+//not GWT import - same folder const RTSPlayerGameInput
+import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
+//not GWT import - same folder const LayerPositionFinderInterface
+import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
 //not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
+
 export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseMotionGestureEventListener {
         
 

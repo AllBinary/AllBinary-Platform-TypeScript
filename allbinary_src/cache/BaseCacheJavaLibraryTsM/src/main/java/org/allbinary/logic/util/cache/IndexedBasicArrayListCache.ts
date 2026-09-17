@@ -42,12 +42,16 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseBasicArrayListCache } from './BaseBasicArrayListCache.js';
-//not GWT import - same folder const BaseBasicArrayListCacheimport { CacheInterface } from './CacheInterface.js';
-//not GWT import - same folder const CacheInterfaceimport { CacheableInterface } from './CacheableInterface.js';
+//not GWT import - same folder const BaseBasicArrayListCache
+import { CacheInterface } from './CacheInterface.js';
+//not GWT import - same folder const CacheInterface
+import { CacheableInterface } from './CacheableInterface.js';
 //not GWT import - same folder const CacheableInterface
+
 export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implements CacheInterface {
         
 

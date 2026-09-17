@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Scoreable } from './Scoreable.js';
 //not GWT import - same folder const Scoreable
+
 export interface ScoreableInterfaceCompositeInterface {
         
 

@@ -24,10 +24,13 @@
         
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
+
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
+
 
 
 
@@ -48,6 +51,7 @@ import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableI
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
 //not GWT import - same folder const JPanel
+
 export class InputAutomationModuleFactoryInterface
             extends Object
          {

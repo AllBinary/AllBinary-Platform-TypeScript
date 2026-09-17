@@ -20,26 +20,37 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { NamedAngle } from '../../../../org/allbinary/math/NamedAngle.js';
 //not GWT import const NamedAngle
+
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 //not GWT import const GeographicMapCellHistory
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -59,8 +70,10 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerLogHelper } from './RTSLayerLogHelper.js';
-//not GWT import - same folder const RTSLayerLogHelperimport { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import - same folder const RTSLayerLogHelper
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 //not GWT import - same folder const PathFindingLayerInterface
+
 export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
         
 

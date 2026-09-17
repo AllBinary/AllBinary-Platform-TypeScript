@@ -24,10 +24,13 @@
         
 import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
 //not GWT import const KeyEvent
+
 import { swing } from '../../../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
 //not GWT import const KeySingletonFactory
+
 
 
 
@@ -48,6 +51,7 @@ import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/in
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
 //not GWT import - same folder const DefaultComboBoxModel
+
 export class KeyNameDefaultComboBoxModelFactory
             extends Object
          {

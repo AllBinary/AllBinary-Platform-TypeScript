@@ -22,26 +22,37 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
 //not GWT import const Tag
+
 import { MultipartRequestParamForwardHelper } from '../../admin/taghelpers/MultipartRequestParamForwardHelper.js';
 //not GWT import const MultipartRequestParamForwardHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
 //not GWT import const CustomTagSupport
+
 import { HelperTag } from '../../tags/HelperTag.js';
 //not GWT import const HelperTag
+
 
 
 
@@ -61,8 +72,10 @@ import { HelperTag } from '../../tags/HelperTag.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-//not GWT import - same folder const ParentInventoryTagHelperimport { AbTagData } from './AbTagData.js';
+//not GWT import - same folder const ParentInventoryTagHelper
+import { AbTagData } from './AbTagData.js';
 //not GWT import - same folder const AbTagData
+
 export class MultipartRequestParamForwardTag extends CustomTagSupport {
         
 

@@ -22,32 +22,46 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
 //not GWT import const OrderData
+
 import { OrderHistory } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
 //not GWT import const OrderHistory
+
 import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
 //not GWT import const OrderHistoryData
+
 import { OrderStatusEmail } from '../../org/allbinary/business/user/commerce/inventory/order/status/OrderStatusEmail.js';
 //not GWT import const OrderStatusEmail
+
 import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 //not GWT import const ShippingMethodData
+
 import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
 //not GWT import const OrderHistoryEntityFactory
+
 import { OrderItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntityFactory.js';
 //not GWT import const OrderItemsEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
 
 
 
@@ -68,6 +82,7 @@ const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
 //not GWT import - same folder const TagHelper
+
 export class OrderHistoryRequestHelper extends TagHelper {
         
 

@@ -24,12 +24,16 @@
         
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -50,6 +54,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
 //not GWT import - same folder const BasicGraphicsPipeline
+
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         
 

@@ -22,38 +22,55 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DomNodeHelper } from '../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomNodeInterface } from '../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 import { BasicTransformer } from '../org/allbinary/logic/visual/transform/BasicTransformer.js';
 //not GWT import const BasicTransformer
+
 import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
+
 import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 //not GWT import const TransformDocumentInterface
+
 import { TransformHttpRequestDocumentFactory } from '../org/allbinary/logic/visual/transform/data/TransformHttpRequestDocumentFactory.js';
 //not GWT import const TransformHttpRequestDocumentFactory
+
 import { TransformInfoHttpComposite } from '../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
 //not GWT import const TransformInfoHttpComposite
+
 import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 

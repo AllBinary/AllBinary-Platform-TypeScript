@@ -24,20 +24,28 @@
         
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { EmailServerConfigurationData } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationData.js';
 //not GWT import const EmailServerConfigurationData
+
 import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 //not GWT import const EmailServerConfigurationInterface
+
 import { EmailServerConfigurationView } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationView.js';
 //not GWT import const EmailServerConfigurationView
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -57,9 +65,12 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterfaceimport { ContextConfiguration } from './ContextConfiguration.js';
-//not GWT import - same folder const ContextConfigurationimport { ContextConfigurationData } from './ContextConfigurationData.js';
+//not GWT import - same folder const ContextConfigurationInterface
+import { ContextConfiguration } from './ContextConfiguration.js';
+//not GWT import - same folder const ContextConfiguration
+import { ContextConfigurationData } from './ContextConfigurationData.js';
 //not GWT import - same folder const ContextConfigurationData
+
 export class ContextConfigurationView
             extends Object
          implements DomNodeInterface {

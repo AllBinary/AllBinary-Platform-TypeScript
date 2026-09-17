@@ -24,12 +24,16 @@
         
 import { IOException } from '../../../../java/io/IOException.js';
 //not GWT import const IOException
+
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
 //not GWT import const OpenGLBitmap
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 
 
 

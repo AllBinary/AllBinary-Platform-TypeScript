@@ -24,14 +24,19 @@
         
 import { StoreFrontsEntity } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
 //not GWT import const StoreFrontsEntity
+
 import { StoreFrontsEntityFactory } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
 //not GWT import const StoreFrontsEntityFactory
+
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -52,6 +57,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontView } from './StoreFrontView.js';
 //not GWT import - same folder const StoreFrontView
+
 export class StoreFrontViewFactory
             extends Object
          {

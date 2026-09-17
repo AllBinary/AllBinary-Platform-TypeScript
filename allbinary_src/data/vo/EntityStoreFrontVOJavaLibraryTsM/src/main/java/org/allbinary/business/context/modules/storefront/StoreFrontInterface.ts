@@ -22,10 +22,13 @@
         
 import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 //not GWT import const ContextConfigurationInterface
+
 import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 

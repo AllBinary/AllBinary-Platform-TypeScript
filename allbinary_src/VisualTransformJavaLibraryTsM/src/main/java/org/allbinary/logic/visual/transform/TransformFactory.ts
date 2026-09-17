@@ -24,30 +24,43 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { TransformInfoEntity } from '../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 //not GWT import const TransformInfoEntity
+
 import { TransformInfoEntityBuilder } from '../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
 //not GWT import const TransformInfoEntityBuilder
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { TransformInfoData } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 //not GWT import const TransformInfoData
+
 import { TransformInfoHttpFactory } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js';
 //not GWT import const TransformInfoHttpFactory
+
 import { TransformInfoHttpInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 //not GWT import const TransformInfoHttpInterface
+
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { TransformInfoObjectFactory } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js';
 //not GWT import const TransformInfoObjectFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -68,6 +81,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInterface } from './TransformInterface.js';
 //not GWT import - same folder const TransformInterface
+
 export class TransformFactory
             extends Object
          {

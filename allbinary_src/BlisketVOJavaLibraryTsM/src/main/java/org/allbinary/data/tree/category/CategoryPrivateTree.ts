@@ -24,22 +24,31 @@
         
 import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
 //not GWT import const CategoryComponent
+
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
+
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 //not GWT import const CategoryFactoryInterface
+
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
 //not GWT import const CryptFileWriter
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 

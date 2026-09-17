@@ -20,12 +20,16 @@
 
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
 //not GWT import const NullOpenGLProcessorFactory
+
 import { OpenGLCapabilities } from '../../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
 //not GWT import const OpenGLCapabilities
+
 import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
 //not GWT import const OpenGLProcessor
+
 
 
 
@@ -45,11 +49,16 @@ import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderComposite } from './ShaderComposite.js';
-//not GWT import - same folder const ShaderCompositeimport { Shader } from './Shader.js';
-//not GWT import - same folder const Shaderimport { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-//not GWT import - same folder const CompositeShaderUpdaterimport { ShaderInitializer } from './ShaderInitializer.js';
-//not GWT import - same folder const ShaderInitializerimport { ModelViewProjection } from './ModelViewProjection.js';
+//not GWT import - same folder const ShaderComposite
+import { Shader } from './Shader.js';
+//not GWT import - same folder const Shader
+import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
+//not GWT import - same folder const CompositeShaderUpdater
+import { ShaderInitializer } from './ShaderInitializer.js';
+//not GWT import - same folder const ShaderInitializer
+import { ModelViewProjection } from './ModelViewProjection.js';
 //not GWT import - same folder const ModelViewProjection
+
 export class NullShaderComposite extends ShaderComposite {
         
 

@@ -22,8 +22,10 @@
         
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -44,6 +46,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScores } from './RemoteHighScores.js';
 //not GWT import - same folder const RemoteHighScores
+
 export interface RemoteHighScoresProcessorInterface {
         
 

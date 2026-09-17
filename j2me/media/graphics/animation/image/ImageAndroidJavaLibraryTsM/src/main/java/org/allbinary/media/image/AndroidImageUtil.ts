@@ -24,18 +24,25 @@
         
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
 //not GWT import const Bitmap
+
 import { Canvas } from '../../../../android/graphics/Canvas.js';
 //not GWT import const Canvas
+
 import { Color } from '../../../../android/graphics/Color.js';
 //not GWT import const Color
+
 import { Matrix } from '../../../../android/graphics/Matrix.js';
 //not GWT import const Matrix
+
 import { Paint } from '../../../../android/graphics/Paint.js';
 //not GWT import const Paint
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 //not GWT import const AndroidImageInterface
+
 
 
 

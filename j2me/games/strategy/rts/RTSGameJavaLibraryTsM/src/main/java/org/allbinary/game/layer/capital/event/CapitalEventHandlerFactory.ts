@@ -38,10 +38,12 @@ import { Group } from '../../../../../../org/allbinary/game/identification/Group
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapitalEventHandler } from './CapitalEventHandler.js';
 //not GWT import - same folder const CapitalEventHandler
+
 export class CapitalEventHandlerFactory
             extends Object
          {

@@ -42,10 +42,12 @@ import { View } from '../../../../android/view/View.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyInputViewCompositeInterface } from './KeyInputViewCompositeInterface.js';
 //not GWT import - same folder const KeyInputViewCompositeInterface
+
 export class NullKeyInputViewComposite
             extends Object
          implements KeyInputViewCompositeInterface {

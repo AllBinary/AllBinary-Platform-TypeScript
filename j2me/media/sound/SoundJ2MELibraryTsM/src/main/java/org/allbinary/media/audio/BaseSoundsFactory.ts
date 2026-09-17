@@ -41,8 +41,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterfaceimport { Sound } from './Sound.js';
+//not GWT import - same folder const SoundsFactoryInterface
+import { Sound } from './Sound.js';
 //not GWT import - same folder const Sound
+
 export class BaseSoundsFactory
             extends Object
          implements SoundsFactoryInterface {

@@ -26,46 +26,67 @@
         
 import { Color } from '../../../../../../../java/awt/Color.js';
 //not GWT import const Color
+
 import { Point } from '../../../../../../../java/awt/Point.js';
 //not GWT import const Point
+
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { ColorCacheFactory } from '../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
 //not GWT import const ColorCacheFactory
+
 import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
 //not GWT import const ColorCacheable
+
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
 //not GWT import const CapturedBufferedImagesCacheSingleton
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
+
 import { ColorRange } from '../../../../../../../org/allbinary/media/image/analysis/ColorRange.js';
 //not GWT import const ColorRange
+
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
 //not GWT import const ColorRangeInterface
+
 import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 //not GWT import const BufferedImageFrameCacheable
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -85,10 +106,14 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import - same folder const BasicProfileActionScriptConditionimport { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import - same folder const ColorAtActionScriptConditionInterfaceimport { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
-//not GWT import - same folder const ColorAtActionScriptConditionJPanelimport { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
+//not GWT import - same folder const BasicProfileActionScriptCondition
+import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
+//not GWT import - same folder const ColorAtActionScriptConditionInterface
+import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
+//not GWT import - same folder const ColorAtActionScriptConditionJPanel
+import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
 //not GWT import - same folder const ColorAtActionScriptConditionData
+
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         
 

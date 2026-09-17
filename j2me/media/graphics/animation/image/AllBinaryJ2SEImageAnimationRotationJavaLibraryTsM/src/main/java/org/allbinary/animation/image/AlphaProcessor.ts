@@ -20,8 +20,10 @@
 
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
 //not GWT import const ImageModifierUtil
+
 
 
 
@@ -42,6 +44,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
 //not GWT import - same folder const ModifierBaseProcessor
+
 export class AlphaProcessor extends ModifierBaseProcessor {
         
 

@@ -24,8 +24,10 @@
         
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 //not GWT import const MIDlet
+
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 
 
 

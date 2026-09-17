@@ -22,8 +22,10 @@
         
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 
 
 
@@ -43,8 +45,10 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
-//not GWT import - same folder const PathFindingNodeCostInfoFactoryBaseimport { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
+//not GWT import - same folder const PathFindingNodeCostInfoFactoryBase
+import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
 //not GWT import - same folder const PathFindingNodeCostInfo
+
 export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFactoryBase {
         
 

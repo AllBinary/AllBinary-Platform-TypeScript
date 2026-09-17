@@ -24,10 +24,13 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 
@@ -48,6 +51,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 //not GWT import - same folder const SpecialGameInputInterface
+
 export class SpecialGameInput
             extends Object
          implements SpecialGameInputInterface {

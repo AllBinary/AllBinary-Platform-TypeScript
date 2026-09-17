@@ -24,24 +24,34 @@
         
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const BaseResourceAnimationInterfaceFactoryInterfaceFactory
+
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { MainFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 //not GWT import const MainFeatureFactory
+
 import { GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory } from '../../../../../org/allbinary/game/layer/GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory.js';
 //not GWT import const GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory
+
 import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from '../../../../../org/allbinary/game/layer/LayerPlacementInterfaceBasicArrayListFactoryInterface.js';
 //not GWT import const LayerPlacementInterfaceBasicArrayListFactoryInterface
+
 import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 //not GWT import const ResourceLoadingLevelFactory
+
 import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -61,8 +71,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OnDemandResourcesFactory } from './OnDemandResourcesFactory.js';
-//not GWT import - same folder const OnDemandResourcesFactoryimport { OnDemandResources } from './OnDemandResources.js';
+//not GWT import - same folder const OnDemandResourcesFactory
+import { OnDemandResources } from './OnDemandResources.js';
 //not GWT import - same folder const OnDemandResources
+
 export class OnDemandLoader
             extends Object
          {

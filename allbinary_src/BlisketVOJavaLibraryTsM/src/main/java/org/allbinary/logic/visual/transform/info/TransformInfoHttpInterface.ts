@@ -20,10 +20,13 @@
 
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
 //not GWT import const WeblisketSessionInterface
+
 
 
 
@@ -44,6 +47,7 @@ import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
 //not GWT import - same folder const TransformInfoInterface
+
 export interface TransformInfoHttpInterface extends TransformInfoInterface {
         
 

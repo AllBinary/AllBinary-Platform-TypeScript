@@ -10,18 +10,25 @@
         
 import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
 //not GWT import const ByteArrayOutputStream
+
 import { InputStream } from '../../../../java/io/InputStream.js';
 //not GWT import const InputStream
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
 //not GWT import const StreamUtil
+
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
 //not GWT import const AbFileNativeUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -41,8 +48,10 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FileItemStream } from './FileItemStream.js';
-//not GWT import - same folder const FileItemStreamimport { FileItem } from './FileItem.js';
+//not GWT import - same folder const FileItemStream
+import { FileItem } from './FileItem.js';
 //not GWT import - same folder const FileItem
+
 export class FileItemUtil
             extends Object
          {

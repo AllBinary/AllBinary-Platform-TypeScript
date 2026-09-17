@@ -24,20 +24,28 @@
         
 import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { GameTickTimeDelayHelperFactory } from '../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
+
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -58,6 +66,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeFiredInterface } from './TimeFiredInterface.js';
 //not GWT import - same folder const TimeFiredInterface
+
 export class TimedFireAI extends BasicAI {
         
 

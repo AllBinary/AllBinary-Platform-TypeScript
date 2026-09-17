@@ -24,24 +24,34 @@
         
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
+
 import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
 //not GWT import const ChoiceGroup
+
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 
 
 
@@ -61,9 +71,12 @@ const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-//not GWT import - same folder const Featuresimport { Feature } from './Feature.js';
-//not GWT import - same folder const Featureimport { GameFeatureChoiceGroups } from './GameFeatureChoiceGroups.js';
+//not GWT import - same folder const Features
+import { Feature } from './Feature.js';
+//not GWT import - same folder const Feature
+import { GameFeatureChoiceGroups } from './GameFeatureChoiceGroups.js';
 //not GWT import - same folder const GameFeatureChoiceGroups
+
 export class GameFeatureUtil
             extends Object
          {

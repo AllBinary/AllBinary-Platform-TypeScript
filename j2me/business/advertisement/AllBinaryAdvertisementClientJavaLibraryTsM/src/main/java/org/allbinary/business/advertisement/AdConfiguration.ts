@@ -22,8 +22,10 @@
         
 import { Direction } from '../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
 //not GWT import const GameState
+
 
 
 

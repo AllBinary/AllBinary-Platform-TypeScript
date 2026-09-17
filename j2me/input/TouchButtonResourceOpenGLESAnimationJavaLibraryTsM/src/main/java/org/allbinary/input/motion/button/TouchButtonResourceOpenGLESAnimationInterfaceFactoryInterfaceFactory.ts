@@ -22,10 +22,13 @@
         
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 //not GWT import const OpenGLFeatureFactory
+
 import { OpenGLImageCacheFactory } from '../../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
 //not GWT import const OpenGLImageCacheFactory
+
 
 
 
@@ -46,6 +49,7 @@ import { OpenGLImageCacheFactory } from '../../../../../org/allbinary/image/open
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory } from './TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import - same folder const TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory
+
 export class TouchButtonResourceOpenGLESAnimationInterfaceFactoryInterfaceFactory extends TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory {
         
 

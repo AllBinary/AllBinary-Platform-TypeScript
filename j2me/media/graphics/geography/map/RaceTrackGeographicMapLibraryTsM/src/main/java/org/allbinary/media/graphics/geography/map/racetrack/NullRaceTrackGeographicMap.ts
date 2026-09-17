@@ -28,18 +28,25 @@
         
 import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { Layer } from '../../../../../../../org/allbinary/layer/Layer.js';
 //not GWT import const Layer
+
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 //not GWT import const BasicGeographicMapCellPositionFactory
+
 import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 //not GWT import const GeographicMapCellPositionFactoryInterface
+
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
+
 
 
 
@@ -59,9 +66,12 @@ import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapInterface } from './RaceTrackGeographicMapInterface.js';
-//not GWT import - same folder const RaceTrackGeographicMapInterfaceimport { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfoimport { RaceTrackData } from './RaceTrackData.js';
+//not GWT import - same folder const RaceTrackGeographicMapInterface
+import { RaceTrackInfo } from './RaceTrackInfo.js';
+//not GWT import - same folder const RaceTrackInfo
+import { RaceTrackData } from './RaceTrackData.js';
 //not GWT import - same folder const RaceTrackData
+
 export class NullRaceTrackGeographicMap
             extends Object
          implements RaceTrackGeographicMapInterface {

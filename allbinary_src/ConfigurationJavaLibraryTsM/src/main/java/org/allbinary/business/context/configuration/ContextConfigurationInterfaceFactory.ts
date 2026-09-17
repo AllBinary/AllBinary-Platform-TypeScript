@@ -24,16 +24,22 @@
         
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
+
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -53,10 +59,14 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationData } from './ContextConfigurationData.js';
-//not GWT import - same folder const ContextConfigurationDataimport { ContextConfigurationView } from './ContextConfigurationView.js';
-//not GWT import - same folder const ContextConfigurationViewimport { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterfaceimport { ContextConfigurationPathUtil } from './ContextConfigurationPathUtil.js';
+//not GWT import - same folder const ContextConfigurationData
+import { ContextConfigurationView } from './ContextConfigurationView.js';
+//not GWT import - same folder const ContextConfigurationView
+import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
+//not GWT import - same folder const ContextConfigurationInterface
+import { ContextConfigurationPathUtil } from './ContextConfigurationPathUtil.js';
 //not GWT import - same folder const ContextConfigurationPathUtil
+
 export class ContextConfigurationInterfaceFactory
             extends Object
          {

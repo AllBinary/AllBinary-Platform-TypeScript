@@ -24,36 +24,52 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BasicGroupFactory } from '../../../org/allbinary/game/identification/BasicGroupFactory.js';
 //not GWT import const BasicGroupFactory
+
 import { Group } from '../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 import { OpenGLFeatureUtil } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
 //not GWT import const OpenGLFeatureUtil
+
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
+
 import { ViewPositionBase } from '../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositionEvent.js';
 //not GWT import const ViewPositionEvent
+
 
 
 
@@ -73,8 +89,10 @@ import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositio
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import - same folder const Layerimport { LayerInterface } from './LayerInterface.js';
+//not GWT import - same folder const Layer
+import { LayerInterface } from './LayerInterface.js';
 //not GWT import - same folder const LayerInterface
+
 export class AllBinaryLayer extends Layer implements LayerInterface {
         
 

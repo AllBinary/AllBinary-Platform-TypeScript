@@ -20,22 +20,31 @@
 
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
 //not GWT import const GameFeatureChoiceGroups
+
 import { InGameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js';
 //not GWT import const InGameFeatureChoiceGroups
+
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 //not GWT import const SensorFeatureFactory
+
 import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
 //not GWT import const TouchFeatureFactory
+
 import { Init } from '../../../../org/allbinary/init/Init.js';
 //not GWT import const Init
+
 import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
 //not GWT import const OrientationData
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 

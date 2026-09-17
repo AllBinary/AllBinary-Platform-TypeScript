@@ -24,26 +24,37 @@
         
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
+
 import { WeaponProperties } from '../../../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { CountedPickedUpLayerInterfaceFactory } from '../../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
 //not GWT import const CountedPickedUpLayerInterfaceFactory
+
 import { IconLayerFactory } from '../../../../../../../org/allbinary/game/layer/pickup/IconLayerFactory.js';
 //not GWT import const IconLayerFactory
+
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 //not GWT import const PickedUpLayerInterfaceFactoryInterface
+
 import { PickedUpLayerTypeFactory } from '../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerTypeFactory.js';
 //not GWT import const PickedUpLayerTypeFactory
+
 import { WeaponLayerCircularPool } from '../../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
 //not GWT import const WeaponLayerCircularPool
+
 import { ScoreableInterface } from '../../../../../../../org/allbinary/game/score/ScoreableInterface.js';
 //not GWT import const ScoreableInterface
+
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { SmallIntegerSingletonFactory } from '../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -63,8 +74,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayerCircularStaticPool } from './MineLayerCircularStaticPool.js';
-//not GWT import - same folder const MineLayerCircularStaticPoolimport { MineWeaponResources } from './MineWeaponResources.js';
+//not GWT import - same folder const MineLayerCircularStaticPool
+import { MineWeaponResources } from './MineWeaponResources.js';
 //not GWT import - same folder const MineWeaponResources
+
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {
         
 

@@ -24,10 +24,13 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Animation } from '../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 
 
 
@@ -48,6 +51,7 @@ import { Animation } from '../../../org/allbinary/animation/Animation.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureImageCacheFactory } from './GameFeatureImageCacheFactory.js';
 //not GWT import - same folder const GameFeatureImageCacheFactory
+
 export class AnimationFrameToImageUtil
             extends Object
          {

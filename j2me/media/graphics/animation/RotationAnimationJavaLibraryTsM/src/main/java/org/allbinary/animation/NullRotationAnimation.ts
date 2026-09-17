@@ -8,10 +8,13 @@
         
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 
 
 
@@ -31,8 +34,10 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RotationAnimation } from './RotationAnimation.js';
-//not GWT import - same folder const RotationAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const RotationAnimation
+import { AnimationBehavior } from './AnimationBehavior.js';
 //not GWT import - same folder const AnimationBehavior
+
 export class NullRotationAnimation extends RotationAnimation {
         
 

@@ -22,10 +22,13 @@
         
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 //not GWT import const MyCanvas
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 

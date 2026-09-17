@@ -24,8 +24,10 @@
         
 import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
 //not GWT import const CellPositionFactory
+
 import { GeographicMapCellPositionTracking } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
 //not GWT import const GeographicMapCellPositionTracking
+
 
 
 
@@ -45,8 +47,10 @@ import { GeographicMapCellPositionTracking } from '../../../../../../../org/allb
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-//not GWT import - same folder const GeographicMapCellPositionEventimport { GeographicMapCellPositionEventHandler } from './GeographicMapCellPositionEventHandler.js';
+//not GWT import - same folder const GeographicMapCellPositionEvent
+import { GeographicMapCellPositionEventHandler } from './GeographicMapCellPositionEventHandler.js';
 //not GWT import - same folder const GeographicMapCellPositionEventHandler
+
 export class GeographicMapCellPositionEventUtil
             extends Object
          {

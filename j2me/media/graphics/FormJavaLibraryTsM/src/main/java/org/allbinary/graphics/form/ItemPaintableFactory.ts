@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import - same folder const ItemPaintableimport { PaintableForm } from './PaintableForm.js';
+//not GWT import - same folder const ItemPaintable
+import { PaintableForm } from './PaintableForm.js';
 //not GWT import - same folder const PaintableForm
+
 export class ItemPaintableFactory extends ItemPaintable {
         
 

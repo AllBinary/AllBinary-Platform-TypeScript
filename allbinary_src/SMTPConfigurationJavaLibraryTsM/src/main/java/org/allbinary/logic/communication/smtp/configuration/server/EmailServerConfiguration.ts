@@ -22,12 +22,16 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,8 +51,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-//not GWT import - same folder const EmailServerConfigurationInterfaceimport { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
+//not GWT import - same folder const EmailServerConfigurationInterface
+import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
 //not GWT import - same folder const EmailServerConfigurationData
+
 export class EmailServerConfiguration
             extends Object
          implements EmailServerConfigurationInterface {

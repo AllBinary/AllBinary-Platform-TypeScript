@@ -22,28 +22,40 @@
         
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 //not GWT import const ResultSet
+
 import { ResultSetMetaData } from '../../../../../java/sql/ResultSetMetaData.js';
 //not GWT import const ResultSetMetaData
+
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 //not GWT import const DbConnectionInfo
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
+
 
 
 
@@ -64,6 +76,7 @@ import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlColumn } from './AbSqlColumn.js';
 //not GWT import - same folder const AbSqlColumn
+
 export class AbSqlRow extends AbSqlColumn {
         
 

@@ -20,8 +20,10 @@
 
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 
 
 
@@ -41,8 +43,10 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimation } from './VectorAnimation.js';
-//not GWT import - same folder const VectorAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const VectorAnimation
+import { AnimationBehavior } from './AnimationBehavior.js';
 //not GWT import - same folder const AnimationBehavior
+
 export class ColorLessVectorAnimation extends VectorAnimation {
         
 

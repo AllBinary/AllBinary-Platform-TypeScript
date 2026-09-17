@@ -22,18 +22,25 @@
         
 import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
 //not GWT import const CategoryView
+
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ThemeInterface } from '../../../../../../org/allbinary/logic/visual/theme/ThemeInterface.js';
 //not GWT import const ThemeInterface
+
 import { ThemePropertiesView } from '../../../../../../org/allbinary/logic/visual/theme/ThemePropertiesView.js';
 //not GWT import const ThemePropertiesView
+
 import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
 //not GWT import const ThemeValidation
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -54,6 +61,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
 //not GWT import - same folder const StoreThemeCategoryInterface
+
 export class StoreThemeCategoryPathView extends CategoryView implements DomNodeInterface {
         
 

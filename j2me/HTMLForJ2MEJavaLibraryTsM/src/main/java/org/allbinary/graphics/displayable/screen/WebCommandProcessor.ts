@@ -24,20 +24,28 @@
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { PlayN } 
 const PlayN = globalThis.playn.core.PlayN;
+
 
 
 
@@ -58,6 +66,7 @@ const PlayN = globalThis.playn.core.PlayN;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AboutCommandProcessor } from './AboutCommandProcessor.js';
 //not GWT import - same folder const AboutCommandProcessor
+
 export class WebCommandProcessor
             extends Object
          {

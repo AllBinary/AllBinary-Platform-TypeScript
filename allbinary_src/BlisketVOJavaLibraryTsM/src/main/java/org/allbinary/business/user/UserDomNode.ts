@@ -24,20 +24,28 @@
         
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { EntryData } from '../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -58,6 +66,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserData } from './UserData.js';
 //not GWT import - same folder const UserData
+
 export class UserDomNode
             extends Object
          implements DomNodeInterface {

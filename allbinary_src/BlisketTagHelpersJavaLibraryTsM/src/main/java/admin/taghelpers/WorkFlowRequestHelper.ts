@@ -22,24 +22,34 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
 //not GWT import const WorkFlowEntityFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { NewWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/NewWorkFlowFactory.js';
 //not GWT import const NewWorkFlowFactory
+
 import { WorkFlowData } from '../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 //not GWT import const WorkFlowData
+
 import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 //not GWT import const WorkFlowInterface
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 
 
 
@@ -60,6 +70,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
 //not GWT import - same folder const ModifyTable
+
 export class WorkFlowRequestHelper extends ModifyTable {
         
 

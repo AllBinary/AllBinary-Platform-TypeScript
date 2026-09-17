@@ -24,22 +24,31 @@
         
 import { Manager } from '../../../../javax/microedition/media/Manager.js';
 //not GWT import const Manager
+
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
+
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 //not GWT import const GameFeatureFactory
+
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -59,9 +68,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import - same folder const Soundsimport { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterfaceimport { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer//MediaMIDP2ForHTMLJavaLibrary
+//not GWT import - same folder const Sounds
+import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import - same folder const SoundsFactoryInterface
+import { NoPlayer } from './NoPlayer.js';
+//not GWT import - same folder const NoPlayer
+//MediaMIDP2ForHTMLJavaLibrary
 export class AllBinaryMediaManager
             extends Object
          {

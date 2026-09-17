@@ -20,14 +20,19 @@
 
 import { MotionEvent } from '../../../../../android/view/MotionEvent.js';
 //not GWT import const MotionEvent
+
 import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
 //not GWT import const BasicMotionGesturesHandler
+
 import { GameMotionGestureListener } from '../../../../../org/allbinary/input/motion/gesture/observer/GameMotionGestureListener.js';
 //not GWT import const GameMotionGestureListener
+
 import { MotionGestureReceiveInterfaceFactory } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureReceiveInterfaceFactory.js';
 //not GWT import const MotionGestureReceiveInterfaceFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +53,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventProcessor } from './MotionEventProcessor.js';
 //not GWT import - same folder const MotionEventProcessor
+
 export class BaseGameInputMotionEventProcessor extends MotionEventProcessor {
         
 

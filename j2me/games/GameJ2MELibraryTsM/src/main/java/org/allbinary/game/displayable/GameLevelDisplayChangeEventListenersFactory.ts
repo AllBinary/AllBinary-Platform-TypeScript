@@ -22,14 +22,19 @@
         
 import { DisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
 //not GWT import const DisplayChangeEventHandler
+
 import { DisplayChangeEventListener } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
 //not GWT import const DisplayChangeEventListener
+
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 

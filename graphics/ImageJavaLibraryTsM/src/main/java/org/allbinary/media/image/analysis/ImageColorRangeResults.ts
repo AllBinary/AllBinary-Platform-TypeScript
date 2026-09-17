@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import - same folder const ColorRangeInterfaceimport { ColorRange } from './ColorRange.js';
+//not GWT import - same folder const ColorRangeInterface
+import { ColorRange } from './ColorRange.js';
 //not GWT import - same folder const ColorRange
+
 export class ImageColorRangeResults
             extends Object
          {

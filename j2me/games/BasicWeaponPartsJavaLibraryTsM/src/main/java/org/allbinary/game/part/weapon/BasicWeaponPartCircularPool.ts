@@ -24,12 +24,16 @@
         
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 //not GWT import const WeaponProperties
+
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 //not GWT import const ScoreableInterface
+
 import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
 //not GWT import const RelativeRelationship
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -49,8 +53,10 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import - same folder const BasicWeaponPartimport { BasicWeaponPartFactoryInterface } from './BasicWeaponPartFactoryInterface.js';
+//not GWT import - same folder const BasicWeaponPart
+import { BasicWeaponPartFactoryInterface } from './BasicWeaponPartFactoryInterface.js';
 //not GWT import - same folder const BasicWeaponPartFactoryInterface
+
 export class BasicWeaponPartCircularPool
             extends Object
          {

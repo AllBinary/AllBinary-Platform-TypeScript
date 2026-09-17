@@ -26,26 +26,37 @@
         
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
+
 import { RunnableCanvas } from '../../../org/allbinary/canvas/RunnableCanvas.js';
 //not GWT import const RunnableCanvas
+
 import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 //not GWT import const AllBinaryGameCanvas
+
 import { DemoCanvas } from '../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
 //not GWT import const DemoCanvas
+
 import { GameCanvasRunnableInterface } from '../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
 //not GWT import const GameCanvasRunnableInterface
+
 import { RunnableCanvasSingleThreadStartRunnable } from '../../../org/allbinary/game/displayable/canvas/RunnableCanvasSingleThreadStartRunnable.js';
 //not GWT import const RunnableCanvasSingleThreadStartRunnable
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -65,9 +76,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABRunnable } from './ABRunnable.js';
-//not GWT import - same folder const ABRunnableimport { PrimaryThreadPool } from './PrimaryThreadPool.js';
-//not GWT import - same folder const PrimaryThreadPoolimport { ThreadPool } from './ThreadPool.js';
+//not GWT import - same folder const ABRunnable
+import { PrimaryThreadPool } from './PrimaryThreadPool.js';
+//not GWT import - same folder const PrimaryThreadPool
+import { ThreadPool } from './ThreadPool.js';
 //not GWT import - same folder const ThreadPool
+
 export class ThreadFactoryUtil
             extends Object
          {

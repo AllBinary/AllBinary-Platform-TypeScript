@@ -20,12 +20,16 @@
 
 import { Activity } from '../../../../../../android/app/Activity.js';
 //not GWT import const Activity
+
 import { MidletActivityBase } from '../../../../../../org/allbinary/android/activity/MidletActivityBase.js';
 //not GWT import const MidletActivityBase
+
 import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
 //not GWT import const SimpleProgressActivityInterface
+
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
 
 
 
@@ -46,6 +50,7 @@ const ARunnable = globalThis.org.allbinary.thread.ARunnable;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
 //not GWT import - same folder const ProgressCanvas
+
 export class ProgressRunnable extends ARunnable {
         
 

@@ -24,16 +24,22 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
 //not GWT import const SpecialMessageUtil
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -53,8 +59,10 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RegistrationConfiguration } from './RegistrationConfiguration.js';
-//not GWT import - same folder const RegistrationConfigurationimport { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';
+//not GWT import - same folder const RegistrationConfiguration
+import { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';
 //not GWT import - same folder const XmlRpcRemoteLicenseRegistrationClient
+
 export class LicenseRegistrationUtil
             extends Object
          {

@@ -37,8 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTagSupport } from './CustomTagSupport.js';
-//not GWT import - same folder const CustomTagSupportimport { TagStrings } from './TagStrings.js';
+//not GWT import - same folder const CustomTagSupport
+import { TagStrings } from './TagStrings.js';
 //not GWT import - same folder const TagStrings
+
 export class CommandTag extends CustomTagSupport {
         
 

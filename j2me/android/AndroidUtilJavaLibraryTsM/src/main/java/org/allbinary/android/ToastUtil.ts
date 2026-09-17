@@ -14,14 +14,19 @@
         
 import { Context } from '../../../android/content/Context.js';
 //not GWT import const Context
+
 import { View } from '../../../android/view/View.js';
 //not GWT import const View
+
 import { Toast } from '../../../android/widget/Toast.js';
 //not GWT import const Toast
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

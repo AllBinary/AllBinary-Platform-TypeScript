@@ -22,10 +22,13 @@
         
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { DropCellPositionHistory } from '../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 //not GWT import const DropCellPositionHistory
+
 
 
 
@@ -46,6 +49,7 @@ import { DropCellPositionHistory } from '../../../../org/allbinary/media/graphic
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
 //not GWT import - same folder const LayerPositionFinderInterface
+
 export class RTSGameLayerPositionFinder
             extends Object
          implements LayerPositionFinderInterface {

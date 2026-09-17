@@ -22,10 +22,13 @@
         
 import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 //not GWT import const InputAutomationModuleFactoryInterface
+
 import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceFactory.js';
 //not GWT import const InputAutomationModuleServiceFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -46,6 +49,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericModuleFactory } from './GenericModuleFactory.js';
 //not GWT import - same folder const GenericModuleFactory
+
 export class InputAutomationGenericModuleServiceFactory extends InputAutomationModuleServiceFactory {
         
 

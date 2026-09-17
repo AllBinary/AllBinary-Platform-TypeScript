@@ -24,18 +24,25 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -55,10 +62,14 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-//not GWT import - same folder const EmailServerConfigurationInterfaceimport { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
-//not GWT import - same folder const EmailServerConfigurationDataimport { EmailServerConfiguration } from './EmailServerConfiguration.js';
-//not GWT import - same folder const EmailServerConfigurationimport { EmailServerConfigurationMapping } from './EmailServerConfigurationMapping.js';
+//not GWT import - same folder const EmailServerConfigurationInterface
+import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
+//not GWT import - same folder const EmailServerConfigurationData
+import { EmailServerConfiguration } from './EmailServerConfiguration.js';
+//not GWT import - same folder const EmailServerConfiguration
+import { EmailServerConfigurationMapping } from './EmailServerConfigurationMapping.js';
 //not GWT import - same folder const EmailServerConfigurationMapping
+
 export class EmailServerConfigurationView
             extends Object
          implements DomNodeInterface {

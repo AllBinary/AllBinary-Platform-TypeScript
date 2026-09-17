@@ -38,10 +38,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsInterface } from './UrlGlobalsInterface.js';
-//not GWT import - same folder const UrlGlobalsInterface//implements
+//not GWT import - same folder const UrlGlobalsInterface
+//implements
 export class AppUrlGlobals extends UrlGlobalsInterface {
         
 

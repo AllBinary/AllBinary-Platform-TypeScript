@@ -24,22 +24,31 @@
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Tokenizer } from '../../../../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 //not GWT import const Tokenizer
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -59,8 +68,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionResultInterface } from './TransactionResultInterface.js';
-//not GWT import - same folder const TransactionResultInterfaceimport { PaymentTransactionKeysFactory } from './PaymentTransactionKeysFactory.js';
+//not GWT import - same folder const TransactionResultInterface
+import { PaymentTransactionKeysFactory } from './PaymentTransactionKeysFactory.js';
 //not GWT import - same folder const PaymentTransactionKeysFactory
+
 export class TransactionResult
             extends Object
          implements TransactionResultInterface {

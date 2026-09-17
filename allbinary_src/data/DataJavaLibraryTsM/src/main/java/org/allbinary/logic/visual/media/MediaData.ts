@@ -24,8 +24,10 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -45,8 +47,10 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MediaTypeData } from './MediaTypeData.js';
-//not GWT import - same folder const MediaTypeDataimport { MediaDataFactory } from './MediaDataFactory.js';
+//not GWT import - same folder const MediaTypeData
+import { MediaDataFactory } from './MediaDataFactory.js';
 //not GWT import - same folder const MediaDataFactory
+
 export class MediaData
             extends Object
          {

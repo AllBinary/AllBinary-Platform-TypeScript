@@ -8,22 +8,31 @@
         
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 //not GWT import const RectangleFactory
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 //not GWT import const CanvasStrings
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -43,9 +52,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomForm } from './ABCustomForm.js';
-//not GWT import - same folder const ABCustomFormimport { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactoryimport { FormType } from './FormType.js';
+//not GWT import - same folder const ABCustomForm
+import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import - same folder const FormTypeFactory
+import { FormType } from './FormType.js';
 //not GWT import - same folder const FormType
+
 export class PaintableForm extends ABCustomForm {
         
 

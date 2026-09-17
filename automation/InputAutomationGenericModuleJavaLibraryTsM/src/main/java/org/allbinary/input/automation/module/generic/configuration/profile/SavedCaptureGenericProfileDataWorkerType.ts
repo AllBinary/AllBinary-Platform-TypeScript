@@ -36,10 +36,12 @@ import { InputImageType } from '../../../../../../../../org/allbinary/input/medi
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
 //not GWT import - same folder const GenericProfileDataWorkerType
+
 export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileDataWorkerType {
         
 

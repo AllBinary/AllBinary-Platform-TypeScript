@@ -24,8 +24,10 @@
         
 import { InputAutomationModuleFactoryInterface } from '../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 //not GWT import const InputAutomationModuleFactoryInterface
+
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
 //not GWT import const InputAutomationModuleConfiguration
+
 
 
 
@@ -46,6 +48,7 @@ import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfigurationModuleChangeEvent } from './InputAutomationConfigurationModuleChangeEvent.js';
 //not GWT import - same folder const InputAutomationConfigurationModuleChangeEvent
+
 export class InputAutomationConfigurationUtil
             extends Object
          {

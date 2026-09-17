@@ -36,11 +36,14 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
-//not GWT import - same folder const OpenGLESImageTranslate//not plain js - same folder import { OpenGLESImage } 
+//not GWT import - same folder const OpenGLESImageTranslate
+//not plain js - same folder import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
 export class OpenGLESDeviceImageTranslate extends OpenGLESImageTranslate {
         
 

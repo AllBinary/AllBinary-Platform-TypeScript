@@ -30,10 +30,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockableFeature } from './LockableFeature.js';
 //not GWT import - same folder const LockableFeature
+
 export class InApplicationPurchaseFactory
             extends Object
          {

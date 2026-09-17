@@ -24,12 +24,16 @@
         
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
 //not GWT import const NoCompleteMotionGestureInputEventListener
+
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
 //not GWT import const AllBinarySensor
+
 import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
 //not GWT import const NoAllBinarySensor
+
 import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
 //not GWT import const AccelerometerSensorFactory
+
 
 
 
@@ -50,6 +54,7 @@ import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/acce
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GyroSensorFactory } from './GyroSensorFactory.js';
 //not GWT import - same folder const GyroSensorFactory
+
 export class SensorGameUpdateProcessor
             extends Object
          {

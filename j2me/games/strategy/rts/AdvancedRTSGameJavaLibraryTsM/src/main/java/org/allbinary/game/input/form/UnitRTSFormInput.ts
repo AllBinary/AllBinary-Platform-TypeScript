@@ -23,60 +23,88 @@
         
 import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AdvancedPlayerOwnedRTSLayers } from '../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js';
 //not GWT import const AdvancedPlayerOwnedRTSLayers
+
 import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { AdvancedRTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/AdvancedRTSPlayerLayerInterface.js';
 //not GWT import const AdvancedRTSPlayerLayerInterface
+
 import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
 //not GWT import const RTSGameStrings
+
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 //not GWT import const RTSLayer
+
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 //not GWT import const RTSPlayerLayerInterface
+
 import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital.js';
 //not GWT import const Capital
+
 import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 //not GWT import const UnitLayer
+
 import { WorkWaypoint } from '../../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';
 //not GWT import const WorkWaypoint
+
 import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
 //not GWT import const BuildingSound
+
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { GeographicMapCellPositionAreaBase } from '../../../../../org/allbinary/game/layer/GeographicMapCellPositionAreaBase.js';
 //not GWT import const GeographicMapCellPositionAreaBase
+
 import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 //not GWT import const GameNotificationEvent
+
 import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 //not GWT import const GameNotificationEventHandler
+
 import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { Layer } from '../../../../../org/allbinary/layer/Layer.js';
 //not GWT import const Layer
+
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
+
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 
 
 
@@ -96,9 +124,12 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import - same folder const RTSFormInputimport { AssignWaypointsUtil } from './AssignWaypointsUtil.js';
-//not GWT import - same folder const AssignWaypointsUtilimport { PlayersSingletonFactory } from './PlayersSingletonFactory.js';
+//not GWT import - same folder const RTSFormInput
+import { AssignWaypointsUtil } from './AssignWaypointsUtil.js';
+//not GWT import - same folder const AssignWaypointsUtil
+import { PlayersSingletonFactory } from './PlayersSingletonFactory.js';
 //not GWT import - same folder const PlayersSingletonFactory
+
 export class UnitRTSFormInput extends RTSFormInput {
         
 

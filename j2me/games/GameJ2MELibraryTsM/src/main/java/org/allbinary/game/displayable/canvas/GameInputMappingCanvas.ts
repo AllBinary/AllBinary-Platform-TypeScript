@@ -24,46 +24,67 @@
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
 //not GWT import const GameKey
+
 import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
 //not GWT import const GameKeyFactory
+
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 //not GWT import const Input
+
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
 //not GWT import const InputFactory
+
 import { PlatformInputMappingFactory } from '../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
 //not GWT import const PlatformInputMappingFactory
+
 import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
 //not GWT import const InputMappingInterface
+
 import { PersistentInputMapping } from '../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 //not GWT import const PersistentInputMapping
+
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
 //not GWT import const ColorFillBasePaintable
+
 import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
 //not GWT import const ColorFillPaintableFactory
+
 import { HelpPaintable } from '../../../../../org/allbinary/game/paint/help/HelpPaintable.js';
 //not GWT import const HelpPaintable
+
 import { InputMappingHelpPaintable } from '../../../../../org/allbinary/game/paint/help/InputMappingHelpPaintable.js';
 //not GWT import const InputMappingHelpPaintable
+
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 //not GWT import const ProcessPaintable
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -83,8 +104,10 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import - same folder const GameCommandCanvasimport { GameInputMappingInstructionsCanvas } from './GameInputMappingInstructionsCanvas.js';
+//not GWT import - same folder const GameCommandCanvas
+import { GameInputMappingInstructionsCanvas } from './GameInputMappingInstructionsCanvas.js';
 //not GWT import - same folder const GameInputMappingInstructionsCanvas
+
 export class GameInputMappingCanvas extends GameCommandCanvas implements InputMappingInterface {
         
 

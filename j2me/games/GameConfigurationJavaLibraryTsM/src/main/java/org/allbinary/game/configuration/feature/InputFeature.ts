@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Feature } from './Feature.js';
 //not GWT import - same folder const Feature
+
 export class InputFeature extends Feature {
         
 

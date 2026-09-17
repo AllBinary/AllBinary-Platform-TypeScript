@@ -22,16 +22,22 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
 //not GWT import const TimeCreated
+
 import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
 //not GWT import const TimeLastModified
+
 import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
 //not GWT import const UserEmailConfiguration
+
 import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 //not GWT import const UserEmailConfigurationInterface
+
 
 
 
@@ -52,6 +58,7 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
 //not GWT import - same folder const UserConfigurationInterface
+
 export class UserConfiguration
             extends Object
          implements UserConfigurationInterface {

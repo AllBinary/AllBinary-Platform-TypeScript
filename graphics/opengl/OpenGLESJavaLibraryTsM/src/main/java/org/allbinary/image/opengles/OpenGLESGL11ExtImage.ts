@@ -22,26 +22,37 @@
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { GL11 } from '../../../../javax/microedition/khronos/opengles/GL11.js';
 //not GWT import const GL11
+
 import { GL11Ext } from '../../../../javax/microedition/khronos/opengles/GL11Ext.js';
 //not GWT import const GL11Ext
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { DisplayChangeEvent } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
 //not GWT import const DisplayChangeEvent
+
 import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
 //not GWT import const OpenGLLogUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 //not GWT import const PlatformBitmapBaseFactory
+
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
 //not GWT import const PlatformTextureBaseFactory
+
 
 
 
@@ -61,7 +72,8 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;//Many devices don't support this even though it is supposed to
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+//Many devices don't support this even though it is supposed to
 export class OpenGLESGL11ExtImage extends OpenGLESImage {
         
 

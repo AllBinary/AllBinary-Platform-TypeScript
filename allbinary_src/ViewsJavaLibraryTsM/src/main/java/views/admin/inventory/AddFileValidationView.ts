@@ -22,50 +22,73 @@
         
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { BasicItemValidation } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemValidation.js';
 //not GWT import const BasicItemValidation
+
 import { MoneyException } from '../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 //not GWT import const MoneyException
+
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 //not GWT import const InventoryEntityFactory
+
 import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
 //not GWT import const GLOBALS2
+
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
 //not GWT import const HttpFileUploadUtil
+
 import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js';
 //not GWT import const UploadMediaSingleton
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { FileData } from '../../../org/allbinary/logic/io/file/FileData.js';
 //not GWT import const FileData
+
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
 import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
 //not GWT import const PathUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
+
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -86,6 +109,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryItemView } from './InventoryItemView.js';
 //not GWT import - same folder const InventoryItemView
+
 export class AddFileValidationView extends InventoryItemView implements ValidationComponentInterface {
         
 

@@ -22,14 +22,19 @@
         
 import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
 //not GWT import const CompleteMotionGestureInputEventListenerInterface
+
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
 //not GWT import const NoCompleteMotionGestureInputEventListener
+
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
 //not GWT import const AllBinarySensor
+
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
 //not GWT import const Orientation
+
 import { PrimitiveFloatUtil } from '../../../../org/allbinary/logic/math/PrimitiveFloatUtil.js';
 //not GWT import const PrimitiveFloatUtil
+
 
 
 

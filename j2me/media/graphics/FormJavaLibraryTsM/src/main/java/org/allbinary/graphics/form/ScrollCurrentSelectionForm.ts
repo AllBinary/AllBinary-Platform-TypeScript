@@ -22,20 +22,28 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
 //not GWT import const MyFontProcessor
+
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
 //not GWT import const UpdateMyFontInterface
+
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
 //not GWT import const UpdateMyFontProcessor
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 
 
 
@@ -55,17 +63,28 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import - same folder const ScrollSelectionFormimport { ItemIndexDx } from './ItemIndexDx.js';
-//not GWT import - same folder const ItemIndexDximport { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactoryimport { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory//import { VerticalFormProcessor } from './VerticalFormProcessor.js';
-//not GWT import - same folder const VerticalFormProcessor//import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
-//not GWT import - same folder const VerticalItemIndexDx//import { HorizontalFormProcessor } from './HorizontalFormProcessor.js';
-//not GWT import - same folder const HorizontalFormProcessor//import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
-//not GWT import - same folder const HorizontalItemIndexDx//import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
-//not GWT import - same folder const TempHorizontalFormProcessor//import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
-//not GWT import - same folder const TempHorizontalItemIndexDximport { FormType } from './FormType.js';
+//not GWT import - same folder const ScrollSelectionForm
+import { ItemIndexDx } from './ItemIndexDx.js';
+//not GWT import - same folder const ItemIndexDx
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import - same folder const ItemPaintableFactory
+import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import - same folder const FormTypeFactory
+//import { VerticalFormProcessor } from './VerticalFormProcessor.js';
+//not GWT import - same folder const VerticalFormProcessor
+//import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
+//not GWT import - same folder const VerticalItemIndexDx
+//import { HorizontalFormProcessor } from './HorizontalFormProcessor.js';
+//not GWT import - same folder const HorizontalFormProcessor
+//import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
+//not GWT import - same folder const HorizontalItemIndexDx
+//import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
+//not GWT import - same folder const TempHorizontalFormProcessor
+//import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
+//not GWT import - same folder const TempHorizontalItemIndexDx
+import { FormType } from './FormType.js';
 //not GWT import - same folder const FormType
+
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 

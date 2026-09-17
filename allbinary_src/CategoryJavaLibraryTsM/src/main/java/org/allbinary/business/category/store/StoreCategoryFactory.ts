@@ -22,28 +22,40 @@
         
 import { Category } from '../../../../../org/allbinary/business/category/Category.js';
 //not GWT import const Category
+
 import { CategoryAbstractFactory } from '../../../../../org/allbinary/business/category/CategoryAbstractFactory.js';
 //not GWT import const CategoryAbstractFactory
+
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 //not GWT import const CategoryFactoryInterface
+
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 import { CategoryUtil } from '../../../../../org/allbinary/business/category/CategoryUtil.js';
 //not GWT import const CategoryUtil
+
 import { CategoryPropertiesFactoryInterface } from '../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
 //not GWT import const CategoryPropertiesFactoryInterface
+
 import { RootStoreCategoryPropertiesFactory } from '../../../../../org/allbinary/business/category/properties/root/store/RootStoreCategoryPropertiesFactory.js';
 //not GWT import const RootStoreCategoryPropertiesFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 

@@ -22,32 +22,46 @@
         
 import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
 //not GWT import const RecordEnumeration
+
 import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
 //not GWT import const RecordStore
+
 import { BasicPersitance } from '../../../../org/allbinary/game/configuration/persistance/BasicPersitance.js';
 //not GWT import const BasicPersitance
+
 import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
 //not GWT import const NullRecordComparator
+
 import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
 //not GWT import const NullRecordFilter
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -67,7 +81,8 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Input } from './Input.js';
-//not GWT import - same folder const Input//GameInputNoPersistanceLibrary
+//not GWT import - same folder const Input
+//GameInputNoPersistanceLibrary
 export class InputPersistance extends BasicPersitance {
         
 

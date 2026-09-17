@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 
 
 
@@ -51,8 +56,10 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterfaceimport { ContextConfigurationData } from './ContextConfigurationData.js';
+//not GWT import - same folder const ContextConfigurationInterface
+import { ContextConfigurationData } from './ContextConfigurationData.js';
 //not GWT import - same folder const ContextConfigurationData
+
 export class ContextConfigurationTableMapping
             extends Object
          implements TableMappingInterface {

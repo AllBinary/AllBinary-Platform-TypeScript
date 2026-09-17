@@ -22,32 +22,46 @@
         
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
+
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 //not GWT import const CategoryFactoryInterface
+
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 import { CategoryProperties } from '../../../../../org/allbinary/business/category/properties/CategoryProperties.js';
 //not GWT import const CategoryProperties
+
 import { CategoryPropertiesInterface } from '../../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
 //not GWT import const CategoryPropertiesInterface
+
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
+
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
+
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -67,8 +81,10 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryModifierTree } from './CategoryModifierTree.js';
-//not GWT import - same folder const CategoryModifierTreeimport { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
+//not GWT import - same folder const CategoryModifierTree
+import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
 //not GWT import - same folder const CategoryLoaderInterface
+
 export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {
         
 

@@ -24,8 +24,10 @@
         
 import { WeaponLayerCircularPool } from '../../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
 //not GWT import const WeaponLayerCircularPool
+
 import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
 //not GWT import const ViewPositionFactoryInterface
+
 
 
 
@@ -45,8 +47,10 @@ import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineCountedPickedUpLayerInterfaceFactory } from './MineCountedPickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const MineCountedPickedUpLayerInterfaceFactoryimport { MineLayerFactory } from './MineLayerFactory.js';
+//not GWT import - same folder const MineCountedPickedUpLayerInterfaceFactory
+import { MineLayerFactory } from './MineLayerFactory.js';
 //not GWT import - same folder const MineLayerFactory
+
 export class MineLayerCircularStaticPool
             extends Object
          {

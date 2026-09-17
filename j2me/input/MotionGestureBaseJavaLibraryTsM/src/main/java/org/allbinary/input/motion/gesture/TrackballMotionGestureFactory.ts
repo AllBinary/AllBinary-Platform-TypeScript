@@ -22,8 +22,10 @@
         
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
 //not GWT import const InputFactory
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 
@@ -44,6 +46,7 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureInput } from './MotionGestureInput.js';
 //not GWT import - same folder const MotionGestureInput
+
 export class TrackballMotionGestureFactory
             extends Object
          {

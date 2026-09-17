@@ -22,26 +22,37 @@
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DynamicObjectData } from '../../../../../../../../../org/allbinary/business/DynamicObjectData.js';
 //not GWT import const DynamicObjectData
+
 import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { InventoryDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
 //not GWT import const InventoryDbInitInfo
+
 import { BasicItemData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { CustomItemData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/custom/CustomItemData.js';
 //not GWT import const CustomItemData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -62,6 +73,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomItemsEntityInterface } from './CustomItemsEntityInterface.js';
 //not GWT import - same folder const CustomItemsEntityInterface
+
 export class CustomItemsEntity extends AbSqlBean implements CustomItemsEntityInterface {
         
 

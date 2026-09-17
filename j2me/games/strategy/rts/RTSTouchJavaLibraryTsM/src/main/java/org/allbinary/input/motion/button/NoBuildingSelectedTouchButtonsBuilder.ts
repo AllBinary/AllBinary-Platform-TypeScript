@@ -22,12 +22,16 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -47,9 +51,12 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import - same folder const BaseTouchInputimport { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
-//not GWT import - same folder const BasicTouchButtonsBuilderimport { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
+//not GWT import - same folder const BaseTouchInput
+import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
+//not GWT import - same folder const BasicTouchButtonsBuilder
+import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
 //not GWT import - same folder const BuildingScrollTouchButtonsBuilder
+
 export class NoBuildingSelectedTouchButtonsBuilder extends BaseTouchInput {
         
 

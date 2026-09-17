@@ -22,8 +22,10 @@
         
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 
 
 
@@ -44,6 +46,7 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsPaintable } from './TouchButtonsPaintable.js';
 //not GWT import - same folder const TouchButtonsPaintable
+
 export class TouchButtonsPaintableFactory
             extends Object
          {

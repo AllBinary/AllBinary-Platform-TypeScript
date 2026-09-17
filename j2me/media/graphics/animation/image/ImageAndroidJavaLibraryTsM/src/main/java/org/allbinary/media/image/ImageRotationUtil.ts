@@ -24,16 +24,22 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 //not GWT import const Anchor
+
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
 //not GWT import const Bitmap
+
 import { Canvas } from '../../../../android/graphics/Canvas.js';
 //not GWT import const Canvas
+
 import { Matrix } from '../../../../android/graphics/Matrix.js';
 //not GWT import const Matrix
+
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 //not GWT import const AndroidImageInterface
+
 
 
 
@@ -54,6 +60,7 @@ import { AndroidImageInterface } from '../../../../org/microemu/android/device/A
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCreationUtil } from './ImageCreationUtil.js';
 //not GWT import - same folder const ImageCreationUtil
+
 export class ImageRotationUtil
             extends Object
          {

@@ -20,20 +20,28 @@
 
 import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/ag/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
 //not GWT import const GameNotificationHudCompositeInterface
+
 import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
 //not GWT import const BuildMenuCompositeInterface
+
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 //not GWT import const RTSFormInput
+
 import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
 //not GWT import const Capital
+
 import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
 //not GWT import const DestroyedEventListenerInterface
+
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
 //not GWT import const PlayerGameInputCompositeInterface
+
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 //not GWT import const TickableInterface
+
 import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
 //not GWT import const Sound
+
 
 
 
@@ -53,8 +61,10 @@ import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterfaceimport { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
+//not GWT import - same folder const PathFindingLayerInterface
+import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
 //not GWT import - same folder const PlayerOwnedRTSLayers
+
 export interface RTSPlayerLayerInterface extends GameNotificationHudCompositeInterface, BuildMenuCompositeInterface, PlayerGameInputCompositeInterface, DestroyedEventListenerInterface, TickableInterface, PathFindingLayerInterface {
         
 

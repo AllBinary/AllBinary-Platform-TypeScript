@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionalInterface } from './DirectionalInterface.js';
 //not GWT import - same folder const DirectionalInterface
+
 export interface DirectionalCompositeInterface {
         
 

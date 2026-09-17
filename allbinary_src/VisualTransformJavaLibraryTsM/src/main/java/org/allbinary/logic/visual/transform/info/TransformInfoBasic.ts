@@ -22,22 +22,31 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { AbContext } from '../../../../../../org/allbinary/business/context/AbContext.js';
 //not GWT import const AbContext
+
 import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
+
 import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
 //not GWT import const TransformInfoObjectConfigInterface
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -57,7 +66,8 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
-//not GWT import - same folder const TransformInfoHttpInterface//Hack class should not exist
+//not GWT import - same folder const TransformInfoHttpInterface
+//Hack class should not exist
 export class TransformInfoBasic extends AbContext implements TransformInfoHttpInterface {
         
 

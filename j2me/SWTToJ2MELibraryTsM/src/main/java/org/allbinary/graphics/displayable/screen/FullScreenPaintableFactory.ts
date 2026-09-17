@@ -22,8 +22,10 @@
         
 import { FullScreenPaintable } from '../../../../../org/allbinary/game/paint/FullScreenPaintable.js';
 //not GWT import const FullScreenPaintable
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 
 
 

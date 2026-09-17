@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlValueInput } from './HtmlValueInput.js';
 //not GWT import - same folder const HtmlValueInput
+
 export class HtmlLengthInput extends HtmlValueInput {
         
 

@@ -42,6 +42,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResizableListenerInterface } from './ResizableListenerInterface.js';
 //not GWT import - same folder const ResizableListenerInterface
+
 export class ResizableListenerHandler
             extends Object
          {

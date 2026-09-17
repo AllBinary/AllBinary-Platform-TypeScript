@@ -24,8 +24,10 @@
         
 import { DomSearchHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -45,9 +47,12 @@ import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptOutputInterface } from './ProfileActionScriptOutputInterface.js';
-//not GWT import - same folder const ProfileActionScriptOutputInterfaceimport { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
-//not GWT import - same folder const ImageActionScriptOutputDataimport { ImageActionScriptOutput } from './ImageActionScriptOutput.js';
+//not GWT import - same folder const ProfileActionScriptOutputInterface
+import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
+//not GWT import - same folder const ImageActionScriptOutputData
+import { ImageActionScriptOutput } from './ImageActionScriptOutput.js';
 //not GWT import - same folder const ImageActionScriptOutput
+
 export class ProfileActionScriptOutputFactory
             extends Object
          {

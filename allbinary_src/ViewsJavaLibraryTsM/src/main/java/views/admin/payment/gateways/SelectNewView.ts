@@ -22,20 +22,28 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { BasicPaymentTypeUtil } from '../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
 //not GWT import const BasicPaymentTypeUtil
+
 import { PaymentGatewayEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 //not GWT import const PaymentGatewayEntityFactory
+
 import { PaymentGatewayEntityInterface } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityInterface.js';
 //not GWT import const PaymentGatewayEntityInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { PaymentGatewayViewAbstract } from '../../../../views/admin/payment/gateway/PaymentGatewayViewAbstract.js';
 //not GWT import const PaymentGatewayViewAbstract
+
 
 
 
@@ -56,6 +64,7 @@ import { PaymentGatewayViewAbstract } from '../../../../views/admin/payment/gate
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewaysView } from './PaymentGatewaysView.js';
 //not GWT import - same folder const PaymentGatewaysView
+
 export class SelectNewView extends PaymentGatewayViewAbstract {
         
 

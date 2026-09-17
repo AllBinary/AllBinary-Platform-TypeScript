@@ -22,34 +22,49 @@
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { InventoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
 //not GWT import const InventoryDbInitInfo
+
 import { BasicItem } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js';
 //not GWT import const BasicItem
+
 import { BasicItemData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { ItemInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 //not GWT import const ItemInterface
+
 import { MoneyException } from '../../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 //not GWT import const MoneyException
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 
 
 
@@ -70,6 +85,7 @@ import { StringValidationUtil } from '../../../../../../../../org/allbinary/logi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryEntityInterface } from './InventoryEntityInterface.js';
 //not GWT import - same folder const InventoryEntityInterface
+
 export class InventoryEntity extends AbSqlBean implements InventoryEntityInterface {
         
 

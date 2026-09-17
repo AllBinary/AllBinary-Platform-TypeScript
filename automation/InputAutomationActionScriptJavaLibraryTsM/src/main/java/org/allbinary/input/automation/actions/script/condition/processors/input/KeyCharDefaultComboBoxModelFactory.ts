@@ -26,10 +26,13 @@
         
 import { swing } from '../../../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { KeyStrokeMap } from '../../../../../../../../../abbot/tester/KeyStrokeMap.js';
 //not GWT import const KeyStrokeMap
+
 import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
 //not GWT import const KeySingletonFactory
+
 
 
 
@@ -49,8 +52,10 @@ import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModelimport { KeyStroke } from './KeyStroke.js';
+//not GWT import - same folder const DefaultComboBoxModel
+import { KeyStroke } from './KeyStroke.js';
 //not GWT import - same folder const KeyStroke
+
 export class KeyCharDefaultComboBoxModelFactory
             extends Object
          {

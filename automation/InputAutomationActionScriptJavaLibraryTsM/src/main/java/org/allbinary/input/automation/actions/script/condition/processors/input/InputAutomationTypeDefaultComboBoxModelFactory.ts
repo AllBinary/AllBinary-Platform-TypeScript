@@ -24,10 +24,13 @@
         
 import { Set } from '../../../../../../../../../java/util/Set.js';
 //not GWT import const Set
+
 import { swing } from '../../../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 //not GWT import const InputRobotFactory
+
 
 
 
@@ -48,6 +51,7 @@ import { InputRobotFactory } from '../../../../../../../../../org/allbinary/inpu
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
 //not GWT import - same folder const DefaultComboBoxModel
+
 export class InputAutomationTypeDefaultComboBoxModelFactory
             extends Object
          {

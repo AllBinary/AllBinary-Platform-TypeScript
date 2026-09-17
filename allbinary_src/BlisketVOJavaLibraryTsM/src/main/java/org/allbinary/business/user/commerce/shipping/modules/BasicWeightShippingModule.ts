@@ -22,12 +22,16 @@
         
 import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
 //not GWT import const BasketInterface
+
 import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 //not GWT import const OrderInterface
+
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 //not GWT import const Money
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +52,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingInterface } from './ShippingInterface.js';
 //not GWT import - same folder const ShippingInterface
+
 export class BasicWeightShippingModule
             extends Object
          implements ShippingInterface {

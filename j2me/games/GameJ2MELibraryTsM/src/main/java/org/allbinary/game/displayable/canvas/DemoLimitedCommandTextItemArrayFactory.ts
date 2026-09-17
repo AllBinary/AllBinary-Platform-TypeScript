@@ -22,8 +22,10 @@
         
 import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
 //not GWT import const CommandTextItemArrayFactory
+
 import { LimitCommandsVisitor } from '../../../../../org/allbinary/graphics/form/item/LimitCommandsVisitor.js';
 //not GWT import const LimitCommandsVisitor
+
 
 
 

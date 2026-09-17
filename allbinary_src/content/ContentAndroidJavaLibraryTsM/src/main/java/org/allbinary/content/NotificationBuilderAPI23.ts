@@ -24,16 +24,22 @@
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { Notification } from '../../../android/app/Notification.js';
 //not GWT import const Notification
+
 import { Builder } from '../../../android/app/Notification/Builder.js';
 //not GWT import const Builder
+
 import { PendingIntent } from '../../../android/app/PendingIntent.js';
 //not GWT import const PendingIntent
+
 import { Context } from '../../../android/content/Context.js';
 //not GWT import const Context
+
 import { Parcelable } from '../../../android/os/Parcelable.js';
 //not GWT import const Parcelable
+
 
 
 
@@ -54,6 +60,7 @@ import { Parcelable } from '../../../android/os/Parcelable.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
 //not GWT import - same folder const NotificationBuilder
+
 export class NotificationBuilderAPI23 extends NotificationBuilder {
         
 

@@ -24,34 +24,49 @@
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
+
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { CaptionIndexedAnimation } from '../../../../../org/allbinary/animation/caption/CaptionIndexedAnimation.js';
 //not GWT import const CaptionIndexedAnimation
+
 import { ImageAnimation } from '../../../../../org/allbinary/animation/image/ImageAnimation.js';
 //not GWT import const ImageAnimation
+
 import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
 //not GWT import const BasicColorUtil
+
 import { AnimationFactoryImageScaleUtil } from '../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
 //not GWT import const AnimationFactoryImageScaleUtil
+
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
 //not GWT import const AnimationFactorySpriteScaleUtil
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 //not GWT import const Sound
+
 
 
 
@@ -72,6 +87,7 @@ import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
 //not GWT import - same folder const SpriteIndexedAnimation
+
 export class ImageCaptionIndexedAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

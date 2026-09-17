@@ -24,26 +24,37 @@
         
 import { File } from '../../../../../java/io/File.js';
 //not GWT import const File
+
 import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
 //not GWT import const FileInputStream
+
 import { List } from '../../../../../java/util/List.js';
 //not GWT import const List
+
 import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
 //not GWT import const JAXBContext
+
 import { JAXBElement } from '../../../../../javax/xml/bind/JAXBElement.js';
 //not GWT import const JAXBElement
+
 import { Unmarshaller } from '../../../../../javax/xml/bind/Unmarshaller.js';
 //not GWT import const Unmarshaller
+
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 //not GWT import const StreamSource
+
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
 //not GWT import const InputAutomationModuleConfiguration
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -64,6 +75,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfiguration } from './InputAutomationConfiguration.js';
 //not GWT import - same folder const InputAutomationConfiguration
+
 export class InputAutomationConfigurationFactory
             extends Object
          {

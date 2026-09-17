@@ -22,10 +22,13 @@
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 //not GWT import const GL
+
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 
 
 

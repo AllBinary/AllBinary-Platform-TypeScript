@@ -22,12 +22,16 @@
         
 import { awt } from '../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 
 
 
@@ -47,12 +51,18 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtilimport { GraphicsEnvironment } from './GraphicsEnvironment.js';
-//not GWT import - same folder const GraphicsEnvironmentimport { GraphicsDevice } from './GraphicsDevice.js';
-//not GWT import - same folder const GraphicsDeviceimport { GraphicsConfiguration } from './GraphicsConfiguration.js';
-//not GWT import - same folder const GraphicsConfigurationimport { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2Dimport { ImageUnifierProperties } from './ImageUnifierProperties.js';
+//not GWT import - same folder const ImageUtil
+import { GraphicsEnvironment } from './GraphicsEnvironment.js';
+//not GWT import - same folder const GraphicsEnvironment
+import { GraphicsDevice } from './GraphicsDevice.js';
+//not GWT import - same folder const GraphicsDevice
+import { GraphicsConfiguration } from './GraphicsConfiguration.js';
+//not GWT import - same folder const GraphicsConfiguration
+import { Graphics2D } from './Graphics2D.js';
+//not GWT import - same folder const Graphics2D
+import { ImageUnifierProperties } from './ImageUnifierProperties.js';
 //not GWT import - same folder const ImageUnifierProperties
+
 export class ImageUnifierUtil
             extends Object
          {

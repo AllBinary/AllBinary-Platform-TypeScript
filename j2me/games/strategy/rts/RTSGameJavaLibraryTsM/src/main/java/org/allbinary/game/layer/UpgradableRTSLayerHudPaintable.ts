@@ -20,18 +20,25 @@
 
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
 //not GWT import const CharArrayFactory
+
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
 //not GWT import const MyFontProcessor
+
 import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
 //not GWT import const CommonButtons
+
 
 
 
@@ -51,10 +58,14 @@ import { CommonButtons } from '../../../../org/allbinary/input/motion/button/Com
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintableimport { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import - same folder const RTSLayerCompositePaintableimport { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
-//not GWT import - same folder const UpgradableWideRTSLayerPaintableimport { RTSLayer } from './RTSLayer.js';
+//not GWT import - same folder const SelectionHudPaintable
+import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
+//not GWT import - same folder const RTSLayerCompositePaintable
+import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
+//not GWT import - same folder const UpgradableWideRTSLayerPaintable
+import { RTSLayer } from './RTSLayer.js';
 //not GWT import - same folder const RTSLayer
+
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
         
 

@@ -22,10 +22,13 @@
         
 import { FrictionData } from '../../../../org/allbinary/game/physics/friction/FrictionData.js';
 //not GWT import const FrictionData
+
 import { DragVelocityBehavior } from '../../../../org/allbinary/game/physics/velocity/DragVelocityBehavior.js';
 //not GWT import const DragVelocityBehavior
+
 import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
 //not GWT import const VelocityProperties
+
 
 
 

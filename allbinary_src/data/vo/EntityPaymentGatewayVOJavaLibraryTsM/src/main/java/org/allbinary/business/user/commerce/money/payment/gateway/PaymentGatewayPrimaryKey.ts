@@ -22,10 +22,13 @@
         
 import { StoreFront } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFront.js';
 //not GWT import const StoreFront
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -45,8 +48,10 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Serializable } from './Serializable.js';
-//not GWT import - same folder const Serializableimport { PaymentGateway } from './PaymentGateway.js';
+//not GWT import - same folder const Serializable
+import { PaymentGateway } from './PaymentGateway.js';
 //not GWT import - same folder const PaymentGateway
+
 export class PaymentGatewayPrimaryKey
             extends Object
          implements java.io.Serializable {

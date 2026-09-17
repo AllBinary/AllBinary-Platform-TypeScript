@@ -22,12 +22,16 @@
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 
@@ -48,6 +52,7 @@ import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/All
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequenceAI } from './SequenceAI.js';
 //not GWT import - same folder const SequenceAI
+
 export class NumberLayersSequenceAI extends SequenceAI {
         
 

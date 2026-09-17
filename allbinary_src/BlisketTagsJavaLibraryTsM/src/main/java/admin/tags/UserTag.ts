@@ -22,14 +22,19 @@
         
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { UserHelperFactory } from '../../admin/taghelpers/UserHelperFactory.js';
 //not GWT import const UserHelperFactory
+
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { UserRoleData } from '../../org/allbinary/business/user/role/UserRoleData.js';
 //not GWT import const UserRoleData
+
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 
 
 
@@ -50,6 +55,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 //not GWT import - same folder const TableTag
+
 export class UserTag extends TableTag {
         
 

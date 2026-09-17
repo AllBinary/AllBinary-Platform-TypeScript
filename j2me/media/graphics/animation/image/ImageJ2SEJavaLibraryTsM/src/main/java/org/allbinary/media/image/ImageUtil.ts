@@ -24,32 +24,46 @@
         
 import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
 //not GWT import const Graphics2D
+
 import { GraphicsConfiguration } from '../../../../java/awt/GraphicsConfiguration.js';
 //not GWT import const GraphicsConfiguration
+
 import { GraphicsDevice } from '../../../../java/awt/GraphicsDevice.js';
 //not GWT import const GraphicsDevice
+
 import { GraphicsEnvironment } from '../../../../java/awt/GraphicsEnvironment.js';
 //not GWT import const GraphicsEnvironment
+
 import { Transparency } from '../../../../java/awt/Transparency.js';
 //not GWT import const Transparency
+
 import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
 //not GWT import const AffineTransform
+
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
 //not GWT import const J2SEImmutableImage
+
 import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
 //not GWT import const J2SEMutableImage
+
 
 
 

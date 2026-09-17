@@ -22,26 +22,37 @@
         
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 //not GWT import const PickedUpLayerInterfaceFactoryInterface
+
 import { AllBinaryGameLayerManager } from '../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
+
 import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
+
 import { DropLayerFactory } from '../../../../../../../../org/allbinary/game/layer/drop/DropLayerFactory.js';
 //not GWT import const DropLayerFactory
+
 import { PickupLayerCircularStaticPool } from '../../../../../../../../org/allbinary/game/layer/pickup/PickupLayerCircularStaticPool.js';
 //not GWT import const PickupLayerCircularStaticPool
+
 import { RaceTrackPickupLayer } from '../../../../../../../../org/allbinary/game/layer/pickup/RaceTrackPickupLayer.js';
 //not GWT import const RaceTrackPickupLayer
+
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
 import { GPoint } from '../../../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 
 
 
@@ -62,6 +73,7 @@ import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
 //not GWT import - same folder const RaceTrackDropCellPositionGenerator
+
 export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         
 

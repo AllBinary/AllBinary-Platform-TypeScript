@@ -24,14 +24,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
+
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { InventorySearch } from '../../../../views/generic/inventory/InventorySearch.js';
 //not GWT import const InventorySearch
+
 
 
 
@@ -52,6 +57,7 @@ import { InventorySearch } from '../../../../views/generic/inventory/InventorySe
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryViewSearchInterface } from './InventoryViewSearchInterface.js';
 //not GWT import - same folder const InventoryViewSearchInterface
+
 export class InventoryViewFactory
             extends Object
          {

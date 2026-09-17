@@ -22,10 +22,13 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 
 
 
@@ -45,8 +48,10 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
-//not GWT import - same folder const TagHelperFactoryInterfaceimport { HelperFactory } from './HelperFactory.js';
+//not GWT import - same folder const TagHelperFactoryInterface
+import { HelperFactory } from './HelperFactory.js';
 //not GWT import - same folder const HelperFactory
+
 export class XmlOptionItemsRequestHelperFactory
             extends Object
          implements TagHelperFactoryInterface {

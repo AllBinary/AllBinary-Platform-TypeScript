@@ -24,20 +24,28 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { BasketData } from '../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
 //not GWT import const BasketData
+
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -57,8 +65,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontInterface } from './StoreFrontInterface.js';
-//not GWT import - same folder const StoreFrontInterfaceimport { StoreFrontData } from './StoreFrontData.js';
+//not GWT import - same folder const StoreFrontInterface
+import { StoreFrontData } from './StoreFrontData.js';
 //not GWT import - same folder const StoreFrontData
+
 export class StoreFrontView
             extends Object
          implements DomNodeInterface {

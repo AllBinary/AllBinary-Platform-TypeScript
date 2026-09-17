@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTProcessor } from './SWTProcessor.js';
 //not GWT import - same folder const SWTProcessor
+
 export class SWTProcessorUtil
             extends Object
          {

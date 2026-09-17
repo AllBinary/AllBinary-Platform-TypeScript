@@ -26,26 +26,37 @@
         
 import { HashMap } from '../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
 //not GWT import const TagSupport
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 //not GWT import const WorkFlowData
+
 import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 //not GWT import const WorkFlowInterface
+
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
 //not GWT import const TransformFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

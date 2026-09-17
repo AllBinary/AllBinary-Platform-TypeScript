@@ -38,10 +38,12 @@ import { EventListener } from '../../../../../../java/util/EventListener.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailEvent } from './EmailEvent.js';
 //not GWT import - same folder const EmailEvent
+
 export interface UserEmailEventListenerInterface extends EventListener {
         
 

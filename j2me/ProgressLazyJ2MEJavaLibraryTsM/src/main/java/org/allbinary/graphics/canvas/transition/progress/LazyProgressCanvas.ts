@@ -22,14 +22,19 @@
         
 import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
 //not GWT import const Processor
+
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
 //not GWT import const ImageCacheFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -50,6 +55,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
 //not GWT import - same folder const ProgressCanvas
+
 export class LazyProgressCanvas extends ProgressCanvas {
         
 

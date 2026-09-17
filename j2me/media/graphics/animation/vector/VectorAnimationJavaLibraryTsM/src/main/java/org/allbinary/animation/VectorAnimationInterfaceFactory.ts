@@ -24,10 +24,13 @@
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 
 
 
@@ -47,10 +50,14 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterfaceimport { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-//not GWT import - same folder const AnimationBehaviorFactoryimport { VectorAnimation } from './VectorAnimation.js';
-//not GWT import - same folder const VectorAnimationimport { Animation } from './Animation.js';
+//not GWT import - same folder const AnimationInterfaceFactoryInterface
+import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
+//not GWT import - same folder const AnimationBehaviorFactory
+import { VectorAnimation } from './VectorAnimation.js';
+//not GWT import - same folder const VectorAnimation
+import { Animation } from './Animation.js';
 //not GWT import - same folder const Animation
+
 export class VectorAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

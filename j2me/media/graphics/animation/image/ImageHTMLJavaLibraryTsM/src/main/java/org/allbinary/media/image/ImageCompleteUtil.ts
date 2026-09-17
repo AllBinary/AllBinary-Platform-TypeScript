@@ -24,16 +24,22 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
 //not GWT import const GameFeatureImageCacheFactory
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 //not GWT import const PlaynImage
+
 
 
 
@@ -54,6 +60,7 @@ import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js'
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Hashtable } from './Hashtable.js';
 //not GWT import - same folder const Hashtable
+
 export class ImageCompleteUtil
             extends Object
          {

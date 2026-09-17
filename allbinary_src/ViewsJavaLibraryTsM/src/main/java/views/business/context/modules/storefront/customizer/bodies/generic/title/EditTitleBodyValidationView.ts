@@ -22,20 +22,28 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { TitleBodyValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/title/TitleBodyValidation.js';
 //not GWT import const TitleBodyValidation
+
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { CustomizerUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
 //not GWT import const CustomizerUtil
+
 
 
 
@@ -56,6 +64,7 @@ import { CustomizerUtil } from '../../../../../../../../../views/business/contex
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TitleBodyCustomizerView } from './TitleBodyCustomizerView.js';
 //not GWT import - same folder const TitleBodyCustomizerView
+
 export class EditTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         
 

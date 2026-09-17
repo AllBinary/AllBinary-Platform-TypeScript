@@ -22,12 +22,16 @@
         
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -48,6 +52,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationTransformTag } from './ValidationTransformTag.js';
 //not GWT import - same folder const ValidationTransformTag
+
 export class StoreValidationTransformTag extends ValidationTransformTag {
         
 

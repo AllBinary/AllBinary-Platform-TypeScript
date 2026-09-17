@@ -24,20 +24,28 @@
         
 import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
 //not GWT import const ChangedGameFeatureListener
+
 import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
 //not GWT import const GameInitializedEvent
+
 import { GameInitializedEventHandler } from '../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js';
 //not GWT import const GameInitializedEventHandler
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
+
 import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 //not GWT import const MainFeatureFactory
+
 import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 //not GWT import const ResourceLoadingLevelFactory
+
 import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 //not GWT import const MyCanvas
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -57,8 +65,10 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import - same folder const GameInitializationInterfaceimport { BasicBuildGameInitializerFactory } from './BasicBuildGameInitializerFactory.js';
+//not GWT import - same folder const GameInitializationInterface
+import { BasicBuildGameInitializerFactory } from './BasicBuildGameInitializerFactory.js';
 //not GWT import - same folder const BasicBuildGameInitializerFactory
+
 export class GameInitializationUtil
             extends Object
          {

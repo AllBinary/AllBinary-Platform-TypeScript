@@ -22,8 +22,10 @@
         
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 
@@ -43,8 +45,10 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterfaceProcessor } from './SpecialGameInputInterfaceProcessor.js';
-//not GWT import - same folder const SpecialGameInputInterfaceProcessorimport { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
+//not GWT import - same folder const SpecialGameInputInterfaceProcessor
+import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 //not GWT import - same folder const SpecialGameInputInterface
+
 export class SpecialFireGameInputInterfaceProcessor extends SpecialGameInputInterfaceProcessor {
         
 

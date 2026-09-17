@@ -22,28 +22,40 @@
         
 import { HashMap } from '../../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { DomNodeInterface } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { Validation } from '../../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { StylesData } from '../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
 //not GWT import const StylesData
+
 import { BodyData } from '../../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
 //not GWT import const BodyData
+
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 

@@ -26,36 +26,52 @@
         
 import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
 //not GWT import const KeyEvent
+
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
 //not GWT import const KeySingletonFactory
+
 import { KeyUtil } from '../../../../../../../../../org/allbinary/input/KeyUtil.js';
 //not GWT import const KeyUtil
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -75,11 +91,16 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-//not GWT import - same folder const BasicProfileActionScriptInputimport { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
-//not GWT import - same folder const KeyboardActionScriptInputInterfaceimport { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
-//not GWT import - same folder const KeyboardActionScriptInputJPanelimport { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-//not GWT import - same folder const KeyboardActionScriptInputDataimport { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
+//not GWT import - same folder const BasicProfileActionScriptInput
+import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
+//not GWT import - same folder const KeyboardActionScriptInputInterface
+import { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
+//not GWT import - same folder const KeyboardActionScriptInputJPanel
+import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
+//not GWT import - same folder const KeyboardActionScriptInputData
+import { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
 //not GWT import - same folder const KeyboardInputAutomationProcessor
+
 export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {
         
 

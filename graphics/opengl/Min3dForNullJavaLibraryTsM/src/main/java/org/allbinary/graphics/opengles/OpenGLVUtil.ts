@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLVUtilBase } from './OpenGLVUtilBase.js';
 //not GWT import - same folder const OpenGLVUtilBase
+
 export class OpenGLVUtil extends OpenGLVUtilBase {
         
 

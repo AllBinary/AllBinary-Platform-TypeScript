@@ -24,22 +24,31 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
+
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
+
 import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 //not GWT import const GeographicMapCellHistory
+
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
 //not GWT import const GeographicMapDirectionUtil
+
 import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
 //not GWT import const GeographicMapCellPathHistoryInfo
+
 
 
 
@@ -60,6 +69,7 @@ import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/m
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicDirectionAIHelper } from './BasicDirectionAIHelper.js';
 //not GWT import - same folder const BasicDirectionAIHelper
+
 export class BasicAIProcessor
             extends Object
          {

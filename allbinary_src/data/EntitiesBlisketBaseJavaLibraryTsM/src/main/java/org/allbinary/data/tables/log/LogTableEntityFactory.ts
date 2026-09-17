@@ -24,8 +24,10 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -46,6 +48,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogTableEntity } from './LogTableEntity.js';
 //not GWT import - same folder const LogTableEntity
+
 export class LogTableEntityFactory
             extends Object
          {

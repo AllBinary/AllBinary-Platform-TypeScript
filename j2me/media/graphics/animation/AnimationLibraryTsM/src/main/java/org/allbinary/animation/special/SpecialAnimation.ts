@@ -20,10 +20,13 @@
 
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { IndexedAnimationBehavior } from '../../../../org/allbinary/animation/IndexedAnimationBehavior.js';
 //not GWT import const IndexedAnimationBehavior
+
 
 
 
@@ -44,6 +47,7 @@ import { IndexedAnimationBehavior } from '../../../../org/allbinary/animation/In
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialAnimationInterface } from './SpecialAnimationInterface.js';
 //not GWT import - same folder const SpecialAnimationInterface
+
 export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         
 

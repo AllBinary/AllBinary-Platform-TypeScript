@@ -20,8 +20,10 @@
 
 import { Control } from '../../../../javax/microedition/media/Control.js';
 //not GWT import const Control
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -41,8 +43,10 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import - same folder const BasicPlayerimport { NullControl } from './NullControl.js';
+//not GWT import - same folder const BasicPlayer
+import { NullControl } from './NullControl.js';
 //not GWT import - same folder const NullControl
+
 export class NoPlayer extends BasicPlayer {
         
 

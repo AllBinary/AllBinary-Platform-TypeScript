@@ -22,18 +22,25 @@
         
 import { AdvancedRTSGameLayer } from '../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 //not GWT import const AdvancedRTSGameLayer
+
 import { WaypointLayer } from '../../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
 //not GWT import const WaypointLayer
+
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 //not GWT import const BasicGeographicMapCellPositionFactory
+
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 //not GWT import const GeographicMapCellTypeFactory
+
 import { DropCellPositionHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 //not GWT import const DropCellPositionHistory
+
 
 
 
@@ -53,8 +60,10 @@ import { DropCellPositionHistory } from '../../../../../../../org/allbinary/medi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-//not GWT import - same folder const CustomMapGeneratorBaseimport { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
+//not GWT import - same folder const CustomMapGeneratorBase
+import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
 //not GWT import - same folder const RaceTrackGeographicMap
+
 export class CustomMapGenerator extends CustomMapGeneratorBase {
         
 

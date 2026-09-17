@@ -40,11 +40,14 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotInterfaceWrapper } from './InputAutomationRobotInterfaceWrapper.js';
-//not GWT import - same folder const InputAutomationRobotInterfaceWrapperimport { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
+//not GWT import - same folder const InputAutomationRobotInterfaceWrapper
+import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
 //not GWT import - same folder const InputAutomationRobotChangeEvent
+
 export class InputAutomationRobotUtil
             extends Object
          {

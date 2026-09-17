@@ -22,20 +22,28 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Health } from '../../../../../org/allbinary/game/health/Health.js';
 //not GWT import const Health
+
 import { HealthBarAnimation } from '../../../../../org/allbinary/game/health/HealthBarAnimation.js';
 //not GWT import const HealthBarAnimation
+
 import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
 //not GWT import const HealthBarTwodAnimation
+
 import { HealthInterface } from '../../../../../org/allbinary/game/health/HealthInterface.js';
 //not GWT import const HealthInterface
+
 import { HealthListenerInterface } from '../../../../../org/allbinary/game/health/HealthListenerInterface.js';
 //not GWT import const HealthListenerInterface
+
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 
 
 
@@ -56,6 +64,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Life } from './Life.js';
 //not GWT import - same folder const Life
+
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {
         
 

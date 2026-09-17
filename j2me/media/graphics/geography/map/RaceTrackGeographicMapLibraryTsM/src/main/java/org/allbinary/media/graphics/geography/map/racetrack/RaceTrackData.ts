@@ -24,12 +24,16 @@
         
 import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
+
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 

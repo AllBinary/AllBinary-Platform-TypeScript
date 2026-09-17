@@ -22,12 +22,16 @@
         
 import { DomDocumentHelper } from '../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { HttpStoreComponentView } from '../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 //not GWT import const HttpStoreComponentView
+
 
 
 
@@ -48,6 +52,7 @@ import { HttpStoreComponentView } from '../../views/business/context/modules/sto
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundTransform } from './CompoundTransform.js';
 //not GWT import - same folder const CompoundTransform
+
 export class CompoundComponentView extends HttpStoreComponentView {
         
 

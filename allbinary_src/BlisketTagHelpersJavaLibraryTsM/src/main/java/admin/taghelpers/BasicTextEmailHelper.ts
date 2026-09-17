@@ -22,24 +22,34 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
+
 import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
 //not GWT import const UserEmailEventHandler
+
 import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
 //not GWT import const AdminUserEmailEventHandlerSingletons
+
 import { AdminEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
 //not GWT import const AdminEmailInfo
+
 import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
 //not GWT import const BasicEmailInfo
+
 import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 //not GWT import const EmailInfo
+
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 //not GWT import const ServiceClientInformationInterfaceFactory
+
 
 
 
@@ -60,6 +70,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
 //not GWT import - same folder const TagHelper
+
 export class BasicTextEmailHelper extends TagHelper {
         
 

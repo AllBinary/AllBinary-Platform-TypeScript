@@ -24,24 +24,34 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { GenericProfileActions } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
 //not GWT import const GenericProfileActions
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
+
 
 
 
@@ -61,9 +71,12 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileDataWorkerData } from './GenericProfileDataWorkerData.js';
-//not GWT import - same folder const GenericProfileDataWorkerDataimport { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
-//not GWT import - same folder const GenericProfileDataWorkerTypeimport { GenericProfileData } from './GenericProfileData.js';
+//not GWT import - same folder const GenericProfileDataWorkerData
+import { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
+//not GWT import - same folder const GenericProfileDataWorkerType
+import { GenericProfileData } from './GenericProfileData.js';
 //not GWT import - same folder const GenericProfileData
+
 export class GenericProfile
             extends Object
          {

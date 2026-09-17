@@ -24,12 +24,16 @@
         
 import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
 //not GWT import const CapturedImageInputOutput
+
 import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
 //not GWT import const ComparisonImageInputOutput
+
 import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
 //not GWT import const MotionRectanglesImageInputOutput
+
 import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 //not GWT import const ImageIOInterface
+
 
 
 
@@ -50,6 +54,7 @@ import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/Im
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputImageType } from './InputImageType.js';
 //not GWT import - same folder const InputImageType
+
 export class InputImageIOInterfaceFactory
             extends Object
          {

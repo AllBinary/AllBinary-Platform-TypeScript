@@ -22,56 +22,82 @@
         
 import { HashMap } from '../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Set } from '../../../java/util/Set.js';
 //not GWT import const Set
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { BasicItem } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js';
 //not GWT import const BasicItem
+
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
+
 import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
 //not GWT import const BasicItemView
+
 import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 //not GWT import const ItemInterface
+
 import { DownloadableItem } from '../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
 //not GWT import const DownloadableItem
+
 import { DownloadableItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemView.js';
 //not GWT import const DownloadableItemView
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
 //not GWT import const HttpFileUploadUtil
+
 import { HttpRequestUtil } from '../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';
 //not GWT import const HttpRequestUtil
+
 import { MultipartRequestParams } from '../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
 //not GWT import const MultipartRequestParams
+
 import { RequestMapInterface } from '../../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
 //not GWT import const RequestMapInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
 import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
 //not GWT import const PathUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
 //not GWT import const MediaData
+
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
+
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 //not GWT import const HttpStoreComponentView
+
 
 
 
@@ -92,6 +118,7 @@ import { HttpStoreComponentView } from '../../../views/business/context/modules/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryUploadMediaUtil } from './InventoryUploadMediaUtil.js';
 //not GWT import - same folder const InventoryUploadMediaUtil
+
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         
 

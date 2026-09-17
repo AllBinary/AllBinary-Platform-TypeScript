@@ -23,11 +23,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from './GL.js';
-//not GWT import - same folder const GLimport { FloatBuffer } from './FloatBuffer.js';
-//not GWT import - same folder const FloatBufferimport { IntBuffer } from './IntBuffer.js';
-//not GWT import - same folder const IntBufferimport { ShortBuffer } from './ShortBuffer.js';
-//not GWT import - same folder const ShortBufferimport { Buffer } from './Buffer.js';
+//not GWT import - same folder const GL
+import { FloatBuffer } from './FloatBuffer.js';
+//not GWT import - same folder const FloatBuffer
+import { IntBuffer } from './IntBuffer.js';
+//not GWT import - same folder const IntBuffer
+import { ShortBuffer } from './ShortBuffer.js';
+//not GWT import - same folder const ShortBuffer
+import { Buffer } from './Buffer.js';
 //not GWT import - same folder const Buffer
+
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL11ExtI {
         

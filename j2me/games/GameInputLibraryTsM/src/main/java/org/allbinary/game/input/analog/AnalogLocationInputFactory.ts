@@ -8,8 +8,10 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -30,6 +32,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogLocationInput } from './AnalogLocationInput.js';
 //not GWT import - same folder const AnalogLocationInput
+
 export class AnalogLocationInputFactory
             extends Object
          {

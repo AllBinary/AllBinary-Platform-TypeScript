@@ -24,52 +24,76 @@
         
 import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
 //not GWT import const Choice
+
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 //not GWT import const Command
+
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
+
 import { Item } from '../../../../javax/microedition/lcdui/Item.js';
 //not GWT import const Item
+
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
 //not GWT import const TextField
+
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
+
 import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
 //not GWT import const GameFeatureChoiceGroups
+
 import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
 //not GWT import const GameFeatureFormUtil
+
 import { GameFeatureItemCommandListener } from '../../../../org/allbinary/game/configuration/feature/GameFeatureItemCommandListener.js';
 //not GWT import const GameFeatureItemCommandListener
+
 import { GameFeatureItemStateListener } from '../../../../org/allbinary/game/configuration/feature/GameFeatureItemStateListener.js';
 //not GWT import const GameFeatureItemStateListener
+
 import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 //not GWT import const SensorFeatureFactory
+
 import { GameConfigurationPersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js';
 //not GWT import const GameConfigurationPersistanceSingleton
+
 import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
 //not GWT import const KeyValuePersistance
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
 //not GWT import const MyCommandsFactory
+
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 //not GWT import const CommandForm
+
 import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
 //not GWT import const OrientationData
+
 import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
 //not GWT import const MEUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -89,12 +113,18 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationTextInput } from './GameConfigurationTextInput.js';
-//not GWT import - same folder const GameConfigurationTextInputimport { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import - same folder const GameConfigurationSingletonimport { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfigurationimport { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import - same folder const GameConfigurationGaugeimport { GameConfigurationUtil } from './GameConfigurationUtil.js';
-//not GWT import - same folder const GameConfigurationUtilimport { GameConfigurationCentral } from './GameConfigurationCentral.js';
+//not GWT import - same folder const GameConfigurationTextInput
+import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
+//not GWT import - same folder const GameConfigurationSingleton
+import { GameConfiguration } from './GameConfiguration.js';
+//not GWT import - same folder const GameConfiguration
+import { GameConfigurationGauge } from './GameConfigurationGauge.js';
+//not GWT import - same folder const GameConfigurationGauge
+import { GameConfigurationUtil } from './GameConfigurationUtil.js';
+//not GWT import - same folder const GameConfigurationUtil
+import { GameConfigurationCentral } from './GameConfigurationCentral.js';
 //not GWT import - same folder const GameConfigurationCentral
+
 export class GameOptionsForm extends CommandForm {
         
 

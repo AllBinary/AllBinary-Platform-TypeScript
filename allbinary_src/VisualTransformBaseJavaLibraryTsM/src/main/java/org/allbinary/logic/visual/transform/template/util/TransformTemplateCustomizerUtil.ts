@@ -22,26 +22,37 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js';
 //not GWT import const GLOBALS2
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
+
 import { CustomizerTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
 //not GWT import const CustomizerTransformInfoData
+
 import { BodyData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
 //not GWT import const BodyData
+
 import { TitleData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
 //not GWT import const TitleData
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

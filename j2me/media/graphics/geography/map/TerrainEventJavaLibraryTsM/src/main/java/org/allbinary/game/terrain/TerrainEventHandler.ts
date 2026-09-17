@@ -22,20 +22,28 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
+
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -55,9 +63,12 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventListener } from './TerrainEventListener.js';
-//not GWT import - same folder const TerrainEventListenerimport { TerrainEvent } from './TerrainEvent.js';
-//not GWT import - same folder const TerrainEventimport { TerrainEventListenerInterface } from './TerrainEventListenerInterface.js';
+//not GWT import - same folder const TerrainEventListener
+import { TerrainEvent } from './TerrainEvent.js';
+//not GWT import - same folder const TerrainEvent
+import { TerrainEventListenerInterface } from './TerrainEventListenerInterface.js';
 //not GWT import - same folder const TerrainEventListenerInterface
+
 export class TerrainEventHandler extends BasicEventHandler {
         
 

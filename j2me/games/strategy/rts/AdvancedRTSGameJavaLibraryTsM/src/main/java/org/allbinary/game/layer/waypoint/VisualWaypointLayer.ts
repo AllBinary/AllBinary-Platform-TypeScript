@@ -21,18 +21,25 @@
         
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
 //not GWT import const SelectionHudPaintable
+
 import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 //not GWT import const AnimationInterfaceFactoryInterface
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
+
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 //not GWT import const PathFindingLayerInterface
+
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 //not GWT import const RemoteInfo
+
 
 
 
@@ -52,9 +59,12 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLayer } from './WaypointLayer.js';
-//not GWT import - same folder const WaypointLayerimport { WaypointInfoHudPaintableSingleton } from './WaypointInfoHudPaintableSingleton.js';
-//not GWT import - same folder const WaypointInfoHudPaintableSingletonimport { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
+//not GWT import - same folder const WaypointLayer
+import { WaypointInfoHudPaintableSingleton } from './WaypointInfoHudPaintableSingleton.js';
+//not GWT import - same folder const WaypointInfoHudPaintableSingleton
+import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
 //not GWT import - same folder const WaypointInfoHudPaintable
+
 export class VisualWaypointLayer extends WaypointLayer {
         
 

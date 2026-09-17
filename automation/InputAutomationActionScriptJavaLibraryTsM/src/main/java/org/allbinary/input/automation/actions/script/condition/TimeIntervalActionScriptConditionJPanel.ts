@@ -22,8 +22,10 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -43,17 +45,28 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
-//not GWT import - same folder const TimeIntervalActionScriptConditionInterfaceimport { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextFieldimport { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialogimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const JPanel
+import { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
+//not GWT import - same folder const TimeIntervalActionScriptConditionInterface
+import { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextField
+import { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialog
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
 //not GWT import - same folder const Short
+
 export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel {
         
 

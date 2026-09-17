@@ -24,38 +24,55 @@
         
 import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Direction } from '../../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
+
 import { DirectionCompositeInterface } from '../../../../../../org/allbinary/direction/DirectionCompositeInterface.js';
 //not GWT import const DirectionCompositeInterface
+
 import { DirectionFactory } from '../../../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { TrackingEvent } from '../../../../../../org/allbinary/game/tracking/TrackingEvent.js';
 //not GWT import const TrackingEvent
+
 import { TrackingEventHandler } from '../../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 //not GWT import const TrackingEventHandler
+
 import { TrackingEventListenerInterface } from '../../../../../../org/allbinary/game/tracking/TrackingEventListenerInterface.js';
 //not GWT import const TrackingEventListenerInterface
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 import { LayerInterface } from '../../../../../../org/allbinary/layer/LayerInterface.js';
 //not GWT import const LayerInterface
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -76,6 +93,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
 //not GWT import - same folder const BasePatrolAI
+
 export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerInterface {
         
 

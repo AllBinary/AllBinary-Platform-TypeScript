@@ -19,14 +19,19 @@
 
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellType } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
+
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 
 
 
@@ -47,6 +52,7 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
 //not GWT import - same folder const AllBinaryGameLayerManager
+
 export class FakeLayerManager extends AllBinaryGameLayerManager implements GeographicMapCompositeInterface {
         
 

@@ -22,16 +22,22 @@
         
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 //not GWT import const CollidableInterfaceCompositeInterface
+
 import { CollisionType } from '../../../../../org/allbinary/game/collision/CollisionType.js';
 //not GWT import const CollisionType
+
 import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
 //not GWT import const CollisionTypeFactory
+
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
 //not GWT import const PickedUpLayerInterface
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 
 
 
@@ -51,8 +57,10 @@ const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLog
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableDestroyableDamageableBehavior } from './CollidableDestroyableDamageableBehavior.js';
-//not GWT import - same folder const CollidableDestroyableDamageableBehaviorimport { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
+//not GWT import - same folder const CollidableDestroyableDamageableBehavior
+import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
 //not GWT import - same folder const CollidableDestroyableDamageableLayer
+
 export class CollidableCharacterBehavior extends CollidableDestroyableDamageableBehavior {
         
 

@@ -20,8 +20,10 @@
 
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
 //not GWT import const HighScore
+
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 
 
 
@@ -42,6 +44,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScores } from './RemoteHighScores.js';
 //not GWT import - same folder const RemoteHighScores
+
 export interface RemoteHighScoresSubmissionProcessorInterface {
         
 

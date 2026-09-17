@@ -20,14 +20,19 @@
 
 import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 //not GWT import const GamePersistanceStrings
+
 import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
 //not GWT import const InputToGameKeyMapping
+
 import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 //not GWT import const PersistentInputMapping
+
 import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
 //not GWT import const BasicTouchInputFactory
+
 import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 //not GWT import const TouchMotionGestureFactory
+
 
 
 
@@ -47,8 +52,10 @@ import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motio
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCKeyFactory } from './PCKeyFactory.js';
-//not GWT import - same folder const PCKeyFactoryimport { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import - same folder const PCKeyFactory
+import { GameKeyFactory } from './GameKeyFactory.js';
 //not GWT import - same folder const GameKeyFactory
+
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {
         
 

@@ -24,30 +24,43 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 //not GWT import const ABCustomItem
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
 //not GWT import const RectangleCollisionUtil
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 
 
 
@@ -67,19 +80,32 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
-//not GWT import - same folder const PaintableFormimport { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactoryimport { ItemIndexPaintable } from './ItemIndexPaintable.js';
-//not GWT import - same folder const ItemIndexPaintableimport { ItemIndexDx } from './ItemIndexDx.js';
-//not GWT import - same folder const ItemIndexDximport { ItemPaintable } from './ItemPaintable.js';
-//not GWT import - same folder const ItemPaintableimport { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory//import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
-//not GWT import - same folder const ScrollSelectionFormTempHorizontalPaintable//import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
-//not GWT import - same folder const ScrollSelectionFormTempHorizontalDx//import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
-//not GWT import - same folder const ScrollSelectionFormVerticalPaintable//import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
-//not GWT import - same folder const ScrollSelectionFormVericalDx//import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
-//not GWT import - same folder const ScrollSelectionFormHorizontalPaintable//import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
-//not GWT import - same folder const ScrollSelectionFormHorizontalDximport { FormType } from './FormType.js';
+//not GWT import - same folder const PaintableForm
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import - same folder const ItemPaintableFactory
+import { ItemIndexPaintable } from './ItemIndexPaintable.js';
+//not GWT import - same folder const ItemIndexPaintable
+import { ItemIndexDx } from './ItemIndexDx.js';
+//not GWT import - same folder const ItemIndexDx
+import { ItemPaintable } from './ItemPaintable.js';
+//not GWT import - same folder const ItemPaintable
+import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import - same folder const FormTypeFactory
+//import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
+//not GWT import - same folder const ScrollSelectionFormTempHorizontalPaintable
+//import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
+//not GWT import - same folder const ScrollSelectionFormTempHorizontalDx
+//import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
+//not GWT import - same folder const ScrollSelectionFormVerticalPaintable
+//import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
+//not GWT import - same folder const ScrollSelectionFormVericalDx
+//import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
+//not GWT import - same folder const ScrollSelectionFormHorizontalPaintable
+//import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
+//not GWT import - same folder const ScrollSelectionFormHorizontalDx
+import { FormType } from './FormType.js';
 //not GWT import - same folder const FormType
+
 export class ScrollSelectionForm extends PaintableForm {
         
 

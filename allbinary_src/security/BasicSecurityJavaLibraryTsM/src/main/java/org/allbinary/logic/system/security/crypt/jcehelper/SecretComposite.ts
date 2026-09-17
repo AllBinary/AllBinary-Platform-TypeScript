@@ -22,10 +22,13 @@
         
 import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
 //not GWT import const Cipher
+
 import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
 //not GWT import const SecretKey
+
 import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
 //not GWT import const ByteUtil
+
 
 
 
@@ -46,6 +49,7 @@ import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
 //not GWT import - same folder const BaseSecretComposite
+
 export class SecretComposite extends BaseSecretComposite {
         
 

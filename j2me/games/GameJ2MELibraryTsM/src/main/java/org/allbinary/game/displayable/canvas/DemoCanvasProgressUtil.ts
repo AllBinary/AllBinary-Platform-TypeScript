@@ -22,12 +22,16 @@
         
 import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas
+
 import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
+
 import { PaintableComposite } from '../../../../../org/allbinary/graphics/paint/PaintableComposite.js';
 //not GWT import const PaintableComposite
+
 import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface
+
 
 
 
@@ -48,6 +52,7 @@ import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoCanvas } from './DemoCanvas.js';
 //not GWT import - same folder const DemoCanvas
+
 export class DemoCanvasProgressUtil
             extends Object
          {

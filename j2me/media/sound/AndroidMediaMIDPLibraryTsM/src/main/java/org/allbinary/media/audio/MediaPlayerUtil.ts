@@ -26,8 +26,10 @@
         
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
 //not GWT import const MediaPlayer
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 

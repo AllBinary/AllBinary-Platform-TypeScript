@@ -22,12 +22,16 @@
         
 import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
 //not GWT import const EGLConfig
+
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { RendererStrings } from '../../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js';
 //not GWT import const RendererStrings
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 

@@ -24,24 +24,34 @@
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
+
 import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
 //not GWT import const CacheInterfaceFactory
+
 import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
 //not GWT import const CachePolicyFactory
+
 import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
 //not GWT import const CacheTypeFactory
+
 import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
 //not GWT import const ColorDelta
+
 import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
 //not GWT import const ColorDeltaFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -62,6 +72,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PixelDelta } from './PixelDelta.js';
 //not GWT import - same folder const PixelDelta
+
 export class PixelDeltaFactory
             extends Object
          {

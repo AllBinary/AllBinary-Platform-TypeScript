@@ -22,10 +22,13 @@
         
 import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 //not GWT import const ValidationInterface
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -45,8 +48,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryView } from './StoreThemeCategoryView.js';
-//not GWT import - same folder const StoreThemeCategoryViewimport { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
+//not GWT import - same folder const StoreThemeCategoryView
+import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
 //not GWT import - same folder const StoreThemeCategoryInterface
+
 export class StoreThemeCategoryValidationView extends StoreThemeCategoryView implements ValidationInterface {
         
 

@@ -22,8 +22,10 @@
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 //not GWT import const GameKeyEvent
+
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 
 
 
@@ -43,8 +45,10 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectedRTSLayersPlayerGameInputProcessor } from './SelectedRTSLayersPlayerGameInputProcessor.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerGameInputProcessorimport { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import - same folder const SelectedRTSLayersPlayerGameInputProcessor
+import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
 //not GWT import - same folder const SelectedRTSLayersPlayerGameInput
+
 export class SelectedRTSLayersPlayerUpgradeGameInputProcessor extends SelectedRTSLayersPlayerGameInputProcessor {
         
 

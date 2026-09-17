@@ -24,8 +24,10 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 //not GWT import const CacheableInterface
+
 
 
 
@@ -46,6 +48,7 @@ import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/c
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
 //not GWT import - same folder const MotionRectangles
+
 export class MotionRectanglesResultsFrameCacheable
             extends Object
          implements CacheableInterface {

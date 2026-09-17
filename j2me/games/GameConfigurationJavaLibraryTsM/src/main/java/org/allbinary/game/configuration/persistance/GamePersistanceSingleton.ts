@@ -37,8 +37,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyValuePersistance } from './KeyValuePersistance.js';
-//not GWT import - same folder const KeyValuePersistanceimport { GamePersistanceStrings } from './GamePersistanceStrings.js';
+//not GWT import - same folder const KeyValuePersistance
+import { GamePersistanceStrings } from './GamePersistanceStrings.js';
 //not GWT import - same folder const GamePersistanceStrings
+
 export class GamePersistanceSingleton extends KeyValuePersistance {
         
 

@@ -22,22 +22,31 @@
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 //not GWT import const AnimationBehaviorFactory
+
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import const ProceduralAnimationInterfaceFactoryInterface
+
 import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 //not GWT import const BaseImageAnimationFactory
+
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
 //not GWT import const AnimationFactorySpriteScaleUtil
+
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 
 
 
@@ -57,8 +66,10 @@ import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/Primit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
-//not GWT import - same folder const AllBinarySpriteRotationAnimationimport { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';
+//not GWT import - same folder const AllBinarySpriteRotationAnimation
+import { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';
 //not GWT import - same folder const AllBinaryAdjustedSpriteRotationAnimation
+
 export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 

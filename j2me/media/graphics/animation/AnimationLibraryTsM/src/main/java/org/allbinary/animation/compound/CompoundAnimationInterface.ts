@@ -20,8 +20,10 @@
 
 import { AnimationInterface } from '../../../../org/allbinary/animation/AnimationInterface.js';
 //not GWT import const AnimationInterface
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 
 
 

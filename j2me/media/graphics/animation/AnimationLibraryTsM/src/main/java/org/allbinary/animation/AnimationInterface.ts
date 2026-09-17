@@ -22,8 +22,10 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { LocationPaintableInterface } from '../../../org/allbinary/graphics/paint/LocationPaintableInterface.js';
 //not GWT import const LocationPaintableInterface
+
 
 
 

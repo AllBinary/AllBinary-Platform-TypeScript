@@ -36,8 +36,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompositeSound } from './CompositeSound.js';
-//not GWT import - same folder const CompositeSoundimport { Sound } from './Sound.js';
+//not GWT import - same folder const CompositeSound
+import { Sound } from './Sound.js';
 //not GWT import - same folder const Sound
+
 export class AttackSound extends CompositeSound {
         
 

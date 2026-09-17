@@ -24,10 +24,13 @@
         
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
 //not GWT import const BaseResourceAnimationInterfaceFactoryInterfaceFactory
+
 import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 

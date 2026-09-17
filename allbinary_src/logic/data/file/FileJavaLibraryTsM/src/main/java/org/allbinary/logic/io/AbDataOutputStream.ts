@@ -20,8 +20,10 @@
 
 import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
 //not GWT import const DataOutputStream
+
 import { OutputStream } from '../../../../java/io/OutputStream.js';
 //not GWT import const OutputStream
+
 
 
 

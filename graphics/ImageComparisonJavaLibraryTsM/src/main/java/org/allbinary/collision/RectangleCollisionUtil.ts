@@ -22,8 +22,10 @@
         
 import { awt } from '../../../java/awt.js';
 //not GWT import const awt
+
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 
 
 
@@ -44,6 +46,7 @@ import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
 //not GWT import - same folder const Rectangle
+
 export class RectangleCollisionUtil
             extends Object
          {

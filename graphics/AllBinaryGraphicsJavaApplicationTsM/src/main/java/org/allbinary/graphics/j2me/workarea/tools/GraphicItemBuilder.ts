@@ -40,12 +40,16 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsDomUtil } from './PointsDomUtil.js';
-//not GWT import - same folder const PointsDomUtilimport { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import - same folder const LinesGraphicItemimport { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import - same folder const PointsDomUtil
+import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import - same folder const LinesGraphicItem
+import { GraphicItemInterface } from './GraphicItemInterface.js';
 //not GWT import - same folder const GraphicItemInterface
+
 export class GraphicItemBuilder
             extends Object
          {

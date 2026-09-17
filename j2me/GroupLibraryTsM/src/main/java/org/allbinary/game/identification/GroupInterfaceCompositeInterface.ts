@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Group } from './Group.js';
 //not GWT import - same folder const Group
+
 export interface GroupInterfaceCompositeInterface {
         
 

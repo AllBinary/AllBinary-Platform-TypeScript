@@ -22,14 +22,19 @@
         
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 //not GWT import const NullPaintable
+
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -49,8 +54,10 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidBasicTitleProgressBar } from './AndroidBasicTitleProgressBar.js';
-//not GWT import - same folder const AndroidBasicTitleProgressBarimport { ProgressCanvas } from './ProgressCanvas.js';
+//not GWT import - same folder const AndroidBasicTitleProgressBar
+import { ProgressCanvas } from './ProgressCanvas.js';
 //not GWT import - same folder const ProgressCanvas
+
 export class ProgressCanvasFactory
             extends Object
          {

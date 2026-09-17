@@ -24,34 +24,49 @@
         
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
 //not GWT import const SWT
+
 import { Canvas } from '../../../../org/eclipse/swt/widgets/Canvas.js';
 //not GWT import const Canvas
+
 import { Composite } from '../../../../org/eclipse/swt/widgets/Composite.js';
 //not GWT import const Composite
+
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
 //not GWT import const GC
+
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
 //not GWT import const ImageData
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 import { PaintEvent } from '../../../../org/eclipse/swt/events/PaintEvent.js';
 //not GWT import const PaintEvent
+
 import { PaintListener } from '../../../../org/eclipse/swt/events/PaintListener.js';
 //not GWT import const PaintListener
+
 import { Transform } from '../../../../org/eclipse/swt/graphics/Transform.js';
 //not GWT import const Transform
+
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
 //not GWT import const Display
+
 import { BareMain } from '../../../../org/microemu/app/BareMain.js';
 //not GWT import const BareMain
+
 
 
 
@@ -72,6 +87,7 @@ import { BareMain } from '../../../../org/microemu/app/BareMain.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Image } from './Image.js';
 //not GWT import - same folder const Image
+
 export class ImageUtil
             extends Object
          {

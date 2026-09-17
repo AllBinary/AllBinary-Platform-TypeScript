@@ -38,10 +38,12 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayChangeEvent } from './DisplayChangeEvent.js';
 //not GWT import - same folder const DisplayChangeEvent
+
 export interface DisplayChangeEventListener extends EventListenerInterface {
         
 

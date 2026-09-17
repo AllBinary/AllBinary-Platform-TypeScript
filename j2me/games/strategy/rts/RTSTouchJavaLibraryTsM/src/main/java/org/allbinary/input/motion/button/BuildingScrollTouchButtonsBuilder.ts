@@ -22,12 +22,16 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -47,14 +51,22 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import - same folder const BaseTouchInputimport { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-//not GWT import - same folder const TouchButtonLocationHelperimport { CommonButtons } from './CommonButtons.js';
-//not GWT import - same folder const CommonButtonsimport { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
-//not GWT import - same folder const BasicTouchButtonCellPositionFactoryimport { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButtonimport { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactoryimport { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
-//not GWT import - same folder const TouchButtonStrafeLeftResourceimport { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
+//not GWT import - same folder const BaseTouchInput
+import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+//not GWT import - same folder const TouchButtonLocationHelper
+import { CommonButtons } from './CommonButtons.js';
+//not GWT import - same folder const CommonButtons
+import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
+//not GWT import - same folder const BasicTouchButtonCellPositionFactory
+import { TouchButton } from './TouchButton.js';
+//not GWT import - same folder const TouchButton
+import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import - same folder const BasicTouchInputFactory
+import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
+//not GWT import - same folder const TouchButtonStrafeLeftResource
+import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
 //not GWT import - same folder const TouchButtonStrafeRightResource
+
 export class BuildingScrollTouchButtonsBuilder extends BaseTouchInput {
         
 

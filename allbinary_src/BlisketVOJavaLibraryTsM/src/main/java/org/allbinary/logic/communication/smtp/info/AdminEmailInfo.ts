@@ -22,16 +22,22 @@
         
 import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 //not GWT import const ContextConfigurationInterface
+
 import { AdminConfiguration } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
 //not GWT import const AdminConfiguration
+
 import { AdminConfigurationInterface } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
 //not GWT import const AdminConfigurationInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 //not GWT import const EmailServerConfigurationInterface
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -52,6 +58,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEmailInfo } from './BasicEmailInfo.js';
 //not GWT import - same folder const BasicEmailInfo
+
 export class AdminEmailInfo extends BasicEmailInfo {
         
 

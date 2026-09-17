@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionType } from './TransactionType.js';
 //not GWT import - same folder const TransactionType
+
 export class TransactionTypeFactory
             extends Object
          {

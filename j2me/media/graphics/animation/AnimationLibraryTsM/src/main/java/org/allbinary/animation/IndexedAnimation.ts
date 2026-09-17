@@ -22,8 +22,10 @@
         
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -43,9 +45,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Animation } from './Animation.js';
-//not GWT import - same folder const Animationimport { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-//not GWT import - same folder const IndexedAnimationInterfaceimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const Animation
+import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
+//not GWT import - same folder const IndexedAnimationInterface
+import { AnimationBehavior } from './AnimationBehavior.js';
 //not GWT import - same folder const AnimationBehavior
+
 export class IndexedAnimation extends Animation implements IndexedAnimationInterface {
         
 

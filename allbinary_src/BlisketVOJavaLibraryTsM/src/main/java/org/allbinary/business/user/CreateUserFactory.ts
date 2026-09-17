@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
 //not GWT import const UserRole
+
 import { UserRoleB } from '../../../../org/allbinary/business/user/role/UserRoleB.js';
 //not GWT import const UserRoleB
+
 import { UserRoleData } from '../../../../org/allbinary/business/user/role/UserRoleData.js';
 //not GWT import const UserRoleData
+
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 
 
 
@@ -52,6 +57,7 @@ import { StringValidationUtil } from '../../../../org/allbinary/logic/string/Str
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
 //not GWT import - same folder const UserInterface
+
 export class CreateUserFactory
             extends Object
          {

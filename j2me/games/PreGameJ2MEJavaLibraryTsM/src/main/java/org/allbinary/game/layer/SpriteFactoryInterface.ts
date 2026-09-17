@@ -20,8 +20,10 @@
 
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
 //not GWT import const Sprite
+
 
 
 

@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DbInitInfo } from './DbInitInfo.js';
 //not GWT import - same folder const DbInitInfo
+
 export class InventoryDbInitInfo extends DbInitInfo {
         
 

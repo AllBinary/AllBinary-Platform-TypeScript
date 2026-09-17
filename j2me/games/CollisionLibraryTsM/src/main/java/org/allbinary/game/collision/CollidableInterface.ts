@@ -22,10 +22,13 @@
         
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
 //not GWT import const NamedInterface
+
 
 
 
@@ -46,6 +49,7 @@ import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.j
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionType } from './CollisionType.js';
 //not GWT import - same folder const CollisionType
+
 export interface CollidableInterface extends NamedInterface {
         
 

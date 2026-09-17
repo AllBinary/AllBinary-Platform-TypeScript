@@ -38,10 +38,12 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameType } from './GameType.js';
 //not GWT import - same folder const GameType
+
 export class GameTypeFactory
             extends Object
          {

@@ -24,14 +24,19 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 //not GWT import const MoneyException
+
 import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
+
 import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 
 
 
@@ -52,6 +57,7 @@ import { RequestParams } from '../../../../../../../org/allbinary/logic/communic
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Item } from './Item.js';
 //not GWT import - same folder const Item
+
 export class ItemFactoryUnused
             extends Object
          {

@@ -20,8 +20,10 @@
 
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 
 
 
@@ -41,8 +43,10 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextItem } from './ABTextItem.js';
-//not GWT import - same folder const ABTextItemimport { ABStringComponent } from './ABStringComponent.js';
+//not GWT import - same folder const ABTextItem
+import { ABStringComponent } from './ABStringComponent.js';
 //not GWT import - same folder const ABStringComponent
+
 export class SelectableTextItem extends ABTextItem {
         
 

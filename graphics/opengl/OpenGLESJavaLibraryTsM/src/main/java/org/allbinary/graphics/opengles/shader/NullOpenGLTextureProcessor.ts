@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLObject3dProcessor } from './OpenGLObject3dProcessor.js';
 //not GWT import - same folder const OpenGLObject3dProcessor
+
 export class NullOpenGLTextureProcessor
             extends Object
          {

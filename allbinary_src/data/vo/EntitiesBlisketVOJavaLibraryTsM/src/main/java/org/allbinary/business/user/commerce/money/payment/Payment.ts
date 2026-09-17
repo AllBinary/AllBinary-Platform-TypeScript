@@ -26,24 +26,34 @@
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { ServletRequest } from '../../../../../../../javax/servlet/ServletRequest.js';
 //not GWT import const ServletRequest
+
 import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 import { SuperCrypt } from '../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -63,9 +73,12 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentInterface } from './PaymentInterface.js';
-//not GWT import - same folder const PaymentInterfaceimport { PaymentData } from './PaymentData.js';
-//not GWT import - same folder const PaymentDataimport { CreditCardType } from './CreditCardType.js';
+//not GWT import - same folder const PaymentInterface
+import { PaymentData } from './PaymentData.js';
+//not GWT import - same folder const PaymentData
+import { CreditCardType } from './CreditCardType.js';
 //not GWT import - same folder const CreditCardType
+
 export class Payment
             extends Object
          implements PaymentInterface, DomNodeInterface {

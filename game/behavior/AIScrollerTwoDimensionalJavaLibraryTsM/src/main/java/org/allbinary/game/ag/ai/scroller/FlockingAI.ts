@@ -24,26 +24,37 @@
         
 import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
+
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { BasicGroupFactory } from '../../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 //not GWT import const BasicGroupFactory
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { GroupLayerManagerListener } from '../../../../../../org/allbinary/game/layer/identification/GroupLayerManagerListener.js';
 //not GWT import const GroupLayerManagerListener
+
 import { WeaponLayer } from '../../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
 //not GWT import const WeaponLayer
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
+
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -64,6 +75,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
 //not GWT import - same folder const BasePatrolAI
+
 export class FlockingAI extends BasicAI {
         
 

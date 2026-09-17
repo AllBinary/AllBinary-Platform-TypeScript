@@ -24,22 +24,31 @@
         
 import { Method } from '../../java/lang/reflect/Method.js';
 //not GWT import const Method
+
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 //not GWT import const JspTagException
+
 import { StaticPagesHelperFactory } from '../../admin/taghelpers/StaticPagesHelperFactory.js';
 //not GWT import const StaticPagesHelperFactory
+
 import { StaticPagesRequestHelperFactory } from '../../admin/taghelpers/StaticPagesRequestHelperFactory.js';
 //not GWT import const StaticPagesRequestHelperFactory
+
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SearchData } from '../../org/allbinary/logic/control/search/SearchData.js';
 //not GWT import const SearchData
+
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 //not GWT import const TransformInfoData
+
 
 
 
@@ -60,6 +69,7 @@ import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/in
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 //not GWT import - same folder const TableTag
+
 export class StaticPagesTag extends TableTag {
         
 

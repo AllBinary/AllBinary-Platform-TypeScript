@@ -22,34 +22,49 @@
         
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { DefaultMutableTreeNode } from '../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 //not GWT import const DefaultMutableTreeNode
+
 import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
 //not GWT import const MutableTreeNode
+
 import { TreePath } from '../../../../../javax/swing/tree/TreePath.js';
 //not GWT import const TreePath
+
 import { CanvasTreeLabel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasTreeLabel.js';
 //not GWT import const CanvasTreeLabel
+
 import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
 //not GWT import const MyCanvasEvent
+
 import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
 //not GWT import const MyCanvasEventService
+
 import { MyCanvasEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
 //not GWT import const MyCanvasEventSource
+
 import { MyGraphicItemEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
 //not GWT import const MyGraphicItemEvent
+
 import { MyGraphicItemEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
 //not GWT import const MyGraphicItemEventService
+
 import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventSource.js';
 //not GWT import const MyGraphicItemEventSource
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 
 
 
@@ -69,16 +84,26 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { JTree } from './JTree.js';
-//not GWT import - same folder const JTreeimport { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapterimport { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEventimport { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenuimport { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItemimport { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPaneimport { PopupMenuListener } from './PopupMenuListener.js';
-//not GWT import - same folder const PopupMenuListenerimport { PopupMenuEvent } from './PopupMenuEvent.js';
-//not GWT import - same folder const PopupMenuEventimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const JPanel
+import { JTree } from './JTree.js';
+//not GWT import - same folder const JTree
+import { MouseAdapter } from './MouseAdapter.js';
+//not GWT import - same folder const MouseAdapter
+import { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEvent
+import { JPopupMenu } from './JPopupMenu.js';
+//not GWT import - same folder const JPopupMenu
+import { JMenuItem } from './JMenuItem.js';
+//not GWT import - same folder const JMenuItem
+import { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPane
+import { PopupMenuListener } from './PopupMenuListener.js';
+//not GWT import - same folder const PopupMenuListener
+import { PopupMenuEvent } from './PopupMenuEvent.js';
+//not GWT import - same folder const PopupMenuEvent
+import { GridLayout } from './GridLayout.js';
 //not GWT import - same folder const GridLayout
+
 export class WorkAreaJTreeJPanel extends javax.swing.JPanel {
         
 

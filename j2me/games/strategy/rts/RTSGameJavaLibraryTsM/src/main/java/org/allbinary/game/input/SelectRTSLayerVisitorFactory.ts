@@ -38,12 +38,16 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterfaceimport { SelectRTSLayerVisitor } from './SelectRTSLayerVisitor.js';
-//not GWT import - same folder const SelectRTSLayerVisitorimport { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
+import { SelectRTSLayerVisitor } from './SelectRTSLayerVisitor.js';
+//not GWT import - same folder const SelectRTSLayerVisitor
+import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
 //not GWT import - same folder const SelectedRTSLayersPlayerGameInput
+
 export class SelectRTSLayerVisitorFactory
             extends Object
          implements SelectRTSLayerVisitorFactoryInterface {

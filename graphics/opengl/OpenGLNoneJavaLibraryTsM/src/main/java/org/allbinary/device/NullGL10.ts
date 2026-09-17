@@ -22,14 +22,19 @@
         
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
 //not GWT import const GL10
+
 import { Buffer } from '../../../java/nio/Buffer.js';
 //not GWT import const Buffer
+
 import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
 //not GWT import const FloatBuffer
+
 import { IntBuffer } from '../../../java/nio/IntBuffer.js';
 //not GWT import const IntBuffer
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 

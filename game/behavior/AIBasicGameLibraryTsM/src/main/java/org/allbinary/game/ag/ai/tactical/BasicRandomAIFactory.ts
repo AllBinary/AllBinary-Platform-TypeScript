@@ -24,20 +24,28 @@
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 //not GWT import const ArtificialIntelligenceInterface
+
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
 //not GWT import const ArtificialIntelligenceInterfaceFactoryInterface
+
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
+
 import { InputProbability } from '../../../../../../org/allbinary/game/ag/ai/InputProbability.js';
 //not GWT import const InputProbability
+
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
 //not GWT import const GameInput
+
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 
 
 
@@ -58,6 +66,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicRandomAI } from './BasicRandomAI.js';
 //not GWT import - same folder const BasicRandomAI
+
 export class BasicRandomAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

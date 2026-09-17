@@ -22,16 +22,22 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
 //not GWT import const SingletonAnimationInterfaceFactory
+
 import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/image/IndexedAnimationToImageArrayUtil.js';
 //not GWT import const IndexedAnimationToImageArrayUtil
+
 
 
 
@@ -52,6 +58,7 @@ import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/imag
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
 //not GWT import - same folder const ImageArrayAnimation
+
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 

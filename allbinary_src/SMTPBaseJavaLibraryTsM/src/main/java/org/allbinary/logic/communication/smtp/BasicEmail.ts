@@ -24,16 +24,22 @@
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
 //not GWT import const MimeMessage
+
 import { BasicEmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
 //not GWT import const BasicEmailInfo
+
 import { EmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 //not GWT import const EmailInfo
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -53,9 +59,12 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailInterface } from './EmailInterface.js';
-//not GWT import - same folder const EmailInterfaceimport { AbEmail } from './AbEmail.js';
-//not GWT import - same folder const AbEmailimport { Email } from './Email.js';
+//not GWT import - same folder const EmailInterface
+import { AbEmail } from './AbEmail.js';
+//not GWT import - same folder const AbEmail
+import { Email } from './Email.js';
 //not GWT import - same folder const Email
+
 export class BasicEmail
             extends Object
          implements EmailInterface {

@@ -24,10 +24,13 @@
         
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 //not GWT import const CategoryFactoryInterface
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -47,8 +50,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryLoader } from './CategoryLoader.js';
-//not GWT import - same folder const CategoryLoaderimport { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
+//not GWT import - same folder const CategoryLoader
+import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
 //not GWT import - same folder const CategoryLoaderInterface
+
 export class CategoryLoaderFactory
             extends Object
          {

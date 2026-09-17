@@ -30,22 +30,31 @@
         
 import { awt } from '../../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
+
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
 //not GWT import const ColorCacheFactory
+
 import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
 //not GWT import const ColorCacheable
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
+
 import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDeltaFactory.js';
 //not GWT import const PixelDeltaFactory
+
 
 
 
@@ -65,9 +74,12 @@ import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-//not GWT import - same folder const ImageComparatorConstraintsInterfaceimport { Color } from './Color.js';
-//not GWT import - same folder const Colorimport { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import - same folder const ImageComparatorConstraintsInterface
+import { Color } from './Color.js';
+//not GWT import - same folder const Color
+import { ImageComparisonResult } from './ImageComparisonResult.js';
 //not GWT import - same folder const ImageComparisonResult
+
 export class ImageComparator
             extends Object
          {

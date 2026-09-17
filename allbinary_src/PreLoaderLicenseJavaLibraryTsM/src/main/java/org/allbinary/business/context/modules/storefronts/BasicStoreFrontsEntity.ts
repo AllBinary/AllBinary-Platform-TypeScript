@@ -22,16 +22,22 @@
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { InitSql } from '../../../../../../org/allbinary/business/init/InitSql.js';
 //not GWT import const InitSql
+
 import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
@@ -51,8 +57,10 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFront } from './BasicStoreFront.js';
-//not GWT import - same folder const BasicStoreFrontimport { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
+//not GWT import - same folder const BasicStoreFront
+import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
 //not GWT import - same folder const BasicStoreFrontInterface
+
 export class BasicStoreFrontsEntity extends InitSql {
         
 

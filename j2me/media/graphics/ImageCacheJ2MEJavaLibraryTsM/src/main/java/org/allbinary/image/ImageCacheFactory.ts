@@ -40,6 +40,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCache } from './ImageCache.js';
 //not GWT import - same folder const ImageCache
+
 export class ImageCacheFactory
             extends Object
          {

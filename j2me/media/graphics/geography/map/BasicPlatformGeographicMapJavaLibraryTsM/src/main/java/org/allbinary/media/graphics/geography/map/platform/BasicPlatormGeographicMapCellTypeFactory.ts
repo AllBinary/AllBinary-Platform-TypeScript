@@ -20,18 +20,25 @@
 
 import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
+
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 //not GWT import const GeographicMapCellTypeFactory
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
 
 
 
@@ -52,6 +59,7 @@ const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlatormGeographicMapCellType } from './BasicPlatormGeographicMapCellType.js';
 //not GWT import - same folder const BasicPlatormGeographicMapCellType
+
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 

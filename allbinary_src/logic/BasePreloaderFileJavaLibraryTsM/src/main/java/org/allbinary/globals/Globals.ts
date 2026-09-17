@@ -24,16 +24,22 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
 //not GWT import const WebappClassLoaderInfo
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -53,8 +59,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AppUrlGlobals } from './AppUrlGlobals.js';
-//not GWT import - same folder const AppUrlGlobalsimport { URLGLOBALS } from './URLGLOBALS.js';
+//not GWT import - same folder const AppUrlGlobals
+import { URLGLOBALS } from './URLGLOBALS.js';
 //not GWT import - same folder const URLGLOBALS
+
 export class Globals
             extends Object
          {

@@ -39,8 +39,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupProcessorInterface } from './PickupProcessorInterface.js';
-//not GWT import - same folder const PickupProcessorInterfaceimport { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+//not GWT import - same folder const PickupProcessorInterface
+import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
 //not GWT import - same folder const PickedUpLayerInterface
+
 export interface PickupBehaviorInterface {
         
 

@@ -36,11 +36,14 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameInputMapping } from './PCGameInputMapping.js';
-//not GWT import - same folder const PCGameInputMappingimport { MotionLaptopDefaultGameInputMapping } from './MotionLaptopDefaultGameInputMapping.js';
+//not GWT import - same folder const PCGameInputMapping
+import { MotionLaptopDefaultGameInputMapping } from './MotionLaptopDefaultGameInputMapping.js';
 //not GWT import - same folder const MotionLaptopDefaultGameInputMapping
+
 export class MotionLaptopGameInputMapping extends PCGameInputMapping {
         
 

@@ -39,10 +39,14 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyFactory } from './GameKeyFactory.js';
-//not GWT import - same folder const GameKeyFactoryimport { GameKey } from './GameKey.js';
-//not GWT import - same folder const GameKeyimport { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactoryimport { Input } from './Input.js';
+//not GWT import - same folder const GameKeyFactory
+import { GameKey } from './GameKey.js';
+//not GWT import - same folder const GameKey
+import { InputFactory } from './InputFactory.js';
+//not GWT import - same folder const InputFactory
+import { Input } from './Input.js';
 //not GWT import - same folder const Input
+
 export class J2MEKeyFactory
             extends Object
          {

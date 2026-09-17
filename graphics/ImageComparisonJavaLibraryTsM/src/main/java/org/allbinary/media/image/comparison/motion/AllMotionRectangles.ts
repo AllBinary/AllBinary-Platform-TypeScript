@@ -22,14 +22,19 @@
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
 //not GWT import const ImageComparisonResult
+
 import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
 //not GWT import const PixelDelta
+
 
 
 
@@ -49,9 +54,12 @@ import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectanglesimport { MotionRectangle } from './MotionRectangle.js';
-//not GWT import - same folder const MotionRectangleimport { Rectangle } from './Rectangle.js';
+//not GWT import - same folder const MotionRectangles
+import { MotionRectangle } from './MotionRectangle.js';
+//not GWT import - same folder const MotionRectangle
+import { Rectangle } from './Rectangle.js';
 //not GWT import - same folder const Rectangle
+
 export class AllMotionRectangles extends MotionRectangles {
         
 

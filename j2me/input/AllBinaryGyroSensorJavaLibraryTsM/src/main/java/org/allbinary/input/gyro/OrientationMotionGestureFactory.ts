@@ -22,10 +22,13 @@
         
 import { InputFactory } from '../../../../org/allbinary/game/input/InputFactory.js';
 //not GWT import const InputFactory
+
 import { MotionGestureInput } from '../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 //not GWT import const MotionGestureInput
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 

@@ -30,52 +30,76 @@
         
 import { awt } from '../../../../java/awt.js';
 //not GWT import const awt
+
 import { File } from '../../../../java/io/File.js';
 //not GWT import const File
+
 import { HashMap } from '../../../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { swing } from '../../../../javax/swing.js';
 //not GWT import const swing
+
 import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
 //not GWT import const XslHelper
+
 import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
 //not GWT import const DomHelper
+
 import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
 //not GWT import const NewWorkAreaJDialog
+
 import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
 //not GWT import const RotateJDialog
+
 import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
 //not GWT import const WorkAreaDom
+
 import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
 //not GWT import const WorkAreaJPanel
+
 import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
 //not GWT import const WorkAreaJPanelInterface
+
 import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
 //not GWT import const MyCanvasEvent
+
 import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
 //not GWT import const MyCanvasEventService
+
 import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
 //not GWT import const MyCanvasEventSource
+
 import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
 //not GWT import const FileJDialog
+
 import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
 //not GWT import const FileJDialogListenerInterface
+
 import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
 //not GWT import const HashMapJDialogListenerInterface
+
 import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
 //not GWT import const LOGGING
+
 import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
 //not GWT import const GuiLog
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
+
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -95,27 +119,48 @@ import { Document } from '../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrameimport { KeyListener } from './KeyListener.js';
-//not GWT import - same folder const KeyListenerimport { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimensionimport { JToolBar } from './JToolBar.js';
-//not GWT import - same folder const JToolBarimport { JButton } from './JButton.js';
-//not GWT import - same folder const JButtonimport { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { JTabbedPane } from './JTabbedPane.js';
-//not GWT import - same folder const JTabbedPaneimport { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabelimport { JMenuBar } from './JMenuBar.js';
-//not GWT import - same folder const JMenuBarimport { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenuimport { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItemimport { WindowAdapter } from './WindowAdapter.js';
-//not GWT import - same folder const WindowAdapterimport { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEventimport { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEventimport { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapterimport { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEventimport { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayoutimport { ChangeListener } from './ChangeListener.js';
-//not GWT import - same folder const ChangeListenerimport { ChangeEvent } from './ChangeEvent.js';
-//not GWT import - same folder const ChangeEventimport { KeyEvent } from './KeyEvent.js';
+//not GWT import - same folder const JFrame
+import { KeyListener } from './KeyListener.js';
+//not GWT import - same folder const KeyListener
+import { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimension
+import { JToolBar } from './JToolBar.js';
+//not GWT import - same folder const JToolBar
+import { JButton } from './JButton.js';
+//not GWT import - same folder const JButton
+import { JPanel } from './JPanel.js';
+//not GWT import - same folder const JPanel
+import { JTabbedPane } from './JTabbedPane.js';
+//not GWT import - same folder const JTabbedPane
+import { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabel
+import { JMenuBar } from './JMenuBar.js';
+//not GWT import - same folder const JMenuBar
+import { JMenu } from './JMenu.js';
+//not GWT import - same folder const JMenu
+import { JMenuItem } from './JMenuItem.js';
+//not GWT import - same folder const JMenuItem
+import { WindowAdapter } from './WindowAdapter.js';
+//not GWT import - same folder const WindowAdapter
+import { WindowEvent } from './WindowEvent.js';
+//not GWT import - same folder const WindowEvent
+import { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListener
+import { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
+import { MouseAdapter } from './MouseAdapter.js';
+//not GWT import - same folder const MouseAdapter
+import { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEvent
+import { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayout
+import { ChangeListener } from './ChangeListener.js';
+//not GWT import - same folder const ChangeListener
+import { ChangeEvent } from './ChangeEvent.js';
+//not GWT import - same folder const ChangeEvent
+import { KeyEvent } from './KeyEvent.js';
 //not GWT import - same folder const KeyEvent
+
 export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerInterface, HashMapJDialogListenerInterface, java.awt.event.KeyListener {
         
 

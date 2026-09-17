@@ -22,42 +22,61 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
+
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 //not GWT import const Portion
+
 import { NewUserFactory } from '../../org/allbinary/business/user/NewUserFactory.js';
 //not GWT import const NewUserFactory
+
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
+
 import { UserName } from '../../org/allbinary/business/user/username/UserName.js';
 //not GWT import const UserName
+
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
 //not GWT import const UserEntityFactory
+
 import { FREEBLISKET_PATH_GLOBALS } from '../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
+
 import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { RequestParams } from '../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
+
 
 
 
@@ -78,6 +97,7 @@ import { StringValidationUtil } from '../../org/allbinary/logic/string/StringVal
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Table } from './Table.js';
 //not GWT import - same folder const Table
+
 export class UserHelper extends Table {
         
 

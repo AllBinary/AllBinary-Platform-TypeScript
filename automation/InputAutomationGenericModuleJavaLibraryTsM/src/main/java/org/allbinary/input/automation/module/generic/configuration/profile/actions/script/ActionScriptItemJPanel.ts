@@ -37,11 +37,16 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanelimport { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayoutimport { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
-//not GWT import - same folder const Shortimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const JPanel
+import { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayout
+import { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayout
+import { Short } from './Short.js';
+//not GWT import - same folder const Short
+import { Dimension } from './Dimension.js';
 //not GWT import - same folder const Dimension
+
 export class ActionScriptItemJPanel extends javax.swing.JPanel {
         
 

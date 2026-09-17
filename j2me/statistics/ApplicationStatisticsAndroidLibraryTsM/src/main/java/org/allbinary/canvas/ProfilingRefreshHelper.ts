@@ -24,8 +24,10 @@
         
 import { View } from '../../../android/view/View.js';
 //not GWT import const View
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -46,6 +48,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidGameStatistics } from './AndroidGameStatistics.js';
 //not GWT import - same folder const AndroidGameStatistics
+
 export class ProfilingRefreshHelper extends AndroidGameStatistics {
         
 

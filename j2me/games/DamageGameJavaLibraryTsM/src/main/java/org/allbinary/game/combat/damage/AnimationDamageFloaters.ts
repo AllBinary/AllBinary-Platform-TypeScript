@@ -22,22 +22,31 @@
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 //not GWT import const IndexedAnimation
+
 import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 //not GWT import const CanvasStrings
+
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
+
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
+
 
 
 
@@ -58,6 +67,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DamageFloaters } from './DamageFloaters.js';
 //not GWT import - same folder const DamageFloaters
+
 export class AnimationDamageFloaters extends DamageFloaters {
         
 

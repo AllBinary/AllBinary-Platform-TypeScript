@@ -24,8 +24,10 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
+
 
 
 
@@ -45,9 +47,12 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterfaceimport { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterfaceimport { Animation } from './Animation.js';
+//not GWT import - same folder const AnimationInterfaceFactoryInterface
+import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
+//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
+import { Animation } from './Animation.js';
 //not GWT import - same folder const Animation
+
 export class NullAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {

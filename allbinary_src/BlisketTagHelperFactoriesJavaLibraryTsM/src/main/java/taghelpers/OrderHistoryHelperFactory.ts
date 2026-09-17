@@ -24,14 +24,19 @@
         
 import { HashMap } from '../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -52,6 +57,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryHelper } from './OrderHistoryHelper.js';
 //not GWT import - same folder const OrderHistoryHelper
+
 export class OrderHistoryHelperFactory
             extends Object
          {

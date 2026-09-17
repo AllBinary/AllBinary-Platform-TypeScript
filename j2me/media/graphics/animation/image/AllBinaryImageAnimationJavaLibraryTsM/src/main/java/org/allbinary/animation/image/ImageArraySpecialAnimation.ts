@@ -22,18 +22,25 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 //not GWT import const AnimationBehavior
+
 import { SpecialAnimationInterface } from '../../../../org/allbinary/animation/special/SpecialAnimationInterface.js';
 //not GWT import const SpecialAnimationInterface
+
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
+
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
+
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -54,6 +61,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
 //not GWT import - same folder const ImageArrayAnimation
+
 export class ImageArraySpecialAnimation extends ImageArrayAnimation implements SpecialAnimationInterface {
         
 

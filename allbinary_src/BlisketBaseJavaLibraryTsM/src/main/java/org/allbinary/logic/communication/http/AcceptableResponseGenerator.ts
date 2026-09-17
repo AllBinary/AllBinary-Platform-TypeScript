@@ -24,10 +24,13 @@
         
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -48,6 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseUtil } from './AcceptableResponseUtil.js';
 //not GWT import - same folder const AcceptableResponseUtil
+
 export class AcceptableResponseGenerator
             extends Object
          {

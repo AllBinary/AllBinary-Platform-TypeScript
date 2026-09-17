@@ -20,8 +20,10 @@
 
 import { Font } from '../../../javax/microedition/lcdui/Font.js';
 //not GWT import const Font
+
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
 //not GWT import const FontDebugBase
+
 
 
 

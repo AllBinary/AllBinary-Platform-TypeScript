@@ -24,12 +24,16 @@
         
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
+
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -49,8 +53,10 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterfaceimport { TransformInfoData } from './TransformInfoData.js';
+//not GWT import - same folder const TransformInfoInterface
+import { TransformInfoData } from './TransformInfoData.js';
 //not GWT import - same folder const TransformInfoData
+
 export class TransformInfoInterfaceView
             extends Object
          implements DomNodeInterface {

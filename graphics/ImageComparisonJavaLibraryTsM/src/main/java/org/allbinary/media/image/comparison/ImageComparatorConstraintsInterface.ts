@@ -22,10 +22,13 @@
         
 import { awt } from '../../../../../java/awt.js';
 //not GWT import const awt
+
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
+
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 
 
 
@@ -45,8 +48,10 @@ import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangleimport { Color } from './Color.js';
+//not GWT import - same folder const Rectangle
+import { Color } from './Color.js';
 //not GWT import - same folder const Color
+
 export interface ImageComparatorConstraintsInterface {
         
 

@@ -22,10 +22,13 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { ABRunnable } from '../../../../../org/allbinary/thread/ABRunnable.js';
 //not GWT import const ABRunnable
+
 
 
 
@@ -46,6 +49,7 @@ import { ABRunnable } from '../../../../../org/allbinary/thread/ABRunnable.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoCanvas } from './DemoCanvas.js';
 //not GWT import - same folder const DemoCanvas
+
 export class DemoGameStartupRunnable extends ABRunnable {
         
 

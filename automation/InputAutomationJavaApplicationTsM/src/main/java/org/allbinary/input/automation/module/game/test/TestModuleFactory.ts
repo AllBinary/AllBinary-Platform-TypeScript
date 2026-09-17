@@ -22,14 +22,19 @@
         
 import { swing } from '../../../../../../../javax/swing.js';
 //not GWT import const swing
+
 import { AbstractInputAutomationFactory } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
 //not GWT import const AbstractInputAutomationFactory
+
 import { InputAutomationModuleData } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
 //not GWT import const InputAutomationModuleData
+
 import { BlankModuleConfigurationJPanel } from '../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js';
 //not GWT import const BlankModuleConfigurationJPanel
+
 import { RunnableInterface } from '../../../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
+
 
 
 
@@ -50,6 +55,7 @@ import { RunnableInterface } from '../../../../../../../org/allbinary/thread/Run
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
 //not GWT import - same folder const JPanel
+
 export class TestModuleFactory extends AbstractInputAutomationFactory {
         
 

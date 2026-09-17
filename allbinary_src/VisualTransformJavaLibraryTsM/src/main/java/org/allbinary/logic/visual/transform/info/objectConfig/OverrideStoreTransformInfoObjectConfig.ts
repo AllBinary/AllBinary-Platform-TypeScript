@@ -22,10 +22,13 @@
         
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 
 
 
@@ -46,6 +49,7 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
 //not GWT import - same folder const GenericStoreTransformInfoObjectConfig
+
 export class OverrideStoreTransformInfoObjectConfig extends GenericStoreTransformInfoObjectConfig {
         
 

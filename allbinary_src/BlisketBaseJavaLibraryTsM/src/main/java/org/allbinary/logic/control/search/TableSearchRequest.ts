@@ -24,14 +24,19 @@
         
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
+
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
+
 import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 //not GWT import const URLGLOBALS
+
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -51,8 +56,10 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SearchParams } from './SearchParams.js';
-//not GWT import - same folder const SearchParamsimport { SearchData } from './SearchData.js';
+//not GWT import - same folder const SearchParams
+import { SearchData } from './SearchData.js';
 //not GWT import - same folder const SearchData
+
 export class TableSearchRequest
             extends Object
          {

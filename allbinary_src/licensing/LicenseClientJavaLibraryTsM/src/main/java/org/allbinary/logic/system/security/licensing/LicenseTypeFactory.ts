@@ -38,10 +38,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
+
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseType } from './LicenseType.js';
 //not GWT import - same folder const LicenseType
+
 export class LicenseTypeFactory
             extends Object
          {

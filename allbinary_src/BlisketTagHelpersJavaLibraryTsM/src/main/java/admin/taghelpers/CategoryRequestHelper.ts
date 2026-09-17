@@ -22,52 +22,76 @@
         
 import { HashMap } from '../../java/util/HashMap.js';
 //not GWT import const HashMap
+
 import { Map } from '../../java/util/Map.js';
 //not GWT import const Map
+
 import { Set } from '../../java/util/Set.js';
 //not GWT import const Set
+
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { CategoryComponent } from '../../org/allbinary/business/category/CategoryComponent.js';
 //not GWT import const CategoryComponent
+
 import { CategoryData } from '../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
+
 import { CategoryInterface } from '../../org/allbinary/business/category/CategoryInterface.js';
 //not GWT import const CategoryInterface
+
 import { StoreCategoryFactory } from '../../org/allbinary/business/category/store/StoreCategoryFactory.js';
 //not GWT import const StoreCategoryFactory
+
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
+
 import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
+
 import { CategoryLoaderFactory } from '../../org/allbinary/data/tree/category/CategoryLoaderFactory.js';
 //not GWT import const CategoryLoaderFactory
+
 import { CategoryLoaderInterface } from '../../org/allbinary/data/tree/category/CategoryLoaderInterface.js';
 //not GWT import const CategoryLoaderInterface
+
 import { DomNodeHelper } from '../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
+
 import { DomSearchHelper } from '../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
+
 import { DomDocumentHelper } from '../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 import { TransformInfoBasic } from '../../org/allbinary/logic/visual/transform/info/TransformInfoBasic.js';
 //not GWT import const TransformInfoBasic
+
 import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
 import { Document } from '../../org/w3c/dom/Document.js';
 //not GWT import const Document
+
 import { Node } from '../../org/w3c/dom/Node.js';
 //not GWT import const Node
+
 
 
 
@@ -88,6 +112,7 @@ import { Node } from '../../org/w3c/dom/Node.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
 //not GWT import - same folder const ModifyTable
+
 export class CategoryRequestHelper extends ModifyTable {
         
 

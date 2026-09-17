@@ -22,30 +22,43 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
+
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
+
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
+
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
+
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
+
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 //not GWT import const CanvasStrings
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
+
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 //not GWT import const GeographicMapCellHistory
+
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
+
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 //not GWT import const GeographicMapCompositeInterface
+
 import { SimpleGeographicMapCellPositionFactory } from '../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
 //not GWT import const SimpleGeographicMapCellPositionFactory
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 
 
 
@@ -65,11 +78,16 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
-//not GWT import - same folder const LinePathAnimationimport { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterfaceimport { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import - same folder const AllBinaryGameLayerManagerimport { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBaseimport { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+//not GWT import - same folder const LinePathAnimation
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import - same folder const PathFindingLayerInterface
+import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
+//not GWT import - same folder const AllBinaryGameLayerManager
+import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import - same folder const WaypointBehaviorBase
+import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
 //not GWT import - same folder const AllBinaryTiledLayer
+
 export class PathAnimation extends Animation {
         
 

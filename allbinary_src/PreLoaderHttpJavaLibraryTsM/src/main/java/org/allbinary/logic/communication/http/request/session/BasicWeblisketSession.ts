@@ -24,22 +24,31 @@
         
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
+
 import { HttpSession } from '../../../../../../../javax/servlet/http/HttpSession.js';
 //not GWT import const HttpSession
+
 import { PageContext } from '../../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
+
 import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
+
 import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
+
 import { PaymentGatewayData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 //not GWT import const PaymentGatewayData
+
 import { BasicUserRole } from '../../../../../../../org/allbinary/business/user/role/BasicUserRole.js';
 //not GWT import const BasicUserRole
+
 import { BasicUserRoleData } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleData.js';
 //not GWT import const BasicUserRoleData
+
 import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
+
 
 
 
@@ -60,6 +69,7 @@ import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bo
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeblisketSessionData } from './WeblisketSessionData.js';
 //not GWT import - same folder const WeblisketSessionData
+
 export class BasicWeblisketSession
             extends Object
          {

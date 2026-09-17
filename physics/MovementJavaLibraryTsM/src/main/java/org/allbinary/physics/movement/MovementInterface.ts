@@ -22,8 +22,10 @@
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
 //not GWT import const AllBinaryGameLayer
+
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
+
 
 
 

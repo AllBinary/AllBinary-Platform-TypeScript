@@ -24,8 +24,10 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -45,8 +47,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreasEntity } from './AdvertisementAreasEntity.js';
-//not GWT import - same folder const AdvertisementAreasEntityimport { AdvertisementAreasEntityInterface } from './AdvertisementAreasEntityInterface.js';
+//not GWT import - same folder const AdvertisementAreasEntity
+import { AdvertisementAreasEntityInterface } from './AdvertisementAreasEntityInterface.js';
 //not GWT import - same folder const AdvertisementAreasEntityInterface
+
 export class AdvertisementAreasEntityFactory
             extends Object
          {

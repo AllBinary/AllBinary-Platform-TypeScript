@@ -24,28 +24,40 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
 import { CapturedImageWorkerResultsEvent } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
 //not GWT import const CapturedImageWorkerResultsEvent
+
 import { CapturedImageWorkerResultsListener } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsListener.js';
 //not GWT import const CapturedImageWorkerResultsListener
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
+
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
+
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
+
 
 
 
@@ -65,12 +77,18 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-//not GWT import - same folder const ImageComparatorConstraintsInterfaceimport { ImageComparator } from './ImageComparator.js';
-//not GWT import - same folder const ImageComparatorimport { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResultimport { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-//not GWT import - same folder const ImageComparisonResultFrameCacheableimport { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-//not GWT import - same folder const ImageComparisonResultCacheSingletonimport { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
+//not GWT import - same folder const ImageComparatorConstraintsInterface
+import { ImageComparator } from './ImageComparator.js';
+//not GWT import - same folder const ImageComparator
+import { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import - same folder const ImageComparisonResult
+import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
+//not GWT import - same folder const ImageComparisonResultFrameCacheable
+import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
+//not GWT import - same folder const ImageComparisonResultCacheSingleton
+import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
 //not GWT import - same folder const ImageComparisonResultsEvent
+
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 

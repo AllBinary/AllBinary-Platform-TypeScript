@@ -24,8 +24,10 @@
         
 import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 //not GWT import const OrderInterface
+
 import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
 //not GWT import const UserRole
+
 
 
 

@@ -24,22 +24,31 @@
         
 import { HealthInterfaceCompositeInterface } from '../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js';
 //not GWT import const HealthInterfaceCompositeInterface
+
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 //not GWT import const CollidableCompositeLayer
+
 import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 //not GWT import const CollidableDestroyableDamageableLayer
+
 import { CountedLayerInterfaceFactoryPart } from '../../../../../org/allbinary/game/part/CountedLayerInterfaceFactoryPart.js';
 //not GWT import const CountedLayerInterfaceFactoryPart
+
 import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
 //not GWT import const PartInterface
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
 
 
 
@@ -59,14 +68,22 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupBehaviorInterface } from './PickupBehaviorInterface.js';
-//not GWT import - same folder const PickupBehaviorInterfaceimport { PickupProcessorInterface } from './PickupProcessorInterface.js';
-//not GWT import - same folder const PickupProcessorInterfaceimport { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterfaceimport { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import - same folder const PickedUpLayerTypeimport { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
-//not GWT import - same folder const PickedUpLayerTypeFactoryimport { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterfaceimport { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceimport { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
+//not GWT import - same folder const PickupBehaviorInterface
+import { PickupProcessorInterface } from './PickupProcessorInterface.js';
+//not GWT import - same folder const PickupProcessorInterface
+import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
+import { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import - same folder const PickedUpLayerType
+import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
+//not GWT import - same folder const PickedUpLayerTypeFactory
+import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterface
+import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+//not GWT import - same folder const PickedUpLayerInterface
+import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
 //not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
+
 export class PickupBehavior
             extends Object
          implements PickupBehaviorInterface {

@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerInterface } from './EventListenerInterface.js';
 //not GWT import - same folder const EventListenerInterface
+
 export interface BasicEventListenerInterface extends EventListenerInterface {
         
 

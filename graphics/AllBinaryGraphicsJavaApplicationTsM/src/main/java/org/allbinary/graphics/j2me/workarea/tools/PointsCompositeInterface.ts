@@ -38,6 +38,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsInterface } from './PointsInterface.js';
 //not GWT import - same folder const PointsInterface
+
 export interface PointsCompositeInterface {
         
 

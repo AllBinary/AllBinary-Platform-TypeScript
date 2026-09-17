@@ -24,8 +24,10 @@
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';
 //not GWT import const Method
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 
 
 
@@ -46,6 +48,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParamsUtil } from './ParamsUtil.js';
 //not GWT import - same folder const ParamsUtil
+
 export class MethodUtil
             extends Object
          {
