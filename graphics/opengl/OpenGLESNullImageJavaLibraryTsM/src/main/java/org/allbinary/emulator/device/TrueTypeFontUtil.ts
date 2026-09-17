@@ -29,8 +29,8 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
 
-//not plain js import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not GWT import const OpenGLESImage
 
 
 

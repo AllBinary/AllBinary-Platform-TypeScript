@@ -40,8 +40,8 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
 //not GWT import const ImageCacheFactory
 
-//not plain js import { OpenGLESImageExclusionUtil } 
-const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
+import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+//not GWT import const OpenGLESImageExclusionUtil
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;

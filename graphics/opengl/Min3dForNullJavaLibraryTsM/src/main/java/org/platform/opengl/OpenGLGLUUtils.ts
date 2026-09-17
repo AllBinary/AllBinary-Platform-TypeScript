@@ -17,8 +17,8 @@ import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
 import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
 //not GWT import const OpenGLBitmap
 
-//not plain js import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not GWT import const OpenGLESImage
 
 
 

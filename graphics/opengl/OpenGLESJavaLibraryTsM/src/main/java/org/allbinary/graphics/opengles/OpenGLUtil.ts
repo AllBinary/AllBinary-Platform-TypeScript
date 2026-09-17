@@ -40,8 +40,8 @@ import { RendererStrings } from '../../../../org/allbinary/graphics/opengles/ren
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
 //not GWT import const PreResourceImageUtil
 
-//not plain js import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not GWT import const OpenGLESImage
 
 import { OpenGLImageCache } from '../../../../org/allbinary/image/opengles/OpenGLImageCache.js';
 //not GWT import const OpenGLImageCache

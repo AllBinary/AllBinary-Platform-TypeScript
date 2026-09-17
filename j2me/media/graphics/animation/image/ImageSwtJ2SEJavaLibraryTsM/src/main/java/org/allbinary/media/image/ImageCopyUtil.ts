@@ -43,11 +43,11 @@ import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUt
 import { OpenGLESDeviceImageTranslate } from '../../../../org/allbinary/image/opengles/OpenGLESDeviceImageTranslate.js';
 //not GWT import const OpenGLESDeviceImageTranslate
 
-//not plain js import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not GWT import const OpenGLESImage
 
-//not plain js import { OpenGLESImageExclusionUtil } 
-const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
+import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+//not GWT import const OpenGLESImageExclusionUtil
 
 import { OpenGLESImageProperties } from '../../../../org/allbinary/image/opengles/OpenGLESImageProperties.js';
 //not GWT import const OpenGLESImageProperties

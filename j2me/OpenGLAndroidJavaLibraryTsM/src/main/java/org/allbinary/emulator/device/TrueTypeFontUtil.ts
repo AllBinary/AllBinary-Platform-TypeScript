@@ -59,8 +59,8 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
 //not GWT import const PreResourceImageUtil
 
-//not plain js import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not GWT import const OpenGLESImage
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;

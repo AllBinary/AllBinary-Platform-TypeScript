@@ -37,8 +37,8 @@ import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengle
 import { ModifierOpenGLESImageProcessor } from '../../../../org/allbinary/image/opengles/ModifierOpenGLESImageProcessor.js';
 //not GWT import const ModifierOpenGLESImageProcessor
 
-//not plain js import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not GWT import const OpenGLESImage
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
