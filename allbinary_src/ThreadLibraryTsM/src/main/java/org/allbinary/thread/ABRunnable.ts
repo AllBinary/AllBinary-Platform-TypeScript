@@ -41,9 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RunnableInterface } from './RunnableInterface.js';
-//not GWT import - same folder const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
-
-                
+//not GWT import - same folder const RunnableInterface
 export class ABRunnable
             extends Object
          implements RunnableInterface {

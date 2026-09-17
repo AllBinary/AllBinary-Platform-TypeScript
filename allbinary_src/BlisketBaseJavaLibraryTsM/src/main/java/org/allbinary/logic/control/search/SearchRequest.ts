@@ -21,33 +21,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { AbContext } from '../../../../../org/allbinary/business/context/AbContext.js';
-//not GWT import const AbContext = globalThis.org.allbinary.business.context.AbContext;
-
-      
+//not GWT import const AbContext
 import { StoreFrontInterface } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -67,12 +53,8 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SearchParams } from './SearchParams.js';
-//not GWT import - same folder const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
-
-                import { SearchData } from './SearchData.js';
-//not GWT import - same folder const SearchData = globalThis.org.allbinary.logic.control.search.SearchData;
-
-                
+//not GWT import - same folder const SearchParamsimport { SearchData } from './SearchData.js';
+//not GWT import - same folder const SearchData
 export class SearchRequest extends AbContext {
         
 

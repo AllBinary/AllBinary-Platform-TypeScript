@@ -21,45 +21,25 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
-//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
-
-      
+//not GWT import const PlayerGameInput
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
-//not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
-
-      
+//not GWT import const PlayerGameInputCompositeInterface
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
-
-      
+//not GWT import const CanvasStrings
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPosition.js';
-//not GWT import const StaticViewPosition = globalThis.org.allbinary.view.StaticViewPosition;
-
-      
+//not GWT import const StaticViewPosition
 
 
 
@@ -79,9 +59,7 @@ import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPos
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
-//not GWT import - same folder const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
-
-                
+//not GWT import - same folder const AllBinaryGameLayer
 export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements PlayerGameInputCompositeInterface {
         
 

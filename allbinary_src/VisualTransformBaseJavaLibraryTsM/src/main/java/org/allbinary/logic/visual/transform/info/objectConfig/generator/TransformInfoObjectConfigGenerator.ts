@@ -27,8 +27,6 @@
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
-      
-
 
 
 
@@ -47,9 +45,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorInterface } from './TransformInfoObjectConfigGeneratorInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigGeneratorInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorInterface;
-
-                
+//not GWT import - same folder const TransformInfoObjectConfigGeneratorInterface
 export class TransformInfoObjectConfigGenerator
             extends Object
          implements TransformInfoObjectConfigGeneratorInterface {

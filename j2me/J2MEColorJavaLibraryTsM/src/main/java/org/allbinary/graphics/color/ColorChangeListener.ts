@@ -20,9 +20,7 @@
 
 
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 
 
 

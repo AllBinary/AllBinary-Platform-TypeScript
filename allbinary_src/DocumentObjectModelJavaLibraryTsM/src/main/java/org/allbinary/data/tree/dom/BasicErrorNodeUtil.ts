@@ -23,17 +23,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ErrorData } from '../../../../../org/allbinary/business/error/ErrorData.js';
-//not GWT import const ErrorData = globalThis.org.allbinary.business.error.ErrorData;
-
-      
+//not GWT import const ErrorData
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -53,9 +47,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModDomHelper } from './ModDomHelper.js';
-//not GWT import - same folder const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-                
+//not GWT import - same folder const ModDomHelper
 export class BasicErrorNodeUtil
             extends Object
          {

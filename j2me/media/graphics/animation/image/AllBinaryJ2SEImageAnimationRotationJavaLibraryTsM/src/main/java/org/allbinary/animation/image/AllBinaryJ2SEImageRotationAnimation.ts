@@ -23,45 +23,25 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
-//not GWT import const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
-
-      
+//not GWT import const DisposalUtil
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-//not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
-
-      
+//not GWT import const ImageCopyUtil
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
-
-      
+//not GWT import const ImageModifierUtil
 import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
-//not GWT import const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
-
-      
+//not GWT import const ImageRotationUtil
 
 
 
@@ -81,27 +61,13 @@ import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import - same folder const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
-
-                import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
-//not GWT import - same folder const ModifierBaseProcessor = globalThis.org.allbinary.animation.image.ModifierBaseProcessor;
-
-                import { ScaleProcessor } from './ScaleProcessor.js';
-//not GWT import - same folder const ScaleProcessor = globalThis.org.allbinary.animation.image.ScaleProcessor;
-
-                import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
-//not GWT import - same folder const ScaleBaseProcessor = globalThis.org.allbinary.animation.image.ScaleBaseProcessor;
-
-                import { SetColorProcessor } from './SetColorProcessor.js';
-//not GWT import - same folder const SetColorProcessor = globalThis.org.allbinary.animation.image.SetColorProcessor;
-
-                import { ChangeColorProcessor } from './ChangeColorProcessor.js';
-//not GWT import - same folder const ChangeColorProcessor = globalThis.org.allbinary.animation.image.ChangeColorProcessor;
-
-                import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import - same folder const AlphaProcessor = globalThis.org.allbinary.animation.image.AlphaProcessor;
-
-                
+//not GWT import - same folder const ImageBaseRotationAnimationimport { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
+//not GWT import - same folder const ModifierBaseProcessorimport { ScaleProcessor } from './ScaleProcessor.js';
+//not GWT import - same folder const ScaleProcessorimport { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
+//not GWT import - same folder const ScaleBaseProcessorimport { SetColorProcessor } from './SetColorProcessor.js';
+//not GWT import - same folder const SetColorProcessorimport { ChangeColorProcessor } from './ChangeColorProcessor.js';
+//not GWT import - same folder const ChangeColorProcessorimport { AlphaProcessor } from './AlphaProcessor.js';
+//not GWT import - same folder const AlphaProcessor
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

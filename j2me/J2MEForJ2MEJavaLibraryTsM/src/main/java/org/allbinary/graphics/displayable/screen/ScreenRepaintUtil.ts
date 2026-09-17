@@ -21,9 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-      
+//not GWT import const Displayable
 
 
 

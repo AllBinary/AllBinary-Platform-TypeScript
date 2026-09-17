@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { QuoteRequest } from '../../../../../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
-//not GWT import const QuoteRequest = globalThis.org.allbinary.business.user.quoterequest.QuoteRequest;
-
-      
+//not GWT import const QuoteRequest
 import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-//not GWT import const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
-
-      
+//not GWT import const BasicDataTableInterface
 
 
 

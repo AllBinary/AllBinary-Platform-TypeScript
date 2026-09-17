@@ -22,44 +22,24 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
-//not GWT import const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
-
-      
+//not GWT import const GenericProfile
 import { GenericProfileDataWorkerType } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
-//not GWT import const GenericProfileDataWorkerType = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileDataWorkerType;
-
-      
+//not GWT import const GenericProfileDataWorkerType
 import { GenericProfiles } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js';
-//not GWT import const GenericProfiles = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfiles;
-
-      
+//not GWT import const GenericProfiles
 import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
-//not GWT import const GenericProfileActions = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActions;
-
-      
+//not GWT import const GenericProfileActions
 import { GenericProfileActionsJPanel } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionsJPanel.js';
-//not GWT import const GenericProfileActionsJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsJPanel;
-
-      
+//not GWT import const GenericProfileActionsJPanel
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -79,69 +59,27 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.JPanel;
-
-                import { GenericModuleConfigurationInterface } from './GenericModuleConfigurationInterface.js';
-//not GWT import - same folder const GenericModuleConfigurationInterface = globalThis.org.allbinary.input.automation.module.generic.configuration.GenericModuleConfigurationInterface;
-
-                import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.input.automation.module.generic.configuration.JDialog;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.input.automation.module.generic.configuration.JButton;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.module.generic.configuration.JLabel;
-
-                import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField = globalThis.org.allbinary.input.automation.module.generic.configuration.JTextField;
-
-                import { ButtonGroup } from './ButtonGroup.js';
-//not GWT import - same folder const ButtonGroup = globalThis.org.allbinary.input.automation.module.generic.configuration.ButtonGroup;
-
-                import { JTabbedPane } from './JTabbedPane.js';
-//not GWT import - same folder const JTabbedPane = globalThis.org.allbinary.input.automation.module.generic.configuration.JTabbedPane;
-
-                import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.input.automation.module.generic.configuration.JScrollPane;
-
-                import { JList } from './JList.js';
-//not GWT import - same folder const JList = globalThis.org.allbinary.input.automation.module.generic.configuration.JList;
-
-                import { JRadioButton } from './JRadioButton.js';
-//not GWT import - same folder const JRadioButton = globalThis.org.allbinary.input.automation.module.generic.configuration.JRadioButton;
-
-                import { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBox = globalThis.org.allbinary.input.automation.module.generic.configuration.JCheckBox;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.generic.configuration.Dimension;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.input.automation.module.generic.configuration.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.input.automation.module.generic.configuration.ActionEvent;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.module.generic.configuration.Short;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.GridLayout;
-
-                import { ListSelectionListener } from './ListSelectionListener.js';
-//not GWT import - same folder const ListSelectionListener = globalThis.org.allbinary.input.automation.module.generic.configuration.ListSelectionListener;
-
-                import { ListSelectionEvent } from './ListSelectionEvent.js';
-//not GWT import - same folder const ListSelectionEvent = globalThis.org.allbinary.input.automation.module.generic.configuration.ListSelectionEvent;
-
-                import { Insets } from './Insets.js';
-//not GWT import - same folder const Insets = globalThis.org.allbinary.input.automation.module.generic.configuration.Insets;
-
-                
+//not GWT import - same folder const JPanelimport { GenericModuleConfigurationInterface } from './GenericModuleConfigurationInterface.js';
+//not GWT import - same folder const GenericModuleConfigurationInterfaceimport { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialogimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextFieldimport { ButtonGroup } from './ButtonGroup.js';
+//not GWT import - same folder const ButtonGroupimport { JTabbedPane } from './JTabbedPane.js';
+//not GWT import - same folder const JTabbedPaneimport { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPaneimport { JList } from './JList.js';
+//not GWT import - same folder const JListimport { JRadioButton } from './JRadioButton.js';
+//not GWT import - same folder const JRadioButtonimport { JCheckBox } from './JCheckBox.js';
+//not GWT import - same folder const JCheckBoximport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Shortimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { ListSelectionListener } from './ListSelectionListener.js';
+//not GWT import - same folder const ListSelectionListenerimport { ListSelectionEvent } from './ListSelectionEvent.js';
+//not GWT import - same folder const ListSelectionEventimport { Insets } from './Insets.js';
+//not GWT import - same folder const Insets
 export class GenericModuleConfigurationJPanel extends javax.swing.JPanel implements GenericModuleConfigurationInterface {
         
 

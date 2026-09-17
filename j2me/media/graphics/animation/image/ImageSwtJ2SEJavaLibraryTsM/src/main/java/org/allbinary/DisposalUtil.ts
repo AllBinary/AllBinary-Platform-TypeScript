@@ -23,21 +23,13 @@
             import { System } from '../../java/lang/System.js';
         
 import { Image } from '../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-//not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
-
-      
+//not GWT import const Resource
 import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
-//not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
-
-      
+//not GWT import const SwtMutableImage
 
 
 

@@ -23,45 +23,25 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-//not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
-
-      
+//not GWT import const AndroidUtil
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
-
-      
+//not GWT import const J2MEUtil
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
-
-      
+//not GWT import const Anchor
 import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
-//not GWT import const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
-
-      
+//not GWT import const OpenGLFeatureUtil
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 

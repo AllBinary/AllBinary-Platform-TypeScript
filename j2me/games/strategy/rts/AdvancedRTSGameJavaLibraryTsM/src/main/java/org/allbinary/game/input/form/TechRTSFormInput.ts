@@ -21,97 +21,51 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
-//not GWT import const RTSGameStrings = globalThis.org.allbinary.game.layer.RTSGameStrings;
-
-      
+//not GWT import const RTSGameStrings
 import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
-//not GWT import const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
-
-      
+//not GWT import const RTSInterface
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
-//not GWT import const RTSPlayerLayerInterface = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
-
-      
+//not GWT import const RTSPlayerLayerInterface
 import { TechnologyRTSInterfaceImageItem } from '../../../../../org/allbinary/game/layer/TechnologyRTSInterfaceImageItem.js';
-//not GWT import const TechnologyRTSInterfaceImageItem = globalThis.org.allbinary.game.layer.TechnologyRTSInterfaceImageItem;
-
-      
+//not GWT import const TechnologyRTSInterfaceImageItem
 import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital.js';
-//not GWT import const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
-
-      
+//not GWT import const Capital
 import { TechEventHandler } from '../../../../../org/allbinary/game/rts/technology/event/TechEventHandler.js';
-//not GWT import const TechEventHandler = globalThis.org.allbinary.game.rts.technology.event.TechEventHandler;
-
-      
+//not GWT import const TechEventHandler
 import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
-
-      
+//not GWT import const ABCustomItem
 import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
-//not GWT import const BuildingSound = globalThis.org.allbinary.media.audio.BuildingSound;
-
-      
+//not GWT import const BuildingSound
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
-
-      
+//not GWT import const BooleanFactory
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
-//not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
-
-      
+//not GWT import const Group
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
-
-      
+//not GWT import const AllBinaryGameLayerManager
 import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
-//not GWT import const GameNotificationEvent = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEvent;
-
-      
+//not GWT import const GameNotificationEvent
 import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
-//not GWT import const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
-
-      
+//not GWT import const GameNotificationEventHandler
 import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-      
+//not GWT import const CollidableDestroyableDamageableLayer
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
-//not GWT import const ErrorSound = globalThis.org.allbinary.media.audio.ErrorSound;
-
-      
+//not GWT import const ErrorSound
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
-//not GWT import const GeographicMapCompositeInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
-
-      
+//not GWT import const GeographicMapCompositeInterface
 
 
 
@@ -131,9 +85,7 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import - same folder const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
-
-                
+//not GWT import - same folder const RTSFormInput
 export class TechRTSFormInput extends RTSFormInput {
         
 

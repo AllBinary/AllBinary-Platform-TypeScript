@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
-//not GWT import const ActivityFractureUtil = globalThis.org.allbinary.android.ActivityFractureUtil;
-
-      
+//not GWT import const ActivityFractureUtil
 import { Activity } from '../../../../android/app/Activity.js';
-//not GWT import const Activity = globalThis.android.app.Activity;
-
-      
+//not GWT import const Activity
 import { WindowManager } from '../../../../android/view/WindowManager.js';
-//not GWT import const WindowManager = globalThis.android.view.WindowManager;
-
-      
+//not GWT import const WindowManager
 
 
 

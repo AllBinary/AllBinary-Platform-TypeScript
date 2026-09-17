@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -59,15 +49,9 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
-
-                import { MotionRectangle } from './MotionRectangle.js';
-//not GWT import - same folder const MotionRectangle = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
-
-                import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
-
-                
+//not GWT import - same folder const MotionRectanglesimport { MotionRectangle } from './MotionRectangle.js';
+//not GWT import - same folder const MotionRectangleimport { Rectangle } from './Rectangle.js';
+//not GWT import - same folder const Rectangle
 export class ConsolidateMotionRectangles extends MotionRectangles {
         
 

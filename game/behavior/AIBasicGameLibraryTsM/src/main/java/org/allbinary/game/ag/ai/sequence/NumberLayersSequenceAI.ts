@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
-
-      
+//not GWT import const ArtificialIntelligenceInterface
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 
@@ -55,9 +47,7 @@ import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/All
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequenceAI } from './SequenceAI.js';
-//not GWT import - same folder const SequenceAI = globalThis.org.allbinary.game.ag.ai.sequence.SequenceAI;
-
-                
+//not GWT import - same folder const SequenceAI
 export class NumberLayersSequenceAI extends SequenceAI {
         
 

@@ -21,38 +21,21 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-//not GWT import const Control = globalThis.javax.microedition.media.Control;
-
-      
+//not GWT import const Control
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-//not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
-
-      
+//not GWT import const MediaException
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-//not GWT import const Player = globalThis.javax.microedition.media.Player;
-const PlayerI = globalThis.javax.microedition.media.Player;
-
-      
+//not GWT import const Player
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-//not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
-
-      
+//not GWT import const PlayerListener
 import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-//not GWT import const TimeBase = globalThis.javax.microedition.media.TimeBase;
-
-      
+//not GWT import const TimeBase
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -72,15 +55,9 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-//not GWT import - same folder const TimeBaseInterface = globalThis.org.allbinary.media.audio.TimeBaseInterface;
-
-                import { Controllable2 } from './Controllable2.js';
-//not GWT import - same folder const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
-
-                import { NullControl } from './NullControl.js';
-//not GWT import - same folder const NullControl = globalThis.org.allbinary.media.audio.NullControl;
-
-                //BasicPlayerMIDP2JavaLibrary
+//not GWT import - same folder const TimeBaseInterfaceimport { Controllable2 } from './Controllable2.js';
+//not GWT import - same folder const Controllable2import { NullControl } from './NullControl.js';
+//not GWT import - same folder const NullControl//BasicPlayerMIDP2JavaLibrary
 export class BasicPlayer
             extends Object
          implements Player, TimeBaseInterface, Controllable2 {

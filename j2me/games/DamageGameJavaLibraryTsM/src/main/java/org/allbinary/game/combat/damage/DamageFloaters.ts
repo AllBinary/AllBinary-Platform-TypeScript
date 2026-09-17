@@ -19,9 +19,7 @@
 
 
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 
 
 

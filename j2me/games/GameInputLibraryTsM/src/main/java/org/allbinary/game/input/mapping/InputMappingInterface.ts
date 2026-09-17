@@ -21,13 +21,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-//not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
-
-      
+//not GWT import const GameKey
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
-
-      
+//not GWT import const Input
 
 
 

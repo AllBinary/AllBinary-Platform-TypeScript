@@ -25,8 +25,6 @@
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
-      
-
 
 
 
@@ -45,9 +43,7 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import - same folder const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
-
-                
+//not GWT import - same folder const WeaponLayer
 export class WeaponLayerArrayLayerCircularStaticPool
             extends Object
          {

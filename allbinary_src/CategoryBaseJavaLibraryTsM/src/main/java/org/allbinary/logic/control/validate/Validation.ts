@@ -26,16 +26,10 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -55,9 +49,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationInterface } from './ValidationInterface.js';
-//not GWT import - same folder const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
-
-                
+//not GWT import - same folder const ValidationInterface
 export class Validation
             extends Object
          implements ValidationInterface {

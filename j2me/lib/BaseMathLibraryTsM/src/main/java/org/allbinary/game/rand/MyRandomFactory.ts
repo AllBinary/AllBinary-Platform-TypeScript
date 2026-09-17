@@ -27,24 +27,16 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Random } from '../../../../java/util/Random.js';
-//not GWT import const Random = globalThis.java.util.Random;
-
-      
+//not GWT import const Random
 
 
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 

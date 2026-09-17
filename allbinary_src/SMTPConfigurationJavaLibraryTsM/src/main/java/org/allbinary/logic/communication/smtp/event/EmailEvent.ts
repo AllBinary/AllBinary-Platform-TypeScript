@@ -19,17 +19,11 @@
 
 
 import { EventObject } from '../../../../../../java/util/EventObject.js';
-//not GWT import const EventObject = globalThis.java.util.EventObject;
-
-      
+//not GWT import const EventObject
 import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-//not GWT import const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
-
-      
+//not GWT import const EmailInfo
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -49,9 +43,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventNameData } from './UserEmailEventNameData.js';
-//not GWT import - same folder const UserEmailEventNameData = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
-
-                
+//not GWT import - same folder const UserEmailEventNameData
 export class EmailEvent extends EventObject {
         
 

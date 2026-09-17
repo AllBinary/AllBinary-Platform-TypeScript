@@ -25,20 +25,12 @@
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 
 
 
@@ -60,15 +52,9 @@ const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { ImmutableBasicArrayList } 
-const ImmutableBasicArrayList = globalThis.org.allbinary.util.ImmutableBasicArrayList;
-
-                //not plain js - same folder import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-                //not plain js - same folder import { BasicArrayListD } 
+const ImmutableBasicArrayList = globalThis.org.allbinary.util.ImmutableBasicArrayList;//not plain js - same folder import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;//not plain js - same folder import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-                
 export class BasicArrayListUtil
             extends Object
          {

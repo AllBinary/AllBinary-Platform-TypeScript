@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Transport } from '../../../../../../javax/mail/Transport.js';
-//not GWT import const Transport = globalThis.javax.mail.Transport;
-
-      
+//not GWT import const Transport
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
-//not GWT import const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
-
-      
+//not GWT import const EmailInterface
 import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/BasicQueue.js';
-//not GWT import const BasicQueue = globalThis.org.allbinary.logic.util.queue.BasicQueue;
-
-      
+//not GWT import const BasicQueue
 
 
 
@@ -55,9 +47,7 @@ import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/Bas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailQueueInterface } from './EmailQueueInterface.js';
-//not GWT import - same folder const EmailQueueInterface = globalThis.org.allbinary.logic.communication.smtp.queue.EmailQueueInterface;
-
-                
+//not GWT import - same folder const EmailQueueInterface
 export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
         
 

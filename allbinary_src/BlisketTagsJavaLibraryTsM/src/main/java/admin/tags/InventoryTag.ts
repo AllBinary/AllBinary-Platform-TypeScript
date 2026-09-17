@@ -21,29 +21,17 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
-
-      
+//not GWT import const JspTagException
 import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-//not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
-
-      
+//not GWT import const Tag
 import { InventoryHelperFactory } from '../../admin/taghelpers/InventoryHelperFactory.js';
-//not GWT import const InventoryHelperFactory = globalThis.admin.taghelpers.InventoryHelperFactory;
-
-      
+//not GWT import const InventoryHelperFactory
 import { InventoryRequestHelperFactory } from '../../admin/taghelpers/InventoryRequestHelperFactory.js';
-//not GWT import const InventoryRequestHelperFactory = globalThis.admin.taghelpers.InventoryRequestHelperFactory;
-
-      
+//not GWT import const InventoryRequestHelperFactory
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
-
-      
+//not GWT import const AbResponseHandler
 
 
 
@@ -63,15 +51,9 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
-
-                import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-//not GWT import - same folder const ParentInventoryTagHelper = globalThis.admin.tags.ParentInventoryTagHelper;
-
-                import { AbTagData } from './AbTagData.js';
-//not GWT import - same folder const AbTagData = globalThis.admin.tags.AbTagData;
-
-                
+//not GWT import - same folder const TableTagimport { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
+//not GWT import - same folder const ParentInventoryTagHelperimport { AbTagData } from './AbTagData.js';
+//not GWT import - same folder const AbTagData
 export class InventoryTag extends TableTag {
         
 

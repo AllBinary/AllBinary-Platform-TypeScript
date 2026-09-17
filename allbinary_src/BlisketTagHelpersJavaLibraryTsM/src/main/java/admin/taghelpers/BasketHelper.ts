@@ -21,37 +21,21 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
-
-      
+//not GWT import const StoreFrontFactory
 import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { BasketInterface } from '../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
-//not GWT import const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
-
-      
+//not GWT import const BasketInterface
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
-
-      
+//not GWT import const WeblisketSession
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -71,9 +55,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper = globalThis.admin.taghelpers.TagHelper;
-
-                
+//not GWT import - same folder const TagHelper
 export class BasketHelper extends TagHelper {
         
 

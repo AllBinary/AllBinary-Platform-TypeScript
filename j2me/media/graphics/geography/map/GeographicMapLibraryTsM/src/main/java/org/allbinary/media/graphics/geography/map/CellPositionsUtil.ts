@@ -24,16 +24,10 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
-
-      
+//not GWT import const AllBinaryTiledLayer
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
-
-      
 
 
 
@@ -53,15 +47,9 @@ const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
-
-                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-                import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-                
+//not GWT import - same folder const BasicGeographicMapCellPositionFactoryimport { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import - same folder const GeographicMapCellPositionimport { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import - same folder const BasicGeographicMap
 export class CellPositionsUtil
             extends Object
          {

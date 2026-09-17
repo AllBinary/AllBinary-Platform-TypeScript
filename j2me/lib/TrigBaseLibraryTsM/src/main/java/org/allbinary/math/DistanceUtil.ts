@@ -23,8 +23,6 @@
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
-      
-
 
 
 

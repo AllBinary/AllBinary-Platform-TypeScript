@@ -25,42 +25,23 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-//not GWT import const Control = globalThis.javax.microedition.media.Control;
-
-      
+//not GWT import const Control
 import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-//not GWT import const Controllable = globalThis.javax.microedition.media.Controllable;
-
-      
+//not GWT import const Controllable
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-//not GWT import const Player = globalThis.javax.microedition.media.Player;
-const PlayerI = globalThis.javax.microedition.media.Player;
-
-      
+//not GWT import const Player
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-//not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
-
-      
+//not GWT import const PlayerListener
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-//not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
-
-      
+//not GWT import const GameTickTimeDelayHelper
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-//not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
-
-      
+//not GWT import const GameTickTimeDelayHelperFactory
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 
 
 
@@ -80,9 +61,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Controllable2 } from './Controllable2.js';
-//not GWT import - same folder const Controllable2 = globalThis.org.allbinary.media.audio.Controllable2;
-
-                //BasicPlayer
+//not GWT import - same folder const Controllable2//BasicPlayer
 export class PlayerComposite
             extends Object
          implements Controllable, Player {

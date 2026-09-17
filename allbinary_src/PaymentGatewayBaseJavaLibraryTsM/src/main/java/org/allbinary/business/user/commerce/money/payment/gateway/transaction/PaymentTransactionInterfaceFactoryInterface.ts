@@ -21,13 +21,9 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
-
-      
+//not GWT import const OrderHistory
 import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
-//not GWT import const TenderType = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderType;
-
-      
+//not GWT import const TenderType
 
 
 
@@ -47,9 +43,7 @@ import { TenderType } from '../../../../../../../../../org/allbinary/business/us
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
-//not GWT import - same folder const PaymentTransactionInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterface;
-
-                
+//not GWT import - same folder const PaymentTransactionInterface
 export interface PaymentTransactionInterfaceFactoryInterface {
         
 

@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionInterface } from './IntermissionInterface.js';
-//not GWT import - same folder const IntermissionInterface = globalThis.org.allbinary.game.IntermissionInterface;
-
-                
+//not GWT import - same folder const IntermissionInterface
 export interface IntermissionCompositeInterface {
         
 

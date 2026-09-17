@@ -26,28 +26,16 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
-
-      
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
-//not GWT import const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
-
-      
+//not GWT import const HashMapJDialogListenerInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -67,48 +55,20 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.graphics.j2me.dialog.JDialog;
-
-                import { Frame } from './Frame.js';
-//not GWT import - same folder const Frame = globalThis.org.allbinary.graphics.j2me.dialog.Frame;
-
-                import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField = globalThis.org.allbinary.graphics.j2me.dialog.JTextField;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.graphics.j2me.dialog.JLabel;
-
-                import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.graphics.j2me.dialog.JPanel;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.graphics.j2me.dialog.JButton;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.graphics.j2me.dialog.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.graphics.j2me.dialog.ActionEvent;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.graphics.j2me.dialog.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.graphics.j2me.dialog.Short;
-
-                import { EventQueue } from './EventQueue.js';
-//not GWT import - same folder const EventQueue = globalThis.org.allbinary.graphics.j2me.dialog.EventQueue;
-
-                import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame = globalThis.org.allbinary.graphics.j2me.dialog.JFrame;
-
-                import { WindowAdapter } from './WindowAdapter.js';
-//not GWT import - same folder const WindowAdapter = globalThis.org.allbinary.graphics.j2me.dialog.WindowAdapter;
-
-                import { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEvent = globalThis.org.allbinary.graphics.j2me.dialog.WindowEvent;
-
-                
+//not GWT import - same folder const JDialogimport { Frame } from './Frame.js';
+//not GWT import - same folder const Frameimport { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextFieldimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JPanel } from './JPanel.js';
+//not GWT import - same folder const JPanelimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Shortimport { EventQueue } from './EventQueue.js';
+//not GWT import - same folder const EventQueueimport { JFrame } from './JFrame.js';
+//not GWT import - same folder const JFrameimport { WindowAdapter } from './WindowAdapter.js';
+//not GWT import - same folder const WindowAdapterimport { WindowEvent } from './WindowEvent.js';
+//not GWT import - same folder const WindowEvent
 export class RotateJDialog extends javax.swing.JDialog {
         
 

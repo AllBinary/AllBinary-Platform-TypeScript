@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 
 
 

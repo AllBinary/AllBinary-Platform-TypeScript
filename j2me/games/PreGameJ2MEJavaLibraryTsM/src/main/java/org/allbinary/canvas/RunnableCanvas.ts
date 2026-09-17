@@ -23,65 +23,35 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
-//not GWT import const NullWaitGameRunnable = globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable;
-
-      
+//not GWT import const NullWaitGameRunnable
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
-
-      
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { NullThread } from '../../../org/allbinary/thread/NullThread.js';
-//not GWT import const NullThread = globalThis.org.allbinary.thread.NullThread;
-
-      
+//not GWT import const NullThread
 import { RunnableInterface } from '../../../org/allbinary/thread/RunnableInterface.js';
-//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
-
-      
+//not GWT import const RunnableInterface
 import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
-//not GWT import const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
-
-      
+//not GWT import const ThreadObjectUtil
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -101,12 +71,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Processor } from './Processor.js';
-//not GWT import - same folder const Processor = globalThis.org.allbinary.canvas.Processor;
-
-                import { RunnableCanvasRefreshHelper } from './RunnableCanvasRefreshHelper.js';
-//not GWT import - same folder const RunnableCanvasRefreshHelper = globalThis.org.allbinary.canvas.RunnableCanvasRefreshHelper;
-
-                
+//not GWT import - same folder const Processorimport { RunnableCanvasRefreshHelper } from './RunnableCanvasRefreshHelper.js';
+//not GWT import - same folder const RunnableCanvasRefreshHelper
 export class RunnableCanvas extends MyCanvas implements RunnableInterface {
         
 

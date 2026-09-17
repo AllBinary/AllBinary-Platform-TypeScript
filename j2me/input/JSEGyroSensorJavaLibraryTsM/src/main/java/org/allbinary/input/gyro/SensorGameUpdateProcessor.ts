@@ -23,21 +23,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
-//not GWT import const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
-
-      
+//not GWT import const NoCompleteMotionGestureInputEventListener
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-//not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
-
-      
+//not GWT import const AllBinarySensor
 import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
-//not GWT import const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
-
-      
+//not GWT import const NoAllBinarySensor
 import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
-//not GWT import const AccelerometerSensorFactory = globalThis.org.allbinary.input.accelerometer.AccelerometerSensorFactory;
-
-      
+//not GWT import const AccelerometerSensorFactory
 
 
 
@@ -57,9 +49,7 @@ import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/acce
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GyroSensorFactory } from './GyroSensorFactory.js';
-//not GWT import - same folder const GyroSensorFactory = globalThis.org.allbinary.input.gyro.GyroSensorFactory;
-
-                
+//not GWT import - same folder const GyroSensorFactory
 export class SensorGameUpdateProcessor
             extends Object
          {

@@ -21,9 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { RecordFilter } from '../../../../../javax/microedition/rms/RecordFilter.js';
-//not GWT import const RecordFilter = globalThis.javax.microedition.rms.RecordFilter;
-
-      
+//not GWT import const RecordFilter
 
 
 

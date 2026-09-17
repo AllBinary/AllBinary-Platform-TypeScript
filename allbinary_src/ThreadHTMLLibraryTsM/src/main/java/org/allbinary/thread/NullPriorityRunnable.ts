@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PriorityRunnable } from './PriorityRunnable.js';
-//not GWT import - same folder const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
-
-                
+//not GWT import - same folder const PriorityRunnable
 export class NullPriorityRunnable
             extends Object
          implements PriorityRunnable {

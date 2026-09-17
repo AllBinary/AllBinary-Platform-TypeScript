@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
-//not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
-
-      
+//not GWT import const CollisionType
 import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
-//not GWT import const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
-
-      
+//not GWT import const CollisionTypeFactory
 import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
-//not GWT import const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
-
-      
+//not GWT import const CollidableDestroyableDamageableBehavior
 
 
 
@@ -51,9 +45,7 @@ import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
-//not GWT import - same folder const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
-
-                
+//not GWT import - same folder const CollidableCompositeLayer
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         
 

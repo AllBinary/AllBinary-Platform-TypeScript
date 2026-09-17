@@ -25,33 +25,19 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-//not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
-
-      
+//not GWT import const RotationAnimation
 import { Group } from '../../../../org/allbinary/game/identification/Group.js';
-//not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
-
-      
+//not GWT import const Group
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
-
-      
+//not GWT import const BasicDecimal
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-//not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
-
-      
+//not GWT import const GeographicMapCellHistory
 import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
-//not GWT import const GeographicMapCellPositionTracking = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionTracking;
-
-      
+//not GWT import const GeographicMapCellPositionTracking
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -71,12 +57,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehicleLayerInterface } from './VehicleLayerInterface.js';
-//not GWT import - same folder const VehicleLayerInterface = globalThis.org.allbinary.game.layer.VehicleLayerInterface;
-
-                import { VehicleProperties } from './VehicleProperties.js';
-//not GWT import - same folder const VehicleProperties = globalThis.org.allbinary.game.layer.VehicleProperties;
-
-                
+//not GWT import - same folder const VehicleLayerInterfaceimport { VehicleProperties } from './VehicleProperties.js';
+//not GWT import - same folder const VehicleProperties
 export class NullVehicleLayer
             extends Object
          implements VehicleLayerInterface {

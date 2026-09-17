@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Closeable } from '../../../../java/io/Closeable.js';
-//not GWT import const Closeable = globalThis.java.io.Closeable;
-
-      
+//not GWT import const Closeable
 import { IOException } from '../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 
 
 

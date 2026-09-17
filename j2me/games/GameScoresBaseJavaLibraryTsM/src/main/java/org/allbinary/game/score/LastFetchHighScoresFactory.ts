@@ -23,8 +23,6 @@
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
-      
-
 
 
 
@@ -43,12 +41,8 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHighScoresFactory } from './NoHighScoresFactory.js';
-//not GWT import - same folder const NoHighScoresFactory = globalThis.org.allbinary.game.score.NoHighScoresFactory;
-
-                import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores = globalThis.org.allbinary.game.score.HighScores;
-
-                
+//not GWT import - same folder const NoHighScoresFactoryimport { HighScores } from './HighScores.js';
+//not GWT import - same folder const HighScores
 export class LastFetchHighScoresFactory
             extends Object
          {

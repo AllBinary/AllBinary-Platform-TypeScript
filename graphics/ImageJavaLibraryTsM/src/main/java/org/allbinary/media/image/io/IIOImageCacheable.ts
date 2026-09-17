@@ -21,21 +21,13 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { IIOImage } from '../../../../../javax/imageio/IIOImage.js';
-//not GWT import const IIOImage = globalThis.javax.imageio.IIOImage;
-
-      
+//not GWT import const IIOImage
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-      
+//not GWT import const CacheableInterface
 
 
 

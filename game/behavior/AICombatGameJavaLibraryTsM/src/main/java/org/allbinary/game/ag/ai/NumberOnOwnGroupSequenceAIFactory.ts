@@ -25,41 +25,23 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
-
-      
+//not GWT import const ArtificialIntelligenceInterface
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -79,12 +61,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberInSameGroupSequence } from './NumberInSameGroupSequence.js';
-//not GWT import - same folder const NumberInSameGroupSequence = globalThis.org.allbinary.game.ag.ai.NumberInSameGroupSequence;
-
-                import { NumberOnOwnGroupSequenceAI } from './NumberOnOwnGroupSequenceAI.js';
-//not GWT import - same folder const NumberOnOwnGroupSequenceAI = globalThis.org.allbinary.game.ag.ai.NumberOnOwnGroupSequenceAI;
-
-                
+//not GWT import - same folder const NumberInSameGroupSequenceimport { NumberOnOwnGroupSequenceAI } from './NumberOnOwnGroupSequenceAI.js';
+//not GWT import - same folder const NumberOnOwnGroupSequenceAI
 export class NumberOnOwnGroupSequenceAIFactory
             extends Object
          {

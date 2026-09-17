@@ -19,21 +19,13 @@
 
 
 import { Context } from '../../../android/content/Context.js';
-//not GWT import const Context = globalThis.android.content.Context;
-
-      
+//not GWT import const Context
 import { Vibrator } from '../../../android/os/Vibrator.js';
-//not GWT import const Vibrator = globalThis.android.os.Vibrator;
-
-      
+//not GWT import const Vibrator
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
-
-      
 import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
-
-      
+//not GWT import const GameConfigurationCentral
 
 
 
@@ -53,12 +45,8 @@ import { GameConfigurationCentral } from '../../../org/allbinary/game/configurat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryVibrationME } from './AllBinaryVibrationME.js';
-//not GWT import - same folder const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
-
-                import { AllBinaryNoVibration } from './AllBinaryNoVibration.js';
-//not GWT import - same folder const AllBinaryNoVibration = globalThis.org.allbinary.media.AllBinaryNoVibration;
-
-                
+//not GWT import - same folder const AllBinaryVibrationMEimport { AllBinaryNoVibration } from './AllBinaryNoVibration.js';
+//not GWT import - same folder const AllBinaryNoVibration
 export class AllBinaryVibration extends AllBinaryVibrationME {
         
 

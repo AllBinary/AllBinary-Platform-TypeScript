@@ -19,9 +19,7 @@
 
 
 import { ColorCompositeInterface } from '../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
-//not GWT import const ColorCompositeInterface = globalThis.org.allbinary.graphics.color.ColorCompositeInterface;
-
-      
+//not GWT import const ColorCompositeInterface
 
 
 
@@ -41,9 +39,7 @@ import { ColorCompositeInterface } from '../../../org/allbinary/graphics/color/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-//not GWT import - same folder const IndexedAnimationInterface = globalThis.org.allbinary.animation.IndexedAnimationInterface;
-
-                
+//not GWT import - same folder const IndexedAnimationInterface
 export interface VectorAnimationInterface extends IndexedAnimationInterface, ColorCompositeInterface {
         
 

@@ -26,80 +26,42 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
-//not GWT import const ResultSet = globalThis.java.sql.ResultSet;
-
-      
+//not GWT import const ResultSet
 import { ResultSetMetaData } from '../../../../../java/sql/ResultSetMetaData.js';
-//not GWT import const ResultSetMetaData = globalThis.java.sql.ResultSetMetaData;
-
-      
+//not GWT import const ResultSetMetaData
 import { Calendar } from '../../../../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
-//not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
-
-      
+//not GWT import const Portion
 import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
-//not GWT import const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
-
-      
+//not GWT import const AbFileOutputStream
 import { BufferedLineReader } from '../../../../../org/allbinary/logic/io/BufferedLineReader.js';
-//not GWT import const BufferedLineReader = globalThis.org.allbinary.logic.io.BufferedLineReader;
-
-      
+//not GWT import const BufferedLineReader
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
-
-      
+//not GWT import const StreamUtil
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-      
+//not GWT import const AbFile
 import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
-//not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
-
-      
+//not GWT import const FileUtil
 import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
-//not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
-
-      
+//not GWT import const Directory
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { PATH_GLOBALS } from '../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-//not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
-
-      
+//not GWT import const PATH_GLOBALS
 import { OutputStream } from '../../../../../java/io/OutputStream.js';
-//not GWT import const OutputStream = globalThis.java.io.OutputStream;
-
-      
+//not GWT import const OutputStream
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -119,15 +81,9 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-//not GWT import - same folder const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
-
-                import { StringBuilder } from './StringBuilder.js';
-//not GWT import - same folder const StringBuilder = globalThis.org.allbinary.logic.communication.sql.StringBuilder;
-
-                import { AbSqlTable } from './AbSqlTable.js';
-//not GWT import - same folder const AbSqlTable = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
-
-                
+//not GWT import - same folder const SqlStringsimport { StringBuilder } from './StringBuilder.js';
+//not GWT import - same folder const StringBuilderimport { AbSqlTable } from './AbSqlTable.js';
+//not GWT import - same folder const AbSqlTable
 export class AbSqlTableUtil
             extends Object
          {

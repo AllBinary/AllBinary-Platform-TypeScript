@@ -19,41 +19,23 @@
 
 
 import { AssignWaypointsUtil } from '../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js';
-//not GWT import const AssignWaypointsUtil = globalThis.org.allbinary.game.input.form.AssignWaypointsUtil;
-
-      
+//not GWT import const AssignWaypointsUtil
 import { AdvancedRTSGameLayer } from '../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
-//not GWT import const AdvancedRTSGameLayer = globalThis.org.allbinary.game.layer.AdvancedRTSGameLayer;
-
-      
+//not GWT import const AdvancedRTSGameLayer
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
-//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
-
-      
+//not GWT import const RTSLayer
 import { BuildingLayer } from '../../../../org/allbinary/game/layer/building/BuildingLayer.js';
-//not GWT import const BuildingLayer = globalThis.org.allbinary.game.layer.building.BuildingLayer;
-
-      
+//not GWT import const BuildingLayer
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-      
+//not GWT import const CollidableDestroyableDamageableLayer
 import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
-//not GWT import const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
-
-      
+//not GWT import const UnitLayer
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
-//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
-
-      
+//not GWT import const Visitor
 
 
 
@@ -73,9 +55,7 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerGameInput = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
-
-                
+//not GWT import - same folder const SelectedRTSLayersPlayerGameInput
 export class SelectAdvancedRTSLayerVisitor extends Visitor {
         
 

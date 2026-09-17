@@ -23,29 +23,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 

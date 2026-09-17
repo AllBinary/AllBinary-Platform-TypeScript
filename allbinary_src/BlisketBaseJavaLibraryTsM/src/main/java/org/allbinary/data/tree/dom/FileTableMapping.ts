@@ -23,41 +23,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
-
-      
+//not GWT import const TableMappingInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-      
+//not GWT import const AbFile
 import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
-//not GWT import const FileData = globalThis.org.allbinary.logic.io.file.FileData;
-
-      
+//not GWT import const FileData
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
-//not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
-
-      
+//not GWT import const PathUtil
 
 
 

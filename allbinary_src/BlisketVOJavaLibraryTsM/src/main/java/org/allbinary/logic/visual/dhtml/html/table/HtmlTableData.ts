@@ -23,8 +23,6 @@
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
-      
-
 
 
 

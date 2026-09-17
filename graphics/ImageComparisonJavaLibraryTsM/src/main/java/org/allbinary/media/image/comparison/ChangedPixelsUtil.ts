@@ -25,41 +25,23 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-//not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
-
-      
+//not GWT import const PoolInterface
 import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-//not GWT import const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
-
-      
+//not GWT import const BufferedImageCacheable
 import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
-//not GWT import const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
-
-      
+//not GWT import const BufferedImageInfo
 import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
-//not GWT import const BufferedImageInfoFactory = globalThis.org.allbinary.media.image.cache.BufferedImageInfoFactory;
-
-      
+//not GWT import const BufferedImageInfoFactory
 import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
-//not GWT import const BufferedImagePoolSingleton = globalThis.org.allbinary.media.image.cache.BufferedImagePoolSingleton;
-
-      
+//not GWT import const BufferedImagePoolSingleton
 import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
-//not GWT import const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
-
-      
+//not GWT import const PixelDelta
 
 
 
@@ -79,9 +61,7 @@ import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
-
-                
+//not GWT import - same folder const ImageComparisonResult
 export class ChangedPixelsUtil
             extends Object
          {

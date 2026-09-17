@@ -23,25 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
-//not GWT import const Graphics2D = globalThis.java.awt.Graphics2D;
-
-      
+//not GWT import const Graphics2D
 import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
-//not GWT import const AffineTransform = globalThis.java.awt.geom.AffineTransform;
-
-      
+//not GWT import const AffineTransform
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
-
-      
+//not GWT import const ImageCache
 
 
 
@@ -61,15 +51,9 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
-
-                import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
-//not GWT import - same folder const ImageJ2SEUtil = globalThis.org.allbinary.media.image.ImageJ2SEUtil;
-
-                import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
-
-                
+//not GWT import - same folder const ImageUtilimport { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
+//not GWT import - same folder const ImageJ2SEUtilimport { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageCreationUtil
 export class ImageScaleUtil
             extends Object
          {

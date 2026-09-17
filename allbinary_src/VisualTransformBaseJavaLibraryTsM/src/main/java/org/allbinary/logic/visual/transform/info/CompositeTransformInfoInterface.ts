@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-                
+//not GWT import - same folder const TransformInfoInterface
 export interface CompositeTransformInfoInterface {
         
 

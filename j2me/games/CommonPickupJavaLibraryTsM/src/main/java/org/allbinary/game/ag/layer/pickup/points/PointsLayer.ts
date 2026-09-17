@@ -21,33 +21,19 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { ScoreableInterface } from '../../../../../../../org/allbinary/game/score/ScoreableInterface.js';
-//not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
-
-      
+//not GWT import const ScoreableInterface
 import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { Rectangle } from '../../../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { ViewPosition } from '../../../../../../../org/allbinary/view/ViewPosition.js';
-//not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
-
-      
+//not GWT import const ViewPosition
 
 
 

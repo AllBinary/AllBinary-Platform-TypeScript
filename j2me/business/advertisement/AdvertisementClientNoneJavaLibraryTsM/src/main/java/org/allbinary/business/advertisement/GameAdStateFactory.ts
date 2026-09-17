@@ -9,13 +9,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
-//not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
-
-      
+//not GWT import const GameAdState
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-//not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
-
-      
+//not GWT import const SoftwareInformation
 
 
 
@@ -35,15 +31,9 @@ import { SoftwareInformation } from '../../../../org/allbinary/logic/system/Soft
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
-//not GWT import - same folder const GameAdStateFactoryInterface = globalThis.org.allbinary.business.advertisement.GameAdStateFactoryInterface;
-
-                import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
-//not GWT import - same folder const AppNameLicensingAdConfiguration = globalThis.org.allbinary.business.advertisement.AppNameLicensingAdConfiguration;
-
-                import { GameAdStateBase } from './GameAdStateBase.js';
-//not GWT import - same folder const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
-
-                
+//not GWT import - same folder const GameAdStateFactoryInterfaceimport { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
+//not GWT import - same folder const AppNameLicensingAdConfigurationimport { GameAdStateBase } from './GameAdStateBase.js';
+//not GWT import - same folder const GameAdStateBase
 export class GameAdStateFactory
             extends Object
          implements GameAdStateFactoryInterface {

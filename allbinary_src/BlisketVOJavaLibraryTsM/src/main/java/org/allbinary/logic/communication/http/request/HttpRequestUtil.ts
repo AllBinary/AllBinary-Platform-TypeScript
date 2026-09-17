@@ -25,8 +25,6 @@
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
-      
-
 
 
 

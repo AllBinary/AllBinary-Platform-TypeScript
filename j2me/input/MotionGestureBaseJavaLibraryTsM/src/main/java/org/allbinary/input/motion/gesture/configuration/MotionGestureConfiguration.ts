@@ -21,33 +21,19 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
-//not GWT import const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
-
-      
+//not GWT import const CompleteMotionGestureInputEvent
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
-//not GWT import const MotionGestureToMotionGestureActionAssociation = globalThis.org.allbinary.input.motion.gesture.MotionGestureToMotionGestureActionAssociation;
-
-      
+//not GWT import const MotionGestureToMotionGestureActionAssociation
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 

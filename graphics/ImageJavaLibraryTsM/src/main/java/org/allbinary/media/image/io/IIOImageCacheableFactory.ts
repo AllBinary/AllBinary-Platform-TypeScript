@@ -21,13 +21,9 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-      
+//not GWT import const CacheableInterface
 import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
-
-      
+//not GWT import const CacheableInterfaceFactoryInterface
 
 
 
@@ -47,9 +43,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IIOImageCacheable } from './IIOImageCacheable.js';
-//not GWT import - same folder const IIOImageCacheable = globalThis.org.allbinary.media.image.io.IIOImageCacheable;
-
-                
+//not GWT import - same folder const IIOImageCacheable
 export class IIOImageCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

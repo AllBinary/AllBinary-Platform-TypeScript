@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresSubmissionProcessor } from './RemoteHighScoresSubmissionProcessor.js';
-//not GWT import - same folder const RemoteHighScoresSubmissionProcessor = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessor;
-
-                import { RemoteHighScoresSubmissionProcessorInterface } from './RemoteHighScoresSubmissionProcessorInterface.js';
-//not GWT import - same folder const RemoteHighScoresSubmissionProcessorInterface = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessorInterface;
-
-                
+//not GWT import - same folder const RemoteHighScoresSubmissionProcessorimport { RemoteHighScoresSubmissionProcessorInterface } from './RemoteHighScoresSubmissionProcessorInterface.js';
+//not GWT import - same folder const RemoteHighScoresSubmissionProcessorInterface
 export class RemoteHighScoresSubmissionProcessorFactory
             extends Object
          {

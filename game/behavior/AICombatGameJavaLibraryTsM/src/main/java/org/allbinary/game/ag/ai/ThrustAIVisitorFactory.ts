@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThrustAIVisitor } from './ThrustAIVisitor.js';
-//not GWT import - same folder const ThrustAIVisitor = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitor;
-
-                
+//not GWT import - same folder const ThrustAIVisitor
 export class ThrustAIVisitorFactory
             extends Object
          {

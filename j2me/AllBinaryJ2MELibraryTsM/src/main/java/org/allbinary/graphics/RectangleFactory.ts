@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-                import { PointFactory } from './PointFactory.js';
-//not GWT import - same folder const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-                
+//not GWT import - same folder const Rectangleimport { PointFactory } from './PointFactory.js';
+//not GWT import - same folder const PointFactory
 export class RectangleFactory
             extends Object
          {

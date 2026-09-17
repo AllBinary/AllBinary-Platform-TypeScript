@@ -19,13 +19,9 @@
 
 
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-//not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
-
-      
+//not GWT import const Money
 import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
-
-      
+//not GWT import const TableMappingInterface
 
 
 

@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import - same folder const LayerPlacementType = globalThis.org.allbinary.game.layer.LayerPlacementType;
-
-                
+//not GWT import - same folder const LayerPlacementType
 export class BasicLayerPlacement
             extends Object
          {

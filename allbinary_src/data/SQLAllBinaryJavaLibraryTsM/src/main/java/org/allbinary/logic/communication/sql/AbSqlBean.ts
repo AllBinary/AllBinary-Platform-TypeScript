@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
-//not GWT import const ResultSet = globalThis.java.sql.ResultSet;
-
-      
+//not GWT import const ResultSet
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Set } from '../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
-
-      
+//not GWT import const DbConnectionInfo
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -63,9 +51,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlRow } from './AbSqlRow.js';
-//not GWT import - same folder const AbSqlRow = globalThis.org.allbinary.logic.communication.sql.AbSqlRow;
-
-                
+//not GWT import - same folder const AbSqlRow
 export class AbSqlBean extends AbSqlRow {
         
 

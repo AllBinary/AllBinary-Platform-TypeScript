@@ -19,13 +19,9 @@
 
 
 import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
-//not GWT import const AdminConfigurationHelperFactory = globalThis.admin.taghelpers.AdminConfigurationHelperFactory;
-
-      
+//not GWT import const AdminConfigurationHelperFactory
 import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
-//not GWT import const AdminConfigurationRequestHelperFactory = globalThis.admin.taghelpers.AdminConfigurationRequestHelperFactory;
-
-      
+//not GWT import const AdminConfigurationRequestHelperFactory
 
 
 
@@ -45,9 +41,7 @@ import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
-
-                
+//not GWT import - same folder const TableTag
 export class AdminConfigurationTag extends TableTag {
         
 

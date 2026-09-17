@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-//not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
-
-      
+//not GWT import const ScrollSelectionForm
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-//not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
-
-      
+//not GWT import const MotionGestureEvent
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -55,12 +47,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import - same folder const CommandFormInputProcessor = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
-
-                import { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
-//not GWT import - same folder const PopupMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.PopupMenuInputProcessor;
-
-                
+//not GWT import - same folder const CommandFormInputProcessorimport { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
+//not GWT import - same folder const PopupMenuInputProcessor
 export class PopupCommandFormInputProcessor extends CommandFormInputProcessor {
         
 

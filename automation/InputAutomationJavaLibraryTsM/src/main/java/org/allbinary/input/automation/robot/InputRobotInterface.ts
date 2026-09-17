@@ -23,17 +23,11 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
-
-      
+//not GWT import const HelpSet
 
 
 
@@ -53,15 +47,9 @@ import { HelpSet } from '../../../../../javax/help/HelpSet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle = globalThis.org.allbinary.input.automation.robot.Rectangle;
-
-                import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.input.automation.robot.Color;
-
-                import { Point } from './Point.js';
-//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.robot.Point;
-
-                
+//not GWT import - same folder const Rectangleimport { Color } from './Color.js';
+//not GWT import - same folder const Colorimport { Point } from './Point.js';
+//not GWT import - same folder const Point
 export interface InputRobotInterface {
         
 

@@ -21,8 +21,6 @@
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
-      
-
 
 
 
@@ -41,9 +39,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameStatistics } from './BaseGameStatistics.js';
-//not GWT import - same folder const BaseGameStatistics = globalThis.org.allbinary.canvas.BaseGameStatistics;
-
-                //ActualPlatform
+//not GWT import - same folder const BaseGameStatistics//ActualPlatform
 /*actual*/ export class GameStatisticsFactory extends BaseGameStatistics {
         
 

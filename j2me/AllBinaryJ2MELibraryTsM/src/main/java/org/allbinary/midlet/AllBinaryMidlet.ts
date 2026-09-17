@@ -21,81 +21,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { Display } from '../../../javax/microedition/lcdui/Display.js';
-//not GWT import const Display = globalThis.javax.microedition.lcdui.Display;
-
-      
+//not GWT import const Display
 import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
-//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-      
+//not GWT import const Displayable
 import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
-//not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
-
-      
+//not GWT import const NullCanvas
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-//not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
-
-      
+//not GWT import const MIDlet
 import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
-//not GWT import const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
-
-      
+//not GWT import const MIDletStateChangeException
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
-//not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
-
-      
+//not GWT import const EventStrings
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Memory } from '../../../org/allbinary/system/Memory.js';
-//not GWT import const Memory = globalThis.org.allbinary.system.Memory;
-
-      
+//not GWT import const Memory
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 

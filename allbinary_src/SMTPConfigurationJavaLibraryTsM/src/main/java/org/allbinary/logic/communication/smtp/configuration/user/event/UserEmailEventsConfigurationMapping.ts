@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
-
-      
+//not GWT import const TableMappingInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 
 
 
@@ -61,12 +51,8 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventsConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationInterface;
-
-                import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
-//not GWT import - same folder const UserEmailEventsConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationData;
-
-                
+//not GWT import - same folder const UserEmailEventsConfigurationInterfaceimport { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
+//not GWT import - same folder const UserEmailEventsConfigurationData
 export class UserEmailEventsConfigurationMapping
             extends Object
          implements TableMappingInterface {

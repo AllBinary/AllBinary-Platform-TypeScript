@@ -21,41 +21,23 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { WorkFlowEntityFactory } from '../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
-//not GWT import const WorkFlowEntityFactory = globalThis.org.allbinary.data.tables.workflow.WorkFlowEntityFactory;
-
-      
+//not GWT import const WorkFlowEntityFactory
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
-
-      
+//not GWT import const ValidationComponentInterface
 import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
-//not GWT import const WorkFlowData = globalThis.org.allbinary.logic.control.workflow.WorkFlowData;
-
-      
+//not GWT import const WorkFlowData
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-//not GWT import const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
-
-      
+//not GWT import const TransformInfoHttpInterface
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { Document } from '../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -75,9 +57,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowView } from './WorkFlowView.js';
-//not GWT import - same folder const WorkFlowView = globalThis.views.admin.workflow.WorkFlowView;
-
-                
+//not GWT import - same folder const WorkFlowView
 export class EditValidationView extends WorkFlowView implements ValidationComponentInterface {
         
 

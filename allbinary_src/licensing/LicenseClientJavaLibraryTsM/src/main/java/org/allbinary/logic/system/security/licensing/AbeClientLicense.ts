@@ -22,32 +22,18 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -67,18 +53,10 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import - same folder const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
-
-                import { LicenseType } from './LicenseType.js';
-//not GWT import - same folder const LicenseType = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
-
-                import { AbeClientInformationData } from './AbeClientInformationData.js';
-//not GWT import - same folder const AbeClientInformationData = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
-
-                import { LicenseTypeFactory } from './LicenseTypeFactory.js';
-//not GWT import - same folder const LicenseTypeFactory = globalThis.org.allbinary.logic.system.security.licensing.LicenseTypeFactory;
-
-                
+//not GWT import - same folder const AbeLicenseInterfaceimport { LicenseType } from './LicenseType.js';
+//not GWT import - same folder const LicenseTypeimport { AbeClientInformationData } from './AbeClientInformationData.js';
+//not GWT import - same folder const AbeClientInformationDataimport { LicenseTypeFactory } from './LicenseTypeFactory.js';
+//not GWT import - same folder const LicenseTypeFactory
 export class AbeClientLicense
             extends Object
          implements AbeLicenseInterface {

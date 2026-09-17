@@ -19,9 +19,7 @@
 
 
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 
 
 
@@ -41,9 +39,7 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
-//not GWT import - same folder const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
-
-                
+//not GWT import - same folder const CompleteMotionGestureInputEvent
 export interface CompleteMotionGestureInputEventListenerInterface extends EventListenerInterface {
         
 

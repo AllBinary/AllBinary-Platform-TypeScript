@@ -23,21 +23,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
-//not GWT import const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
-
-      
+//not GWT import const CollidableBaseBehavior
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
-//not GWT import const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
-
-      
+//not GWT import const CollidableInterfaceCompositeInterface
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
-
-      
+//not GWT import const CollidableCompositeLayer
 import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
-//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
-
-      
+//not GWT import const LayerManager
 
 
 

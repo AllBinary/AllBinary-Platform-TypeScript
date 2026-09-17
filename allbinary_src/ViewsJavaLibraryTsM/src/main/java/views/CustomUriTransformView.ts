@@ -23,53 +23,29 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
-
-      
+//not GWT import const DomDocumentHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-//not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
-
-      
+//not GWT import const ServiceClientInformationInterfaceFactory
 import { TransformInfoCustomUriTransformer } from '../org/allbinary/logic/visual/transform/TransformInfoCustomUriTransformer.js';
-//not GWT import const TransformInfoCustomUriTransformer = globalThis.org.allbinary.logic.visual.transform.TransformInfoCustomUriTransformer;
-
-      
+//not GWT import const TransformInfoCustomUriTransformer
 import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
-//not GWT import const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
-
-      
+//not GWT import const TransformInterface
 import { TransformDocumentFactory } from '../org/allbinary/logic/visual/transform/data/TransformDocumentFactory.js';
-//not GWT import const TransformDocumentFactory = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentFactory;
-
-      
+//not GWT import const TransformDocumentFactory
 import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
-//not GWT import const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
-
-      
+//not GWT import const TransformDocumentInterface
 import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 

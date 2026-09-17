@@ -23,65 +23,35 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ByteArrayInputStream } from '../../../java/io/ByteArrayInputStream.js';
-//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
-
-      
+//not GWT import const ByteArrayInputStream
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
-
-      
+//not GWT import const ItemInterface
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
-
-      
+//not GWT import const URLGLOBALS
 import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js';
-//not GWT import const UploadMediaSingleton = globalThis.org.allbinary.logic.communication.http.file.upload.media.UploadMediaSingleton;
-
-      
+//not GWT import const UploadMediaSingleton
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-      
+//not GWT import const AbFile
 import { FileUtil } from '../../../org/allbinary/logic/io/file/FileUtil.js';
-//not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
-
-      
+//not GWT import const FileUtil
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
-//not GWT import const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
-
-      
+//not GWT import const MediaData
 import { MediaTypeData } from '../../../org/allbinary/logic/visual/media/MediaTypeData.js';
-//not GWT import const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
-
-      
+//not GWT import const MediaTypeData
 import { MediaUtil } from '../../../org/allbinary/logic/visual/media/MediaUtil.js';
-//not GWT import const MediaUtil = globalThis.org.allbinary.logic.visual.media.MediaUtil;
-
-      
+//not GWT import const MediaUtil
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

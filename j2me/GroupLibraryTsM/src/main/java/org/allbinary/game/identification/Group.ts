@@ -22,12 +22,8 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -47,12 +43,8 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GroupInterface } from './GroupInterface.js';
-//not GWT import - same folder const GroupInterface = globalThis.org.allbinary.game.identification.GroupInterface;
-
-                import { GroupCommonFactory } from './GroupCommonFactory.js';
-//not GWT import - same folder const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
-
-                
+//not GWT import - same folder const GroupInterfaceimport { GroupCommonFactory } from './GroupCommonFactory.js';
+//not GWT import - same folder const GroupCommonFactory
 export class Group
             extends Object
          implements GroupInterface {

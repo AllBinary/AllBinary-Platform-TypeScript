@@ -23,41 +23,23 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { HttpSession } from '../../../../../../../javax/servlet/http/HttpSession.js';
-//not GWT import const HttpSession = globalThis.javax.servlet.http.HttpSession;
-
-      
+//not GWT import const HttpSession
 import { PageContext } from '../../../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
-//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
-
-      
+//not GWT import const UserData
 import { PaymentGatewayData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-//not GWT import const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
-
-      
+//not GWT import const PaymentGatewayData
 import { BasicUserRole } from '../../../../../../../org/allbinary/business/user/role/BasicUserRole.js';
-//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
-
-      
+//not GWT import const BasicUserRole
 import { BasicUserRoleData } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleData.js';
-//not GWT import const BasicUserRoleData = globalThis.org.allbinary.business.user.role.BasicUserRoleData;
-
-      
+//not GWT import const BasicUserRoleData
 import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
-
-      
+//not GWT import const BooleanFactory
 
 
 
@@ -77,9 +59,7 @@ import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeblisketSessionData } from './WeblisketSessionData.js';
-//not GWT import - same folder const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
-
-                
+//not GWT import - same folder const WeblisketSessionData
 export class BasicWeblisketSession
             extends Object
          {

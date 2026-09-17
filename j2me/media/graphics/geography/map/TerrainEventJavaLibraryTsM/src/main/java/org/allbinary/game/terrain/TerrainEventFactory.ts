@@ -22,16 +22,10 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
-//not GWT import const AllBinaryEventObjectFactoryInterface = globalThis.org.allbinary.logic.util.event.AllBinaryEventObjectFactoryInterface;
-
-      
+//not GWT import const AllBinaryEventObjectFactoryInterface
 
 
 
@@ -51,9 +45,7 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEvent } from './TerrainEvent.js';
-//not GWT import - same folder const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
-
-                
+//not GWT import - same folder const TerrainEvent
 export class TerrainEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {

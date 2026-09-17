@@ -24,16 +24,10 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 
 
 
@@ -53,12 +47,8 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//not GWT import - same folder const WaypointPathRunnableBase = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
-
-                import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
-
-                
+//not GWT import - same folder const WaypointPathRunnableBaseimport { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import - same folder const WaypointBehaviorBase
 export class WaypointPathRunnable extends WaypointPathRunnableBase {
         
 

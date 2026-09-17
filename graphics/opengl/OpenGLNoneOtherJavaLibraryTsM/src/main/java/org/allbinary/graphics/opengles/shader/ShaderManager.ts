@@ -21,17 +21,11 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
-
-      
+//not GWT import const GL10
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 

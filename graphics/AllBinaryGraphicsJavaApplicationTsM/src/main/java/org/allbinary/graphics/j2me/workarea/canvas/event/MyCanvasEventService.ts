@@ -43,18 +43,10 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerList } from './EventListenerList.js';
-//not GWT import - same folder const EventListenerList = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.EventListenerList;
-
-                import { EventListener } from './EventListener.js';
-//not GWT import - same folder const EventListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.EventListener;
-
-                import { MyCanvasEventListener } from './MyCanvasEventListener.js';
-//not GWT import - same folder const MyCanvasEventListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventListener;
-
-                import { MyCanvasEvent } from './MyCanvasEvent.js';
-//not GWT import - same folder const MyCanvasEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
-
-                
+//not GWT import - same folder const EventListenerListimport { EventListener } from './EventListener.js';
+//not GWT import - same folder const EventListenerimport { MyCanvasEventListener } from './MyCanvasEventListener.js';
+//not GWT import - same folder const MyCanvasEventListenerimport { MyCanvasEvent } from './MyCanvasEvent.js';
+//not GWT import - same folder const MyCanvasEvent
 export class MyCanvasEventService
             extends Object
          {

@@ -21,33 +21,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
-//not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
-
-      
+//not GWT import const AllBinaryGameLayer
 import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-//not GWT import const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
-
-      
+//not GWT import const BasicVelocityProperties
 import { VelocityInterfaceCompositeInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-//not GWT import const VelocityInterfaceCompositeInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterfaceCompositeInterface;
-
-      
+//not GWT import const VelocityInterfaceCompositeInterface
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
-
-      
+//not GWT import const BasicDecimal
 import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
-//not GWT import const AxisMathVectorUtil = globalThis.org.allbinary.logic.math.vector.AxisMathVectorUtil;
-
-      
+//not GWT import const AxisMathVectorUtil
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 
 
 
@@ -67,9 +53,7 @@ import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Movement } from './Movement.js';
-//not GWT import - same folder const Movement = globalThis.org.allbinary.physics.movement.Movement;
-
-                
+//not GWT import - same folder const Movement
 export class NoZBasicConstantVelocityMovement extends Movement implements VelocityInterfaceCompositeInterface {
         
 

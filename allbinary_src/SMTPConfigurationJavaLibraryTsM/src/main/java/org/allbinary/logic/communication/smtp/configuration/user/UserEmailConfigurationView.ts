@@ -23,53 +23,29 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { UserEmailEventsConfigurationData } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationData.js';
-//not GWT import const UserEmailEventsConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationData;
-
-      
+//not GWT import const UserEmailEventsConfigurationData
 import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js';
-//not GWT import const UserEmailEventsConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationInterface;
-
-      
+//not GWT import const UserEmailEventsConfigurationInterface
 import { UserEmailEventsConfigurationView } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationView.js';
-//not GWT import const UserEmailEventsConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationView;
-
-      
+//not GWT import const UserEmailEventsConfigurationView
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -89,18 +65,10 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailConfigurationInterface } from './UserEmailConfigurationInterface.js';
-//not GWT import - same folder const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
-
-                import { UserEmailConfiguration } from './UserEmailConfiguration.js';
-//not GWT import - same folder const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
-
-                import { UserEmailConfigurationMapping } from './UserEmailConfigurationMapping.js';
-//not GWT import - same folder const UserEmailConfigurationMapping = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationMapping;
-
-                import { UserEmailConfigurationData } from './UserEmailConfigurationData.js';
-//not GWT import - same folder const UserEmailConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
-
-                
+//not GWT import - same folder const UserEmailConfigurationInterfaceimport { UserEmailConfiguration } from './UserEmailConfiguration.js';
+//not GWT import - same folder const UserEmailConfigurationimport { UserEmailConfigurationMapping } from './UserEmailConfigurationMapping.js';
+//not GWT import - same folder const UserEmailConfigurationMappingimport { UserEmailConfigurationData } from './UserEmailConfigurationData.js';
+//not GWT import - same folder const UserEmailConfigurationData
 export class UserEmailConfigurationView
             extends Object
          implements DomNodeInterface {

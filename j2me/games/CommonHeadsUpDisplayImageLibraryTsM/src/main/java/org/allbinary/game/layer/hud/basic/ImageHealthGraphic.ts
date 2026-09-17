@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
-//not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
-
-      
+//not GWT import const AnimationInterface
 import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
-//not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
-
-      
+//not GWT import const HealthInterface
 import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
-//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
-
-      
+//not GWT import const Anchor
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
-//not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
-
-      
+//not GWT import const ImageCacheFactory
 
 
 
@@ -63,9 +51,7 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthGraphic } from './HealthGraphic.js';
-//not GWT import - same folder const HealthGraphic = globalThis.org.allbinary.game.layer.hud.basic.HealthGraphic;
-
-                
+//not GWT import - same folder const HealthGraphic
 export class ImageHealthGraphic extends HealthGraphic {
         
 

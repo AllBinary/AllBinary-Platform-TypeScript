@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-      
+//not GWT import const CacheableInterface
 import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
-
-      
+//not GWT import const CacheableInterfaceFactoryInterface
 
 
 
@@ -47,9 +43,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorCacheable } from './ColorCacheable.js';
-//not GWT import - same folder const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
-
-                
+//not GWT import - same folder const ColorCacheable
 export class ColorCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

@@ -25,41 +25,23 @@
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { Color } from '../../../../../java/awt/Color.js';
-//not GWT import const Color = globalThis.java.awt.Color;
-
-      
+//not GWT import const Color
 import { Rectangle } from '../../../../../java/awt/Rectangle.js';
-//not GWT import const Rectangle = globalThis.java.awt.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/collision/RectangleCollisionUtil.js';
-//not GWT import const RectangleCollisionUtil = globalThis.org.allbinary.collision.RectangleCollisionUtil;
-
-      
+//not GWT import const RectangleCollisionUtil
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
-//not GWT import const ImageComparatorConstraintsInterface = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
-
-      
+//not GWT import const ImageComparatorConstraintsInterface
 
 
 

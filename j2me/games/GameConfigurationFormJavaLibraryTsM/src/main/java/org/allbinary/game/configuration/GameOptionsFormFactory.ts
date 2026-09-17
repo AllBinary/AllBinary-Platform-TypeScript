@@ -23,25 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-//not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
-
-      
+//not GWT import const CommandForm
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -61,9 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import - same folder const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
-
-                
+//not GWT import - same folder const GameOptionsForm
 export class GameOptionsFormFactory
             extends Object
          {

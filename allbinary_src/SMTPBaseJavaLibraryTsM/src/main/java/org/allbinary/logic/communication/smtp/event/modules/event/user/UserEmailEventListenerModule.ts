@@ -23,33 +23,19 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
-//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
-
-      
+//not GWT import const UserInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { BasicEmail } from '../../../../../../../../../org/allbinary/logic/communication/smtp/BasicEmail.js';
-//not GWT import const BasicEmail = globalThis.org.allbinary.logic.communication.smtp.BasicEmail;
-
-      
+//not GWT import const BasicEmail
 import { EmailInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
-//not GWT import const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
-
-      
+//not GWT import const EmailInterface
 import { EmailEvent } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
-//not GWT import const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
-
-      
+//not GWT import const EmailEvent
 import { UserEmailEventListenerInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
-//not GWT import const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
-
-      
+//not GWT import const UserEmailEventListenerInterface
 import { EmailQueueFactory } from '../../../../../../../../../org/allbinary/logic/communication/smtp/queue/EmailQueueFactory.js';
-//not GWT import const EmailQueueFactory = globalThis.org.allbinary.logic.communication.smtp.queue.EmailQueueFactory;
-
-      
+//not GWT import const EmailQueueFactory
 
 
 

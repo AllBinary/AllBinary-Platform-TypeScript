@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 
 
 

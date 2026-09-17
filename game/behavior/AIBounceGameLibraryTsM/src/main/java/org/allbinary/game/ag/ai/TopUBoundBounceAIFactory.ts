@@ -23,53 +23,29 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
-
-      
+//not GWT import const ArtificialIntelligenceInterface
 import { TopULayerBounds } from '../../../../../org/allbinary/bounds/TopULayerBounds.js';
-//not GWT import const TopULayerBounds = globalThis.org.allbinary.bounds.TopULayerBounds;
-
-      
+//not GWT import const TopULayerBounds
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
-//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
-
-      
+//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { VelocityInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
-//not GWT import const VelocityInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterface;
-
-      
+//not GWT import const VelocityInterface
 import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-//not GWT import const VelocityInterfaceCompositeInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterfaceCompositeInterface;
-
-      
+//not GWT import const VelocityInterfaceCompositeInterface
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -89,12 +65,8 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundBounceAI } from './BoundBounceAI.js';
-//not GWT import - same folder const BoundBounceAI = globalThis.org.allbinary.game.ag.ai.BoundBounceAI;
-
-                import { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
-//not GWT import - same folder const ReverseVelocityBoundsVisitor = globalThis.org.allbinary.game.ag.ai.ReverseVelocityBoundsVisitor;
-
-                
+//not GWT import - same folder const BoundBounceAIimport { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
+//not GWT import - same folder const ReverseVelocityBoundsVisitor
 export class TopUBoundBounceAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

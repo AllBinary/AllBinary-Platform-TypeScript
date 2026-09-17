@@ -23,17 +23,11 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
-
-      
+//not GWT import const AllBinaryTiledLayer
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInitVisitorInterface.js';
-//not GWT import const GeographicMapCellPositionFactoryInitVisitorInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInitVisitorInterface;
-
-      
+//not GWT import const GeographicMapCellPositionFactoryInitVisitorInterface
 
 
 
@@ -53,9 +47,7 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
-//not GWT import - same folder const GeologicalGeographicMapCellPosition = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
-
-                
+//not GWT import - same folder const GeologicalGeographicMapCellPosition
 export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             extends Object
          implements GeographicMapCellPositionFactoryInitVisitorInterface {

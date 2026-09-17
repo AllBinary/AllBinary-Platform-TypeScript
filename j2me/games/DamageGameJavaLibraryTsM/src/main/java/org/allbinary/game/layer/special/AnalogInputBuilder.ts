@@ -21,13 +21,9 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
-//not GWT import const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
-
-      
+//not GWT import const GameInputProcessor
 
 
 
@@ -47,45 +43,19 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialUpGameInputProcessor } from './SpecialUpGameInputProcessor.js';
-//not GWT import - same folder const SpecialUpGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialUpGameInputProcessor;
-
-                import { SpecialDownGameInputProcessor } from './SpecialDownGameInputProcessor.js';
-//not GWT import - same folder const SpecialDownGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialDownGameInputProcessor;
-
-                import { SpecialRightGameInputProcessor } from './SpecialRightGameInputProcessor.js';
-//not GWT import - same folder const SpecialRightGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialRightGameInputProcessor;
-
-                import { SpecialLeftGameInputProcessor } from './SpecialLeftGameInputProcessor.js';
-//not GWT import - same folder const SpecialLeftGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialLeftGameInputProcessor;
-
-                import { Special1GameInputProcessor } from './Special1GameInputProcessor.js';
-//not GWT import - same folder const Special1GameInputProcessor = globalThis.org.allbinary.game.layer.special.Special1GameInputProcessor;
-
-                import { Special3GameInputProcessor } from './Special3GameInputProcessor.js';
-//not GWT import - same folder const Special3GameInputProcessor = globalThis.org.allbinary.game.layer.special.Special3GameInputProcessor;
-
-                import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import - same folder const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-                import { SpecialAnalogUpGameInputProcessor } from './SpecialAnalogUpGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogUpGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialAnalogUpGameInputProcessor;
-
-                import { SpecialAnalogDownGameInputProcessor } from './SpecialAnalogDownGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogDownGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialAnalogDownGameInputProcessor;
-
-                import { SpecialAnalogRightGameInputProcessor } from './SpecialAnalogRightGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogRightGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialAnalogRightGameInputProcessor;
-
-                import { SpecialAnalogLeftGameInputProcessor } from './SpecialAnalogLeftGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogLeftGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialAnalogLeftGameInputProcessor;
-
-                import { SpecialAnalogLeftTriggerGameInputProcessor } from './SpecialAnalogLeftTriggerGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogLeftTriggerGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialAnalogLeftTriggerGameInputProcessor;
-
-                import { SpecialAnalogRightTriggerGameInputProcessor } from './SpecialAnalogRightTriggerGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogRightTriggerGameInputProcessor = globalThis.org.allbinary.game.layer.special.SpecialAnalogRightTriggerGameInputProcessor;
-
-                
+//not GWT import - same folder const SpecialUpGameInputProcessorimport { SpecialDownGameInputProcessor } from './SpecialDownGameInputProcessor.js';
+//not GWT import - same folder const SpecialDownGameInputProcessorimport { SpecialRightGameInputProcessor } from './SpecialRightGameInputProcessor.js';
+//not GWT import - same folder const SpecialRightGameInputProcessorimport { SpecialLeftGameInputProcessor } from './SpecialLeftGameInputProcessor.js';
+//not GWT import - same folder const SpecialLeftGameInputProcessorimport { Special1GameInputProcessor } from './Special1GameInputProcessor.js';
+//not GWT import - same folder const Special1GameInputProcessorimport { Special3GameInputProcessor } from './Special3GameInputProcessor.js';
+//not GWT import - same folder const Special3GameInputProcessorimport { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
+//not GWT import - same folder const CollidableDestroyableDamageableLayerimport { SpecialAnalogUpGameInputProcessor } from './SpecialAnalogUpGameInputProcessor.js';
+//not GWT import - same folder const SpecialAnalogUpGameInputProcessorimport { SpecialAnalogDownGameInputProcessor } from './SpecialAnalogDownGameInputProcessor.js';
+//not GWT import - same folder const SpecialAnalogDownGameInputProcessorimport { SpecialAnalogRightGameInputProcessor } from './SpecialAnalogRightGameInputProcessor.js';
+//not GWT import - same folder const SpecialAnalogRightGameInputProcessorimport { SpecialAnalogLeftGameInputProcessor } from './SpecialAnalogLeftGameInputProcessor.js';
+//not GWT import - same folder const SpecialAnalogLeftGameInputProcessorimport { SpecialAnalogLeftTriggerGameInputProcessor } from './SpecialAnalogLeftTriggerGameInputProcessor.js';
+//not GWT import - same folder const SpecialAnalogLeftTriggerGameInputProcessorimport { SpecialAnalogRightTriggerGameInputProcessor } from './SpecialAnalogRightTriggerGameInputProcessor.js';
+//not GWT import - same folder const SpecialAnalogRightTriggerGameInputProcessor
 export class AnalogInputBuilder
             extends Object
          {

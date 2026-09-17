@@ -23,69 +23,37 @@
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Iterator } from '../../../../../../../../../java/util/Iterator.js';
-//not GWT import const Iterator = globalThis.java.util.Iterator;
-
-      
+//not GWT import const Iterator
 import { Set } from '../../../../../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-      
+//not GWT import const DomNodeHelper
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 import { BasicProfileActionScriptProcessor } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/BasicProfileActionScriptProcessor.js';
-//not GWT import const BasicProfileActionScriptProcessor = globalThis.org.allbinary.input.automation.actions.script.condition.processors.BasicProfileActionScriptProcessor;
-
-      
+//not GWT import const BasicProfileActionScriptProcessor
 import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-//not GWT import const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
-
-      
+//not GWT import const InputRobotFactory
 import { InputRobotInterface } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-//not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
-
-      
+//not GWT import const InputRobotInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -105,12 +73,8 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import - same folder const ProfileActionScriptInputInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
-
-                import { GenericProfileActionScriptInputData } from './GenericProfileActionScriptInputData.js';
-//not GWT import - same folder const GenericProfileActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.GenericProfileActionScriptInputData;
-
-                
+//not GWT import - same folder const ProfileActionScriptInputInterfaceimport { GenericProfileActionScriptInputData } from './GenericProfileActionScriptInputData.js';
+//not GWT import - same folder const GenericProfileActionScriptInputData
 export class BasicProfileActionScriptInput extends BasicProfileActionScriptProcessor implements ProfileActionScriptInputInterface {
         
 

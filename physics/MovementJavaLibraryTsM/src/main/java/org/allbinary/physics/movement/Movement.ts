@@ -23,13 +23,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
-//not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
-
-      
+//not GWT import const AllBinaryGameLayer
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
-
-      
+//not GWT import const BasicDecimal
 
 
 
@@ -49,9 +45,7 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MovementInterface } from './MovementInterface.js';
-//not GWT import - same folder const MovementInterface = globalThis.org.allbinary.physics.movement.MovementInterface;
-
-                
+//not GWT import - same folder const MovementInterface
 export class Movement
             extends Object
          implements MovementInterface {

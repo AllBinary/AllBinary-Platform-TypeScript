@@ -25,25 +25,15 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -63,24 +53,12 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
-
-                import { ImageUnifierProperties } from './ImageUnifierProperties.js';
-//not GWT import - same folder const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
-
-                import { ImageUnifierCell } from './ImageUnifierCell.js';
-//not GWT import - same folder const ImageUnifierCell = globalThis.org.allbinary.media.image.ImageUnifierCell;
-
-                import { ImageUnifierUtil } from './ImageUnifierUtil.js';
-//not GWT import - same folder const ImageUnifierUtil = globalThis.org.allbinary.media.image.ImageUnifierUtil;
-
-                import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import - same folder const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
-
-                import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import - same folder const ImageProcessedVisitor = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
-
-                
+//not GWT import - same folder const ImageUtilimport { ImageUnifierProperties } from './ImageUnifierProperties.js';
+//not GWT import - same folder const ImageUnifierPropertiesimport { ImageUnifierCell } from './ImageUnifierCell.js';
+//not GWT import - same folder const ImageUnifierCellimport { ImageUnifierUtil } from './ImageUnifierUtil.js';
+//not GWT import - same folder const ImageUnifierUtilimport { ImageProcessorInput } from './ImageProcessorInput.js';
+//not GWT import - same folder const ImageProcessorInputimport { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import - same folder const ImageProcessedVisitor
 export class SpriteSplitterUtil
             extends Object
          {

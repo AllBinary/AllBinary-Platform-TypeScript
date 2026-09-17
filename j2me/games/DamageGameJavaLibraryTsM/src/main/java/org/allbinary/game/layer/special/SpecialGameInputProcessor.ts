@@ -19,9 +19,7 @@
 
 
 import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
-//not GWT import const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
-
-      
+//not GWT import const GameInputProcessor
 
 
 
@@ -41,9 +39,7 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import - same folder const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-                
+//not GWT import - same folder const CollidableDestroyableDamageableLayer
 export class SpecialGameInputProcessor extends GameInputProcessor {
         
 

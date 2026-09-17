@@ -23,29 +23,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { AbCrypt } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
-//not GWT import const AbCrypt = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.AbCrypt;
-
-      
+//not GWT import const AbCrypt
 import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
-//not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
-
-      
+//not GWT import const KeySpecFactory
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -65,9 +53,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseEncoder } from './DatabaseEncoder.js';
-//not GWT import - same folder const DatabaseEncoder = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
-
-                
+//not GWT import - same folder const DatabaseEncoder
 export class WeakCrypt
             extends Object
          {

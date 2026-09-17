@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 
 
 

@@ -19,9 +19,7 @@
 
 
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
-
-      
+//not GWT import const DbConnectionInfo
 
 
 
@@ -41,9 +39,7 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBasic } from './AbSqlBasic.js';
-//not GWT import - same folder const AbSqlBasic = globalThis.org.allbinary.logic.communication.sql.AbSqlBasic;
-
-                
+//not GWT import - same folder const AbSqlBasic
 export class AbSqlTablePresentation extends AbSqlBasic {
         
 

@@ -23,33 +23,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-      
+//not GWT import const DomNodeHelper
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
-//not GWT import const Attr = globalThis.org.w3c.dom.Attr;
-
-      
+//not GWT import const Attr
 import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
-//not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
-
-      
+//not GWT import const NamedNodeMap
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -69,12 +55,8 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
-
-                import { TransformInfoProperties } from './TransformInfoProperties.js';
-//not GWT import - same folder const TransformInfoProperties = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoProperties;
-
-                
+//not GWT import - same folder const TransformInfoDataimport { TransformInfoProperties } from './TransformInfoProperties.js';
+//not GWT import - same folder const TransformInfoProperties
 export class TransformInfoPropertiesFactory
             extends Object
          {

@@ -19,13 +19,9 @@
 
 
 import { TouchButtonBlankResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
-//not GWT import const TouchButtonBlankResource = globalThis.org.allbinary.input.motion.button.TouchButtonBlankResource;
-
-      
+//not GWT import const TouchButtonBlankResource
 import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
-//not GWT import const TouchButtonResource = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
-
-      
+//not GWT import const TouchButtonResource
 
 
 

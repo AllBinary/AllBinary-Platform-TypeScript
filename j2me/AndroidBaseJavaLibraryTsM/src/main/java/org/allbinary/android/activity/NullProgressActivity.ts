@@ -41,9 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressActivityInterface } from './ProgressActivityInterface.js';
-//not GWT import - same folder const ProgressActivityInterface = globalThis.org.allbinary.android.activity.ProgressActivityInterface;
-
-                
+//not GWT import - same folder const ProgressActivityInterface
 export class NullProgressActivity
             extends Object
          implements ProgressActivityInterface {

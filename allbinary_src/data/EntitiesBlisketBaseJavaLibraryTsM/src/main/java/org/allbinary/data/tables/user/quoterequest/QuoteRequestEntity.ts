@@ -23,53 +23,29 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-//not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
-
-      
+//not GWT import const UserDbInitInfo
 import { QuoteRequestData } from '../../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
-//not GWT import const QuoteRequestData = globalThis.org.allbinary.business.quoterequest.QuoteRequestData;
-
-      
+//not GWT import const QuoteRequestData
 import { UserData } from '../../../../../../org/allbinary/business/user/UserData.js';
-//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
-
-      
+//not GWT import const UserData
 import { QuoteRequest } from '../../../../../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
-//not GWT import const QuoteRequest = globalThis.org.allbinary.business.user.quoterequest.QuoteRequest;
-
-      
+//not GWT import const QuoteRequest
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
-
-      
+//not GWT import const AbSqlBean
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -89,9 +65,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { QuoteRequestEntityInterface } from './QuoteRequestEntityInterface.js';
-//not GWT import - same folder const QuoteRequestEntityInterface = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntityInterface;
-
-                
+//not GWT import - same folder const QuoteRequestEntityInterface
 export class QuoteRequestEntity extends AbSqlBean implements QuoteRequestEntityInterface {
         
 

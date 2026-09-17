@@ -23,17 +23,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
-//not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
-
-      
+//not GWT import const UserFactoryInterface
 import { UserInterface } from '../../../../../org/allbinary/business/user/UserInterface.js';
-//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
-
-      
+//not GWT import const UserInterface
 
 
 
@@ -53,9 +47,7 @@ import { UserInterface } from '../../../../../org/allbinary/business/user/UserIn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { User } from './User.js';
-//not GWT import - same folder const User = globalThis.org.allbinary.business.user.modules.User;
-
-                
+//not GWT import - same folder const User
 export class UserFactory
             extends Object
          implements UserFactoryInterface {

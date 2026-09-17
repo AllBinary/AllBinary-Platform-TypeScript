@@ -21,57 +21,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { NumberStringHud } from '../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHud.js';
-//not GWT import const NumberStringHud = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHud;
-
-      
+//not GWT import const NumberStringHud
 import { NumberStringHudFactory } from '../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHudFactory.js';
-//not GWT import const NumberStringHudFactory = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHudFactory;
-
-      
+//not GWT import const NumberStringHudFactory
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
-//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
-
-      
+//not GWT import const SelectionHudPaintable
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
-//not GWT import const BasicHudFactory = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
-
-      
+//not GWT import const BasicHudFactory
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
-//not GWT import const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
-
-      
+//not GWT import const NullPathFindingLayer
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-//not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
-
-      
+//not GWT import const PathFindingLayerInterface
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
-
-      
+//not GWT import const MyFontProcessor
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
-
-      
 
 
 
@@ -91,9 +65,7 @@ const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingLayer } from './BuildingLayer.js';
-//not GWT import - same folder const BuildingLayer = globalThis.org.allbinary.game.layer.building.BuildingLayer;
-
-                
+//not GWT import - same folder const BuildingLayer
 export class BuildingInfoHudPaintable extends SelectionHudPaintable {
         
 

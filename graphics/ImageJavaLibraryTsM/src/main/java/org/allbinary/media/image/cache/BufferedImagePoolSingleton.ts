@@ -24,28 +24,16 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { CachePolicyFactory } from '../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
-//not GWT import const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
-
-      
+//not GWT import const CachePolicyFactory
 import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-//not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
-
-      
+//not GWT import const PoolInterface
 import { PoolInterfaceFactory } from '../../../../../org/allbinary/logic/util/cache/PoolInterfaceFactory.js';
-//not GWT import const PoolInterfaceFactory = globalThis.org.allbinary.logic.util.cache.PoolInterfaceFactory;
-
-      
+//not GWT import const PoolInterfaceFactory
 import { PoolTypeFactory } from '../../../../../org/allbinary/logic/util/cache/PoolTypeFactory.js';
-//not GWT import const PoolTypeFactory = globalThis.org.allbinary.logic.util.cache.PoolTypeFactory;
-
-      
+//not GWT import const PoolTypeFactory
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -65,9 +53,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageCacheableFactory } from './BufferedImageCacheableFactory.js';
-//not GWT import - same folder const BufferedImageCacheableFactory = globalThis.org.allbinary.media.image.cache.BufferedImageCacheableFactory;
-
-                
+//not GWT import - same folder const BufferedImageCacheableFactory
 export class BufferedImagePoolSingleton
             extends Object
          {

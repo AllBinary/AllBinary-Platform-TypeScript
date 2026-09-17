@@ -23,53 +23,29 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { ArtificialIntelligence } from '../../../../org/allbinary/ai/ArtificialIntelligence.js';
-//not GWT import const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
-
-      
+//not GWT import const ArtificialIntelligence
 import { CanvasUtil } from '../../../../org/allbinary/game/displayable/canvas/CanvasUtil.js';
-//not GWT import const CanvasUtil = globalThis.org.allbinary.game.displayable.canvas.CanvasUtil;
-
-      
+//not GWT import const CanvasUtil
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-//not GWT import const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
-
-      
+//not GWT import const GameKeyEventSourceInterface
 import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-//not GWT import const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
-
-      
+//not GWT import const GameKeyEventFactory
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

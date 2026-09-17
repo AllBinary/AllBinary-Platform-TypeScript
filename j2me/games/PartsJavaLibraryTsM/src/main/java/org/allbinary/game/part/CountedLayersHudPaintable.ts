@@ -21,41 +21,23 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
-
-      
+//not GWT import const PickedUpLayerInterfaceFactoryInterface
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
-
-      
+//not GWT import const MyFontProcessor
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
-
-      
+//not GWT import const UpdateMyFontInterface
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-//not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
-
-      
+//not GWT import const UpdateMyFontProcessor
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
-
-      
+//not GWT import const PaintableInterface
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 
@@ -75,12 +57,8 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-//not GWT import - same folder const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
-
-                import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
-//not GWT import - same folder const CountedLayerInterfaceFactoryPart = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
-
-                
+//not GWT import - same folder const PartInterfaceimport { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
+//not GWT import - same folder const CountedLayerInterfaceFactoryPart
 export class CountedLayersHudPaintable
             extends Object
          implements PaintableInterface, UpdateMyFontInterface {

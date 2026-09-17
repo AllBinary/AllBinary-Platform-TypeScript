@@ -21,13 +21,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { LocationPaintableInterface } from '../../../org/allbinary/graphics/paint/LocationPaintableInterface.js';
-//not GWT import const LocationPaintableInterface = globalThis.org.allbinary.graphics.paint.LocationPaintableInterface;
-
-      
+//not GWT import const LocationPaintableInterface
 
 
 

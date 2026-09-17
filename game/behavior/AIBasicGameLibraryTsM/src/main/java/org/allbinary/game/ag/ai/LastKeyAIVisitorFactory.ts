@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LastKeyAIVisitor } from './LastKeyAIVisitor.js';
-//not GWT import - same folder const LastKeyAIVisitor = globalThis.org.allbinary.game.ag.ai.LastKeyAIVisitor;
-
-                
+//not GWT import - same folder const LastKeyAIVisitor
 export class LastKeyAIVisitorFactory
             extends Object
          {

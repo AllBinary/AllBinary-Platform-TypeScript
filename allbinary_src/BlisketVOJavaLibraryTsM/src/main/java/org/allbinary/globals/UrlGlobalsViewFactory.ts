@@ -23,17 +23,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -53,9 +47,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsView } from './UrlGlobalsView.js';
-//not GWT import - same folder const UrlGlobalsView = globalThis.org.allbinary.globals.UrlGlobalsView;
-
-                
+//not GWT import - same folder const UrlGlobalsView
 export class UrlGlobalsViewFactory
             extends Object
          {

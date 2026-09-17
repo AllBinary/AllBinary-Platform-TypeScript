@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
-//not GWT import const GameFeatureControlledInterface = globalThis.org.allbinary.game.configuration.feature.GameFeatureControlledInterface;
-
-      
+//not GWT import const GameFeatureControlledInterface
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
-//not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
-
-      
+//not GWT import const RelativeRelationship
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 

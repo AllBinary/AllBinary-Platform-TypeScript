@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OnDemandResources } from './OnDemandResources.js';
-//not GWT import - same folder const OnDemandResources = globalThis.org.allbinary.game.layer.resources.OnDemandResources;
-
-                
+//not GWT import - same folder const OnDemandResources
 export class OnDemandResourcesFactory
             extends Object
          {

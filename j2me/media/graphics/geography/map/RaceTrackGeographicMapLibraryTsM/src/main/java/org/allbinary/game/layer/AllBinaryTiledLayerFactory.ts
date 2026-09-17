@@ -23,33 +23,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
-//not GWT import const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
-
-      
+//not GWT import const TiledLayer
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 import { AllBinaryTiledLayerFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/AllBinaryTiledLayerFactoryInterface.js';
-//not GWT import const AllBinaryTiledLayerFactoryInterface = globalThis.org.allbinary.media.graphics.geography.map.racetrack.AllBinaryTiledLayerFactoryInterface;
-
-      
+//not GWT import const AllBinaryTiledLayerFactoryInterface
 import { RaceTrackData } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
-//not GWT import const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
-
-      
+//not GWT import const RaceTrackData
 import { RaceTrackInfo } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
-//not GWT import const RaceTrackInfo = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
-
-      
+//not GWT import const RaceTrackInfo
 import { TiledLayerFactory } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/TiledLayerFactory.js';
-//not GWT import const TiledLayerFactory = globalThis.org.allbinary.media.graphics.geography.map.racetrack.TiledLayerFactory;
-
-      
+//not GWT import const TiledLayerFactory
 
 
 
@@ -69,12 +55,8 @@ import { TiledLayerFactory } from '../../../../org/allbinary/media/graphics/geog
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import - same folder const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
-
-                import { AllBinaryJ2METiledLayer } from './AllBinaryJ2METiledLayer.js';
-//not GWT import - same folder const AllBinaryJ2METiledLayer = globalThis.org.allbinary.game.layer.AllBinaryJ2METiledLayer;
-
-                
+//not GWT import - same folder const AllBinaryTiledLayerimport { AllBinaryJ2METiledLayer } from './AllBinaryJ2METiledLayer.js';
+//not GWT import - same folder const AllBinaryJ2METiledLayer
 export class AllBinaryTiledLayerFactory
             extends Object
          implements AllBinaryTiledLayerFactoryInterface {

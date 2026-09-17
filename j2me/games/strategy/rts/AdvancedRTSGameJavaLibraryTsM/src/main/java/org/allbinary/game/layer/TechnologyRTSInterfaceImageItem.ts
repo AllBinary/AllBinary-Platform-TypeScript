@@ -21,49 +21,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { ABCustomImageItem } from '../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
-//not GWT import const ABCustomImageItem = globalThis.org.allbinary.graphics.form.item.ABCustomImageItem;
-
-      
+//not GWT import const ABCustomImageItem
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
-//not GWT import const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
-
-      
+//not GWT import const CharArrayFactory
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
-
-      
+//not GWT import const MyFontProcessor
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
-
-      
+//not GWT import const UpdateMyFontInterface
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-//not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
-
-      
+//not GWT import const UpdateMyFontProcessor
 import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
-
-      
+//not GWT import const PrimitiveLongUtil
 
 
 
@@ -83,9 +61,7 @@ import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/Primitiv
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
-//not GWT import - same folder const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
-
-                
+//not GWT import - same folder const RTSInterface
 export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem implements UpdateMyFontInterface {
         
 

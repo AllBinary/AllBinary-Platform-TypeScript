@@ -23,33 +23,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
-
-      
+//not GWT import const AnimationBehaviorFactory
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const AnimationInterfaceFactoryInterface
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
-
-      
+//not GWT import const ScaleProperties
 
 
 
@@ -69,12 +55,8 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
-//not GWT import - same folder const ImageArrayAnimation = globalThis.org.allbinary.animation.image.ImageArrayAnimation;
-
-                import { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
-//not GWT import - same folder const AdjustedImageArrayAnimation = globalThis.org.allbinary.animation.image.AdjustedImageArrayAnimation;
-
-                
+//not GWT import - same folder const ImageArrayAnimationimport { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
+//not GWT import - same folder const AdjustedImageArrayAnimation
 export class ImageArrayAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

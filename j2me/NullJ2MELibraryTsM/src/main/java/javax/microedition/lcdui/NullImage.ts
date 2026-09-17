@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Image } from './Image.js';
-//not GWT import - same folder const Image = globalThis.javax.microedition.lcdui.Image;
-
-                
+//not GWT import - same folder const Image
 export class NullImage
             extends Object
          {

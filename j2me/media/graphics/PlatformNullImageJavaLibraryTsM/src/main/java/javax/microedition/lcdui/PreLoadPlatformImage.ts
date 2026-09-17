@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlatformImage } from './PlatformImage.js';
-//not GWT import - same folder const PlatformImage = globalThis.javax.microedition.lcdui.PlatformImage;
-
-                //PlatformNullImageJavaLibrary
+//not GWT import - same folder const PlatformImage//PlatformNullImageJavaLibrary
 export class PreLoadPlatformImage extends PlatformImage {
         
 

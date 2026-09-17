@@ -41,9 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-                
+//not GWT import - same folder const AbFile
 export class FileFactory
             extends Object
          {

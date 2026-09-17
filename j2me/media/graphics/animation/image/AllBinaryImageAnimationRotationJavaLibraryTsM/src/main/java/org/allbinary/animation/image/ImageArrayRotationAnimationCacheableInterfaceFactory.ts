@@ -23,17 +23,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-      
+//not GWT import const CacheableInterface
 import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
-
-      
+//not GWT import const CacheableInterfaceFactoryInterface
 
 
 
@@ -53,9 +47,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
-//not GWT import - same folder const ImageArrayRotationAnimationCacheable = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheable;
-
-                
+//not GWT import - same folder const ImageArrayRotationAnimationCacheable
 export class ImageArrayRotationAnimationCacheableInterfaceFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

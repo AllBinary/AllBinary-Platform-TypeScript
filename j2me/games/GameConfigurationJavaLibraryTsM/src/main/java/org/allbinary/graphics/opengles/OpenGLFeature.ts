@@ -19,9 +19,7 @@
 
 
 import { Feature } from '../../../../org/allbinary/game/configuration/feature/Feature.js';
-//not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
-
-      
+//not GWT import const Feature
 
 
 

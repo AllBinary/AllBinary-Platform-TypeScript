@@ -25,33 +25,19 @@
             import { Integer } from '../java/lang/Integer.js';
         
 import { Method } from '../java/lang/reflect/Method.js';
-//not GWT import const Method = globalThis.java.lang.reflect.Method;
-
-      
+//not GWT import const Method
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
-
-      
+//not GWT import const JspTagException
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
-
-      
+//not GWT import const AbResponseHandler
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
-
-      
+//not GWT import const TransformInfoData
 import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHelperFactory.js';
-//not GWT import const StoreTagWorkFlowHelperFactory = globalThis.taghelpers.StoreTagWorkFlowHelperFactory;
-
-      
+//not GWT import const StoreTagWorkFlowHelperFactory
 
 
 
@@ -71,9 +57,7 @@ import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHel
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
-//not GWT import - same folder const HelperTag = globalThis.tags.HelperTag;
-
-                //and hidden field removal
+//not GWT import - same folder const HelperTag//and hidden field removal
 export class StoreWorkFlowTag extends HelperTag {
         
 

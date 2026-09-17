@@ -21,21 +21,13 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-//not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
-
-      
+//not GWT import const TextField
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 

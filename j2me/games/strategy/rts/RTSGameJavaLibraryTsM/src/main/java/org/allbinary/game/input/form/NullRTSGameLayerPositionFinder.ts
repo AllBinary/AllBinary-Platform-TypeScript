@@ -21,21 +21,13 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { LayerPositionFinderInterface } from '../../../../../org/allbinary/game/input/LayerPositionFinderInterface.js';
-//not GWT import const LayerPositionFinderInterface = globalThis.org.allbinary.game.input.LayerPositionFinderInterface;
-
-      
+//not GWT import const LayerPositionFinderInterface
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
-//not GWT import const DropCellPositionHistory = globalThis.org.allbinary.media.graphics.geography.map.drop.DropCellPositionHistory;
-
-      
+//not GWT import const DropCellPositionHistory
 
 
 

@@ -19,21 +19,13 @@
 
 
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-//not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
-
-      
+//not GWT import const Sprite
 import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 
 
 
@@ -53,9 +45,7 @@ import { AnimationBehavior } from '../../../../../org/allbinary/animation/Animat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
-//not GWT import - same folder const AllBinarySpriteRotationAnimation = globalThis.org.allbinary.animation.image.sprite.AllBinarySpriteRotationAnimation;
-
-                
+//not GWT import - same folder const AllBinarySpriteRotationAnimation
 export class AllBinaryAdjustedSpriteRotationAnimation extends AllBinarySpriteRotationAnimation {
         
 

@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 
 
 
@@ -43,9 +41,7 @@ import { TransformInfoInterface } from '../../../../../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
-//not GWT import - same folder const TransformInfoObjectConfigGenerator = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
-
-                
+//not GWT import - same folder const TransformInfoObjectConfigGenerator
 export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 

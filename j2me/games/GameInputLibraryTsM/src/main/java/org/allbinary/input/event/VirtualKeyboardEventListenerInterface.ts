@@ -21,9 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 
 
 
@@ -43,9 +41,7 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VirtualKeyboardEvent } from './VirtualKeyboardEvent.js';
-//not GWT import - same folder const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
-
-                
+//not GWT import - same folder const VirtualKeyboardEvent
 export interface VirtualKeyboardEventListenerInterface extends EventListenerInterface {
         
 

@@ -26,36 +26,20 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
-
-      
 
 
 
@@ -75,15 +59,9 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import - same folder const Layer = globalThis.org.allbinary.layer.Layer;
-
-                import { LayerInterfaceFactoryInterface } from './LayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
-
-                import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-                
+//not GWT import - same folder const Layerimport { LayerInterfaceFactoryInterface } from './LayerInterfaceFactoryInterface.js';
+//not GWT import - same folder const LayerInterfaceFactoryInterfaceimport { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import - same folder const AllBinaryLayer
 export class LayerInterfaceFactory
             extends Object
          {

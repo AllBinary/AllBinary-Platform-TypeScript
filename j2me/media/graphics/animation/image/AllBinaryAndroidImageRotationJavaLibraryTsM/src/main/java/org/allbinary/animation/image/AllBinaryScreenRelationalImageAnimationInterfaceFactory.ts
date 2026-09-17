@@ -21,41 +21,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-//not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
-
-      
+//not GWT import const GameFeatureImageCacheFactory
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
-
-      
+//not GWT import const AnimationBehaviorFactory
 import { ScreenRelationalUtil } from '../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js';
-//not GWT import const ScreenRelationalUtil = globalThis.org.allbinary.graphics.displayable.ScreenRelationalUtil;
-
-      
+//not GWT import const ScreenRelationalUtil
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
-
-      
+//not GWT import const PrimitiveIntUtil
 import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-//not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
-
-      
+//not GWT import const ImageScaleUtil
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
-
-      
+//not GWT import const AndroidImageInterface
 
 
 
@@ -75,12 +57,8 @@ import { AndroidImageInterface } from '../../../../org/microemu/android/device/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
-
-                import { ImageAnimation } from './ImageAnimation.js';
-//not GWT import - same folder const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
-
-                
+//not GWT import - same folder const BaseImageAnimationFactoryimport { ImageAnimation } from './ImageAnimation.js';
+//not GWT import - same folder const ImageAnimation
 export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends BaseImageAnimationFactory {
         
 

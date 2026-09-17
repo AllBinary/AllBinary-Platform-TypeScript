@@ -26,20 +26,12 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -59,12 +51,8 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogFormatUtil } 
-const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
-
-                //not plain js - same folder import { Log } 
-const Log = globalThis.org.allbinary.logic.communication.log.Log;
-
-                //ActualPlatform
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;//not plain js - same folder import { Log } 
+const Log = globalThis.org.allbinary.logic.communication.log.Log;//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

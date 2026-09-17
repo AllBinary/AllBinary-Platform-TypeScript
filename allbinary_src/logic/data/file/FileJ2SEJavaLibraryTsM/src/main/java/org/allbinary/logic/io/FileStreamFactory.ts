@@ -24,16 +24,10 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-      
+//not GWT import const AbFile
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 
 
 
@@ -53,12 +47,8 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import - same folder const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
-
-                import { AbFileOutputStream } from './AbFileOutputStream.js';
-//not GWT import - same folder const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
-
-                
+//not GWT import - same folder const AbFileInputStreamimport { AbFileOutputStream } from './AbFileOutputStream.js';
+//not GWT import - same folder const AbFileOutputStream
 export class FileStreamFactory
             extends Object
          {

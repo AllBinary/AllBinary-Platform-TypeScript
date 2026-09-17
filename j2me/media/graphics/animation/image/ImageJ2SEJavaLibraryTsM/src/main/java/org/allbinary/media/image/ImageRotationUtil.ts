@@ -23,25 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
-//not GWT import const J2SEImmutableImage = globalThis.org.microemu.device.j2se.J2SEImmutableImage;
-
-      
+//not GWT import const J2SEImmutableImage
 import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
-//not GWT import const J2SEMutableImage = globalThis.org.microemu.device.j2se.J2SEMutableImage;
-
-      
+//not GWT import const J2SEMutableImage
 
 
 
@@ -61,12 +51,8 @@ import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
-//not GWT import - same folder const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
-
-                import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
-
-                
+//not GWT import - same folder const ImageJ2SERotationUtilimport { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import - same folder const ImageCreationUtil
 export class ImageRotationUtil
             extends Object
          {

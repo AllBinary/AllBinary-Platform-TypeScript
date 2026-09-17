@@ -23,105 +23,55 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { HttpServletRequest } from '../../../../../../../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { PageContext } from '../../../../../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { StoreFrontFactory } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
-
-      
+//not GWT import const StoreFrontFactory
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { StreetAddress } from '../../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
-
-      
+//not GWT import const StreetAddress
 import { Basket } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
-//not GWT import const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
-
-      
+//not GWT import const Basket
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
-
-      
+//not GWT import const OrderHistory
 import { OrderInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
-//not GWT import const OrderInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderInterface;
-
-      
+//not GWT import const OrderInterface
 import { Money } from '../../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-//not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
-
-      
+//not GWT import const Money
 import { Payment } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
-//not GWT import const Payment = globalThis.org.allbinary.business.user.commerce.money.payment.Payment;
-
-      
+//not GWT import const Payment
 import { PaymentData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
-//not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
-
-      
+//not GWT import const PaymentData
 import { PaymentGatewayData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-//not GWT import const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
-
-      
+//not GWT import const PaymentGatewayData
 import { TenderTypeFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderTypeFactory.js';
-//not GWT import const TenderTypeFactory = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderTypeFactory;
-
-      
+//not GWT import const TenderTypeFactory
 import { TransactionTypeFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TransactionTypeFactory.js';
-//not GWT import const TransactionTypeFactory = globalThis.org.allbinary.business.user.commerce.money.payment.types.TransactionTypeFactory;
-
-      
+//not GWT import const TransactionTypeFactory
 import { OrderIdGenerator } from '../../../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js';
-//not GWT import const OrderIdGenerator = globalThis.org.allbinary.data.generator.OrderIdGenerator;
-
-      
+//not GWT import const OrderIdGenerator
 import { OrderHistoryEntityFactory } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
-//not GWT import const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
-
-      
+//not GWT import const OrderHistoryEntityFactory
 import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
-//not GWT import const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
-
-      
+//not GWT import const OrderHistoryEntityInterface
 import { WeblisketSession } from '../../../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
-
-      
+//not GWT import const WeblisketSession
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 import { TransformInfoHttpInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-//not GWT import const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
-
-      
+//not GWT import const TransformInfoHttpInterface
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -141,12 +91,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterfaceFactory } from './PaymentTransactionInterfaceFactory.js';
-//not GWT import - same folder const PaymentTransactionInterfaceFactory = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterfaceFactory;
-
-                import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
-//not GWT import - same folder const PaymentTransactionInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterface;
-
-                
+//not GWT import - same folder const PaymentTransactionInterfaceFactoryimport { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
+//not GWT import - same folder const PaymentTransactionInterface
 export class PaymentTransactionInterfaceRequestFactory
             extends Object
          {

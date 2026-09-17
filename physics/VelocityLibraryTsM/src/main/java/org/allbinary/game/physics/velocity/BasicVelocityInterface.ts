@@ -19,17 +19,11 @@
 
 
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
-
-      
+//not GWT import const Direction
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
-//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
-
-      
+//not GWT import const BasicDecimal
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 
 
 

@@ -23,37 +23,21 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
-//not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
-
-      
+//not GWT import const ActionEvent
 import { ActionListener } from '../../../../../java/awt/event/ActionListener.js';
-//not GWT import const ActionListener = globalThis.java.awt.event.ActionListener;
-
-      
+//not GWT import const ActionListener
 import { swing } from '../../../../../javax/swing.js';
-//not GWT import const swing = globalThis.javax.swing;
-
-      
+//not GWT import const swing
 import { GraphicsException } from '../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
-//not GWT import const GraphicsException = globalThis.org.allbinary.graphics.j2me.GraphicsException;
-
-      
+//not GWT import const GraphicsException
 import { MyFrame } from '../../../../../org/allbinary/graphics/j2me/MyFrame.js';
-//not GWT import const MyFrame = globalThis.org.allbinary.graphics.j2me.MyFrame;
-
-      
+//not GWT import const MyFrame
 import { WorkAreaJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
-//not GWT import const WorkAreaJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanel;
-
-      
+//not GWT import const WorkAreaJPanel
 import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
-//not GWT import const WorkAreaJPanelInterface = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanelInterface;
-
-      
+//not GWT import const WorkAreaJPanelInterface
 
 
 
@@ -73,33 +57,15 @@ import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.graphics.j2me.dialog.JDialog;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.graphics.j2me.dialog.Dimension;
-
-                import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField = globalThis.org.allbinary.graphics.j2me.dialog.JTextField;
-
-                import { Frame } from './Frame.js';
-//not GWT import - same folder const Frame = globalThis.org.allbinary.graphics.j2me.dialog.Frame;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.graphics.j2me.dialog.JButton;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.graphics.j2me.dialog.GridLayout;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.graphics.j2me.dialog.JLabel;
-
-                import { WindowAdapter } from './WindowAdapter.js';
-//not GWT import - same folder const WindowAdapter = globalThis.org.allbinary.graphics.j2me.dialog.WindowAdapter;
-
-                import { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEvent = globalThis.org.allbinary.graphics.j2me.dialog.WindowEvent;
-
-                
+//not GWT import - same folder const JDialogimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextFieldimport { Frame } from './Frame.js';
+//not GWT import - same folder const Frameimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { WindowAdapter } from './WindowAdapter.js';
+//not GWT import - same folder const WindowAdapterimport { WindowEvent } from './WindowEvent.js';
+//not GWT import - same folder const WindowEvent
 export class NewWorkAreaJDialog extends javax.swing.JDialog {
         
 

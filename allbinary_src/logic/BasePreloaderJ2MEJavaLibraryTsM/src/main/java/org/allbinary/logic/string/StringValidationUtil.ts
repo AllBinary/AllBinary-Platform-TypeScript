@@ -21,9 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 
 
 
@@ -44,8 +42,6 @@ import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-                
 export class StringValidationUtil
             extends Object
          {

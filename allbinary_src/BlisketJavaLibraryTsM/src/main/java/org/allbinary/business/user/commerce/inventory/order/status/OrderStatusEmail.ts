@@ -23,73 +23,39 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { StoreFrontFactory } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
-
-      
+//not GWT import const StoreFrontFactory
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
-//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
-
-      
+//not GWT import const UserInterface
 import { OrderHistory } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
-
-      
+//not GWT import const OrderHistory
 import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
-//not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
-
-      
+//not GWT import const UserEntityFactory
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
-//not GWT import const UserEmailEventNameData = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
-
-      
+//not GWT import const UserEmailEventNameData
 import { UserEmailEventHandler } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
-//not GWT import const UserEmailEventHandler = globalThis.org.allbinary.logic.communication.smtp.event.handler.UserEmailEventHandler;
-
-      
+//not GWT import const UserEmailEventHandler
 import { AdminUserEmailEventHandlerSingletons } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
-//not GWT import const AdminUserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.AdminUserEmailEventHandlerSingletons;
-
-      
+//not GWT import const AdminUserEmailEventHandlerSingletons
 import { StoreAdminUserEmailEventHandlerSingletons } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
-//not GWT import const StoreAdminUserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.StoreAdminUserEmailEventHandlerSingletons;
-
-      
+//not GWT import const StoreAdminUserEmailEventHandlerSingletons
 import { UserEmailEventHandlerSingletons } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js';
-//not GWT import const UserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.UserEmailEventHandlerSingletons;
-
-      
+//not GWT import const UserEmailEventHandlerSingletons
 import { AdminEmailInfo } from '../../../../../../../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
-//not GWT import const AdminEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.AdminEmailInfo;
-
-      
+//not GWT import const AdminEmailInfo
 import { BasicEmailInfo } from '../../../../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
-//not GWT import const BasicEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
-
-      
+//not GWT import const BasicEmailInfo
 import { EmailInfo } from '../../../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-//not GWT import const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
-
-      
+//not GWT import const EmailInfo
 import { StoreEmailInfo } from '../../../../../../../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
-//not GWT import const StoreEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.StoreEmailInfo;
-
-      
+//not GWT import const StoreEmailInfo
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

@@ -19,9 +19,7 @@
 
 
 import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
-//not GWT import const CanvasJPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
-
-      
+//not GWT import const CanvasJPanel
 
 
 
@@ -41,9 +39,7 @@ import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/work
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import - same folder const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
-
-                
+//not GWT import - same folder const GraphicItemInterface
 export interface GraphicsItemInterfaceFactoryInterface {
         
 

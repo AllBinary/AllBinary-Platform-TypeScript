@@ -23,29 +23,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
-
-      
+//not GWT import const AnimationBehaviorFactory
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const AnimationInterfaceFactoryInterface
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-      
+//not GWT import const IndexedAnimation
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
-
-      
+//not GWT import const ScaleProperties
 
 
 
@@ -65,9 +53,7 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimultaneousCompoundIndexAnimation } from './SimultaneousCompoundIndexAnimation.js';
-//not GWT import - same folder const SimultaneousCompoundIndexAnimation = globalThis.org.allbinary.animation.compound.SimultaneousCompoundIndexAnimation;
-
-                
+//not GWT import - same folder const SimultaneousCompoundIndexAnimation
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

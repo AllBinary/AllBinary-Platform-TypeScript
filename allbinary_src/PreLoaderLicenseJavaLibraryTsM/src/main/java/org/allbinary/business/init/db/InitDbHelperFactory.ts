@@ -23,17 +23,11 @@
             import { Class } from '../../../../../java/lang/Class.js';
         
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-//not GWT import const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
-
-      
+//not GWT import const AbeFactory
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 
 
 
@@ -53,9 +47,7 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseConnectionInfoInterface } from './DatabaseConnectionInfoInterface.js';
-//not GWT import - same folder const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
-
-                
+//not GWT import - same folder const DatabaseConnectionInfoInterface
 export class InitDbHelperFactory
             extends Object
          {

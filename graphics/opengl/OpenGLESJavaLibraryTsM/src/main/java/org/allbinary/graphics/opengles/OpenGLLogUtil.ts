@@ -7,29 +7,17 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
-
-      
+//not GWT import const GL10
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { OpenGLStrings } from '../../../../org/allbinary/image/opengles/OpenGLStrings.js';
-//not GWT import const OpenGLStrings = globalThis.org.allbinary.image.opengles.OpenGLStrings;
-
-      
+//not GWT import const OpenGLStrings
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 
 
 

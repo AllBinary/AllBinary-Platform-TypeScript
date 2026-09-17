@@ -21,10 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-//not GWT import const Player = globalThis.javax.microedition.media.Player;
-const PlayerI = globalThis.javax.microedition.media.Player;
-
-      
+//not GWT import const Player
 
 
 

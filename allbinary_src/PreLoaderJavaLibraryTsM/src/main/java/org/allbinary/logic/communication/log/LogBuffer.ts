@@ -22,16 +22,10 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 
 
 
@@ -51,12 +45,8 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogUtil } 
-const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-                //not plain js - same folder import { Log } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;//not plain js - same folder import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
-
-                
 export class LogBuffer
             extends Object
          {

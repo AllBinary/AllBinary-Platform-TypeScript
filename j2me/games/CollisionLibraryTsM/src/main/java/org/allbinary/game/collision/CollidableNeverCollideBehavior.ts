@@ -21,9 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
-
-      
+//not GWT import const CollidableCompositeLayer
 
 
 
@@ -43,12 +41,8 @@ import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import - same folder const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
-
-                import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
-//not GWT import - same folder const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
-
-                
+//not GWT import - same folder const CollidableBaseBehaviorimport { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
+//not GWT import - same folder const CollidableInterfaceCompositeInterface
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
 

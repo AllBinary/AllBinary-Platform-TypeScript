@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbPath } from './AbPath.js';
-//not GWT import - same folder const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-                
+//not GWT import - same folder const AbPath
 export class AbPathUtil
             extends Object
          {

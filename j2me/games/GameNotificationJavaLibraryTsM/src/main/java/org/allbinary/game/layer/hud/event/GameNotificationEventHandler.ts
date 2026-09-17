@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 import { NullEventListener } from '../../../../../../org/allbinary/logic/util/event/NullEventListener.js';
-//not GWT import const NullEventListener = globalThis.org.allbinary.logic.util.event.NullEventListener;
-
-      
+//not GWT import const NullEventListener
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
+//not GWT import const BasicEventHandler
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -59,12 +49,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotificationListenerInterface } from './GameNotificationListenerInterface.js';
-//not GWT import - same folder const GameNotificationListenerInterface = globalThis.org.allbinary.game.layer.hud.event.GameNotificationListenerInterface;
-
-                import { GameNotificationEvent } from './GameNotificationEvent.js';
-//not GWT import - same folder const GameNotificationEvent = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEvent;
-
-                
+//not GWT import - same folder const GameNotificationListenerInterfaceimport { GameNotificationEvent } from './GameNotificationEvent.js';
+//not GWT import - same folder const GameNotificationEvent
 export class GameNotificationEventHandler extends BasicEventHandler {
         
 

@@ -24,12 +24,8 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { PlayN } 
 const PlayN = globalThis.playn.core.PlayN;
-
-      
 
 
 
@@ -49,15 +45,9 @@ const PlayN = globalThis.playn.core.PlayN;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogFormatUtil } 
-const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
-
-                //not plain js - same folder import { Log } 
-const Log = globalThis.org.allbinary.logic.communication.log.Log;
-
-                //not plain js - same folder import { PreLogUtil } 
-const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-                //ActualPlatform
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;//not plain js - same folder import { Log } 
+const Log = globalThis.org.allbinary.logic.communication.log.Log;//not plain js - same folder import { PreLogUtil } 
+const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

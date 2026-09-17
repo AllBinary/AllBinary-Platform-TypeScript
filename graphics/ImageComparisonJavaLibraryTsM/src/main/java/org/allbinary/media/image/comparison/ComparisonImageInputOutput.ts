@@ -25,49 +25,27 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
-//not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
-
-      
+//not GWT import const ImageOutputData
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
-//not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
-
-      
+//not GWT import const LongUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
-
-      
+//not GWT import const AutomaticCacheInterface
 import { MediaDataFactory } from '../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
-//not GWT import const MediaDataFactory = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
-
-      
+//not GWT import const MediaDataFactory
 import { ImagePersistanceUtil } from '../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-//not GWT import const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
-
-      
+//not GWT import const ImagePersistanceUtil
 import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-//not GWT import const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
-
-      
+//not GWT import const BufferedImageCacheable
 import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-//not GWT import const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
-
-      
+//not GWT import const ImageIOInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -87,18 +65,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-//not GWT import - same folder const ImageComparisonResultCacheSingleton = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultCacheSingleton;
-
-                import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-//not GWT import - same folder const ImageComparisonResultFrameCacheable = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultFrameCacheable;
-
-                import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
-
-                import { ChangedPixelsUtil } from './ChangedPixelsUtil.js';
-//not GWT import - same folder const ChangedPixelsUtil = globalThis.org.allbinary.media.image.comparison.ChangedPixelsUtil;
-
-                
+//not GWT import - same folder const ImageComparisonResultCacheSingletonimport { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
+//not GWT import - same folder const ImageComparisonResultFrameCacheableimport { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import - same folder const ImageComparisonResultimport { ChangedPixelsUtil } from './ChangedPixelsUtil.js';
+//not GWT import - same folder const ChangedPixelsUtil
 export class ComparisonImageInputOutput
             extends Object
          implements ImageIOInterface {

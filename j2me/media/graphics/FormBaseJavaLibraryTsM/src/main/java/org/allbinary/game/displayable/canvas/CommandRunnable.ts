@@ -25,25 +25,15 @@
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -63,9 +53,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import - same folder const CommandFormInputProcessor = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
-
-                
+//not GWT import - same folder const CommandFormInputProcessor
 export class CommandRunnable
             extends Object
          implements Runnable {

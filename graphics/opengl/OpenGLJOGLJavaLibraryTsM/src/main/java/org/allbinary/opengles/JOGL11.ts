@@ -19,13 +19,9 @@
 
 
 import { GL } from '../../../com/jogamp/opengl/GL.js';
-//not GWT import const GL = globalThis.com.jogamp.opengl.GL;
-
-      
+//not GWT import const GL
 import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
-//not GWT import const GL2 = globalThis.com.jogamp.opengl.GL2;
-
-      
+//not GWT import const GL2
 
 
 
@@ -45,18 +41,10 @@ import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL11 } from './GL11.js';
-//not GWT import - same folder const GL11 = globalThis.org.allbinary.opengles.GL11;
-
-                import { Buffer } from './Buffer.js';
-//not GWT import - same folder const Buffer = globalThis.org.allbinary.opengles.Buffer;
-
-                import { FloatBuffer } from './FloatBuffer.js';
-//not GWT import - same folder const FloatBuffer = globalThis.org.allbinary.opengles.FloatBuffer;
-
-                import { IntBuffer } from './IntBuffer.js';
-//not GWT import - same folder const IntBuffer = globalThis.org.allbinary.opengles.IntBuffer;
-
-                //JOGLEToKhronosGL11
+//not GWT import - same folder const GL11import { Buffer } from './Buffer.js';
+//not GWT import - same folder const Bufferimport { FloatBuffer } from './FloatBuffer.js';
+//not GWT import - same folder const FloatBufferimport { IntBuffer } from './IntBuffer.js';
+//not GWT import - same folder const IntBuffer//JOGLEToKhronosGL11
 export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengles.GL11 {
         
 

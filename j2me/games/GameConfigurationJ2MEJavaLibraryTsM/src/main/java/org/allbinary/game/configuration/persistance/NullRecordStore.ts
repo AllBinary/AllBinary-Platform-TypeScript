@@ -19,9 +19,7 @@
 
 
 import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
-//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
-
-      
+//not GWT import const RecordStore
 
 
 

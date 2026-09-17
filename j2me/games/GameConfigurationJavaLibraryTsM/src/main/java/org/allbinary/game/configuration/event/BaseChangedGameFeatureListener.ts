@@ -21,49 +21,27 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Feature } from '../../../../../org/allbinary/game/configuration/feature/Feature.js';
-//not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
-
-      
+//not GWT import const Feature
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { GameFeatureUtil } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureUtil.js';
-//not GWT import const GameFeatureUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
-
-      
+//not GWT import const GameFeatureUtil
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -83,12 +61,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureListenerInterface } from './GameFeatureListenerInterface.js';
-//not GWT import - same folder const GameFeatureListenerInterface = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
-
-                import { GameFeatureEvent } from './GameFeatureEvent.js';
-//not GWT import - same folder const GameFeatureEvent = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
-
-                
+//not GWT import - same folder const GameFeatureListenerInterfaceimport { GameFeatureEvent } from './GameFeatureEvent.js';
+//not GWT import - same folder const GameFeatureEvent
 export class BaseChangedGameFeatureListener
             extends Object
          implements GameFeatureListenerInterface {

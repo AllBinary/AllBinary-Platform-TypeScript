@@ -21,57 +21,31 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
-//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
-
-      
+//not GWT import const ByteArrayOutputStream
 import { IOException } from '../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { InputStream } from '../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { ServletException } from '../../../javax/servlet/ServletException.js';
-//not GWT import const ServletException = globalThis.javax.servlet.ServletException;
-
-      
+//not GWT import const ServletException
 import { HttpServlet } from '../../../javax/servlet/http/HttpServlet.js';
-//not GWT import const HttpServlet = globalThis.javax.servlet.http.HttpServlet;
-
-      
+//not GWT import const HttpServlet
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { HttpServletResponse } from '../../../javax/servlet/http/HttpServletResponse.js';
-//not GWT import const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
-
-      
+//not GWT import const HttpServletResponse
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
-
-      
+//not GWT import const URLGLOBALS
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { CloudStreamUtil } from '../../../org/allbinary/logic/io/CloudStreamUtil.js';
-//not GWT import const CloudStreamUtil = globalThis.org.allbinary.logic.io.CloudStreamUtil;
-
-      
+//not GWT import const CloudStreamUtil
 import { StreamUtil } from '../../../org/allbinary/logic/io/StreamUtil.js';
-//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
-
-      
+//not GWT import const StreamUtil
 import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-      
+//not GWT import const AbFile
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -91,9 +65,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BlisketServletUtil } from './BlisketServletUtil.js';
-//not GWT import - same folder const BlisketServletUtil = globalThis.org.allbinary.servlet.BlisketServletUtil;
-
-                
+//not GWT import - same folder const BlisketServletUtil
 export class CloudImageServlet extends HttpServlet {
         
 

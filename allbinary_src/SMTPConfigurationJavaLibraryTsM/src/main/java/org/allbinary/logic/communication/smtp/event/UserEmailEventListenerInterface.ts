@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { EventListener } from '../../../../../../java/util/EventListener.js';
-//not GWT import const EventListener = globalThis.java.util.EventListener;
-
-      
+//not GWT import const EventListener
 
 
 
@@ -43,9 +41,7 @@ import { EventListener } from '../../../../../../java/util/EventListener.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailEvent } from './EmailEvent.js';
-//not GWT import - same folder const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
-
-                
+//not GWT import - same folder const EmailEvent
 export interface UserEmailEventListenerInterface extends EventListener {
         
 

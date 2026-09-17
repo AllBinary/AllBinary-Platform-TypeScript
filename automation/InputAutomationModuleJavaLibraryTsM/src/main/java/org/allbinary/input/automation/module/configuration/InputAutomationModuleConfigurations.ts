@@ -23,53 +23,29 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
-//not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
-
-      
+//not GWT import const FileInputStream
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { List } from '../../../../../../java/util/List.js';
-//not GWT import const List = globalThis.java.util.List;
-
-      
+//not GWT import const List
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
-
-      
+//not GWT import const DomDocumentHelper
 import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-//not GWT import const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
-
-      
+//not GWT import const InputAutomationModuleData
 import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js';
-//not GWT import const NewInputAutomationModulesData = globalThis.org.allbinary.input.automation.module.NewInputAutomationModulesData;
-
-      
+//not GWT import const NewInputAutomationModulesData
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -89,9 +65,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleConfiguration } from './InputAutomationModuleConfiguration.js';
-//not GWT import - same folder const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
-
-                
+//not GWT import - same folder const InputAutomationModuleConfiguration
 export class InputAutomationModuleConfigurations
             extends Object
          {

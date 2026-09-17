@@ -22,20 +22,12 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
-
-      
+//not GWT import const ColorRangeInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -55,39 +47,17 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.actions.script.condition.JPanel;
-
-                import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import - same folder const ColorAtActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
-
-                import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField = globalThis.org.allbinary.input.automation.actions.script.condition.JTextField;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.actions.script.condition.JLabel;
-
-                import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.input.automation.actions.script.condition.JDialog;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.input.automation.actions.script.condition.JButton;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.actions.script.condition.Dimension;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.input.automation.actions.script.condition.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.input.automation.actions.script.condition.ActionEvent;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.actions.script.condition.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.actions.script.condition.Short;
-
-                
+//not GWT import - same folder const JPanelimport { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
+//not GWT import - same folder const ColorAtActionScriptConditionInterfaceimport { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextFieldimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialogimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Short
 export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
         
 

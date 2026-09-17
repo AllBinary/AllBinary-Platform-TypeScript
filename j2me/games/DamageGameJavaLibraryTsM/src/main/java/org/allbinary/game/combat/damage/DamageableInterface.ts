@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { NamedInterface } from '../../../../../org/allbinary/layer/NamedInterface.js';
-//not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
-
-      
+//not GWT import const NamedInterface
 
 
 

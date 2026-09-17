@@ -7,9 +7,7 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
-
-      
+//not GWT import const AllBinaryTiledLayer
 
 
 
@@ -29,12 +27,8 @@ import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfo = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
-
-                import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import - same folder const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
-
-                
+//not GWT import - same folder const RaceTrackInfoimport { RaceTrackData } from './RaceTrackData.js';
+//not GWT import - same folder const RaceTrackData
 export interface AllBinaryTiledLayerFactoryInterface {
         
 

@@ -23,25 +23,15 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { HashMap } from '../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -61,9 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryHelper } from './OrderHistoryHelper.js';
-//not GWT import - same folder const OrderHistoryHelper = globalThis.taghelpers.OrderHistoryHelper;
-
-                
+//not GWT import - same folder const OrderHistoryHelper
 export class OrderHistoryHelperFactory
             extends Object
          {

@@ -21,17 +21,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { AnalogLocationInputFactory } from '../../../../org/allbinary/game/input/analog/AnalogLocationInputFactory.js';
-//not GWT import const AnalogLocationInputFactory = globalThis.org.allbinary.game.input.analog.AnalogLocationInputFactory;
-
-      
+//not GWT import const AnalogLocationInputFactory
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 

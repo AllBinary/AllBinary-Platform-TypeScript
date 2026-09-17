@@ -19,33 +19,19 @@
 
 
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
-//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-      
+//not GWT import const IndexedAnimation
 import { RotationAnimationInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterface.js';
-//not GWT import const RotationAnimationInterface = globalThis.org.allbinary.animation.RotationAnimationInterface;
-
-      
+//not GWT import const RotationAnimationInterface
 import { RotationAnimationInterfaceCompositeInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
-//not GWT import const RotationAnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.RotationAnimationInterfaceCompositeInterface;
-
-      
+//not GWT import const RotationAnimationInterfaceCompositeInterface
 import { LurchAI } from '../../../../../org/allbinary/game/ag/ai/tactical/LurchAI.js';
-//not GWT import const LurchAI = globalThis.org.allbinary.game.ag.ai.tactical.LurchAI;
-
-      
+//not GWT import const LurchAI
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
-//not GWT import const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
-
-      
+//not GWT import const AngleIncrementInfo
 
 
 

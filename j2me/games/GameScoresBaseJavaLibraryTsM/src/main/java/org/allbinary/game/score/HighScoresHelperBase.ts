@@ -24,16 +24,10 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -53,18 +47,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
-
-                import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
-//not GWT import - same folder const LastFetchHighScoresFactory = globalThis.org.allbinary.game.score.LastFetchHighScoresFactory;
-
-                import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores = globalThis.org.allbinary.game.score.HighScores;
-
-                import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
-//not GWT import - same folder const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
-
-                
+//not GWT import - same folder const HighScoresHelperBaseInterfaceimport { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
+//not GWT import - same folder const LastFetchHighScoresFactoryimport { HighScores } from './HighScores.js';
+//not GWT import - same folder const HighScoresimport { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
+//not GWT import - same folder const NullHighScoresSingletonFactory
 export class HighScoresHelperBase
             extends Object
          implements HighScoresHelperBaseInterface {

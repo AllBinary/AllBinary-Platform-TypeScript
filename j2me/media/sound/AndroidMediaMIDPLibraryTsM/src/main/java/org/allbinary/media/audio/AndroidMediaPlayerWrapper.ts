@@ -23,46 +23,25 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-//not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
-
-      
+//not GWT import const MediaException
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-//not GWT import const Player = globalThis.javax.microedition.media.Player;
-const PlayerI = globalThis.javax.microedition.media.Player;
-
-      
+//not GWT import const Player
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-//not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
-
-      
+//not GWT import const PlayerListener
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
-//not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
-
-      
+//not GWT import const MediaPlayer
 import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroidCanvas.js';
-//not GWT import const NullAndroidCanvas = globalThis.org.allbinary.android.NullAndroidCanvas;
-
-      
+//not GWT import const NullAndroidCanvas
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
-
-      
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -82,9 +61,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import - same folder const BasicPlayer = globalThis.org.allbinary.media.audio.BasicPlayer;
-
-                
+//not GWT import - same folder const BasicPlayer
 export class AndroidMediaPlayerWrapper extends BasicPlayer {
         
 

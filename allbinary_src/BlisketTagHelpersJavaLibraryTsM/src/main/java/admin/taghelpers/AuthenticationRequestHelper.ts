@@ -21,85 +21,45 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
-//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
-
-      
+//not GWT import const UserData
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
-//not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
-
-      
+//not GWT import const UserInterface
 import { Password } from '../../org/allbinary/business/user/password/Password.js';
-//not GWT import const Password = globalThis.org.allbinary.business.user.password.Password;
-
-      
+//not GWT import const Password
 import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
-//not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
-
-      
+//not GWT import const BasicUserRole
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
-//not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
-
-      
+//not GWT import const UserEntityFactory
 import { UserEntityInterface } from '../../org/allbinary/data/tables/user/UserEntityInterface.js';
-//not GWT import const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
-
-      
+//not GWT import const UserEntityInterface
 import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
-//not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
-
-      
+//not GWT import const GLOBALS2
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
-
-      
+//not GWT import const WeblisketSession
 import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
-//not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
-
-      
+//not GWT import const WeblisketSessionData
 import { WeblisketSessionInterface } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
-//not GWT import const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
-
-      
+//not GWT import const WeblisketSessionInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { NewPasswordEmail } from '../../org/allbinary/logic/communication/smtp/email/NewPasswordEmail.js';
-//not GWT import const NewPasswordEmail = globalThis.org.allbinary.logic.communication.smtp.email.NewPasswordEmail;
-
-      
+//not GWT import const NewPasswordEmail
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-//not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
-
-      
+//not GWT import const ServiceClientInformationInterfaceFactory
 
 
 
@@ -119,9 +79,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper = globalThis.admin.taghelpers.TagHelper;
-
-                
+//not GWT import - same folder const TagHelper
 export class AuthenticationRequestHelper extends TagHelper {
         
 

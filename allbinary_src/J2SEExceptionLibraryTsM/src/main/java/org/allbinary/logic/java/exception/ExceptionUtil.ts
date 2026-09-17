@@ -25,13 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
-
-      
+//not GWT import const ByteArrayOutputStream
 import { PrintStream } from '../../../../../java/io/PrintStream.js';
-//not GWT import const PrintStream = globalThis.java.io.PrintStream;
-
-      
+//not GWT import const PrintStream
 
 
 

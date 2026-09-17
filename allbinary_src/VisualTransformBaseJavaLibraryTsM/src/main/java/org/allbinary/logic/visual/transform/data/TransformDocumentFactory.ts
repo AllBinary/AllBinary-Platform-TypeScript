@@ -41,12 +41,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformDocument } from './TransformDocument.js';
-//not GWT import - same folder const TransformDocument = globalThis.org.allbinary.logic.visual.transform.data.TransformDocument;
-
-                import { TransformDocumentInterface } from './TransformDocumentInterface.js';
-//not GWT import - same folder const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
-
-                
+//not GWT import - same folder const TransformDocumentimport { TransformDocumentInterface } from './TransformDocumentInterface.js';
+//not GWT import - same folder const TransformDocumentInterface
 export class TransformDocumentFactory
             extends Object
          {

@@ -9,21 +9,13 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
-//not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
-
-      
+//not GWT import const ByteBuffer
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
-
-      
+//not GWT import const GL10
 import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
-//not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
-
-      
+//not GWT import const OpenGLBitmap
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
-
-      
 
 
 

@@ -23,16 +23,10 @@
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -54,15 +48,9 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleIncrementInfo } from './AngleIncrementInfo.js';
-//not GWT import - same folder const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
-
-                import { AngleIncrementInfoFactory } from './AngleIncrementInfoFactory.js';
-//not GWT import - same folder const AngleIncrementInfoFactory = globalThis.org.allbinary.math.AngleIncrementInfoFactory;
-
-                import { FrameUtil } from './FrameUtil.js';
-//not GWT import - same folder const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
-
-                
+//not GWT import - same folder const AngleIncrementInfoimport { AngleIncrementInfoFactory } from './AngleIncrementInfoFactory.js';
+//not GWT import - same folder const AngleIncrementInfoFactoryimport { FrameUtil } from './FrameUtil.js';
+//not GWT import - same folder const FrameUtil
 export class AngleInfo
             extends Object
          {

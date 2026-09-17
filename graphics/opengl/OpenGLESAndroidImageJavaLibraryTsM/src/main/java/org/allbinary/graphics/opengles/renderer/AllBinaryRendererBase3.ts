@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
-
-      
+//not GWT import const GL10
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 

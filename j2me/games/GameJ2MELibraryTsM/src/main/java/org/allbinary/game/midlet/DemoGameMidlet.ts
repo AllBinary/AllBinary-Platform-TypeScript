@@ -21,41 +21,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
-//not GWT import const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
-
-      
+//not GWT import const GameCanvasRunnableInterface
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
-
-      
+//not GWT import const AllBinaryGameLayerManager
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-//not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
-
-      
+//not GWT import const ProgressCanvas
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-//not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
-
-      
+//not GWT import const ProgressCanvasFactory
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-//not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
-
-      
+//not GWT import const ClientInformationFactory
 import { PrimaryThreadPool } from '../../../../org/allbinary/thread/PrimaryThreadPool.js';
-//not GWT import const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
-
-      
+//not GWT import const PrimaryThreadPool
 import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
-//not GWT import const NullGameCanvasRunnable = globalThis.org.allbinary.game.displayable.canvas.NullGameCanvasRunnable;
-
-      
+//not GWT import const NullGameCanvasRunnable
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -75,15 +57,9 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidlet } from './GameMidlet.js';
-//not GWT import - same folder const GameMidlet = globalThis.org.allbinary.game.midlet.GameMidlet;
-
-                import { DemoRunnable } from './DemoRunnable.js';
-//not GWT import - same folder const DemoRunnable = globalThis.org.allbinary.game.midlet.DemoRunnable;
-
-                import { CreateGameRunnable } from './CreateGameRunnable.js';
-//not GWT import - same folder const CreateGameRunnable = globalThis.org.allbinary.game.midlet.CreateGameRunnable;
-
-                
+//not GWT import - same folder const GameMidletimport { DemoRunnable } from './DemoRunnable.js';
+//not GWT import - same folder const DemoRunnableimport { CreateGameRunnable } from './CreateGameRunnable.js';
+//not GWT import - same folder const CreateGameRunnable
 export class DemoGameMidlet extends GameMidlet {
         
 

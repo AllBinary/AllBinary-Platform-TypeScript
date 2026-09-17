@@ -23,17 +23,11 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -53,12 +47,8 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObject } from './MeteredGameObject.js';
-//not GWT import - same folder const MeteredGameObject = globalThis.org.allbinary.input.automation.module.game.MeteredGameObject;
-
-                import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
-//not GWT import - same folder const MagicGameObjectInterface = globalThis.org.allbinary.input.automation.module.game.MagicGameObjectInterface;
-
-                
+//not GWT import - same folder const MeteredGameObjectimport { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
+//not GWT import - same folder const MagicGameObjectInterface
 export class MagicGameObject extends MeteredGameObject implements MagicGameObjectInterface {
         
 

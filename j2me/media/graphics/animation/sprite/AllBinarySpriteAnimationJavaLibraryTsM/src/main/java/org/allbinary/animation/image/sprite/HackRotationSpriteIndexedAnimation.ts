@@ -21,37 +21,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-//not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
-
-      
+//not GWT import const Sprite
 import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { RotationAnimation } from '../../../../../org/allbinary/animation/RotationAnimation.js';
-//not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
-
-      
+//not GWT import const RotationAnimation
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
-
-      
+//not GWT import const PrimitiveIntUtil
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
-
-      
 
 
 

@@ -7,13 +7,9 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Calendar } from '../../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { TimeZone } from '../../../java/util/TimeZone.js';
-//not GWT import const TimeZone = globalThis.java.util.TimeZone;
-
-      
+//not GWT import const TimeZone
 
 
 

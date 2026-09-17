@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from './LayerPlacementInterfaceBasicArrayListFactoryInterface.js';
-//not GWT import - same folder const LayerPlacementInterfaceBasicArrayListFactoryInterface = globalThis.org.allbinary.game.layer.LayerPlacementInterfaceBasicArrayListFactoryInterface;
-
-                
+//not GWT import - same folder const LayerPlacementInterfaceBasicArrayListFactoryInterface
 export interface GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory {
         
 

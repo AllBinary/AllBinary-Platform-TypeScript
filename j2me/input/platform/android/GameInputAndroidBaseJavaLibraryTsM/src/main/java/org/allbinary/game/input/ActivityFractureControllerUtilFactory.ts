@@ -7,9 +7,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
-//not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
-
-      
+//not GWT import const AndroidInfoFactory
 
 
 
@@ -29,18 +27,10 @@ import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInf
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidAPI12KeyFactory } from './AndroidAPI12KeyFactory.js';
-//not GWT import - same folder const AndroidAPI12KeyFactory = globalThis.org.allbinary.game.input.AndroidAPI12KeyFactory;
-
-                import { AndroidAPI9KeyFactory } from './AndroidAPI9KeyFactory.js';
-//not GWT import - same folder const AndroidAPI9KeyFactory = globalThis.org.allbinary.game.input.AndroidAPI9KeyFactory;
-
-                import { AndroidAPI1KeyFactory } from './AndroidAPI1KeyFactory.js';
-//not GWT import - same folder const AndroidAPI1KeyFactory = globalThis.org.allbinary.game.input.AndroidAPI1KeyFactory;
-
-                import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import - same folder const AndroidKeyFactory = globalThis.org.allbinary.game.input.AndroidKeyFactory;
-
-                
+//not GWT import - same folder const AndroidAPI12KeyFactoryimport { AndroidAPI9KeyFactory } from './AndroidAPI9KeyFactory.js';
+//not GWT import - same folder const AndroidAPI9KeyFactoryimport { AndroidAPI1KeyFactory } from './AndroidAPI1KeyFactory.js';
+//not GWT import - same folder const AndroidAPI1KeyFactoryimport { AndroidKeyFactory } from './AndroidKeyFactory.js';
+//not GWT import - same folder const AndroidKeyFactory
 export class ActivityFractureControllerUtilFactory
             extends Object
          {

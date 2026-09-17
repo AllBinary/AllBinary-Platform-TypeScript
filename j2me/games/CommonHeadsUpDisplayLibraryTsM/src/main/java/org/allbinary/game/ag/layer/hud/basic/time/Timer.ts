@@ -21,21 +21,13 @@
             import { Object } from '../../../../../../../../java/lang/Object.js';
         
 import { PrimitiveLongSingleton } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
-//not GWT import const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
-
-      
+//not GWT import const PrimitiveLongSingleton
 import { PrimitiveLongUtil } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
-
-      
+//not GWT import const PrimitiveLongUtil
 import { GameTickTimeDelayHelper } from '../../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-//not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
-
-      
+//not GWT import const GameTickTimeDelayHelper
 import { GameTickTimeDelayHelperFactory } from '../../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-//not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
-
-      
+//not GWT import const GameTickTimeDelayHelperFactory
 
 
 

@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { InputStream } from '../../../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-//not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
-
-      
+//not GWT import const URIResolver
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-//not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
-
-      
+//not GWT import const StreamSource
 import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-//not GWT import const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
-
-      
+//not GWT import const CompositeTransformInfoInterface
 
 
 

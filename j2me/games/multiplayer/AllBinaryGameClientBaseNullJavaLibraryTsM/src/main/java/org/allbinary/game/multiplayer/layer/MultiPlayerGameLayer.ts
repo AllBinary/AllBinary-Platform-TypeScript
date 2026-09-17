@@ -19,21 +19,13 @@
 
 
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
-//not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
-
-      
+//not GWT import const Group
 import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-      
+//not GWT import const CollidableDestroyableDamageableLayer
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
-//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
-
-      
+//not GWT import const ViewPositionBase
 
 
 
@@ -53,15 +45,9 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiPlayerGameLayerInterface } from './MultiPlayerGameLayerInterface.js';
-//not GWT import - same folder const MultiPlayerGameLayerInterface = globalThis.org.allbinary.game.multiplayer.layer.MultiPlayerGameLayerInterface;
-
-                import { RemoteInfo } from './RemoteInfo.js';
-//not GWT import - same folder const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
-
-                import { MultiplayerBehavior } from './MultiplayerBehavior.js';
-//not GWT import - same folder const MultiplayerBehavior = globalThis.org.allbinary.game.multiplayer.layer.MultiplayerBehavior;
-
-                
+//not GWT import - same folder const MultiPlayerGameLayerInterfaceimport { RemoteInfo } from './RemoteInfo.js';
+//not GWT import - same folder const RemoteInfoimport { MultiplayerBehavior } from './MultiplayerBehavior.js';
+//not GWT import - same folder const MultiplayerBehavior
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         
 

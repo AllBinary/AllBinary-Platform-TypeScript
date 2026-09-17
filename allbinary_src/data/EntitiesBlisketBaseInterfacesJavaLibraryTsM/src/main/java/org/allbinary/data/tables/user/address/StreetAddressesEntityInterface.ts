@@ -21,13 +21,9 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { StreetAddress } from '../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
-
-      
+//not GWT import const StreetAddress
 import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-//not GWT import const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
-
-      
+//not GWT import const BasicDataTableInterface
 
 
 

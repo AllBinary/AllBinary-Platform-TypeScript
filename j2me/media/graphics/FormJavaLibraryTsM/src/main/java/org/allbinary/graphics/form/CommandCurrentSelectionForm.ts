@@ -21,53 +21,29 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
-
-      
+//not GWT import const J2MEUtil
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
-//not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
-
-      
+//not GWT import const NullAnimationFactory
 import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js';
-//not GWT import const RectangleAdjustedAnimation = globalThis.org.allbinary.animation.vector.RectangleAdjustedAnimation;
-
-      
+//not GWT import const RectangleAdjustedAnimation
 import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
-//not GWT import const RectangleFilledAdjustedAnimation = globalThis.org.allbinary.animation.vector.RectangleFilledAdjustedAnimation;
-
-      
+//not GWT import const RectangleFilledAdjustedAnimation
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
-
-      
+//not GWT import const UpdateMyFontInterface
 import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
-//not GWT import const CommandTextItem = globalThis.org.allbinary.graphics.form.item.CommandTextItem;
-
-      
+//not GWT import const CommandTextItem
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
-
-      
+//not GWT import const ABCustomItem
 
 
 
@@ -87,12 +63,8 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
-//not GWT import - same folder const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
-
-                import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
-
-                
+//not GWT import - same folder const ScrollCurrentSelectionFormimport { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import - same folder const ItemPaintableFactory
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {
         
 

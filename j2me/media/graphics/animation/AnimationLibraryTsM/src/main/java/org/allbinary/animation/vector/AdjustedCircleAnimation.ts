@@ -19,17 +19,11 @@
 
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-//not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
-
-      
+//not GWT import const AndroidUtil
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 
 
 
@@ -49,9 +43,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CircleAnimation } from './CircleAnimation.js';
-//not GWT import - same folder const CircleAnimation = globalThis.org.allbinary.animation.vector.CircleAnimation;
-
-                
+//not GWT import - same folder const CircleAnimation
 export class AdjustedCircleAnimation extends CircleAnimation {
         
 

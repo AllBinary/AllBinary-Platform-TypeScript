@@ -37,33 +37,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.tools.JPanel;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.graphics.j2me.workarea.tools.JButton;
-
-                import { JList } from './JList.js';
-//not GWT import - same folder const JList = globalThis.org.allbinary.graphics.j2me.workarea.tools.JList;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.tools.GridLayout;
-
-                import { Font } from './Font.js';
-//not GWT import - same folder const Font = globalThis.org.allbinary.graphics.j2me.workarea.tools.Font;
-
-                import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import - same folder const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
-
-                import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapter = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseAdapter;
-
-                import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
-
-                import { ToolFactory } from './ToolFactory.js';
-//not GWT import - same folder const ToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.ToolFactory;
-
-                
+//not GWT import - same folder const JPanelimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { JList } from './JList.js';
+//not GWT import - same folder const JListimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { Font } from './Font.js';
+//not GWT import - same folder const Fontimport { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import - same folder const LinesGraphicItemimport { MouseAdapter } from './MouseAdapter.js';
+//not GWT import - same folder const MouseAdapterimport { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEventimport { ToolFactory } from './ToolFactory.js';
+//not GWT import - same folder const ToolFactory
 export class ToolJPanel extends javax.swing.JPanel {
         
 

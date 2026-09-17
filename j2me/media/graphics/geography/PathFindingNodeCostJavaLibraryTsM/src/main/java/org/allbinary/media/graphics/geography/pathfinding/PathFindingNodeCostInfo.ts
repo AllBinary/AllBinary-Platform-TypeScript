@@ -26,12 +26,8 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 
 
 
@@ -51,12 +47,8 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
-//not GWT import - same folder const Comparable = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
-
-                import { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';
-//not GWT import - same folder const PathFindingNodeCostInfoData = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
-
-                
+//not GWT import - same folder const Comparableimport { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';
+//not GWT import - same folder const PathFindingNodeCostInfoData
 export class PathFindingNodeCostInfo
             extends Object
          implements Comparable<PathFindingNodeCostInfo> {

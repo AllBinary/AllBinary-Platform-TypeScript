@@ -22,20 +22,12 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 
 
 
@@ -55,15 +47,9 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNode } from './PathFindingNode.js';
-//not GWT import - same folder const PathFindingNode = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
-
-                import { Comparable } from './Comparable.js';
-//not GWT import - same folder const Comparable = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
-
-                import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
-//not GWT import - same folder const PathFindingNodeCostInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfo;
-
-                
+//not GWT import - same folder const PathFindingNodeimport { Comparable } from './Comparable.js';
+//not GWT import - same folder const Comparableimport { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
+//not GWT import - same folder const PathFindingNodeCostInfo
 export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {
         
 

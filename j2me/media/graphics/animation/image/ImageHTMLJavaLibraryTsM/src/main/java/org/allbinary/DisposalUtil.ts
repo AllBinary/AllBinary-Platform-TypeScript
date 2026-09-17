@@ -21,9 +21,7 @@
             import { Object } from '../../java/lang/Object.js';
         
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-//not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
-
-      
+//not GWT import const Resource
 
 
 

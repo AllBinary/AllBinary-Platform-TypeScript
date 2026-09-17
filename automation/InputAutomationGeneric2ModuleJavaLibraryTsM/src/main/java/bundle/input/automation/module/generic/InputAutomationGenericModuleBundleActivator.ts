@@ -21,13 +21,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
-//not GWT import const InputAutomationGenericModuleServiceFactory = globalThis.org.allbinary.input.automation.module.generic.InputAutomationGenericModuleServiceFactory;
-
-      
+//not GWT import const InputAutomationGenericModuleServiceFactory
 import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
-//not GWT import const InputAutomationModuleBundleActivator = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleBundleActivator;
-
-      
+//not GWT import const InputAutomationModuleBundleActivator
 
 
 

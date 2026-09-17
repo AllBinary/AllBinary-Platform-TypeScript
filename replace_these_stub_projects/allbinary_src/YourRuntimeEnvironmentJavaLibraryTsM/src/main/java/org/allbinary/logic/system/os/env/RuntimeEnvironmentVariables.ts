@@ -13,37 +13,21 @@
             import { System } from '../../../../../../java/lang/System.js';
         
 import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
-//not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
-
-      
+//not GWT import const BufferedReader
 import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
-//not GWT import const InputStreamReader = globalThis.java.io.InputStreamReader;
-
-      
+//not GWT import const InputStreamReader
 import { Properties } from '../../../../../../java/util/Properties.js';
-//not GWT import const Properties = globalThis.java.util.Properties;
-
-      
+//not GWT import const Properties
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-//not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
-
-      
+//not GWT import const GenericOperatingSystem
 import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-//not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
-
-      
+//not GWT import const OperatingSystemFactory
 import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
-//not GWT import const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
-
-      
+//not GWT import const OperatingSystems
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -63,9 +47,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Process } from './Process.js';
-//not GWT import - same folder const Process = globalThis.org.allbinary.logic.system.os.env.Process;
-
-                
+//not GWT import - same folder const Process
 export class RuntimeEnvironmentVariables
             extends Object
          {

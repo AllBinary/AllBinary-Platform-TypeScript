@@ -23,53 +23,29 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-//not GWT import const Method = globalThis.java.lang.reflect.Method;
-
-      
+//not GWT import const Method
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
-
-      
+//not GWT import const JspTagException
 import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
-//not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
-
-      
+//not GWT import const TagSupport
 import { OrderHelperFactory } from '../../admin/taghelpers/OrderHelperFactory.js';
-//not GWT import const OrderHelperFactory = globalThis.admin.taghelpers.OrderHelperFactory;
-
-      
+//not GWT import const OrderHelperFactory
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { PaymentGatewayData } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-//not GWT import const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
-
-      
+//not GWT import const PaymentGatewayData
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
-
-      
+//not GWT import const AbResponseHandler
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-//not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
-
-      
+//not GWT import const CustomTagSupport
 
 
 

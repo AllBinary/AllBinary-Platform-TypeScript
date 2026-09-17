@@ -19,13 +19,9 @@
 
 
 import { AnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js';
-//not GWT import const AnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.AnimationInterfaceCompositeInterface;
-
-      
+//not GWT import const AnimationInterfaceCompositeInterface
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
-
-      
+//not GWT import const PaintableInterface
 
 
 

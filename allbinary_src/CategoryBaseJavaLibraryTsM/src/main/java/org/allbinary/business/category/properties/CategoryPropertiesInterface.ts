@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CategoryHierarchyInterface } from '../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
-//not GWT import const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
-
-      
+//not GWT import const CategoryHierarchyInterface
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
-
-      
+//not GWT import const TableMappingInterface
 import { ValidationInterface } from '../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
-
-      
+//not GWT import const ValidationInterface
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 
 
 

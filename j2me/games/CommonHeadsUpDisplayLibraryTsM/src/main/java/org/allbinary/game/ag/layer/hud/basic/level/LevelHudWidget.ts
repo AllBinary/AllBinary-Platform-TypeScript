@@ -21,33 +21,19 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { Font } from '../../../../../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { BasicHud } from '../../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-//not GWT import const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
-
-      
+//not GWT import const BasicHud
 import { BasicColorFactory } from '../../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { PaintableInterface } from '../../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
-
-      
+//not GWT import const PaintableInterface
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 import { PrimitiveLongUtil } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-//not GWT import const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
-
-      
+//not GWT import const PrimitiveLongUtil
 
 
 

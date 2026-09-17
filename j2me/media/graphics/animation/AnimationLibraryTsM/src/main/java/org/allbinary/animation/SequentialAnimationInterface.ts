@@ -37,12 +37,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterface } from './AnimationInterface.js';
-//not GWT import - same folder const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
-
-                import { SequenceInterface } from './SequenceInterface.js';
-//not GWT import - same folder const SequenceInterface = globalThis.org.allbinary.animation.SequenceInterface;
-
-                
+//not GWT import - same folder const AnimationInterfaceimport { SequenceInterface } from './SequenceInterface.js';
+//not GWT import - same folder const SequenceInterface
 export interface SequentialAnimationInterface extends AnimationInterface, SequenceInterface {
         
 

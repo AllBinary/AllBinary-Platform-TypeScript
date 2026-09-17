@@ -23,13 +23,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-//not GWT import const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
-
-      
+//not GWT import const DisplayChangeEvent
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-//not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
-
-      
+//not GWT import const NullPaintable
 
 
 
@@ -49,9 +45,7 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
-
-                
+//not GWT import - same folder const AllBinaryGameCanvas
 export class BaseMenuBehavior
             extends Object
          {

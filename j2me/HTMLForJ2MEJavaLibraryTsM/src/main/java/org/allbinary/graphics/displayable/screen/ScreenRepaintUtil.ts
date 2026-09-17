@@ -21,13 +21,9 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-      
+//not GWT import const Displayable
 
 
 

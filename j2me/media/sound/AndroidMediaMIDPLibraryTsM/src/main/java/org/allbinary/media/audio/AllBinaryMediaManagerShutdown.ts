@@ -25,8 +25,6 @@
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
-      
-
 
 
 
@@ -45,9 +43,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
-
-                
+//not GWT import - same folder const SoundsFactoryInterface
 export class AllBinaryMediaManagerShutdown
             extends Object
          {

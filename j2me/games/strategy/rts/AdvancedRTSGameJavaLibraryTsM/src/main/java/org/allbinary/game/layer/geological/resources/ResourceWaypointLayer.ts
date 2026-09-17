@@ -21,37 +21,21 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { SelectionHudPaintable } from '../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
-//not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
-
-      
+//not GWT import const SelectionHudPaintable
 import { WaypointLayer } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
-//not GWT import const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
-
-      
+//not GWT import const WaypointLayer
 import { AnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const AnimationInterfaceFactoryInterface
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const ProceduralAnimationInterfaceFactoryInterface
 import { Group } from '../../../../../../org/allbinary/game/identification/Group.js';
-//not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
-
-      
+//not GWT import const Group
 import { PathFindingLayerInterface } from '../../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-//not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
-
-      
+//not GWT import const PathFindingLayerInterface
 import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-//not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
-
-      
+//not GWT import const RemoteInfo
 
 
 
@@ -71,12 +55,8 @@ import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalResourceInfoHudPaintableSingleton } from './GeologicalResourceInfoHudPaintableSingleton.js';
-//not GWT import - same folder const GeologicalResourceInfoHudPaintableSingleton = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResourceInfoHudPaintableSingleton;
-
-                import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
-//not GWT import - same folder const GeologicalResourceInfoHudPaintable = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResourceInfoHudPaintable;
-
-                
+//not GWT import - same folder const GeologicalResourceInfoHudPaintableSingletonimport { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
+//not GWT import - same folder const GeologicalResourceInfoHudPaintable
 export class ResourceWaypointLayer extends WaypointLayer {
         
 

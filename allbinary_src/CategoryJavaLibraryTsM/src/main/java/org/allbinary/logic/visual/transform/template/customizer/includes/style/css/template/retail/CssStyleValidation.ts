@@ -21,61 +21,33 @@
             import { Exception } from '../../../../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { Validation } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-//not GWT import const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
-
-      
+//not GWT import const Validation
 import { ValidationInterface } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
-
-      
+//not GWT import const ValidationInterface
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
-//not GWT import const StyleData = globalThis.org.allbinary.logic.visual.dhtml.style.StyleData;
-
-      
+//not GWT import const StyleData
 import { StylesData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
-//not GWT import const StylesData = globalThis.org.allbinary.logic.visual.dhtml.style.StylesData;
-
-      
+//not GWT import const StylesData
 import { StylesValidationFactory } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesValidationFactory.js';
-//not GWT import const StylesValidationFactory = globalThis.org.allbinary.logic.visual.dhtml.style.StylesValidationFactory;
-
-      
+//not GWT import const StylesValidationFactory
 import { Document } from '../../../../../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 

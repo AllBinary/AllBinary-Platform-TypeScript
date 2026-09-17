@@ -23,17 +23,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
-
-      
+//not GWT import const J2MEUtil
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 

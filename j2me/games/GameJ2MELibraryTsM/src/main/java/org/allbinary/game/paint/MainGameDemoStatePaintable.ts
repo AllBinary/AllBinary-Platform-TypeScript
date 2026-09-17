@@ -19,13 +19,9 @@
 
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 
 
 

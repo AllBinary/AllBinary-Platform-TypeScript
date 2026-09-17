@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import - same folder const AdvertisementAreaConstraintsInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
-
-                
+//not GWT import - same folder const AdvertisementAreaConstraintsInterface
 export interface AdvertisementAreaInterface {
         
 

@@ -24,12 +24,8 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -49,12 +45,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorEntity } from './IdGeneratorEntity.js';
-//not GWT import - same folder const IdGeneratorEntity = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
-
-                import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
-//not GWT import - same folder const IdGeneratorEntityInterface = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityInterface;
-
-                
+//not GWT import - same folder const IdGeneratorEntityimport { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
+//not GWT import - same folder const IdGeneratorEntityInterface
 export class IdGeneratorEntityFactory
             extends Object
          {

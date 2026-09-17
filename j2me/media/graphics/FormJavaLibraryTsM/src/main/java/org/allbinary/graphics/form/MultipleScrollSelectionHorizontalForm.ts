@@ -7,61 +7,33 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
-
-      
+//not GWT import const J2MEUtil
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-//not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
-
-      
+//not GWT import const MyFontProcessor
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
-
-      
+//not GWT import const UpdateMyFontInterface
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-//not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
-
-      
+//not GWT import const UpdateMyFontProcessor
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
-
-      
+//not GWT import const ABCustomItem
 import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
-//not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
-
-      
+//not GWT import const NullPaintable
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -81,27 +53,13 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import - same folder const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
-
-                import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
-
-                import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType = globalThis.org.allbinary.graphics.form.FormType;
-
-                import { ItemIndexPaintable } from './ItemIndexPaintable.js';
-//not GWT import - same folder const ItemIndexPaintable = globalThis.org.allbinary.graphics.form.ItemIndexPaintable;
-
-                import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory = globalThis.org.allbinary.graphics.form.FormTypeFactory;
-
-                //import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
-//not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable = globalThis.org.allbinary.graphics.form.MultipleScrollSelectionFormVerticalPaintable;
-
-                //import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
-//not GWT import - same folder const MultipleScrollSelectionFormHorizontalPaintable = globalThis.org.allbinary.graphics.form.MultipleScrollSelectionFormHorizontalPaintable;
-
-                
+//not GWT import - same folder const ScrollSelectionFormimport { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import - same folder const ItemPaintableFactoryimport { FormType } from './FormType.js';
+//not GWT import - same folder const FormTypeimport { ItemIndexPaintable } from './ItemIndexPaintable.js';
+//not GWT import - same folder const ItemIndexPaintableimport { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import - same folder const FormTypeFactory//import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
+//not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable//import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
+//not GWT import - same folder const MultipleScrollSelectionFormHorizontalPaintable
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 

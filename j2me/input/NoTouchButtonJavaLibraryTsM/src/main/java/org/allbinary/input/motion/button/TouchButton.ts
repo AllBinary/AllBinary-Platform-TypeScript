@@ -21,57 +21,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AnimationInterface } from '../../../../../org/allbinary/animation/AnimationInterface.js';
-//not GWT import const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
-
-      
+//not GWT import const AnimationInterface
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
-//not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
-
-      
+//not GWT import const CellPosition
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
-//not GWT import const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
-
-      
+//not GWT import const RectangleFactory
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -91,9 +65,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInput = globalThis.org.allbinary.input.motion.button.TouchButtonInput;
-
-                
+//not GWT import - same folder const TouchButtonInput
 export class TouchButton extends Paintable {
         
 

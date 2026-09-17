@@ -19,25 +19,15 @@
 
 
 import { awt } from '../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
-
-      
+//not GWT import const CanvasStrings
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -57,18 +47,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.image.gui.JPanel;
-
-                import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics = globalThis.org.allbinary.image.gui.Graphics;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.image.gui.Short;
-
-                
+//not GWT import - same folder const JPanelimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphicsimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Short
 export class ImageJPanel extends javax.swing.JPanel {
         
 

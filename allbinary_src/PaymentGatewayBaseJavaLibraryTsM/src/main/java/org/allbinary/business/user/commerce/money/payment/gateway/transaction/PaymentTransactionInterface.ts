@@ -19,17 +19,11 @@
 
 
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
-
-      
+//not GWT import const OrderHistory
 import { TableMappingInterface } from '../../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
-
-      
+//not GWT import const TableMappingInterface
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 
 
 

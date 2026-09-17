@@ -11,29 +11,17 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
-
-      
+//not GWT import const GL
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
-
-      
+//not GWT import const GL10
 import { Font } from '../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
-//not GWT import const FontDebugBase = globalThis.org.allbinary.graphics.font.FontDebugBase;
-
-      
+//not GWT import const FontDebugBase
 import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
-//not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
-
-      
+//not GWT import const OpenGLSurfaceChangedInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -53,12 +41,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsInterface } from './GraphicsInterface.js';
-//not GWT import - same folder const GraphicsInterface = globalThis.org.allbinary.device.GraphicsInterface;
-
-                import { NullGL10 } from './NullGL10.js';
-//not GWT import - same folder const NullGL10 = globalThis.org.allbinary.device.NullGL10;
-
-                
+//not GWT import - same folder const GraphicsInterfaceimport { NullGL10 } from './NullGL10.js';
+//not GWT import - same folder const NullGL10
 export class OpenGLESGraphics
             extends Object
          implements OpenGLSurfaceChangedInterface, GraphicsInterface {

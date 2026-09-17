@@ -25,13 +25,9 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
-//not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
-
-      
+//not GWT import const MediaPlayer
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 

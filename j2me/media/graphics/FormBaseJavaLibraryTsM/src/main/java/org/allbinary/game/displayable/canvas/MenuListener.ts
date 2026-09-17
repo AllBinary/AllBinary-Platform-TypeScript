@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-//not GWT import const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
-
-      
+//not GWT import const GameKeyEventSourceInterface
 
 
 

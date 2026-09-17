@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
-//not GWT import const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
-
-      
+//not GWT import const ItemStateListener
 import { GameStateCompositeInterface } from '../../../../../org/allbinary/game/state/GameStateCompositeInterface.js';
-//not GWT import const GameStateCompositeInterface = globalThis.org.allbinary.game.state.GameStateCompositeInterface;
-
-      
+//not GWT import const GameStateCompositeInterface
 import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-//not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
-
-      
+//not GWT import const PaintableInterface
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
-//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
-
-      
+//not GWT import const RunnableInterface
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 

@@ -13,25 +13,15 @@
             import { Runnable } from '../../../java/lang/Runnable.js';
         
 import { Context } from '../../../android/content/Context.js';
-//not GWT import const Context = globalThis.android.content.Context;
-
-      
+//not GWT import const Context
 import { View } from '../../../android/view/View.js';
-//not GWT import const View = globalThis.android.view.View;
-
-      
+//not GWT import const View
 import { Toast } from '../../../android/widget/Toast.js';
-//not GWT import const Toast = globalThis.android.widget.Toast;
-
-      
+//not GWT import const Toast
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VelocityBehaviorBase } from './VelocityBehaviorBase.js';
-//not GWT import - same folder const VelocityBehaviorBase = globalThis.org.allbinary.game.physics.velocity.VelocityBehaviorBase;
-
-                
+//not GWT import - same folder const VelocityBehaviorBase
 export class NoDragVelocityBehavior extends VelocityBehaviorBase {
         
 

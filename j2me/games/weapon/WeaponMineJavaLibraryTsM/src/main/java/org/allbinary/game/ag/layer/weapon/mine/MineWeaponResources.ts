@@ -19,13 +19,9 @@
 
 
 import { BasicGameResources } from '../../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
-//not GWT import const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
-
-      
+//not GWT import const BasicGameResources
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 
 
 

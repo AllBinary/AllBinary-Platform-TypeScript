@@ -21,9 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 
 
 
@@ -43,18 +41,10 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import - same folder const VectorAnimationFactoryInterface = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
-
-                import { TimedVectorAnimation } from './TimedVectorAnimation.js';
-//not GWT import - same folder const TimedVectorAnimation = globalThis.org.allbinary.animation.TimedVectorAnimation;
-
-                import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-                import { VectorAnimation } from './VectorAnimation.js';
-//not GWT import - same folder const VectorAnimation = globalThis.org.allbinary.animation.VectorAnimation;
-
-                
+//not GWT import - same folder const VectorAnimationFactoryInterfaceimport { TimedVectorAnimation } from './TimedVectorAnimation.js';
+//not GWT import - same folder const TimedVectorAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const AnimationBehaviorimport { VectorAnimation } from './VectorAnimation.js';
+//not GWT import - same folder const VectorAnimation
 export class TimedVectorAnimationFactory
             extends Object
          implements VectorAnimationFactoryInterface {

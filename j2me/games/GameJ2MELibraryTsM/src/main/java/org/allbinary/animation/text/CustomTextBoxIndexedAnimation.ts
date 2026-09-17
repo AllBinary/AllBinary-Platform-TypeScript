@@ -19,41 +19,23 @@
 
 
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-      
+//not GWT import const IndexedAnimation
 import { RawKeyEventListener } from '../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
-//not GWT import const RawKeyEventListener = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
-
-      
+//not GWT import const RawKeyEventListener
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
-
-      
+//not GWT import const UpdateMyFontInterface
 import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
-//not GWT import const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
-
-      
+//not GWT import const CustomTextBox
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -73,12 +55,8 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextInterface } from './TextInterface.js';
-//not GWT import - same folder const TextInterface = globalThis.org.allbinary.animation.text.TextInterface;
-
-                import { TextChangeListener } from './TextChangeListener.js';
-//not GWT import - same folder const TextChangeListener = globalThis.org.allbinary.animation.text.TextChangeListener;
-
-                
+//not GWT import - same folder const TextInterfaceimport { TextChangeListener } from './TextChangeListener.js';
+//not GWT import - same folder const TextChangeListener
 export class CustomTextBoxIndexedAnimation extends IndexedAnimation implements RawKeyEventListener, UpdateMyFontInterface, TextInterface {
         
 

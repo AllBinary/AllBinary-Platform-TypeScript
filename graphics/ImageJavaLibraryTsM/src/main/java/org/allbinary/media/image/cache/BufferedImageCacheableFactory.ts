@@ -21,13 +21,9 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-      
+//not GWT import const CacheableInterface
 import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-//not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
-
-      
+//not GWT import const CacheableInterfaceFactoryInterface
 
 
 
@@ -47,12 +43,8 @@ import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageCacheable } from './BufferedImageCacheable.js';
-//not GWT import - same folder const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
-
-                import { BufferedImageInfo } from './BufferedImageInfo.js';
-//not GWT import - same folder const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
-
-                
+//not GWT import - same folder const BufferedImageCacheableimport { BufferedImageInfo } from './BufferedImageInfo.js';
+//not GWT import - same folder const BufferedImageInfo
 export class BufferedImageCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

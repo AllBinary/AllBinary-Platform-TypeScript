@@ -19,13 +19,9 @@
 
 
 import { awt } from '../../../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
-
-      
+//not GWT import const ColorRangeInterface
 
 
 
@@ -45,9 +41,7 @@ import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.actions.script.condition.Point;
-
-                
+//not GWT import - same folder const Point
 export interface ColorAtActionScriptConditionInterface {
         
 

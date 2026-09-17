@@ -25,45 +25,25 @@
             import { Integer } from '../../../../../../../../java/lang/Integer.js';
         
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Set } from '../../../../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -83,12 +63,8 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadableItem } from './DownloadableItem.js';
-//not GWT import - same folder const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
-
-                import { DownloadItemData } from './DownloadItemData.js';
-//not GWT import - same folder const DownloadItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadItemData;
-
-                
+//not GWT import - same folder const DownloadableItemimport { DownloadItemData } from './DownloadItemData.js';
+//not GWT import - same folder const DownloadItemData
 export class DownloadableItemView
             extends Object
          implements DomNodeInterface {

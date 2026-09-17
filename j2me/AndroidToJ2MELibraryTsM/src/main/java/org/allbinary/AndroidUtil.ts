@@ -23,13 +23,9 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { Activity } from '../../android/app/Activity.js';
-//not GWT import const Activity = globalThis.android.app.Activity;
-
-      
+//not GWT import const Activity
 import { Build } from '../../android/os/Build.js';
-//not GWT import const Build = globalThis.android.os.Build;
-
-      
+//not GWT import const Build
 
 
 

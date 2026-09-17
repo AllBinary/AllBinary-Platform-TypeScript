@@ -19,9 +19,7 @@
 
 
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 
 
 
@@ -41,9 +39,7 @@ import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Processor } from './Processor.js';
-//not GWT import - same folder const Processor = globalThis.org.allbinary.canvas.Processor;
-
-                
+//not GWT import - same folder const Processor
 export class RunnableCanvasRefreshHelper extends Processor {
         
 

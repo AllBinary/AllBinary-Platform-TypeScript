@@ -23,37 +23,21 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { Intent } from '../../../android/content/Intent.js';
-//not GWT import const Intent = globalThis.android.content.Intent;
-
-      
+//not GWT import const Intent
 import { Uri } from '../../../android/net/Uri.js';
-//not GWT import const Uri = globalThis.android.net.Uri;
-
-      
+//not GWT import const Uri
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 

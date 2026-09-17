@@ -25,113 +25,59 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { Activity } from '../../../../../../android/app/Activity.js';
-//not GWT import const Activity = globalThis.android.app.Activity;
-
-      
+//not GWT import const Activity
 import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
-//not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
-
-      
+//not GWT import const AndroidUtil
 import { GameFeatureImageCacheFactory } from '../../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-//not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
-
-      
+//not GWT import const GameFeatureImageCacheFactory
 import { PreResourceImageUtil } from '../../../../../../org/allbinary/image/PreResourceImageUtil.js';
-//not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
-
-      
+//not GWT import const PreResourceImageUtil
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { ExceptionUtil } 
 const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
-
-      
 import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { NullAnimationFactory } from '../../../../../../org/allbinary/animation/NullAnimationFactory.js';
-//not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
-
-      
+//not GWT import const NullAnimationFactory
 import { Features } from '../../../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { MainFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-//not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
-
-      
+//not GWT import const MainFeatureFactory
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { DisplayChangeEvent } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-//not GWT import const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
-
-      
+//not GWT import const DisplayChangeEvent
 import { DisplayChangeEventHandler } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
-//not GWT import const DisplayChangeEventHandler = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventHandler;
-
-      
+//not GWT import const DisplayChangeEventHandler
 import { DisplayChangeEventListener } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
-//not GWT import const DisplayChangeEventListener = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventListener;
-
-      
+//not GWT import const DisplayChangeEventListener
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
-//not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
-
-      
+//not GWT import const ImageCacheFactory
 import { ImageScaleUtil } from '../../../../../../org/allbinary/media/image/ImageScaleUtil.js';
-//not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
-
-      
+//not GWT import const ImageScaleUtil
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { ImageAnimation } from '../../../../../../org/allbinary/animation/image/ImageAnimation.js';
-//not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
-
-      
+//not GWT import const ImageAnimation
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
-
-      
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-//not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
-
-      
+//not GWT import const EventStrings
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
-
-      
 //not plain js import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
-
-      
 
 
 
@@ -151,21 +97,11 @@ const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
-
-                import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
-//not GWT import - same folder const ShowTitleProgressBarRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.ShowTitleProgressBarRunnable;
-
-                import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
-//not GWT import - same folder const DismissTitleProgressBarRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.DismissTitleProgressBarRunnable;
-
-                import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarSetProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarSetProgressRunnable;
-
-                import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarPortionSetProgressRunnable;
-
-                
+//not GWT import - same folder const ProgressCanvasimport { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
+//not GWT import - same folder const ShowTitleProgressBarRunnableimport { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
+//not GWT import - same folder const DismissTitleProgressBarRunnableimport { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
+//not GWT import - same folder const TitleProgressBarSetProgressRunnableimport { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
+//not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {
         
 

@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRange } from './ColorRange.js';
-//not GWT import - same folder const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
-
-                import { ColorAverage } from './ColorAverage.js';
-//not GWT import - same folder const ColorAverage = globalThis.org.allbinary.media.image.analysis.ColorAverage;
-
-                
+//not GWT import - same folder const ColorRangeimport { ColorAverage } from './ColorAverage.js';
+//not GWT import - same folder const ColorAverage
 export class ImageColorResults
             extends Object
          {

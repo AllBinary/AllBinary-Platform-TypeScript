@@ -23,45 +23,25 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { FileReader } from '../../../../../../java/io/FileReader.js';
-//not GWT import const FileReader = globalThis.java.io.FileReader;
-
-      
+//not GWT import const FileReader
 import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
-//not GWT import const LineNumberReader = globalThis.java.io.LineNumberReader;
-
-      
+//not GWT import const LineNumberReader
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
-//not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
-
-      
+//not GWT import const LicenseInitInfo
 import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-//not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
-
-      
+//not GWT import const LicenseInitInfoUtil
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { XmlRpcAbeLicenseRetrievalClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js';
-//not GWT import const XmlRpcAbeLicenseRetrievalClient = globalThis.org.allbinary.logic.system.security.licensing.client.XmlRpcAbeLicenseRetrievalClient;
-
-      
+//not GWT import const XmlRpcAbeLicenseRetrievalClient
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-//not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
-
-      
+//not GWT import const PATH_GLOBALS
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -81,21 +61,11 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import - same folder const BasicArrayListD = globalThis.org.allbinary.logic.system.security.licensing.BasicArrayListD;
-
-                import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
-//not GWT import - same folder const PrintLicenseInitInfo = globalThis.org.allbinary.logic.system.security.licensing.PrintLicenseInitInfo;
-
-                import { AbeClientInformationInterfaceFactory } from './AbeClientInformationInterfaceFactory.js';
-//not GWT import - same folder const AbeClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterfaceFactory;
-
-                import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import - same folder const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-                import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import - same folder const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
-
-                
+//not GWT import - same folder const BasicArrayListDimport { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
+//not GWT import - same folder const PrintLicenseInitInfoimport { AbeClientInformationInterfaceFactory } from './AbeClientInformationInterfaceFactory.js';
+//not GWT import - same folder const AbeClientInformationInterfaceFactoryimport { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
+//not GWT import - same folder const AbeClientInformationInterfaceimport { AbeLicenseInterface } from './AbeLicenseInterface.js';
+//not GWT import - same folder const AbeLicenseInterface
 export class LicenseClientAndServerTest
             extends Object
          {

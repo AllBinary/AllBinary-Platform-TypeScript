@@ -23,21 +23,13 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
-//not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
-
-      
+//not GWT import const CellPosition
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 
 
 

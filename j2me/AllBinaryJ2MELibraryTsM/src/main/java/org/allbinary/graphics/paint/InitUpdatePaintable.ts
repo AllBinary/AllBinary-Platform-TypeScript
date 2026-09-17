@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import - same folder const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-                import { InitUpdatePaintableInterface } from './InitUpdatePaintableInterface.js';
-//not GWT import - same folder const InitUpdatePaintableInterface = globalThis.org.allbinary.graphics.paint.InitUpdatePaintableInterface;
-
-                
+//not GWT import - same folder const Paintableimport { InitUpdatePaintableInterface } from './InitUpdatePaintableInterface.js';
+//not GWT import - same folder const InitUpdatePaintableInterface
 export class InitUpdatePaintable extends Paintable implements InitUpdatePaintableInterface {
         
 

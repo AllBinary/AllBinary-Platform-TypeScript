@@ -13,29 +13,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { InetAddress } from '../../../../../java/net/InetAddress.js';
-//not GWT import const InetAddress = globalThis.java.net.InetAddress;
-
-      
+//not GWT import const InetAddress
 import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-//not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
-
-      
+//not GWT import const DatabaseConnectionInfoInterface
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
-
-      
+//not GWT import const DbConnectionInfo
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -55,9 +43,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBean } from './AbSqlBean.js';
-//not GWT import - same folder const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
-
-                
+//not GWT import - same folder const AbSqlBean
 export class AbDatabaseManagement extends AbSqlBean {
         
 

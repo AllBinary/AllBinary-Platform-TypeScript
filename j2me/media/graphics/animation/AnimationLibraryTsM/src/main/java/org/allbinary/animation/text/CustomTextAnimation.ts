@@ -21,25 +21,15 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { FontDebugFactory } from '../../../../org/allbinary/graphics/font/FontDebugFactory.js';
-//not GWT import const FontDebugFactory = globalThis.org.allbinary.graphics.font.FontDebugFactory;
-
-      
+//not GWT import const FontDebugFactory
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -59,12 +49,8 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextAnimation } from './TextAnimation.js';
-//not GWT import - same folder const TextAnimation = globalThis.org.allbinary.animation.text.TextAnimation;
-
-                import { TextInterface } from './TextInterface.js';
-//not GWT import - same folder const TextInterface = globalThis.org.allbinary.animation.text.TextInterface;
-
-                
+//not GWT import - same folder const TextAnimationimport { TextInterface } from './TextInterface.js';
+//not GWT import - same folder const TextInterface
 export class CustomTextAnimation extends TextAnimation implements TextInterface {
         
 

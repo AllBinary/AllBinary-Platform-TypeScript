@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-      
+//not GWT import const GameKeyEvent
 import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-//not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
-
-      
+//not GWT import const ScrollSelectionForm
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-//not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
-
-      
+//not GWT import const MotionGestureEvent
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -59,12 +49,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import - same folder const CommandFormInputProcessor = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
-
-                import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import - same folder const GameCommandCanvas = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
-
-                
+//not GWT import - same folder const CommandFormInputProcessorimport { GameCommandCanvas } from './GameCommandCanvas.js';
+//not GWT import - same folder const GameCommandCanvas
 export class ImmediateCommandFormInputProcessor extends CommandFormInputProcessor {
         
 

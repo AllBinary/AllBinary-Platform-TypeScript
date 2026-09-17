@@ -21,25 +21,15 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { BoundsVisitorInterface } from '../../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
-//not GWT import const BoundsVisitorInterface = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
-
-      
+//not GWT import const BoundsVisitorInterface
 import { VelocityInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
-//not GWT import const VelocityInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterface;
-
-      
+//not GWT import const VelocityInterface
 import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-//not GWT import const VelocityInterfaceCompositeInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterfaceCompositeInterface;
-
-      
+//not GWT import const VelocityInterfaceCompositeInterface
 import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
-//not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
-
-      
+//not GWT import const LayerInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 

@@ -37,15 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownGameKeyEventListenerInterface } from './DownGameKeyEventListenerInterface.js';
-//not GWT import - same folder const DownGameKeyEventListenerInterface = globalThis.org.allbinary.game.input.event.DownGameKeyEventListenerInterface;
-
-                import { UpGameKeyEventListenerInterface } from './UpGameKeyEventListenerInterface.js';
-//not GWT import - same folder const UpGameKeyEventListenerInterface = globalThis.org.allbinary.game.input.event.UpGameKeyEventListenerInterface;
-
-                import { PressGameKeyEventListenerInterface } from './PressGameKeyEventListenerInterface.js';
-//not GWT import - same folder const PressGameKeyEventListenerInterface = globalThis.org.allbinary.game.input.event.PressGameKeyEventListenerInterface;
-
-                
+//not GWT import - same folder const DownGameKeyEventListenerInterfaceimport { UpGameKeyEventListenerInterface } from './UpGameKeyEventListenerInterface.js';
+//not GWT import - same folder const UpGameKeyEventListenerInterfaceimport { PressGameKeyEventListenerInterface } from './PressGameKeyEventListenerInterface.js';
+//not GWT import - same folder const PressGameKeyEventListenerInterface
 export interface GameKeyEventListenerInterface extends DownGameKeyEventListenerInterface, UpGameKeyEventListenerInterface, PressGameKeyEventListenerInterface {
         
 

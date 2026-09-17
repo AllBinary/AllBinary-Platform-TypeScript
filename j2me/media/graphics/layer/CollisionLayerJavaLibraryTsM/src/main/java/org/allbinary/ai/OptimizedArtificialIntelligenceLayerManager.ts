@@ -19,13 +19,9 @@
 
 
 import { LayerManager } from '../../../org/allbinary/layer/LayerManager.js';
-//not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
-
-      
+//not GWT import const LayerManager
 import { LayerManagerNoDebug } from '../../../org/allbinary/layer/LayerManagerNoDebug.js';
-//not GWT import const LayerManagerNoDebug = globalThis.org.allbinary.layer.LayerManagerNoDebug;
-
-      
+//not GWT import const LayerManagerNoDebug
 
 
 

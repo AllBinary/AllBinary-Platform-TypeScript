@@ -21,9 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { RecordComparator, RecordComparatorI } from '../../../../../javax/microedition/rms/RecordComparator.js';
-//not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
-
-      
+//not GWT import const RecordComparator
 
 
 

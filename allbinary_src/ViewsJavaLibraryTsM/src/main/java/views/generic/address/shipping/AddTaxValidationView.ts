@@ -22,64 +22,34 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
-
-      
+//not GWT import const StoreFrontFactory
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { ShippingAddressData } from '../../../../org/allbinary/business/user/address/ShippingAddressData.js';
-//not GWT import const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
-
-      
+//not GWT import const ShippingAddressData
 import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
-//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
-
-      
+//not GWT import const StreetAddress
 import { TaxFactory } from '../../../../org/allbinary/business/user/commerce/money/tax/TaxFactory.js';
-//not GWT import const TaxFactory = globalThis.org.allbinary.business.user.commerce.money.tax.TaxFactory;
-
-      
+//not GWT import const TaxFactory
 import { TaxModuleInterface } from '../../../../org/allbinary/business/user/commerce/money/tax/modules/TaxModuleInterface.js';
-//not GWT import const TaxModuleInterface = globalThis.org.allbinary.business.user.commerce.money.tax.modules.TaxModuleInterface;
-
-      
+//not GWT import const TaxModuleInterface
 import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
-//not GWT import const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
-
-      
+//not GWT import const ShippingAddressesEntity
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
-
-      
+//not GWT import const ValidationComponentInterface
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { Document } from '../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -99,9 +69,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingAddressView } from './ShippingAddressView.js';
-//not GWT import - same folder const ShippingAddressView = globalThis.views.generic.address.shipping.ShippingAddressView;
-
-                
+//not GWT import - same folder const ShippingAddressView
 export class AddTaxValidationView extends ShippingAddressView implements ValidationComponentInterface {
         
 

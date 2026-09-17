@@ -21,45 +21,25 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-//not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
-
-      
+//not GWT import const NullAnimationFactory
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-//not GWT import const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
-
-      
+//not GWT import const BasicGroupFactory
 import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
-
-      
+//not GWT import const AllBinaryTiledLayer
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-//not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
-
-      
+//not GWT import const RemoteInfo
 import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
-//not GWT import const TileLayerPositionIntoViewPosition = globalThis.org.allbinary.game.view.TileLayerPositionIntoViewPosition;
-
-      
+//not GWT import const TileLayerPositionIntoViewPosition
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-//not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
-
-      
+//not GWT import const ViewPosition
 import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
-//not GWT import const ViewPositionEventHandler = globalThis.org.allbinary.view.event.ViewPositionEventHandler;
-
-      
+//not GWT import const ViewPositionEventHandler
 
 
 
@@ -79,12 +59,8 @@ import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
-//not GWT import - same folder const PickupLayer = globalThis.org.allbinary.game.layer.pickup.PickupLayer;
-
-                import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactory = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactory;
-
-                
+//not GWT import - same folder const PickupLayerimport { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
+//not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
 export class RaceTrackPickupLayer extends PickupLayer {
         
 

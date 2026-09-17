@@ -24,32 +24,18 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { ShippingInterface } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
-//not GWT import const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
-
-      
+//not GWT import const ShippingInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -69,12 +55,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsInterface } from './ShippingMethodsInterface.js';
-//not GWT import - same folder const ShippingMethodsInterface = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsInterface;
-
-                import { ShippingMethodsFactory } from './ShippingMethodsFactory.js';
-//not GWT import - same folder const ShippingMethodsFactory = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsFactory;
-
-                
+//not GWT import - same folder const ShippingMethodsInterfaceimport { ShippingMethodsFactory } from './ShippingMethodsFactory.js';
+//not GWT import - same folder const ShippingMethodsFactory
 export class ShippingMethods
             extends Object
          implements ShippingMethodsInterface {

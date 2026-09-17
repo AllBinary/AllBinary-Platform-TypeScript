@@ -21,33 +21,19 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-//not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
-
-      
+//not GWT import const Bundle
 import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
-//not GWT import const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
-
-      
+//not GWT import const ServiceFactory
 import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
-//not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
-
-      
+//not GWT import const ServiceRegistration
 import { InputAutomationModuleService } from '../../../../../../bundle/input/automation/module/InputAutomationModuleService.js';
-//not GWT import const InputAutomationModuleService = globalThis.bundle.input.automation.module.InputAutomationModuleService;
-
-      
+//not GWT import const InputAutomationModuleService
 import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-//not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
-
-      
+//not GWT import const InputAutomationModuleFactoryInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

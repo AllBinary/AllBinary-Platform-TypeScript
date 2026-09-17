@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
-
-      
+//not GWT import const CollidableCompositeLayer
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
-//not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
-
-      
+//not GWT import const NamedInterface
 
 
 
@@ -51,9 +45,7 @@ import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionType } from './CollisionType.js';
-//not GWT import - same folder const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
-
-                
+//not GWT import - same folder const CollisionType
 export interface CollidableInterface extends NamedInterface {
         
 

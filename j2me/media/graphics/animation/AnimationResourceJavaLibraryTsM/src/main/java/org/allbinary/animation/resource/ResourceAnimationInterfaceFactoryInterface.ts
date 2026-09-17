@@ -21,9 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BasicAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js';
-//not GWT import const BasicAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.BasicAnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const BasicAnimationInterfaceFactoryInterface
 
 
 

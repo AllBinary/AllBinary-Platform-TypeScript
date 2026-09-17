@@ -20,32 +20,18 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
-//not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
-
-      
+//not GWT import const CategoryInterface
 import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-//not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
-
-      
+//not GWT import const TableMappingInterface
 import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-//not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
-
-      
+//not GWT import const ValidationInterface
 import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
-//not GWT import const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
-
-      
+//not GWT import const ThemeValidation
 import { CompositeTransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-//not GWT import const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
-
-      
+//not GWT import const CompositeTransformInfoInterface
 
 
 

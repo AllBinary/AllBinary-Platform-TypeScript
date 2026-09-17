@@ -26,64 +26,34 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
-//not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
-
-      
+//not GWT import const CellPosition
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-//not GWT import const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
-
-      
+//not GWT import const BasicGeographicMapCellPositionFactory
 import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-//not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
-
-      
+//not GWT import const GeographicMapCellHistory
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 import { PathData } from '../../../../../../org/allbinary/media/graphics/geography/map/PathData.js';
-//not GWT import const PathData = globalThis.org.allbinary.media.graphics.geography.map.PathData;
-
-      
+//not GWT import const PathData
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
-
-      
 
 
 
@@ -103,15 +73,9 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-//not GWT import - same folder const PathGeneratorInterface = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathGeneratorInterface;
-
-                import { PathCacheFactory } from './PathCacheFactory.js';
-//not GWT import - same folder const PathCacheFactory = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathCacheFactory;
-
-                import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import - same folder const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
-
-                
+//not GWT import - same folder const PathGeneratorInterfaceimport { PathCacheFactory } from './PathCacheFactory.js';
+//not GWT import - same folder const PathCacheFactoryimport { PathFindingInfo } from './PathFindingInfo.js';
+//not GWT import - same folder const PathFindingInfo
 export class StaticPathGenerator
             extends Object
          implements PathGeneratorInterface {

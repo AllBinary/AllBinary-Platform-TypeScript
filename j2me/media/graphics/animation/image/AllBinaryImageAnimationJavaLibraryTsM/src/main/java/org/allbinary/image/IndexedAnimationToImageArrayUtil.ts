@@ -23,13 +23,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimation.js';
-//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-      
+//not GWT import const IndexedAnimation
 
 
 
@@ -49,9 +45,7 @@ import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationFrameToImageUtil } from './AnimationFrameToImageUtil.js';
-//not GWT import - same folder const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
-
-                
+//not GWT import - same folder const AnimationFrameToImageUtil
 export class IndexedAnimationToImageArrayUtil
             extends Object
          {

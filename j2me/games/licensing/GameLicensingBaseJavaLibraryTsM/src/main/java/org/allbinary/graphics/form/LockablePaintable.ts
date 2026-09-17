@@ -21,25 +21,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-//not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.FeaturedAnimationInterfaceFactoryInterfaceFactory;
-
-      
+//not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
 import { LockedResources } from '../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
-//not GWT import const LockedResources = globalThis.org.allbinary.logic.system.security.licensing.LockedResources;
-
-      
+//not GWT import const LockedResources
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-//not GWT import const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
-
-      
+//not GWT import const LockedUtil
 
 
 
@@ -59,9 +49,7 @@ import { LockedUtil } from '../../../../org/allbinary/logic/system/security/lice
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import - same folder const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
-
-                
+//not GWT import - same folder const ItemPaintable
 export class LockablePaintable extends ItemPaintable {
         
 

@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
-//not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
-
-      
+//not GWT import const AllBinaryGameLayer
 import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-//not GWT import const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
-
-      
+//not GWT import const BasicVelocityProperties
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
-
-      
+//not GWT import const BasicDecimal
 
 
 
@@ -51,9 +45,7 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicConstantVelocityMovement } from './BasicConstantVelocityMovement.js';
-//not GWT import - same folder const BasicConstantVelocityMovement = globalThis.org.allbinary.physics.movement.BasicConstantVelocityMovement;
-
-                
+//not GWT import - same folder const BasicConstantVelocityMovement
 export class NoBasicConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 

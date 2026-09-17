@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -61,12 +51,8 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontUsersStatisticsInterface } from './StoreFrontUsersStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontUsersStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.users.StoreFrontUsersStatisticsInterface;
-
-                import { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';
-//not GWT import - same folder const StoreFrontUsersStatisticsData = globalThis.org.allbinary.business.context.modules.storefront.statistics.users.StoreFrontUsersStatisticsData;
-
-                
+//not GWT import - same folder const StoreFrontUsersStatisticsInterfaceimport { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';
+//not GWT import - same folder const StoreFrontUsersStatisticsData
 export class StoreFrontUsersStatisticsView
             extends Object
          implements DomNodeInterface {

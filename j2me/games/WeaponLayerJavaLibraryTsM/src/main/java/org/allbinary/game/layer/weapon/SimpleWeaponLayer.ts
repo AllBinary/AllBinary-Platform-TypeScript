@@ -21,37 +21,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-//not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.FeaturedAnimationInterfaceFactoryInterfaceFactory;
-
-      
+//not GWT import const FeaturedAnimationInterfaceFactoryInterfaceFactory
 import { NullIndexedAnimationFactory } from '../../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
-//not GWT import const NullIndexedAnimationFactory = globalThis.org.allbinary.animation.NullIndexedAnimationFactory;
-
-      
+//not GWT import const NullIndexedAnimationFactory
 import { ExplosionResources } from '../../../../../org/allbinary/game/combat/damage/ExplosionResources.js';
-//not GWT import const ExplosionResources = globalThis.org.allbinary.game.combat.damage.ExplosionResources;
-
-      
+//not GWT import const ExplosionResources
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-//not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
-
-      
+//not GWT import const RemoteInfo
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
-//not GWT import const Movement = globalThis.org.allbinary.physics.movement.Movement;
-
-      
+//not GWT import const Movement
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
-//not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
-
-      
+//not GWT import const ViewPositionBase
 
 
 
@@ -71,12 +55,8 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import - same folder const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
-
-                import { CollidableWeaponBehavior } from './CollidableWeaponBehavior.js';
-//not GWT import - same folder const CollidableWeaponBehavior = globalThis.org.allbinary.game.layer.weapon.CollidableWeaponBehavior;
-
-                
+//not GWT import - same folder const WeaponLayerimport { CollidableWeaponBehavior } from './CollidableWeaponBehavior.js';
+//not GWT import - same folder const CollidableWeaponBehavior
 export class SimpleWeaponLayer extends WeaponLayer {
         
 

@@ -19,13 +19,9 @@
 
 
 import { GameType } from '../../../../org/allbinary/game/GameType.js';
-//not GWT import const GameType = globalThis.org.allbinary.game.GameType;
-
-      
+//not GWT import const GameType
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 
 
 
@@ -45,12 +41,8 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterface = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
-
-                import { AdvancedPlayerOwnedRTSLayers } from './AdvancedPlayerOwnedRTSLayers.js';
-//not GWT import - same folder const AdvancedPlayerOwnedRTSLayers = globalThis.org.allbinary.game.layer.AdvancedPlayerOwnedRTSLayers;
-
-                
+//not GWT import - same folder const RTSPlayerLayerInterfaceimport { AdvancedPlayerOwnedRTSLayers } from './AdvancedPlayerOwnedRTSLayers.js';
+//not GWT import - same folder const AdvancedPlayerOwnedRTSLayers
 export interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface {
         
 

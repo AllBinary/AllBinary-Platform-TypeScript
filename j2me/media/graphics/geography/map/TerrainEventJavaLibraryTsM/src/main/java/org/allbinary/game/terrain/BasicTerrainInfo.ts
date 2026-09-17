@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Angle } from '../../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 
 
 

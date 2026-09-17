@@ -25,8 +25,6 @@
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
-      
-
 
 
 
@@ -45,15 +43,9 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullImage } from './NullImage.js';
-//not GWT import - same folder const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-                import { Image } from './Image.js';
-//not GWT import - same folder const Image = globalThis.javax.microedition.lcdui.Image;
-
-                import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-                //PlatformNullImageJavaLibrary
+//not GWT import - same folder const NullImageimport { Image } from './Image.js';
+//not GWT import - same folder const Imageimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics//PlatformNullImageJavaLibrary
 export class PlatformImage
             extends Object
          {

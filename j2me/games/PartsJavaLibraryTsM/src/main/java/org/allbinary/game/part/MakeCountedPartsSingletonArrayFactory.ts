@@ -23,37 +23,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CountedPickedUpLayerInterfaceFactory } from '../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
-//not GWT import const CountedPickedUpLayerInterfaceFactory = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactory;
-
-      
+//not GWT import const CountedPickedUpLayerInterfaceFactory
 import { CountedPickedUpLayerInterfaceFactoryPool } from '../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactoryPool.js';
-//not GWT import const CountedPickedUpLayerInterfaceFactoryPool = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryPool;
-
-      
+//not GWT import const CountedPickedUpLayerInterfaceFactoryPool
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
-
-      
 
 
 
@@ -73,12 +57,8 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
-//not GWT import - same folder const CountedLayerInterfaceFactoryPart = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
-
-                import { PartInterface } from './PartInterface.js';
-//not GWT import - same folder const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
-
-                
+//not GWT import - same folder const CountedLayerInterfaceFactoryPartimport { PartInterface } from './PartInterface.js';
+//not GWT import - same folder const PartInterface
 export class MakeCountedPartsSingletonArrayFactory
             extends Object
          {

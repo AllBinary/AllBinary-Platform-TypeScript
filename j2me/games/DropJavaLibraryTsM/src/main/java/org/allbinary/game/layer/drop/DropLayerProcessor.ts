@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 import { BasicLayerProcessor } from '../../../../../org/allbinary/layer/BasicLayerProcessor.js';
-//not GWT import const BasicLayerProcessor = globalThis.org.allbinary.layer.BasicLayerProcessor;
-
-      
+//not GWT import const BasicLayerProcessor
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -55,9 +47,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DropLayerInterface } from './DropLayerInterface.js';
-//not GWT import - same folder const DropLayerInterface = globalThis.org.allbinary.game.layer.drop.DropLayerInterface;
-
-                
+//not GWT import - same folder const DropLayerInterface
 export class DropLayerProcessor extends BasicLayerProcessor {
         
 

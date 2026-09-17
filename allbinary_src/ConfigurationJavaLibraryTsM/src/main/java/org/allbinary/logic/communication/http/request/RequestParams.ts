@@ -23,53 +23,29 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Map } from '../../../../../../java/util/Map.js';
-//not GWT import const Map = globalThis.java.util.Map;
-
-      
+//not GWT import const Map
 import { Set } from '../../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -89,9 +65,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestData } from './RequestData.js';
-//not GWT import - same folder const RequestData = globalThis.org.allbinary.logic.communication.http.request.RequestData;
-
-                //Note: if request is destroyed or messed up this will not work. Use fileRequestParams
+//not GWT import - same folder const RequestData//Note: if request is destroyed or messed up this will not work. Use fileRequestParams
 export class RequestParams
             extends Object
          {

@@ -19,21 +19,13 @@
 
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -53,12 +45,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
-//not GWT import - same folder const UpgradableRTSLayerHudPaintable = globalThis.org.allbinary.game.layer.UpgradableRTSLayerHudPaintable;
-
-                import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
-
-                
+//not GWT import - same folder const UpgradableRTSLayerHudPaintableimport { RTSLayer } from './RTSLayer.js';
+//not GWT import - same folder const RTSLayer
 export class RTSLayerCompositePaintable extends Paintable {
         
 

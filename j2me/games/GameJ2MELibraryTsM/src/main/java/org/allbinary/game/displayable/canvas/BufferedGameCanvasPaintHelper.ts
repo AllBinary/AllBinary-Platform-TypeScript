@@ -21,41 +21,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-//not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
-
-      
+//not GWT import const NullCanvas
 import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
-//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
-
-      
+//not GWT import const Anchor
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-//not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
-
-      
+//not GWT import const ProcessPaintable
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
-
-      
 
 
 
@@ -75,9 +57,7 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
-
-                
+//not GWT import - same folder const AllBinaryGameCanvas
 export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
         
 

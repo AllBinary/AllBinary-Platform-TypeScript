@@ -23,41 +23,23 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { Enumeration } from '../../../../../../java/util/Enumeration.js';
-//not GWT import const Enumeration = globalThis.java.util.Enumeration;
-
-      
+//not GWT import const Enumeration
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -77,9 +59,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeHttpRequestInfoData } from './AbeHttpRequestInfoData.js';
-//not GWT import - same folder const AbeHttpRequestInfoData = globalThis.org.allbinary.logic.communication.http.request.AbeHttpRequestInfoData;
-
-                
+//not GWT import - same folder const AbeHttpRequestInfoData
 export class AbeHttpRequestInfo
             extends Object
          {

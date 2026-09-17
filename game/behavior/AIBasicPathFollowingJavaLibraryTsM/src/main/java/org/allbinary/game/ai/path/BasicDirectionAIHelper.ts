@@ -25,25 +25,15 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
-
-      
+//not GWT import const Direction
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-//not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
-
-      
+//not GWT import const DirectionFactory
 import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
-//not GWT import const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
-
-      
+//not GWT import const AngleIncrementInfo
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 
 
 

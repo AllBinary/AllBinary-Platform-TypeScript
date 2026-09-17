@@ -25,25 +25,15 @@
             import { System } from '../../../../java/lang/System.js';
         
 import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-//not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
-
-      
+//not GWT import const DataOutputStream
 import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
-//not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
-
-      
+//not GWT import const FileOutputStream
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
-//not GWT import const AbFileSystem = globalThis.org.allbinary.logic.io.file.AbFileSystem;
-
-      
+//not GWT import const AbFileSystem
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

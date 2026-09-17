@@ -21,13 +21,9 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
-//not GWT import const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
-
-      
+//not GWT import const MotionGestureConfiguration
 import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
-//not GWT import const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
-
-      
+//not GWT import const MotionGestureConfigurationFactory
 
 
 
@@ -47,15 +43,9 @@ import { MotionGestureConfigurationFactory } from '../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResolveCompleteMotionGestureListener } from './ResolveCompleteMotionGestureListener.js';
-//not GWT import - same folder const ResolveCompleteMotionGestureListener = globalThis.org.allbinary.input.motion.gesture.observer.ResolveCompleteMotionGestureListener;
-
-                import { NullCompleteMotionGestureReceiver } from './NullCompleteMotionGestureReceiver.js';
-//not GWT import - same folder const NullCompleteMotionGestureReceiver = globalThis.org.allbinary.input.motion.gesture.observer.NullCompleteMotionGestureReceiver;
-
-                import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
-//not GWT import - same folder const CompleteMotionGestureListenerInterface = globalThis.org.allbinary.input.motion.gesture.observer.CompleteMotionGestureListenerInterface;
-
-                
+//not GWT import - same folder const ResolveCompleteMotionGestureListenerimport { NullCompleteMotionGestureReceiver } from './NullCompleteMotionGestureReceiver.js';
+//not GWT import - same folder const NullCompleteMotionGestureReceiverimport { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
+//not GWT import - same folder const CompleteMotionGestureListenerInterface
 export class MotionGestureReceiveInterfaceFactory
             extends Object
          {

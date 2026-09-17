@@ -22,20 +22,12 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -55,9 +47,7 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeHelper } from './DomNodeHelper.js';
-//not GWT import - same folder const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-                
+//not GWT import - same folder const DomNodeHelper
 export class DomNodeListHelper
             extends Object
          {

@@ -23,21 +23,13 @@
             import { Math } from '../../../java/lang/Math.js';
         
 import { Buffer } from '../../../java/nio/Buffer.js';
-//not GWT import const Buffer = globalThis.java.nio.Buffer;
-
-      
+//not GWT import const Buffer
 import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
-//not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
-
-      
+//not GWT import const ByteBuffer
 import { ByteOrder } from '../../../java/nio/ByteOrder.js';
-//not GWT import const ByteOrder = globalThis.java.nio.ByteOrder;
-
-      
+//not GWT import const ByteOrder
 import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
-//not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
-
-      
+//not GWT import const FloatBuffer
 
 
 

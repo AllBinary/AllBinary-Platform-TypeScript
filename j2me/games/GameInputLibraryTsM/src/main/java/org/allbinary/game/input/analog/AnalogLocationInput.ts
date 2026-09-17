@@ -7,9 +7,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { CustomGPoint } from '../../../../../org/allbinary/graphics/CustomGPoint.js';
-//not GWT import const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
-
-      
+//not GWT import const CustomGPoint
 
 
 

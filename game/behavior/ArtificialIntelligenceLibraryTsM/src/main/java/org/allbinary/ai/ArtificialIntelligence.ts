@@ -23,9 +23,7 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 
@@ -45,9 +43,7 @@ import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceInterface } from './ArtificialIntelligenceInterface.js';
-//not GWT import - same folder const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
-
-                
+//not GWT import - same folder const ArtificialIntelligenceInterface
 export class ArtificialIntelligence
             extends Object
          implements ArtificialIntelligenceInterface {

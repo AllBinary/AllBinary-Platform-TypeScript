@@ -21,13 +21,9 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Angle } from '../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 
 
 
@@ -47,12 +43,8 @@ import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionFactory } from './DirectionFactory.js';
-//not GWT import - same folder const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
-
-                import { Direction } from './Direction.js';
-//not GWT import - same folder const Direction = globalThis.org.allbinary.direction.Direction;
-
-                
+//not GWT import - same folder const DirectionFactoryimport { Direction } from './Direction.js';
+//not GWT import - same folder const Direction
 export class DirectionUtil
             extends Object
          {

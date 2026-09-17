@@ -20,28 +20,16 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
-//not GWT import const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
-
-      
+//not GWT import const HtmlTag
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 
 
 
@@ -61,9 +49,7 @@ const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlRow } from './HtmlRow.js';
-//not GWT import - same folder const HtmlRow = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlRow;
-
-                
+//not GWT import - same folder const HtmlRow
 export class HtmlTable extends HtmlTag {
         
 

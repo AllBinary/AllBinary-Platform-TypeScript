@@ -23,33 +23,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-//not GWT import const Method = globalThis.java.lang.reflect.Method;
-
-      
+//not GWT import const Method
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
-
-      
+//not GWT import const JspTagException
 import { ShippingAddressHelperFactory } from '../../admin/taghelpers/ShippingAddressHelperFactory.js';
-//not GWT import const ShippingAddressHelperFactory = globalThis.admin.taghelpers.ShippingAddressHelperFactory;
-
-      
+//not GWT import const ShippingAddressHelperFactory
 import { ShippingAddressData } from '../../org/allbinary/business/user/address/ShippingAddressData.js';
-//not GWT import const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
-
-      
+//not GWT import const ShippingAddressData
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
-
-      
+//not GWT import const AbResponseHandler
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 
 
 
@@ -69,9 +55,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
-
-                
+//not GWT import - same folder const TableTag
 export class ShippingAddressTag extends TableTag {
         
 

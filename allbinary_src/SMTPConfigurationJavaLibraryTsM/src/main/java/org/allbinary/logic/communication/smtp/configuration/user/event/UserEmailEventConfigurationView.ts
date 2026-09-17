@@ -23,37 +23,21 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-      
+//not GWT import const DomNodeHelper
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -73,18 +57,10 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
-
-                import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
-//not GWT import - same folder const UserEmailEventConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationData;
-
-                import { UserEmailEventConfiguration } from './UserEmailEventConfiguration.js';
-//not GWT import - same folder const UserEmailEventConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfiguration;
-
-                import { UserEmailEventConfigurationMapping } from './UserEmailEventConfigurationMapping.js';
-//not GWT import - same folder const UserEmailEventConfigurationMapping = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationMapping;
-
-                
+//not GWT import - same folder const UserEmailEventConfigurationInterfaceimport { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
+//not GWT import - same folder const UserEmailEventConfigurationDataimport { UserEmailEventConfiguration } from './UserEmailEventConfiguration.js';
+//not GWT import - same folder const UserEmailEventConfigurationimport { UserEmailEventConfigurationMapping } from './UserEmailEventConfigurationMapping.js';
+//not GWT import - same folder const UserEmailEventConfigurationMapping
 export class UserEmailEventConfigurationView
             extends Object
          implements DomNodeInterface {

@@ -19,9 +19,7 @@
 
 
 import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
-//not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
-
-      
+//not GWT import const LayerInterfaceFactoryInterface
 
 
 
@@ -41,9 +39,7 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
-
-                
+//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
 export interface CountedPickedUpLayerInterfaceFactoryInterface extends PickedUpLayerInterfaceFactoryInterface, LayerInterfaceFactoryInterface {
         
 

@@ -27,17 +27,11 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { HelpSet } from '../../../../javax/help/HelpSet.js';
-//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
-
-      
+//not GWT import const HelpSet
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -57,15 +51,9 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.Point;
-
-                import { PointHelper } from './PointHelper.js';
-//not GWT import - same folder const PointHelper = globalThis.org.allbinary.input.automation.PointHelper;
-
-                import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle = globalThis.org.allbinary.input.automation.Rectangle;
-
-                
+//not GWT import - same folder const Pointimport { PointHelper } from './PointHelper.js';
+//not GWT import - same folder const PointHelperimport { Rectangle } from './Rectangle.js';
+//not GWT import - same folder const Rectangle
 export class AbstractInputRobot
             extends Object
          {

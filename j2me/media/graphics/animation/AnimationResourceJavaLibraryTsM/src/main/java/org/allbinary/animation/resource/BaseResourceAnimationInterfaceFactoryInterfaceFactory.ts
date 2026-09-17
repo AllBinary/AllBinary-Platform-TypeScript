@@ -23,49 +23,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BasicAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js';
-//not GWT import const BasicAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.BasicAnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const BasicAnimationInterfaceFactoryInterface
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
-//not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
-
-      
+//not GWT import const NullAnimationFactory
 import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
-//not GWT import const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
-
-      
+//not GWT import const ResourceLoadingLevelFactory
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-//not GWT import const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
-
-      
+//not GWT import const RectangleFactory
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
-
-      
+//not GWT import const ImageCache
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -85,9 +63,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeatureResourceAnimationInterfaceFactoryInterface } from './FeatureResourceAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const FeatureResourceAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.resource.FeatureResourceAnimationInterfaceFactoryInterface;
-
-                
+//not GWT import - same folder const FeatureResourceAnimationInterfaceFactoryInterface
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
             extends Object
          implements FeatureResourceAnimationInterfaceFactoryInterface {

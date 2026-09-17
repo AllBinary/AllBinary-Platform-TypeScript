@@ -23,25 +23,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
-//not GWT import const TouchFeatureFactory = globalThis.org.allbinary.game.configuration.feature.TouchFeatureFactory;
-
-      
+//not GWT import const TouchFeatureFactory
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-//not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
-
-      
+//not GWT import const ABCustomItem
 
 
 
@@ -61,18 +51,10 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionFormNoneFactory } from './ScrollSelectionFormNoneFactory.js';
-//not GWT import - same folder const ScrollSelectionFormNoneFactory = globalThis.org.allbinary.graphics.form.ScrollSelectionFormNoneFactory;
-
-                import { CommandCurrentSelectionForm } from './CommandCurrentSelectionForm.js';
-//not GWT import - same folder const CommandCurrentSelectionForm = globalThis.org.allbinary.graphics.form.CommandCurrentSelectionForm;
-
-                import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import - same folder const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
-
-                import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType = globalThis.org.allbinary.graphics.form.FormType;
-
-                
+//not GWT import - same folder const ScrollSelectionFormNoneFactoryimport { CommandCurrentSelectionForm } from './CommandCurrentSelectionForm.js';
+//not GWT import - same folder const CommandCurrentSelectionFormimport { ScrollSelectionForm } from './ScrollSelectionForm.js';
+//not GWT import - same folder const ScrollSelectionFormimport { FormType } from './FormType.js';
+//not GWT import - same folder const FormType
 export class CommandCurrentSelectionFormFactory
             extends Object
          {

@@ -19,13 +19,9 @@
 
 
 import { Map } from '../../../../java/util/Map.js';
-//not GWT import const Map = globalThis.java.util.Map;
-
-      
+//not GWT import const Map
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
-//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
-
-      
+//not GWT import const BundleContext
 
 
 

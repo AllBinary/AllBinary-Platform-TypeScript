@@ -21,9 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
-//not GWT import const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
-
-      
+//not GWT import const GameCanvasRunnableInterface
 
 
 

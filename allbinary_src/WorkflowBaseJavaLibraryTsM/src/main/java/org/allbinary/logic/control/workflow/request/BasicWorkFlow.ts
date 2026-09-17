@@ -25,85 +25,45 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Set } from '../../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
-
-      
+//not GWT import const DomDocumentHelper
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
-
-      
+//not GWT import const RequestParams
 import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
-
-      
+//not GWT import const WeblisketSession
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { WorkFlowData } from '../../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
-//not GWT import const WorkFlowData = globalThis.org.allbinary.logic.control.workflow.WorkFlowData;
-
-      
+//not GWT import const WorkFlowData
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 

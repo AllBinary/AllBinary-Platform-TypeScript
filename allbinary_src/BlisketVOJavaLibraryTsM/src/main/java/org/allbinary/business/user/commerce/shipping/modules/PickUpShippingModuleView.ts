@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-//not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
-
-      
+//not GWT import const ShippingMethodData
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -59,12 +49,8 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickUpShippingModule } from './PickUpShippingModule.js';
-//not GWT import - same folder const PickUpShippingModule = globalThis.org.allbinary.business.user.commerce.shipping.modules.PickUpShippingModule;
-
-                import { Document } from './Document.js';
-//not GWT import - same folder const Document = globalThis.org.allbinary.business.user.commerce.shipping.modules.Document;
-
-                
+//not GWT import - same folder const PickUpShippingModuleimport { Document } from './Document.js';
+//not GWT import - same folder const Document
 export class PickUpShippingModuleView extends PickUpShippingModule implements DomNodeInterface {
         
 

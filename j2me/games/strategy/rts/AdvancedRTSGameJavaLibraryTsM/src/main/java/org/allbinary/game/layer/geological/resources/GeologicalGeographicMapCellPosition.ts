@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 
 
 
@@ -43,9 +41,7 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalResource } from './GeologicalResource.js';
-//not GWT import - same folder const GeologicalResource = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResource;
-
-                
+//not GWT import - same folder const GeologicalResource
 export class GeologicalGeographicMapCellPosition extends GeographicMapCellPosition {
         
 

@@ -21,77 +21,41 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DomData } from '../../../../../../../../../org/allbinary/data/tree/dom/DomData.js';
-//not GWT import const DomData = globalThis.org.allbinary.data.tree.dom.DomData;
-
-      
+//not GWT import const DomData
 import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-      
+//not GWT import const DomNodeHelper
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbSqlData } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
-//not GWT import const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
-
-      
+//not GWT import const AbSqlData
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-//not GWT import const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
-
-      
+//not GWT import const Validation
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 import { BodyData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
-//not GWT import const BodyData = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.BodyData;
-
-      
+//not GWT import const BodyData
 import { TitleData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
-//not GWT import const TitleData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
-
-      
+//not GWT import const TitleData
 import { TitleNotRequiredValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleNotRequiredValidation.js';
-//not GWT import const TitleNotRequiredValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleNotRequiredValidation;
-
-      
+//not GWT import const TitleNotRequiredValidation
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 

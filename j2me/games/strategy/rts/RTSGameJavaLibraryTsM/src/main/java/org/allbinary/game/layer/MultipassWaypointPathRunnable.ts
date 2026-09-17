@@ -26,40 +26,22 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 import { MultipassState } from '../../../../org/allbinary/media/graphics/geography/pathfinding/MultipassState.js';
-//not GWT import const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
-
-      
+//not GWT import const MultipassState
 import { PathFindingInfo } from '../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
-//not GWT import const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
-
-      
+//not GWT import const PathFindingInfo
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
-
-      
 
 
 
@@ -79,21 +61,11 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//not GWT import - same folder const WaypointPathRunnableBase = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
-
-                //import { FirstRunnable } from './FirstRunnable.js';
-//not GWT import - same folder const FirstRunnable = globalThis.org.allbinary.game.layer.FirstRunnable;
-
-                //import { SecondRunnable } from './SecondRunnable.js';
-//not GWT import - same folder const SecondRunnable = globalThis.org.allbinary.game.layer.SecondRunnable;
-
-                //import { EndRunnable } from './EndRunnable.js';
-//not GWT import - same folder const EndRunnable = globalThis.org.allbinary.game.layer.EndRunnable;
-
-                import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
-
-                
+//not GWT import - same folder const WaypointPathRunnableBase//import { FirstRunnable } from './FirstRunnable.js';
+//not GWT import - same folder const FirstRunnable//import { SecondRunnable } from './SecondRunnable.js';
+//not GWT import - same folder const SecondRunnable//import { EndRunnable } from './EndRunnable.js';
+//not GWT import - same folder const EndRunnableimport { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import - same folder const WaypointBehaviorBase
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
 

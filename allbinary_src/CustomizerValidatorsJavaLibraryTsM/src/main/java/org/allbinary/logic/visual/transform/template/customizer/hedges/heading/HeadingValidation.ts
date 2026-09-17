@@ -21,57 +21,31 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-//not GWT import const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
-
-      
+//not GWT import const Validation
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { LogoData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoData.js';
-//not GWT import const LogoData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.logo.LogoData;
-
-      
+//not GWT import const LogoData
 import { LogoValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoValidation.js';
-//not GWT import const LogoValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.logo.LogoValidation;
-
-      
+//not GWT import const LogoValidation
 import { TitleData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
-//not GWT import const TitleData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
-
-      
+//not GWT import const TitleData
 import { TitleValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleValidation.js';
-//not GWT import const TitleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleValidation;
-
-      
+//not GWT import const TitleValidation
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -91,9 +65,7 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HeadingData } from './HeadingData.js';
-//not GWT import - same folder const HeadingData = globalThis.org.allbinary.logic.visual.transform.template.customizer.hedges.heading.HeadingData;
-
-                
+//not GWT import - same folder const HeadingData
 export class HeadingValidation extends Validation implements DomNodeInterface {
         
 

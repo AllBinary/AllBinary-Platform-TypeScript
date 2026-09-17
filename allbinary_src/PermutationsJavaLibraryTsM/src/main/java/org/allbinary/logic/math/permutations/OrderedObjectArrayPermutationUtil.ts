@@ -23,17 +23,11 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { Arrays } from '../../../../../java/util/Arrays.js';
-//not GWT import const Arrays = globalThis.java.util.Arrays;
-
-      
+//not GWT import const Arrays
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
-
-      
+//not GWT import const Visitor
 
 
 
@@ -53,12 +47,8 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ComparableObject } from './ComparableObject.js';
-//not GWT import - same folder const ComparableObject = globalThis.org.allbinary.logic.math.permutations.ComparableObject;
-
-                import { ObjectPermutationVisitor } from './ObjectPermutationVisitor.js';
-//not GWT import - same folder const ObjectPermutationVisitor = globalThis.org.allbinary.logic.math.permutations.ObjectPermutationVisitor;
-
-                
+//not GWT import - same folder const ComparableObjectimport { ObjectPermutationVisitor } from './ObjectPermutationVisitor.js';
+//not GWT import - same folder const ObjectPermutationVisitor
 export class OrderedObjectArrayPermutationUtil
             extends Object
          {

@@ -19,17 +19,11 @@
 
 
 import { HashMap } from '../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -49,9 +43,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandTag } from './CommandTag.js';
-//not GWT import - same folder const CommandTag = globalThis.tags.CommandTag;
-
-                
+//not GWT import - same folder const CommandTag
 export class PropertiesTag extends CommandTag {
         
 

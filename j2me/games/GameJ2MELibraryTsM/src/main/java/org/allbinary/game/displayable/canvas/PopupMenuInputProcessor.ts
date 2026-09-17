@@ -21,65 +21,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
-//not GWT import const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
-
-      
+//not GWT import const GameInputStrings
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-      
+//not GWT import const GameKeyEvent
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 import { MotionGestureInput } from '../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-//not GWT import const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
-
-      
+//not GWT import const MotionGestureInput
 import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-//not GWT import const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
-
-      
+//not GWT import const TouchMotionGestureFactory
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-//not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
-
-      
+//not GWT import const MotionGestureEvent
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
-//not GWT import const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
-
-      
+//not GWT import const RectangleCollisionUtil
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -99,12 +69,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import - same folder const BasicMenuInputProcessor = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
-
-                import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
-
-                
+//not GWT import - same folder const BasicMenuInputProcessorimport { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import - same folder const AllBinaryGameCanvas
 export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
         
 

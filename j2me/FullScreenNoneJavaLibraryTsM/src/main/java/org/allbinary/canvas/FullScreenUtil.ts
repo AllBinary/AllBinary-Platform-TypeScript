@@ -23,21 +23,13 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-//not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
-
-      
+//not GWT import const MainFeatureFactory
 
 
 

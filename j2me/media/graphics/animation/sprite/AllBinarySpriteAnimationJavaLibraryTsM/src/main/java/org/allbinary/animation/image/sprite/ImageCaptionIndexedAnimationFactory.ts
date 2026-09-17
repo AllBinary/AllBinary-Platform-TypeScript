@@ -23,66 +23,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-//not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
-
-      
+//not GWT import const Sprite
 import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
-//not GWT import const Player = globalThis.javax.microedition.media.Player;
-const PlayerI = globalThis.javax.microedition.media.Player;
-
-      
+//not GWT import const Player
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-//not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
-
-      
+//not GWT import const AnimationBehaviorFactory
 import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-//not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
-
-      
+//not GWT import const AnimationInterfaceFactoryInterface
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
-//not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-      
+//not GWT import const IndexedAnimation
 import { CaptionIndexedAnimation } from '../../../../../org/allbinary/animation/caption/CaptionIndexedAnimation.js';
-//not GWT import const CaptionIndexedAnimation = globalThis.org.allbinary.animation.caption.CaptionIndexedAnimation;
-
-      
+//not GWT import const CaptionIndexedAnimation
 import { ImageAnimation } from '../../../../../org/allbinary/animation/image/ImageAnimation.js';
-//not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
-
-      
+//not GWT import const ImageAnimation
 import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
-//not GWT import const BasicColorUtil = globalThis.org.allbinary.graphics.color.BasicColorUtil;
-
-      
+//not GWT import const BasicColorUtil
 import { AnimationFactoryImageScaleUtil } from '../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
-//not GWT import const AnimationFactoryImageScaleUtil = globalThis.org.allbinary.image.AnimationFactoryImageScaleUtil;
-
-      
+//not GWT import const AnimationFactoryImageScaleUtil
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
-//not GWT import const AnimationFactorySpriteScaleUtil = globalThis.org.allbinary.image.sprite.AnimationFactorySpriteScaleUtil;
-
-      
+//not GWT import const AnimationFactorySpriteScaleUtil
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
-//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
-
-      
+//not GWT import const ScaleProperties
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
-//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
-
-      
+//not GWT import const Sound
 
 
 
@@ -102,9 +71,7 @@ import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-//not GWT import - same folder const SpriteIndexedAnimation = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
-
-                
+//not GWT import - same folder const SpriteIndexedAnimation
 export class ImageCaptionIndexedAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

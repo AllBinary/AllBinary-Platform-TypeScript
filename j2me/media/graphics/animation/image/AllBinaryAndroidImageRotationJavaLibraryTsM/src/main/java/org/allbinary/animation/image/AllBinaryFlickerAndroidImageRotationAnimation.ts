@@ -21,33 +21,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-//not GWT import const Matrix = globalThis.android.graphics.Matrix;
-
-      
+//not GWT import const Matrix
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidImageUtil.js';
-//not GWT import const AndroidImageUtil = globalThis.org.allbinary.media.image.AndroidImageUtil;
-
-      
+//not GWT import const AndroidImageUtil
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
-
-      
+//not GWT import const ImageModifierUtil
 
 
 
@@ -67,9 +53,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import - same folder const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
-
-                
+//not GWT import - same folder const ImageBaseRotationAnimation
 export class AllBinaryFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

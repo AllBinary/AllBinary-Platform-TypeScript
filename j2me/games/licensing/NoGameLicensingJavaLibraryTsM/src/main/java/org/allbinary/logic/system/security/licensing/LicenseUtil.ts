@@ -21,9 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 
 
 

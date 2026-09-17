@@ -22,48 +22,26 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { UserDomNode } from '../../../org/allbinary/business/user/UserDomNode.js';
-//not GWT import const UserDomNode = globalThis.org.allbinary.business.user.UserDomNode;
-
-      
+//not GWT import const UserDomNode
 import { UsersData } from '../../../org/allbinary/business/user/UsersData.js';
-//not GWT import const UsersData = globalThis.org.allbinary.business.user.UsersData;
-
-      
+//not GWT import const UsersData
 import { User } from '../../../org/allbinary/business/user/modules/User.js';
-//not GWT import const User = globalThis.org.allbinary.business.user.modules.User;
-
-      
+//not GWT import const User
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { Document } from '../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-//not GWT import const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
-
-      
+//not GWT import const HttpStoreComponentView
 
 
 

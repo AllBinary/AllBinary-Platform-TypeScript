@@ -23,69 +23,37 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { File } from '../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { Arrays } from '../../../../java/util/Arrays.js';
-//not GWT import const Arrays = globalThis.java.util.Arrays;
-
-      
+//not GWT import const Arrays
 import { Comparator } from '../../../../java/util/Comparator.js';
-//not GWT import const Comparator = globalThis.java.util.Comparator;
-
-      
+//not GWT import const Comparator
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-//not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
-
-      
+//not GWT import const ImageIO
 import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
-//not GWT import const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
-
-      
+//not GWT import const FileJDialog
 import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
-//not GWT import const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
-
-      
+//not GWT import const FileJDialogListenerInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-//not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
-
-      
+//not GWT import const ImageProcessorInput
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-//not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
-
-      
+//not GWT import const ImageProcessorInputCompositeInterface
 import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
-//not GWT import const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
-
-      
+//not GWT import const ColorRange
 import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-//not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
-
-      
+//not GWT import const ColorRangeInterface
 import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
-//not GWT import const ImageAnalysis = globalThis.org.allbinary.media.image.analysis.ImageAnalysis;
-
-      
+//not GWT import const ImageAnalysis
 import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
-//not GWT import const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
-
-      
+//not GWT import const ImageAnalysisResults
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -105,81 +73,31 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame = globalThis.org.allbinary.image.gui.JFrame;
-
-                import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.image.gui.JDialog;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.image.gui.JLabel;
-
-                import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField = globalThis.org.allbinary.image.gui.JTextField;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.image.gui.JButton;
-
-                import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.image.gui.JPanel;
-
-                import { JMenuBar } from './JMenuBar.js';
-//not GWT import - same folder const JMenuBar = globalThis.org.allbinary.image.gui.JMenuBar;
-
-                import { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenu = globalThis.org.allbinary.image.gui.JMenu;
-
-                import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem = globalThis.org.allbinary.image.gui.JMenuItem;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.image.gui.Dimension;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.image.gui.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.image.gui.ActionEvent;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.image.gui.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.image.gui.Short;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.image.gui.GridLayout;
-
-                import { ImageUnifierJPanel } from './ImageUnifierJPanel.js';
-//not GWT import - same folder const ImageUnifierJPanel = globalThis.org.allbinary.image.gui.ImageUnifierJPanel;
-
-                import { ImageAnalysisResultsJPanel } from './ImageAnalysisResultsJPanel.js';
-//not GWT import - same folder const ImageAnalysisResultsJPanel = globalThis.org.allbinary.image.gui.ImageAnalysisResultsJPanel;
-
-                import { RotationSpriteImageJPanel } from './RotationSpriteImageJPanel.js';
-//not GWT import - same folder const RotationSpriteImageJPanel = globalThis.org.allbinary.image.gui.RotationSpriteImageJPanel;
-
-                import { SpriteSplitterImageJPanel } from './SpriteSplitterImageJPanel.js';
-//not GWT import - same folder const SpriteSplitterImageJPanel = globalThis.org.allbinary.image.gui.SpriteSplitterImageJPanel;
-
-                import { RotationImageJPanel } from './RotationImageJPanel.js';
-//not GWT import - same folder const RotationImageJPanel = globalThis.org.allbinary.image.gui.RotationImageJPanel;
-
-                import { ResizeImageJPanel } from './ResizeImageJPanel.js';
-//not GWT import - same folder const ResizeImageJPanel = globalThis.org.allbinary.image.gui.ResizeImageJPanel;
-
-                import { CreateIconImagesJPanel } from './CreateIconImagesJPanel.js';
-//not GWT import - same folder const CreateIconImagesJPanel = globalThis.org.allbinary.image.gui.CreateIconImagesJPanel;
-
-                import { CanvasImageJPanel } from './CanvasImageJPanel.js';
-//not GWT import - same folder const CanvasImageJPanel = globalThis.org.allbinary.image.gui.CanvasImageJPanel;
-
-                import { MirrorSpriteImageJPanel } from './MirrorSpriteImageJPanel.js';
-//not GWT import - same folder const MirrorSpriteImageJPanel = globalThis.org.allbinary.image.gui.MirrorSpriteImageJPanel;
-
-                import { MirrorImageJPanel } from './MirrorImageJPanel.js';
-//not GWT import - same folder const MirrorImageJPanel = globalThis.org.allbinary.image.gui.MirrorImageJPanel;
-
-                
+//not GWT import - same folder const JFrameimport { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialogimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JTextField } from './JTextField.js';
+//not GWT import - same folder const JTextFieldimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { JPanel } from './JPanel.js';
+//not GWT import - same folder const JPanelimport { JMenuBar } from './JMenuBar.js';
+//not GWT import - same folder const JMenuBarimport { JMenu } from './JMenu.js';
+//not GWT import - same folder const JMenuimport { JMenuItem } from './JMenuItem.js';
+//not GWT import - same folder const JMenuItemimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Shortimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { ImageUnifierJPanel } from './ImageUnifierJPanel.js';
+//not GWT import - same folder const ImageUnifierJPanelimport { ImageAnalysisResultsJPanel } from './ImageAnalysisResultsJPanel.js';
+//not GWT import - same folder const ImageAnalysisResultsJPanelimport { RotationSpriteImageJPanel } from './RotationSpriteImageJPanel.js';
+//not GWT import - same folder const RotationSpriteImageJPanelimport { SpriteSplitterImageJPanel } from './SpriteSplitterImageJPanel.js';
+//not GWT import - same folder const SpriteSplitterImageJPanelimport { RotationImageJPanel } from './RotationImageJPanel.js';
+//not GWT import - same folder const RotationImageJPanelimport { ResizeImageJPanel } from './ResizeImageJPanel.js';
+//not GWT import - same folder const ResizeImageJPanelimport { CreateIconImagesJPanel } from './CreateIconImagesJPanel.js';
+//not GWT import - same folder const CreateIconImagesJPanelimport { CanvasImageJPanel } from './CanvasImageJPanel.js';
+//not GWT import - same folder const CanvasImageJPanelimport { MirrorSpriteImageJPanel } from './MirrorSpriteImageJPanel.js';
+//not GWT import - same folder const MirrorSpriteImageJPanelimport { MirrorImageJPanel } from './MirrorImageJPanel.js';
+//not GWT import - same folder const MirrorImageJPanel
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {
         
 

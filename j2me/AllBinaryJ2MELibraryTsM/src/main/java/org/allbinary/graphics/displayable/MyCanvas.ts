@@ -21,65 +21,35 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Stack } from '../../../../java/util/Stack.js';
-//not GWT import const Stack = globalThis.java.util.Stack;
-
-      
+//not GWT import const Stack
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { NullCommandListener } from '../../../../javax/microedition/lcdui/NullCommandListener.js';
-//not GWT import const NullCommandListener = globalThis.javax.microedition.lcdui.NullCommandListener;
-
-      
+//not GWT import const NullCommandListener
 import { MyCommandInterface } from '../../../../org/allbinary/graphics/displayable/command/MyCommandInterface.js';
-//not GWT import const MyCommandInterface = globalThis.org.allbinary.graphics.displayable.command.MyCommandInterface;
-
-      
+//not GWT import const MyCommandInterface
 import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
-//not GWT import const MyCommandsFactory = globalThis.org.allbinary.graphics.displayable.command.MyCommandsFactory;
-
-      
+//not GWT import const MyCommandsFactory
 import { TouchJ2ME } from '../../../../org/allbinary/input/TouchJ2ME.js';
-//not GWT import const TouchJ2ME = globalThis.org.allbinary.input.TouchJ2ME;
-
-      
+//not GWT import const TouchJ2ME
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
-//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
-
-      
+//not GWT import const Sound
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 
 
 
@@ -99,15 +69,9 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayableInterface } from './DisplayableInterface.js';
-//not GWT import - same folder const DisplayableInterface = globalThis.org.allbinary.graphics.displayable.DisplayableInterface;
-
-                import { CanvasStrings } from './CanvasStrings.js';
-//not GWT import - same folder const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
-
-                import { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
-//not GWT import - same folder const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-                
+//not GWT import - same folder const DisplayableInterfaceimport { CanvasStrings } from './CanvasStrings.js';
+//not GWT import - same folder const CanvasStringsimport { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
+//not GWT import - same folder const DisplayInfoSingleton
 export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandInterface {
         
 

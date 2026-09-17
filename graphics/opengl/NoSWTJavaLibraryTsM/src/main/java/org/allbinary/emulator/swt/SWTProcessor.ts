@@ -23,13 +23,9 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-//not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
-
-      
+//not GWT import const Display
 //not plain js import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
-
-      
 
 
 

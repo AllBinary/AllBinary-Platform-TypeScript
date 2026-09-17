@@ -25,13 +25,9 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 
 
 
@@ -51,9 +47,7 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNodeCostInfoFactoryBaseInterface } from './PathFindingNodeCostInfoFactoryBaseInterface.js';
-//not GWT import - same folder const PathFindingNodeCostInfoFactoryBaseInterface = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoFactoryBaseInterface;
-
-                
+//not GWT import - same folder const PathFindingNodeCostInfoFactoryBaseInterface
 export class PathFindingNodeCostInfoFactoryBase
             extends Object
          implements PathFindingNodeCostInfoFactoryBaseInterface {

@@ -19,17 +19,11 @@
 
 
 import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
-//not GWT import const GameFeatureControlledInterface = globalThis.org.allbinary.game.configuration.feature.GameFeatureControlledInterface;
-
-      
+//not GWT import const GameFeatureControlledInterface
 import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/game/resource/RectangleResourceFactoryInterface.js';
-//not GWT import const RectangleResourceFactoryInterface = globalThis.org.allbinary.game.resource.RectangleResourceFactoryInterface;
-
-      
+//not GWT import const RectangleResourceFactoryInterface
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -49,9 +43,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceAnimationInterfaceFactoryInterface } from './ResourceAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ResourceAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.resource.ResourceAnimationInterfaceFactoryInterface;
-
-                
+//not GWT import - same folder const ResourceAnimationInterfaceFactoryInterface
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 

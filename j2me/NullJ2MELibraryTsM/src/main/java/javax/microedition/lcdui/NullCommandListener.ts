@@ -25,15 +25,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandListener } from './CommandListener.js';
-//not GWT import - same folder const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-                import { Command } from './Command.js';
-//not GWT import - same folder const Command = globalThis.javax.microedition.lcdui.Command;
-
-                import { Displayable } from './Displayable.js';
-//not GWT import - same folder const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-                
+//not GWT import - same folder const CommandListenerimport { Command } from './Command.js';
+//not GWT import - same folder const Commandimport { Displayable } from './Displayable.js';
+//not GWT import - same folder const Displayable
 export class NullCommandListener
             extends Object
          implements CommandListener {

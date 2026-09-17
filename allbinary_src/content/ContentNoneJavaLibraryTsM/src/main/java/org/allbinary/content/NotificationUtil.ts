@@ -21,9 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 
 
 

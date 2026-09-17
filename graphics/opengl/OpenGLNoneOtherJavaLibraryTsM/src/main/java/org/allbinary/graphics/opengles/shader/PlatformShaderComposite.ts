@@ -19,13 +19,9 @@
 
 
 import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
-//not GWT import const NullOpenGLProcessorFactory = globalThis.org.allbinary.graphics.opengles.NullOpenGLProcessorFactory;
-
-      
+//not GWT import const NullOpenGLProcessorFactory
 import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
-//not GWT import const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
-
-      
+//not GWT import const OpenGLProcessor
 
 
 
@@ -45,21 +41,11 @@ import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderComposite } from './ShaderComposite.js';
-//not GWT import - same folder const ShaderComposite = globalThis.org.allbinary.graphics.opengles.shader.ShaderComposite;
-
-                import { Shader } from './Shader.js';
-//not GWT import - same folder const Shader = globalThis.org.allbinary.graphics.opengles.shader.Shader;
-
-                import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-//not GWT import - same folder const CompositeShaderUpdater = globalThis.org.allbinary.graphics.opengles.shader.CompositeShaderUpdater;
-
-                import { ShaderInitializer } from './ShaderInitializer.js';
-//not GWT import - same folder const ShaderInitializer = globalThis.org.allbinary.graphics.opengles.shader.ShaderInitializer;
-
-                import { ModelViewProjection } from './ModelViewProjection.js';
-//not GWT import - same folder const ModelViewProjection = globalThis.org.allbinary.graphics.opengles.shader.ModelViewProjection;
-
-                
+//not GWT import - same folder const ShaderCompositeimport { Shader } from './Shader.js';
+//not GWT import - same folder const Shaderimport { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
+//not GWT import - same folder const CompositeShaderUpdaterimport { ShaderInitializer } from './ShaderInitializer.js';
+//not GWT import - same folder const ShaderInitializerimport { ModelViewProjection } from './ModelViewProjection.js';
+//not GWT import - same folder const ModelViewProjection
 export class PlatformShaderComposite extends ShaderComposite {
         
 

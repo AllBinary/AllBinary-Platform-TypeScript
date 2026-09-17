@@ -23,29 +23,17 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
-
-      
+//not GWT import const GL
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { BasicColorSetUtil } from '../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-//not GWT import const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
-
-      
+//not GWT import const BasicColorSetUtil
 import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
-//not GWT import const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
-
-      
+//not GWT import const OpenGLSurfaceChangedInterface
 
 
 
@@ -65,9 +53,7 @@ import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/open
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterface } from './AnimationInterface.js';
-//not GWT import - same folder const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
-
-                
+//not GWT import - same folder const AnimationInterface
 export class Animation
             extends Object
          implements AnimationInterface, OpenGLSurfaceChangedInterface {

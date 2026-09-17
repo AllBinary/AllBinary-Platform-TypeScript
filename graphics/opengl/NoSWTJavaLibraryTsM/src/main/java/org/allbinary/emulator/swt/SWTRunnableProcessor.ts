@@ -19,9 +19,7 @@
 
 
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-//not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
-
-      
+//not GWT import const Display
 
 
 
@@ -41,9 +39,7 @@ import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTProcessor } from './SWTProcessor.js';
-//not GWT import - same folder const SWTProcessor = globalThis.org.allbinary.emulator.swt.SWTProcessor;
-
-                
+//not GWT import - same folder const SWTProcessor
 export class SWTRunnableProcessor extends SWTProcessor {
         
 

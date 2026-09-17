@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SensorAction } from './SensorAction.js';
-//not GWT import - same folder const SensorAction = globalThis.org.allbinary.game.layer.SensorAction;
-
-                
+//not GWT import - same folder const SensorAction
 export class SensorActionFactory
             extends Object
          {

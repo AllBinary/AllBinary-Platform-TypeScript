@@ -24,16 +24,10 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -53,9 +47,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogFormatUtil } 
-const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
-
-                //ActualPlatform
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;//ActualPlatform
 /*actual*/ export class PreLogUtil
             extends Object
          {

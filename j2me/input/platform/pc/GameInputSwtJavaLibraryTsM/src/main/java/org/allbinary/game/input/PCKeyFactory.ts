@@ -22,16 +22,10 @@
         
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
-
-      
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -51,12 +45,8 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameKey } from './PCGameKey.js';
-//not GWT import - same folder const PCGameKey = globalThis.org.allbinary.game.input.PCGameKey;
-
-                import { Input } from './Input.js';
-//not GWT import - same folder const Input = globalThis.org.allbinary.game.input.Input;
-
-                
+//not GWT import - same folder const PCGameKeyimport { Input } from './Input.js';
+//not GWT import - same folder const Input
 export class PCKeyFactory
             extends Object
          {

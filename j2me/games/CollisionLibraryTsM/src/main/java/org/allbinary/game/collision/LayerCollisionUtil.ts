@@ -21,21 +21,13 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
-
-      
+//not GWT import const GameFeatureFactory
 import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
-//not GWT import const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
-
-      
+//not GWT import const OpenGLFeatureUtil
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 
@@ -55,15 +47,9 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionProcessor } from './CollisionProcessor.js';
-//not GWT import - same folder const CollisionProcessor = globalThis.org.allbinary.game.collision.CollisionProcessor;
-
-                import { Collision2DProcessor } from './Collision2DProcessor.js';
-//not GWT import - same folder const Collision2DProcessor = globalThis.org.allbinary.game.collision.Collision2DProcessor;
-
-                import { CollisionThreedProcessor } from './CollisionThreedProcessor.js';
-//not GWT import - same folder const CollisionThreedProcessor = globalThis.org.allbinary.game.collision.CollisionThreedProcessor;
-
-                
+//not GWT import - same folder const CollisionProcessorimport { Collision2DProcessor } from './Collision2DProcessor.js';
+//not GWT import - same folder const Collision2DProcessorimport { CollisionThreedProcessor } from './CollisionThreedProcessor.js';
+//not GWT import - same folder const CollisionThreedProcessor
 export class LayerCollisionUtil
             extends Object
          {

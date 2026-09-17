@@ -25,17 +25,11 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-//not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-      
+//not GWT import const GeographicMapCellPosition
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -55,9 +49,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaInterface } from './GeographicMapCellPositionAreaInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaInterface = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaInterface;
-
-                
+//not GWT import - same folder const GeographicMapCellPositionAreaInterface
 export class GeographicMapCellPositionAreaBase
             extends Object
          implements GeographicMapCellPositionAreaInterface {

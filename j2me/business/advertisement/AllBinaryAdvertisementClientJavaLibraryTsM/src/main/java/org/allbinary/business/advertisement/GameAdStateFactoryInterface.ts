@@ -21,9 +21,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-//not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
-
-      
+//not GWT import const SoftwareInformation
 
 
 
@@ -43,9 +41,7 @@ import { SoftwareInformation } from '../../../../org/allbinary/logic/system/Soft
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateBase } from './GameAdStateBase.js';
-//not GWT import - same folder const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
-
-                
+//not GWT import - same folder const GameAdStateBase
 export interface GameAdStateFactoryInterface {
         
 

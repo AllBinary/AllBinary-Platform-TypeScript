@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-//not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
-
-      
+//not GWT import const ArtificialIntelligenceInterface
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
-//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
-
-      
+//not GWT import const ArtificialIntelligenceInterfaceFactoryInterface
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -61,9 +51,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RandomPatrolAI } from './RandomPatrolAI.js';
-//not GWT import - same folder const RandomPatrolAI = globalThis.org.allbinary.game.ag.ai.scroller.RandomPatrolAI;
-
-                
+//not GWT import - same folder const RandomPatrolAI
 export class RandomPatrolAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

@@ -27,49 +27,27 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { InputStream } from '../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
-
-      
 import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
-//not GWT import const GDResources = globalThis.org.allbinary.game.gd.resource.GDResources;
-
-      
+//not GWT import const GDResources
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { Memory } from '../../../org/allbinary/system/Memory.js';
-//not GWT import const Memory = globalThis.org.allbinary.system.Memory;
-
-      
+//not GWT import const Memory
 
 
 
@@ -89,9 +67,7 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheBase } from './ImageCacheBase.js';
-//not GWT import - same folder const ImageCacheBase = globalThis.org.allbinary.image.ImageCacheBase;
-
-                
+//not GWT import - same folder const ImageCacheBase
 export class ImageCache extends ImageCacheBase {
         
 

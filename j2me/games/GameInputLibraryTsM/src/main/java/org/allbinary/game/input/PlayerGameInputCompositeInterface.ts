@@ -37,12 +37,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputInterface } from './GameInputInterface.js';
-//not GWT import - same folder const GameInputInterface = globalThis.org.allbinary.game.input.GameInputInterface;
-
-                import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
-
-                
+//not GWT import - same folder const GameInputInterfaceimport { PlayerGameInput } from './PlayerGameInput.js';
+//not GWT import - same folder const PlayerGameInput
 export interface PlayerGameInputCompositeInterface extends GameInputInterface {
         
 

@@ -21,45 +21,25 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-//not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
-
-      
+//not GWT import const FREEBLISKET_PATH_GLOBALS
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
-//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
-
-      
+//not GWT import const URLGLOBALS
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -79,12 +59,8 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttp } from './TransformInfoHttp.js';
-//not GWT import - same folder const TransformInfoHttp = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttp;
-
-                import { TransformInfoHttpStoreInterface } from './TransformInfoHttpStoreInterface.js';
-//not GWT import - same folder const TransformInfoHttpStoreInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreInterface;
-
-                
+//not GWT import - same folder const TransformInfoHttpimport { TransformInfoHttpStoreInterface } from './TransformInfoHttpStoreInterface.js';
+//not GWT import - same folder const TransformInfoHttpStoreInterface
 export class TransformInfoHttpStore extends TransformInfoHttp implements TransformInfoHttpStoreInterface {
         
 

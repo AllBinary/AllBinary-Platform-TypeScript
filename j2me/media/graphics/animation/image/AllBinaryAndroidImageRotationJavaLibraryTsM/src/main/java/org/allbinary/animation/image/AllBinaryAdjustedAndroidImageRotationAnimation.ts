@@ -21,21 +21,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 
 
 
@@ -55,9 +47,7 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryFlickerAndroidImageRotationAnimation } from './AllBinaryFlickerAndroidImageRotationAnimation.js';
-//not GWT import - same folder const AllBinaryFlickerAndroidImageRotationAnimation = globalThis.org.allbinary.animation.image.AllBinaryFlickerAndroidImageRotationAnimation;
-
-                
+//not GWT import - same folder const AllBinaryFlickerAndroidImageRotationAnimation
 export class AllBinaryAdjustedAndroidImageRotationAnimation extends AllBinaryFlickerAndroidImageRotationAnimation {
         
 

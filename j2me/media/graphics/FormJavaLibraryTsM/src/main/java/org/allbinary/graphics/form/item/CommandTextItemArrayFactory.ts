@@ -21,45 +21,25 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
-//not GWT import const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
-
-      
+//not GWT import const ImageItem
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
-//not GWT import const ScreenInfo = globalThis.org.allbinary.graphics.form.ScreenInfo;
-
-      
+//not GWT import const ScreenInfo
 //not plain js import { VectorUtil } 
 const VectorUtil = globalThis.org.allbinary.logic.VectorUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
-
-      
+//not GWT import const Visitor
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -79,12 +59,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandTextItem } from './CommandTextItem.js';
-//not GWT import - same folder const CommandTextItem = globalThis.org.allbinary.graphics.form.item.CommandTextItem;
-
-                import { ABCustomItem } from './ABCustomItem.js';
-//not GWT import - same folder const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
-
-                
+//not GWT import - same folder const CommandTextItemimport { ABCustomItem } from './ABCustomItem.js';
+//not GWT import - same folder const ABCustomItem
 export class CommandTextItemArrayFactory
             extends Object
          {

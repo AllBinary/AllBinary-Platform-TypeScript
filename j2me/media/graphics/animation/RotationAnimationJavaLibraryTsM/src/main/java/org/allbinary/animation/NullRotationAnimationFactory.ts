@@ -23,25 +23,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
-
-      
+//not GWT import const ScaleProperties
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
-
-      
 
 
 
@@ -61,27 +51,13 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
-
-                import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
-
-                import { RotationAnimation } from './RotationAnimation.js';
-//not GWT import - same folder const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
-
-                import { NullRotationAnimation } from './NullRotationAnimation.js';
-//not GWT import - same folder const NullRotationAnimation = globalThis.org.allbinary.animation.NullRotationAnimation;
-
-                import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
-//not GWT import - same folder const IndexedAnimationBehavior = globalThis.org.allbinary.animation.IndexedAnimationBehavior;
-
-                //import { NullRotationAnimation2 } from './NullRotationAnimation2.js';
-//not GWT import - same folder const NullRotationAnimation2 = globalThis.org.allbinary.animation.NullRotationAnimation2;
-
-                import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation = globalThis.org.allbinary.animation.Animation;
-
-                
+//not GWT import - same folder const AnimationInterfaceFactoryInterfaceimport { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
+//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterfaceimport { RotationAnimation } from './RotationAnimation.js';
+//not GWT import - same folder const RotationAnimationimport { NullRotationAnimation } from './NullRotationAnimation.js';
+//not GWT import - same folder const NullRotationAnimationimport { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
+//not GWT import - same folder const IndexedAnimationBehavior//import { NullRotationAnimation2 } from './NullRotationAnimation2.js';
+//not GWT import - same folder const NullRotationAnimation2import { Animation } from './Animation.js';
+//not GWT import - same folder const Animation
 export class NullRotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {

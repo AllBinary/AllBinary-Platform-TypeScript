@@ -19,13 +19,9 @@
 
 
 import { CompositeSound } from '../../../../../../org/allbinary/media/audio/CompositeSound.js';
-//not GWT import const CompositeSound = globalThis.org.allbinary.media.audio.CompositeSound;
-
-      
+//not GWT import const CompositeSound
 import { Sound } from '../../../../../../org/allbinary/media/audio/Sound.js';
-//not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
-
-      
+//not GWT import const Sound
 
 
 

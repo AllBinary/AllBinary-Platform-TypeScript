@@ -25,37 +25,21 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { File } from '../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
-//not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
-
-      
+//not GWT import const FileOutputStream
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
-//not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
-
-      
+//not GWT import const ImageOutputData
 import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
-//not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
-
-      
+//not GWT import const LongUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 

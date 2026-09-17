@@ -21,17 +21,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-//not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
-
-      
+//not GWT import const NullCanvas
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
-
-      
+//not GWT import const AllBinaryGameLayerManager
 
 
 

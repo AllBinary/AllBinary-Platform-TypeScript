@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
-//not GWT import - same folder const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
-
-                
+//not GWT import - same folder const ThreadPool
 export class SoundThreadPool
             extends Object
          {

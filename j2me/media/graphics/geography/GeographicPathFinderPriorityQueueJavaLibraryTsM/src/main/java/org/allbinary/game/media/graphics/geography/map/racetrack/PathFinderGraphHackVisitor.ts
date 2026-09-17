@@ -22,12 +22,8 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 
 
 
@@ -47,9 +43,7 @@ import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
-//not GWT import - same folder const BasePathFinderGraphVisitor = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.BasePathFinderGraphVisitor;
-
-                //1.4.2
+//not GWT import - same folder const BasePathFinderGraphVisitor//1.4.2
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor {
         
 

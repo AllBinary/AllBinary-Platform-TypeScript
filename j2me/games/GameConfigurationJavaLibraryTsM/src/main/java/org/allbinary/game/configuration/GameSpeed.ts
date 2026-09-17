@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import - same folder const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
-
-                import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
-
-                
+//not GWT import - same folder const GameConfigurationCentralimport { GameConfiguration } from './GameConfiguration.js';
+//not GWT import - same folder const GameConfiguration
 export class GameSpeed
             extends Object
          {

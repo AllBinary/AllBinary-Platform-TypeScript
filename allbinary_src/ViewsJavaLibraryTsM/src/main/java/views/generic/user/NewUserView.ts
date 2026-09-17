@@ -21,33 +21,19 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { NewUserFactory } from '../../../org/allbinary/business/user/NewUserFactory.js';
-//not GWT import const NewUserFactory = globalThis.org.allbinary.business.user.NewUserFactory;
-
-      
+//not GWT import const NewUserFactory
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
-
-      
+//not GWT import const ValidationComponentInterface
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { Document } from '../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -67,9 +53,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserView } from './UserView.js';
-//not GWT import - same folder const UserView = globalThis.views.generic.user.UserView;
-
-                
+//not GWT import - same folder const UserView
 export class NewUserView extends UserView implements ValidationComponentInterface {
         
 

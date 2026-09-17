@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAnimationInterfaceFactoryInterface } from './BasicAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const BasicAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.BasicAnimationInterfaceFactoryInterface;
-
-                import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation = globalThis.org.allbinary.animation.Animation;
-
-                
+//not GWT import - same folder const BasicAnimationInterfaceFactoryInterfaceimport { Animation } from './Animation.js';
+//not GWT import - same folder const Animation
 export interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 

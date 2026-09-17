@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 
 
 
@@ -51,12 +45,8 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayBaseRotationAnimation } from './ImageArrayBaseRotationAnimation.js';
-//not GWT import - same folder const ImageArrayBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageArrayBaseRotationAnimation;
-
-                import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import - same folder const ImageArrayRotationAnimationInfo = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
-
-                
+//not GWT import - same folder const ImageArrayBaseRotationAnimationimport { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
+//not GWT import - same folder const ImageArrayRotationAnimationInfo
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {
         
 

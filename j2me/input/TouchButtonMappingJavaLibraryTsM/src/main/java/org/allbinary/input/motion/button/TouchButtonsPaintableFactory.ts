@@ -21,13 +21,9 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 
 
 
@@ -47,9 +43,7 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsPaintable } from './TouchButtonsPaintable.js';
-//not GWT import - same folder const TouchButtonsPaintable = globalThis.org.allbinary.input.motion.button.TouchButtonsPaintable;
-
-                
+//not GWT import - same folder const TouchButtonsPaintable
 export class TouchButtonsPaintableFactory
             extends Object
          {

@@ -22,64 +22,34 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StoreFrontFactory } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
-
-      
+//not GWT import const StoreFrontFactory
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-//not GWT import const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
-
-      
+//not GWT import const Validation
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { HtmlMetaAttributeDataFactory } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeDataFactory.js';
-//not GWT import const HtmlMetaAttributeDataFactory = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaAttributeDataFactory;
-
-      
+//not GWT import const HtmlMetaAttributeDataFactory
 import { HtmlMetaAttributeValuesData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeValuesData.js';
-//not GWT import const HtmlMetaAttributeValuesData = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaAttributeValuesData;
-
-      
+//not GWT import const HtmlMetaAttributeValuesData
 import { HtmlMetasData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetasData.js';
-//not GWT import const HtmlMetasData = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetasData;
-
-      
+//not GWT import const HtmlMetasData
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -99,9 +69,7 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MetaValidation } from './MetaValidation.js';
-//not GWT import - same folder const MetaValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.meta.MetaValidation;
-
-                
+//not GWT import - same folder const MetaValidation
 export class MetasValidation extends Validation implements DomNodeInterface {
         
 

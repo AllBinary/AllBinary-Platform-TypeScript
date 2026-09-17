@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SensorGameUpdateProcessor } from './SensorGameUpdateProcessor.js';
-//not GWT import - same folder const SensorGameUpdateProcessor = globalThis.org.allbinary.input.gyro.SensorGameUpdateProcessor;
-
-                
+//not GWT import - same folder const SensorGameUpdateProcessor
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         
 

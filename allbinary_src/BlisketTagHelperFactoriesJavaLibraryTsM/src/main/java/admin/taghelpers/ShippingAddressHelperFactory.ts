@@ -21,21 +21,13 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 
 
 
@@ -55,12 +47,8 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactory } from './TagHelperFactory.js';
-//not GWT import - same folder const TagHelperFactory = globalThis.admin.taghelpers.TagHelperFactory;
-
-                import { ShippingAddressHelper } from './ShippingAddressHelper.js';
-//not GWT import - same folder const ShippingAddressHelper = globalThis.admin.taghelpers.ShippingAddressHelper;
-
-                
+//not GWT import - same folder const TagHelperFactoryimport { ShippingAddressHelper } from './ShippingAddressHelper.js';
+//not GWT import - same folder const ShippingAddressHelper
 export class ShippingAddressHelperFactory extends TagHelperFactory {
         
 

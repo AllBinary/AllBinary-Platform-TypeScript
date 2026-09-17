@@ -25,145 +25,75 @@
             import { Double } from '../../../../../../java/lang/Double.js';
         
 import { awt } from '../../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-//not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
-
-      
+//not GWT import const DefaultMutableTreeNode
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
-
-      
+//not GWT import const MutableTreeNode
 import { VectorExplosionGenerator } from '../../../../../../org/allbinary/animation/VectorExplosionGenerator.js';
-//not GWT import const VectorExplosionGenerator = globalThis.org.allbinary.animation.VectorExplosionGenerator;
-
-      
+//not GWT import const VectorExplosionGenerator
 import { VectorMirrorGenerator } from '../../../../../../org/allbinary/animation/VectorMirrorGenerator.js';
-//not GWT import const VectorMirrorGenerator = globalThis.org.allbinary.animation.VectorMirrorGenerator;
-
-      
+//not GWT import const VectorMirrorGenerator
 import { VectorCenterGenerator } from '../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js';
-//not GWT import const VectorCenterGenerator = globalThis.org.allbinary.animation.vector.VectorCenterGenerator;
-
-      
+//not GWT import const VectorCenterGenerator
 import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
-//not GWT import const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
-
-      
+//not GWT import const GameInputStrings
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { GraphicsException } from '../../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
-//not GWT import const GraphicsException = globalThis.org.allbinary.graphics.j2me.GraphicsException;
-
-      
+//not GWT import const GraphicsException
 import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
-//not GWT import const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
-
-      
+//not GWT import const StatusFactory
 import { WorkAreaJTreeJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJTreeJPanel.js';
-//not GWT import const WorkAreaJTreeJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJTreeJPanel;
-
-      
+//not GWT import const WorkAreaJTreeJPanel
 import { GraphicItemFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js';
-//not GWT import const GraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemFactory;
-
-      
+//not GWT import const GraphicItemFactory
 import { GraphicItemInterface } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
-//not GWT import const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
-
-      
+//not GWT import const GraphicItemInterface
 import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
-//not GWT import const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
-
-      
+//not GWT import const LinesGraphicItem
 import { MouseStrings } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/MouseStrings.js';
-//not GWT import const MouseStrings = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseStrings;
-
-      
+//not GWT import const MouseStrings
 import { Points } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
-//not GWT import const Points = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
-
-      
+//not GWT import const Points
 import { ToolFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolFactory.js';
-//not GWT import const ToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.ToolFactory;
-
-      
+//not GWT import const ToolFactory
 import { MyGraphicItemEvent } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
-//not GWT import const MyGraphicItemEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
-
-      
+//not GWT import const MyGraphicItemEvent
 import { MyGraphicItemEventListener } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventListener.js';
-//not GWT import const MyGraphicItemEventListener = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventListener;
-
-      
+//not GWT import const MyGraphicItemEventListener
 import { MyGraphicItemEventService } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
-//not GWT import const MyGraphicItemEventService = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventService;
-
-      
+//not GWT import const MyGraphicItemEventService
 import { RandomRotationFactory } from '../../../../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
-//not GWT import const RandomRotationFactory = globalThis.org.allbinary.graphics.pipeline.RandomRotationFactory;
-
-      
+//not GWT import const RandomRotationFactory
 import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
-//not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
-
-      
+//not GWT import const LOGGING
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/GuiLog.js';
-//not GWT import const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
-
-      
+//not GWT import const GuiLog
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -183,48 +113,20 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.JPanel;
-
-                import { MouseListener } from './MouseListener.js';
-//not GWT import - same folder const MouseListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseListener;
-
-                import { MouseMotionListener } from './MouseMotionListener.js';
-//not GWT import - same folder const MouseMotionListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseMotionListener;
-
-                import { KeyListener } from './KeyListener.js';
-//not GWT import - same folder const KeyListener = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyListener;
-
-                import { IntegerDimension } from './IntegerDimension.js';
-//not GWT import - same folder const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
-
-                import { CanvasTreeLabel } from './CanvasTreeLabel.js';
-//not GWT import - same folder const CanvasTreeLabel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasTreeLabel;
-
-                import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Color;
-
-                import { Grid } from './Grid.js';
-//not GWT import - same folder const Grid = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Dimension;
-
-                import { CanvasDom } from './CanvasDom.js';
-//not GWT import - same folder const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.graphics.j2me.workarea.canvas.GridLayout;
-
-                import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Graphics;
-
-                import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseEvent;
-
-                import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyEvent;
-
-                
+//not GWT import - same folder const JPanelimport { MouseListener } from './MouseListener.js';
+//not GWT import - same folder const MouseListenerimport { MouseMotionListener } from './MouseMotionListener.js';
+//not GWT import - same folder const MouseMotionListenerimport { KeyListener } from './KeyListener.js';
+//not GWT import - same folder const KeyListenerimport { IntegerDimension } from './IntegerDimension.js';
+//not GWT import - same folder const IntegerDimensionimport { CanvasTreeLabel } from './CanvasTreeLabel.js';
+//not GWT import - same folder const CanvasTreeLabelimport { Color } from './Color.js';
+//not GWT import - same folder const Colorimport { Grid } from './Grid.js';
+//not GWT import - same folder const Gridimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { CanvasDom } from './CanvasDom.js';
+//not GWT import - same folder const CanvasDomimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphicsimport { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEventimport { KeyEvent } from './KeyEvent.js';
+//not GWT import - same folder const KeyEvent
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {
         
 

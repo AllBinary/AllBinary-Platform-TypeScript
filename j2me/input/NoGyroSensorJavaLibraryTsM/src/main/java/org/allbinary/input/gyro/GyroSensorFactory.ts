@@ -41,12 +41,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryOrientationSensor } from './AllBinaryOrientationSensor.js';
-//not GWT import - same folder const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
-
-                import { NoGyroSensor } from './NoGyroSensor.js';
-//not GWT import - same folder const NoGyroSensor = globalThis.org.allbinary.input.gyro.NoGyroSensor;
-
-                
+//not GWT import - same folder const AllBinaryOrientationSensorimport { NoGyroSensor } from './NoGyroSensor.js';
+//not GWT import - same folder const NoGyroSensor
 export class GyroSensorFactory
             extends Object
          {

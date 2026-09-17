@@ -23,33 +23,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
-
-      
+//not GWT import const ImageCache
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
-//not GWT import const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
-
-      
+//not GWT import const PlaynImmutableImage
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-//not GWT import const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
-
-      
+//not GWT import const PlaynMutableImage
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
-
-      
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
-
-      
 //not plain js import { HTMLPlaynUtil } 
 const HTMLPlaynUtil = globalThis.playn.html.HTMLPlaynUtil;
-
-      
 
 
 
@@ -69,9 +55,7 @@ const HTMLPlaynUtil = globalThis.playn.html.HTMLPlaynUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil = globalThis.org.allbinary.media.image.ImageCreationUtil;
-
-                
+//not GWT import - same folder const ImageCreationUtil
 export class ImageScaleUtil
             extends Object
          {

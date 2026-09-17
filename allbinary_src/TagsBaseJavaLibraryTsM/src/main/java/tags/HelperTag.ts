@@ -21,13 +21,9 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
-//not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
-
-      
+//not GWT import const TagHelperFactoryInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -47,9 +43,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PropertiesTag } from './PropertiesTag.js';
-//not GWT import - same folder const PropertiesTag = globalThis.tags.PropertiesTag;
-
-                
+//not GWT import - same folder const PropertiesTag
 export class HelperTag extends PropertiesTag {
         
 

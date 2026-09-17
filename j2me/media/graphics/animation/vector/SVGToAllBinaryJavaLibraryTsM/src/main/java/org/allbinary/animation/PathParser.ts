@@ -10,16 +10,10 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 
 
 
@@ -39,15 +33,9 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StringBuffer } from './StringBuffer.js';
-//not GWT import - same folder const StringBuffer = globalThis.org.allbinary.animation.StringBuffer;
-
-                import { FixedPoint } from './FixedPoint.js';
-//not GWT import - same folder const FixedPoint = globalThis.org.allbinary.animation.FixedPoint;
-
-                import { PGUtil } from './PGUtil.js';
-//not GWT import - same folder const PGUtil = globalThis.org.allbinary.animation.PGUtil;
-
-                
+//not GWT import - same folder const StringBufferimport { FixedPoint } from './FixedPoint.js';
+//not GWT import - same folder const FixedPointimport { PGUtil } from './PGUtil.js';
+//not GWT import - same folder const PGUtil
 export class PathParser
             extends Object
          {

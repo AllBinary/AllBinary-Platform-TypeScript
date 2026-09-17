@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 

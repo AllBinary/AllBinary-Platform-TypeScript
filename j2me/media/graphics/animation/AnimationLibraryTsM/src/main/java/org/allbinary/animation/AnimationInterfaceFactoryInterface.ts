@@ -21,9 +21,7 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
-
-      
+//not GWT import const ScaleProperties
 
 
 
@@ -43,12 +41,8 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAnimationInterfaceFactoryInterface } from './BasicAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const BasicAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.BasicAnimationInterfaceFactoryInterface;
-
-                import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation = globalThis.org.allbinary.animation.Animation;
-
-                
+//not GWT import - same folder const BasicAnimationInterfaceFactoryInterfaceimport { Animation } from './Animation.js';
+//not GWT import - same folder const Animation
 export interface AnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 

@@ -21,13 +21,9 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { DateTimeFormat } from '../../../com/google/gwt/i18n/client/DateTimeFormat.js';
-//not GWT import const DateTimeFormat = globalThis.com.google.gwt.i18n.client.DateTimeFormat;
-
-      
+//not GWT import const DateTimeFormat
 //import { Date } from '../../../java/util/Date.js';
-//not GWT import const Date = globalThis.java.util.Date;
-
-      
+//not GWT import const Date
 
 
 

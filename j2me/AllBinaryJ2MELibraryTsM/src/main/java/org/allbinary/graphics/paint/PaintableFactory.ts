@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPaintable } from './NullPaintable.js';
-//not GWT import - same folder const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
-
-                import { Paintable } from './Paintable.js';
-//not GWT import - same folder const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-                
+//not GWT import - same folder const NullPaintableimport { Paintable } from './Paintable.js';
+//not GWT import - same folder const Paintable
 export class PaintableFactory
             extends Object
          {

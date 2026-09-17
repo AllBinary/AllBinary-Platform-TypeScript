@@ -21,81 +21,43 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { HashMap } from '../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { HttpServletResponse } from '../javax/servlet/http/HttpServletResponse.js';
-//not GWT import const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
-
-      
+//not GWT import const HttpServletResponse
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { TagHelper } from '../admin/taghelpers/TagHelper.js';
-//not GWT import const TagHelper = globalThis.admin.taghelpers.TagHelper;
-
-      
+//not GWT import const TagHelper
 import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { StoreFrontFactory } from '../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-//not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
-
-      
+//not GWT import const StoreFrontFactory
 import { StoreFrontInterface } from '../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { StreetAddress } from '../org/allbinary/business/user/address/StreetAddress.js';
-//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
-
-      
+//not GWT import const StreetAddress
 import { BasicItemData } from '../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
-
-      
+//not GWT import const BasicItemData
 import { AcceptableResponseGenerator } from '../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
-//not GWT import const AcceptableResponseGenerator = globalThis.org.allbinary.logic.communication.http.AcceptableResponseGenerator;
-
-      
+//not GWT import const AcceptableResponseGenerator
 import { WeblisketSession } from '../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
-
-      
+//not GWT import const WeblisketSession
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { SearchParams } from '../org/allbinary/logic/control/search/SearchParams.js';
-//not GWT import const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
-
-      
+//not GWT import const SearchParams
 import { SearchRequest } from '../org/allbinary/logic/control/search/SearchRequest.js';
-//not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
-
-      
+//not GWT import const SearchRequest
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
-
-      
+//not GWT import const TransformInfoData
 import { InventoryViewFactory } from '../views/admin/inventory/listings/InventoryViewFactory.js';
-//not GWT import const InventoryViewFactory = globalThis.views.admin.inventory.listings.InventoryViewFactory;
-
-      
+//not GWT import const InventoryViewFactory
 import { InventoryViewSearchInterface } from '../views/admin/inventory/listings/InventoryViewSearchInterface.js';
-//not GWT import const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
-
-      
+//not GWT import const InventoryViewSearchInterface
 
 
 

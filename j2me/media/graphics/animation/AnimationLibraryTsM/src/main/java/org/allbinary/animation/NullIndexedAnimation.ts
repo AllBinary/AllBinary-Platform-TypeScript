@@ -25,12 +25,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-                import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-                
+//not GWT import - same folder const IndexedAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const AnimationBehavior
 export class NullIndexedAnimation extends IndexedAnimation {
         
 

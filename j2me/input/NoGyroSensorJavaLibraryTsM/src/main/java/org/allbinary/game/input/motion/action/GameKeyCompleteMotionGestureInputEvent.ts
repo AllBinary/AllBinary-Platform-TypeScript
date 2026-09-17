@@ -19,29 +19,17 @@
 
 
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
-//not GWT import const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
-
-      
+//not GWT import const CompleteMotionGestureInputEvent
 import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
-//not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
-
-      
+//not GWT import const GameKey
 import { GameKeyEventSourceInterface } from '../../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-//not GWT import const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
-
-      
+//not GWT import const GameKeyEventSourceInterface
 import { GameKeyEvent } from '../../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-      
+//not GWT import const GameKeyEvent
 import { InputToGameKeyMapping } from '../../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
-//not GWT import const InputToGameKeyMapping = globalThis.org.allbinary.game.input.mapping.InputToGameKeyMapping;
-
-      
+//not GWT import const InputToGameKeyMapping
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-//not GWT import const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
-
-      
+//not GWT import const MotionGestureInput
 
 
 

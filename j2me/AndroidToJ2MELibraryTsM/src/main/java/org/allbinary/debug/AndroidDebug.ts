@@ -25,9 +25,7 @@
             import { Long } from '../../../java/lang/Long.js';
         
 import { Debug } from '../../../android/os/Debug.js';
-//not GWT import const Debug = globalThis.android.os.Debug;
-
-      
+//not GWT import const Debug
 
 
 
@@ -47,9 +45,7 @@ import { Debug } from '../../../android/os/Debug.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DebugInterface } from './DebugInterface.js';
-//not GWT import - same folder const DebugInterface = globalThis.org.allbinary.debug.DebugInterface;
-
-                
+//not GWT import - same folder const DebugInterface
 export class AndroidDebug
             extends Object
          implements DebugInterface {

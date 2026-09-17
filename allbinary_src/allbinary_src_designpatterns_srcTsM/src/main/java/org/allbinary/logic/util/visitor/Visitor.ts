@@ -23,8 +23,6 @@
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
-      
-
 
 
 
@@ -43,9 +41,7 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VisitorInterface } from './VisitorInterface.js';
-//not GWT import - same folder const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
-
-                
+//not GWT import - same folder const VisitorInterface
 export class Visitor
             extends Object
          implements VisitorInterface {

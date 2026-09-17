@@ -25,21 +25,13 @@
             import { Double } from '../../../../../../java/lang/Double.js';
         
 import { VectorRotationGenerator } from '../../../../../../org/allbinary/animation/VectorRotationGenerator.js';
-//not GWT import const VectorRotationGenerator = globalThis.org.allbinary.animation.VectorRotationGenerator;
-
-      
+//not GWT import const VectorRotationGenerator
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { AngleFactory } from '../../../../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 

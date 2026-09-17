@@ -21,105 +21,55 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
-
-      
+//not GWT import const ByteArrayInputStream
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-//not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
-
-      
+//not GWT import const DataInputStream
 import { EOFException } from '../../../../java/io/EOFException.js';
-//not GWT import const EOFException = globalThis.java.io.EOFException;
-
-      
+//not GWT import const EOFException
 import { IOException } from '../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
-//not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
-
-      
+//not GWT import const RecordComparator
 import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
-//not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
-
-      
+//not GWT import const RecordEnumeration
 import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
-//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
-
-      
+//not GWT import const RecordStore
 import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
-//not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
-
-      
+//not GWT import const RecordStoreException
 import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
-//not GWT import const RecordStoreNotFoundException = globalThis.javax.microedition.rms.RecordStoreNotFoundException;
-
-      
+//not GWT import const RecordStoreNotFoundException
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
-
-      
+//not GWT import const GameInfo
 import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
-//not GWT import const NullRecordComparator = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
-
-      
+//not GWT import const NullRecordComparator
 import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
-//not GWT import const NullRecordFilter = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
-
-      
+//not GWT import const NullRecordFilter
 import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
-//not GWT import const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
-
-      
+//not GWT import const NullRecordStore
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
-//not GWT import const PlatformRecordIdUtil = globalThis.org.allbinary.persistance.PlatformRecordIdUtil;
-
-      
+//not GWT import const PlatformRecordIdUtil
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -139,15 +89,9 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores = globalThis.org.allbinary.game.score.HighScores;
-
-                import { HighScore } from './HighScore.js';
-//not GWT import - same folder const HighScore = globalThis.org.allbinary.game.score.HighScore;
-
-                import { ScoreComparator } from './ScoreComparator.js';
-//not GWT import - same folder const ScoreComparator = globalThis.org.allbinary.game.score.ScoreComparator;
-
-                
+//not GWT import - same folder const HighScoresimport { HighScore } from './HighScore.js';
+//not GWT import - same folder const HighScoreimport { ScoreComparator } from './ScoreComparator.js';
+//not GWT import - same folder const ScoreComparator
 export class RecordStoreHighScores extends HighScores {
         
 

@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Health } from './Health.js';
-//not GWT import - same folder const Health = globalThis.org.allbinary.game.health.Health;
-
-                
+//not GWT import - same folder const Health
 export interface HealthInterfaceCompositeInterface {
         
 

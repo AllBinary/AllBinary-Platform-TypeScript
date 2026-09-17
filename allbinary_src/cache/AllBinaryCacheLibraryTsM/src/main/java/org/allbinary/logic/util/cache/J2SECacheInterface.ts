@@ -19,9 +19,7 @@
 
 
 import { Set } from '../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 
 
 
@@ -41,9 +39,7 @@ import { Set } from '../../../../../java/util/Set.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AutomaticCacheInterface } from './AutomaticCacheInterface.js';
-//not GWT import - same folder const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
-
-                
+//not GWT import - same folder const AutomaticCacheInterface
 export interface J2SECacheInterface extends AutomaticCacheInterface {
         
 

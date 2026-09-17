@@ -21,65 +21,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { Form } from '../../../../../javax/microedition/lcdui/Form.js';
-//not GWT import const Form = globalThis.javax.microedition.lcdui.Form;
-
-      
+//not GWT import const Form
 import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';
-//not GWT import const NullCommandListener = globalThis.javax.microedition.lcdui.NullCommandListener;
-
-      
+//not GWT import const NullCommandListener
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
-
-      
+//not GWT import const Processor
 import { MenuListener } from '../../../../../org/allbinary/game/displayable/canvas/MenuListener.js';
-//not GWT import const MenuListener = globalThis.org.allbinary.game.displayable.canvas.MenuListener;
-
-      
+//not GWT import const MenuListener
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { MyCommandInterface } from '../../../../../org/allbinary/graphics/displayable/command/MyCommandInterface.js';
-//not GWT import const MyCommandInterface = globalThis.org.allbinary.graphics.displayable.command.MyCommandInterface;
-
-      
+//not GWT import const MyCommandInterface
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { ABStack } 
 const ABStack = globalThis.org.allbinary.util.ABStack;
-
-      
 
 
 
@@ -99,9 +69,7 @@ const ABStack = globalThis.org.allbinary.util.ABStack;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintProcessorFactory } from './ScreenRepaintProcessorFactory.js';
-//not GWT import - same folder const ScreenRepaintProcessorFactory = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintProcessorFactory;
-
-                
+//not GWT import - same folder const ScreenRepaintProcessorFactory
 export class CommandForm extends Form implements MyCommandInterface, MenuListener {
         
 

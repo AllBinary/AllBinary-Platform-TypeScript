@@ -23,13 +23,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
-
-      
+//not GWT import const Anchor
 
 
 

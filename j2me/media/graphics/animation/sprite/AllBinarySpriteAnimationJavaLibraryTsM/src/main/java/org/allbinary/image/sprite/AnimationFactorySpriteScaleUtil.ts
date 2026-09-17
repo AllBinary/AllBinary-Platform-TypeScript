@@ -23,57 +23,31 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
-//not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
-
-      
+//not GWT import const Sprite
 import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
-//not GWT import const SpriteFactory = globalThis.org.allbinary.game.layer.SpriteFactory;
-
-      
+//not GWT import const SpriteFactory
 import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
-//not GWT import const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
-
-      
+//not GWT import const OpenGLUtil
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
-
-      
+//not GWT import const ImageCache
 import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
-//not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
-
-      
+//not GWT import const ImageCacheFactory
 //not plain js import { OpenGLESImageExclusionUtil } 
 const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
-//not GWT import const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
-
-      
+//not GWT import const J2SEMath
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-//not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
-
-      
+//not GWT import const ImageScaleUtil
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

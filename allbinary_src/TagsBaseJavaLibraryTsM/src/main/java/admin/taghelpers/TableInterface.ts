@@ -37,12 +37,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTableInterface } from './BasicTableInterface.js';
-//not GWT import - same folder const BasicTableInterface = globalThis.admin.taghelpers.BasicTableInterface;
-
-                import { ModifyTableInterface } from './ModifyTableInterface.js';
-//not GWT import - same folder const ModifyTableInterface = globalThis.admin.taghelpers.ModifyTableInterface;
-
-                
+//not GWT import - same folder const BasicTableInterfaceimport { ModifyTableInterface } from './ModifyTableInterface.js';
+//not GWT import - same folder const ModifyTableInterface
 export interface TableInterface extends BasicTableInterface, ModifyTableInterface {
         
 

@@ -21,21 +21,13 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/input/automation/module/ImageComparatorConstraints.js';
-//not GWT import const ImageComparatorConstraints = globalThis.org.allbinary.input.automation.module.ImageComparatorConstraints;
-
-      
+//not GWT import const ImageComparatorConstraints
 
 
 
@@ -55,9 +47,7 @@ import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.input.automation.module.generic.constraints.Color;
-
-                
+//not GWT import - same folder const Color
 export class NoImageComparatorConstraints extends ImageComparatorConstraints {
         
 

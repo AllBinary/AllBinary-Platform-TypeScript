@@ -25,45 +25,25 @@
             import { System } from '../../../../../../java/lang/System.js';
         
 import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
-//not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
-
-      
+//not GWT import const BufferedReader
 import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
-//not GWT import const InputStreamReader = globalThis.java.io.InputStreamReader;
-
-      
+//not GWT import const InputStreamReader
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
-//not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
-
-      
+//not GWT import const LicenseInitInfo
 import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-//not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
-
-      
+//not GWT import const LicenseInitInfoUtil
 import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
-//not GWT import const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
-
-      
+//not GWT import const FileFactory
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-//not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
-
-      
+//not GWT import const PATH_GLOBALS
 import { File } from '../../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { FileReader } from '../../../../../../java/io/FileReader.js';
-//not GWT import const FileReader = globalThis.java.io.FileReader;
-
-      
+//not GWT import const FileReader
 import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
-//not GWT import const LineNumberReader = globalThis.java.io.LineNumberReader;
-
-      
+//not GWT import const LineNumberReader
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -83,12 +63,8 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import - same folder const BasicArrayListD = globalThis.org.allbinary.logic.system.security.licensing.BasicArrayListD;
-
-                import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
-//not GWT import - same folder const PrintLicenseInitInfo = globalThis.org.allbinary.logic.system.security.licensing.PrintLicenseInitInfo;
-
-                
+//not GWT import - same folder const BasicArrayListDimport { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
+//not GWT import - same folder const PrintLicenseInitInfo
 export class SetLicenseInitInfo
             extends Object
          {

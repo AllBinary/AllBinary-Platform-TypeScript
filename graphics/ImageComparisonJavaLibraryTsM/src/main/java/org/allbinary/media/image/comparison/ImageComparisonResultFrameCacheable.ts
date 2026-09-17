@@ -24,12 +24,8 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-//not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-      
+//not GWT import const CacheableInterface
 
 
 
@@ -49,9 +45,7 @@ import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cach
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
-
-                
+//not GWT import - same folder const ImageComparisonResult
 export class ImageComparisonResultFrameCacheable
             extends Object
          implements CacheableInterface {

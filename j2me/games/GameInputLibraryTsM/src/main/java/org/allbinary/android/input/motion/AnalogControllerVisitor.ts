@@ -21,9 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 
@@ -43,9 +41,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
-//not GWT import - same folder const AnalogLocationInputProcessor = globalThis.org.allbinary.android.input.motion.AnalogLocationInputProcessor;
-
-                
+//not GWT import - same folder const AnalogLocationInputProcessor
 export class AnalogControllerVisitor
             extends Object
          {

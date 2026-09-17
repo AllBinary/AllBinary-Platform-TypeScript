@@ -7,9 +7,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 
 
 
@@ -29,9 +27,7 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
-//not GWT import - same folder const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-                
+//not GWT import - same folder const DisplayInfoSingleton
 export class ScreenRelationalUtil
             extends Object
          {

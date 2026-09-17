@@ -25,8 +25,6 @@
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
-      
-
 
 
 
@@ -45,9 +43,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyableInterface } from './DestroyableInterface.js';
-//not GWT import - same folder const DestroyableInterface = globalThis.org.allbinary.game.combat.destroy.DestroyableInterface;
-
-                
+//not GWT import - same folder const DestroyableInterface
 export class DestroyableBaseBehavior
             extends Object
          implements DestroyableInterface {

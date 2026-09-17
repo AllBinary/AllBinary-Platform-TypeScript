@@ -21,21 +21,13 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
-//not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
-
-      
+//not GWT import const DynamicObjectData
 import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
-//not GWT import const AdvertisementsInterface = globalThis.org.allbinary.business.advertisement.AdvertisementsInterface;
-
-      
+//not GWT import const AdvertisementsInterface
 import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
-//not GWT import const AdvertisementSearchInterface = globalThis.org.allbinary.business.advertisement.search.AdvertisementSearchInterface;
-
-      
+//not GWT import const AdvertisementSearchInterface
 
 
 
@@ -55,12 +47,8 @@ import { AdvertisementSearchInterface } from '../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInterface } from './AdvertisementCampaignInterface.js';
-//not GWT import - same folder const AdvertisementCampaignInterface = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignInterface;
-
-                import { AdvertisementCampaignData } from './AdvertisementCampaignData.js';
-//not GWT import - same folder const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
-
-                
+//not GWT import - same folder const AdvertisementCampaignInterfaceimport { AdvertisementCampaignData } from './AdvertisementCampaignData.js';
+//not GWT import - same folder const AdvertisementCampaignData
 export class AdvertisementCampaign
             extends Object
          implements AdvertisementCampaignInterface {

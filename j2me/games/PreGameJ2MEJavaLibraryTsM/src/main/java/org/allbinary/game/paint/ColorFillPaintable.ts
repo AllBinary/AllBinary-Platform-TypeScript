@@ -19,17 +19,11 @@
 
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 
 
 
@@ -49,9 +43,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillBasePaintable } from './ColorFillBasePaintable.js';
-//not GWT import - same folder const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
-
-                
+//not GWT import - same folder const ColorFillBasePaintable
 export class ColorFillPaintable extends ColorFillBasePaintable {
         
 

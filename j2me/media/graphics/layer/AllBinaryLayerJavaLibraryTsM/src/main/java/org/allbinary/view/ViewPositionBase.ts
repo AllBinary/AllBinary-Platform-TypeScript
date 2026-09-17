@@ -19,9 +19,7 @@
 
 
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 
 
 

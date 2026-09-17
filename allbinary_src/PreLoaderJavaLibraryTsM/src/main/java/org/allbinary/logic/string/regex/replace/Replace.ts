@@ -27,41 +27,23 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { J2SEUtil } from '../../../../../../org/allbinary/J2SEUtil.js';
-//not GWT import const J2SEUtil = globalThis.org.allbinary.J2SEUtil;
-
-      
+//not GWT import const J2SEUtil
 import { AppUrlGlobals } from '../../../../../../org/allbinary/globals/AppUrlGlobals.js';
-//not GWT import const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
-
-      
+//not GWT import const AppUrlGlobals
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
-//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
-
-      
+//not GWT import const URLGLOBALS
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-//not GWT import const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
-
-      
+//not GWT import const LogConfigTypes
 
 
 

@@ -23,13 +23,9 @@
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 
@@ -49,12 +45,8 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
-
-                import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import - same folder const PickedUpLayerType = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
-
-                
+//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterfaceimport { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import - same folder const PickedUpLayerType
 export class PickedUpLayerInterfaceFactoryBase
             extends Object
          implements PickedUpLayerInterfaceFactoryInterface {

@@ -21,17 +21,11 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -51,9 +45,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageInfo } from './BufferedImageInfo.js';
-//not GWT import - same folder const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
-
-                
+//not GWT import - same folder const BufferedImageInfo
 export class BufferedImageInfoFactory
             extends Object
          {

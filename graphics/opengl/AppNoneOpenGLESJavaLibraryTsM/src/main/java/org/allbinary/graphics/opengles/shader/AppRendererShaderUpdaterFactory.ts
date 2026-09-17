@@ -37,15 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderUpdater } from './ShaderUpdater.js';
-//not GWT import - same folder const ShaderUpdater = globalThis.org.allbinary.graphics.opengles.shader.ShaderUpdater;
-
-                import { ShaderComposite } from './ShaderComposite.js';
-//not GWT import - same folder const ShaderComposite = globalThis.org.allbinary.graphics.opengles.shader.ShaderComposite;
-
-                import { ShaderOpenGLProcessor } from './ShaderOpenGLProcessor.js';
-//not GWT import - same folder const ShaderOpenGLProcessor = globalThis.org.allbinary.graphics.opengles.shader.ShaderOpenGLProcessor;
-
-                
+//not GWT import - same folder const ShaderUpdaterimport { ShaderComposite } from './ShaderComposite.js';
+//not GWT import - same folder const ShaderCompositeimport { ShaderOpenGLProcessor } from './ShaderOpenGLProcessor.js';
+//not GWT import - same folder const ShaderOpenGLProcessor
 export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
         
 

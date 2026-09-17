@@ -24,24 +24,14 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -61,12 +51,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresInterface } from './HighScoresInterface.js';
-//not GWT import - same folder const HighScoresInterface = globalThis.org.allbinary.game.score.HighScoresInterface;
-
-                import { HighScore } from './HighScore.js';
-//not GWT import - same folder const HighScore = globalThis.org.allbinary.game.score.HighScore;
-
-                
+//not GWT import - same folder const HighScoresInterfaceimport { HighScore } from './HighScore.js';
+//not GWT import - same folder const HighScore
 export class HighScores
             extends Object
          implements HighScoresInterface {

@@ -21,17 +21,11 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { TransformInfoHttpStoreFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreFactory.js';
-//not GWT import const TransformInfoHttpStoreFactory = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreFactory;
-
-      
+//not GWT import const TransformInfoHttpStoreFactory
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-//not GWT import const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
-
-      
+//not GWT import const TransformInfoObjectConfigAndManipulatorFactory
 import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
-//not GWT import const TransformInfoObjectConfigGeneratorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactory;
-
-      
+//not GWT import const TransformInfoObjectConfigGeneratorFactory
 
 
 
@@ -51,12 +45,8 @@ import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoEntityFactory } from './TransformInfoEntityFactory.js';
-//not GWT import - same folder const TransformInfoEntityFactory = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityFactory;
-
-                import { TransformInfoEntity } from './TransformInfoEntity.js';
-//not GWT import - same folder const TransformInfoEntity = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntity;
-
-                
+//not GWT import - same folder const TransformInfoEntityFactoryimport { TransformInfoEntity } from './TransformInfoEntity.js';
+//not GWT import - same folder const TransformInfoEntity
 export class TransformInfoEntityBuilder
             extends Object
          {

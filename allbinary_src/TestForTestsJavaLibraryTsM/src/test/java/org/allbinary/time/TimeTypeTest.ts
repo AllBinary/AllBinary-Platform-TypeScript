@@ -7,21 +7,13 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Calendar } from '../../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { Assertions } from '../../../org/junit/jupiter/api/Assertions.js';
-//not GWT import const Assertions = globalThis.org.junit.jupiter.api.Assertions;
-
-      
+//not GWT import const Assertions
 import { DisplayName } from '../../../org/junit/jupiter/api/DisplayName.js';
-//not GWT import const DisplayName = globalThis.org.junit.jupiter.api.DisplayName;
-
-      
+//not GWT import const DisplayName
 import { Test } from '../../../org/junit/jupiter/api/Test.js';
-//not GWT import const Test = globalThis.org.junit.jupiter.api.Test;
-
-      
+//not GWT import const Test
 
 
 
@@ -41,12 +33,8 @@ import { Test } from '../../../org/junit/jupiter/api/Test.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeTypeUtil } from './TimeTypeUtil.js';
-//not GWT import - same folder const TimeTypeUtil = globalThis.org.allbinary.time.TimeTypeUtil;
-
-                //import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
-//not GWT import - same folder const TestableTimeTypeUtil = globalThis.org.allbinary.time.TestableTimeTypeUtil;
-
-                
+//not GWT import - same folder const TimeTypeUtil//import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
+//not GWT import - same folder const TestableTimeTypeUtil
 export class TimeTypeTest
             extends Object
          {

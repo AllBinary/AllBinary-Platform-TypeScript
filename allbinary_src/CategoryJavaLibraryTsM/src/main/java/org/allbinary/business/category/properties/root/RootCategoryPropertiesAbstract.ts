@@ -25,45 +25,25 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { CategoryData } from '../../../../../../org/allbinary/business/category/CategoryData.js';
-//not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
-
-      
+//not GWT import const CategoryData
 import { CategoryHierarchyInterface } from '../../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
-//not GWT import const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
-
-      
+//not GWT import const CategoryHierarchyInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -83,9 +63,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RootCategoryPropertiesInterface } from './RootCategoryPropertiesInterface.js';
-//not GWT import - same folder const RootCategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.root.RootCategoryPropertiesInterface;
-
-                
+//not GWT import - same folder const RootCategoryPropertiesInterface
 export class RootCategoryPropertiesAbstract
             extends Object
          implements RootCategoryPropertiesInterface {

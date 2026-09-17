@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import - same folder const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-                
+//not GWT import - same folder const AllBinaryLayerManager
 export interface BasicLayerProcessorInterface {
         
 

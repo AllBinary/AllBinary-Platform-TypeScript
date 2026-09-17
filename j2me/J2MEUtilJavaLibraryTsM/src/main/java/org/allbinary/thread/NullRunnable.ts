@@ -41,8 +41,6 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
-
-                
 export class NullRunnable extends ARunnable {
         
 

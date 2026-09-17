@@ -23,8 +23,6 @@
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
-      
-
 
 
 
@@ -43,9 +41,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import - same folder const BasicArrayListD = globalThis.org.allbinary.image.BasicArrayListD;
-
-                
+//not GWT import - same folder const BasicArrayListD
 export class ImageTypeUtil
             extends Object
          {

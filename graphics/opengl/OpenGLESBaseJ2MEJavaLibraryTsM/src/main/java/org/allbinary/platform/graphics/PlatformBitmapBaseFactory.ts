@@ -23,9 +23,7 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 
 
 
@@ -45,9 +43,7 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlatformBitmapBase } from './PlatformBitmapBase.js';
-//not GWT import - same folder const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
-
-                
+//not GWT import - same folder const PlatformBitmapBase
 export class PlatformBitmapBaseFactory
             extends Object
          {

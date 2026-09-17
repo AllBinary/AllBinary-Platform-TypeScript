@@ -21,61 +21,33 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
-//not GWT import const InputFeatureFactory = globalThis.org.allbinary.game.configuration.feature.InputFeatureFactory;
-
-      
+//not GWT import const InputFeatureFactory
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-      
+//not GWT import const GameKeyEvent
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
-
-      
+//not GWT import const AllBinaryGameLayerManager
 import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-//not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
-
-      
+//not GWT import const AllBinaryTiledLayer
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 import { ScrollMapEvent } from '../../../../org/allbinary/layer/event/ScrollMapEvent.js';
-//not GWT import const ScrollMapEvent = globalThis.org.allbinary.layer.event.ScrollMapEvent;
-
-      
+//not GWT import const ScrollMapEvent
 import { ScrollMapEventHandler } from '../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
-//not GWT import const ScrollMapEventHandler = globalThis.org.allbinary.layer.event.ScrollMapEventHandler;
-
-      
+//not GWT import const ScrollMapEventHandler
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -95,30 +67,14 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
-
-                import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
-
-                import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
-
-                import { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapUpGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapUpGameInputProcessor;
-
-                import { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapDownGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapDownGameInputProcessor;
-
-                import { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapRightGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapRightGameInputProcessor;
-
-                import { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapLeftGameInputProcessor = globalThis.org.allbinary.game.input.ScrollMapLeftGameInputProcessor;
-
-                import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import - same folder const GameInputProcessorUtil = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
-
-                
+//not GWT import - same folder const PlayerGameInputimport { InputFactory } from './InputFactory.js';
+//not GWT import - same folder const InputFactoryimport { GameInputProcessor } from './GameInputProcessor.js';
+//not GWT import - same folder const GameInputProcessorimport { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapUpGameInputProcessorimport { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapDownGameInputProcessorimport { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapRightGameInputProcessorimport { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
+//not GWT import - same folder const ScrollMapLeftGameInputProcessorimport { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
+//not GWT import - same folder const GameInputProcessorUtil
 export class ScrollMapPlayerGameInput extends PlayerGameInput {
         
 

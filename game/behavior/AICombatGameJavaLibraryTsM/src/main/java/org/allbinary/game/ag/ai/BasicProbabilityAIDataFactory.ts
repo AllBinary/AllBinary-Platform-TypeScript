@@ -23,21 +23,13 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelayHelper.js';
-//not GWT import const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
-
-      
+//not GWT import const NoTimeDelayHelper
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -57,9 +49,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputProbability } from './InputProbability.js';
-//not GWT import - same folder const InputProbability = globalThis.org.allbinary.game.ag.ai.InputProbability;
-
-                
+//not GWT import - same folder const InputProbability
 export class BasicProbabilityAIDataFactory
             extends Object
          {

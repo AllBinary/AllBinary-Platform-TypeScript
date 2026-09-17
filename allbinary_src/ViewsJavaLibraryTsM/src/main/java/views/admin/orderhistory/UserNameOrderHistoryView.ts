@@ -22,76 +22,40 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { UserData } from '../../../org/allbinary/business/user/UserData.js';
-//not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
-
-      
+//not GWT import const UserData
 import { OrderData } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-//not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
-
-      
+//not GWT import const OrderData
 import { OrderHistory } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
-
-      
+//not GWT import const OrderHistory
 import { OrderHistoryData } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-//not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
-
-      
+//not GWT import const OrderHistoryData
 import { UserName } from '../../../org/allbinary/business/user/username/UserName.js';
-//not GWT import const UserName = globalThis.org.allbinary.business.user.username.UserName;
-
-      
+//not GWT import const UserName
 import { OrderHistoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
-//not GWT import const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
-
-      
+//not GWT import const OrderHistoryEntity
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
-//not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
-
-      
+//not GWT import const GLOBALS2
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
-
-      
+//not GWT import const ValidationComponentInterface
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { Document } from '../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-//not GWT import const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
-
-      
+//not GWT import const HttpStoreComponentView
 
 
 

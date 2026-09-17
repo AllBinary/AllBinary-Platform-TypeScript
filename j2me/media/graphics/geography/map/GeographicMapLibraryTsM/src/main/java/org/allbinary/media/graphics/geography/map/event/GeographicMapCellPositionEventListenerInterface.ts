@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { EventListenerInterface } from '../../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 
 
 
@@ -43,9 +41,7 @@ import { EventListenerInterface } from '../../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-//not GWT import - same folder const GeographicMapCellPositionEvent = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEvent;
-
-                
+//not GWT import - same folder const GeographicMapCellPositionEvent
 export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         
 

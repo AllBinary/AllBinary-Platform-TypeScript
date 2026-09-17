@@ -21,9 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 
 
 
@@ -43,15 +41,9 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionInterface } from './IntermissionInterface.js';
-//not GWT import - same folder const IntermissionInterface = globalThis.org.allbinary.game.IntermissionInterface;
-
-                import { NullIntermissionEnableListener } from './NullIntermissionEnableListener.js';
-//not GWT import - same folder const NullIntermissionEnableListener = globalThis.org.allbinary.game.NullIntermissionEnableListener;
-
-                import { IntermissionEnableListenerInterface } from './IntermissionEnableListenerInterface.js';
-//not GWT import - same folder const IntermissionEnableListenerInterface = globalThis.org.allbinary.game.IntermissionEnableListenerInterface;
-
-                
+//not GWT import - same folder const IntermissionInterfaceimport { NullIntermissionEnableListener } from './NullIntermissionEnableListener.js';
+//not GWT import - same folder const NullIntermissionEnableListenerimport { IntermissionEnableListenerInterface } from './IntermissionEnableListenerInterface.js';
+//not GWT import - same folder const IntermissionEnableListenerInterface
 export class Intermission
             extends Object
          implements IntermissionInterface {

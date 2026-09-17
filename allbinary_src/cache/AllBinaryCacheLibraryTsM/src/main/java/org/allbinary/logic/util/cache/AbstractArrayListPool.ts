@@ -24,16 +24,10 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -53,15 +47,9 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PoolInterface } from './PoolInterface.js';
-//not GWT import - same folder const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
-
-                import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import - same folder const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
-
-                import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import - same folder const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-                
+//not GWT import - same folder const PoolInterfaceimport { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
+//not GWT import - same folder const CacheableInterfaceFactoryInterfaceimport { CacheableInterface } from './CacheableInterface.js';
+//not GWT import - same folder const CacheableInterface
 export class AbstractArrayListPool
             extends Object
          implements PoolInterface {

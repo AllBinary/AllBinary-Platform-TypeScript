@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementWebsiteInterface } from './AdvertisementWebsiteInterface.js';
-//not GWT import - same folder const AdvertisementWebsiteInterface = globalThis.org.allbinary.business.advertisement.search.website.AdvertisementWebsiteInterface;
-
-                
+//not GWT import - same folder const AdvertisementWebsiteInterface
 export class BasicAdvertisementWebsite
             extends Object
          implements AdvertisementWebsiteInterface {

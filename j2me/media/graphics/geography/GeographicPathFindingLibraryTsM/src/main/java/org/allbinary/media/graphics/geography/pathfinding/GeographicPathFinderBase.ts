@@ -26,12 +26,8 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -51,9 +47,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultipassState } from './MultipassState.js';
-//not GWT import - same folder const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
-
-                
+//not GWT import - same folder const MultipassState
 export class GeographicPathFinderBase
             extends Object
          {

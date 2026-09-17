@@ -25,17 +25,11 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-//not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-      
+//not GWT import const BasicGeographicMap
 import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-//not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
-
-      
+//not GWT import const GeographicMapCellHistory
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -55,18 +49,10 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-//not GWT import - same folder const PathGeneratorInterface = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathGeneratorInterface;
-
-                import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import - same folder const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
-
-                import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-//not GWT import - same folder const GeographicPathFinderBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
-
-                import { MultipassState } from './MultipassState.js';
-//not GWT import - same folder const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
-
-                
+//not GWT import - same folder const PathGeneratorInterfaceimport { PathFindingInfo } from './PathFindingInfo.js';
+//not GWT import - same folder const PathFindingInfoimport { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
+//not GWT import - same folder const GeographicPathFinderBaseimport { MultipassState } from './MultipassState.js';
+//not GWT import - same folder const MultipassState
 export class PathGenerator
             extends Object
          implements PathGeneratorInterface {

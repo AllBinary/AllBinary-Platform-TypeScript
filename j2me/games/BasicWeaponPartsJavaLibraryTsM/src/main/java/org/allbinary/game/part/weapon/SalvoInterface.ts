@@ -21,17 +21,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-//not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
-
-      
+//not GWT import const WeaponProperties
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-//not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
-
-      
+//not GWT import const ScoreableInterface
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 

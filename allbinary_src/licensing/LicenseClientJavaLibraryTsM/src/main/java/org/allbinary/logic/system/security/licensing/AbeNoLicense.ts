@@ -22,16 +22,10 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -51,15 +45,9 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import - same folder const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
-
-                import { LicenseTypeFactory } from './LicenseTypeFactory.js';
-//not GWT import - same folder const LicenseTypeFactory = globalThis.org.allbinary.logic.system.security.licensing.LicenseTypeFactory;
-
-                import { LicenseType } from './LicenseType.js';
-//not GWT import - same folder const LicenseType = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
-
-                
+//not GWT import - same folder const AbeLicenseInterfaceimport { LicenseTypeFactory } from './LicenseTypeFactory.js';
+//not GWT import - same folder const LicenseTypeFactoryimport { LicenseType } from './LicenseType.js';
+//not GWT import - same folder const LicenseType
 export class AbeNoLicense
             extends Object
          implements AbeLicenseInterface {

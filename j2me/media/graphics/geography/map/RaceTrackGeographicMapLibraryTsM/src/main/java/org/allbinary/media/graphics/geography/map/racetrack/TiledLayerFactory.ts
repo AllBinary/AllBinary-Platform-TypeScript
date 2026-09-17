@@ -21,9 +21,7 @@
             import { Object } from '../../../../../../../java/lang/Object.js';
         
 import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
-//not GWT import const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
-
-      
+//not GWT import const TiledLayer
 
 
 
@@ -43,9 +41,7 @@ import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/T
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import - same folder const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
-
-                
+//not GWT import - same folder const RaceTrackData
 export class TiledLayerFactory
             extends Object
          {

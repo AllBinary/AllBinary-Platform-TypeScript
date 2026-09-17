@@ -22,16 +22,10 @@
         
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -51,9 +45,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseConnectionInfoInterface } from './DatabaseConnectionInfoInterface.js';
-//not GWT import - same folder const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
-
-                
+//not GWT import - same folder const DatabaseConnectionInfoInterface
 export class DbConnectionInfo
             extends Object
          implements DatabaseConnectionInfoInterface {

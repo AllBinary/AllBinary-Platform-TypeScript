@@ -23,37 +23,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { FileFilter } from '../../../../../java/io/FileFilter.js';
-//not GWT import const FileFilter = globalThis.java.io.FileFilter;
-
-      
+//not GWT import const FileFilter
 import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
-//not GWT import const FilenameFilter = globalThis.java.io.FilenameFilter;
-
-      
+//not GWT import const FilenameFilter
 import { IOException } from '../../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { URI } from '../../../../../java/net/URI.js';
-//not GWT import const URI = globalThis.java.net.URI;
-
-      
+//not GWT import const URI
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -73,9 +57,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInterface } from './AbFileInterface.js';
-//not GWT import - same folder const AbFileInterface = globalThis.org.allbinary.logic.io.file.AbFileInterface;
-
-                
+//not GWT import - same folder const AbFileInterface
 export class AbFile
             extends Object
          implements AbFileInterface {

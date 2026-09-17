@@ -21,25 +21,15 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-//not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
-
-      
+//not GWT import const Bundle
 import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
-//not GWT import const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
-
-      
+//not GWT import const ServiceFactory
 import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
-//not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
-
-      
+//not GWT import const ServiceRegistration
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -59,9 +49,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptService } from './CryptService.js';
-//not GWT import - same folder const CryptService = globalThis.org.allbinary.bundle.logic.system.loader.CryptService;
-
-                
+//not GWT import - same folder const CryptService
 export class CryptServiceFactory
             extends Object
          implements ServiceFactory {

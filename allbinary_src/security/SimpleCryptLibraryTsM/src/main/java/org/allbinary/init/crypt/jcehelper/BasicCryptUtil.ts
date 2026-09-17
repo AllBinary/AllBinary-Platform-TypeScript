@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
-//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
-
-      
+//not GWT import const ByteArrayInputStream
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
-
-      
+//not GWT import const ByteArrayOutputStream
 import { InputStream } from '../../../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -61,9 +51,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptInterface } from './CryptInterface.js';
-//not GWT import - same folder const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
-
-                
+//not GWT import - same folder const CryptInterface
 export class BasicCryptUtil
             extends Object
          {

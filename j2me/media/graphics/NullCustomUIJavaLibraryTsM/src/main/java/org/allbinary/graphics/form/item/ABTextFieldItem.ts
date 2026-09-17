@@ -5,25 +5,15 @@
 
 
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
-
-      
+//not GWT import const Visitor
 
 
 
@@ -43,9 +33,7 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextItem } from './ABTextItem.js';
-//not GWT import - same folder const ABTextItem = globalThis.org.allbinary.graphics.form.item.ABTextItem;
-
-                
+//not GWT import - same folder const ABTextItem
 export class ABTextFieldItem extends ABTextItem {
         
 

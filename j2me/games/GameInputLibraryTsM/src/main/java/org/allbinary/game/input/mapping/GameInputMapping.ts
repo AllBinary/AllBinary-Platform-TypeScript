@@ -21,13 +21,9 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-//not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
-
-      
+//not GWT import const GameKey
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 

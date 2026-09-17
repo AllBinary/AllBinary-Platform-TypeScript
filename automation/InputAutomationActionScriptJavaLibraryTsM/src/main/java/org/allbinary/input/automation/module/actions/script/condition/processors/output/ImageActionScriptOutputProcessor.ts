@@ -26,32 +26,18 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
-//not GWT import const InputImageIOInterfaceFactory = globalThis.org.allbinary.input.media.image.InputImageIOInterfaceFactory;
-
-      
+//not GWT import const InputImageIOInterfaceFactory
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-//not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
-
-      
+//not GWT import const InputImageType
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-//not GWT import const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
-
-      
+//not GWT import const ImageIOInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -71,12 +57,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageTypes } from './ImageTypes.js';
-//not GWT import - same folder const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
-
-                import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-//not GWT import - same folder const ImageActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
-
-                
+//not GWT import - same folder const ImageTypesimport { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+//not GWT import - same folder const ImageActionScriptOutputInterface
 export class ImageActionScriptOutputProcessor
             extends Object
          {

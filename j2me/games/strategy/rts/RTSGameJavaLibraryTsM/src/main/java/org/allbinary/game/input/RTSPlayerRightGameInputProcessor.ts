@@ -21,13 +21,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-      
+//not GWT import const GameKeyEvent
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 
@@ -47,12 +43,8 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerGameInputProcessor } from './RTSPlayerGameInputProcessor.js';
-//not GWT import - same folder const RTSPlayerGameInputProcessor = globalThis.org.allbinary.game.input.RTSPlayerGameInputProcessor;
-
-                import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-//not GWT import - same folder const RTSPlayerGameInput = globalThis.org.allbinary.game.input.RTSPlayerGameInput;
-
-                
+//not GWT import - same folder const RTSPlayerGameInputProcessorimport { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
+//not GWT import - same folder const RTSPlayerGameInput
 export class RTSPlayerRightGameInputProcessor extends RTSPlayerGameInputProcessor {
         
 

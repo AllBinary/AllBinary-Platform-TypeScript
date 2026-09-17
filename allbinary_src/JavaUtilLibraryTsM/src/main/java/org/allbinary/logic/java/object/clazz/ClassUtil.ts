@@ -23,21 +23,13 @@
             import { Class } from '../../../../../../java/lang/Class.js';
         
 import { ConstructorUtil } from '../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
-//not GWT import const ConstructorUtil = globalThis.org.allbinary.logic.java.anyType.ConstructorUtil;
-
-      
+//not GWT import const ConstructorUtil
 import { InterfaceUtil } from '../../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
-//not GWT import const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
-
-      
+//not GWT import const InterfaceUtil
 import { MethodUtil } from '../../../../../../org/allbinary/logic/java/anyType/MethodUtil.js';
-//not GWT import const MethodUtil = globalThis.org.allbinary.logic.java.anyType.MethodUtil;
-
-      
+//not GWT import const MethodUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 

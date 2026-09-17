@@ -23,33 +23,19 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
-//not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
-
-      
+//not GWT import const PlayerGameInput
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-//not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
-
-      
+//not GWT import const EventStrings
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
+//not GWT import const BasicEventHandler
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -69,9 +55,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpKeyEventListenerInterface } from './UpKeyEventListenerInterface.js';
-//not GWT import - same folder const UpKeyEventListenerInterface = globalThis.org.allbinary.game.input.event.UpKeyEventListenerInterface;
-
-                
+//not GWT import - same folder const UpKeyEventListenerInterface
 export class UpKeyEventHandlerBase extends BasicEventHandler {
         
 

@@ -25,53 +25,29 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { GameInfoData } from '../../../../../org/allbinary/game/GameInfoData.js';
-//not GWT import const GameInfoData = globalThis.org.allbinary.game.GameInfoData;
-
-      
+//not GWT import const GameInfoData
 import { GameConfigurationCentral } from '../../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
-
-      
+//not GWT import const GameConfigurationCentral
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-//not GWT import const HighScore = globalThis.org.allbinary.game.score.HighScore;
-
-      
+//not GWT import const HighScore
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
-//not GWT import const XmlRpcAbeClient = globalThis.org.allbinary.logic.communication.xmlrpc.XmlRpcAbeClient;
-
-      
+//not GWT import const XmlRpcAbeClient
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
-
-      
+//not GWT import const BooleanFactory
 import { NoCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/NoCrypt.js';
-//not GWT import const NoCrypt = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.NoCrypt;
-
-      
+//not GWT import const NoCrypt
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
-
-      
 
 
 
@@ -91,18 +67,10 @@ const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresSubmissionProcessorInterface } from './RemoteHighScoresSubmissionProcessorInterface.js';
-//not GWT import - same folder const RemoteHighScoresSubmissionProcessorInterface = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessorInterface;
-
-                import { RemoteHighScoresData } from './RemoteHighScoresData.js';
-//not GWT import - same folder const RemoteHighScoresData = globalThis.org.allbinary.game.score.remote.RemoteHighScoresData;
-
-                import { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
-//not GWT import - same folder const XmlRpcRemoteHighScoresClient = globalThis.org.allbinary.game.score.remote.XmlRpcRemoteHighScoresClient;
-
-                import { RemoteHighScores } from './RemoteHighScores.js';
-//not GWT import - same folder const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
-
-                
+//not GWT import - same folder const RemoteHighScoresSubmissionProcessorInterfaceimport { RemoteHighScoresData } from './RemoteHighScoresData.js';
+//not GWT import - same folder const RemoteHighScoresDataimport { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
+//not GWT import - same folder const XmlRpcRemoteHighScoresClientimport { RemoteHighScores } from './RemoteHighScores.js';
+//not GWT import - same folder const RemoteHighScores
 export class RemoteHighScoresSubmissionProcessor
             extends Object
          implements RemoteHighScoresSubmissionProcessorInterface {

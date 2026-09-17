@@ -21,29 +21,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
-//not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
-
-      
+//not GWT import const EventStrings
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
+//not GWT import const BasicEventHandler
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -63,15 +51,9 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerEventListener } from './LayerManagerEventListener.js';
-//not GWT import - same folder const LayerManagerEventListener = globalThis.org.allbinary.layer.event.LayerManagerEventListener;
-
-                import { LayerManagerEvent } from './LayerManagerEvent.js';
-//not GWT import - same folder const LayerManagerEvent = globalThis.org.allbinary.layer.event.LayerManagerEvent;
-
-                import { LayerManagerEventListenerInterface } from './LayerManagerEventListenerInterface.js';
-//not GWT import - same folder const LayerManagerEventListenerInterface = globalThis.org.allbinary.layer.event.LayerManagerEventListenerInterface;
-
-                
+//not GWT import - same folder const LayerManagerEventListenerimport { LayerManagerEvent } from './LayerManagerEvent.js';
+//not GWT import - same folder const LayerManagerEventimport { LayerManagerEventListenerInterface } from './LayerManagerEventListenerInterface.js';
+//not GWT import - same folder const LayerManagerEventListenerInterface
 export class LayerManagerEventHandler extends BasicEventHandler {
         
 

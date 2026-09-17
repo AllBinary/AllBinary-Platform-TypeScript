@@ -23,57 +23,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Collection } from '../../../../../java/util/Collection.js';
-//not GWT import const Collection = globalThis.java.util.Collection;
-
-      
+//not GWT import const Collection
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Iterator } from '../../../../../java/util/Iterator.js';
-//not GWT import const Iterator = globalThis.java.util.Iterator;
-
-      
+//not GWT import const Iterator
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
-
-      
+//not GWT import const HelpSet
 import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
-//not GWT import const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
-
-      
+//not GWT import const HelpSetEvent
 import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
-//not GWT import const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
-
-      
+//not GWT import const HelpSetListener
 import { ListModel } from '../../../../../javax/swing/ListModel.js';
-//not GWT import const ListModel = globalThis.javax.swing.ListModel;
-
-      
+//not GWT import const ListModel
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-//not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
-
-      
+//not GWT import const InputAutomationModuleConfiguration
 import { InputAutomationModuleConfigurations } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
-//not GWT import const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
-
-      
+//not GWT import const InputAutomationModuleConfigurations
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
-//not GWT import const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
-
-      
+//not GWT import const JavaHelpSetNotifier
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -93,12 +67,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultListModelHelper } from './DefaultListModelHelper.js';
-//not GWT import - same folder const DefaultListModelHelper = globalThis.org.allbinary.input.automation.module.DefaultListModelHelper;
-
-                import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
-//not GWT import - same folder const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
-
-                
+//not GWT import - same folder const DefaultListModelHelperimport { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
+//not GWT import - same folder const InputAutomationModuleFactoryInterface
 export class InputAutomationModuleFactoryFactory
             extends Object
          {

@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseLoadingType } from './LicenseLoadingType.js';
-//not GWT import - same folder const LicenseLoadingType = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
-
-                
+//not GWT import - same folder const LicenseLoadingType
 export class LicenseLoadingTypeFactory
             extends Object
          {

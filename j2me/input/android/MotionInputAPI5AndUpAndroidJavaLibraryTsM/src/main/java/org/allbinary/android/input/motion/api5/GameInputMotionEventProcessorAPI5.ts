@@ -21,41 +21,23 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { MotionEvent } from '../../../../../../android/view/MotionEvent.js';
-//not GWT import const MotionEvent = globalThis.android.view.MotionEvent;
-
-      
+//not GWT import const MotionEvent
 import { BaseGameInputMotionEventProcessor } from '../../../../../../org/allbinary/android/input/motion/BaseGameInputMotionEventProcessor.js';
-//not GWT import const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
-
-      
+//not GWT import const BaseGameInputMotionEventProcessor
 import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { ScalableListener } from '../../../../../../org/allbinary/graphics/displayable/ScalableListener.js';
-//not GWT import const ScalableListener = globalThis.org.allbinary.graphics.displayable.ScalableListener;
-
-      
+//not GWT import const ScalableListener
 import { AllMotionRecognizer } from '../../../../../../org/allbinary/input/motion/AllMotionRecognizer.js';
-//not GWT import const AllMotionRecognizer = globalThis.org.allbinary.input.motion.AllMotionRecognizer;
-
-      
+//not GWT import const AllMotionRecognizer
 import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/MotionRecognizer.js';
-//not GWT import const MotionRecognizer = globalThis.org.allbinary.input.motion.MotionRecognizer;
-
-      
+//not GWT import const MotionRecognizer
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -75,9 +57,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputMotionInfoAPI5 } from './GameInputMotionInfoAPI5.js';
-//not GWT import - same folder const GameInputMotionInfoAPI5 = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionInfoAPI5;
-
-                
+//not GWT import - same folder const GameInputMotionInfoAPI5
 export class GameInputMotionEventProcessorAPI5 extends BaseGameInputMotionEventProcessor {
         
 

@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MediaData } from './MediaData.js';
-//not GWT import - same folder const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
-
-                
+//not GWT import - same folder const MediaData
 export class MediaDataFactory
             extends Object
          {

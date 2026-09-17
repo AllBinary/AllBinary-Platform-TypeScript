@@ -19,13 +19,9 @@
 
 
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
-
-      
+//not GWT import const CollidableCompositeLayer
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 
@@ -45,9 +41,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionHelper } from './CollisionHelper.js';
-//not GWT import - same folder const CollisionHelper = globalThis.org.allbinary.game.collision.CollisionHelper;
-
-                
+//not GWT import - same folder const CollisionHelper
 export class SourceCollisionHelper extends CollisionHelper {
         
 

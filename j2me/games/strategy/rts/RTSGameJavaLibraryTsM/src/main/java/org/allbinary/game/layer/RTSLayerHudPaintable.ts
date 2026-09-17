@@ -19,33 +19,19 @@
 
 
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-//not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
-
-      
+//not GWT import const AndroidUtil
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-      
+//not GWT import const CollidableDestroyableDamageableLayer
 import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
-//not GWT import const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
-
-      
+//not GWT import const BasicWeaponPart
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-//not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
-
-      
+//not GWT import const UpdateMyFontInterface
 
 
 
@@ -65,12 +51,8 @@ import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
-
-                import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
-
-                
+//not GWT import - same folder const SelectionHudPaintableimport { RTSLayer } from './RTSLayer.js';
+//not GWT import - same folder const RTSLayer
 export class RTSLayerHudPaintable extends SelectionHudPaintable implements UpdateMyFontInterface {
         
 

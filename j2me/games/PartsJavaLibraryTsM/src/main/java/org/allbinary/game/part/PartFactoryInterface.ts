@@ -21,13 +21,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
-//not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
-
-      
+//not GWT import const RelativeRelationship
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 
@@ -47,9 +43,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-//not GWT import - same folder const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
-
-                
+//not GWT import - same folder const PartInterface
 export interface PartFactoryInterface {
         
 

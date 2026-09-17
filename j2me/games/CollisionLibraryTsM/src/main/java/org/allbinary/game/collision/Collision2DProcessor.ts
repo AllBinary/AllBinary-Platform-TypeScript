@@ -5,9 +5,7 @@
 
 
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 
 
 
@@ -27,9 +25,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionProcessor } from './CollisionProcessor.js';
-//not GWT import - same folder const CollisionProcessor = globalThis.org.allbinary.game.collision.CollisionProcessor;
-
-                
+//not GWT import - same folder const CollisionProcessor
 export class Collision2DProcessor extends CollisionProcessor {
         
 

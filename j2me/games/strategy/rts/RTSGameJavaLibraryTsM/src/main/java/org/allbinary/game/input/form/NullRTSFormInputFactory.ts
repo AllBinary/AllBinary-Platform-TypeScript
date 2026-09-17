@@ -21,9 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-//not GWT import const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
-
-      
+//not GWT import const BasicGroupFactory
 
 
 
@@ -43,9 +41,7 @@ import { BasicGroupFactory } from '../../../../../org/allbinary/game/identificat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import - same folder const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
-
-                
+//not GWT import - same folder const RTSFormInput
 export class NullRTSFormInputFactory
             extends Object
          {

@@ -21,25 +21,15 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
-//not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
-
-      
+//not GWT import const TagSupport
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

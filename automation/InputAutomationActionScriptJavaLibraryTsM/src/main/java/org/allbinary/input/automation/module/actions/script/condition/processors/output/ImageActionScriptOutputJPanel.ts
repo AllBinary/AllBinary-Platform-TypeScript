@@ -22,28 +22,16 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { swing } from '../../../../../../../../../../javax/swing.js';
-//not GWT import const swing = globalThis.javax.swing;
-
-      
+//not GWT import const swing
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-//not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
-
-      
+//not GWT import const InputImageType
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -63,57 +51,23 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JPanel;
-
-                import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-//not GWT import - same folder const ImageActionScriptOutputInterface = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
-
-                import { ImageTypes } from './ImageTypes.js';
-//not GWT import - same folder const ImageTypes = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
-
-                import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import - same folder const DefaultListModel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.DefaultListModel;
-
-                import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JDialog;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JLabel;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JButton;
-
-                import { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBox = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JCheckBox;
-
-                import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JScrollPane;
-
-                import { JList } from './JList.js';
-//not GWT import - same folder const JList = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JList;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Dimension;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionEvent;
-
-                import { Insets } from './Insets.js';
-//not GWT import - same folder const Insets = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Insets;
-
-                import { AbstractListModel } from './AbstractListModel.js';
-//not GWT import - same folder const AbstractListModel = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.AbstractListModel;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Short;
-
-                
+//not GWT import - same folder const JPanelimport { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+//not GWT import - same folder const ImageActionScriptOutputInterfaceimport { ImageTypes } from './ImageTypes.js';
+//not GWT import - same folder const ImageTypesimport { DefaultListModel } from './DefaultListModel.js';
+//not GWT import - same folder const DefaultListModelimport { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialogimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { JCheckBox } from './JCheckBox.js';
+//not GWT import - same folder const JCheckBoximport { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPaneimport { JList } from './JList.js';
+//not GWT import - same folder const JListimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEventimport { Insets } from './Insets.js';
+//not GWT import - same folder const Insetsimport { AbstractListModel } from './AbstractListModel.js';
+//not GWT import - same folder const AbstractListModelimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Short
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
         
 

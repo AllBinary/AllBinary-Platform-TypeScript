@@ -21,37 +21,21 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { NoShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js';
-//not GWT import const NoShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.NoShakeAnimationListener;
-
-      
+//not GWT import const NoShakeAnimationListener
 import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
-//not GWT import const ShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListener;
-
-      
+//not GWT import const ShakeAnimationListener
 import { ShakeAnimationListenerFactory } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListenerFactory.js';
-//not GWT import const ShakeAnimationListenerFactory = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListenerFactory;
-
-      
+//not GWT import const ShakeAnimationListenerFactory
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-//not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
-
-      
+//not GWT import const GameConfigurationCentral
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
-//not GWT import const TickableInterface = globalThis.org?.allbinary?.game?.tick?.TickableInterface;
-
-      
+//not GWT import const TickableInterface
 import { AllBinaryNoVibration } from '../../../../org/allbinary/media/AllBinaryNoVibration.js';
-//not GWT import const AllBinaryNoVibration = globalThis.org.allbinary.media.AllBinaryNoVibration;
-
-      
+//not GWT import const AllBinaryNoVibration
 import { AllBinaryVibration } from '../../../../org/allbinary/media/AllBinaryVibration.js';
-//not GWT import const AllBinaryVibration = globalThis.org.allbinary.media.AllBinaryVibration;
-
-      
+//not GWT import const AllBinaryVibration
 import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
-//not GWT import const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
-
-      
+//not GWT import const AllBinaryVibrationME
 
 
 
@@ -71,9 +55,7 @@ import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryV
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
-
-                
+//not GWT import - same folder const WaypointBehaviorBase
 export class AdvancedRTSProperties
             extends Object
          {

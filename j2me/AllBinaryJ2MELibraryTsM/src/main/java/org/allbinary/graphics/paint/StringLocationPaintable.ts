@@ -19,9 +19,7 @@
 
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 
 
 
@@ -41,9 +39,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LocationPaintable } from './LocationPaintable.js';
-//not GWT import - same folder const LocationPaintable = globalThis.org.allbinary.graphics.paint.LocationPaintable;
-
-                
+//not GWT import - same folder const LocationPaintable
 export class StringLocationPaintable extends LocationPaintable {
         
 

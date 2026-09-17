@@ -29,89 +29,47 @@
             import { Double } from '../../../../../../java/lang/Double.js';
         
 import { awt } from '../../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-//not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
-
-      
+//not GWT import const DefaultMutableTreeNode
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
-
-      
+//not GWT import const MutableTreeNode
 import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
-//not GWT import const DomHelper = globalThis.org.allbinary.dom.DomHelper;
-
-      
+//not GWT import const DomHelper
 import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
-//not GWT import const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
-
-      
+//not GWT import const GameInputStrings
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
-//not GWT import const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
-
-      
+//not GWT import const StatusFactory
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-//not GWT import const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
-
-      
+//not GWT import const CanvasDom
 import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
-//not GWT import const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
-
-      
+//not GWT import const IntegerDimension
 import { BasicGraphicsPipeline } from '../../../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
-//not GWT import const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
-
-      
+//not GWT import const BasicGraphicsPipeline
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -131,36 +89,16 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import - same folder const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
-
-                import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
-
-                import { Points } from './Points.js';
-//not GWT import - same folder const Points = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
-
-                import { PointsDomUtil } from './PointsDomUtil.js';
-//not GWT import - same folder const PointsDomUtil = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
-
-                import { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2D = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics2D;
-
-                import { BasicStroke } from './BasicStroke.js';
-//not GWT import - same folder const BasicStroke = globalThis.org.allbinary.graphics.j2me.workarea.tools.BasicStroke;
-
-                import { PointsUtil } from './PointsUtil.js';
-//not GWT import - same folder const PointsUtil = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsUtil;
-
-                import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
-
-                import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
-
-                import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
-
-                
+//not GWT import - same folder const GraphicItemInterfaceimport { Color } from './Color.js';
+//not GWT import - same folder const Colorimport { Points } from './Points.js';
+//not GWT import - same folder const Pointsimport { PointsDomUtil } from './PointsDomUtil.js';
+//not GWT import - same folder const PointsDomUtilimport { Graphics2D } from './Graphics2D.js';
+//not GWT import - same folder const Graphics2Dimport { BasicStroke } from './BasicStroke.js';
+//not GWT import - same folder const BasicStrokeimport { PointsUtil } from './PointsUtil.js';
+//not GWT import - same folder const PointsUtilimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphicsimport { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEventimport { KeyEvent } from './KeyEvent.js';
+//not GWT import - same folder const KeyEvent
 export class LinesGraphicItem
             extends Object
          implements GraphicItemInterface {

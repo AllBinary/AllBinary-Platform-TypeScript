@@ -25,33 +25,19 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { CategoryPropertiesFactory } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactory.js';
-//not GWT import const CategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactory;
-
-      
+//not GWT import const CategoryPropertiesFactory
 import { CategoryPropertiesFactoryInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
-//not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
-
-      
+//not GWT import const CategoryPropertiesFactoryInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -71,15 +57,9 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryFactoryInterface } from './CategoryFactoryInterface.js';
-//not GWT import - same folder const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
-
-                import { CategoryInterface } from './CategoryInterface.js';
-//not GWT import - same folder const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
-
-                import { Category } from './Category.js';
-//not GWT import - same folder const Category = globalThis.org.allbinary.business.category.Category;
-
-                
+//not GWT import - same folder const CategoryFactoryInterfaceimport { CategoryInterface } from './CategoryInterface.js';
+//not GWT import - same folder const CategoryInterfaceimport { Category } from './Category.js';
+//not GWT import - same folder const Category
 export class CategoryAbstractFactory
             extends Object
          implements CategoryFactoryInterface {

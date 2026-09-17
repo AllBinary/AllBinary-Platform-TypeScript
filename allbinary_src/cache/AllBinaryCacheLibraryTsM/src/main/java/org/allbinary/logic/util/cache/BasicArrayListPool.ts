@@ -23,8 +23,6 @@
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
-      
-
 
 
 
@@ -43,18 +41,10 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbstractArrayListPool } from './AbstractArrayListPool.js';
-//not GWT import - same folder const AbstractArrayListPool = globalThis.org.allbinary.logic.util.cache.AbstractArrayListPool;
-
-                import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import - same folder const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
-
-                import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import - same folder const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
-
-                import { BasicArrayListCacheable } from './BasicArrayListCacheable.js';
-//not GWT import - same folder const BasicArrayListCacheable = globalThis.org.allbinary.logic.util.cache.BasicArrayListCacheable;
-
-                
+//not GWT import - same folder const AbstractArrayListPoolimport { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
+//not GWT import - same folder const CacheableInterfaceFactoryInterfaceimport { CacheableInterface } from './CacheableInterface.js';
+//not GWT import - same folder const CacheableInterfaceimport { BasicArrayListCacheable } from './BasicArrayListCacheable.js';
+//not GWT import - same folder const BasicArrayListCacheable
 export class BasicArrayListPool extends AbstractArrayListPool {
         
 

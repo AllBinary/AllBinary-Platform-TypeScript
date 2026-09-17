@@ -19,13 +19,9 @@
 
 
 import { Font } from '../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
-//not GWT import const FontDebugBase = globalThis.org.allbinary.graphics.font.FontDebugBase;
-
-      
+//not GWT import const FontDebugBase
 
 
 

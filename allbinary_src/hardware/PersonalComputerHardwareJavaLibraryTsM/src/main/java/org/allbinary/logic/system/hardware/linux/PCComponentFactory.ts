@@ -24,60 +24,32 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-//not GWT import const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
-
-      
+//not GWT import const LogConfigTypeFactory
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-//not GWT import const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
-
-      
+//not GWT import const LogConfigTypes
 import { ComponentFactory } from '../../../../../../org/allbinary/logic/system/hardware/components/ComponentFactory.js';
-//not GWT import const ComponentFactory = globalThis.org.allbinary.logic.system.hardware.components.ComponentFactory;
-
-      
+//not GWT import const ComponentFactory
 import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-//not GWT import const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
-
-      
+//not GWT import const HardwareComponentInterface
 import { Bridge } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Bridge.js';
-//not GWT import const Bridge = globalThis.org.allbinary.logic.system.hardware.components.linux.Bridge;
-
-      
+//not GWT import const Bridge
 import { Ethernet } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Ethernet.js';
-//not GWT import const Ethernet = globalThis.org.allbinary.logic.system.hardware.components.linux.Ethernet;
-
-      
+//not GWT import const Ethernet
 import { HardDriveController } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/HardDriveController.js';
-//not GWT import const HardDriveController = globalThis.org.allbinary.logic.system.hardware.components.linux.HardDriveController;
-
-      
+//not GWT import const HardDriveController
 import { Media } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Media.js';
-//not GWT import const Media = globalThis.org.allbinary.logic.system.hardware.components.linux.Media;
-
-      
+//not GWT import const Media
 import { PCI } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/PCI.js';
-//not GWT import const PCI = globalThis.org.allbinary.logic.system.hardware.components.linux.PCI;
-
-      
+//not GWT import const PCI
 import { Unknown } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Unknown.js';
-//not GWT import const Unknown = globalThis.org.allbinary.logic.system.hardware.components.linux.Unknown;
-
-      
+//not GWT import const Unknown
 import { Usb } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Usb.js';
-//not GWT import const Usb = globalThis.org.allbinary.logic.system.hardware.components.linux.Usb;
-
-      
+//not GWT import const Usb
 import { Video } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Video.js';
-//not GWT import const Video = globalThis.org.allbinary.logic.system.hardware.components.linux.Video;
-
-      
+//not GWT import const Video
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

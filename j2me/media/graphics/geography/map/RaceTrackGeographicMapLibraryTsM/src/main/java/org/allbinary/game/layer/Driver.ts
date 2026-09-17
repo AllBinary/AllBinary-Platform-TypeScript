@@ -23,9 +23,7 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 
 
 
@@ -45,9 +43,7 @@ import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/ma
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Aggression } from './Aggression.js';
-//not GWT import - same folder const Aggression = globalThis.org.allbinary.game.layer.Aggression;
-
-                
+//not GWT import - same folder const Aggression
 export class Driver
             extends Object
          {

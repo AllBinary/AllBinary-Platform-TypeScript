@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-//not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
-
-      
+//not GWT import const WeaponProperties
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-//not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
-
-      
+//not GWT import const ScoreableInterface
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-//not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
-
-      
+//not GWT import const AllBinaryLayerCircularPool
 
 
 
@@ -55,9 +47,7 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import - same folder const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
-
-                
+//not GWT import - same folder const WeaponLayer
 export class WeaponLayerCircularPool extends AllBinaryLayerCircularPool {
         
 

@@ -25,37 +25,21 @@
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
 import { Activity } from '../../../../../android/app/Activity.js';
-//not GWT import const Activity = globalThis.android.app.Activity;
-
-      
+//not GWT import const Activity
 import { Context } from '../../../../../android/content/Context.js';
-//not GWT import const Context = globalThis.android.content.Context;
-
-      
+//not GWT import const Context
 import { View } from '../../../../../android/view/View.js';
-//not GWT import const View = globalThis.android.view.View;
-
-      
+//not GWT import const View
 import { InputMethodManager } from '../../../../../android/view/inputmethod/InputMethodManager.js';
-//not GWT import const InputMethodManager = globalThis.android.view.inputmethod.InputMethodManager;
-
-      
+//not GWT import const InputMethodManager
 import { ViewCompositeInterface } from '../../../../../org/allbinary/android/activity/ViewCompositeInterface.js';
-//not GWT import const ViewCompositeInterface = globalThis.org.allbinary.android.activity.ViewCompositeInterface;
-
-      
+//not GWT import const ViewCompositeInterface
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

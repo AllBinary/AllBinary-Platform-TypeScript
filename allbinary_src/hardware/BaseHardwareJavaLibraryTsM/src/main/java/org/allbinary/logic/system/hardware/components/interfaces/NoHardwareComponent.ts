@@ -23,8 +23,6 @@
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
-      
-
 
 
 
@@ -43,9 +41,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HardwareComponentInterface } from './HardwareComponentInterface.js';
-//not GWT import - same folder const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
-
-                
+//not GWT import - same folder const HardwareComponentInterface
 export class NoHardwareComponent
             extends Object
          implements HardwareComponentInterface {

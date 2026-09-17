@@ -19,9 +19,7 @@
 
 
 import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/CharacterSet.js';
-//not GWT import const CharacterSet = globalThis.org.allbinary.logic.java.character.CharacterSet;
-
-      
+//not GWT import const CharacterSet
 
 
 

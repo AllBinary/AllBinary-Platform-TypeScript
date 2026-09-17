@@ -21,45 +21,25 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { InventoryDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
-//not GWT import const InventoryDbInitInfo = globalThis.org.allbinary.business.init.db.InventoryDbInitInfo;
-
-      
+//not GWT import const InventoryDbInitInfo
 import { BasicItemData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
-
-      
+//not GWT import const BasicItemData
 import { BasicOptionItemData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/option/BasicOptionItemData.js';
-//not GWT import const BasicOptionItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.option.BasicOptionItemData;
-
-      
+//not GWT import const BasicOptionItemData
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
-
-      
+//not GWT import const AbSqlBean
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -79,9 +59,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicOptionItemsEntityInterface } from './BasicOptionItemsEntityInterface.js';
-//not GWT import - same folder const BasicOptionItemsEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.BasicOptionItemsEntityInterface;
-
-                
+//not GWT import - same folder const BasicOptionItemsEntityInterface
 export class BasicOptionItemsEntity extends AbSqlBean implements BasicOptionItemsEntityInterface {
         
 

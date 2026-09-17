@@ -21,13 +21,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { IdentifierInterface } from '../../../org/allbinary/graphics/IdentifierInterface.js';
-//not GWT import const IdentifierInterface = globalThis.org.allbinary.graphics.IdentifierInterface;
-
-      
+//not GWT import const IdentifierInterface
 import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 

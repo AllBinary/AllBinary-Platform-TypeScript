@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-//not GWT import const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
-
-      
+//not GWT import const BasicHud
 import { LapInfo } from '../../../../../../org/allbinary/game/layer/hud/LapInfo.js';
-//not GWT import const LapInfo = globalThis.org.allbinary.game.layer.hud.LapInfo;
-
-      
+//not GWT import const LapInfo
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 
 
 

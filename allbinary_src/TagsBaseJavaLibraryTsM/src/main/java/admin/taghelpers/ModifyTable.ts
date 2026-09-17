@@ -26,12 +26,8 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { TagStrings } from '../../tags/TagStrings.js';
-//not GWT import const TagStrings = globalThis.tags.TagStrings;
-
-      
+//not GWT import const TagStrings
 
 
 
@@ -51,9 +47,7 @@ import { TagStrings } from '../../tags/TagStrings.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTableInterface } from './ModifyTableInterface.js';
-//not GWT import - same folder const ModifyTableInterface = globalThis.admin.taghelpers.ModifyTableInterface;
-
-                
+//not GWT import - same folder const ModifyTableInterface
 export class ModifyTable
             extends Object
          implements ModifyTableInterface {

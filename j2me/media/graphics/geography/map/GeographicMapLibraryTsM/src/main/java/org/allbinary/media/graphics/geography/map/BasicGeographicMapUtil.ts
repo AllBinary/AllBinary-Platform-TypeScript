@@ -23,13 +23,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
-//not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
-
-      
+//not GWT import const Layer
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -49,12 +45,8 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-                import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
-
-                
+//not GWT import - same folder const GeographicMapCellPositionimport { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import - same folder const BasicGeographicMap
 export class BasicGeographicMapUtil
             extends Object
          {

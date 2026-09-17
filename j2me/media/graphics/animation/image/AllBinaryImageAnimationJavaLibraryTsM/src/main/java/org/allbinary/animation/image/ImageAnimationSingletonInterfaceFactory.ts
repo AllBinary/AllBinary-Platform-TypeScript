@@ -21,21 +21,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
-//not GWT import const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
-
-      
+//not GWT import const SingletonAnimationInterfaceFactory
 import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
-//not GWT import const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
-
-      
+//not GWT import const AnimationFrameToImageUtil
 
 
 
@@ -55,9 +47,7 @@ import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/Anima
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageAnimation } from './ImageAnimation.js';
-//not GWT import - same folder const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
-
-                
+//not GWT import - same folder const ImageAnimation
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 

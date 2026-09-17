@@ -21,9 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 
 
 
@@ -43,12 +41,8 @@ import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayabl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticViewPosition } from './StaticViewPosition.js';
-//not GWT import - same folder const StaticViewPosition = globalThis.org.allbinary.view.StaticViewPosition;
-
-                import { ViewPositionBase } from './ViewPositionBase.js';
-//not GWT import - same folder const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
-
-                
+//not GWT import - same folder const StaticViewPositionimport { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import - same folder const ViewPositionBase
 export class CenterStaticViewPositionFactory
             extends Object
          {

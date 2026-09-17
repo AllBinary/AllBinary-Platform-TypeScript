@@ -27,17 +27,11 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';
-//not GWT import const Method = globalThis.java.lang.reflect.Method;
-
-      
+//not GWT import const Method
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -57,9 +51,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowInterface } from './WorkFlowInterface.js';
-//not GWT import - same folder const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
-
-                
+//not GWT import - same folder const WorkFlowInterface
 export class WorkFlowWrapper
             extends Object
          implements WorkFlowInterface {

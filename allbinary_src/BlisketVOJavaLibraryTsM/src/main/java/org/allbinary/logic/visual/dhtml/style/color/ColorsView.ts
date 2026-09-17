@@ -25,29 +25,17 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-//not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
-
-      
+//not GWT import const ModDomHelper
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -67,12 +55,8 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorData } from './ColorData.js';
-//not GWT import - same folder const ColorData = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorData;
-
-                import { ColorsData } from './ColorsData.js';
-//not GWT import - same folder const ColorsData = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsData;
-
-                
+//not GWT import - same folder const ColorDataimport { ColorsData } from './ColorsData.js';
+//not GWT import - same folder const ColorsData
 export class ColorsView
             extends Object
          implements DomNodeInterface {

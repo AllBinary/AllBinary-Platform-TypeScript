@@ -21,37 +21,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
-//not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
-
-      
+//not GWT import const RelativeRelationship
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relationship/RelativeLayerRelationship.js';
-//not GWT import const RelativeLayerRelationship = globalThis.org.allbinary.layer.relationship.RelativeLayerRelationship;
-
-      
+//not GWT import const RelativeLayerRelationship
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
-
-      
 
 
 
@@ -71,12 +55,8 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-//not GWT import - same folder const FeaturedResourceFactory = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
-
-                import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
-//not GWT import - same folder const ResourceRelativeRelationshipFactoryInterface = globalThis.org.allbinary.game.resource.ResourceRelativeRelationshipFactoryInterface;
-
-                
+//not GWT import - same folder const FeaturedResourceFactoryimport { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
+//not GWT import - same folder const ResourceRelativeRelationshipFactoryInterface
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {
         
 

@@ -23,33 +23,19 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-//not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
-
-      
+//not GWT import const TextField
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-//not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
-
-      
+//not GWT import const GameCommandsFactory
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-//not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
-
-      
+//not GWT import const CommandForm
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
-
-      
 import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
-//not GWT import const MEUtil = globalThis.org.allbinary.logic.MEUtil;
-
-      
+//not GWT import const MEUtil
 
 
 

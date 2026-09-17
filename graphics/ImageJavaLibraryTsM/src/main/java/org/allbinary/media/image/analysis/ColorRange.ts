@@ -21,17 +21,11 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { awt } from '../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -51,12 +45,8 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import - same folder const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
-
-                import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.media.image.analysis.Color;
-
-                
+//not GWT import - same folder const ColorRangeInterfaceimport { Color } from './Color.js';
+//not GWT import - same folder const Color
 export class ColorRange
             extends Object
          implements ColorRangeInterface {

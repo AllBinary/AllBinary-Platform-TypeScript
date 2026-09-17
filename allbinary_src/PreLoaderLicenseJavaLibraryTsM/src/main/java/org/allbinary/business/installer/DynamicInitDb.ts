@@ -19,21 +19,13 @@
 
 
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-//not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
-
-      
+//not GWT import const DatabaseConnectionInfoInterface
 import { InitDbHelperFactory } from '../../../../org/allbinary/business/init/db/InitDbHelperFactory.js';
-//not GWT import const InitDbHelperFactory = globalThis.org.allbinary.business.init.db.InitDbHelperFactory;
-
-      
+//not GWT import const InitDbHelperFactory
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 
 
 
@@ -53,9 +45,7 @@ import { LicensingException } from '../../../../org/allbinary/logic/system/secur
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitDb } from './InitDb.js';
-//not GWT import - same folder const InitDb = globalThis.org.allbinary.business.installer.InitDb;
-
-                //Warning you must have sql root access
+//not GWT import - same folder const InitDb//Warning you must have sql root access
 export class DynamicInitDb extends InitDb {
         
 

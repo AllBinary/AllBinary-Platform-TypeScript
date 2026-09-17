@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
-//not GWT import - same folder const LogConfigType = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigType;
-
-                import { LogConfigTypes } from './LogConfigTypes.js';
-//not GWT import - same folder const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
-
-                
+//not GWT import - same folder const LogConfigTypeimport { LogConfigTypes } from './LogConfigTypes.js';
+//not GWT import - same folder const LogConfigTypes
 export class LogConfigTypeFactory
             extends Object
          {

@@ -5,13 +5,9 @@
 
 
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 
 
 
@@ -31,12 +27,8 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-                import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-                
+//not GWT import - same folder const IndexedAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const AnimationBehavior
 export class FillAnimation extends IndexedAnimation {
         
 

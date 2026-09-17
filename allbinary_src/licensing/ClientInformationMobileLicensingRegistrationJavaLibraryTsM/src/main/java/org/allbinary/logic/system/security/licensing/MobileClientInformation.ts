@@ -22,24 +22,14 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { RegistrationConfiguration } from '../../../../../../org/allbinary/logic/system/security/licensing/registration/RegistrationConfiguration.js';
-//not GWT import const RegistrationConfiguration = globalThis.org.allbinary.logic.system.security.licensing.registration.RegistrationConfiguration;
-
-      
+//not GWT import const RegistrationConfiguration
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 
@@ -59,12 +49,8 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
-//not GWT import - same folder const AbeClientInformation = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
-
-                import { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
-//not GWT import - same folder const PartnerIdentifierFileUtil = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
-
-                
+//not GWT import - same folder const AbeClientInformationimport { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
+//not GWT import - same folder const PartnerIdentifierFileUtil
 export class MobileClientInformation extends AbeClientInformation {
         
 

@@ -21,49 +21,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-//not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
-
-      
+//not GWT import const ImageCopyUtil
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-//not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
-
-      
+//not GWT import const ImageModifierUtil
 import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
-//not GWT import const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
-
-      
+//not GWT import const ImageRotationUtil
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-//not GWT import const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
-
-      
+//not GWT import const PlaynMutableImage
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
-
-      
 //not plain js import { CanvasSurface } 
 const CanvasSurface = globalThis.playn.core.CanvasSurface;
-
-      
 
 
 
@@ -83,15 +61,9 @@ const CanvasSurface = globalThis.playn.core.CanvasSurface;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import - same folder const ImageBaseRotationAnimation = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
-
-                import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-//not GWT import - same folder const AlphaBaseProcessor = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
-
-                import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import - same folder const AlphaProcessor = globalThis.org.allbinary.animation.image.AlphaProcessor;
-
-                
+//not GWT import - same folder const ImageBaseRotationAnimationimport { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
+//not GWT import - same folder const AlphaBaseProcessorimport { AlphaProcessor } from './AlphaProcessor.js';
+//not GWT import - same folder const AlphaProcessor
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

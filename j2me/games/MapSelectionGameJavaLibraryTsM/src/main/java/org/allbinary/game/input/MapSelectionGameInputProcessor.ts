@@ -21,77 +21,41 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
-//not GWT import const LockedFeatureNotificationUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedFeatureNotificationUtil;
-
-      
+//not GWT import const LockedFeatureNotificationUtil
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-//not GWT import const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
-
-      
+//not GWT import const LockedUtil
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
-//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
-
-      
+//not GWT import const Processor
 import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-//not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
-
-      
+//not GWT import const AllBinaryGameCanvas
 import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
-//not GWT import const PreGameSelectorPaintable = globalThis.org.allbinary.game.displayable.canvas.PreGameSelectorPaintable;
-
-      
+//not GWT import const PreGameSelectorPaintable
 import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
-//not GWT import const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
-
-      
+//not GWT import const GameKeyEventHandler
 import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
-//not GWT import const GameKeyEventUtil = globalThis.org.allbinary.game.input.event.GameKeyEventUtil;
-
-      
+//not GWT import const GameKeyEventUtil
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-//not GWT import const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
-
-      
+//not GWT import const SecondaryPlayerQueueFactory
 import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
-//not GWT import const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
-
-      
+//not GWT import const SelectSound
 import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface.js';
-//not GWT import const MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface = globalThis.org.allbinary.media.graphics.geography.map.racetrack.MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface;
-
-      
+//not GWT import const MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface
 import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
-//not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
-
-      
+//not GWT import const ABRunnable
 import { ThreadObjectUtil } from '../../../../org/allbinary/thread/ThreadObjectUtil.js';
-//not GWT import const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
-
-      
+//not GWT import const ThreadObjectUtil
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 
 
 
@@ -111,18 +75,10 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
-//not GWT import - same folder const GameInputProcessorInterface = globalThis.org.allbinary.game.input.GameInputProcessorInterface;
-
-                import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-//not GWT import - same folder const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
-
-                import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
-
-                import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
-//not GWT import - same folder const GameInputProcessorComposite = globalThis.org.allbinary.game.input.GameInputProcessorComposite;
-
-                
+//not GWT import - same folder const GameInputProcessorInterfaceimport { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
+//not GWT import - same folder const PlayerGameInputCompositeInterfaceimport { PlayerGameInput } from './PlayerGameInput.js';
+//not GWT import - same folder const PlayerGameInputimport { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
+//not GWT import - same folder const GameInputProcessorComposite
 export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 

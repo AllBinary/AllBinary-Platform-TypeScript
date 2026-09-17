@@ -25,25 +25,15 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Item } from '../../../../javax/microedition/lcdui/Item.js';
-//not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
-
-      
+//not GWT import const Item
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -63,21 +53,11 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import - same folder const GameConfigurationSingleton = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
-
-                import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
-
-                import { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import - same folder const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
-
-                import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import - same folder const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
-
-                import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import - same folder const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
-
-                
+//not GWT import - same folder const GameConfigurationSingletonimport { GameConfiguration } from './GameConfiguration.js';
+//not GWT import - same folder const GameConfigurationimport { GameOptionsForm } from './GameOptionsForm.js';
+//not GWT import - same folder const GameOptionsFormimport { GameConfigurationGauge } from './GameConfigurationGauge.js';
+//not GWT import - same folder const GameConfigurationGaugeimport { GameConfigurationCentral } from './GameConfigurationCentral.js';
+//not GWT import - same folder const GameConfigurationCentral
 export class GameConfigurationUtil
             extends Object
          {

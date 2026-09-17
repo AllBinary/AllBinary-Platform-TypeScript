@@ -25,33 +25,19 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
-
-      
+//not GWT import const HelpSet
 import { PointHelper } from '../../../../../org/allbinary/input/automation/PointHelper.js';
-//not GWT import const PointHelper = globalThis.org.allbinary.input.automation.PointHelper;
-
-      
+//not GWT import const PointHelper
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -71,27 +57,13 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import - same folder const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
-
-                import { Robot } from './Robot.js';
-//not GWT import - same folder const Robot = globalThis.org.allbinary.input.automation.robot.Robot;
-
-                import { GraphicsDevice } from './GraphicsDevice.js';
-//not GWT import - same folder const GraphicsDevice = globalThis.org.allbinary.input.automation.robot.GraphicsDevice;
-
-                import { MouseInfo } from './MouseInfo.js';
-//not GWT import - same folder const MouseInfo = globalThis.org.allbinary.input.automation.robot.MouseInfo;
-
-                import { Point } from './Point.js';
-//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.robot.Point;
-
-                import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle = globalThis.org.allbinary.input.automation.robot.Rectangle;
-
-                import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.input.automation.robot.Color;
-
-                
+//not GWT import - same folder const InputRobotInterfaceimport { Robot } from './Robot.js';
+//not GWT import - same folder const Robotimport { GraphicsDevice } from './GraphicsDevice.js';
+//not GWT import - same folder const GraphicsDeviceimport { MouseInfo } from './MouseInfo.js';
+//not GWT import - same folder const MouseInfoimport { Point } from './Point.js';
+//not GWT import - same folder const Pointimport { Rectangle } from './Rectangle.js';
+//not GWT import - same folder const Rectangleimport { Color } from './Color.js';
+//not GWT import - same folder const Color
 export class InputRobot
             extends Object
          implements InputRobotInterface {

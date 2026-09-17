@@ -19,13 +19,9 @@
 
 
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-//not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
-
-      
+//not GWT import const BooleanFactory
 import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-//not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
-
-      
+//not GWT import const Visitor
 
 
 

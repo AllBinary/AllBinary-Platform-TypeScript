@@ -21,41 +21,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-//not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
-
-      
+//not GWT import const Animation
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-//not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
-
-      
+//not GWT import const WeaponProperties
 import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
-//not GWT import const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
-
-      
+//not GWT import const WeaponLayer
 import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-//not GWT import const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
-
-      
+//not GWT import const WeaponLayerCircularPool
 import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
-//not GWT import const NoScoreable = globalThis.org.allbinary.game.score.NoScoreable;
-
-      
+//not GWT import const NoScoreable
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-//not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
-
-      
+//not GWT import const ScoreableInterface
 import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
-//not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
-
-      
+//not GWT import const RelativeRelationship
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 
@@ -75,9 +57,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import - same folder const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
-
-                
+//not GWT import - same folder const BasicWeaponPart
 export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 

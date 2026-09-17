@@ -23,13 +23,9 @@
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';
-//not GWT import const Method = globalThis.java.lang.reflect.Method;
-
-      
+//not GWT import const Method
 import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
-//not GWT import const Proxy = globalThis.java.lang.reflect.Proxy;
-
-      
+//not GWT import const Proxy
 
 
 
@@ -49,9 +45,7 @@ import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InvocationHandler } from './InvocationHandler.js';
-//not GWT import - same folder const InvocationHandler = globalThis.org.allbinary.logic.java.proxy.InvocationHandler;
-
-                
+//not GWT import - same folder const InvocationHandler
 export class InterfaceCastProxy
             extends Object
          implements java.lang.reflect.InvocationHandler {

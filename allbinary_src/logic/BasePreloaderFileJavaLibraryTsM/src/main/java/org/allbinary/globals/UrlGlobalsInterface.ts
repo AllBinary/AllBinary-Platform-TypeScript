@@ -25,8 +25,6 @@
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
-      
-
 
 
 

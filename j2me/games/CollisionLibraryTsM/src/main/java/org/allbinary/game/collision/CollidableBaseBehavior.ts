@@ -23,33 +23,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-//not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
-
-      
+//not GWT import const CollidableCompositeLayer
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -69,21 +55,11 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableInterface } from './CollidableInterface.js';
-//not GWT import - same folder const CollidableInterface = globalThis.org.allbinary.game.collision.CollidableInterface;
-
-                import { LayerCollisionUtil } from './LayerCollisionUtil.js';
-//not GWT import - same folder const LayerCollisionUtil = globalThis.org.allbinary.game.collision.LayerCollisionUtil;
-
-                import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
-//not GWT import - same folder const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
-
-                import { CollisionTypeFactory } from './CollisionTypeFactory.js';
-//not GWT import - same folder const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
-
-                import { CollisionType } from './CollisionType.js';
-//not GWT import - same folder const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
-
-                
+//not GWT import - same folder const CollidableInterfaceimport { LayerCollisionUtil } from './LayerCollisionUtil.js';
+//not GWT import - same folder const LayerCollisionUtilimport { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
+//not GWT import - same folder const CollidableInterfaceCompositeInterfaceimport { CollisionTypeFactory } from './CollisionTypeFactory.js';
+//not GWT import - same folder const CollisionTypeFactoryimport { CollisionType } from './CollisionType.js';
+//not GWT import - same folder const CollisionType
 export class CollidableBaseBehavior
             extends Object
          implements CollidableInterface {

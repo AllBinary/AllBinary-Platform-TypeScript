@@ -24,20 +24,12 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -57,12 +49,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-                import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import - same folder const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-                
+//not GWT import - same folder const AllBinaryLayerimport { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
+//not GWT import - same folder const AllBinaryLayerManager
 export class BasicLayerProcessor
             extends Object
          {

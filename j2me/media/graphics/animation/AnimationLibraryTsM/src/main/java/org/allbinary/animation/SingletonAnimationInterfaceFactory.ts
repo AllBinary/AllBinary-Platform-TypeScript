@@ -23,9 +23,7 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-//not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
-
-      
+//not GWT import const ScaleProperties
 
 
 
@@ -45,15 +43,9 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
-
-                import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
-
-                import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation = globalThis.org.allbinary.animation.Animation;
-
-                
+//not GWT import - same folder const AnimationInterfaceFactoryInterfaceimport { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
+//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterfaceimport { Animation } from './Animation.js';
+//not GWT import - same folder const Animation
 export class SingletonAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {

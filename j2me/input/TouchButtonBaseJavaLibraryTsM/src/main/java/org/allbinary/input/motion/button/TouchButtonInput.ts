@@ -21,41 +21,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-//not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
-
-      
+//not GWT import const GameKey
 import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-//not GWT import const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
-
-      
+//not GWT import const GameKeyEventSourceInterface
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
-
-      
+//not GWT import const Input
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
-
-      
+//not GWT import const InputFactory
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-//not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-      
+//not GWT import const GameKeyEvent
 import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-//not GWT import const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
-
-      
+//not GWT import const GameKeyEventFactory
 import { InputToGameKeyMapping } from '../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
-//not GWT import const InputToGameKeyMapping = globalThis.org.allbinary.game.input.mapping.InputToGameKeyMapping;
-
-      
+//not GWT import const InputToGameKeyMapping
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

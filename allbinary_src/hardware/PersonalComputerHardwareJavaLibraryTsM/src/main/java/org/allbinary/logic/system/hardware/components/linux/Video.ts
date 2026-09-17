@@ -21,13 +21,9 @@
             import { Object } from '../../../../../../../java/lang/Object.js';
         
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-//not GWT import const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
-
-      
+//not GWT import const HardwareComponentInterface
 import { VideoInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/VideoInterface.js';
-//not GWT import const VideoInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.VideoInterface;
-
-      
+//not GWT import const VideoInterface
 
 
 

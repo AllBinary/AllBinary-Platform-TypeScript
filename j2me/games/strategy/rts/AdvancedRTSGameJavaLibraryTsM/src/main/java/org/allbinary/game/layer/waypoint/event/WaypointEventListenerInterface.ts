@@ -20,13 +20,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { RTSLayerEvent } from '../../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
-//not GWT import const RTSLayerEvent = globalThis.org.allbinary.game.layer.RTSLayerEvent;
-
-      
+//not GWT import const RTSLayerEvent
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 
 
 

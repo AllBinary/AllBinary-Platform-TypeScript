@@ -21,29 +21,17 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
-
-      
+//not GWT import const GL
 import { ChoiceGroupImageFactory } from '../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js';
-//not GWT import const ChoiceGroupImageFactory = globalThis.javax.microedition.lcdui.ChoiceGroupImageFactory;
-
-      
+//not GWT import const ChoiceGroupImageFactory
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-//not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
-
-      
+//not GWT import const OpenGLFeatureFactory
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 
 
 
@@ -63,9 +51,7 @@ import { Features } from '../../../org/allbinary/game/configuration/feature/Feat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreResourceImageUtil } from './PreResourceImageUtil.js';
-//not GWT import - same folder const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
-
-                
+//not GWT import - same folder const PreResourceImageUtil
 export class ChoiceGroupImageUtil
             extends Object
          {

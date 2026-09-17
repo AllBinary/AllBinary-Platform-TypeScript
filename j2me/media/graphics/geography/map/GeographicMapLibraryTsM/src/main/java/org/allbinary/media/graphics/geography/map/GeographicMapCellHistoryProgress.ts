@@ -21,8 +21,6 @@
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
-      
-
 
 
 
@@ -41,12 +39,8 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellHistoryProgressBase } from './GeographicMapCellHistoryProgressBase.js';
-//not GWT import - same folder const GeographicMapCellHistoryProgressBase = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistoryProgressBase;
-
-                import { GeographicMapCellHistory } from './GeographicMapCellHistory.js';
-//not GWT import - same folder const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
-
-                
+//not GWT import - same folder const GeographicMapCellHistoryProgressBaseimport { GeographicMapCellHistory } from './GeographicMapCellHistory.js';
+//not GWT import - same folder const GeographicMapCellHistory
 export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryProgressBase {
         
 

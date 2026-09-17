@@ -23,81 +23,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
-
-      
+//not GWT import const BasicItemData
 import { StaticPagesEntity } from '../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js';
-//not GWT import const StaticPagesEntity = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
-
-      
+//not GWT import const StaticPagesEntity
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { SearchParams } from '../../../org/allbinary/logic/control/search/SearchParams.js';
-//not GWT import const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
-
-      
+//not GWT import const SearchParams
 import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
-//not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
-
-      
+//not GWT import const SearchRequest
 import { InputOutputTypeData } from '../../../org/allbinary/logic/io/InputOutputTypeData.js';
-//not GWT import const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
-
-      
+//not GWT import const InputOutputTypeData
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
-//not GWT import const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
-
-      
+//not GWT import const Replace
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-//not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
-
-      
+//not GWT import const ServiceClientInformationInterfaceFactory
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { InventoryViewSearchInterface } from '../../../views/admin/inventory/listings/InventoryViewSearchInterface.js';
-//not GWT import const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
-
-      
+//not GWT import const InventoryViewSearchInterface
 
 
 
@@ -117,12 +79,8 @@ import { InventoryViewSearchInterface } from '../../../views/admin/inventory/lis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventorySearchUtil } from './InventorySearchUtil.js';
-//not GWT import - same folder const InventorySearchUtil = globalThis.views.generic.inventory.InventorySearchUtil;
-
-                import { InventorySearchProductUtil } from './InventorySearchProductUtil.js';
-//not GWT import - same folder const InventorySearchProductUtil = globalThis.views.generic.inventory.InventorySearchProductUtil;
-
-                
+//not GWT import - same folder const InventorySearchUtilimport { InventorySearchProductUtil } from './InventorySearchProductUtil.js';
+//not GWT import - same folder const InventorySearchProductUtil
 export class InventorySearch
             extends Object
          implements InventoryViewSearchInterface {

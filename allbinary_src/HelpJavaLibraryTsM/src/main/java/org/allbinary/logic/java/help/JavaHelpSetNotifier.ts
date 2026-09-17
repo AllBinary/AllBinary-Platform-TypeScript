@@ -21,21 +21,13 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { URL } from '../../../../../java/net/URL.js';
-//not GWT import const URL = globalThis.java.net.URL;
-
-      
+//not GWT import const URL
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
-
-      
+//not GWT import const HelpSet
 
 
 

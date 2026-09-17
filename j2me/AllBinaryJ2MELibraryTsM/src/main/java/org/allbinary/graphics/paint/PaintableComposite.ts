@@ -19,9 +19,7 @@
 
 
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 
 
 
@@ -41,12 +39,8 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import - same folder const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-                import { PaintableInterface } from './PaintableInterface.js';
-//not GWT import - same folder const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
-
-                
+//not GWT import - same folder const Paintableimport { PaintableInterface } from './PaintableInterface.js';
+//not GWT import - same folder const PaintableInterface
 export class PaintableComposite extends Paintable {
         
 

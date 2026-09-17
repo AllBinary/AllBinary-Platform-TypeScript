@@ -19,21 +19,13 @@
 
 
 import { URL } from '../../../../../java/net/URL.js';
-//not GWT import const URL = globalThis.java.net.URL;
-
-      
+//not GWT import const URL
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-//not GWT import const HelpSet = globalThis.javax.help.HelpSet;
-
-      
+//not GWT import const HelpSet
 import { swing } from '../../../../../javax/swing.js';
-//not GWT import const swing = globalThis.javax.swing;
-
-      
+//not GWT import const swing
 import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
-//not GWT import const JavaHelpUtil = globalThis.org.allbinary.logic.java.help.JavaHelpUtil;
-
-      
+//not GWT import const JavaHelpUtil
 
 
 
@@ -53,12 +45,8 @@ import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
-//not GWT import - same folder const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
-
-                import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.JPanel;
-
-                
+//not GWT import - same folder const InputAutomationModuleFactoryInterfaceimport { JPanel } from './JPanel.js';
+//not GWT import - same folder const JPanel
 export class AbstractInputAutomationFactory extends InputAutomationModuleFactoryInterface {
         
 

@@ -23,50 +23,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { IOException } from '../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { InputStream } from '../../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-//not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
-
-      
+//not GWT import const MediaException
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-//not GWT import const Player = globalThis.javax.microedition.media.Player;
-const PlayerI = globalThis.javax.microedition.media.Player;
-
-      
+//not GWT import const Player
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
-
-      
+//not GWT import const GameFeatureFactory
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-//not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
-
-      
+//not GWT import const ProgressCanvasFactory
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -86,27 +63,13 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import - same folder const Sounds = globalThis.org.allbinary.media.audio.Sounds;
-
-                import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
-
-                import { Sound } from './Sound.js';
-//not GWT import - same folder const Sound = globalThis.org.allbinary.media.audio.Sound;
-
-                import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
-//not GWT import - same folder const AndroidMediaPlayerWrapper = globalThis.org.allbinary.media.audio.AndroidMediaPlayerWrapper;
-
-                import { PlayerComposite } from './PlayerComposite.js';
-//not GWT import - same folder const PlayerComposite = globalThis.org.allbinary.media.audio.PlayerComposite;
-
-                import { MediaPlayerUtil } from './MediaPlayerUtil.js';
-//not GWT import - same folder const MediaPlayerUtil = globalThis.org.allbinary.media.audio.MediaPlayerUtil;
-
-                import { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer = globalThis.org.allbinary.media.audio.NoPlayer;
-
-                //AndroidMediaMIDPLibrary
+//not GWT import - same folder const Soundsimport { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import - same folder const SoundsFactoryInterfaceimport { Sound } from './Sound.js';
+//not GWT import - same folder const Soundimport { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
+//not GWT import - same folder const AndroidMediaPlayerWrapperimport { PlayerComposite } from './PlayerComposite.js';
+//not GWT import - same folder const PlayerCompositeimport { MediaPlayerUtil } from './MediaPlayerUtil.js';
+//not GWT import - same folder const MediaPlayerUtilimport { NoPlayer } from './NoPlayer.js';
+//not GWT import - same folder const NoPlayer//AndroidMediaMIDPLibrary
 export class AllBinaryMediaManager
             extends Object
          {

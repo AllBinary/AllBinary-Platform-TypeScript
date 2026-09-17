@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HealthInterface } from '../../../../../../../org/allbinary/game/health/HealthInterface.js';
-//not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
-
-      
+//not GWT import const HealthInterface
 import { HealthInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js';
-//not GWT import const HealthInterfaceCompositeInterface = globalThis.org.allbinary.game.health.HealthInterfaceCompositeInterface;
-
-      
+//not GWT import const HealthInterfaceCompositeInterface
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerCircularPool } from '../../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-//not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
-
-      
+//not GWT import const AllBinaryLayerCircularPool
 import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-//not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
-
-      
+//not GWT import const AllBinaryLayerFactoryInterface
 
 
 
@@ -59,9 +49,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealLayer } from './HealLayer.js';
-//not GWT import - same folder const HealLayer = globalThis.org.allbinary.game.ag.layer.pickup.health.HealLayer;
-
-                
+//not GWT import - same folder const HealLayer
 export class HealLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

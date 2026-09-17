@@ -21,13 +21,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
-
-      
+//not GWT import const GameInfo
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 
 
 
@@ -47,9 +43,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScores } from './RemoteHighScores.js';
-//not GWT import - same folder const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
-
-                
+//not GWT import - same folder const RemoteHighScores
 export interface RemoteHighScoresProcessorInterface {
         
 

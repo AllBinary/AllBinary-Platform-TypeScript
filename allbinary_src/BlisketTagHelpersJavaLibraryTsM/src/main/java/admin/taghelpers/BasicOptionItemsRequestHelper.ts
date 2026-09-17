@@ -23,61 +23,33 @@
             import { Long } from '../../java/lang/Long.js';
         
 import { Calendar } from '../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-//not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
-
-      
+//not GWT import const BasicItemData
 import { BasicOptionItemData } from '../../org/allbinary/business/user/commerce/inventory/item/option/BasicOptionItemData.js';
-//not GWT import const BasicOptionItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.option.BasicOptionItemData;
-
-      
+//not GWT import const BasicOptionItemData
 import { BasicOptionItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntityFactory.js';
-//not GWT import const BasicOptionItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.BasicOptionItemsEntityFactory;
-
-      
+//not GWT import const BasicOptionItemsEntityFactory
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -97,9 +69,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import - same folder const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
-
-                
+//not GWT import - same folder const ModifyTable
 export class BasicOptionItemsRequestHelper extends ModifyTable {
         
 

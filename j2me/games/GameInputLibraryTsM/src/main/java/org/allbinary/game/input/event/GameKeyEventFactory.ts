@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-//not GWT import const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
-
-      
+//not GWT import const GameKeyEventSourceInterface
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-//not GWT import const Input = globalThis.org.allbinary.game.input.Input;
-
-      
+//not GWT import const Input
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-//not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
-
-      
+//not GWT import const InputFactory
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -61,9 +51,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyEvent } from './GameKeyEvent.js';
-//not GWT import - same folder const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
-
-                
+//not GWT import - same folder const GameKeyEvent
 export class GameKeyEventFactory
             extends Object
          {

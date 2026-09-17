@@ -19,9 +19,7 @@
 
 
 import { PaymentTransactionHelperFactory } from '../../admin/taghelpers/PaymentTransactionHelperFactory.js';
-//not GWT import const PaymentTransactionHelperFactory = globalThis.admin.taghelpers.PaymentTransactionHelperFactory;
-
-      
+//not GWT import const PaymentTransactionHelperFactory
 
 
 
@@ -41,9 +39,7 @@ import { PaymentTransactionHelperFactory } from '../../admin/taghelpers/PaymentT
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
-
-                
+//not GWT import - same folder const TableTag
 export class PaymentTransactionTag extends TableTag {
         
 

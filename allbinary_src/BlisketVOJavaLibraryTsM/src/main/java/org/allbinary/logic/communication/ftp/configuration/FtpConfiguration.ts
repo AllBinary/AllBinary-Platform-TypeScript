@@ -21,9 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 
 
 
@@ -43,12 +41,8 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import - same folder const FtpConfigurationInterface = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
-
-                import { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import - same folder const FtpConfigurationData = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
-
-                
+//not GWT import - same folder const FtpConfigurationInterfaceimport { FtpConfigurationData } from './FtpConfigurationData.js';
+//not GWT import - same folder const FtpConfigurationData
 export class FtpConfiguration
             extends Object
          implements FtpConfigurationInterface {

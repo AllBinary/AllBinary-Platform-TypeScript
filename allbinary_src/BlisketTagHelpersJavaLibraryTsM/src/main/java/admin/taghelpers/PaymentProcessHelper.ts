@@ -21,25 +21,15 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { TransformInfoHttpFactory } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js';
-//not GWT import const TransformInfoHttpFactory = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpFactory;
-
-      
+//not GWT import const TransformInfoHttpFactory
 import { TransformInfoHttpInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-//not GWT import const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
-
-      
+//not GWT import const TransformInfoHttpInterface
 import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProcessorComponent.js';
-//not GWT import const PaymentProcessorComponent = globalThis.views.admin.payment.PaymentProcessorComponent;
-
-      
+//not GWT import const PaymentProcessorComponent
 
 
 
@@ -59,9 +49,7 @@ import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper = globalThis.admin.taghelpers.TagHelper;
-
-                
+//not GWT import - same folder const TagHelper
 export class PaymentProcessHelper extends TagHelper {
         
 

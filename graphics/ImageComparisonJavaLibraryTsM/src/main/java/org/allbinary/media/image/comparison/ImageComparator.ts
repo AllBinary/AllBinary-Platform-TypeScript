@@ -29,41 +29,23 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-//not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
-
-      
+//not GWT import const ColorCacheFactory
 import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-//not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
-
-      
+//not GWT import const ColorCacheable
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-//not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
-
-      
+//not GWT import const AutomaticCacheInterface
 import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDeltaFactory.js';
-//not GWT import const PixelDeltaFactory = globalThis.org.allbinary.media.image.comparison.pixel.PixelDeltaFactory;
-
-      
+//not GWT import const PixelDeltaFactory
 
 
 
@@ -83,15 +65,9 @@ import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-//not GWT import - same folder const ImageComparatorConstraintsInterface = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
-
-                import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.media.image.comparison.Color;
-
-                import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
-
-                
+//not GWT import - same folder const ImageComparatorConstraintsInterfaceimport { Color } from './Color.js';
+//not GWT import - same folder const Colorimport { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import - same folder const ImageComparisonResult
 export class ImageComparator
             extends Object
          {

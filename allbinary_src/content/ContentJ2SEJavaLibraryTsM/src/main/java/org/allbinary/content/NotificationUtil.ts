@@ -25,17 +25,11 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-//not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
-
-      
+//not GWT import const Command
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
-
-      
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';
-//not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
-
-      
+//not GWT import const TsUtil
 
 
 
@@ -55,24 +49,12 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Context } from './Context.js';
-//not GWT import - same folder const Context = globalThis.org.allbinary.content.Context;
-
-                import { NotificationManager } from './NotificationManager.js';
-//not GWT import - same folder const NotificationManager = globalThis.org.allbinary.content.NotificationManager;
-
-                import { CommandUriAction } from './CommandUriAction.js';
-//not GWT import - same folder const CommandUriAction = globalThis.org.allbinary.content.CommandUriAction;
-
-                import { Intent } from './Intent.js';
-//not GWT import - same folder const Intent = globalThis.org.allbinary.content.Intent;
-
-                import { Notification } from './Notification.js';
-//not GWT import - same folder const Notification = globalThis.org.allbinary.content.Notification;
-
-                import { PendingIntent } from './PendingIntent.js';
-//not GWT import - same folder const PendingIntent = globalThis.org.allbinary.content.PendingIntent;
-
-                
+//not GWT import - same folder const Contextimport { NotificationManager } from './NotificationManager.js';
+//not GWT import - same folder const NotificationManagerimport { CommandUriAction } from './CommandUriAction.js';
+//not GWT import - same folder const CommandUriActionimport { Intent } from './Intent.js';
+//not GWT import - same folder const Intentimport { Notification } from './Notification.js';
+//not GWT import - same folder const Notificationimport { PendingIntent } from './PendingIntent.js';
+//not GWT import - same folder const PendingIntent
 export class NotificationUtil
             extends Object
          {

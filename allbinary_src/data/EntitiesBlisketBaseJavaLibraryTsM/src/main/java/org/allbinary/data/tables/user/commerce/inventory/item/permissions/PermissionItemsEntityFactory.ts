@@ -24,12 +24,8 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -49,9 +45,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PermissionItemsEntity } from './PermissionItemsEntity.js';
-//not GWT import - same folder const PermissionItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.permissions.PermissionItemsEntity;
-
-                
+//not GWT import - same folder const PermissionItemsEntity
 export class PermissionItemsEntityFactory
             extends Object
          {

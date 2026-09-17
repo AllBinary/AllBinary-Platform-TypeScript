@@ -24,12 +24,8 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -49,12 +45,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInternalEntity } from './AdvertisementCampaignInternalEntity.js';
-//not GWT import - same folder const AdvertisementCampaignInternalEntity = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntity;
-
-                import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
-//not GWT import - same folder const AdvertisementCampaignInternalEntityInterface = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntityInterface;
-
-                
+//not GWT import - same folder const AdvertisementCampaignInternalEntityimport { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
+//not GWT import - same folder const AdvertisementCampaignInternalEntityInterface
 export class AdvertisementCampaignInternalEntityFactory
             extends Object
          {

@@ -25,33 +25,19 @@
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
-//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-      
+//not GWT import const Displayable
 import { Form } from '../../javax/microedition/lcdui/Form.js';
-//not GWT import const Form = globalThis.javax.microedition.lcdui.Form;
-
-      
+//not GWT import const Form
 import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
-//not GWT import const InvalidRecordIDException = globalThis.javax.microedition.rms.InvalidRecordIDException;
-
-      
+//not GWT import const InvalidRecordIDException
 import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
-//not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
-
-      
+//not GWT import const RecordStore
 import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
-//not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
-
-      
+//not GWT import const RecordStoreException
 import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
-//not GWT import const RecordStoreNotOpenException = globalThis.javax.microedition.rms.RecordStoreNotOpenException;
-
-      
+//not GWT import const RecordStoreNotOpenException
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 
 
 

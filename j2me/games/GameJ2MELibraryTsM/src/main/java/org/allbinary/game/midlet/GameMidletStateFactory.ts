@@ -7,25 +7,15 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
-//not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
-
-      
+//not GWT import const GameState
 import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
-//not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
-
-      
+//not GWT import const GameStateFactory
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 

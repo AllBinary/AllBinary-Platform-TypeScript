@@ -22,12 +22,8 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -47,9 +43,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsInterface } from './PointsInterface.js';
-//not GWT import - same folder const PointsInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsInterface;
-
-                
+//not GWT import - same folder const PointsInterface
 export class Points
             extends Object
          implements PointsInterface {

@@ -24,44 +24,24 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
-//not GWT import const CategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
-
-      
+//not GWT import const CategoryPropertiesInterface
 import { CategoryPropertiesView } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesView.js';
-//not GWT import const CategoryPropertiesView = globalThis.org.allbinary.business.category.properties.CategoryPropertiesView;
-
-      
+//not GWT import const CategoryPropertiesView
 import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { InterfaceUtil } from '../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
-//not GWT import const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
-
-      
+//not GWT import const InterfaceUtil
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -81,12 +61,8 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryInterface } from './CategoryInterface.js';
-//not GWT import - same folder const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
-
-                import { CategoryData } from './CategoryData.js';
-//not GWT import - same folder const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
-
-                
+//not GWT import - same folder const CategoryInterfaceimport { CategoryData } from './CategoryData.js';
+//not GWT import - same folder const CategoryData
 export class CategoryView
             extends Object
          implements DomNodeInterface {

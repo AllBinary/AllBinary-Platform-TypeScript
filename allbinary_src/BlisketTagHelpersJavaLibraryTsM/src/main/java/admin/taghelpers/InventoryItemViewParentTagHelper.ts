@@ -23,33 +23,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
-//not GWT import const RequestMapInterface = globalThis.org.allbinary.logic.communication.http.request.RequestMapInterface;
-
-      
+//not GWT import const RequestMapInterface
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
-//not GWT import const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
-
-      
+//not GWT import const TransformInterface
 import { ValidationViewHelper } from '../../taghelpers/ValidationViewHelper.js';
-//not GWT import const ValidationViewHelper = globalThis.taghelpers.ValidationViewHelper;
-
-      
+//not GWT import const ValidationViewHelper
 import { HelperTag } from '../../tags/HelperTag.js';
-//not GWT import const HelperTag = globalThis.tags.HelperTag;
-
-      
+//not GWT import const HelperTag
 import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
-//not GWT import const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
-
-      
+//not GWT import const InventoryItemView
 import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
-//not GWT import const DownloadableInventoryItemView = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
-
-      
+//not GWT import const DownloadableInventoryItemView
 
 
 

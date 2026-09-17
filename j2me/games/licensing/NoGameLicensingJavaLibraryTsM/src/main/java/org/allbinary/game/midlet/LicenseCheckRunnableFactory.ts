@@ -21,13 +21,9 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
-//not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
-
-      
+//not GWT import const ABRunnable
 import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.js';
-//not GWT import const NullABRunnable = globalThis.org.allbinary.thread.NullABRunnable;
-
-      
+//not GWT import const NullABRunnable
 
 
 
@@ -47,9 +43,7 @@ import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialDemoGameMidlet } from './SpecialDemoGameMidlet.js';
-//not GWT import - same folder const SpecialDemoGameMidlet = globalThis.org.allbinary.game.midlet.SpecialDemoGameMidlet;
-
-                
+//not GWT import - same folder const SpecialDemoGameMidlet
 export class LicenseCheckRunnableFactory
             extends Object
          {

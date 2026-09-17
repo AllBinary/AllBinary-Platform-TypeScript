@@ -21,29 +21,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
-//not GWT import const GamePersistanceStrings = globalThis.org.allbinary.game.configuration.persistance.GamePersistanceStrings;
-
-      
+//not GWT import const GamePersistanceStrings
 import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
-//not GWT import const PersistentInputMapping = globalThis.org.allbinary.game.input.mapping.PersistentInputMapping;
-
-      
+//not GWT import const PersistentInputMapping
 import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
-//not GWT import const BasicTouchInputFactory = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
-
-      
+//not GWT import const BasicTouchInputFactory
 import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-//not GWT import const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
-
-      
+//not GWT import const TouchMotionGestureFactory
 import { TrackballMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
-//not GWT import const TrackballMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TrackballMotionGestureFactory;
-
-      
+//not GWT import const TrackballMotionGestureFactory
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 
 
 
@@ -63,12 +51,8 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCKeyFactory } from './PCKeyFactory.js';
-//not GWT import - same folder const PCKeyFactory = globalThis.org.allbinary.game.input.PCKeyFactory;
-
-                import { Input } from './Input.js';
-//not GWT import - same folder const Input = globalThis.org.allbinary.game.input.Input;
-
-                
+//not GWT import - same folder const PCKeyFactoryimport { Input } from './Input.js';
+//not GWT import - same folder const Input
 export class PCGameInputMapping extends PersistentInputMapping {
         
 

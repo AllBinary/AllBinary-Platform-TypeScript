@@ -22,28 +22,16 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-//not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
-
-      
+//not GWT import const RotationAnimation
 import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.js';
-//not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
-
-      
+//not GWT import const LayerInterface
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-//not GWT import const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
-
-      
+//not GWT import const BasicDecimal
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-//not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
-
-      
+//not GWT import const GeographicMapCellHistory
 import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
-//not GWT import const GeographicMapCellPositionTracking = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionTracking;
-
-      
+//not GWT import const GeographicMapCellPositionTracking
 
 
 
@@ -63,9 +51,7 @@ import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/med
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
-//not GWT import - same folder const VehiclePropertiesCompositeInterface = globalThis.org.allbinary.game.layer.VehiclePropertiesCompositeInterface;
-
-                
+//not GWT import - same folder const VehiclePropertiesCompositeInterface
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         
 

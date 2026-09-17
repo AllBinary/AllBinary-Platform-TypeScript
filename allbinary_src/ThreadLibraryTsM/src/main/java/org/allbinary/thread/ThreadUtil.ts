@@ -27,8 +27,6 @@
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
-      
-
 
 
 

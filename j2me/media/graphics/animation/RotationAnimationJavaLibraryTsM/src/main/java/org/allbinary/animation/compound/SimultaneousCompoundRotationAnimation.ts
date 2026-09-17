@@ -21,45 +21,25 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
-
-      
+//not GWT import const GL
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-//not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-      
+//not GWT import const AnimationBehavior
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-//not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
-
-      
+//not GWT import const RotationAnimation
 import { Direction } from '../../../../org/allbinary/direction/Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
-
-      
+//not GWT import const Direction
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-//not GWT import const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
-
-      
+//not GWT import const PrimitiveIntUtil
 import { Angle } from '../../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
-
-      
 
 
 

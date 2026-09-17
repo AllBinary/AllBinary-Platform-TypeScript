@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MyCanvasEvent } from './MyCanvasEvent.js';
-//not GWT import - same folder const MyCanvasEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
-
-                
+//not GWT import - same folder const MyCanvasEvent
 export interface MyCanvasEventListener {
         
 

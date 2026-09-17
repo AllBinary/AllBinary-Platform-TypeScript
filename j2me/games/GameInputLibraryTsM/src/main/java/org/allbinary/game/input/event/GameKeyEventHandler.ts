@@ -22,16 +22,10 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -51,15 +45,9 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PressGameKeyEventHandler } from './PressGameKeyEventHandler.js';
-//not GWT import - same folder const PressGameKeyEventHandler = globalThis.org.allbinary.game.input.event.PressGameKeyEventHandler;
-
-                import { UpGameKeyEventHandler } from './UpGameKeyEventHandler.js';
-//not GWT import - same folder const UpGameKeyEventHandler = globalThis.org.allbinary.game.input.event.UpGameKeyEventHandler;
-
-                import { DownGameKeyEventHandler } from './DownGameKeyEventHandler.js';
-//not GWT import - same folder const DownGameKeyEventHandler = globalThis.org.allbinary.game.input.event.DownGameKeyEventHandler;
-
-                
+//not GWT import - same folder const PressGameKeyEventHandlerimport { UpGameKeyEventHandler } from './UpGameKeyEventHandler.js';
+//not GWT import - same folder const UpGameKeyEventHandlerimport { DownGameKeyEventHandler } from './DownGameKeyEventHandler.js';
+//not GWT import - same folder const DownGameKeyEventHandler
 export class GameKeyEventHandler
             extends Object
          {

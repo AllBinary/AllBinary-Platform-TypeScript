@@ -21,17 +21,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { FrictionData } from '../../../../org/allbinary/game/physics/friction/FrictionData.js';
-//not GWT import const FrictionData = globalThis.org.allbinary.game.physics.friction.FrictionData;
-
-      
+//not GWT import const FrictionData
 import { DragVelocityBehavior } from '../../../../org/allbinary/game/physics/velocity/DragVelocityBehavior.js';
-//not GWT import const DragVelocityBehavior = globalThis.org.allbinary.game.physics.velocity.DragVelocityBehavior;
-
-      
+//not GWT import const DragVelocityBehavior
 import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
-//not GWT import const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
-
-      
+//not GWT import const VelocityProperties
 
 
 

@@ -19,33 +19,19 @@
 
 
 import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
-//not GWT import const JTreeInterfaceFactory = globalThis.org.allbinary.input.automation.actions.script.JTreeInterfaceFactory;
-
-      
+//not GWT import const JTreeInterfaceFactory
 import { AlwaysActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js';
-//not GWT import const AlwaysActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
-
-      
+//not GWT import const AlwaysActionScriptCondition
 import { ColorAtActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ColorAtActionScriptCondition.js';
-//not GWT import const ColorAtActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
-
-      
+//not GWT import const ColorAtActionScriptCondition
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
-//not GWT import const ProfileActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
-
-      
+//not GWT import const ProfileActionScriptConditionInterface
 import { TimeIntervalActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/TimeIntervalActionScriptCondition.js';
-//not GWT import const TimeIntervalActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
-
-      
+//not GWT import const TimeIntervalActionScriptCondition
 import { GenericProfileActionScriptJPanel } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScriptJPanel.js';
-//not GWT import const GenericProfileActionScriptJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GenericProfileActionScriptJPanel;
-
-      
+//not GWT import const GenericProfileActionScriptJPanel
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -65,36 +51,16 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JPanel;
-
-                import { GenericProfileAction } from './GenericProfileAction.js';
-//not GWT import - same folder const GenericProfileAction = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.Short;
-
-                import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JScrollPane;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JLabel;
-
-                import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JButton;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.Dimension;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.ActionEvent;
-
-                
+//not GWT import - same folder const JPanelimport { GenericProfileAction } from './GenericProfileAction.js';
+//not GWT import - same folder const GenericProfileActionimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Shortimport { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPaneimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JButton } from './JButton.js';
+//not GWT import - same folder const JButtonimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEvent
 export class GenericProfileActionJPanel extends javax.swing.JPanel {
         
 

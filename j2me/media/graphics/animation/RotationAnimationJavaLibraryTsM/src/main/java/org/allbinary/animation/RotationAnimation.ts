@@ -19,33 +19,19 @@
 
 
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
-
-      
+//not GWT import const Direction
 import { DirectionUtil } from '../../../org/allbinary/direction/DirectionUtil.js';
-//not GWT import const DirectionUtil = globalThis.org.allbinary.direction.DirectionUtil;
-
-      
+//not GWT import const DirectionUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { Angle } from '../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 import { FrameUtil } from '../../../org/allbinary/math/FrameUtil.js';
-//not GWT import const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
-
-      
+//not GWT import const FrameUtil
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
-
-      
 
 
 
@@ -65,15 +51,9 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-                import { RotationAnimationInterface } from './RotationAnimationInterface.js';
-//not GWT import - same folder const RotationAnimationInterface = globalThis.org.allbinary.animation.RotationAnimationInterface;
-
-                import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-                
+//not GWT import - same folder const IndexedAnimationimport { RotationAnimationInterface } from './RotationAnimationInterface.js';
+//not GWT import - same folder const RotationAnimationInterfaceimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const AnimationBehavior
 export class RotationAnimation extends IndexedAnimation implements RotationAnimationInterface {
         
 

@@ -25,8 +25,6 @@
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
-      
-
 
 
 
@@ -45,9 +43,7 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitInterface } from './InitInterface.js';
-//not GWT import - same folder const InitInterface = globalThis.org.allbinary.init.InitInterface;
-
-                
+//not GWT import - same folder const InitInterface
 export class Init
             extends Object
          implements InitInterface {

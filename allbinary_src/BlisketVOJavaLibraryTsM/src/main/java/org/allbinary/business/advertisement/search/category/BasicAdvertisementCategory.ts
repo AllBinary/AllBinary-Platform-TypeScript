@@ -39,9 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCategoryInterface } from './AdvertisementCategoryInterface.js';
-//not GWT import - same folder const AdvertisementCategoryInterface = globalThis.org.allbinary.business.advertisement.search.category.AdvertisementCategoryInterface;
-
-                
+//not GWT import - same folder const AdvertisementCategoryInterface
 export class BasicAdvertisementCategory
             extends Object
          implements AdvertisementCategoryInterface {

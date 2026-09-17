@@ -21,9 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-//not GWT import const Control = globalThis.javax.microedition.media.Control;
-
-      
+//not GWT import const Control
 
 
 

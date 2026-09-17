@@ -21,17 +21,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { MESSAGES } from '../../../org/allbinary/globals/MESSAGES.js';
-//not GWT import const MESSAGES = globalThis.org.allbinary.globals.MESSAGES;
-
-      
+//not GWT import const MESSAGES
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
-
-      
+//not GWT import const ValidationComponentInterface
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 
 
 
@@ -51,15 +45,9 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsView } from './ShippingMethodsView.js';
-//not GWT import - same folder const ShippingMethodsView = globalThis.views.generic.shipping.ShippingMethodsView;
-
-                import { Document } from './Document.js';
-//not GWT import - same folder const Document = globalThis.views.generic.shipping.Document;
-
-                import { Node } from './Node.js';
-//not GWT import - same folder const Node = globalThis.views.generic.shipping.Node;
-
-                
+//not GWT import - same folder const ShippingMethodsViewimport { Document } from './Document.js';
+//not GWT import - same folder const Documentimport { Node } from './Node.js';
+//not GWT import - same folder const Node
 export class ValidationView extends ShippingMethodsView implements ValidationComponentInterface {
         
 

@@ -19,49 +19,27 @@
 
 
 import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
-//not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
-
-      
+//not GWT import const ByteBuffer
 import { ByteOrder } from '../../../../java/nio/ByteOrder.js';
-//not GWT import const ByteOrder = globalThis.java.nio.ByteOrder;
-
-      
+//not GWT import const ByteOrder
 import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
-//not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
-
-      
+//not GWT import const FloatBuffer
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-//not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
-
-      
+//not GWT import const GL
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-//not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
-
-      
+//not GWT import const GL10
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
-//not GWT import const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
-
-      
+//not GWT import const OpenGLLogUtil
 import { GLUtil } from '../../../../org/allbinary/opengles/GLUtil.js';
-//not GWT import const GLUtil = globalThis.org.allbinary.opengles.GLUtil;
-
-      
+//not GWT import const GLUtil
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-//not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
-
-      
+//not GWT import const PlatformBitmapBaseFactory
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-//not GWT import const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
-
-      
+//not GWT import const PlatformTextureBaseFactory
 
 
 
@@ -81,18 +59,10 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { OpenGLESImage } 
-const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
-
-                import { OpenGLESImageDraw } from './OpenGLESImageDraw.js';
-//not GWT import - same folder const OpenGLESImageDraw = globalThis.org.allbinary.image.opengles.OpenGLESImageDraw;
-
-                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-//not GWT import - same folder const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
-
-                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-//not GWT import - same folder const OpenGLESImageProcessor = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
-
-                
+const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;import { OpenGLESImageDraw } from './OpenGLESImageDraw.js';
+//not GWT import - same folder const OpenGLESImageDrawimport { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+//not GWT import - same folder const OpenGLESImagePropertiesimport { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+//not GWT import - same folder const OpenGLESImageProcessor
 export class OpenGLESGL10Image extends OpenGLESImage {
         
 

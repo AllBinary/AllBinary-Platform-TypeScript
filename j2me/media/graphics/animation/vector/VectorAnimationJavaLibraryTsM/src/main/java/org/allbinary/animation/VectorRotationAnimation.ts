@@ -21,25 +21,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
-
-      
+//not GWT import const Direction
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { Angle } from '../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-//not GWT import const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
-
-      
+//not GWT import const AngleFactory
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-//not GWT import const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
-
-      
+//not GWT import const AngleInfo
 
 
 
@@ -59,12 +49,8 @@ import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorBaseRotationAnimation } from './VectorBaseRotationAnimation.js';
-//not GWT import - same folder const VectorBaseRotationAnimation = globalThis.org.allbinary.animation.VectorBaseRotationAnimation;
-
-                import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
-
-                
+//not GWT import - same folder const VectorBaseRotationAnimationimport { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import - same folder const AnimationBehavior
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
 

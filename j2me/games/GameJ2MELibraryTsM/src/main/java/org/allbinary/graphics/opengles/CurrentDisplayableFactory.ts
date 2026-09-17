@@ -21,97 +21,51 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
-//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-      
+//not GWT import const Displayable
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-//not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
-
-      
+//not GWT import const J2MEUtil
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-//not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
-
-      
+//not GWT import const AllBinaryGameCanvas
 import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
-//not GWT import const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
-
-      
+//not GWT import const DemoCanvas
 import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
-//not GWT import const GameInputMappingCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingCanvas;
-
-      
+//not GWT import const GameInputMappingCanvas
 import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
-//not GWT import const GameInputMappingInstructionsCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingInstructionsCanvas;
-
-      
+//not GWT import const GameInputMappingInstructionsCanvas
 import { GameRunnable } from '../../../../org/allbinary/game/displayable/canvas/GameRunnable.js';
-//not GWT import const GameRunnable = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
-
-      
+//not GWT import const GameRunnable
 import { NullDisplayable } from '../../../../org/allbinary/game/displayable/canvas/NullDisplayable.js';
-//not GWT import const NullDisplayable = globalThis.org.allbinary.game.displayable.canvas.NullDisplayable;
-
-      
+//not GWT import const NullDisplayable
 import { NullWaitGameRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
-//not GWT import const NullWaitGameRunnable = globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable;
-
-      
+//not GWT import const NullWaitGameRunnable
 import { SWTUtil } from '../../../../org/allbinary/game/layer/SWTUtil.js';
-//not GWT import const SWTUtil = globalThis.org.allbinary.game.layer.SWTUtil;
-
-      
+//not GWT import const SWTUtil
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-//not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
-
-      
+//not GWT import const HighScoresCanvas
 import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';
-//not GWT import const GraphicsStrings = globalThis.org.allbinary.graphics.GraphicsStrings;
-
-      
+//not GWT import const GraphicsStrings
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-//not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
-
-      
+//not GWT import const CanvasStrings
 import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-//not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
-
-      
+//not GWT import const MyCanvas
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -131,9 +85,7 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-//not GWT import - same folder const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
-
-                
+//not GWT import - same folder const OpenGLFeatureFactory
 export class CurrentDisplayableFactory
             extends Object
          {

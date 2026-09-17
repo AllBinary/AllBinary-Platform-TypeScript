@@ -43,9 +43,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GPoint } from './GPoint.js';
-//not GWT import - same folder const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-                
+//not GWT import - same folder const GPoint
 export class PointFactory
             extends Object
          {

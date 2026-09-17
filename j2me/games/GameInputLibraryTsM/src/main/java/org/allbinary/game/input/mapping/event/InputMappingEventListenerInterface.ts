@@ -21,9 +21,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 
 
 
@@ -43,9 +41,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputMappingEvent } from './InputMappingEvent.js';
-//not GWT import - same folder const InputMappingEvent = globalThis.org.allbinary.game.input.mapping.event.InputMappingEvent;
-
-                
+//not GWT import - same folder const InputMappingEvent
 export interface InputMappingEventListenerInterface extends EventListenerInterface {
         
 

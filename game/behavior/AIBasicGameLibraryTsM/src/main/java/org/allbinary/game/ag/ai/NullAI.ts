@@ -21,13 +21,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ArtificialIntelligence } from '../../../../../org/allbinary/ai/ArtificialIntelligence.js';
-//not GWT import const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
-
-      
+//not GWT import const ArtificialIntelligence
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-//not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-      
+//not GWT import const AllBinaryLayerManager
 
 
 

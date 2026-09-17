@@ -19,9 +19,7 @@
 
 
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
-
-      
+//not GWT import const GameInfo
 
 
 
@@ -41,12 +39,8 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
-
-                import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
-
-                
+//not GWT import - same folder const HighScoresResultsListenerimport { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import - same folder const HighScoresHelperBaseInterface
 export interface HighScoresFactoryInterface {
         
 

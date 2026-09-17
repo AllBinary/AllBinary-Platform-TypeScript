@@ -23,17 +23,11 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -53,9 +47,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionScriptProcessorData } from './GenericProfileActionScriptProcessorData.js';
-//not GWT import - same folder const GenericProfileActionScriptProcessorData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.GenericProfileActionScriptProcessorData;
-
-                
+//not GWT import - same folder const GenericProfileActionScriptProcessorData
 export class BasicProfileActionScriptProcessorNode
             extends Object
          {

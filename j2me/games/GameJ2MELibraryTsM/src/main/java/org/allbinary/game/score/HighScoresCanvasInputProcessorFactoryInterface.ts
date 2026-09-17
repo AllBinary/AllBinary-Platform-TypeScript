@@ -19,9 +19,7 @@
 
 
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-//not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
-
-      
+//not GWT import const HighScoresCanvas
 
 
 
@@ -41,9 +39,7 @@ import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
-//not GWT import - same folder const HighScoresCanvasInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
-
-                
+//not GWT import - same folder const HighScoresCanvasInputProcessor
 export interface HighScoresCanvasInputProcessorFactoryInterface {
         
 

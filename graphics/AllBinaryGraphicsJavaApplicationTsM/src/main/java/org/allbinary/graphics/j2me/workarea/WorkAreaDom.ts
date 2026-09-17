@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DomHelper } from '../../../../../org/allbinary/dom/DomHelper.js';
-//not GWT import const DomHelper = globalThis.org.allbinary.dom.DomHelper;
-
-      
+//not GWT import const DomHelper
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 

@@ -23,77 +23,41 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-//not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
-
-      
+//not GWT import const Features
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-//not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
-
-      
+//not GWT import const GameFeatureFactory
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-//not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
-
-      
+//not GWT import const DisplayInfoSingleton
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-//not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
-
-      
+//not GWT import const OpenGLFeatureFactory
 import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
-//not GWT import const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
-
-      
+//not GWT import const OpenGLUtil
 import { OpenGLESDeviceImageTranslate } from '../../../../org/allbinary/image/opengles/OpenGLESDeviceImageTranslate.js';
-//not GWT import const OpenGLESDeviceImageTranslate = globalThis.org.allbinary.image.opengles.OpenGLESDeviceImageTranslate;
-
-      
+//not GWT import const OpenGLESDeviceImageTranslate
 //not plain js import { OpenGLESImage } 
 const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
-
-      
 //not plain js import { OpenGLESImageExclusionUtil } 
 const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
-
-      
 import { OpenGLESImageProperties } from '../../../../org/allbinary/image/opengles/OpenGLESImageProperties.js';
-//not GWT import const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
-
-      
+//not GWT import const OpenGLESImageProperties
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-//not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
-
-      
+//not GWT import const ImageData
 import { SwtDeviceComponent } from '../../../../org/microemu/app/ui/swt/SwtDeviceComponent.js';
-//not GWT import const SwtDeviceComponent = globalThis.org.microemu.app.ui.swt.SwtDeviceComponent;
-
-      
+//not GWT import const SwtDeviceComponent
 import { PostLoadSwtImmutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtImmutableImageProcessor.js';
-//not GWT import const PostLoadSwtImmutableImageProcessor = globalThis.org.microemu.device.swt.PostLoadSwtImmutableImageProcessor;
-
-      
+//not GWT import const PostLoadSwtImmutableImageProcessor
 import { PostLoadSwtMutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtMutableImageProcessor.js';
-//not GWT import const PostLoadSwtMutableImageProcessor = globalThis.org.microemu.device.swt.PostLoadSwtMutableImageProcessor;
-
-      
+//not GWT import const PostLoadSwtMutableImageProcessor
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
-//not GWT import const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
-
-      
+//not GWT import const SwtImmutableImage
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-//not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
-
-      
+//not GWT import const SwtMutableImage
 
 
 

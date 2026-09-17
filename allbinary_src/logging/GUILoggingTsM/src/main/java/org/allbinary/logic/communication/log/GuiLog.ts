@@ -25,17 +25,11 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { awt } from '../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { swing } from '../../../../../javax/swing.js';
-//not GWT import const swing = globalThis.javax.swing;
-
-      
+//not GWT import const swing
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -55,27 +49,13 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogFormatUtil } 
-const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
-
-                import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.logic.communication.log.JDialog;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.logic.communication.log.GridLayout;
-
-                import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.logic.communication.log.JScrollPane;
-
-                import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel = globalThis.org.allbinary.logic.communication.log.JLabel;
-
-                import { JTextArea } from './JTextArea.js';
-//not GWT import - same folder const JTextArea = globalThis.org.allbinary.logic.communication.log.JTextArea;
-
-                //not plain js - same folder import { PreLogUtil } 
+const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;import { JDialog } from './JDialog.js';
+//not GWT import - same folder const JDialogimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPaneimport { JLabel } from './JLabel.js';
+//not GWT import - same folder const JLabelimport { JTextArea } from './JTextArea.js';
+//not GWT import - same folder const JTextArea//not plain js - same folder import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-                
 export class GuiLog
             extends Object
          {

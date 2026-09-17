@@ -23,13 +23,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-//not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
-
-      
+//not GWT import const GameFeatureImageCacheFactory
 
 
 
@@ -49,9 +45,7 @@ import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/Ga
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageScaleUtil } from './ImageScaleUtil.js';
-//not GWT import - same folder const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
-
-                
+//not GWT import - same folder const ImageScaleUtil
 export class ImageJ2MEScaleUtil
             extends Object
          {

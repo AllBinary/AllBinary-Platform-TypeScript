@@ -19,13 +19,9 @@
 
 
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-//not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
-
-      
+//not GWT import const ClientInformationFactory
 import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/system/security/licensing/LicenseServerInitFileUtil.js';
-//not GWT import const LicenseServerInitFileUtil = globalThis.org.allbinary.logic.system.security.licensing.LicenseServerInitFileUtil;
-
-      
+//not GWT import const LicenseServerInitFileUtil
 
 
 
@@ -45,18 +41,10 @@ import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/syste
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-//not GWT import - same folder const DemoGameMidlet = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
-
-                import { LicenseLoadingType } from './LicenseLoadingType.js';
-//not GWT import - same folder const LicenseLoadingType = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
-
-                import { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
-//not GWT import - same folder const LicensedDemoSetupFactory = globalThis.org.allbinary.game.midlet.LicensedDemoSetupFactory;
-
-                import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
-//not GWT import - same folder const LicenseCheckRunnableFactory = globalThis.org.allbinary.game.midlet.LicenseCheckRunnableFactory;
-
-                
+//not GWT import - same folder const DemoGameMidletimport { LicenseLoadingType } from './LicenseLoadingType.js';
+//not GWT import - same folder const LicenseLoadingTypeimport { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
+//not GWT import - same folder const LicensedDemoSetupFactoryimport { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
+//not GWT import - same folder const LicenseCheckRunnableFactory
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
 

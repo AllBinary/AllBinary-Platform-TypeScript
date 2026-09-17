@@ -23,25 +23,15 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-//not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
-
-      
+//not GWT import const OrderHistory
 import { PaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js';
-//not GWT import const PaymentType = globalThis.org.allbinary.business.user.commerce.money.payment.types.PaymentType;
-
-      
+//not GWT import const PaymentType
 import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
-//not GWT import const PaymentTypeUtil = globalThis.org.allbinary.business.user.commerce.money.payment.types.PaymentTypeUtil;
-
-      
+//not GWT import const PaymentTypeUtil
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -61,12 +51,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterfaceFactoryInterface } from './PaymentTransactionInterfaceFactoryInterface.js';
-//not GWT import - same folder const PaymentTransactionInterfaceFactoryInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterfaceFactoryInterface;
-
-                import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
-//not GWT import - same folder const PaymentTransactionInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterface;
-
-                
+//not GWT import - same folder const PaymentTransactionInterfaceFactoryInterfaceimport { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
+//not GWT import - same folder const PaymentTransactionInterface
 export class PaymentTransactionInterfaceFactory
             extends Object
          {

@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Rectangle } from '../../../../../../java/awt/Rectangle.js';
-//not GWT import const Rectangle = globalThis.java.awt.Rectangle;
-
-      
+//not GWT import const Rectangle
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -63,15 +51,9 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
-
-                import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
-//not GWT import - same folder const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
-
-                import { MotionRectangle } from './MotionRectangle.js';
-//not GWT import - same folder const MotionRectangle = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
-
-                
+//not GWT import - same folder const MotionRectanglesimport { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
+//not GWT import - same folder const MotionRectangleConstraintsInterfaceimport { MotionRectangle } from './MotionRectangle.js';
+//not GWT import - same folder const MotionRectangle
 export class ConstrainedMotionRectangles extends MotionRectangles {
         
 

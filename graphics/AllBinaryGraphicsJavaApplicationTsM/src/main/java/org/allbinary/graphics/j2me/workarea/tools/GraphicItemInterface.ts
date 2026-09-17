@@ -23,29 +23,17 @@
             import { Double } from '../../../../../../java/lang/Double.js';
         
 import { awt } from '../../../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
-
-      
+//not GWT import const MutableTreeNode
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-//not GWT import const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
-
-      
+//not GWT import const CanvasDom
 import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
-//not GWT import const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
-
-      
+//not GWT import const IntegerDimension
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -65,21 +53,11 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import - same folder const Color = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
-
-                import { Points } from './Points.js';
-//not GWT import - same folder const Points = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
-
-                import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
-
-                import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
-
-                import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
-
-                
+//not GWT import - same folder const Colorimport { Points } from './Points.js';
+//not GWT import - same folder const Pointsimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphicsimport { MouseEvent } from './MouseEvent.js';
+//not GWT import - same folder const MouseEventimport { KeyEvent } from './KeyEvent.js';
+//not GWT import - same folder const KeyEvent
 export interface GraphicItemInterface {
         
 

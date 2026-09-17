@@ -21,61 +21,33 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { AdvertisementArea } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementArea.js';
-//not GWT import const AdvertisementArea = globalThis.org.allbinary.business.advertisement.area.AdvertisementArea;
-
-      
+//not GWT import const AdvertisementArea
 import { AdvertisementAreaData } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js';
-//not GWT import const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
-
-      
+//not GWT import const AdvertisementAreaData
 import { AdvertisementAreaInterface } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaInterface.js';
-//not GWT import const AdvertisementAreaInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
-
-      
+//not GWT import const AdvertisementAreaInterface
 import { AdvertisementCampaignData } from '../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
-//not GWT import const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
-
-      
+//not GWT import const AdvertisementCampaignData
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-//not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
-
-      
+//not GWT import const StoreFrontData
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-//not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
-
-      
+//not GWT import const UserDbInitInfo
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-//not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
-
-      
+//not GWT import const AbSqlBean
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 
 
 
@@ -95,9 +67,7 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreasEntityInterface } from './AdvertisementAreasEntityInterface.js';
-//not GWT import - same folder const AdvertisementAreasEntityInterface = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityInterface;
-
-                
+//not GWT import - same folder const AdvertisementAreasEntityInterface
 export class AdvertisementAreasEntity extends AbSqlBean implements AdvertisementAreasEntityInterface {
         
 

@@ -9,9 +9,7 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { Stack } from '../../../java/util/Stack.js';
-//not GWT import const Stack = globalThis.java.util.Stack;
-
-      
+//not GWT import const Stack
 
 
 
@@ -31,18 +29,10 @@ import { Stack } from '../../../java/util/Stack.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Canvas } from './Canvas.js';
-//not GWT import - same folder const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-                import { Command } from './Command.js';
-//not GWT import - same folder const Command = globalThis.javax.microedition.lcdui.Command;
-
-                import { CommandListener } from './CommandListener.js';
-//not GWT import - same folder const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-                import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-                
+//not GWT import - same folder const Canvasimport { Command } from './Command.js';
+//not GWT import - same folder const Commandimport { CommandListener } from './CommandListener.js';
+//not GWT import - same folder const CommandListenerimport { Graphics } from './Graphics.js';
+//not GWT import - same folder const Graphics
 export class NullCanvas extends Canvas {
         
 

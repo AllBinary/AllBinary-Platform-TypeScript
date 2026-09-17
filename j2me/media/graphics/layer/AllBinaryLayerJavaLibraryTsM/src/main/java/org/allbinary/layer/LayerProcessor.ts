@@ -25,8 +25,6 @@
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
-      
-
 
 
 
@@ -45,18 +43,10 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerProcessorInterface } from './LayerProcessorInterface.js';
-//not GWT import - same folder const LayerProcessorInterface = globalThis.org.allbinary.layer.LayerProcessorInterface;
-
-                import { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManager = globalThis.org.allbinary.layer.LayerManager;
-
-                import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import - same folder const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
-
-                import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-                
+//not GWT import - same folder const LayerProcessorInterfaceimport { LayerManager } from './LayerManager.js';
+//not GWT import - same folder const LayerManagerimport { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
+//not GWT import - same folder const AllBinaryLayerManagerimport { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import - same folder const AllBinaryLayer
 export class LayerProcessor
             extends Object
          implements LayerProcessorInterface {

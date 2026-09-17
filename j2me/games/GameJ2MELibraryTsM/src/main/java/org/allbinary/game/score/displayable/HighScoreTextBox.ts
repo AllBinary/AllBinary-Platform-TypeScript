@@ -21,85 +21,45 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-//not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
-
-      
+//not GWT import const CommandListener
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { TextField } from '../../../../../javax/microedition/lcdui/TextField.js';
-//not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
-
-      
+//not GWT import const TextField
 import { PostGameCommandFactory } from '../../../../../org/allbinary/PostGameCommandFactory.js';
-//not GWT import const PostGameCommandFactory = globalThis.org.allbinary.PostGameCommandFactory;
-
-      
+//not GWT import const PostGameCommandFactory
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
-
-      
+//not GWT import const GameInfo
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-//not GWT import const HighScore = globalThis.org.allbinary.game.score.HighScore;
-
-      
+//not GWT import const HighScore
 import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
-//not GWT import const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
-
-      
+//not GWT import const HighScoresHelperBaseInterface
 import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
-//not GWT import const HighScoresFactoryInterface = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
-
-      
+//not GWT import const HighScoresFactoryInterface
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-//not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
-
-      
+//not GWT import const BasicColorFactory
 import { CustomTextBox } from '../../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
-//not GWT import const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
-
-      
+//not GWT import const CustomTextBox
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-//not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
-
-      
+//not GWT import const NullPaintable
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-//not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
-
-      
+//not GWT import const Paintable
 import { SimpleTextPaintable } from '../../../../../org/allbinary/graphics/paint/SimpleTextPaintable.js';
-//not GWT import const SimpleTextPaintable = globalThis.org.allbinary.graphics.paint.SimpleTextPaintable;
-
-      
+//not GWT import const SimpleTextPaintable
 import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
-//not GWT import const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
-
-      
+//not GWT import const VirtualKeyboardEventHandler
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-//not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
-
-      
+//not GWT import const GenericOperatingSystem
 import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-//not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
-
-      
+//not GWT import const OperatingSystemFactory
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { InApplicationPurchaseFactory } from '../../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js';
-//not GWT import const InApplicationPurchaseFactory = globalThis.org.allbinary.logic.system.security.licensing.InApplicationPurchaseFactory;
-
-      
+//not GWT import const InApplicationPurchaseFactory
 
 
 
@@ -119,9 +79,7 @@ import { InApplicationPurchaseFactory } from '../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoreUtil } from './HighScoreUtil.js';
-//not GWT import - same folder const HighScoreUtil = globalThis.org.allbinary.game.score.displayable.HighScoreUtil;
-
-                
+//not GWT import - same folder const HighScoreUtil
 export class HighScoreTextBox extends CustomTextBox {
         
 

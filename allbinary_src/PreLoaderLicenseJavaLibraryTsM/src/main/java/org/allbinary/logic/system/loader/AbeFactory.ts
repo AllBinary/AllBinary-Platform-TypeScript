@@ -27,37 +27,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
-//not GWT import const Constructor = globalThis.java.lang.reflect.Constructor;
-
-      
+//not GWT import const Constructor
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
-//not GWT import const ConstructorUtil = globalThis.org.allbinary.logic.java.anyType.ConstructorUtil;
-
-      
+//not GWT import const ConstructorUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
-//not GWT import const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
-
-      
+//not GWT import const AbKeys
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -77,12 +61,8 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WebappClassLoaderInfo } from './WebappClassLoaderInfo.js';
-//not GWT import - same folder const WebappClassLoaderInfo = globalThis.org.allbinary.logic.system.loader.WebappClassLoaderInfo;
-
-                import { AbeClassLoader } from './AbeClassLoader.js';
-//not GWT import - same folder const AbeClassLoader = globalThis.org.allbinary.logic.system.loader.AbeClassLoader;
-
-                
+//not GWT import - same folder const WebappClassLoaderInfoimport { AbeClassLoader } from './AbeClassLoader.js';
+//not GWT import - same folder const AbeClassLoader
 export class AbeFactory
             extends Object
          {

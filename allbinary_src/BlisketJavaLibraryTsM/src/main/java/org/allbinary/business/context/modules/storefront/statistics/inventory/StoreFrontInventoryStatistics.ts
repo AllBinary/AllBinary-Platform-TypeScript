@@ -27,41 +27,23 @@
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { ItemInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-//not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
-
-      
+//not GWT import const ItemInterface
 import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-//not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
-
-      
+//not GWT import const Money
 import { InventoryEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-//not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
-
-      
+//not GWT import const InventoryEntityFactory
 import { InventoryEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityInterface.js';
-//not GWT import const InventoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityInterface;
-
-      
+//not GWT import const InventoryEntityInterface
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 
 
 
@@ -81,12 +63,8 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontInventoryStatisticsInterface } from './StoreFrontInventoryStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontInventoryStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsInterface;
-
-                import { StoreFrontInventoryStatisticsData } from './StoreFrontInventoryStatisticsData.js';
-//not GWT import - same folder const StoreFrontInventoryStatisticsData = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsData;
-
-                
+//not GWT import - same folder const StoreFrontInventoryStatisticsInterfaceimport { StoreFrontInventoryStatisticsData } from './StoreFrontInventoryStatisticsData.js';
+//not GWT import - same folder const StoreFrontInventoryStatisticsData
 export class StoreFrontInventoryStatistics
             extends Object
          implements StoreFrontInventoryStatisticsInterface {

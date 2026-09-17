@@ -27,61 +27,33 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../../../java/util/Calendar.js';
-//not GWT import const Calendar = globalThis.java.util.Calendar;
-
-      
+//not GWT import const Calendar
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-//not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
-
-      
+//not GWT import const Money
 import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-//not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
-
-      
+//not GWT import const MoneyException
 import { ProductIdGenerator } from '../../../../../../../org/allbinary/data/generator/ProductIdGenerator.js';
-//not GWT import const ProductIdGenerator = globalThis.org.allbinary.data.generator.ProductIdGenerator;
-
-      
+//not GWT import const ProductIdGenerator
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -101,12 +73,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemInterface } from './ItemInterface.js';
-//not GWT import - same folder const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
-
-                import { BasicItemData } from './BasicItemData.js';
-//not GWT import - same folder const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
-
-                
+//not GWT import - same folder const ItemInterfaceimport { BasicItemData } from './BasicItemData.js';
+//not GWT import - same folder const BasicItemData
 export class BasicItem
             extends Object
          implements ItemInterface {

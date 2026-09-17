@@ -21,13 +21,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-//not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
-
-      
+//not GWT import const Displayable
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
-
-      
+//not GWT import const Processor
 
 
 
@@ -47,9 +43,7 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintUtil } from './ScreenRepaintUtil.js';
-//not GWT import - same folder const ScreenRepaintUtil = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintUtil;
-
-                
+//not GWT import - same folder const ScreenRepaintUtil
 export class ScreenRepaintProcessor extends Processor {
         
 

@@ -23,9 +23,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JTree } from './JTree.js';
-//not GWT import - same folder const JTree = globalThis.org.allbinary.input.automation.actions.script.JTree;
-
-                
+//not GWT import - same folder const JTree
 export interface JTreeInterface {
         
 

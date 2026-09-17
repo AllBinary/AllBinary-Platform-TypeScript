@@ -21,41 +21,23 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
-//not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
-
-      
+//not GWT import const EntryData
 import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
-//not GWT import const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
-
-      
+//not GWT import const ShippingAddressData
 import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-//not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
-
-      
+//not GWT import const StreetAddress
 import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
-//not GWT import const StreetAddressData = globalThis.org.allbinary.business.user.address.StreetAddressData;
-
-      
+//not GWT import const StreetAddressData
 import { OrderHistoryData } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-//not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
-
-      
+//not GWT import const OrderHistoryData
 import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-//not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
-
-      
+//not GWT import const MoneyException
 import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-//not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
-
-      
+//not GWT import const ShippingMethodData
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 
 
 
@@ -75,12 +57,8 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicItem } from './BasicItem.js';
-//not GWT import - same folder const BasicItem = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItem;
-
-                import { OrderItemInterface } from './OrderItemInterface.js';
-//not GWT import - same folder const OrderItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.OrderItemInterface;
-
-                
+//not GWT import - same folder const BasicItemimport { OrderItemInterface } from './OrderItemInterface.js';
+//not GWT import - same folder const OrderItemInterface
 export class Item extends BasicItem implements OrderItemInterface {
         
 

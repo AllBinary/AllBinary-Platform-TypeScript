@@ -19,13 +19,9 @@
 
 
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-//not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
-
-      
+//not GWT import const AllBinaryGameLayerManager
 import { DisplayableInterface } from '../../../../../org/allbinary/graphics/displayable/DisplayableInterface.js';
-//not GWT import const DisplayableInterface = globalThis.org.allbinary.graphics.displayable.DisplayableInterface;
-
-      
+//not GWT import const DisplayableInterface
 
 
 

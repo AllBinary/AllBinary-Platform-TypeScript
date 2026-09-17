@@ -21,13 +21,9 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { Item } from '../../../javax/microedition/lcdui/Item.js';
-//not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
-
-      
+//not GWT import const Item
 import { CommandForm } from '../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-//not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
-
-      
+//not GWT import const CommandForm
 
 
 

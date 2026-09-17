@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
+//not GWT import const BasicEventHandler
 
 
 
@@ -51,12 +45,8 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundsChangeEventListener } from './BoundsChangeEventListener.js';
-//not GWT import - same folder const BoundsChangeEventListener = globalThis.org.allbinary.bounds.event.BoundsChangeEventListener;
-
-                import { BoundsChangeEvent } from './BoundsChangeEvent.js';
-//not GWT import - same folder const BoundsChangeEvent = globalThis.org.allbinary.bounds.event.BoundsChangeEvent;
-
-                
+//not GWT import - same folder const BoundsChangeEventListenerimport { BoundsChangeEvent } from './BoundsChangeEvent.js';
+//not GWT import - same folder const BoundsChangeEvent
 export class BoundsChangeEventHandler extends BasicEventHandler {
         
 

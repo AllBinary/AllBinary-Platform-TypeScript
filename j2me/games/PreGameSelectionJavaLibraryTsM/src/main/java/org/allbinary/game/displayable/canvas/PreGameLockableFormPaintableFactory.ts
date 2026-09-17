@@ -21,21 +21,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ItemPaintable } from '../../../../../org/allbinary/graphics/form/ItemPaintable.js';
-//not GWT import const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
-
-      
+//not GWT import const ItemPaintable
 import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
-//not GWT import const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
-
-      
+//not GWT import const ItemPaintableFactory
 import { PaintableForm } from '../../../../../org/allbinary/graphics/form/PaintableForm.js';
-//not GWT import const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
-
-      
+//not GWT import const PaintableForm
 import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
-//not GWT import const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
-
-      
+//not GWT import const ScrollCurrentSelectionForm
 
 
 
@@ -55,9 +47,7 @@ import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PreGameLockablePaintable } from './PreGameLockablePaintable.js';
-//not GWT import - same folder const PreGameLockablePaintable = globalThis.org.allbinary.game.displayable.canvas.PreGameLockablePaintable;
-
-                
+//not GWT import - same folder const PreGameLockablePaintable
 export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {
         
 

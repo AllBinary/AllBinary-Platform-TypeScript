@@ -21,9 +21,7 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { awt } from '../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 
 
 
@@ -43,9 +41,7 @@ import { awt } from '../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import - same folder const Point = globalThis.org.allbinary.input.automation.Point;
-
-                
+//not GWT import - same folder const Point
 export class PointFactory
             extends Object
          {

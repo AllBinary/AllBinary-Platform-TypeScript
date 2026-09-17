@@ -27,97 +27,51 @@
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
 import { File } from '../../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 import { FileFilter } from '../../../../../../java/io/FileFilter.js';
-//not GWT import const FileFilter = globalThis.java.io.FileFilter;
-
-      
+//not GWT import const FileFilter
 import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
-//not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
-
-      
+//not GWT import const FileInputStream
 import { URL } from '../../../../../../java/net/URL.js';
-//not GWT import const URL = globalThis.java.net.URL;
-
-      
+//not GWT import const URL
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Set } from '../../../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 import { JarInputStream } from '../../../../../../java/util/jar/JarInputStream.js';
-//not GWT import const JarInputStream = globalThis.java.util.jar.JarInputStream;
-
-      
+//not GWT import const JarInputStream
 import { Manifest } from '../../../../../../java/util/jar/Manifest.js';
-//not GWT import const Manifest = globalThis.java.util.jar.Manifest;
-
-      
+//not GWT import const Manifest
 import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-//not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
-
-      
+//not GWT import const Bundle
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
-
-      
+//not GWT import const BundleContext
 import { Constants } from '../../../../../../org/osgi/framework/Constants.js';
-//not GWT import const Constants = globalThis.org.osgi.framework.Constants;
-
-      
+//not GWT import const Constants
 import { InputAutomationBundleActivator } from '../../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
-//not GWT import const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
-
-      
+//not GWT import const InputAutomationBundleActivator
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-//not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
-
-      
+//not GWT import const FileWrapperUtil
 import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
-//not GWT import const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
-
-      
+//not GWT import const SubDirectory
 import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/file/filter/BasicFileFilterUtil.js';
-//not GWT import const BasicFileFilterUtil = globalThis.org.allbinary.logic.io.file.filter.BasicFileFilterUtil;
-
-      
+//not GWT import const BasicFileFilterUtil
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
-//not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
-
-      
+//not GWT import const RunnableInterface
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-//not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
-
-      
+//not GWT import const TimeDelayHelper
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 

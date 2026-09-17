@@ -24,16 +24,10 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 
 
 
@@ -53,9 +47,7 @@ const NullUtil = globalThis.org.allbinary.logic.NullUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcHandler } from './XmlRpcHandler.js';
-//not GWT import - same folder const XmlRpcHandler = globalThis.org.apache.xmlrpc.XmlRpcHandler;
-
-                
+//not GWT import - same folder const XmlRpcHandler
 export class NullXmlRpcHandler
             extends Object
          implements XmlRpcHandler {

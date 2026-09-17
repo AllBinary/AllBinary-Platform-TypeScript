@@ -23,21 +23,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../java/awt.js';
-//not GWT import const awt = globalThis.java.awt;
-
-      
+//not GWT import const awt
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-//not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
-
-      
+//not GWT import const BufferedImage
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 
 
 
@@ -57,15 +49,9 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
-
-                import { Point } from './Point.js';
-//not GWT import - same folder const Point = globalThis.org.allbinary.media.image.Point;
-
-                import { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2D = globalThis.org.allbinary.media.image.Graphics2D;
-
-                
+//not GWT import - same folder const ImageUtilimport { Point } from './Point.js';
+//not GWT import - same folder const Pointimport { Graphics2D } from './Graphics2D.js';
+//not GWT import - same folder const Graphics2D
 export class ImagesRatioUtil
             extends Object
          {

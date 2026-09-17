@@ -13,16 +13,10 @@
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -45,12 +39,8 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { ArrayUtil } 
-const ArrayUtil = globalThis.org.allbinary.util.ArrayUtil;
-
-                //not plain js - same folder import { BasicArrayListS } 
-const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
-
-                //This is a very fast and simple resizable list.
+const ArrayUtil = globalThis.org.allbinary.util.ArrayUtil;//not plain js - same folder import { BasicArrayListS } 
+const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;//This is a very fast and simple resizable list.
 export class BasicArrayList
             extends Object
          {

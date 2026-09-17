@@ -25,53 +25,29 @@
             import { Float } from '../../../../java/lang/Float.js';
         
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-//not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
-
-      
+//not GWT import const Bitmap
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-//not GWT import const Canvas = globalThis.android.graphics.Canvas;
-
-      
+//not GWT import const Canvas
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-//not GWT import const Matrix = globalThis.android.graphics.Matrix;
-
-      
+//not GWT import const Matrix
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-//not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
-
-      
+//not GWT import const NullImage
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-//not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
-
-      
+//not GWT import const Anchor
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-//not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
-
-      
+//not GWT import const ImageCache
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
-
-      
+//not GWT import const AndroidImageInterface
 
 
 

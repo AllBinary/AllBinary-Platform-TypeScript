@@ -20,16 +20,10 @@
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
-
-      
 import { File } from '../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -49,36 +43,16 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog = globalThis.org.allbinary.gui.dialog.JDialog;
-
-                import { FileJDialogListenerInterface } from './FileJDialogListenerInterface.js';
-//not GWT import - same folder const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
-
-                import { Frame } from './Frame.js';
-//not GWT import - same folder const Frame = globalThis.org.allbinary.gui.dialog.Frame;
-
-                import { JFileChooser } from './JFileChooser.js';
-//not GWT import - same folder const JFileChooser = globalThis.org.allbinary.gui.dialog.JFileChooser;
-
-                import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener = globalThis.org.allbinary.gui.dialog.ActionListener;
-
-                import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent = globalThis.org.allbinary.gui.dialog.ActionEvent;
-
-                import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout = globalThis.org.allbinary.gui.dialog.GroupLayout;
-
-                import { Short } from './Short.js';
-//not GWT import - same folder const Short = globalThis.org.allbinary.gui.dialog.Short;
-
-                import { EventQueue } from './EventQueue.js';
-//not GWT import - same folder const EventQueue = globalThis.org.allbinary.gui.dialog.EventQueue;
-
-                import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame = globalThis.org.allbinary.gui.dialog.JFrame;
-
-                
+//not GWT import - same folder const JDialogimport { FileJDialogListenerInterface } from './FileJDialogListenerInterface.js';
+//not GWT import - same folder const FileJDialogListenerInterfaceimport { Frame } from './Frame.js';
+//not GWT import - same folder const Frameimport { JFileChooser } from './JFileChooser.js';
+//not GWT import - same folder const JFileChooserimport { ActionListener } from './ActionListener.js';
+//not GWT import - same folder const ActionListenerimport { ActionEvent } from './ActionEvent.js';
+//not GWT import - same folder const ActionEventimport { GroupLayout } from './GroupLayout.js';
+//not GWT import - same folder const GroupLayoutimport { Short } from './Short.js';
+//not GWT import - same folder const Shortimport { EventQueue } from './EventQueue.js';
+//not GWT import - same folder const EventQueueimport { JFrame } from './JFrame.js';
+//not GWT import - same folder const JFrame
 export class FileJDialog extends javax.swing.JDialog {
         
 

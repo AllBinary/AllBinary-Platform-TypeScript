@@ -24,96 +24,50 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
-//not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
-
-      
+//not GWT import const DynamicObjectData
 import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-//not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
-
-      
+//not GWT import const StoreFrontInterface
 import { BasicWeightShippingModuleView } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/BasicWeightShippingModuleView.js';
-//not GWT import const BasicWeightShippingModuleView = globalThis.org.allbinary.business.user.commerce.shipping.modules.BasicWeightShippingModuleView;
-
-      
+//not GWT import const BasicWeightShippingModuleView
 import { NoShippingModuleView } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/NoShippingModuleView.js';
-//not GWT import const NoShippingModuleView = globalThis.org.allbinary.business.user.commerce.shipping.modules.NoShippingModuleView;
-
-      
+//not GWT import const NoShippingModuleView
 import { ShippingInterface } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
-//not GWT import const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
-
-      
+//not GWT import const ShippingInterface
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-      
+//not GWT import const DomNodeHelper
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
-
-      
+//not GWT import const DomDocumentHelper
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-//not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
-
-      
+//not GWT import const FREEBLISKET_PATH_GLOBALS
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
-//not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
-
-      
+//not GWT import const URLGLOBALS
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 import { CryptFileReader } from '../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
-//not GWT import const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
-
-      
+//not GWT import const CryptFileReader
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-//not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
-
-      
+//not GWT import const AbPath
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-//not GWT import const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
-
-      
+//not GWT import const AbeFactory
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { TransformInfoObjectConfigData } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
-//not GWT import const TransformInfoObjectConfigData = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
-
-      
+//not GWT import const TransformInfoObjectConfigData
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -133,12 +87,8 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsData } from './ShippingMethodsData.js';
-//not GWT import - same folder const ShippingMethodsData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsData;
-
-                import { ShippingMethodData } from './ShippingMethodData.js';
-//not GWT import - same folder const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
-
-                
+//not GWT import - same folder const ShippingMethodsDataimport { ShippingMethodData } from './ShippingMethodData.js';
+//not GWT import - same folder const ShippingMethodData
 export class ShippingMethodsFactory
             extends Object
          {

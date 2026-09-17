@@ -23,29 +23,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
-//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
-
-      
+//not GWT import const ByteArrayOutputStream
 import { Closeable } from '../../../../java/io/Closeable.js';
-//not GWT import const Closeable = globalThis.java.io.Closeable;
-
-      
+//not GWT import const Closeable
 import { InputStream } from '../../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { OutputStream } from '../../../../java/io/OutputStream.js';
-//not GWT import const OutputStream = globalThis.java.io.OutputStream;
-
-      
+//not GWT import const OutputStream
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

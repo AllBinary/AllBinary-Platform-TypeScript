@@ -21,9 +21,7 @@
             import { Object } from '../../../../../../java/lang/Object.js';
         
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -43,12 +41,8 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TwoDimensionalConstraintInterface } from './TwoDimensionalConstraintInterface.js';
-//not GWT import - same folder const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
-
-                import { SizeConstraintInterface } from './SizeConstraintInterface.js';
-//not GWT import - same folder const SizeConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.SizeConstraintInterface;
-
-                
+//not GWT import - same folder const TwoDimensionalConstraintInterfaceimport { SizeConstraintInterface } from './SizeConstraintInterface.js';
+//not GWT import - same folder const SizeConstraintInterface
 export class TwoDimensionalConstraint
             extends Object
          implements TwoDimensionalConstraintInterface {

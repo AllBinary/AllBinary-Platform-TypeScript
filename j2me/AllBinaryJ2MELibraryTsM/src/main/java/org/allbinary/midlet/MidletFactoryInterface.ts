@@ -21,9 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-//not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
-
-      
+//not GWT import const MIDlet
 
 
 
@@ -43,9 +41,7 @@ import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
-//not GWT import - same folder const AllBinaryMidlet = globalThis.org.allbinary.midlet.AllBinaryMidlet;
-
-                
+//not GWT import - same folder const AllBinaryMidlet
 export class MidletFactoryInterface
             extends Object
          {

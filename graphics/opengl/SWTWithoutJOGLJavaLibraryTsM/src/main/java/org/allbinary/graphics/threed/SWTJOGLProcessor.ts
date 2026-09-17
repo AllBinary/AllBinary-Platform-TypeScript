@@ -25,13 +25,9 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-//not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
-
-      
+//not GWT import const Font
 import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
-//not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
-
-      
+//not GWT import const MIDlet
 
 
 
@@ -51,12 +47,8 @@ import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GLHolder } from './GLHolder.js';
-//not GWT import - same folder const GLHolder = globalThis.org.allbinary.graphics.threed.GLHolder;
-
-                import { RatioProcessor } from './RatioProcessor.js';
-//not GWT import - same folder const RatioProcessor = globalThis.org.allbinary.graphics.threed.RatioProcessor;
-
-                //SWTWithoutJOGL
+//not GWT import - same folder const GLHolderimport { RatioProcessor } from './RatioProcessor.js';
+//not GWT import - same folder const RatioProcessor//SWTWithoutJOGL
 export class SWTJOGLProcessor
             extends Object
          implements Runnable {

@@ -22,16 +22,10 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 
 
 
@@ -51,9 +45,7 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GPoint } from './GPoint.js';
-//not GWT import - same folder const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-                
+//not GWT import - same folder const GPoint
 export class Rectangle
             extends Object
          {

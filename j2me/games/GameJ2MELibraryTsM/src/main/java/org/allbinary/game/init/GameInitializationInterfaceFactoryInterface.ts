@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import - same folder const GameInitializationInterface = globalThis.org.allbinary.game.init.GameInitializationInterface;
-
-                
+//not GWT import - same folder const GameInitializationInterface
 export interface GameInitializationInterfaceFactoryInterface {
         
 

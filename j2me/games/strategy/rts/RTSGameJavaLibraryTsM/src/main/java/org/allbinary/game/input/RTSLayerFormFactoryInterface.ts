@@ -19,13 +19,9 @@
 
 
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
-//not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
-
-      
+//not GWT import const RTSLayer
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-//not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
-
-      
+//not GWT import const ScrollSelectionForm
 
 
 

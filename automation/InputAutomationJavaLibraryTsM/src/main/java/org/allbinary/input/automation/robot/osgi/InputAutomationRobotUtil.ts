@@ -23,9 +23,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-//not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
-
-      
+//not GWT import const InputRobotInterface
 
 
 
@@ -45,12 +43,8 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotInterfaceWrapper } from './InputAutomationRobotInterfaceWrapper.js';
-//not GWT import - same folder const InputAutomationRobotInterfaceWrapper = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotInterfaceWrapper;
-
-                import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
-//not GWT import - same folder const InputAutomationRobotChangeEvent = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotChangeEvent;
-
-                
+//not GWT import - same folder const InputAutomationRobotInterfaceWrapperimport { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
+//not GWT import - same folder const InputAutomationRobotChangeEvent
 export class InputAutomationRobotUtil
             extends Object
          {

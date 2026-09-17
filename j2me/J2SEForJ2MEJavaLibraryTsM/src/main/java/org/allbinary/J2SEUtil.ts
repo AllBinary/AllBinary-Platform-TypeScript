@@ -21,17 +21,11 @@
             import { Object } from '../../java/lang/Object.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Map } from '../../java/util/Map.js';
-//not GWT import const Map = globalThis.java.util.Map;
-
-      
+//not GWT import const Map
 import { Set } from '../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 
 
 

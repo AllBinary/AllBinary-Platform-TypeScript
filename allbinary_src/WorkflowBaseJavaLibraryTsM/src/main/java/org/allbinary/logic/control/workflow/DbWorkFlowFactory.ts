@@ -25,33 +25,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
-//not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
-
-      
+//not GWT import const DynamicObjectData
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-//not GWT import const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
-
-      
+//not GWT import const AbeFactory
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-//not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
-
-      
+//not GWT import const LicensingException
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -71,12 +57,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowWrapper } from './WorkFlowWrapper.js';
-//not GWT import - same folder const WorkFlowWrapper = globalThis.org.allbinary.logic.control.workflow.WorkFlowWrapper;
-
-                import { WorkFlowInterface } from './WorkFlowInterface.js';
-//not GWT import - same folder const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
-
-                
+//not GWT import - same folder const WorkFlowWrapperimport { WorkFlowInterface } from './WorkFlowInterface.js';
+//not GWT import - same folder const WorkFlowInterface
 export class DbWorkFlowFactory
             extends Object
          {

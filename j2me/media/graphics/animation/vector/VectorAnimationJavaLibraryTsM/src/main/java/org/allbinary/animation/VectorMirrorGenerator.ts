@@ -23,33 +23,19 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
-//not GWT import const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
-
-      
+//not GWT import const BasicGraphicsPipeline
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
-
-      
 
 
 
@@ -69,9 +55,7 @@ const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationUtil } from './VectorAnimationUtil.js';
-//not GWT import - same folder const VectorAnimationUtil = globalThis.org.allbinary.animation.VectorAnimationUtil;
-
-                
+//not GWT import - same folder const VectorAnimationUtil
 export class VectorMirrorGenerator
             extends Object
          {

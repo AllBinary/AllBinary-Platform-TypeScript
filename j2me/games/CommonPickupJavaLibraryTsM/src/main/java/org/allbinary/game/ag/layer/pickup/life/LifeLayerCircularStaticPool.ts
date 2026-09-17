@@ -21,25 +21,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Life } from '../../../../../../../org/allbinary/game/ag/life/Life.js';
-//not GWT import const Life = globalThis.org.allbinary.game.ag.life.Life;
-
-      
+//not GWT import const Life
 import { LifeInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/ag/life/LifeInterfaceCompositeInterface.js';
-//not GWT import const LifeInterfaceCompositeInterface = globalThis.org.allbinary.game.ag.life.LifeInterfaceCompositeInterface;
-
-      
+//not GWT import const LifeInterfaceCompositeInterface
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 import { AllBinaryLayerCircularPool } from '../../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-//not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
-
-      
+//not GWT import const AllBinaryLayerCircularPool
 import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-//not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
-
-      
+//not GWT import const AllBinaryLayerFactoryInterface
 
 
 
@@ -59,9 +49,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LifeLayer } from './LifeLayer.js';
-//not GWT import - same folder const LifeLayer = globalThis.org.allbinary.game.ag.layer.pickup.life.LifeLayer;
-
-                
+//not GWT import - same folder const LifeLayer
 export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

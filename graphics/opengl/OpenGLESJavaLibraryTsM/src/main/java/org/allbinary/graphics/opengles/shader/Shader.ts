@@ -23,8 +23,6 @@
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
-      
-
 
 
 

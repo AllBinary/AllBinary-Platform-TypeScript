@@ -21,33 +21,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { CollidableDestroyableDamageableLayer } from '../../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-//not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
-
-      
+//not GWT import const CollidableDestroyableDamageableLayer
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-//not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
-
-      
+//not GWT import const EventStrings
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
+//not GWT import const BasicEventHandler
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -67,12 +53,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyedEvent } from './DestroyedEvent.js';
-//not GWT import - same folder const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
-
-                import { DestroyedEventListenerInterface } from './DestroyedEventListenerInterface.js';
-//not GWT import - same folder const DestroyedEventListenerInterface = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventListenerInterface;
-
-                
+//not GWT import - same folder const DestroyedEventimport { DestroyedEventListenerInterface } from './DestroyedEventListenerInterface.js';
+//not GWT import - same folder const DestroyedEventListenerInterface
 export class DestroyedEventHandler extends BasicEventHandler {
         
 

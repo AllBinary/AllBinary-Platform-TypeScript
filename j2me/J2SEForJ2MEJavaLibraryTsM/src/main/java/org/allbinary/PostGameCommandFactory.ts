@@ -21,13 +21,9 @@
             import { Object } from '../../java/lang/Object.js';
         
 import { Canvas } from '../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
-//not GWT import const MultiPlayerGameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MultiPlayerGameFeatureFactory;
-
-      
+//not GWT import const MultiPlayerGameFeatureFactory
 
 
 

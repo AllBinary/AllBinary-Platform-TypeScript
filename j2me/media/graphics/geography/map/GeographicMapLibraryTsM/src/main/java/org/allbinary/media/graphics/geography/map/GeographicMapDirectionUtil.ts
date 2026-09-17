@@ -24,20 +24,12 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { Direction } from '../../../../../../org/allbinary/direction/Direction.js';
-//not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
-
-      
+//not GWT import const Direction
 import { DirectionFactory } from '../../../../../../org/allbinary/direction/DirectionFactory.js';
-//not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
-
-      
+//not GWT import const DirectionFactory
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
-//not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
-
-      
+//not GWT import const CellPosition
 
 
 
@@ -57,9 +49,7 @@ import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
-
-                
+//not GWT import - same folder const GeographicMapCellPosition
 export class GeographicMapDirectionUtil
             extends Object
          {

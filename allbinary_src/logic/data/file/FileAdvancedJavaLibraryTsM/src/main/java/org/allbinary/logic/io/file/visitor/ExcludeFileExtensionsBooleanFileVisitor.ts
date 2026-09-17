@@ -19,13 +19,9 @@
 
 
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-//not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-      
+//not GWT import const AbFile
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 
 
 
@@ -45,9 +41,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BooleanFileVisitor } from './BooleanFileVisitor.js';
-//not GWT import - same folder const BooleanFileVisitor = globalThis.org.allbinary.logic.io.file.visitor.BooleanFileVisitor;
-
-                
+//not GWT import - same folder const BooleanFileVisitor
 export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         
 

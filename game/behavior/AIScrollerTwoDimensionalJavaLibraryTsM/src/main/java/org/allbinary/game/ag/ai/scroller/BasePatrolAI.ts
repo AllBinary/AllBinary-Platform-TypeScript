@@ -23,41 +23,23 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
-//not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
-
-      
+//not GWT import const BasicAI
 import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
-//not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
-
-      
+//not GWT import const GameInput
 import { BasicVelocityProperties } from '../../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-//not GWT import const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
-
-      
+//not GWT import const BasicVelocityProperties
 import { VelocityInterfaceCompositeInterface } from '../../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-//not GWT import const VelocityInterfaceCompositeInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterfaceCompositeInterface;
-
-      
+//not GWT import const VelocityInterfaceCompositeInterface
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-//not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
-
-      
+//not GWT import const AllBinaryLayer
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
-
-      
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-//not GWT import const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
-
-      
+//not GWT import const SmallIntegerSingletonFactory
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 

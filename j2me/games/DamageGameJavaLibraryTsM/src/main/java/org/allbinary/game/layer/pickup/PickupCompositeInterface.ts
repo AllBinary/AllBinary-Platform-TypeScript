@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupBehavior } from './PickupBehavior.js';
-//not GWT import - same folder const PickupBehavior = globalThis.org.allbinary.game.layer.pickup.PickupBehavior;
-
-                
+//not GWT import - same folder const PickupBehavior
 export interface PickupCompositeInterface {
         
 

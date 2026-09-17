@@ -19,41 +19,23 @@
 
 
 import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
-//not GWT import const MouseEvent = globalThis.java.awt.event.MouseEvent;
-
-      
+//not GWT import const MouseEvent
 import { swing } from '../../../../../../../../../../javax/swing.js';
-//not GWT import const swing = globalThis.javax.swing;
-
-      
+//not GWT import const swing
 import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-//not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
-
-      
+//not GWT import const DefaultMutableTreeNode
 import { DefaultTreeModel } from '../../../../../../../../../../javax/swing/tree/DefaultTreeModel.js';
-//not GWT import const DefaultTreeModel = globalThis.javax.swing.tree.DefaultTreeModel;
-
-      
+//not GWT import const DefaultTreeModel
 import { TreePath } from '../../../../../../../../../../javax/swing/tree/TreePath.js';
-//not GWT import const TreePath = globalThis.javax.swing.tree.TreePath;
-
-      
+//not GWT import const TreePath
 import { JTreeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterface.js';
-//not GWT import const JTreeInterface = globalThis.org.allbinary.input.automation.actions.script.JTreeInterface;
-
-      
+//not GWT import const JTreeInterface
 import { CustomTreeNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
-//not GWT import const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
-
-      
+//not GWT import const CustomTreeNodeInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -73,33 +55,15 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPanel;
-
-                import { GenericProfileActionScript } from './GenericProfileActionScript.js';
-//not GWT import - same folder const GenericProfileActionScript = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GenericProfileActionScript;
-
-                import { JTree } from './JTree.js';
-//not GWT import - same folder const JTree = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JTree;
-
-                import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JScrollPane;
-
-                import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
-
-                import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Dimension;
-
-                import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapter = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.MouseAdapter;
-
-                import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenu = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPopupMenu;
-
-                import { JComponent } from './JComponent.js';
-//not GWT import - same folder const JComponent = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JComponent;
-
-                
+//not GWT import - same folder const JPanelimport { GenericProfileActionScript } from './GenericProfileActionScript.js';
+//not GWT import - same folder const GenericProfileActionScriptimport { JTree } from './JTree.js';
+//not GWT import - same folder const JTreeimport { JScrollPane } from './JScrollPane.js';
+//not GWT import - same folder const JScrollPaneimport { GridLayout } from './GridLayout.js';
+//not GWT import - same folder const GridLayoutimport { Dimension } from './Dimension.js';
+//not GWT import - same folder const Dimensionimport { MouseAdapter } from './MouseAdapter.js';
+//not GWT import - same folder const MouseAdapterimport { JPopupMenu } from './JPopupMenu.js';
+//not GWT import - same folder const JPopupMenuimport { JComponent } from './JComponent.js';
+//not GWT import - same folder const JComponent
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         
 

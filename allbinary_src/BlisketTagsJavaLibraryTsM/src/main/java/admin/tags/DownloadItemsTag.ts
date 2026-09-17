@@ -21,25 +21,15 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-//not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
-
-      
+//not GWT import const JspTagException
 import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-//not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
-
-      
+//not GWT import const Tag
 import { DownloadItemsHelperFactory } from '../../admin/taghelpers/DownloadItemsHelperFactory.js';
-//not GWT import const DownloadItemsHelperFactory = globalThis.admin.taghelpers.DownloadItemsHelperFactory;
-
-      
+//not GWT import const DownloadItemsHelperFactory
 import { DownloadItemsRequestHelperFactory } from '../../admin/taghelpers/DownloadItemsRequestHelperFactory.js';
-//not GWT import const DownloadItemsRequestHelperFactory = globalThis.admin.taghelpers.DownloadItemsRequestHelperFactory;
-
-      
+//not GWT import const DownloadItemsRequestHelperFactory
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-//not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
-
-      
+//not GWT import const AbResponseHandler
 
 
 
@@ -59,15 +49,9 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag = globalThis.admin.tags.TableTag;
-
-                import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-//not GWT import - same folder const ParentInventoryTagHelper = globalThis.admin.tags.ParentInventoryTagHelper;
-
-                import { AbTagData } from './AbTagData.js';
-//not GWT import - same folder const AbTagData = globalThis.admin.tags.AbTagData;
-
-                
+//not GWT import - same folder const TableTagimport { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
+//not GWT import - same folder const ParentInventoryTagHelperimport { AbTagData } from './AbTagData.js';
+//not GWT import - same folder const AbTagData
 export class DownloadItemsTag extends TableTag {
         
 

@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
-//not GWT import - same folder const TouchScreenTypesFactory = globalThis.org.allbinary.input.motion.button.TouchScreenTypesFactory;
-
-                import { TouchScreenType } from './TouchScreenType.js';
-//not GWT import - same folder const TouchScreenType = globalThis.org.allbinary.input.motion.button.TouchScreenType;
-
-                
+//not GWT import - same folder const TouchScreenTypesFactoryimport { TouchScreenType } from './TouchScreenType.js';
+//not GWT import - same folder const TouchScreenType
 export class TouchScreenFactory
             extends Object
          {

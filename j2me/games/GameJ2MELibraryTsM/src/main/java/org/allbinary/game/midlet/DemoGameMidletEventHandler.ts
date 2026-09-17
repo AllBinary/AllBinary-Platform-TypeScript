@@ -21,17 +21,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-//not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
-
-      
+//not GWT import const EventListenerInterface
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-//not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
+//not GWT import const BasicEventHandler
 
 
 
@@ -51,12 +45,8 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidletEventListener } from './DemoGameMidletEventListener.js';
-//not GWT import - same folder const DemoGameMidletEventListener = globalThis.org.allbinary.game.midlet.DemoGameMidletEventListener;
-
-                import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-//not GWT import - same folder const DemoGameMidletEvent = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
-
-                
+//not GWT import - same folder const DemoGameMidletEventListenerimport { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import - same folder const DemoGameMidletEvent
 export class DemoGameMidletEventHandler extends BasicEventHandler {
         
 

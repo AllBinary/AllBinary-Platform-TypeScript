@@ -21,33 +21,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-//not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
-
-      
+//not GWT import const URIResolver
 import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
-//not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
-
-      
+//not GWT import const BasicUriResolver
 import { CustomUriResolver } from '../../../../../org/allbinary/data/tree/dom/CustomUriResolver.js';
-//not GWT import const CustomUriResolver = globalThis.org.allbinary.data.tree.dom.CustomUriResolver;
-
-      
+//not GWT import const CustomUriResolver
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-//not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
-
-      
+//not GWT import const AbeClientInformationInterface
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-//not GWT import const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
-
-      
+//not GWT import const TransformInfoObjectConfigAndManipulatorFactory
 import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
-//not GWT import const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
-
-      
+//not GWT import const TransformInfoObjectConfigInterface
 
 
 
@@ -67,9 +53,7 @@ import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTransformer } from './BasicTransformer.js';
-//not GWT import - same folder const BasicTransformer = globalThis.org.allbinary.logic.visual.transform.BasicTransformer;
-
-                
+//not GWT import - same folder const BasicTransformer
 export class TransformInfoCustomUriTransformer extends BasicTransformer {
         
 

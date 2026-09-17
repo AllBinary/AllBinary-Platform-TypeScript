@@ -5,37 +5,21 @@
 
 
 import { InputStream } from '../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-//not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
-
-      
+//not GWT import const Image
 import { Bitmap } from '../../../android/graphics/Bitmap.js';
-//not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
-
-      
+//not GWT import const Bitmap
 import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
-//not GWT import const BitmapFactory = globalThis.android.graphics.BitmapFactory;
-
-      
+//not GWT import const BitmapFactory
 import { IOException } from '../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-//not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
-
-      
+//not GWT import const PlatformBitmapBaseFactory
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-//not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
-
-      
+//not GWT import const PlatformBitmapBase
 import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
-//not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
-
-      
+//not GWT import const AndroidImageInterface
 
 
 
@@ -55,12 +39,8 @@ import { AndroidImageInterface } from '../../../org/microemu/android/device/Andr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { Config } from './Config.js';
-//not GWT import - same folder const Config = globalThis.org.allbinary.graphics.Config;
-
-                import { OpenGLBitmap } from './OpenGLBitmap.js';
-//not GWT import - same folder const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
-
-                
+//not GWT import - same folder const Configimport { OpenGLBitmap } from './OpenGLBitmap.js';
+//not GWT import - same folder const OpenGLBitmap
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
 

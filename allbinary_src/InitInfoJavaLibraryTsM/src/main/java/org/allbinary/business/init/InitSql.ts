@@ -25,97 +25,51 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Connection } from '../../../../java/sql/Connection.js';
-//not GWT import const Connection = globalThis.java.sql.Connection;
-
-      
+//not GWT import const Connection
 import { DriverManager } from '../../../../java/sql/DriverManager.js';
-//not GWT import const DriverManager = globalThis.java.sql.DriverManager;
-
-      
+//not GWT import const DriverManager
 import { ResultSet } from '../../../../java/sql/ResultSet.js';
-//not GWT import const ResultSet = globalThis.java.sql.ResultSet;
-
-      
+//not GWT import const ResultSet
 import { ResultSetMetaData } from '../../../../java/sql/ResultSetMetaData.js';
-//not GWT import const ResultSetMetaData = globalThis.java.sql.ResultSetMetaData;
-
-      
+//not GWT import const ResultSetMetaData
 import { SQLException } from '../../../../java/sql/SQLException.js';
-//not GWT import const SQLException = globalThis.java.sql.SQLException;
-
-      
+//not GWT import const SQLException
 import { Statement } from '../../../../java/sql/Statement.js';
-//not GWT import const Statement = globalThis.java.sql.Statement;
-
-      
+//not GWT import const Statement
 import { HashMap } from '../../../../java/util/HashMap.js';
-//not GWT import const HashMap = globalThis.java.util.HashMap;
-
-      
+//not GWT import const HashMap
 import { Set } from '../../../../java/util/Set.js';
-//not GWT import const Set = globalThis.java.util.Set;
-
-      
+//not GWT import const Set
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-//not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
-
-      
+//not GWT import const DatabaseConnectionInfoInterface
 import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-//not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
-
-      
+//not GWT import const DbConnectionInfo
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
-      
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-//not GWT import const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
-
-      
+//not GWT import const LogConfigTypeFactory
 import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-//not GWT import const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
-
-      
+//not GWT import const LogConfigTypes
 import { SqlStrings } from '../../../../org/allbinary/logic/communication/sql/SqlStrings.js';
-//not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
-
-      
+//not GWT import const SqlStrings
 import { SqlTypeStrings } from '../../../../org/allbinary/logic/communication/sql/SqlTypeStrings.js';
-//not GWT import const SqlTypeStrings = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
-
-      
+//not GWT import const SqlTypeStrings
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
-
-      
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-//not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
-
-      
+//not GWT import const StringValidationUtil
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

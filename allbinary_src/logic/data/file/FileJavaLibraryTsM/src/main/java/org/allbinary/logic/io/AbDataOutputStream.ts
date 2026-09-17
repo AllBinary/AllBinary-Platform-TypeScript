@@ -19,13 +19,9 @@
 
 
 import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-//not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
-
-      
+//not GWT import const DataOutputStream
 import { OutputStream } from '../../../../java/io/OutputStream.js';
-//not GWT import const OutputStream = globalThis.java.io.OutputStream;
-
-      
+//not GWT import const OutputStream
 
 
 

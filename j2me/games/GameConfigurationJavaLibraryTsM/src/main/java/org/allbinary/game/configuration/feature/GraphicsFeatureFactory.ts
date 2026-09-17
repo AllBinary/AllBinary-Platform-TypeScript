@@ -23,8 +23,6 @@
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
-      
-
 
 
 
@@ -43,9 +41,7 @@ const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsFeature } from './GraphicsFeature.js';
-//not GWT import - same folder const GraphicsFeature = globalThis.org.allbinary.game.configuration.feature.GraphicsFeature;
-
-                
+//not GWT import - same folder const GraphicsFeature
 export class GraphicsFeatureFactory
             extends Object
          {

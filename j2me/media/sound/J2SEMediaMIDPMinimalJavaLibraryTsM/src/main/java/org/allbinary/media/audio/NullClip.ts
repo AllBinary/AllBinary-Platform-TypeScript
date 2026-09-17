@@ -21,45 +21,25 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { IOException } from '../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
-//not GWT import const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
-
-      
+//not GWT import const AudioFormat
 import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
-//not GWT import const AudioInputStream = globalThis.javax.sound.sampled.AudioInputStream;
-
-      
+//not GWT import const AudioInputStream
 import { BooleanControl } from '../../../../javax/sound/sampled/BooleanControl.js';
-//not GWT import const BooleanControl = globalThis.javax.sound.sampled.BooleanControl;
-
-      
+//not GWT import const BooleanControl
 import { Clip } from '../../../../javax/sound/sampled/Clip.js';
-//not GWT import const Clip = globalThis.javax.sound.sampled.Clip;
-
-      
+//not GWT import const Clip
 import { Control } from '../../../../javax/sound/sampled/Control.js';
-//not GWT import const Control = globalThis.javax.sound.sampled.Control;
-
-      
+//not GWT import const Control
 import { Type } from '../../../../javax/sound/sampled/Control/Type.js';
-//not GWT import const Type = globalThis.javax.sound.sampled.Control.Type;
-
-      
+//not GWT import const Type
 import { Info } from '../../../../javax/sound/sampled/Line/Info.js';
-//not GWT import const Info = globalThis.javax.sound.sampled.Line.Info;
-
-      
+//not GWT import const Info
 import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
-//not GWT import const LineListener = globalThis.javax.sound.sampled.LineListener;
-
-      
+//not GWT import const LineListener
 import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUnavailableException.js';
-//not GWT import const LineUnavailableException = globalThis.javax.sound.sampled.LineUnavailableException;
-
-      
+//not GWT import const LineUnavailableException
 
 
 
@@ -79,12 +59,8 @@ import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullJ2SEControl } from './NullJ2SEControl.js';
-//not GWT import - same folder const NullJ2SEControl = globalThis.org.allbinary.media.audio.NullJ2SEControl;
-
-                import { NullAudioFormat } from './NullAudioFormat.js';
-//not GWT import - same folder const NullAudioFormat = globalThis.org.allbinary.media.audio.NullAudioFormat;
-
-                
+//not GWT import - same folder const NullJ2SEControlimport { NullAudioFormat } from './NullAudioFormat.js';
+//not GWT import - same folder const NullAudioFormat
 export class NullClip
             extends Object
          implements Clip {

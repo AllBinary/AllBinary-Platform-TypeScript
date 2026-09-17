@@ -23,13 +23,9 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-//not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
-
-      
+//not GWT import const GameInfo
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -49,15 +45,9 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresFactoryInterface } from './HighScoresFactoryInterface.js';
-//not GWT import - same folder const HighScoresFactoryInterface = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
-
-                import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
-
-                import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
-
-                
+//not GWT import - same folder const HighScoresFactoryInterfaceimport { HighScoresResultsListener } from './HighScoresResultsListener.js';
+//not GWT import - same folder const HighScoresResultsListenerimport { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import - same folder const HighScoresHelperBaseInterface
 export class HighScoresBase
             extends Object
          implements HighScoresFactoryInterface {

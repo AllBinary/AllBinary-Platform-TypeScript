@@ -25,37 +25,21 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { IOException } from '../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { IdGeneratorEntity } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js';
-//not GWT import const IdGeneratorEntity = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
-
-      
+//not GWT import const IdGeneratorEntity
 import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntityFactory.js';
-//not GWT import const IdGeneratorEntityFactory = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityFactory;
-
-      
+//not GWT import const IdGeneratorEntityFactory
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 
 
 
@@ -75,9 +59,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorInterface } from './IdGeneratorInterface.js';
-//not GWT import - same folder const IdGeneratorInterface = globalThis.org.allbinary.data.generator.IdGeneratorInterface;
-
-                
+//not GWT import - same folder const IdGeneratorInterface
 export class UniqueIdGenerator
             extends Object
          implements IdGeneratorInterface {

@@ -41,12 +41,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-//not GWT import - same folder const CustomMapGeneratorBase = globalThis.org.allbinary.media.graphics.geography.map.racetrack.CustomMapGeneratorBase;
-
-                import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
-//not GWT import - same folder const RaceTrackGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMap;
-
-                
+//not GWT import - same folder const CustomMapGeneratorBaseimport { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
+//not GWT import - same folder const RaceTrackGeographicMap
 export class CustomMapGeneratorBaseFactory
             extends Object
          {

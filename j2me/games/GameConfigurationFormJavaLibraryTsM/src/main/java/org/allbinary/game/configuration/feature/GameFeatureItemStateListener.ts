@@ -23,53 +23,29 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-//not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
-
-      
+//not GWT import const ChoiceGroup
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-//not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
-
-      
+//not GWT import const Item
 import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
-//not GWT import const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
-
-      
+//not GWT import const ItemStateListener
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
-//not GWT import const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
-
-      
+//not GWT import const GameConfigurationGauge
 import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
-//not GWT import const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
-
-      
+//not GWT import const GameConfigurationUtil
 import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
-//not GWT import const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
-
-      
+//not GWT import const GameOptionsForm
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 
@@ -89,15 +65,9 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureFactory } from './GameFeatureFactory.js';
-//not GWT import - same folder const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
-
-                import { GameFeature } from './GameFeature.js';
-//not GWT import - same folder const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
-
-                import { GameFeatureUtil } from './GameFeatureUtil.js';
-//not GWT import - same folder const GameFeatureUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
-
-                
+//not GWT import - same folder const GameFeatureFactoryimport { GameFeature } from './GameFeature.js';
+//not GWT import - same folder const GameFeatureimport { GameFeatureUtil } from './GameFeatureUtil.js';
+//not GWT import - same folder const GameFeatureUtil
 export class GameFeatureItemStateListener
             extends Object
          implements ItemStateListener {

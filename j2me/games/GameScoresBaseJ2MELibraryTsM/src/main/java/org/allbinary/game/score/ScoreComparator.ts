@@ -25,33 +25,19 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-//not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
-
-      
+//not GWT import const ByteArrayInputStream
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-//not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
-
-      
+//not GWT import const DataInputStream
 import { EOFException } from '../../../../java/io/EOFException.js';
-//not GWT import const EOFException = globalThis.java.io.EOFException;
-
-      
+//not GWT import const EOFException
 import { IOException } from '../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
-//not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
-
-      
+//not GWT import const RecordComparator
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 

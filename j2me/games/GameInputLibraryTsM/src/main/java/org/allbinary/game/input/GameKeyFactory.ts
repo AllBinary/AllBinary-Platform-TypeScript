@@ -21,17 +21,11 @@
             import { Object } from '../../../../java/lang/Object.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-//not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
-
-      
+//not GWT import const Canvas
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
-
-      
 
 
 
@@ -51,12 +45,8 @@ const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKey } from './GameKey.js';
-//not GWT import - same folder const GameKey = globalThis.org.allbinary.game.input.GameKey;
-
-                import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
-
-                
+//not GWT import - same folder const GameKeyimport { InputFactory } from './InputFactory.js';
+//not GWT import - same folder const InputFactory
 export class GameKeyFactory
             extends Object
          {

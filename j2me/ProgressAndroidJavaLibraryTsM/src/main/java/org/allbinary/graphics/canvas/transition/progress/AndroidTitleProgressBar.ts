@@ -23,29 +23,17 @@
             import { Runnable } from '../../../../../../java/lang/Runnable.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
-//not GWT import const NullProgressActivity = globalThis.org.allbinary.android.activity.NullProgressActivity;
-
-      
+//not GWT import const NullProgressActivity
 import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
-//not GWT import const ProgressActivityInterface = globalThis.org.allbinary.android.activity.ProgressActivityInterface;
-
-      
+//not GWT import const ProgressActivityInterface
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -65,21 +53,11 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
-
-                //import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
-//not GWT import - same folder const ShowTitleProgressBarRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.ShowTitleProgressBarRunnable;
-
-                //import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
-//not GWT import - same folder const DismissTitleProgressBarRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.DismissTitleProgressBarRunnable;
-
-                //import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarPortionSetProgressRunnable;
-
-                //import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarSetProgressRunnable = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarSetProgressRunnable;
-
-                
+//not GWT import - same folder const ProgressCanvas//import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
+//not GWT import - same folder const ShowTitleProgressBarRunnable//import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
+//not GWT import - same folder const DismissTitleProgressBarRunnable//import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
+//not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable//import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
+//not GWT import - same folder const TitleProgressBarSetProgressRunnable
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 

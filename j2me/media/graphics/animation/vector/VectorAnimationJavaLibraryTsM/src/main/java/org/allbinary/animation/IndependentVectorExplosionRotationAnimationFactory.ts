@@ -23,17 +23,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-//not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
-
-      
+//not GWT import const BasicColor
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
-//not GWT import const VectorInfo = globalThis.org.allbinary.vector.VectorInfo;
-
-      
+//not GWT import const VectorInfo
 
 
 
@@ -53,24 +47,12 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
-
-                import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import - same folder const VectorAnimationFactoryInterface = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
-
-                import { VectorRotationGenerator } from './VectorRotationGenerator.js';
-//not GWT import - same folder const VectorRotationGenerator = globalThis.org.allbinary.animation.VectorRotationGenerator;
-
-                import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-//not GWT import - same folder const VectorExplosionGenerator = globalThis.org.allbinary.animation.VectorExplosionGenerator;
-
-                import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
-
-                import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation = globalThis.org.allbinary.animation.Animation;
-
-                
+//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterfaceimport { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
+//not GWT import - same folder const VectorAnimationFactoryInterfaceimport { VectorRotationGenerator } from './VectorRotationGenerator.js';
+//not GWT import - same folder const VectorRotationGeneratorimport { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
+//not GWT import - same folder const VectorExplosionGeneratorimport { IndexedAnimation } from './IndexedAnimation.js';
+//not GWT import - same folder const IndexedAnimationimport { Animation } from './Animation.js';
+//not GWT import - same folder const Animation
 export class IndependentVectorExplosionRotationAnimationFactory
             extends Object
          implements ProceduralAnimationInterfaceFactoryInterface {

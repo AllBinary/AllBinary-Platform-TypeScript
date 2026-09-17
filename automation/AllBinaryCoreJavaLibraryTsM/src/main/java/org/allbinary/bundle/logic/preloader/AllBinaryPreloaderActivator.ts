@@ -23,41 +23,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { BundleActivator } from '../../../../../org/osgi/framework/BundleActivator.js';
-//not GWT import const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
-
-      
+//not GWT import const BundleActivator
 import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
-//not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
-
-      
+//not GWT import const BundleContext
 import { ServiceReference } from '../../../../../org/osgi/framework/ServiceReference.js';
-//not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
-
-      
+//not GWT import const ServiceReference
 import { ServiceRegistration } from '../../../../../org/osgi/framework/ServiceRegistration.js';
-//not GWT import const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
-
-      
+//not GWT import const ServiceRegistration
 import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/system/loader/CryptServiceFactory.js';
-//not GWT import const CryptServiceFactory = globalThis.org.allbinary.bundle.logic.system.loader.CryptServiceFactory;
-
-      
+//not GWT import const CryptServiceFactory
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
-
-      
 
 
 

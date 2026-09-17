@@ -24,88 +24,46 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-//not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
-
-      
+//not GWT import const DomNodeHelper
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-//not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
-
-      
+//not GWT import const DomSearchHelper
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
-
-      
+//not GWT import const DomDocumentHelper
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { InputOutputTypeData } from '../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
-//not GWT import const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
-
-      
+//not GWT import const InputOutputTypeData
 import { OutputTypeData } from '../../../../../../../org/allbinary/logic/io/OutputTypeData.js';
-//not GWT import const OutputTypeData = globalThis.org.allbinary.logic.io.OutputTypeData;
-
-      
+//not GWT import const OutputTypeData
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-//not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
-
-      
+//not GWT import const TransformInfoData
 import { TransformInfoDomNode } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNode.js';
-//not GWT import const TransformInfoDomNode = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNode;
-
-      
+//not GWT import const TransformInfoDomNode
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { TransformInfosData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
-//not GWT import const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
-
-      
+//not GWT import const TransformInfosData
 import { XslData } from '../../../../../../../org/allbinary/logic/visual/transform/template/XslData.js';
-//not GWT import const XslData = globalThis.org.allbinary.logic.visual.transform.template.XslData;
-
-      
+//not GWT import const XslData
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 import { Attr } from '../../../../../../../org/w3c/dom/Attr.js';
-//not GWT import const Attr = globalThis.org.w3c.dom.Attr;
-
-      
+//not GWT import const Attr
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { NamedNodeMap } from '../../../../../../../org/w3c/dom/NamedNodeMap.js';
-//not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
-
-      
+//not GWT import const NamedNodeMap
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-//not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
-
-      
+//not GWT import const NodeList
 
 
 
@@ -125,12 +83,8 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
-
-                import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-//not GWT import - same folder const TransformInfoObjectConfigData = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
-
-                
+//not GWT import - same folder const TransformInfoObjectConfigInterfaceimport { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
+//not GWT import - same folder const TransformInfoObjectConfigData
 export class TransformInfoObjectConfig
             extends Object
          implements TransformInfoObjectConfigInterface {

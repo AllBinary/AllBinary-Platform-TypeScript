@@ -39,12 +39,8 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeature } from './GameFeature.js';
-//not GWT import - same folder const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
-
-                import { Feature } from './Feature.js';
-//not GWT import - same folder const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
-
-                
+//not GWT import - same folder const GameFeatureimport { Feature } from './Feature.js';
+//not GWT import - same folder const Feature
 export class GameFeatureFactory
             extends Object
          {

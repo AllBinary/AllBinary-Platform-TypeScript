@@ -21,33 +21,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-//not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
-
-      
+//not GWT import const HttpServletRequest
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-//not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
-
-      
+//not GWT import const PageContext
 import { StoreFrontViewFactory } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontViewFactory.js';
-//not GWT import const StoreFrontViewFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontViewFactory;
-
-      
+//not GWT import const StoreFrontViewFactory
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-//not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
-
-      
+//not GWT import const RequestParams
 import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-//not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
-
-      
+//not GWT import const WeblisketSession
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
-//not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
-
-      
+//not GWT import const SearchRequest
 
 
 
@@ -67,9 +53,7 @@ import { SearchRequest } from '../../../../../../org/allbinary/logic/control/sea
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformHttpRequestDocument } from './TransformHttpRequestDocument.js';
-//not GWT import - same folder const TransformHttpRequestDocument = globalThis.org.allbinary.logic.visual.transform.data.TransformHttpRequestDocument;
-
-                
+//not GWT import - same folder const TransformHttpRequestDocument
 export class TransformStoreDocument extends TransformHttpRequestDocument {
         
 

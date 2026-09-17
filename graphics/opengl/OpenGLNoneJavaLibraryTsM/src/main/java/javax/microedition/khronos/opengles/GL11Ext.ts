@@ -5,21 +5,13 @@
 
 
 import { Buffer } from '../../../../java/nio/Buffer.js';
-//not GWT import const Buffer = globalThis.java.nio.Buffer;
-
-      
+//not GWT import const Buffer
 import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
-//not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
-
-      
+//not GWT import const FloatBuffer
 import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
-//not GWT import const IntBuffer = globalThis.java.nio.IntBuffer;
-
-      
+//not GWT import const IntBuffer
 import { ShortBuffer } from '../../../../java/nio/ShortBuffer.js';
-//not GWT import const ShortBuffer = globalThis.java.nio.ShortBuffer;
-
-      
+//not GWT import const ShortBuffer
 
 
 
@@ -39,9 +31,7 @@ import { ShortBuffer } from '../../../../java/nio/ShortBuffer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from './GL.js';
-//not GWT import - same folder const GL = globalThis.javax.microedition.khronos.opengles.GL;
-
-                
+//not GWT import - same folder const GL
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL11ExtI {
         

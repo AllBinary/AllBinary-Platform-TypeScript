@@ -25,61 +25,33 @@
             import { CharSequence } from '../../../../../java/lang/CharSequence.js';
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-//not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
-
-      
+//not GWT import const ByteArrayOutputStream
 import { IOException } from '../../../../../java/io/IOException.js';
-//not GWT import const IOException = globalThis.java.io.IOException;
-
-      
+//not GWT import const IOException
 import { InputStream } from '../../../../../java/io/InputStream.js';
-//not GWT import const InputStream = globalThis.java.io.InputStream;
-
-      
+//not GWT import const InputStream
 import { OutputStream } from '../../../../../java/io/OutputStream.js';
-//not GWT import const OutputStream = globalThis.java.io.OutputStream;
-
-      
+//not GWT import const OutputStream
 import { Reader } from '../../../../../java/io/Reader.js';
-//not GWT import const Reader = globalThis.java.io.Reader;
-
-      
+//not GWT import const Reader
 import { Writer } from '../../../../../java/io/Writer.js';
-//not GWT import const Writer = globalThis.java.io.Writer;
-
-      
+//not GWT import const Writer
 import { CharBuffer } from '../../../../../java/nio/CharBuffer.js';
-//not GWT import const CharBuffer = globalThis.java.nio.CharBuffer;
-
-      
+//not GWT import const CharBuffer
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-//not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
-
-      
+//not GWT import const StreamUtil
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 

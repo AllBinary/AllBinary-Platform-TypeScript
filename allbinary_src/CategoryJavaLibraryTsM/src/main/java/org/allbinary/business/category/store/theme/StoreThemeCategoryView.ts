@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Arrays } from '../../../../../../java/util/Arrays.js';
-//not GWT import const Arrays = globalThis.java.util.Arrays;
-
-      
+//not GWT import const Arrays
 import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
-//not GWT import const CategoryView = globalThis.org.allbinary.business.category.CategoryView;
-
-      
+//not GWT import const CategoryView
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
-//not GWT import const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
-
-      
+//not GWT import const ThemeValidation
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 
 
 
@@ -63,12 +51,8 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
-//not GWT import - same folder const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
-
-                import { ThemeComparator } from './ThemeComparator.js';
-//not GWT import - same folder const ThemeComparator = globalThis.org.allbinary.business.category.store.theme.ThemeComparator;
-
-                
+//not GWT import - same folder const StoreThemeCategoryInterfaceimport { ThemeComparator } from './ThemeComparator.js';
+//not GWT import - same folder const ThemeComparator
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {
         
 

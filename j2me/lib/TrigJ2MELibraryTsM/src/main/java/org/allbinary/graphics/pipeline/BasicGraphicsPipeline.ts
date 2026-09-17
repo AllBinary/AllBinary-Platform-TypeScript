@@ -23,29 +23,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-//not GWT import const GPoint = globalThis.org.allbinary.graphics.GPoint;
-
-      
+//not GWT import const GPoint
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-//not GWT import const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
-
-      
+//not GWT import const PointFactory
 import { Angle } from '../../../../org/allbinary/math/Angle.js';
-//not GWT import const Angle = globalThis.org.allbinary.math.Angle;
-
-      
+//not GWT import const Angle
 import { NoDecimalTrigTable } from '../../../../org/allbinary/math/NoDecimalTrigTable.js';
-//not GWT import const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
-
-      
+//not GWT import const NoDecimalTrigTable
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-      
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
-      
 
 
 

@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-//not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
-
-      
+//not GWT import const Graphics
 import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-//not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
-
-      
+//not GWT import const GameFeatureImageCacheFactory
 import { LockedResources } from '../../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
-//not GWT import const LockedResources = globalThis.org.allbinary.logic.system.security.licensing.LockedResources;
-
-      
+//not GWT import const LockedResources
 import { LockedUtil } from '../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-//not GWT import const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
-
-      
+//not GWT import const LockedUtil
 import { LockablePaintable } from '../../../../../org/allbinary/graphics/form/LockablePaintable.js';
-//not GWT import const LockablePaintable = globalThis.org.allbinary.graphics.form.LockablePaintable;
-
-      
+//not GWT import const LockablePaintable
 import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
-//not GWT import const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
-
-      
+//not GWT import const ScrollCurrentSelectionForm
 
 
 

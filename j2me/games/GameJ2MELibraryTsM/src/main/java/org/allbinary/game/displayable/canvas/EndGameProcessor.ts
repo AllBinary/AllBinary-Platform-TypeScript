@@ -21,29 +21,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-//not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
-
-      
+//not GWT import const Processor
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
-//not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
-
-      
+//not GWT import const HighScores
 import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
-//not GWT import const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
-
-      
+//not GWT import const HighScoresHelperBase
 import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
-//not GWT import const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
-
-      
+//not GWT import const NullHighScoresSingletonFactory
 import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
-//not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
-
-      
+//not GWT import const GameStateFactory
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-//not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
-
-      
+//not GWT import const NullPaintable
 
 
 
@@ -63,9 +51,7 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
-
-                
+//not GWT import - same folder const AllBinaryGameCanvas
 export class EndGameProcessor extends Processor {
         
 

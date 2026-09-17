@@ -21,41 +21,23 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-//not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
-
-      
+//not GWT import const DomNodeInterface
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-//not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
-
-      
+//not GWT import const ValidationComponentInterface
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-//not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
-
-      
+//not GWT import const TransformInfoInterface
 import { GenericCssStyleValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/GenericCssStyleValidation.js';
-//not GWT import const GenericCssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.GenericCssStyleValidation;
-
-      
+//not GWT import const GenericCssStyleValidation
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-//not GWT import const Document = globalThis.org.w3c.dom.Document;
-
-      
+//not GWT import const Document
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-//not GWT import const Node = globalThis.org.w3c.dom.Node;
-
-      
+//not GWT import const Node
 import { CustomizerUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
-//not GWT import const CustomizerUtil = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
-
-      
+//not GWT import const CustomizerUtil
 
 
 
@@ -75,9 +57,7 @@ import { CustomizerUtil } from '../../../../../../../../../views/business/contex
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssCustomizerView } from './CssCustomizerView.js';
-//not GWT import - same folder const CssCustomizerView = globalThis.views.business.context.modules.storefront.customizer.includes.style.css.CssCustomizerView;
-
-                
+//not GWT import - same folder const CssCustomizerView
 export class NewCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         
 

@@ -19,9 +19,7 @@
 
 
 import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
-//not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
-
-      
+//not GWT import const MutableTreeNode
 
 
 
@@ -41,12 +39,8 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventObject } from './EventObject.js';
-//not GWT import - same folder const EventObject = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventObject;
-
-                import { MyGraphicItemEventSource } from './MyGraphicItemEventSource.js';
-//not GWT import - same folder const MyGraphicItemEventSource = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventSource;
-
-                
+//not GWT import - same folder const EventObjectimport { MyGraphicItemEventSource } from './MyGraphicItemEventSource.js';
+//not GWT import - same folder const MyGraphicItemEventSource
 export class MyGraphicItemEvent extends java.util.EventObject {
         
 

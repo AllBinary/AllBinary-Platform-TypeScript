@@ -19,9 +19,7 @@
 
 
 import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
-//not GWT import const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
-
-      
+//not GWT import const InputAutomationConfigurationModuleChangeEvent
 
 
 

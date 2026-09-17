@@ -23,13 +23,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
-//not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
-
-      
+//not GWT import const Globals
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
-      
 
 
 
@@ -50,8 +46,6 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //not plain js - same folder import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-                
 export class TestRemoteLogUtil
             extends Object
          {

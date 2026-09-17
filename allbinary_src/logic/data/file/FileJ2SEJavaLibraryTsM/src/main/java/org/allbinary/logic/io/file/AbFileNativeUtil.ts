@@ -21,9 +21,7 @@
             import { Object } from '../../../../../java/lang/Object.js';
         
 import { File } from '../../../../../java/io/File.js';
-//not GWT import const File = globalThis.java.io.File;
-
-      
+//not GWT import const File
 
 
 
@@ -43,9 +41,7 @@ import { File } from '../../../../../java/io/File.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
-
-                
+//not GWT import - same folder const AbFile
 export class AbFileNativeUtil
             extends Object
          {

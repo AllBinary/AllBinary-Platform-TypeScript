@@ -21,33 +21,19 @@
             import { Object } from '../../../java/lang/Object.js';
         
 import { BoundsChangeEvent } from '../../../org/allbinary/bounds/event/BoundsChangeEvent.js';
-//not GWT import const BoundsChangeEvent = globalThis.org.allbinary.bounds.event.BoundsChangeEvent;
-
-      
+//not GWT import const BoundsChangeEvent
 import { BoundsChangeEventListener } from '../../../org/allbinary/bounds/event/BoundsChangeEventListener.js';
-//not GWT import const BoundsChangeEventListener = globalThis.org.allbinary.bounds.event.BoundsChangeEventListener;
-
-      
+//not GWT import const BoundsChangeEventListener
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-//not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
-
-      
+//not GWT import const Rectangle
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
-
-      
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
-      
 import { AllBinaryEventObject } from '../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-//not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
-
-      
+//not GWT import const AllBinaryEventObject
 import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
-//not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
-
-      
+//not GWT import const EventStrings
 
 
 
@@ -67,9 +53,7 @@ import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
-//not GWT import - same folder const BoundsVisitorInterface = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
-
-                
+//not GWT import - same folder const BoundsVisitorInterface
 export class LayerBounds
             extends Object
          implements BoundsChangeEventListener {

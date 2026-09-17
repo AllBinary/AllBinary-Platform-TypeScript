@@ -37,9 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import - same folder const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
-
-                
+//not GWT import - same folder const CollidableBaseBehavior
 export interface CollidableBaseBehaviorFactoryInterface {
         
 
