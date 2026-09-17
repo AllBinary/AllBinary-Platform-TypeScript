@@ -256,7 +256,7 @@ console.log(stringBuilder!.toString());
     var value: any = svg.opt(key)!;;
     
 
-                        if(this.shapeTypeFactory!.KEY_LINE. === key)
+                        if(this.shapeTypeFactory!.KEY_LINE === key)
                         
                                     {
                                     this.addShapes(pointVector, value, this.shapeTypeFactory!.LINE);
@@ -265,7 +265,7 @@ console.log(stringBuilder!.toString());
                                     }
                                 
                              else 
-                        if(this.shapeTypeFactory!. === key)
+                        if(this.shapeTypeFactory! === key)
                         
                                     {
                                     this.addShapes(pointVector, value, this.shapeTypeFactory!.CIRCLE);
@@ -274,7 +274,7 @@ console.log(stringBuilder!.toString());
                                     }
                                 
                              else 
-                        if(this.shapeTypeFactory!.KEY_RECT. === key || this.shapeTypeFactory!.KEY_RECTANGLE. === key)
+                        if(this.shapeTypeFactory!.KEY_RECT === key || this.shapeTypeFactory!.KEY_RECTANGLE === key)
                         
                                     {
                                     this.addShapes(pointVector, value, this.shapeTypeFactory!.RECTANGLE);
