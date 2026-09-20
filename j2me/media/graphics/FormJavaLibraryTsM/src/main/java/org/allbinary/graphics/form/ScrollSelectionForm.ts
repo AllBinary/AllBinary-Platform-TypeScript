@@ -20,8 +20,6 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
-        
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
 
@@ -46,6 +44,9 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -60,6 +61,9 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
@@ -109,7 +113,7 @@ import { FormType } from './FormType.js';
 export class ScrollSelectionForm extends PaintableForm {
         
 
-    static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
+    static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): PaintableForm{
 
         try {
             
@@ -127,10 +131,19 @@ export class ScrollSelectionForm extends PaintableForm {
                                 
                         else {
                             
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.putF(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION);
+    
 
 
-                            throw new RuntimeException();
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return PaintableForm.getNullPaintableForm();;
+    
 
                         }
                             
@@ -139,10 +152,19 @@ export class ScrollSelectionForm extends PaintableForm {
 } catch(e) 
             {
 
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.put(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION, e);
+    
 
 
-                            throw new RuntimeException();
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return PaintableForm.getNullPaintableForm();;
+    
 }
 
 }
