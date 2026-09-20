@@ -44,6 +44,59 @@ import { Stack } from '../../../java/util/Stack.js';
 export class ABStack extends Stack<E> {
         
 
+    public push(item: E): E{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.push(item);;
+    
+}
+
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+
+    public pop(): E{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.pop();;
+    
+}
+
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+
+    public peek(): E{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.peek();;
+    
+}
+
+
+    public empty(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.empty();;
+    
+}
+
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+
+    public search(obj: any = {}): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.search(obj);;
+    
+}
+
+
 }
 
 

@@ -176,7 +176,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
 
     var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
     
-canvas.draw(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight());
+canvas.drawScale(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight());
     
 
 

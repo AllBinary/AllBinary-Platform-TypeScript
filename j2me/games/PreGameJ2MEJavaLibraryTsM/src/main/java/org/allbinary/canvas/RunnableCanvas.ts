@@ -135,7 +135,7 @@ public constructor (commandListener: CommandListener, childNameList: BasicArrayL
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(new StringMaker().append("delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(new StringMaker().append("RunnableCanvas delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 this.runnableCanvasRefreshHelper= new RunnableCanvasRefreshHelper(this);
     

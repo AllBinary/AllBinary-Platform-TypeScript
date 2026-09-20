@@ -28,6 +28,9 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
+//not plain js import { CommonSeps } 
+const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
