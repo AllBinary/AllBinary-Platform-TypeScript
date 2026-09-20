@@ -31,6 +31,9 @@ import { MediaException } from '../../../../javax/microedition/media/MediaExcept
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
 
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
 
@@ -143,7 +146,7 @@ ABSystemWrapper.getInstance()!.gc();
                         
                                     {
                                     
-                        if(resource.compareTo(Manager.TONE_DEVICE_LOCATOR) == 0)
+                        if(TsUtil.getInstance()!.compareTo(resource, Manager.TONE_DEVICE_LOCATOR) == 0)
                         
                                     {
                                     
