@@ -94,6 +94,9 @@ import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/ma
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
 
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
@@ -651,7 +654,7 @@ this.previousFrameJMenuItem!.setText("Previous");
     
 this.frameJMenu!.add(this.previousFrameJMenuItem);
     
-this.nextFrameJMenuItem!.setText("Next");
+this.nextFrameJMenuItem!.setText(CommonLabels.getInstance()!.NEXT);
     
 this.frameJMenu!.add(this.nextFrameJMenuItem);
     

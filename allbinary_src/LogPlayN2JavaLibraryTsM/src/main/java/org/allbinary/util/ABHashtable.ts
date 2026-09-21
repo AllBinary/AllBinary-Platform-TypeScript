@@ -61,7 +61,6 @@ public constructor (){
                     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public size(): number{
 
@@ -72,7 +71,6 @@ public constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isEmpty(): boolean{
 
@@ -83,7 +81,6 @@ public constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public elements(): Enumeration<V>{
 
@@ -94,7 +91,6 @@ public constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public contains(value: any = {}): boolean{
 
@@ -115,7 +111,6 @@ public constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public containsKey(key: any = {}): boolean{
 
@@ -126,7 +121,6 @@ public constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public get(key: any = {}): V{
 
@@ -137,14 +131,12 @@ public constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public clear(){
 super.clear();
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public clone(): any{
 
@@ -155,7 +147,6 @@ super.clear();
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public toString(): string{
 
@@ -166,7 +157,6 @@ super.clear();
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public equals(obj: any = {}): boolean{
 
@@ -177,7 +167,6 @@ super.clear();
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public hashCode(): number{
 

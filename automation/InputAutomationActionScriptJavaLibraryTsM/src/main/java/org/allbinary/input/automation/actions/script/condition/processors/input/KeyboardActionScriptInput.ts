@@ -455,7 +455,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayV
                                     
     var nextCharString: string = text.substring(index +2, endIndex)!;;
     
-this.logUtil!.putF("Next Char String: " +nextCharString, this, "integerArrayValue");
+this.logUtil!.putF(CommonLabels.getInstance()!.NEXT +" Char String: " +nextCharString, this, "integerArrayValue");
     
 vector.add(substring.valueOf());
     

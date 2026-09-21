@@ -42,6 +42,9 @@ import { PlayerStateUtil } from '../../../../../org/allbinary/media/audio/Player
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 //not GWT import const Sound
 
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
@@ -123,7 +126,7 @@ PreLogUtil.put(event, this, commonStrings!.PROCESS);
 
     private readonly SONG: string = " for: ";
 
-    private readonly NEXT_SONG: string = "Next Song: ";
+    private readonly NEXT_SONG: string = CommonLabels.getInstance()!.NEXT +" Song: ";
 
     private readonly STOPPING: string = "Stopping Current Song: ";
 

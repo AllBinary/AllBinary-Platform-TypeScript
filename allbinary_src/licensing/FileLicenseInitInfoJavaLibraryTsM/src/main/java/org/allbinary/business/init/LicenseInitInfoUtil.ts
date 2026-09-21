@@ -49,6 +49,9 @@ import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/Data
 import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStreamFactory.js';
 //not GWT import const FileStreamFactory
 
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
@@ -57,6 +60,9 @@ import { DatabaseEncoder } from '../../../../org/allbinary/logic/system/security
 
 import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js';
 //not GWT import const WeakCrypt
+
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
 
 
@@ -243,7 +249,7 @@ initInfo!.setLicenseId(new WeakCrypt(1).decrypt(licenseIdDecoded));
     var numberOfLicenseServers: number = iData!.readInt()!;;
     
 
-    var NEXT_FILE: string = "Next License Server From File: ";;
+    var NEXT_FILE: string = new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append(" License Server From File: ")!.toString()!;;
     
 
     var licenseServerDecoded: string;;

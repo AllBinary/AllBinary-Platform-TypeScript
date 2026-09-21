@@ -65,9 +65,6 @@ import { FileData } from '../../../org/allbinary/logic/io/file/FileData.js';
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
-import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
-//not GWT import const PathUtil
-
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -79,6 +76,9 @@ import { StringValidationUtil } from '../../../org/allbinary/logic/string/String
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
+
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
 import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
@@ -115,7 +115,7 @@ export class AddFileValidationView extends InventoryItemView implements Validati
 
     private static readonly ADDPRODUCT: string = "Add Product";
 
-    private static readonly NEXTSTEP: string = "Next Step";
+    private static readonly NEXTSTEP: string = CommonLabels.getInstance()!.NEXT +" Step";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

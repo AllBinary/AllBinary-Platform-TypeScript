@@ -37,6 +37,9 @@ const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 
@@ -178,8 +181,6 @@ this.logUtil!.putF(new StringMaker().append(this.NEW_LEVEL)!.appendint(this.getC
 }
 
 
-    private readonly NEXT: string = "Next ";
-
     private readonly NEXT_GAME_LEVEL: string = "nextGameLevel";
 
     public nextGameLevel(){
@@ -192,7 +193,7 @@ this.logUtil!.putF(new StringMaker().append(this.NEW_LEVEL)!.appendint(this.getC
 
                                     }
                                 
-this.logUtil!.putF(new StringMaker().append(this.NEXT)!.append(this.NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, this.NEXT_GAME_LEVEL);
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, this.NEXT_GAME_LEVEL);
     
 }
 

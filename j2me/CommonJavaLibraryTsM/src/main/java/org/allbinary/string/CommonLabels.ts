@@ -81,6 +81,8 @@ export class CommonLabels
 
     public readonly CURRENT: string = " Current: ";
 
+    public readonly NEXT: string = "Next";
+
     public readonly ITEM_LABEL: string = "Item: ";
 
     public readonly RESULT_: string = "Result: ";

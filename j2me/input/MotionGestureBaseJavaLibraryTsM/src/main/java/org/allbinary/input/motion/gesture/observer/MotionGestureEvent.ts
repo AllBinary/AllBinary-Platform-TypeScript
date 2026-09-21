@@ -67,8 +67,6 @@ const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 export class MotionGestureEvent extends AllBinaryEventObject {
         
 
-    private static readonly CURRENT: string = CommonLabels.getInstance()!.CURRENT;
-
     private static readonly PREVIOUS: string = " Previous: ";
 
     private static readonly HASHCODE: string = " hashcode: ";
@@ -142,6 +140,8 @@ this.currentPoint= currentPoint;
 }
 
 
+    private readonly commonLabels: CommonLabels = CommonLabels.getInstance()!;
+
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();;
@@ -151,7 +151,7 @@ this.currentPoint= currentPoint;
     
 stringBuffer!.append(stringUtil!.toString(this.motionGesture));
     
-stringBuffer!.append(MotionGestureEvent.CURRENT);
+stringBuffer!.append(this.commonLabels!.CURRENT);
     
 stringBuffer!.append(stringUtil!.toString(this.currentPoint));
     

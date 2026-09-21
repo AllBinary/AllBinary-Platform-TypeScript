@@ -35,9 +35,6 @@ import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inv
 import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
 //not GWT import const InventoryEntity
 
-//not plain js import { StdUtil } 
-const StdUtil = globalThis.org.allbinary.logic.StdUtil;
-
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 

@@ -46,11 +46,17 @@ const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
 //not GWT import const SoftwareInformation
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
+
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
@@ -240,7 +246,7 @@ this.getList()!.add(highScore);
                                 
                         else {
                             
-    var NEXT_ELEMENT: string = "NextElement: ";;
+    var NEXT_ELEMENT: string = new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append("Element: ")!.toString()!;;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;

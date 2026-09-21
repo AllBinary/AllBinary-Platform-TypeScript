@@ -20,6 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 
 
 
@@ -80,7 +83,7 @@ export class UnitWaypointStrings
 
     public readonly ALREADY_THERE: string = "Already There";
 
-    public readonly NEXT_PATH_NODE: string = "Next Path Node";
+    public readonly NEXT_PATH_NODE: string = CommonLabels.getInstance()!.NEXT +" Path Node";
 
 }
 

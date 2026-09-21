@@ -31,6 +31,9 @@ import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/D
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
 //not GWT import const Attr
 
@@ -113,7 +116,7 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Next View Name: " +name, this, "toTransformInfoPropertiesHashMap()");
+                                    this.logUtil!.putF(CommonLabels.getInstance()!.NEXT +" View Name: " +name, this, "toTransformInfoPropertiesHashMap()");
     
 
                                     }

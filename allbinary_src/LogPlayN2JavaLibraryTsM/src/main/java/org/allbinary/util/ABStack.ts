@@ -53,7 +53,6 @@ export class ABStack extends Stack<E> {
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public pop(): E{
 
@@ -64,7 +63,6 @@ export class ABStack extends Stack<E> {
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public peek(): E{
 
@@ -85,7 +83,6 @@ export class ABStack extends Stack<E> {
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public search(obj: any = {}): number{
 
@@ -93,6 +90,16 @@ export class ABStack extends Stack<E> {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.search(obj);;
+    
+}
+
+
+    public removeElement(obj: any = {}): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.removeElement(obj);;
     
 }
 

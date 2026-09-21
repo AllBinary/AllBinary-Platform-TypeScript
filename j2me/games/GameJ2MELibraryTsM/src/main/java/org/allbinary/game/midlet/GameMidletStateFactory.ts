@@ -21,6 +21,9 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
 
 
 
@@ -78,7 +81,7 @@ private constructor (){
 
 
     public setCurrentGameState(currentGameState: GameState){
-this.logUtil!.putF(new StringMaker().append("Current GameState: ")!.append(StringUtil.getInstance()!.toString(currentGameState))!.toString(), this, "setCurrentGameState");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.CURRENT)!.append(" GameState: ")!.append(StringUtil.getInstance()!.toString(currentGameState))!.toString(), this, "setCurrentGameState");
     
 this.currentGameState= currentGameState;
     

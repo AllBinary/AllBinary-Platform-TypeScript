@@ -20,9 +20,6 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Stack } from '../../../../java/util/Stack.js';
-//not GWT import const Stack
-
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 //not GWT import const Canvas
 
@@ -64,6 +61,9 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+
+//not plain js import { ABStack } 
+const ABStack = globalThis.org.allbinary.util.ABStack;
 
 
 
@@ -107,7 +107,7 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
 
     private readonly childNameList: BasicArrayList;
 
-    private readonly commandStack: Stack<any>;
+    private readonly commandStack: ABStack<any>;
 
     private commandListener: CommandListener = NullCommandListener.NULL_COMMAND_LISTENER;
 
@@ -143,7 +143,7 @@ this.displayInfo!.update(this, this.canvasStrings!.SIZE_CHANGED);
 }
 
 
-    public getCommandStack(): Stack<any>{
+    public getCommandStack(): ABStack<any>{
 
 
 
@@ -192,7 +192,7 @@ super.removeCommand(command);
 
     public removeAllCommands(){
 
-    var size: number = this.commandStack!.length!;;
+    var size: number = this.commandStack!.size()!;;
     
 
 
