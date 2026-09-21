@@ -34,6 +34,9 @@ import { MediaException } from '../../../../javax/microedition/media/MediaExcept
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
 
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
 
@@ -136,7 +139,7 @@ AllBinaryMediaManager.shutdown(soundsFactoryInterface);
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
-ABSystemWrapper.getInstance()!.gc();
+TsUtil.getInstance()!.gc();
     
 new Sounds(soundsFactoryInterface).init();
     
@@ -227,7 +230,7 @@ MediaPlayerUtil.getInstance()!.waitForMediaPlayer(androidMediaPlayerWrapper!.get
 
 new Sounds(soundsFactoryInterface).closeAll();
     
-ABSystemWrapper.getInstance()!.gc();
+TsUtil.getInstance()!.gc();
     
 soundsFactoryInterface!.setInitialized(false);
     

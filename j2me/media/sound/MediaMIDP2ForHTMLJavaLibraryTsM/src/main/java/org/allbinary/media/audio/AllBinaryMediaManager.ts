@@ -43,9 +43,6 @@ import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
 
-//not plain js import { ABSystemWrapper } 
-const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
-
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -133,7 +130,7 @@ new Sounds(soundsFactoryInterface).stopAll();
     
 new Sounds(soundsFactoryInterface).closeAll();
     
-ABSystemWrapper.getInstance()!.gc();
+TsUtil.getInstance()!.gc();
     
 }
 

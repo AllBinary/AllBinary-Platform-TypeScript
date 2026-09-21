@@ -43,6 +43,9 @@ import { MediaException } from '../../../../javax/microedition/media/MediaExcept
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
 
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/AudioContentTypeDataFactory.js';
 //not GWT import const AudioContentTypeDataFactory
 
@@ -57,9 +60,6 @@ import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration
 
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 //not GWT import const ProgressCanvasFactory
-
-//not plain js import { ABSystemWrapper } 
-const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
@@ -153,7 +153,7 @@ new Sounds(soundsFactoryInterface).stopAll();
     
 new Sounds(soundsFactoryInterface).closeAll();
     
-ABSystemWrapper.getInstance()!.gc();
+TsUtil.getInstance()!.gc();
     
 }
 
