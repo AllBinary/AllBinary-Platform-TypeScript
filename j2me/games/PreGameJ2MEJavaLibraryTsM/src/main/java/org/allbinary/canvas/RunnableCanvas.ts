@@ -25,6 +25,9 @@
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
 //not GWT import const CommandListener
 
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
 //not GWT import const NullWaitGameRunnable
 
@@ -98,6 +101,8 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
     readonly stdUtil: StdUtil = StdUtil.getInstance()!;
 
     readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
+
+    readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private thread: Thread = NullThread.NULL_THREAD;
 

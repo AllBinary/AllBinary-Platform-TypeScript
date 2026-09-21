@@ -100,7 +100,7 @@ this.addAll(items);
 
 
     public updateMeasurement(graphics: Graphics){
-this.updateAll(graphics, getAllitems());
+this.updateAll(graphics, this.getAllitems());
     
 super.updateMeasurement(graphics);
     

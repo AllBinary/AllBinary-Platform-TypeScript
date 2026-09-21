@@ -1024,7 +1024,7 @@ super.pause();
     
 this.touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
 }
 
@@ -1035,7 +1035,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.gameStrings!.UNPAUSE);
     
 this.closeMenu();
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
 super.unPause();
     

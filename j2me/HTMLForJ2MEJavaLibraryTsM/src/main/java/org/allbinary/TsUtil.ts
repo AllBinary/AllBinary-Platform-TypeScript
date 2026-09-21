@@ -227,6 +227,10 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
+    public gc(){
+}
+
+
 }
 
 

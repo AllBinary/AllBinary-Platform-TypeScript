@@ -75,12 +75,6 @@ System.arraycopy(src, srcPos, dest, destPos, length);
 }
 
 
-    public gc(){
-System.gc();
-    
-}
-
-
 }
 
 

@@ -11,6 +11,9 @@
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 //not GWT import const Graphics
 
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -64,6 +67,8 @@ export class LayerManager
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly layerManagerLogging: LayerManagerLoggingBase;
 
@@ -257,9 +262,9 @@ this.list.clear();
     
 this.layerManagerLogging!.clear();
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
 
 

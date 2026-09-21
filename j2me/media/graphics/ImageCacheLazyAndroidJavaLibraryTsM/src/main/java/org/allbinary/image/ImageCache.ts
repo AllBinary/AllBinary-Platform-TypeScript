@@ -35,6 +35,9 @@ import { Image } from '../../../javax/microedition/lcdui/Image.js';
 import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
 //not GWT import const NullImage
 
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -91,6 +94,8 @@ export class ImageCache extends ImageCacheBase {
 
     private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -116,7 +121,7 @@ public constructor (){
                         if(this.volume > 32000)
                         
                                     {
-                                    this.systemWrapper!.gc();
+                                    this.tsUtil!.gc();
     
 this.volume= 0;
     
@@ -189,9 +194,9 @@ this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.
     
 this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(inputStream!.toString())!.toString(), this, this.commonStrings!.GET);
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
 this.logUtil!.putF(Memory.getInfo(), this, this.commonStrings!.GET);
     

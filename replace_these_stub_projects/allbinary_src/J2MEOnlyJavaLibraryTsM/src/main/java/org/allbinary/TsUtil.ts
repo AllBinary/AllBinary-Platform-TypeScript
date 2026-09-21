@@ -22,6 +22,8 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
+            import { System } from '../../java/lang/System.js';
+        
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
 
@@ -226,6 +228,12 @@ recordStore!.getRecord(recordId, data, 0);
 
 
     public printAvailableMethods(anyType: any = {}){
+}
+
+
+    public gc(){
+System.gc();
+    
 }
 
 

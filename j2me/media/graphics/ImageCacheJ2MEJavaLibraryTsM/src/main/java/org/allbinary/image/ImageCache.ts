@@ -36,6 +36,9 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
 //not GWT import const J2MEUtil
 
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not GWT import const TsUtil
+
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
@@ -86,6 +89,8 @@ export class ImageCache extends ImageCacheBase {
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
 public constructor (){
 
@@ -159,7 +164,7 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
                         if(this.volume > 32000)
                         
                                     {
-                                    this.systemWrapper!.gc();
+                                    this.tsUtil!.gc();
     
 this.volume= 0;
     
@@ -249,9 +254,9 @@ this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.
     
 this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(resourceInputStream))!.toString(), this, this.commonStrings!.GET);
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
-this.systemWrapper!.gc();
+this.tsUtil!.gc();
     
 this.logUtil!.putF(Memory.getInfo(), this, this.commonStrings!.GET);
     
