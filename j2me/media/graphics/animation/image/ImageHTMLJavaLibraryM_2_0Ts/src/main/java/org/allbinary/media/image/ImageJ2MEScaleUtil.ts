@@ -34,6 +34,9 @@ import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/Playn
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 //not GWT import const PlaynMutableImage
 
+//not plain js import { CoreImage } 
+const CoreImage = globalThis.playn.core.CoreImage;
+
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
 
@@ -112,7 +115,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
             
     public scale(image: Image, width: number, height: number): Image{
 
-    var originalPlayNImage: playn.core.Image = 
+    var originalPlayNImage: CoreImage = 
                 null
             ;;
     
@@ -123,7 +126,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
                                     
     var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;;
     
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
 
                                     }
@@ -132,7 +135,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                             
     var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;;
     
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
 
                         }

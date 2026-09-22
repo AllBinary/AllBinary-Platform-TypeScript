@@ -28,9 +28,6 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
-//not plain js import { CommonSeps } 
-const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
-
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
@@ -39,6 +36,9 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
 
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 //not GWT import const PlaynImage
+
+//not plain js import { CoreImage } 
+const CoreImage = globalThis.playn.core.CoreImage;
 
 
 
@@ -93,7 +93,7 @@ export class ImageCompleteUtil
     var playnImage: PlaynImage = image as PlaynImage;;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;;
+    var playnCoreImage: CoreImage = playnImage!.getImage() as CoreImage;;
     
 
                         if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)

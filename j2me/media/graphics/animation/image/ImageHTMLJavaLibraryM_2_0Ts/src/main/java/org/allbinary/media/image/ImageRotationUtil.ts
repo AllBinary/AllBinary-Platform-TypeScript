@@ -36,6 +36,9 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
 
+//not plain js import { CoreImage } 
+const CoreImage = globalThis.playn.core.CoreImage;
+
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
 
@@ -201,7 +204,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
     public drawImage(originalImage: Image, image: Image, canvasSurface: Canvas){
 
-    var originalPlayNImage: playn.core.Image = 
+    var originalPlayNImage: CoreImage = 
                 null
             ;;
     
@@ -212,7 +215,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
                                     
     var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
 
                                     }
@@ -221,7 +224,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                             
     var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
 
                         }

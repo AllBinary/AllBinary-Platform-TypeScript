@@ -42,14 +42,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
-//not plain js import { PreLogUtil } 
-const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
-
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-//not plain js import { StringUtil } 
-const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 //not GWT import const PlaynImage
@@ -62,6 +56,9 @@ const Callback = globalThis.playn.core.Callback;
 
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
+
+//not plain js import { CoreImage } 
+const CoreImage = globalThis.playn.core.CoreImage;
 
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
@@ -156,7 +153,7 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
     var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    var originalPlaynImage: playn.core.Image = (originalImage as PlaynImage).getImage() as playn.core.Image;;
+    var originalPlaynImage: CoreImage = (originalImage as PlaynImage).getImage() as CoreImage;;
     
 
     var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
@@ -225,7 +222,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
 
     public handleImage(imageArray: Image[], index: number, image: Image){
 
-    var image3: playn.core.Image = (image as PlaynImage).getImage() as playn.core.Image;;
+    var image3: CoreImage = (image as PlaynImage).getImage() as CoreImage;;
     
 
                         if(image3 != 
@@ -285,7 +282,7 @@ image3.addCallback(callback);
 }
 
 
-    public copy(imageArray: Image[], index: number, image: Image, image3: playn.core.Image){
+    public copy(imageArray: Image[], index: number, image: Image, image3: CoreImage){
 
         try {
             
