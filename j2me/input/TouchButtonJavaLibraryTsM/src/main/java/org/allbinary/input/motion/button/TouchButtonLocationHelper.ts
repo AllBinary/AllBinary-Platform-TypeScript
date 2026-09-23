@@ -20,6 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
+            import { Math } from '../../../../../java/lang/Math.js';
+        
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
 
@@ -73,9 +75,9 @@ public constructor (){
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
-this.totalColumns= displayInfo!.getLastWidth() /buttonSize;
+this.totalColumns= Math.round(displayInfo!.getLastWidth() /buttonSize);
     
-this.totalRows= displayInfo!.getLastHeight() /buttonSize;
+this.totalRows= Math.round(displayInfo!.getLastHeight() /buttonSize);
     
 this.columnsRemainder= displayInfo!.getLastWidth() % buttonSize;
     
