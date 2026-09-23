@@ -87,13 +87,6 @@ private constructor (){
 
 
     public init(columns: number, rows: number){
-this.cellPositionArray= new Array(columns).fill(null).map(() => new Array(rows).fill(0))
-                                                            ;
-    
-this.columns= columns;
-    
-this.rows= rows;
-    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
@@ -109,6 +102,13 @@ stringBuffer!.append(" rows: ");
 stringBuffer!.appendint(rows);
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
+this.cellPositionArray= new Array(columns).fill(null).map(() => new Array(rows).fill(0))
+                                                            ;
+    
+this.columns= columns;
+    
+this.rows= rows;
     
 
 
