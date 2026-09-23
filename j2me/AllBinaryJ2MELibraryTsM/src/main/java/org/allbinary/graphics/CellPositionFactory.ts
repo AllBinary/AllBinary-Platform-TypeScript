@@ -73,7 +73,7 @@ export class CellPositionFactory
 
     public readonly NONE: CellPosition = new CellPosition( -1,  -1,  -1,  -1);
 
-    private cellPositionArray: CellPosition[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
+    private cellPositionArray: CellPosition[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
                                                             ;
 
     private columns: number= 0;
@@ -103,7 +103,7 @@ stringBuffer!.appendint(rows);
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
-this.cellPositionArray= new Array(columns).fill(null).map(() => new Array(rows).fill(0))
+this.cellPositionArray= new Array(columns).fill(null).map(() => new Array(rows).fill(null))
                                                             ;
     
 this.columns= columns;
