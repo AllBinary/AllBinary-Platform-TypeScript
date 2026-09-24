@@ -89,7 +89,7 @@ export class PtsDamageFloaters extends DamageFloaters {
 
     private lastDamage: number[] = new Array(5);
 
-    private lastDamageString: string[][] = new Array(5).fill(null).map(() => new Array(0).fill(0));
+    private lastDamageString: string[][] = new Array(5).fill(null).map(() => new Array(0).fill(null));
 
     private lastDamageStringSizeArray: number[] = new Array(5);
 

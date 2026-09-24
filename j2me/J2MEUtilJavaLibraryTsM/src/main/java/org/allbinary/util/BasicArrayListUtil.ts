@@ -111,7 +111,7 @@ console.log(list.toString());
 }
 
 
-    public readonly NULL_ARRAY_OF_ARRAY: BasicArrayList[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
+    public readonly NULL_ARRAY_OF_ARRAY: BasicArrayList[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
                                                             ;
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;

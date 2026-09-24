@@ -73,7 +73,7 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable impl
 
     private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
-    private baseRefreshHelperCharArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(0));
+    private baseRefreshHelperCharArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(null));
 
     private defaultStringWidth: number= 0;
 

@@ -124,7 +124,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private actionBasicColor: BasicColor[] = [];
 
-    private inputBasicColorArray: BasicColor[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
+    private inputBasicColorArray: BasicColor[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
                                                             ;
 
     private selectedBasicColor: BasicColor;
@@ -145,7 +145,7 @@ UpdateMyFontProperties = class
 
     inputDeltaXArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
 
-    sepArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
+    sepArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
                                                             ;
 
     sepWidthArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
@@ -210,12 +210,12 @@ updateMyFontProperties!.keymappingBeginWidthArray= new Array(size);
     
 updateMyFontProperties!.actionStringDeltaXArray= new Array(size);
     
-updateMyFontProperties!.inputDeltaXArray= new Array(size).fill(null).map(() => new Array(0).fill(0));
+updateMyFontProperties!.inputDeltaXArray= new Array(size).fill(null).map(() => new Array(0).fill(null));
     
-updateMyFontProperties!.sepArray= new Array(size).fill(null).map(() => new Array(0).fill(0))
+updateMyFontProperties!.sepArray= new Array(size).fill(null).map(() => new Array(0).fill(null))
                                                             ;
     
-updateMyFontProperties!.sepWidthArray= new Array(size).fill(null).map(() => new Array(0).fill(0));
+updateMyFontProperties!.sepWidthArray= new Array(size).fill(null).map(() => new Array(0).fill(null));
     
 
     var list: BasicArrayList;;

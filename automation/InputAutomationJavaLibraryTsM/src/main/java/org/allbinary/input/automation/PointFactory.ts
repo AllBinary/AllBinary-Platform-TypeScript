@@ -49,7 +49,7 @@ export class PointFactory
          {
         
 
-    private static pointArray: Point[][] = new Array(3000).fill(null).map(() => new Array(3000).fill(0))
+    private static pointArray: Point[][] = new Array(3000).fill(null).map(() => new Array(3000).fill(null))
                                                             ;
 
     public static getInstance(x: number, y: number): Point{

@@ -60,7 +60,7 @@ import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
 export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {
         
 
-    public static readonly NULL_PATH_FINDING_NODE_COST_ARRAY_ARRAY: PathFindingNodeCost[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
+    public static readonly NULL_PATH_FINDING_NODE_COST_ARRAY_ARRAY: PathFindingNodeCost[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
                                                             ;
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;

@@ -150,7 +150,7 @@ this.logUtil!.putF(spriteType, this, this.commonStrings!.RUN);
 
     var rows: number = totalAnimations;;
     
-generatedBufferedImageArray= new Array(rows).fill(null).map(() => new Array(columns).fill(0))
+generatedBufferedImageArray= new Array(rows).fill(null).map(() => new Array(columns).fill(null))
                                                             ;
     
 this.logUtil!.putF("Processing Individual Cells columns: " +columns +" rows: " +rows, this, this.commonStrings!.RUN);
@@ -283,7 +283,7 @@ visitor.visit(generatedBufferedImage, nameEnding, index);
 
     var rows: number = totalFrames2;;
     
-generatedBufferedImageArray= new Array(rows).fill(null).map(() => new Array(columns).fill(0))
+generatedBufferedImageArray= new Array(rows).fill(null).map(() => new Array(columns).fill(null))
                                                             ;
     
 this.logUtil!.putF("Processing Individual Cells for each Direction", this, this.commonStrings!.RUN);

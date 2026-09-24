@@ -75,7 +75,7 @@ export class PointsUtil
     var size2: number = points[index]!.length
                 ;;
     
-newPoints[index]= new Array(size2).fill(null).map(() => new Array(2).fill(0));
+newPoints[index]= new Array(size2).fill(null).map(() => new Array(2).fill(null));
     
 
 
@@ -128,7 +128,7 @@ newPoints[index]![index2]![1]= 1000;
 
     public adjust(points: number[][], x: number, y: number): number[][]{
 
-    var newPoints: number[][] = new Array(points.length).fill(null).map(() => new Array(2).fill(0));;
+    var newPoints: number[][] = new Array(points.length).fill(null).map(() => new Array(2).fill(null));;
     
 
 

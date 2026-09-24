@@ -48,6 +48,9 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 //not GWT import const Paintable
 
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 
 
 
