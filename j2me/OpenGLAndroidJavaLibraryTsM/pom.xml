@@ -46,7 +46,16 @@
 
             <optional>true</optional>
         </dependency>
-        
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogJ2MEJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>AndroidResourceLibraryTs</artifactId>
@@ -63,7 +72,7 @@
 
             <optional>true</optional>
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>J2MEColorJavaLibraryTs</artifactId>
@@ -73,16 +82,25 @@
 
             <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>org.allbinary</groupId>
-            <artifactId>OpenGLNoneOtherJavaLibraryTs</artifactId>
+            <artifactId>OpenGLESBaseJavaLibraryTs</artifactId>
             <!-- AllBinary Platform Version Start -->
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
 
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>OpenGLESDeviceJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>OpenGLESNullImageJavaLibraryTs</artifactId>
@@ -128,7 +146,7 @@
             <classifier>sources</classifier>
         </dependency>
 -->
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

@@ -47,69 +47,12 @@
 
             <optional>true</optional>
         </dependency>
-        
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>DebugJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
 
-        </dependency>
 
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>J2MEUtilJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
 
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ImageCacheBaseJ2MEJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
 
-            <optional>true</optional>
-        </dependency>
 
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ApplicationStatisticsJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
 
-        </dependency>
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ApplicationStatisticsJ2MELibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>PCResourceLibraryTs</artifactId>
-<!--
-            <artifactId>ResourceJ2MEJavaLibraryTs</artifactId>
-            <artifactId>PCResourceLibraryTs</artifactId>
-            <artifactId>AndroidResourceLibraryTs</artifactId>
-            <artifactId>ResourceLibraryTs</artifactId>
-            for HTML it is in ABDKPlaynJavaLibrary
--->
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-
-            <optional>true</optional>
-        </dependency>
 
 <!--        <dependency>
             <groupId>org.microemu</groupId>
@@ -136,7 +79,7 @@
         </dependency>
         -->
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

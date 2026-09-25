@@ -46,8 +46,10 @@
         <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryTsM</module>-->
         <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryTsM</module>
         <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryTsM</module>
         <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryTsM</module>
-<!--        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryTsM</module>-->
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryTsM</module>
 
         <module>../../DebugJavaLibraryTsM</module>             
         <module>../../ResourceLibraryTsM</module>

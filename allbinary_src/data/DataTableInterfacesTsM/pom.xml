@@ -28,20 +28,20 @@
     </properties>
 
   <dependencies>
-      
+
+
     <dependency>
       <groupId>org.allbinary</groupId>
-      <artifactId>CommonJavaLibraryTs</artifactId>
+      <artifactId>J2MEUtilJavaLibraryTs</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
-      
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

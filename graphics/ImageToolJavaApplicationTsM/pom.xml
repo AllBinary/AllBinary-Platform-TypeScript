@@ -48,19 +48,37 @@
 
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogJ2SEJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
 
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>J2SEForJ2MEJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.allbinary.cache</groupId>
-            <artifactId>AllBinaryJSECacheJavaLibraryTs</artifactId>
+            <artifactId>AllBinaryCacheLibraryTs</artifactId>
 
             <!--
-            <artifactId>AllBinaryCacheLibraryTs</artifactId>
-            <artifactId>AllBinaryJSECacheJavaLibraryTs</artifactId>
+            <artifactId>AllBinaryCacheLibrary</artifactId>
+            <artifactId>AllBinaryJSECacheJavaLibrary</artifactId>
             -->
             <!-- AllBinary Platform Version Start -->
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
+
 
         <dependency>
             <groupId>org.allbinary</groupId>
@@ -141,7 +159,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-  
+
 
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
@@ -153,9 +171,9 @@
             <groupId>org.apache.xmlgraphics</groupId>
             <artifactId>batik-awt-utilTs</artifactId>
             <version>1.7</version>
-            
+
         </dependency>
-  
+
         <!--
         <dependency>
             <groupId>org.shiftone.cache</groupId>
@@ -165,7 +183,7 @@
         </dependency>
         -->
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

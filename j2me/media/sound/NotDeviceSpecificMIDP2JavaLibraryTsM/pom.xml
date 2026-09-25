@@ -47,6 +47,15 @@
 
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>J2SEForJ2MEJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
 
         <dependency>
             <groupId>org.allbinary</groupId>
@@ -73,7 +82,7 @@
             <!-- AllBinary Platform Version End -->
             <optional>true</optional>
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ProgressJ2MEJavaLibraryTs</artifactId>
@@ -107,7 +116,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>MediaDataTs</artifactId>
@@ -163,7 +172,7 @@
         </dependency>
         -->
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

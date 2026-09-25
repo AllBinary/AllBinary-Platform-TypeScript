@@ -31,12 +31,19 @@
 
         <dependency>
             <groupId>org.allbinary</groupId>
+            <artifactId>LogJ2SEJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
             <artifactId>ApplicationStatisticsJ2SELibraryTs</artifactId>
             <!-- AllBinary Platform Version Start -->
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-                
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ContentNoneJavaLibraryTs</artifactId>
@@ -109,7 +116,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>        
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>NoSensorJavaLibraryTs</artifactId>
@@ -157,7 +164,7 @@
             <!-- AllBinary Platform Version End -->
             <optional>true</optional>
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ScreenCaptureNoneJavaLibraryTs</artifactId>
@@ -165,7 +172,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ThreadJ2MELibraryTs</artifactId>
@@ -174,7 +181,7 @@
             <!-- AllBinary Platform Version End -->
         </dependency>
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

@@ -127,7 +127,7 @@
             <optional>true</optional>
         </dependency>
         -->
-    
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>CustomLoaderFakeJavaLibraryTs</artifactId>
@@ -168,23 +168,13 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>FileJ2SEJavaLibraryTs</artifactId>
 
             <!--
-            -->
-            <!--
-            -->
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>IdGeneratorUsingDbTablesJavaLibraryTs</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>FileGAEVFSJavaLibraryTs</artifactId>
-            
-            <!--
-            <artifactId>FileJ2SEJavaLibraryTs</artifactId>
-            <artifactId>FileGAEVFSJavaLibraryTs</artifactId>
+            <artifactId>FileJ2SEJavaLibrary</artifactId>
+            <artifactId>FileGAEVFSJavaLibrary</artifactId>
             -->
             <!-- AllBinary Platform Version Start -->
             <version>1.0.0-SNAPSHOT</version>
@@ -192,6 +182,11 @@
 
             <optional>true</optional>
         </dependency>
+
+            <!--
+            -->
+            <!--
+            -->
         <!--
         <dependency>
             <groupId>com.vobject.appengine</groupId>
@@ -223,7 +218,7 @@
         -->
 <!--            <version>1.6.0</version>-->
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

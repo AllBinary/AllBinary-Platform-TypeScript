@@ -38,12 +38,12 @@
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ApplicationStatisticsAndroidLibraryTs</artifactId>
-        
+
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         -->
         <!-- Note: J2MEMidletAsViewJavaLibrary has it for Android -->
-                
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ContentAndroidJavaLibraryTs</artifactId>
@@ -59,7 +59,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-        
+
         <!-- Is in AndroidToJ2MELibrary
         <dependency>
             <groupId>org.allbinary</groupId>
@@ -83,7 +83,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-                                                                        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>GameScoresBaseJ2MELibraryTs</artifactId>
@@ -91,7 +91,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary.media.image</groupId>
             <artifactId>ImageAndroidJavaLibraryTs</artifactId>
@@ -99,10 +99,17 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>AndroidToJ2MELibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AndroidToNullLibraryTs</artifactId>
             <!-- AllBinary Platform Version Start -->
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
@@ -114,7 +121,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>                
-        
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>GyroSensorAndroidJavaLibraryTs</artifactId>
@@ -168,7 +175,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-        
+
         <!--
         Already in dependency graph
         <dependency>
@@ -176,7 +183,7 @@
             <artifactId>AndroidResourceLibraryTs</artifactId>
         </dependency>        
         -->
-            
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ScreenCaptureNoneJavaLibraryTs</artifactId>
@@ -193,7 +200,7 @@
             <!-- AllBinary Platform Version End -->
         </dependency>        
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->

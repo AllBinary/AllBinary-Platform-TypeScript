@@ -45,6 +45,14 @@
 
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogJ2MEJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
 
         <dependency>
             <groupId>org.allbinary</groupId>
@@ -92,7 +100,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-            
+
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>FileLicenseInitInfoJavaLibraryTs</artifactId>
@@ -169,7 +177,7 @@
 
             <optional>true</optional>
         </dependency>
-    
+
         <dependency>
             <groupId>org.microemu</groupId>
             <artifactId>microemu-midpTs</artifactId>
@@ -193,7 +201,7 @@
         </dependency>
         -->
 
-    </dependencies>
+</dependencies>
 
         <!-- Install globally as in set to path: npm install -g typescript-->
     <!--    <version>1.15.4</version>-->
