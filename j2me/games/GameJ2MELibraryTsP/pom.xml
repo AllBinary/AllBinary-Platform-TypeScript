@@ -53,7 +53,7 @@
 
         <module>../../DebugJavaLibraryTsM</module>             
         <module>../../ResourceLibraryTsM</module>
-<!--        <module>../../ResourceJ2MEJavaLibraryTsM</module>-->
+        <module>../../ResourceJ2MEJavaLibraryTsM</module>
         <module>../../AndroidResourceLibraryTsM</module>
         <module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryTsM</module>
 
