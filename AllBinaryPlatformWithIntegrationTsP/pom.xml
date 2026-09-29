@@ -55,7 +55,7 @@
         <module>../j2me/media/graphics/geography/GeographicPathFindingLibraryTsM</module>
         <module>../j2me/media/graphics/geography/map/RaceTrackGeographicMapLibraryTsM</module>
         <module>../j2me/media/graphics/geography/map/BasicTopViewGeographicMapJavaLibraryTsM</module>
-<!--        <module>../j2me/games/arcade/platformer/TopViewGameBehaviorJavaLibraryTsM</module>-->
+        <module>../j2me/games/arcade/platformer/TopViewGameBehaviorJavaLibraryTsM</module>
 
         <module>../j2me/games/GameJ2MEOptionalLibraryPOMTs</module>
 

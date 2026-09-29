@@ -1,3 +1,5 @@
+mvn clean install -P npm-install
+
 generate package.json:
 npm init
 generate tsconfig.json:
