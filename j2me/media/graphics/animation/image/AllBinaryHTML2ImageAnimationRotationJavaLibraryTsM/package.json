@@ -1,0 +1,13 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "AllBinary Platform Common Library",
+  "license": "AllBinary Open License Version 1.0",
+  "author": "Travis Berthelot",
+  "type": "module",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "tsc --noEmit"
+  }
+}
