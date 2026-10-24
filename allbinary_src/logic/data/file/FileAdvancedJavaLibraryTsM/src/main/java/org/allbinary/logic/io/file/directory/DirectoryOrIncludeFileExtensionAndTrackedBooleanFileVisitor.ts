@@ -18,18 +18,13 @@
         
 
 
-            import { Exception } from '../../../../../../java/lang/Exception.js';
-        
             import { System } from '../../../../../../java/lang/System.js';
         
-import { File } from '../../../../../../java/io/File.js';
-//not GWT import const File
+import { GitProcessHelper } from '../../../../../../org/allbinary/java/runtime/process/git/GitProcessHelper.js';
+//not GWT import const GitProcessHelper
 
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
-
-import { AbFileNativeUtil } from '../../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-//not GWT import const AbFileNativeUtil
 
 import { CommonDataFileStrings } from '../../../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
 //not GWT import const CommonDataFileStrings
@@ -63,10 +58,6 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackedStrings } from './TrackedStrings.js';
 //not GWT import - same folder const TrackedStrings
-import { ProcessBuilder } from './ProcessBuilder.js';
-//not GWT import - same folder const ProcessBuilder
-import { Process } from './Process.js';
-//not GWT import - same folder const Process
 
 export class DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor extends IncludeFileExtensionsBooleanFileVisitor {
         
@@ -92,6 +83,8 @@ console.log(filePath +" is Tracked: " +result);
 
 
     private readonly trackedStrings: TrackedStrings = TrackedStrings.getInstance()!;
+
+    private readonly gitProcessHelper: GitProcessHelper = GitProcessHelper.getInstance()!;
 
     private readonly includesString: string;
 
@@ -178,7 +171,7 @@ this.includesString= includesString;
                         
                                     {
                                     
-                        if(this.isGitTracked(file))
+                        if(this.gitProcessHelper!.isTracked(file))
                         
                                     {
                                     
@@ -217,41 +210,6 @@ this.includesString= includesString;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE;
     
-}
-
-
-    isGitTracked(file: AbFile): boolean{
-
-        try {
-            
-    var nativeFile: File = AbFileNativeUtil.get(file)!;;
-    
-
-    var parentFile: File = nativeFile!.getParentFile()!;;
-    
-
-    var process: Process = new ProcessBuilder(this.trackedStrings!.GIT_COMMAND, this.trackedStrings!.CHANGE_DIRECTORY_OPTION, parentFile!.getPath(), this.trackedStrings!.LIST_FILES_COMMAND, this.trackedStrings!.ERROR_UNMATCH_OPTION, this.trackedStrings!.PATHSPEC_SEPARATOR, nativeFile!.getName()).redirectErrorStream(true)!.start()!;;
-    
-process.getInputStream()!.readAllBytes();
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return process.waitFor() == 0;
-    
-
-                //: 
-} catch(e) 
-            {
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return false;
-    
-}
-
 }
 
 

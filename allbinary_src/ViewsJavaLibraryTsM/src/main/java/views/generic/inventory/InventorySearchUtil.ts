@@ -27,12 +27,6 @@
 import { HashMap } from '../../../java/util/HashMap.js';
 //not GWT import const HashMap
 
-import { ListIterator } from '../../../java/util/ListIterator.js';
-//not GWT import const ListIterator
-
-//not plain js import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
@@ -63,8 +57,8 @@ import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 //not GWT import const ModDomHelper
 
-import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -242,7 +236,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, this.commonPhoneStrings!.ZERO));
     
 
-    var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
+    var success: string = XmlDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
@@ -559,7 +553,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
 }
 
 
-    var success: string = DomDocumentHelper.toString(tempDocument)!;;
+    var success: string = XmlDocumentHelper.toString(tempDocument)!;;
     
 productListingPages[index]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success);
     

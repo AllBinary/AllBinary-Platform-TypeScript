@@ -22,6 +22,10 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
+            import { Float } from '../../java/lang/Float.js';
+        
+            import { Double } from '../../java/lang/Double.js';
+        
 
 
 
@@ -58,6 +62,26 @@ export class TsUtil
 }
 
 
+    public longBitsToDouble(bits: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return java.lang.Double.longBitsToDouble(bits);;
+    
+}
+
+
+    public intBitsToFloat(bits: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return java.lang.Float.intBitsToFloat(bits);;
+    
+}
+
+
     public hashCode(anyType: any = {}): number{
 
 
@@ -75,6 +99,16 @@ export class TsUtil
     var anyType: any = any;;
     
 anyType!.wait(timeoutMillis);
+    
+}
+
+
+    public compareTo(a: string, b: string): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return a.compareTo(b);;
     
 }
 

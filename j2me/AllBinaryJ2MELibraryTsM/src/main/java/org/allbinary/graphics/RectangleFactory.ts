@@ -50,6 +50,9 @@ export class RectangleFactory
 
     public static readonly SINGLETON: Rectangle = new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0);
 
+    public static readonly ARRAY_OF_ARRAYS: Rectangle[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
+                                                            ;
+
 }
 
 

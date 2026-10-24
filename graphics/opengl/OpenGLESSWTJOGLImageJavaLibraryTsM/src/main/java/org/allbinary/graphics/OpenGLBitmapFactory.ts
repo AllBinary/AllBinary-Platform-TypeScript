@@ -4,6 +4,8 @@
         
 
 
+            import { Exception } from '../../../java/lang/Exception.js';
+        
 import { IOException } from '../../../java/io/IOException.js';
 //not GWT import const IOException
 
@@ -12,6 +14,9 @@ import { InputStream } from '../../../java/io/InputStream.js';
 
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
 //not GWT import const Image
+
+import { ImageFactory } from '../../../org/allbinary/image/ImageFactory.js';
+//not GWT import const ImageFactory
 
 import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 //not GWT import const PlatformBitmapBaseFactory
@@ -91,14 +96,14 @@ private constructor (bitmapConfig: any = {}){
 }
 
 
-                //@Throws(IOException.constructor)
+                //@Throws(Exception.constructor)
             
     public decodeStream(inputStream: InputStream): OpenGLBitmap{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new OpenGLBitmap(Image.createImage(inputStream));
+                        return new OpenGLBitmap(ImageFactory.getInstance()!.createImageFromInputStream(inputStream));
     
 }
 

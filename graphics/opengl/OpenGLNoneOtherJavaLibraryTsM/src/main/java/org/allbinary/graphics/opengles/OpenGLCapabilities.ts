@@ -59,6 +59,8 @@ export class OpenGLCapabilities
 }
 
 
+    public readonly CUSTOM_GL_SURFACE_VIEW: boolean = true;
+
     public readonly VERSION_1_0: string = "1.0";
 
     public readonly VERSION_1_1: string = "1.1";
@@ -85,6 +87,16 @@ private constructor (){
 
             super();
         }
+
+
+    public isInitialized(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return true;
+    
+}
 
 
     public initCapabilities(gl: any = {}){

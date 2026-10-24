@@ -56,7 +56,7 @@ export class TextChangeListener
 }
 
 
-    onMeasure(){
+    public onMeasure(){
 }
 
 

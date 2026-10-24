@@ -68,6 +68,10 @@ export class GraphicsStrings
 
     public readonly HTML: string = "HTML";
 
+    public readonly WIDTH: string = "width";
+
+    public readonly HEIGHT: string = "height";
+
 }
 
 

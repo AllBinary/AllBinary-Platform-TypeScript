@@ -112,6 +112,8 @@ import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { ProgressPaintable } from './ProgressPaintable.js';
 //not GWT import - same folder const ProgressPaintable
+import { ProgressEndListener } from './ProgressEndListener.js';
+//not GWT import - same folder const ProgressEndListener
 
 export class ProgressCanvas extends RunnableCanvas implements PaintableInterface, UpdateMyFontInterface {
         
@@ -182,6 +184,8 @@ this.pathFindingThreadPool!.runAPriorityTask();
                             ;
 
     public inGameProcessor: Processor = Processor.getInstance()!;
+
+    public progressEndListener: ProgressEndListener = ProgressEndListener.instance;
 
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
@@ -290,6 +294,8 @@ this.inGame();
 
 
     public inGame(){
+this.progressEndListener!.onEndEvent();
+    
 this.inGameProcessor= this.IN_GAME_PROCESSOR;
     
 }
@@ -308,9 +314,34 @@ this.paintable= NullPaintable.getInstance();
 
 
     public endFromInitialLazyLoadingComplete(){
+this.progressEndListener!.onEndEvent();
+    
 this.gauge.setValue(this.getMaxValue());
     
 this.inGameProcessor= this.IN_GAME_PROCESSOR;
+    
+}
+
+
+    public isInGame(): boolean{
+
+                        if(this.inGameProcessor == this.IN_GAME_PROCESSOR)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return true;
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
     
 }
 

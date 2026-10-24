@@ -33,6 +33,9 @@
 import { Enumeration } from '../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
 
+import { GraphicsStrings } from '../../../org/allbinary/graphics/GraphicsStrings.js';
+//not GWT import const GraphicsStrings
+
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
 
@@ -149,6 +152,8 @@ console.log(stringBuilder!.toString());
 }
 
 
+    private readonly graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;
+
     private readonly shapeTypeFactory: ShapeTypeFactory = ShapeTypeFactory.getInstance()!;
 
     private readonly KEY_SVG: string = "svg";
@@ -170,10 +175,6 @@ console.log(stringBuilder!.toString());
     private readonly KEY_X: string = PositionStrings.getInstance()!.X;
 
     private readonly KEY_Y: string = PositionStrings.getInstance()!.Y;
-
-    private readonly KEY_WIDTH: string = "width";
-
-    private readonly KEY_HEIGHT: string = "height";
 
     private readonly ERROR_PARSE_SVG_JSON: string = "Unable to parse SVG JSON";
 
@@ -419,10 +420,10 @@ this.addSeparator(pointVector);
     var y: number = this.readInt(rectangle, KEY_Y, 0)!;;
     
 
-    var width: number = this.readInt(rectangle, KEY_WIDTH)!;;
+    var width: number = this.readInt(rectangle, graphicsStrings!.WIDTH)!;;
     
 
-    var height: number = this.readInt(rectangle, KEY_HEIGHT)!;;
+    var height: number = this.readInt(rectangle, graphicsStrings!.HEIGHT)!;;
     
 this.addPoint(pointVector, x, y);
     

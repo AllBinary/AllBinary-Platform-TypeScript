@@ -26,9 +26,6 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
-//not plain js import { BasicArrayListD } 
-const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
 import { TransformInfoEntity } from '../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 //not GWT import const TransformInfoEntity
 
@@ -37,6 +34,9 @@ import { TransformInfoEntityBuilder } from '../../../../../../../../org/allbinar
 
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
+import { XmlDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
@@ -255,7 +255,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
 document.appendChild(pageValidation!.toXmlNode(document));
     
 
-    var documentString: string = DomDocumentHelper.toString(document)!;;
+    var documentString: string = XmlDocumentHelper.toString(document)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

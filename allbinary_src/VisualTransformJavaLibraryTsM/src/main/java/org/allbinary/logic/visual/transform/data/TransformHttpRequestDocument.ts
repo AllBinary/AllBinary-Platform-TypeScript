@@ -31,6 +31,9 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 import { AcceptableResponseGenerator } from '../../../../../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
 //not GWT import const AcceptableResponseGenerator
 
@@ -249,7 +252,7 @@ stringBuffer!.append(this.baseNode!.getNodeName());
                             
 stringBuffer!.append("\nDocument: ");
     
-stringBuffer!.append(DomDocumentHelper.toString(this.document));
+stringBuffer!.append(XmlDocumentHelper.toString(this.document));
     
 
 

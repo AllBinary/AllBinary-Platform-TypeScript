@@ -88,8 +88,6 @@ export class ImageCache extends ImageCacheBase {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
-
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
 public constructor (){

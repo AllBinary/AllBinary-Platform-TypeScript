@@ -50,8 +50,8 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
 //not GWT import - same folder const AnimationInterfaceFactoryInterface
 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
 //not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
-import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-//not GWT import - same folder const IndexedAnimationInterface
+import { IndexedAnimation } from './IndexedAnimation.js';
+//not GWT import - same folder const IndexedAnimation
 import { NullIndexedAnimation } from './NullIndexedAnimation.js';
 //not GWT import - same folder const NullIndexedAnimation
 import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
@@ -66,7 +66,7 @@ export class NullIndexedAnimationFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimationInterface[] = [];
+    public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimation[] = [];
 
     private static NULL_INDEXED_ANIMATION_FACTORY: NullIndexedAnimationFactory = new NullIndexedAnimationFactory();
 

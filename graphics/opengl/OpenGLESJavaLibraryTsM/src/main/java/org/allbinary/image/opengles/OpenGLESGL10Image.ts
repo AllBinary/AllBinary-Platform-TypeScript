@@ -91,7 +91,31 @@ export class OpenGLESGL10Image extends OpenGLESImage {
     private readonly textureVertexFloatBuffer: FloatBuffer = OpenGLESGL10Image.prototype.textureVertexFloatBuffer;
     private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
     private readonly regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-    private readonly regionRectangleFloatArray: number[] = [0,0,0,0,0,0,0,0,0,0,0,0];
+    private readonly regionRectangleFloatArray: number[] = [
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+];
     readonly regionRectangleVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *3)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
     readonly openGLESImageProperties: OpenGLESImageProperties = OpenGLESGL10Image.prototype.openGLESImageProperties;
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
@@ -115,9 +139,9 @@ this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!;
     
 this.regionTextureRectangleFloatArray[0]= x_src /imageWidth;
     
-this.regionTextureRectangleFloatArray[1]= () /imageHeight;
+this.regionTextureRectangleFloatArray[1]= (y_src +height) /imageHeight;
     
-this.regionTextureRectangleFloatArray[2]= () /imageWidth;
+this.regionTextureRectangleFloatArray[2]= (x_src +width) /imageWidth;
     
 this.regionTextureRectangleFloatArray[3]= this.regionTextureRectangleFloatArray[1]!;
     

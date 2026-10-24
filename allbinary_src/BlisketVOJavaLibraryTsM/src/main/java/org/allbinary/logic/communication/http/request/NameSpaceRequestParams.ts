@@ -53,6 +53,9 @@ import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModD
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -286,7 +289,7 @@ document.appendChild(node);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    this.logUtil!.putF("\nAppended Document Created: " +DomDocumentHelper.toString(document), this, "getRootNode");
+                                    this.logUtil!.putF("\nAppended Document Created: " +XmlDocumentHelper.toString(document), this, "getRootNode");
     
 
                                     }
@@ -617,7 +620,7 @@ node= nextNode;
                                     {
                                     this.logUtil!.putF("\nAppended Package: " +node.getNodeName(), this, "addChildren");
     
-this.logUtil!.putF("\nAppended Document Created: " +DomDocumentHelper.toString(document), this, "addChildren");
+this.logUtil!.putF("\nAppended Document Created: " +XmlDocumentHelper.toString(document), this, "addChildren");
     
 
                                     }
@@ -649,7 +652,7 @@ node= nextNode;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    this.logUtil!.putF("\nAppended Multinode Element: " +DomDocumentHelper.toString(document), this, "addChildren");
+                                    this.logUtil!.putF("\nAppended Multinode Element: " +XmlDocumentHelper.toString(document), this, "addChildren");
     
 
                                     }
@@ -883,7 +886,7 @@ hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    this.logUtil!.putF("NameSpaceRequestParams: " +this.getMap()!.toString() +"\ntoHashMap(): " +hashMap!.toString() +"\nDocument Created: " +DomDocumentHelper.toString(document), this, "toHashMap()");
+                                    this.logUtil!.putF("NameSpaceRequestParams: " +this.getMap()!.toString() +"\ntoHashMap(): " +hashMap!.toString() +"\nDocument Created: " +XmlDocumentHelper.toString(document), this, "toHashMap()");
     
 
                                     }

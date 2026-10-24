@@ -1172,6 +1172,12 @@ this.secondaryPlayerQueue!.clear();
     processorInit(){
 this.setMainStateProcessor(Processor.getInstance());
     
+this.setProcessGameProcessorInit();
+    
+}
+
+
+    setProcessGameProcessorInit(){
 this.setProcessGameProcessor(new GameProcessor(this));
     
 }

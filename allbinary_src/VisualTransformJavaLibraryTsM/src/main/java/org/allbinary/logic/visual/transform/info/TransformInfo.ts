@@ -45,6 +45,9 @@ import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryD
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 //not GWT import const FREEBLISKET_PATH_GLOBALS
 
@@ -806,7 +809,7 @@ this.data= fileData;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.putF("Data: " +DomDocumentHelper.toString(DomDocumentHelper.create(data)), this, "getData()");
+                                    this.logUtil!.putF("Data: " +XmlDocumentHelper.toString(DomDocumentHelper.create(data)), this, "getData()");
     
 
                                     }

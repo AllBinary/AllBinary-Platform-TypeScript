@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -104,7 +104,7 @@ this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(thi
 this.toXmlDoc();
     
 
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
+    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
     var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;

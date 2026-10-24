@@ -25,6 +25,9 @@
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -167,7 +170,7 @@ stringBuffer!.append(this.baseNode!.getNodeName());
                             
 stringBuffer!.append("\nDocument: ");
     
-stringBuffer!.append(DomDocumentHelper.toString(this.document));
+stringBuffer!.append(XmlDocumentHelper.toString(this.document));
     
 
 

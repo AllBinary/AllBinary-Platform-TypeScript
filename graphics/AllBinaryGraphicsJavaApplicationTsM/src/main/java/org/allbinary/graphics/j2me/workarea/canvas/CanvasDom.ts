@@ -38,6 +38,9 @@ import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
 
+import { GraphicsStrings } from '../../../../../../org/allbinary/graphics/GraphicsStrings.js';
+//not GWT import const GraphicsStrings
+
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
 
@@ -116,9 +119,7 @@ export class CanvasDom
 
     public static readonly REAL_SIZE: string = "realSize";
 
-    public static readonly WIDTH: string = "width";
-
-    public static readonly HEIGHT: string = "height";
+    private readonly graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;
 
     private graphicItemHashMap: HashMap<any, any>;
 
@@ -418,7 +419,7 @@ gridNode!.appendChild(possibleNode);
 vectorCenterGenerator!.calculate(this.getGraphicItemHashMap());
     
 
-    var widthNode: Node = document.createElement(WIDTH) as Node;;
+    var widthNode: Node = document.createElement(this.graphicsStrings!.WIDTH) as Node;;
     
 
     var widthTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getWidth())) as Node;;
@@ -428,7 +429,7 @@ widthNode!.appendChild(widthTextNode);
 realSizeNode!.appendChild(widthNode);
     
 
-    var heightNode: Node = document.createElement(HEIGHT) as Node;;
+    var heightNode: Node = document.createElement(this.graphicsStrings!.HEIGHT) as Node;;
     
 
     var heightTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getHeight())) as Node;;

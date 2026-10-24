@@ -29,9 +29,6 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
-//not plain js import { LogUtil } 
-const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
 
@@ -68,8 +65,6 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class VectorBaseRotationAnimation extends RotationAnimation implements VectorAnimationInterface {
         
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
 

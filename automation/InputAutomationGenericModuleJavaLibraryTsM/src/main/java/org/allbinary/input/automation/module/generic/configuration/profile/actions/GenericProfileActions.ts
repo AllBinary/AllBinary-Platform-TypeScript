@@ -46,6 +46,9 @@ import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/
 import { DomDocumentHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 import { DomDocumentMappingInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 //not GWT import const DomDocumentMappingInterface
 
@@ -179,7 +182,7 @@ this.setHashMap(new HashMap<any, any>());
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
-idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()));
+idOutData!.writeBytes(XmlDocumentHelper.toString(this.toXmlDoc()));
     
 }
 

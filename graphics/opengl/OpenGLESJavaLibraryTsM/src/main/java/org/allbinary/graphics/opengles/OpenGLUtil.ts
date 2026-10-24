@@ -326,7 +326,7 @@ this.runnableList!.clear();
     var size: number = this.list.size()!;;
     
 
-    var image: any;;
+    var image: OpenGLESImage;;
     
 
 
@@ -335,11 +335,9 @@ this.runnableList!.clear();
                         for (
     var index2: number = 0;index2 < size; index2++)
         {
-image= this.list.get(index2);
+image= this.list.get(index2) as OpenGLESImage;
     
-image = imageimage as OpenGLESImage
-image.
-                    set(gl);
+image.set(gl);
     
 }
 

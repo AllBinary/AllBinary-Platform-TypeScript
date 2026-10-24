@@ -28,6 +28,9 @@ import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/D
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 //not GWT import const PATH_GLOBALS
 
@@ -399,7 +402,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.toString(document);;
+                        return XmlDocumentHelper.toString(document);;
     
 
                 //: 

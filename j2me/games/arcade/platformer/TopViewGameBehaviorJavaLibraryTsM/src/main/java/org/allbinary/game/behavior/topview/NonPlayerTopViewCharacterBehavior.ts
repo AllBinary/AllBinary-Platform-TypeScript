@@ -59,6 +59,9 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
 import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
 
+import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
+//not GWT import const SimpleGeographicMapCellPositionFactory
+
 
 
 
@@ -98,9 +101,7 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
                         
                                     {
                                     
-    var nextTerrainGeographicMapCellPosition: GeographicMapCellPosition = 
-                null
-            ;;
+    var nextTerrainGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;;
     
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!;;

@@ -22,9 +22,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from '../../../../../../java/io/ByteArrayOutputStream.js';
-//not GWT import const ByteArrayOutputStream
-
+            import { System } from '../../../../../../java/lang/System.js';
+        
 import { InputStream } from '../../../../../../java/io/InputStream.js';
 //not GWT import const InputStream
 
@@ -36,18 +35,6 @@ import { DocumentBuilder } from '../../../../../../javax/xml/parsers/DocumentBui
 
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
 //not GWT import const DocumentBuilderFactory
-
-import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
-//not GWT import const Transformer
-
-import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
-//not GWT import const TransformerFactory
-
-import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
-//not GWT import const DOMSource
-
-import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
-//not GWT import const StreamResult
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -75,6 +62,23 @@ export class DomDocumentHelper
             extends Object
          {
         
+
+    public static init(){
+System.setProperty("jdk.xml.maxElementDepth", "0");
+    
+System.setProperty("jdk.xml.xpathExprOpLimit", "0");
+    
+System.setProperty("jdk.xml.xpathTotalOpLimit", "0");
+    
+
+    var LIMIT: string = "500000";;
+    
+System.setProperty("jdk.xml.maxGeneralEntitySizeLimit", LIMIT);
+    
+System.setProperty("jdk.xml.totalEntitySizeLimit", LIMIT);
+    
+}
+
 
     public static create(): Document{
 
@@ -162,48 +166,6 @@ export class DomDocumentHelper
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
-    
-
-                //: 
-} catch(e) 
-            {
-
-
-
-                            throw e;
-                    
-}
-
-}
-
-
-                //@Throws(Exception.constructor)
-            
-    public static toString(document: Document): string{
-
-        try {
-            
-    var domSource: DOMSource = new DOMSource(document);;
-    
-
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
-    
-
-    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
-    
-
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
-    
-
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
-    
-copyTransformer!.transform(domSource, streamResult);
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return byteArrayOutputStream!.toString();;
     
 
                 //: 

@@ -81,9 +81,7 @@ export class ShaderComposite
 
     public readonly vertexOpenGLProcessor: OpenGLProcessor;
 
-    public useProgramShaderOpenGLProcessor: OpenGLProcessor = 
-                null
-            ;
+    public useProgramShaderOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
 
     public shaderMatrixOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
 

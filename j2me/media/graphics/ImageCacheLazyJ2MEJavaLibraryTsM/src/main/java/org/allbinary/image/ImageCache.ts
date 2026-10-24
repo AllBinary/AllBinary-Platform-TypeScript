@@ -133,15 +133,13 @@ const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 //not GWT import - same folder const NotHTMLProcessor
 //import { HTMLEndProcessor } from './HTMLEndProcessor.js';
 //not GWT import - same folder const HTMLEndProcessor
+import { ImageFactory } from './ImageFactory.js';
+//not GWT import - same folder const ImageFactory
 
 export class ImageCache extends ImageCacheBase {
         
 
     public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
-    private readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
@@ -303,7 +301,7 @@ this.endProcessor= new this.NotHTMLEndProcessor();
     
 
         try {
-            runTask();
+            this.runTask();
     
 
                 //: 
@@ -705,6 +703,10 @@ this.loadImage(image);
                         if(image.setReady())
                         
                                     {
+                                    
+                        if(image.isReady())
+                        
+                                    {
                                     this.totalLoaded++;
     
 
@@ -713,6 +715,9 @@ this.loadImage(image);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
+
+                                    }
+                                
 
                                     }
                                 
@@ -774,10 +779,10 @@ image.init(image2.getImage());
             
     creatImage(key: string): Image{
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key)!;;
+    var inputStream: InputStream = this.resourceUtil!.getResourceAsStream(key)!;;
     
 
-    var image: Image = Image.createImage(inputStream)!;;
+    var image: Image = ImageFactory.getInstance()!.createImageFromInputStream(inputStream)!;;
     
 image.setName(key);
     

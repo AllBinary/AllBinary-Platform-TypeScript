@@ -146,7 +146,13 @@ console.log(this.LOG_SUCCESS + message);
                                 )
                         
                                     {
-                                    className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
+                                    
+    var hashCodeValue: number = TsUtil.getInstance()!.hashCode(anyType)!;;
+    
+
+    var hexString: string = Integer.toHexString(hashCodeValue)!;;
+    
+className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(hexString)!.toString();
     
 
                                     }

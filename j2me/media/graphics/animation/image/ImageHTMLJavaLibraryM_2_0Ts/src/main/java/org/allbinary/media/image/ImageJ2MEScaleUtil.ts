@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -34,11 +34,23 @@ import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/Playn
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 //not GWT import const PlaynMutableImage
 
+//not plain js import { Canvas } 
+const Canvas = globalThis.playn.core.Canvas;
+
 //not plain js import { CoreImage } 
 const CoreImage = globalThis.playn.core.CoreImage;
 
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
+
+//not plain js import { PlayN } 
+const PlayN = globalThis.playn.core.PlayN;
+
+//not plain js import { HtmlGraphics } 
+const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+
+//not plain js import { HtmlImage } 
+const HtmlImage = globalThis.playn.html.HtmlImage;
 
 
 
@@ -147,9 +159,14 @@ originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;;
     
 
-    var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
+    var scaledPlayNImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
-canvasImage!.draw(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
+
+    var canvas: Canvas = (graphics as HtmlGraphics).get(scaledPlayNImage as HtmlImage)!;;
+    
+originalPlayNImage = originalPlayNImageoriginalPlayNImage as ImageImpl
+originalPlayNImage.
+                    draw(canvas.gc(), 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
     
 
 

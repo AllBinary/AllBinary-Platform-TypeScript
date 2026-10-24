@@ -47,9 +47,6 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
 import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
 //not GWT import const SWTJOGLProcessor
 
-//not plain js import { LogUtil } 
-const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -85,8 +82,6 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
 export class TextAnimation extends IndexedAnimation implements UpdateMyFontInterface {
         
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 

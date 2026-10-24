@@ -48,6 +48,9 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
 
+import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
+//not GWT import const BasicColorUtil
+
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
@@ -122,7 +125,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private keyMappingArray: BasicArrayList[] = [];
 
-    private actionBasicColor: BasicColor[] = [];
+    private actionBasicColor: BasicColor[] = BasicColorUtil.getInstance()!.ZERO_ARRAY;
 
     private inputBasicColorArray: BasicColor[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
                                                             ;

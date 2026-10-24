@@ -20,6 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 
 
 
@@ -49,7 +52,13 @@ export class ToDomHelper
                         if(value == 
                                     null
                                 )
-                        value= "null"
+                        
+                                    {
+                                    value= StringUtil.getInstance()!.NULL_STRING;
+    
+
+                                    }
+                                
 
 
 

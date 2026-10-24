@@ -71,6 +71,9 @@ import { DomSearchHelper } from '../../org/allbinary/data/tree/dom/DomSearchHelp
 import { DomDocumentHelper } from '../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
@@ -225,7 +228,7 @@ xmlRequest= keyArray[index]! as string;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    this.logUtil!.putF(DomDocumentHelper.toString(document), this, "getXmlData()");
+                                    this.logUtil!.putF(XmlDocumentHelper.toString(document), this, "getXmlData()");
     
 
                                     }
@@ -528,7 +531,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
     var document: Document = new CategoryComponent(this.childCategoryInterface).toXmlDoc()!;;
     
 
-    var xmlString: string = DomDocumentHelper.toString(document)!;;
+    var xmlString: string = XmlDocumentHelper.toString(document)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

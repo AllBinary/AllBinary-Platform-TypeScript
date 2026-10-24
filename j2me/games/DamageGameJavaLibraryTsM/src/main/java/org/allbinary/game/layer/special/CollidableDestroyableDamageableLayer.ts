@@ -118,7 +118,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer implements DestroyableInterface, DamageableInterface, PickupCompositeInterface, SpecialGameInputInterface {
         
 
-    public static NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: any = NullUtil.getInstance()!.NULL_OBJECT;
+    private static NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getNullInstance(): CollidableDestroyableDamageableLayer{
 

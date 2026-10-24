@@ -22,6 +22,9 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+import { ByteArrayOutputStream } from '../../../../../../java/io/ByteArrayOutputStream.js';
+//not GWT import const ByteArrayOutputStream
+
 import { StringReader } from '../../../../../../java/io/StringReader.js';
 //not GWT import const StringReader
 
@@ -100,6 +103,48 @@ export class XmlDocumentHelper
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return XmlDocumentHelper.instance;
     
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public static toString(document: Document): string{
+
+        try {
+            
+    var domSource: DOMSource = new DOMSource(document);;
+    
+
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    
+
+    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
+    
+
+    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+    
+
+    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
+    
+copyTransformer!.transform(domSource, streamResult);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return byteArrayOutputStream!.toString();;
+    
+
+                //: 
+} catch(e) 
+            {
+
+
+
+                            throw e;
+                    
+}
+
 }
 
 

@@ -93,6 +93,29 @@ this.charArray[this.currentLength++]= c;
 }
 
 
+    public appendCharArray(charArray: string[], start: number, end: number): StringMaker{
+this.ensureCapacity(this.currentLength +(end -start));
+    
+
+
+
+
+                        for (
+    var index: number = start;index < end; index++)
+        {
+this.charArray[this.currentLength++]= charArray[index]!;
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this;
+    
+}
+
+
     public appendbyte(b: number): StringMaker{
 this.append(b.toString());
     

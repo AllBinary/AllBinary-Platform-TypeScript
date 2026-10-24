@@ -103,6 +103,18 @@ export class ImageFactory
 }
 
 
+                //@Throws(Exception.constructor)
+            
+    public createImageFromInputStream(inputStream: InputStream): Image{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return Image.createImageFromInputStream(inputStream);;
+    
+}
+
+
 }
 
 

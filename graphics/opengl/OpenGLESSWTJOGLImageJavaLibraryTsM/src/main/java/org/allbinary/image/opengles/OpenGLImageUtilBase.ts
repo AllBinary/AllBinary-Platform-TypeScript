@@ -20,6 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
+            import { Exception } from '../../../../java/lang/Exception.js';
+        
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { IOException } from '../../../../java/io/IOException.js';
@@ -87,7 +89,7 @@ export class OpenGLImageUtilBase
 }
 
 
-                //@Throws(IOException.constructor)
+                //@Throws(Exception.constructor)
             
     public createImageFromInputStream(inputStream: InputStream): OpenGLBitmap{
 

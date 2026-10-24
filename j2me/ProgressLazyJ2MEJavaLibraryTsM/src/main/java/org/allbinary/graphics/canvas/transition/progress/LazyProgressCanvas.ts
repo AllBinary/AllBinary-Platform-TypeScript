@@ -32,9 +32,6 @@ import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/Nu
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
 //not GWT import const ImageCacheFactory
 
-//not plain js import { LogUtil } 
-const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
 
 
 
@@ -59,9 +56,7 @@ const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 export class LazyProgressCanvas extends ProgressCanvas {
         
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
-protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
                     
 
@@ -85,7 +80,7 @@ this.hasPainted= false;
     
 this.endActual();
     
-this.paintable= GAUGE_PAINTABLE;
+this.paintable= this.GAUGE_PAINTABLE;
     
 ImageCacheFactory.getInstance()!.runTask();
     
@@ -103,7 +98,7 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_
 
 
     public inGame(){
-inGameProcessor= Processor.getInstance();
+this.inGameProcessor= Processor.getInstance();
     
 }
 
@@ -118,7 +113,7 @@ this.paintable= NullPaintable.getInstance();
 
     public endIfPaintedSinceStart(){
 
-                        if(this.paintable == GAUGE_PAINTABLE && this.hasPainted)
+                        if(this.paintable == this.GAUGE_PAINTABLE && this.hasPainted)
                         
                                     {
                                     this.endFromInitialLazyLoadingComplete();

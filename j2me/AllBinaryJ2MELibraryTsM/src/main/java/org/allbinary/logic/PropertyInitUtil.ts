@@ -23,6 +23,9 @@
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
@@ -59,7 +62,7 @@ export class PropertyInitUtil
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.putF("PropertyInitUtil: " +value, logUtil, commonStrings!.CONSTRUCTOR);
+logUtil!.putF(new StringMaker().append("PropertyInitUtil: ")!.appendint(value)!.toString(), logUtil, commonStrings!.CONSTRUCTOR);
     
 
 

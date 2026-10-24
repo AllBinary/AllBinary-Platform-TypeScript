@@ -20,16 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-            import { Exception } from '../../../../../java/lang/Exception.js';
-        
 import { Serializable } from '../../../../../java/io/Serializable.js';
 //not GWT import const Serializable
-
-//not plain js import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
-//not plain js import { BasicArrayListD } 
-const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
 
 
@@ -49,66 +41,13 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { BasicUserRoles } from './BasicUserRoles.js';
+//not GWT import - same folder const BasicUserRoles
+
 export class BasicUserRole
             extends Object
          implements Serializable {
         
-
-    private static readonly roleVector: BasicArrayList = new BasicArrayListD();
-
-                //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
-
-    public static getRole(role: string): BasicUserRole{
-
-    var roleVector: BasicArrayList = BasicUserRole.getAll()!;;
-    
-
-    var size: number = roleVector!.size()!;;
-    
-
-
-
-
-                        for (
-    var index: number = 0;index < size; index++)
-        {
-
-    var userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;;
-    
-
-                        if(role.compareTo(userRole!.toString()) == 0)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return userRole;
-    
-
-                                    }
-                                
-}
-
-
-
-
-                            throw new Exception("Unable to get role - Unknown Role");
-                    
-}
-
-
-    public static getAll(): BasicArrayList{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicUserRole.roleVector;
-    
-}
-
 
     private readonly m_int_RoleId: number;
 
@@ -142,7 +81,7 @@ this.sessionTimeout= aSessionTimeout;
     
 this.sessionInactivityTimeout= aSessionInactivityTimeout;
     
-BasicUserRole.roleVector!.add(this);
+BasicUserRoles.getInstance()!.roleVector!.add(this);
     
 }
 

@@ -20,8 +20,14 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
+//not plain js import { StringUtil } 
+const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+//not plain js import { BasicArrayListUtil } 
+const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 
 
 
@@ -47,11 +53,11 @@ export class Shader
          {
         
 
-    public shaderName: string;
+    public shaderName: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    public shaderStringList: BasicArrayList;
+    public shaderStringList: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
-    public shaderAsString: string;
+    public shaderAsString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     public shaderHandle: number= 0;
 

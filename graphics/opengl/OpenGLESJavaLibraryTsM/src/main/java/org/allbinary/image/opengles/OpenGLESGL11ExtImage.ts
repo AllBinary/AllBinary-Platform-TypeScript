@@ -89,8 +89,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 
                             //For kotlin this is before the body of the constructor.
                     
-this.onDisplayChangeEvent(
-                            null);
+this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent);
     
 this.rectangle= [0,this.getHeight(), this.getWidth(),  -this.getHeight();];
     
@@ -116,8 +115,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
 
 
     public set(gl: GL){
-this.onDisplayChangeEvent(
-                            null);
+this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent);
     
 
     var gl11: GL11 = gl as GL11;;
@@ -145,9 +143,10 @@ gl.glEnable(GL10.GL_TEXTURE_2D);
     
 gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);
     
-gl = glgl as GL11Ext
-gl.
-                    glDrawTexfOES(x, this.a -y, z, this.getWidth(), this.getHeight());
+
+    var gl11Ext: GL11Ext = gl as GL11Ext;;
+    
+gl11Ext!.glDrawTexfOES(x, (this.a -y), z, this.getWidth(), this.getHeight());
     
 gl.glDisable(GL10.GL_TEXTURE_2D);
     

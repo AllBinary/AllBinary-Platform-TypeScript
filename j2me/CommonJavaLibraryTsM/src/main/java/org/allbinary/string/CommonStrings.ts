@@ -164,6 +164,8 @@ export class CommonStrings
 
     public readonly REMOVE_LISTENER: string = "removeListener";
 
+    public readonly SIZE: string = "size";
+
 }
 
 

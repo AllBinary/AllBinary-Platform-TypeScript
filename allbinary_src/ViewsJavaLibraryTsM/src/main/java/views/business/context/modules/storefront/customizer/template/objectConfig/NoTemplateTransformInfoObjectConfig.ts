@@ -29,6 +29,9 @@ import { StoreFrontData } from '../../../../../../../../org/allbinary/business/c
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -115,7 +118,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     generate(objectConfigDocument: Document): Document{
 
-    var docString: string = DomDocumentHelper.toString(objectConfigDocument)!;;
+    var docString: string = XmlDocumentHelper.toString(objectConfigDocument)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -157,7 +160,7 @@ hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Final ObjectConfig: " +DomDocumentHelper.toString(newObjectConfigDocument), this, "generate()");
+                                    this.logUtil!.putF("Final ObjectConfig: " +XmlDocumentHelper.toString(newObjectConfigDocument), this, "generate()");
     
 
                                     }

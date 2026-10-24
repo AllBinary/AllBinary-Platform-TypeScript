@@ -152,7 +152,7 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
                         
                                     {
                                     
-    var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
+    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
     
 
                         if(randomInt == 0)

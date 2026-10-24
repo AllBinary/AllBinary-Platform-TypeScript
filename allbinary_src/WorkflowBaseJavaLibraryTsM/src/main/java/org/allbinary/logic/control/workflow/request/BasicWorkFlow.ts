@@ -54,6 +54,9 @@ import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModD
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
 
@@ -203,7 +206,7 @@ values.add(this.workFlowName);
     
 values.add(this.storeName);
     
-values.add(DomDocumentHelper.toString(this.workFlowDoc));
+values.add(XmlDocumentHelper.toString(this.workFlowDoc));
     
 
     var calendar: Calendar = Calendar.getInstance()!;;
@@ -234,7 +237,7 @@ hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName);
     
 hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
-hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDoc));
+hashMap!.put(WorkFlowData.getInstance()!.DATA, XmlDocumentHelper.toString(this.workFlowDoc));
     
 
     var calendar: Calendar = Calendar.getInstance()!;;

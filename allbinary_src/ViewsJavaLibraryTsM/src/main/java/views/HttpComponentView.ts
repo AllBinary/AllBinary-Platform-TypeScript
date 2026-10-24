@@ -32,11 +32,8 @@ import { DomNodeHelper } from '../org/allbinary/data/tree/dom/DomNodeHelper.js';
 import { DomNodeInterface } from '../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
 
-import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
-
-//not plain js import { StdUtil } 
-const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+import { XmlDocumentHelper } from '../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -257,7 +254,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
             this.toXmlDoc();
     
 
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
+    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
     var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;

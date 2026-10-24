@@ -230,11 +230,36 @@ this.rectangleHashtable!.put(resource, rectangle);
             
     public getRectangleArrayOfArrays(resource: string): Rectangle[][]{
 
+    var valueCanBeNull: any = this.rectangleArrayOfArraysHashtable!.get(resource);;
+    
+
+                        if(valueCanBeNull != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+    var rectangleArrayOfArrays: Rectangle[][] = valueCanBeNull as Rectangle[][];;
+    
+
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rectangleArrayOfArraysHashtable!.get(resource)as Rectangle[][];
+                        return rectangleArrayOfArrays;
     
+
+                                    }
+                                
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return RectangleFactory.ARRAY_OF_ARRAYS;
+    
+
+                        }
+                            
 }
 
 

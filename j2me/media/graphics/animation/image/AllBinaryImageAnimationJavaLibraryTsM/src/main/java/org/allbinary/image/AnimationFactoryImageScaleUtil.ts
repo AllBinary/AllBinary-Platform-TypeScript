@@ -31,11 +31,23 @@ import { AnimationFactoryInitializationVisitor } from '../../../org/allbinary/an
 import { BaseImageAnimationFactory } from '../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 //not GWT import const BaseImageAnimationFactory
 
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+//not plain js import { StringMaker } 
+const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
 
 import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
 //not GWT import const ImageJ2MEScaleUtil
+
+//not plain js import { CommonLabels } 
+const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
+//not plain js import { CommonStrings } 
+const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
 
 
@@ -101,7 +113,13 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            scaledImage= this.imageScaleUtil!.scale(image, Math.round((scaleX *width)), Math.round((scaleY *height)));
+                            
+    var scaledWidth: number = Math.round((scaleX *width));;
+    
+
+    var scaledHeight: number = Math.round((scaleY *height));;
+    
+scaledImage= this.imageScaleUtil!.scale(image, scaledWidth, scaledHeight);
     
 
                         }

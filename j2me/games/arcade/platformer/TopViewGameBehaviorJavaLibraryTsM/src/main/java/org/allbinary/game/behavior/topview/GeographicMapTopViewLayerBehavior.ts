@@ -35,6 +35,9 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
 import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
 
+import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
+//not GWT import const SimpleGeographicMapCellPositionFactory
+
 import { BasicTopViewGeographicMapCellTypeFactory } from '../../../../../org/allbinary/media/graphics/geography/map/topview/BasicTopViewGeographicMapCellTypeFactory.js';
 //not GWT import const BasicTopViewGeographicMapCellTypeFactory
 
@@ -81,7 +84,7 @@ public constructor (maxGravityActionIndex: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 }
 
@@ -93,7 +96,7 @@ public constructor (maxGravityActionIndex: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 }
 
@@ -105,7 +108,7 @@ public constructor (maxGravityActionIndex: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 }
 

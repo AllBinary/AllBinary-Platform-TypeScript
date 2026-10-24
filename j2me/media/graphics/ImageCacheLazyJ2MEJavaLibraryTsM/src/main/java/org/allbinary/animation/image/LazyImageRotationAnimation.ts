@@ -62,9 +62,6 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
-//not plain js import { CommonStrings } 
-const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
@@ -102,8 +99,6 @@ export class LazyImageRotationAnimation extends RotationAnimation {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-
     public readonly layoutIndex: number;
 
     public readonly instanceId: number;
@@ -137,14 +132,31 @@ this.scaleProperties= scaleProperties;
     
 this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
     
-this.animation= new class extends RotationAnimation
-                                {
-                                
+
+//inner=true member= isStatic=
+class ActualRotationAnimation extends RotationAnimation {
+        
+
+    private readonly lazyImageRotationAnimation: LazyImageRotationAnimation;
+
     private index: number= 0;
+
+public constructor (lazyImageRotationAnimation: LazyImageRotationAnimation){
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.lazyImageRotationAnimation= lazyImageRotationAnimation;
+    
+}
+
+
     public setFrame(index: number){
 this.index= index;
     
 }
+
 
     public getFrame(): number{
 
@@ -155,12 +167,13 @@ this.index= index;
     
 }
 
+
     public paintXY(graphics: Graphics, x: number, y: number){
 
         try {
             ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
     
-animation= NULL_INDEX_ANIMATION;
+this.lazyImageRotationAnimation!.animation= this.lazyImageRotationAnimation!.NULL_INDEX_ANIMATION;
     
 
                 //: 
@@ -174,13 +187,14 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 }
 
 }
+
 
     public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
         try {
             ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
     
-animation= NULL_INDEX_ANIMATION;
+this.lazyImageRotationAnimation!.animation= this.lazyImageRotationAnimation!.NULL_INDEX_ANIMATION;
     
 
                 //: 
@@ -195,8 +209,14 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 
 }
 
-                                }
-                            ;
+
+}
+
+
+
+                    //Otherwise - statement - EmptyStmt
+
+this.animation= new ActualRotationAnimation(this);
     
 }
 
@@ -217,7 +237,7 @@ this.animation.setState(animation);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_REAL_ANIMATION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, LazyImageRotationAnimation.SET_REAL_ANIMATION, e);
     
 }
 
@@ -273,49 +293,55 @@ this.animation.setMaxScale(maxScaleX, maxScaleY);
 
 
     public nextRotation(){
-animation = this.animationanimation as RotationAnimation
-animation.
-                    nextRotation();
+
+    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    
+rotationAnimation!.nextRotation();
     
 }
 
 
     public previousRotation(){
-animation = this.animationanimation as RotationAnimation
-animation.
-                    previousRotation();
+
+    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    
+rotationAnimation!.previousRotation();
     
 }
 
 
     public nextRotationX(){
-animation = this.animationanimation as RotationAnimation
-animation.
-                    nextRotationX();
+
+    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    
+rotationAnimation!.nextRotationX();
     
 }
 
 
     public previousRotationX(){
-animation = this.animationanimation as RotationAnimation
-animation.
-                    previousRotationX();
+
+    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    
+rotationAnimation!.previousRotationX();
     
 }
 
 
     public nextRotationZ(){
-animation = this.animationanimation as RotationAnimation
-animation.
-                    nextRotationZ();
+
+    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    
+rotationAnimation!.nextRotationZ();
     
 }
 
 
     public previousRotationZ(){
-animation = this.animationanimation as RotationAnimation
-animation.
-                    previousRotationZ();
+
+    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    
+rotationAnimation!.previousRotationZ();
     
 }
 
@@ -499,7 +525,7 @@ this.animation.setSequence(sequence);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
 }
 
@@ -515,7 +541,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
 }
 

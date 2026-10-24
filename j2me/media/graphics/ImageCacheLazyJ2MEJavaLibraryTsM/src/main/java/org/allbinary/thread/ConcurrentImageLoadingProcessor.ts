@@ -57,6 +57,8 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 //not GWT import - same folder const BaseImageLoadingProcessor
 import { ABRunnable } from './ABRunnable.js';
 //not GWT import - same folder const ABRunnable
+//import { ImageCacheRunnable } from './ImageCacheRunnable.js';
+//not GWT import - same folder const ImageCacheRunnable
 import { ImageThreadPool } from './ImageThreadPool.js';
 //not GWT import - same folder const ImageThreadPool
 
@@ -65,13 +67,20 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+//inner= member=true isStatic=
+ImageCacheRunnable = class extends ABRunnable {
+        
 
     private readonly imageCache: ImageCache;
 
-    private readonly runnable: ABRunnable = new class extends ABRunnable
-                                {
-                                
+public constructor (imageCache: ImageCache){
+
+            super();
+        this.imageCache= imageCache;
+    
+}
+
+
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
@@ -80,11 +89,11 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
         try {
             this.setRunning(true);
     
-imageCache!.waitForLoadNow();
+this.imageCache!.waitForLoadNow();
     
-imageCache!.loadImages();
+this.imageCache!.loadImages();
     
-imageCache!.loadRemainingAnimations();
+this.imageCache!.loadRemainingAnimations();
     
 this.setRunning(false);
     
@@ -106,19 +115,25 @@ this.setRunning(false);
             {
 this.setRunning(false);
     
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 
 }
 
-                                }
-                            ;
+
+}
+
+
+    private readonly runnable: ABRunnable;
 
 public constructor (imageCache: ImageCache){
 
             super();
-        this.imageCache= imageCache;
+        this.runnable= new this.ImageCacheRunnable(imageCache);
     
 }
 

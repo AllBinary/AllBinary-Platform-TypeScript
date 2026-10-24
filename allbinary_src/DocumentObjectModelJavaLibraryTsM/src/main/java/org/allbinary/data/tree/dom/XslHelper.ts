@@ -34,6 +34,9 @@ import { OutputStream } from '../../../../../java/io/OutputStream.js';
 import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
 //not GWT import const StringBufferInputStream
 
+import { Templates } from '../../../../../javax/xml/transform/Templates.js';
+//not GWT import const Templates
+
 import { Transformer } from '../../../../../javax/xml/transform/Transformer.js';
 //not GWT import const Transformer
 
@@ -49,8 +52,8 @@ import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamRe
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 //not GWT import const StreamSource
 
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -167,6 +170,39 @@ transformer.transform(xmlStreamSource, streamResult);
 
                 //@Throws(Exception.constructor)
             
+    public translateTemplate(templates: Templates, xmlStreamSource: StreamSource): string{
+
+        try {
+            
+    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    
+
+    var streamResult: StreamResult = new StreamResult(outputStream);;
+    
+templates.newTransformer()!.transform(xmlStreamSource, streamResult);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return streamResult!.getOutputStream()!.toString();;
+    
+
+                //: 
+} catch(e) 
+            {
+
+
+
+                            throw e;
+                    
+}
+
+}
+
+
+                //@Throws(Exception.constructor)
+            
     public translate(xsltStreamSource: StreamSource, xmlDocument: Document): string{
 
         try {
@@ -177,7 +213,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(xsltStreamSource, new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), new StreamResult(outputStream))!.toString();;
+                        return this.translate(xsltStreamSource, new StreamSource(new StringBufferInputStream(XmlDocumentHelper.toString(xmlDocument))), new StreamResult(outputStream))!.toString();;
     
 
                 //: 
@@ -256,7 +292,7 @@ transformer.transform(xmlStreamSource, streamResult);
         try {
             outputFile!.createNewFile();
     
-this.translate(new StreamSource(xsltFilePath), new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), new StreamResult(outputFile));
+this.translate(new StreamSource(xsltFilePath), new StreamSource(new StringBufferInputStream(XmlDocumentHelper.toString(xmlDocument))), new StreamResult(outputFile));
     
 
                 //: 

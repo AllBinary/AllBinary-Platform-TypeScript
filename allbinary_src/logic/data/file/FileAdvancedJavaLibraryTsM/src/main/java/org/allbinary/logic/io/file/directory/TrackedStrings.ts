@@ -76,6 +76,8 @@ export class TrackedStrings
 
     public readonly PATHSPEC_SEPARATOR: string = "--";
 
+    public readonly SEP_BY_NULL_CHAR_INSTEAD_OF_NEW_LINE: string = "-z";
+
 }
 
 

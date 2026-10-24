@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -197,7 +197,7 @@ this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.toString(this.getTransformDocumentInterface()!.getDoc());;
+                        return XmlDocumentHelper.toString(this.getTransformDocumentInterface()!.getDoc());;
     
 }
 

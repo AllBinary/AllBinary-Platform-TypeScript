@@ -24,6 +24,10 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
+            import { Float } from '../../java/lang/Float.js';
+        
+            import { Double } from '../../java/lang/Double.js';
+        
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
 
@@ -77,6 +81,26 @@ export class TsUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return TsUtil.instance;
+    
+}
+
+
+    public longBitsToDouble(bits: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return java.lang.Double.longBitsToDouble(bits);;
+    
+}
+
+
+    public intBitsToFloat(bits: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return java.lang.Float.intBitsToFloat(bits);;
     
 }
 

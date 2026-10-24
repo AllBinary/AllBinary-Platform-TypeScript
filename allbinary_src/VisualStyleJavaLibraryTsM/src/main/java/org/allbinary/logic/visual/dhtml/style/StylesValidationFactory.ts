@@ -34,8 +34,8 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
 
-import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 import { NameSpaceRequestParamData } from '../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParamData.js';
 //not GWT import const NameSpaceRequestParamData
@@ -137,7 +137,7 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Style Present: " +DomDocumentHelper.toString(document), this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Style Present: " +XmlDocumentHelper.toString(document), this, commonStrings!.GET_INSTANCE);
     
 
                                     }

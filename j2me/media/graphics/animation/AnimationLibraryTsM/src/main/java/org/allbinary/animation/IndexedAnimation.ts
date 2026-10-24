@@ -20,6 +20,9 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
+//not plain js import { LogUtil } 
+const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
 
@@ -53,6 +56,8 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class IndexedAnimation extends Animation implements IndexedAnimationInterface {
         
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 

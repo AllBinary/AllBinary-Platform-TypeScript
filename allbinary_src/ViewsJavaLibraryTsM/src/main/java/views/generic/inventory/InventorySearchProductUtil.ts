@@ -22,9 +22,6 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not plain js import { BasicArrayList } 
-const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
-
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
@@ -40,8 +37,8 @@ import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerc
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 //not GWT import const InventoryEntityFactory
 
-import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -135,7 +132,7 @@ export class InventorySearchProductUtil
 viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(viewDocumentInterface!.getDoc()));
     
 
-    var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
+    var success: string = XmlDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
     
 
     var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success)!;;

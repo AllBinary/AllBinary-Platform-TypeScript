@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -67,6 +67,9 @@ export class AngleIncrementInfoFactory
     var halfAngleIncrement: number = (Math.round(angleIncrement)>>1);;
     
 
+    var angleIncrementInfo: AngleIncrementInfo;;
+    
+
     var angleIncrementInfoCanBeNull: AngleIncrementInfo = this.angleIncrementInfo[halfAngleIncrement];;
     
 
@@ -75,18 +78,30 @@ export class AngleIncrementInfoFactory
                                 )
                         
                                     {
-                                    angleIncrementInfoCanBeNull= new AngleIncrementInfo(angleIncrement);
+                                    angleIncrementInfo= new AngleIncrementInfo(angleIncrement);
     
-this.angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull;
+this.angleIncrementInfo[halfAngleIncrement]= angleIncrementInfo;
     
-
-                                    }
-                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return angleIncrementInfoCanBeNull;
+                        return angleIncrementInfo;
+    
+
+                                    }
+                                
+                        else {
+                            angleIncrementInfo= angleIncrementInfoCanBeNull;
+    
+
+                        }
+                            
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return angleIncrementInfo;
     
 }
 

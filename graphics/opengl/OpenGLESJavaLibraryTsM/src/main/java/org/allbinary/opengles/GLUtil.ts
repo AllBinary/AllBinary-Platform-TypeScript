@@ -72,6 +72,8 @@ export class GLUtil
 
     private readonly BYTES_PER_FLOAT: number = 4;
 
+    public readonly NULL_FLOAT_BUFFER: FloatBuffer = ByteBuffer.allocateDirect(0)!.asFloatBuffer()!;
+
     public makeFloatBuffer3(p_a: number, p_b: number, p_c: number): FloatBuffer{
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(3 *this.BYTES_PER_FLOAT)!;;
@@ -144,7 +146,7 @@ b.order(ByteOrder.nativeOrder());
 
         while(byteBuffer!.hasRemaining())
         {
-unsigned= byteBuffer!.get()&0xFF;
+unsigned= (Math.round(byteBuffer!.get()))&0xFF;
     
 v= (unsigned) /255;
     

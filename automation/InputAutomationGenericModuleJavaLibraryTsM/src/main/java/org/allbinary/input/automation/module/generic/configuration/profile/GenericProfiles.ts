@@ -46,6 +46,9 @@ import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tre
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
+import { XmlDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
+
 import { DomDocumentMappingInterface } from '../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 //not GWT import const DomDocumentMappingInterface
 
@@ -360,7 +363,7 @@ document.appendChild(node);
     var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 
-    var documentString: string = DomDocumentHelper.toString(this.toXmlDoc())!;;
+    var documentString: string = XmlDocumentHelper.toString(this.toXmlDoc())!;;
     
 idOutData!.writeBytes(documentString);
     

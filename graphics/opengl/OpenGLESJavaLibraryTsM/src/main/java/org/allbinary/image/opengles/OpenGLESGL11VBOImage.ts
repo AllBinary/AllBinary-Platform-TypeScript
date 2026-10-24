@@ -136,7 +136,31 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this);
 }
 
 
-    readonly regionRectangleFloatArray: number[] = [0,0,0,0,0,0,0,0,0,0,0,0];
+    readonly regionRectangleFloatArray: number[] = [
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+
+                                //Otherwise - values - DoubleLiteralExpr
+];
 
     regionRectangleVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *3)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
 
@@ -163,9 +187,9 @@ this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!;
     
 this.regionTextureRectangleFloatArray[0]= x_src /this.getWidth();
     
-this.regionTextureRectangleFloatArray[1]= () /this.getHeight();
+this.regionTextureRectangleFloatArray[1]= (y_src +height) /this.getHeight();
     
-this.regionTextureRectangleFloatArray[2]= () /this.getWidth();
+this.regionTextureRectangleFloatArray[2]= (x_src +width) /this.getWidth();
     
 this.regionTextureRectangleFloatArray[3]= this.regionTextureRectangleFloatArray[1]!;
     
@@ -207,11 +231,11 @@ gl.glDisable(GL10.GL_TEXTURE_2D);
     public draw(gl: GL10, x: number, y: number, z: number){
 this.regionRectangleFloatArray[0]= x;
     
-this.regionRectangleFloatArray[7]= DisplayInfoSingleton.getInstance()!.getLastHeight() -y;
+this.regionRectangleFloatArray[7]= (DisplayInfoSingleton.getInstance()!.getLastHeight() -y);
     
 this.regionRectangleFloatArray[1]= this.regionRectangleFloatArray[7] -this.getHeight();
     
-this.regionRectangleFloatArray[3]= x +this.getWidth();
+this.regionRectangleFloatArray[3]= (x +this.getWidth());
     
 this.regionRectangleFloatArray[4]= this.regionRectangleFloatArray[1]!;
     

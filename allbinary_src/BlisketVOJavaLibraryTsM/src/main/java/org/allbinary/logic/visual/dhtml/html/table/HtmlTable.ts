@@ -90,8 +90,6 @@ export class HtmlTable extends HtmlTag {
 
     private readonly RULES: string = "rules";
 
-    private readonly WIDTH: string = "width";
-
     private readonly STYLE: string = "style";
 
     public readonly BORDERCOLLAPSE: string = "border-collapse: collapse";

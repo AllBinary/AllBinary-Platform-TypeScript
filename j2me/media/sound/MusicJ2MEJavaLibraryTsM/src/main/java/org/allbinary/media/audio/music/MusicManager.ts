@@ -84,7 +84,9 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //import { MusicManagerPlayerListener } from './MusicManagerPlayerListener.js';
+//not GWT import - same folder const MusicManagerPlayerListener
+
 export class MusicManager
             extends Object
          {
@@ -101,10 +103,13 @@ export class MusicManager
     private readonly playerStateUtil: PlayerStateUtil = PlayerStateUtil.getInstance()!;
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
+//Handle Media ending for Avian
+//inner= member=true isStatic=
+MusicManagerPlayerListener = class
+            extends Object
+         implements PlayerListener {
+        
 
-    private readonly playerListener: PlayerListener = new class extends PlayerListener
-                                {
-                                
     public playerUpdate(player: Player, event: string, eventData: any = {}){
 PreLogUtil.put(event, this, commonStrings!.PROCESS);
     
@@ -119,8 +124,11 @@ PreLogUtil.put(event, this, commonStrings!.PROCESS);
                                 
 }
 
-                                }
-                            ;
+
+}
+
+
+    private readonly playerListener: PlayerListener = new this.MusicManagerPlayerListener();
 
     private readonly PLAY: string = "Play ";
 
@@ -258,7 +266,7 @@ this.nextSongSound= NoSound.getInstance();
     var startingCurrentSongSound: Sound = this.currentSongSound;;
     
 
-    var duration: number = this.currentSongSound!.getDuration()!;;
+    var duration: number = this.currentSongSound!.getDuration();;
     
 this.timeDelayHelper!.delay= Math.round(duration);
     

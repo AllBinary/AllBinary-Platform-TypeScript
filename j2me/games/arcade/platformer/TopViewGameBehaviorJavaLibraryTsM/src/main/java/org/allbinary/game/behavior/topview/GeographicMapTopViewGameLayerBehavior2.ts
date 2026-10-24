@@ -44,6 +44,9 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
 import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
 
+import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
+//not GWT import const SimpleGeographicMapCellPositionFactory
+
 
 
 
@@ -78,7 +81,7 @@ export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopView
 
     private readonly offsetY: number;
 
-    private previousGeographicMapCellPosition: GeographicMapCellPosition;
+    private previousGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
 
 public constructor (maxGravityActionIndex: number, autoStepBlocks: boolean, offsetY: number){
             super(maxGravityActionIndex);
@@ -97,9 +100,7 @@ this.offsetY= offsetY;
             
     public gravity(velocityProperties: VelocityProperties, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
 
-                        if(geographicMapCellPosition != 
-                                    null
-                                )
+                        if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition);
@@ -242,9 +243,7 @@ this.gravity();
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = 
-                null
-            ;;
+    var geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;;
     
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopLeft(geographicMapInterfaceArray, layer, x, y)!;;
@@ -252,16 +251,14 @@ this.gravity();
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topLeftGeographicMapCellPosition, velocityProperties, layer);
     
 
-                        if(geographicMapCellPosition == 
-                                    null
-                                )
+                        if(geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
                                     }
@@ -272,16 +269,14 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topRightGeographicMapCellPosition, velocityProperties, layer);
     
 
-                        if(geographicMapCellPosition == 
-                                    null
-                                )
+                        if(geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
                                     }
@@ -292,16 +287,14 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomLeftGeographicMapCellPosition, velocityProperties, layer);
     
 
-                        if(geographicMapCellPosition == 
-                                    null
-                                )
+                        if(geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
                                     }
@@ -312,9 +305,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomRightGeographicMapCellPosition, velocityProperties, layer);
     
 
-                        if(geographicMapCellPosition == 
-                                    null
-                                )
+                        if(geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
@@ -337,9 +328,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
 
-                        if(geographicMapCellPosition != 
-                                    null
-                                )
+                        if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
@@ -364,15 +353,13 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                         if(hasSolidBlock || hasOffMap)
                         
                                     {
-                                    this.previousGeographicMapCellPosition= 
-                                        null
-                                    ;
+                                    this.previousGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
                                     }
@@ -399,15 +386,13 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                             
                         }
                             
-this.previousGeographicMapCellPosition= 
-                                        null
-                                    ;
+this.previousGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return null;
+                        return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 }
 
@@ -416,14 +401,13 @@ this.previousGeographicMapCellPosition=
             
     public moveAndLand(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number){
 
-                        if(geographicMapCellPosition != 
-                                    null
-                                )
+                        if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    layer = layerlayer as TopViewCharacterInterface
-layer.
-                    terrainMove(geographicMapInterfaceArray, geographicMapCellTypeArray, x, y);
+                                    
+    var topViewCharacterInterface: TopViewCharacterInterface = (layer as TopViewCharacterInterface);;
+    
+topViewCharacterInterface!.terrainMove(geographicMapInterfaceArray, geographicMapCellTypeArray, x, y);
     
 
                                     }
@@ -444,9 +428,7 @@ layer.
 this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y);
     
 
-                        if(geographicMapCellPosition == 
-                                    null
-                                )
+                        if(geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
@@ -478,9 +460,7 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
     var geographicMapCellPosition: GeographicMapCellPosition = this.getLeftPosition(geographicMapInterfaceArray, layer)!;;
     
 
-                        if(geographicMapCellPosition != 
-                                    null
-                                )
+                        if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
@@ -499,9 +479,10 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         if(this.autoStepBlocks)
                         
                                     {
-                                    layer = layerlayer as TopViewCharacterInterface
-layer.
-                    leftp();
+                                    
+    var topViewCharacterInterface: TopViewCharacterInterface = (layer as TopViewCharacterInterface);;
+    
+topViewCharacterInterface!.leftp();
     
 
                                     }
@@ -516,9 +497,10 @@ layer.
                                     }
                                 
                         else {
-                            layer = layerlayer as TopViewCharacterInterface
-layer.
-                    leftp();
+                            
+    var topViewCharacterInterface: TopViewCharacterInterface = (layer as TopViewCharacterInterface);;
+    
+topViewCharacterInterface!.leftp();
     
 
                         }
@@ -536,9 +518,7 @@ layer.
     var geographicMapCellPosition: GeographicMapCellPosition = this.getRightPosition(geographicMapInterfaceArray, layer)!;;
     
 
-                        if(geographicMapCellPosition != 
-                                    null
-                                )
+                        if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
@@ -557,9 +537,10 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         if(this.autoStepBlocks)
                         
                                     {
-                                    layer = layerlayer as TopViewCharacterInterface
-layer.
-                    rightp();
+                                    
+    var topViewCharacterInterface: TopViewCharacterInterface = (layer as TopViewCharacterInterface);;
+    
+topViewCharacterInterface!.rightp();
     
 
                                     }
@@ -574,9 +555,10 @@ layer.
                                     }
                                 
                         else {
-                            layer = layerlayer as TopViewCharacterInterface
-layer.
-                    rightp();
+                            
+    var topViewCharacterInterface: TopViewCharacterInterface = (layer as TopViewCharacterInterface);;
+    
+topViewCharacterInterface!.rightp();
     
 
                         }

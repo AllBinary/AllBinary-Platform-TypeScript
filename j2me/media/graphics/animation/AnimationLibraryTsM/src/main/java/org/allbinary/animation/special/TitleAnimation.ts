@@ -44,9 +44,6 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 
-//not plain js import { LogUtil } 
-const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
-
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
 
@@ -83,8 +80,6 @@ export class TitleAnimation extends SpecialAnimation {
     
 }
 
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;
 

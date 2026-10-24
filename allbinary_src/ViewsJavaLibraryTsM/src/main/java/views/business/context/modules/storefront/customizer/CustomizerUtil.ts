@@ -25,9 +25,6 @@
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
-//not plain js import { BasicArrayListD } 
-const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
-
 import { TransformInfoEntity } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 //not GWT import const TransformInfoEntity
 
@@ -39,6 +36,9 @@ import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/
 
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
+
+import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -243,7 +243,7 @@ private constructor (){
 document.appendChild(domNodeInterface!.toXmlNode(document));
     
 
-    var documentString: string = DomDocumentHelper.toString(document)!;;
+    var documentString: string = XmlDocumentHelper.toString(document)!;;
     
 
     var stringBuffer: StringMaker = new StringMaker();;

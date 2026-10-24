@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-//not GWT import const DomDocumentHelper
+import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -168,7 +168,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Retrieved OverrideObjectConfig: " +DomDocumentHelper.toString(overrideObjectConfigDocument), this, "view()");
+                                    this.logUtil!.putF("Retrieved OverrideObjectConfig: " +XmlDocumentHelper.toString(overrideObjectConfigDocument), this, "view()");
     
 
                                     }

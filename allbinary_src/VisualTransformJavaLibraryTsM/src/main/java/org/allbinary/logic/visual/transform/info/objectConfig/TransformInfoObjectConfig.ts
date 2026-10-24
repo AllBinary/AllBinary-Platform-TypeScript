@@ -37,8 +37,8 @@ import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/do
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 //not GWT import const DomDocumentHelper
 
-//not plain js import { StdUtil } 
-const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+import { XmlDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/XmlDocumentHelper.js';
+//not GWT import const XmlDocumentHelper
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
@@ -810,7 +810,7 @@ this.outputTypeName= outputTypeName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.toString(this.document);;
+                        return XmlDocumentHelper.toString(this.document);;
     
 
                                     }
