@@ -181,8 +181,8 @@ import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayab
 import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
 //not GWT import const GameStateFactory
 
-//not plain js import { ResizableListenerHandler } 
-const ResizableListenerHandler = globalThis.org.allbinary.graphics.ResizableListenerHandler;
+import { ResizableListenerHandler } from '../../../../org/allbinary/graphics/ResizableListenerHandler.js';
+//not GWT import const ResizableListenerHandler
 
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas

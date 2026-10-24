@@ -40,8 +40,8 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //not plain js - same folder import { ResizableListenerInterface } 
-const ResizableListenerInterface = globalThis.org.allbinary.graphics.ResizableListenerInterface;
+        import { ResizableListenerInterface } from './ResizableListenerInterface.js';
+//not GWT import - same folder const ResizableListenerInterface
 
 export class ResizableListenerHandler
             extends Object
