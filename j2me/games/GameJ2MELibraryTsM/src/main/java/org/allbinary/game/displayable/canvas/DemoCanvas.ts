@@ -163,8 +163,8 @@ import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameSt
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 //not GWT import const Rectangle
 
-import { ResizableListenerHandler } from '../../../../../org/allbinary/graphics/ResizableListenerHandler.js';
-//not GWT import const ResizableListenerHandler
+//not plain js import { ResizableListenerHandler } 
+const ResizableListenerHandler = globalThis.org.allbinary.graphics.ResizableListenerHandler;
 
 import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas

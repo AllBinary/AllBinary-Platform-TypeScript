@@ -29,8 +29,8 @@ import { NullPlayerGameInputComposite } from '../../../../org/allbinary/game/inp
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
 //not GWT import const PlayerGameInputCompositeInterface
 
-import { ItemColorFactory } from '../../../../org/allbinary/graphics/ItemColorFactory.js';
-//not GWT import const ItemColorFactory
+//not plain js import { ItemColorFactory } 
+const ItemColorFactory = globalThis.org.allbinary.graphics.ItemColorFactory;
 
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
