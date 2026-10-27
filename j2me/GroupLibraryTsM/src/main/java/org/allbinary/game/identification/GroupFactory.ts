@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -61,7 +61,7 @@ export class GroupFactory
          {
         
 
-    private static instance: GroupFactory = new GroupFactory();
+    private static readonly instance: GroupFactory = new GroupFactory();
 
     public static getInstance(): GroupFactory{
 
@@ -129,10 +129,12 @@ this.index= 0;
     var size: number = this.list.size()!;;
     
 
+    var name: string;;
+    
+
         while(size < groups)
         {
-
-    var name: string = stringUtil!.EMPTY_STRING;;
+name= stringUtil!.EMPTY_STRING;
     
 
                         if(size < nameArray!.length)

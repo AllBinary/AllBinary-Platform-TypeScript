@@ -180,7 +180,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
@@ -336,7 +336,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     var fieldName: string = fieldNameArray[index]! as string;;
     
 
-                        if(fieldName!.compareTo(basicItemData!.IMAGE) == 0)
+                        if(fieldName!.compareTo(this.basicItemData!.IMAGE) == 0)
                         
                                     {
                                     
@@ -346,7 +346,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     var inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);;
     
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(basicItemData!.IMAGE) as FileItem;;
+    var fileItem: FileItem = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE) as FileItem;;
     
 this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);
     

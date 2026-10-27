@@ -36,7 +36,7 @@ import { MediaException } from '../../../../javax/microedition/media/MediaExcept
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
 
-import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+import { PlayerListener, PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
 //not GWT import const PlayerListener
 
 import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';

@@ -170,7 +170,7 @@ this.myFontProcessor= MyFontProcessor.getInstance();
                                     {
                                     this.myFontProcessor!.process(graphics);
     
-graphics.drawString(this.startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, this.anchor);
+graphics.drawString(this.startString, this.displayInfo!.getLastHalfWidth() -beginWidth, this.displayInfo!.getLastHeight() -line, this.anchor);
     
 
                                     }

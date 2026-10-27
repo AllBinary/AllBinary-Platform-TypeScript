@@ -129,14 +129,14 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 
-    var track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
+    var track: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
     
 
-    var wave: number = raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
+    var wave: number = this.raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
     
-gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
+this.gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
     
-gameCanvas!.buildGameInit(false);
+this.gameCanvas!.buildGameInit(false);
     
 GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
     
@@ -239,10 +239,10 @@ break;
                         
                                     {
                                     
-                        if(!abRunnable!.isRunning())
+                        if(!this.abRunnable!.isRunning())
                         
                                     {
-                                    abRunnable!.setRunning(true);
+                                    this.abRunnable!.setRunning(true);
     
 ThreadObjectUtil.getInstance()!.processThread(abRunnable);
     

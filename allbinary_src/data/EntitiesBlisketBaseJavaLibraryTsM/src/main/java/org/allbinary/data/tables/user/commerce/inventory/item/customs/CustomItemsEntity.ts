@@ -129,7 +129,7 @@ this.setTableName(this.tableName);
     public delete(value: string){
 
         try {
-            super.deleteWhere(basicItemData!.ID, value);
+            super.deleteWhere(this.basicItemData!.ID, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -162,7 +162,7 @@ this.setTableName(this.tableName);
 
     var stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(CustomItemData.PACKAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(basicItemData!.ID)!.append(this.sqlStrings!.END);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(this.basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(CustomItemData.PACKAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(this.basicItemData!.ID)!.append(this.sqlStrings!.END);
     
 
 
@@ -184,7 +184,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
     public update(updatedValues: HashMap<any, any>){
-super.updateWhere(basicItemData!.ID, updatedValues!.get(basicItemData!.ID) as string, updatedValues);
+super.updateWhere(this.basicItemData!.ID, updatedValues!.get(this.basicItemData!.ID) as string, updatedValues);
     
 }
 

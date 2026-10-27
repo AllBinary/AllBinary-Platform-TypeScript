@@ -447,7 +447,7 @@ keyValues!.put(OrderData.ID, orderId);
 
     var itemHashMap: HashMap<any, any> = itemsArray[i]! as HashMap<any, any>;;
     
-itemHashMap!.put(basicItemData!.INBASKETS, EMPTY_STRING);
+itemHashMap!.put(this.basicItemData!.INBASKETS, EMPTY_STRING);
     
 itemHashMap!.put(entryData!.ENABLE, EMPTY_STRING);
     
@@ -455,13 +455,13 @@ itemHashMap!.put(entryData!.TIMECREATED, EMPTY_STRING);
     
 itemHashMap!.put(entryData!.LASTMODIFIED, EMPTY_STRING);
     
-itemHashMap!.put(basicItemData!.GROUPS, EMPTY_STRING);
+itemHashMap!.put(this.basicItemData!.GROUPS, EMPTY_STRING);
     
-itemHashMap!.put(basicItemData!.OPTIONS, EMPTY_STRING);
+itemHashMap!.put(this.basicItemData!.OPTIONS, EMPTY_STRING);
     
-itemHashMap!.put(basicItemData!.PERMISSIONS, EMPTY_STRING);
+itemHashMap!.put(this.basicItemData!.PERMISSIONS, EMPTY_STRING);
     
-itemHashMap!.put(basicItemData!.SPECIALS, EMPTY_STRING);
+itemHashMap!.put(this.basicItemData!.SPECIALS, EMPTY_STRING);
     
 
     var item: Item = new Item(itemHashMap);;
@@ -546,87 +546,87 @@ stringBuffer!.append(StoreFrontData.getInstance()!.NAME);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.ID);
+stringBuffer!.append(this.basicItemData!.ID);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.NUMBER);
+stringBuffer!.append(this.basicItemData!.NUMBER);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.NEWORUSED);
+stringBuffer!.append(this.basicItemData!.NEWORUSED);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.SUMMARY);
+stringBuffer!.append(this.basicItemData!.SUMMARY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.DISTRIBUTOR);
+stringBuffer!.append(this.basicItemData!.DISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.IDUSEDBYDISTRIBUTOR);
+stringBuffer!.append(this.basicItemData!.IDUSEDBYDISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PRODUCEDBY);
+stringBuffer!.append(this.basicItemData!.PRODUCEDBY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PRODUCTIONDATE);
+stringBuffer!.append(this.basicItemData!.PRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.STARTPRODUCTIONDATE);
+stringBuffer!.append(this.basicItemData!.STARTPRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.DESCRIPTION);
+stringBuffer!.append(this.basicItemData!.DESCRIPTION);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.KEYWORDS);
+stringBuffer!.append(this.basicItemData!.KEYWORDS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.CATEGORY);
+stringBuffer!.append(this.basicItemData!.CATEGORY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.TYPE);
+stringBuffer!.append(this.basicItemData!.TYPE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.SMALLIMAGE);
+stringBuffer!.append(this.basicItemData!.SMALLIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.MEDIUMIMAGE);
+stringBuffer!.append(this.basicItemData!.MEDIUMIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.LARGEIMAGE);
+stringBuffer!.append(this.basicItemData!.LARGEIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.WEIGHT);
+stringBuffer!.append(this.basicItemData!.WEIGHT);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PRICE);
+stringBuffer!.append(this.basicItemData!.PRICE);
     
 stringBuffer!.append(" VARCHAR(20) NOT NULL,");
     
-stringBuffer!.append(basicItemData!.COMMENT);
+stringBuffer!.append(this.basicItemData!.COMMENT);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.CUSTOMS);
+stringBuffer!.append(this.basicItemData!.CUSTOMS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.DOWNLOADS);
+stringBuffer!.append(this.basicItemData!.DOWNLOADS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     

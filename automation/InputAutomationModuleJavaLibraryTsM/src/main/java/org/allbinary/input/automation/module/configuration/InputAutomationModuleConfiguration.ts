@@ -210,7 +210,7 @@ this.setInputAutomationModuleInterface(AbeFactory.getInstance()!.getInstance()!.
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 
 

@@ -444,7 +444,7 @@ this.itemJScrollPane1= new javax.swing.JScrollPane();
     
 this.workAreaPropertiesJPanel= new javax.swing.JPanel();
     
-itemJPopupMenu!.addPopupMenuListener(new class extends javax.swing.event.PopupMenuListener
+this.itemJPopupMenu!.addPopupMenuListener(new class extends javax.swing.event.PopupMenuListener
                                 {
                                 
     public popupMenuCanceled(evt: javax.swing.event.PopupMenuEvent){

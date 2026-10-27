@@ -141,7 +141,7 @@ this.searchRequest= searchRequest;
     var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(basicItemData!.KEYWORDS) as string))!;;
+    var file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(this.basicItemData!.KEYWORDS) as string))!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(file))

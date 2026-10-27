@@ -180,7 +180,7 @@ NotHTMLProcessor = class extends Processor {
 
 
     public process(){
-concurrentImageLoadingProcessor!.runTask();
+this.concurrentImageLoadingProcessor!.runTask();
     
 }
 
@@ -214,7 +214,7 @@ HTMLEndProcessor = class extends Processor {
 
     public process(){
 
-    var size: number = gdResources!.currentLayoutRequiredTotal;;
+    var size: number = this.gdResources!.currentLayoutRequiredTotal;;
     
 
                     //Otherwise - statement - EmptyStmt

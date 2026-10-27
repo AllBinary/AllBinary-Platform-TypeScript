@@ -136,7 +136,7 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
     
 
 
@@ -190,7 +190,7 @@ index= nextIndex +1;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "next", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "next", e);
     
 
 

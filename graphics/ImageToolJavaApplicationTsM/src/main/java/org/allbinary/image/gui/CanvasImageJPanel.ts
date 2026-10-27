@@ -159,16 +159,16 @@ new class extends Thread
     var canvasExpandUtil: CanvasExpandUtil = CanvasExpandUtil.getInstance()!;;
     
 
-    var leftReduction: number = Integer.valueOf(widthReductionTextField1!.getText())!;;
+    var leftReduction: number = Integer.valueOf(this.widthReductionTextField1!.getText())!;;
     
 
-    var topReduction: number = Integer.valueOf(heightReductionTextField1!.getText())!;;
+    var topReduction: number = Integer.valueOf(this.heightReductionTextField1!.getText())!;;
     
 
-    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;;
+    var widthReduction: number = Integer.valueOf(this.widthReductionTextField!.getText())!;;
     
 
-    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;;
+    var heightReduction: number = Integer.valueOf(this.heightReductionTextField!.getText())!;;
     
 
                         if(leftReduction <= 0 || topReduction <= 0 || widthReduction <= 0 || heightReduction <= 0)
@@ -189,7 +189,7 @@ new class extends Thread
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -437,7 +437,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(CanvasImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
+    var isWritten: boolean = ImageIO.write(CanvasImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     

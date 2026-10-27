@@ -176,7 +176,7 @@ export class InventorySearchUtil
     var inventorySearchUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var column: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), basicItemData!.ID)!;;
+    var column: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), this.basicItemData!.ID)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
@@ -204,7 +204,7 @@ export class InventorySearchUtil
     var subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreIdColumn: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, basicItemData!.ID)!;;
+    var substoreIdColumn: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, this.basicItemData!.ID)!;;
     
 column.addAllList(substoreIdColumn);
     
@@ -281,7 +281,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
     var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(basicItemData!.KEYWORDS) as string)!;;
+    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(this.basicItemData!.KEYWORDS) as string)!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(keyword))

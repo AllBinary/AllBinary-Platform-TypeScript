@@ -169,11 +169,11 @@ MirrorImageJPanel.prototype.result= MirrorImageUtil.getInstance()!.getImage(buff
     var filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
-filePath= filePath!.substring(0, extensionIndex) +"_mirror" +imageStrings!.PNG_EXTENSION;
+filePath= filePath!.substring(0, extensionIndex) +"_mirror" +this.imageStrings!.PNG_EXTENSION;
     
-logUtil!.putF("Renamed File: " +filePath, this, commonStrings!.RUN);
+logUtil!.putF("Renamed File: " +filePath, this, this.commonStrings!.RUN);
     
 file= new File(filePath);
     
@@ -181,9 +181,9 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(MirrorImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
+    var isWritten: boolean = ImageIO.write(MirrorImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
-logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
+logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     
 MirrorImageJPanel.prototype.getParent()!.repaint();
     
@@ -193,7 +193,7 @@ MirrorImageJPanel.prototype.getParent()!.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

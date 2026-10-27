@@ -174,7 +174,7 @@ super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) a
 
     var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-keysAndValues!.put(basicItemData!.ID, id);
+keysAndValues!.put(this.basicItemData!.ID, id);
     
 
     var vector: BasicArrayList = super.getRows(keysAndValues)!;;
@@ -221,7 +221,7 @@ returnVector!.add(new DownloadableItem(hashMap));
 
     var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-keysAndValues!.put(basicItemData!.ID, id);
+keysAndValues!.put(this.basicItemData!.ID, id);
     
 keysAndValues!.put(DownloadItemData.ID, downloadItemId);
     
@@ -267,7 +267,7 @@ returnVector!.add(new DownloadableItem(hashMap));
 
     var stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(DownloadItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SPECIAL_NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.VERSION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.CHANGES)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(DownloadItemData.SYSTEM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.PLATFORM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.LICENSE_FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(DownloadItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SPECIAL_NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.VERSION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.CHANGES)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(DownloadItemData.SYSTEM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.PLATFORM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.LICENSE_FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
 stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SIZE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(DownloadItemData.VALID_TIME)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(DownloadItemData.RETRIES)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(DownloadItemData.ID)!.append(this.sqlStrings!.END);
     

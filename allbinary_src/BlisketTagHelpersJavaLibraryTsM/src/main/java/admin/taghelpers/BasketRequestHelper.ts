@@ -140,7 +140,7 @@ this.getFormData();
 
 
     getFormData(){
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
 this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
     

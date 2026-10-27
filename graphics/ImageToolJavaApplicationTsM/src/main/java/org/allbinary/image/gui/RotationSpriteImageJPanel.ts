@@ -182,11 +182,11 @@ RotationSpriteImageJPanel.prototype.getParent()!.repaint();
     var filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
-filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(imageStrings!.PNG_EXTENSION)!.toString();
+filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
-logUtil!.putF("New File Path: " +filePath, this, commonStrings!.RUN);
+logUtil!.putF("New File Path: " +filePath, this, this.commonStrings!.RUN);
     
 file= new File(filePath);
     
@@ -194,9 +194,9 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(RotationSpriteImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
+    var isWritten: boolean = ImageIO.write(RotationSpriteImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
-logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
+logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     
 }
 
@@ -204,7 +204,7 @@ logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

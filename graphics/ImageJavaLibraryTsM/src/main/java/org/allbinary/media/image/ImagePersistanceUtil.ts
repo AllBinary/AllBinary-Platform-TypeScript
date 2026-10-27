@@ -221,7 +221,7 @@ ios.close();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, ios, this.commonStrings!.CLOSE, e);
     
 }
 

@@ -195,7 +195,7 @@ this.inventory= new InventoryEntity();
     var inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var keywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), basicItemData!.KEYWORDS)!;;
+    var keywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), this.basicItemData!.KEYWORDS)!;;
     
 
     var subStoreVector: BasicArrayList = storeFront!.getSubStores()!;;
@@ -214,7 +214,7 @@ this.inventory= new InventoryEntity();
     var subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreKeywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, basicItemData!.CATEGORY)!;;
+    var substoreKeywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, this.basicItemData!.CATEGORY)!;;
     
 keywords.addAllList(substoreKeywords);
     
@@ -315,7 +315,7 @@ hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_ST
 
     var searchParams: SearchParams = this.searchRequest!.getParams()!;;
     
-searchParams!.add(basicItemData!.KEYWORDS, keywordData);
+searchParams!.add(this.basicItemData!.KEYWORDS, keywordData);
     
 searchParams!.setStartPage(CommonPhoneStrings.getInstance()!.ZERO);
     

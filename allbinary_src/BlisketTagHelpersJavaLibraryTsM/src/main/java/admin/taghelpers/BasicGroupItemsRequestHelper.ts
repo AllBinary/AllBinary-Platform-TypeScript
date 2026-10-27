@@ -131,7 +131,7 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
 this.itemOne= this.request.getParameter(BasicGroupItemData.ITEM_ONE);
     
@@ -164,7 +164,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(basicItemData!.ID, id);
+values.put(this.basicItemData!.ID, id);
     
 values.put(BasicGroupItemData.ITEM_ONE, this.itemOne);
     

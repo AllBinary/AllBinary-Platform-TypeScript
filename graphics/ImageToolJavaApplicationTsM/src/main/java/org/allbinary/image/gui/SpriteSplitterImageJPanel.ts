@@ -157,25 +157,25 @@ new class extends Thread
     var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
     
 
-    var spriteType: string = spriteTypeJComboBox!.getSelectedItem() as string;;
+    var spriteType: string = this.spriteTypeJComboBox!.getSelectedItem() as string;;
     
 
-    var totalFrames: Integer = Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string)!;;
+    var totalFrames: Integer = Integer.valueOf(this.totalFramesJComboBox!.getSelectedItem() as string)!;;
     
 
-    var totalAnimations: Integer = Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string)!;;
+    var totalAnimations: Integer = Integer.valueOf(this.totalAnimationsJComboBox!.getSelectedItem() as string)!;;
     
 
-    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;;
+    var widthReduction: number = Integer.valueOf(this.widthReductionTextField!.getText())!;;
     
 
-    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;;
+    var heightReduction: number = Integer.valueOf(this.heightReductionTextField!.getText())!;;
     
 
-    var increaseWidth: number = Integer.valueOf(increaseWidthTextField!.getText())!;;
+    var increaseWidth: number = Integer.valueOf(this.increaseWidthTextField!.getText())!;;
     
 
-    var increaseHeight: number = Integer.valueOf(increaseHeightTextField!.getText())!;;
+    var increaseHeight: number = Integer.valueOf(this.increaseHeightTextField!.getText())!;;
     
 spriteSplitterUtil!.process(SpriteSplitterImageJPanel.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.prototype);
     
@@ -183,7 +183,7 @@ spriteSplitterUtil!.process(SpriteSplitterImageJPanel.prototype.getImageProcesso
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -555,7 +555,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
+    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     

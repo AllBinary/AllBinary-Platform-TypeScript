@@ -259,7 +259,7 @@ ResizeImageJPanel.prototype.getParent()!.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -314,7 +314,7 @@ ResizeImageJPanel.prototype.getParent()!.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -369,7 +369,7 @@ ResizeImageJPanel.prototype.getParent()!.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -424,7 +424,7 @@ ResizeImageJPanel.prototype.getParent()!.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

@@ -18,7 +18,8 @@ const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
 
-import { PlayerListener } from '../../../../../javax/microedition/media/PlayerListener.js';
+import { PlayerListenerI } from '../../../../../javax/microedition/media/PlayerListener.js';
+const PlayerListener = PlayerListenerI;
 //not GWT import const PlayerListener
 
 import { AvianUtil } from '../../../../../org/allbinary/AvianUtil.js';
@@ -111,7 +112,7 @@ MusicManagerPlayerListener = class
         
 
     public playerUpdate(player: Player, event: string, eventData: any = {}){
-PreLogUtil.put(event, this, commonStrings!.PROCESS);
+PreLogUtil.put(event, this, this.commonStrings!.PROCESS);
     
 
                         if(event == PlayerListener.END_OF_MEDIA || event == PlayerListener.STOPPED || event == PlayerListener.CLOSED)

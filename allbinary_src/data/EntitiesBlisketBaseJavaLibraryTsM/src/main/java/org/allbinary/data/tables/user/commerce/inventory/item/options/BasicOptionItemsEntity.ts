@@ -126,7 +126,7 @@ this.setTableName(this.tableName);
     public delete(value: string){
 
         try {
-            super.deleteWhere(basicItemData!.ID, value);
+            super.deleteWhere(this.basicItemData!.ID, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -159,11 +159,11 @@ this.setTableName(this.tableName);
 
     var stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(this.basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
 stringBuffer!.append(BasicOptionItemData.OPTION_ONE_TITLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.DEFAULT_OPTION_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.DEFAULT_OPTION_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(BasicOptionItemData.OPTION_ONE_ONE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_ONE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_TWO_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_TWO_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_THREE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_THREE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FOUR_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FOUR_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FIVE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FIVE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SIX_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SIX_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SEVEN_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SEVEN_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_EIGHT_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_EIGHT_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_NINE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_NINE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(basicItemData!.ID)!.append(this.sqlStrings!.END);
+stringBuffer!.append(BasicOptionItemData.OPTION_ONE_ONE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_ONE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_TWO_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_TWO_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_THREE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_THREE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FOUR_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FOUR_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FIVE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_FIVE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SIX_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SIX_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SEVEN_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_SEVEN_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_EIGHT_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_EIGHT_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_NINE_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.OPTION_ONE_NINE_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(this.basicItemData!.ID)!.append(this.sqlStrings!.END);
     
 
 
@@ -185,7 +185,7 @@ stringBuffer!.append(BasicOptionItemData.OPTION_ONE_ONE_ITEM)!.append(this.sqlTy
 
 
     public update(updatedValues: HashMap<any, any>){
-super.updateWhere(basicItemData!.ID, updatedValues!.get(basicItemData!.ID) as string, updatedValues);
+super.updateWhere(this.basicItemData!.ID, updatedValues!.get(this.basicItemData!.ID) as string, updatedValues);
     
 }
 

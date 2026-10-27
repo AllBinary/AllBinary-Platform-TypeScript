@@ -79,8 +79,6 @@ import { PathFindingNode } from '../../../../../../../../org/allbinary/media/gra
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
 //not GWT import - same folder const BasePathFinderGraphVisitor
-import { CellPositionArray } from './CellPositionArray.js';
-//not GWT import - same folder const CellPositionArray
 
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E> {
         

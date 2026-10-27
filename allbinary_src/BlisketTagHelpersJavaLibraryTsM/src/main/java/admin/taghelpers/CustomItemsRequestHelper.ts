@@ -118,7 +118,7 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
 this.className= this.request.getParameter(DynamicObjectData.NAME);
     
@@ -135,7 +135,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(basicItemData!.ID, this.id);
+values.put(this.basicItemData!.ID, this.id);
     
 values.put(DynamicObjectData.NAME, this.className);
     

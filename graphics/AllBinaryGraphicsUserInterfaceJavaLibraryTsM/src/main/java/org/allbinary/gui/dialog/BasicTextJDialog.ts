@@ -126,7 +126,7 @@ setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
 this.jButton1!.setText("OK");
     
-jButton1!.addActionListener(new class extends java.awt.event.ActionListener
+this.jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

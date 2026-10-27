@@ -148,15 +148,15 @@ filePropertyHashMap!.put(fileData!.ISHIDDEN, Boolean.valueOf(this.file.isHidden(
     
 filePropertyHashMap!.put(fileData!.ISABSOLUTE, Boolean.valueOf(this.file.isAbsolute())!.toString());
     
-filePropertyHashMap!.put(fileData!.ABSOLUTE_PATH, file.getAbsolutePath());
+filePropertyHashMap!.put(fileData!.ABSOLUTE_PATH, this.file.getAbsolutePath());
     
-filePropertyHashMap!.put(fileData!.CANONICAL_PATH, file.getCanonicalPath());
+filePropertyHashMap!.put(fileData!.CANONICAL_PATH, this.file.getCanonicalPath());
     
-filePropertyHashMap!.put(fileData!.NAME, file.getName());
+filePropertyHashMap!.put(fileData!.NAME, this.file.getName());
     
-filePropertyHashMap!.put(fileData!.PARENT, file.getParent());
+filePropertyHashMap!.put(fileData!.PARENT, this.file.getParent());
     
-filePropertyHashMap!.put(fileData!.PATH, file.getPath());
+filePropertyHashMap!.put(fileData!.PATH, this.file.getPath());
     
 
 

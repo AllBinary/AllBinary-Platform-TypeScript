@@ -339,7 +339,7 @@ tempBufferedImageArray[index]= bufferedImage;
     var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;;
     
 
-    var fudgedBufferedImageArray: BufferedImage[] = imagesRatioUtil!.fudge(tempBufferedImageArray, totalImages, averageRatio)!;;
+    var fudgedBufferedImageArray: BufferedImage[] = this.imagesRatioUtil!.fudge(tempBufferedImageArray, totalImages, averageRatio)!;;
     
 this.updateImage(fudgedBufferedImageArray);
     

@@ -105,11 +105,11 @@ this.colorJList= new javax.swing.JList();
     
 this.setLayout(new java.awt.GridLayout(17, 1));
     
-lineJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.lineJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-lineJButton!.setText(LinesGraphicItem.getStaticName());
+this.lineJButton!.setText(LinesGraphicItem.getStaticName());
     
-lineJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
+this.lineJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){

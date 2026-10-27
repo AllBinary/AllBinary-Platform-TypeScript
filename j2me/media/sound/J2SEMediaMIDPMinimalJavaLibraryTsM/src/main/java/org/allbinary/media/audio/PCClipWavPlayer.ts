@@ -41,7 +41,7 @@ import { Control } from '../../../../javax/microedition/media/Control.js';
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
 
-import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+import { PlayerListener, PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
 //not GWT import const PlayerListener
 
 import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
@@ -333,7 +333,7 @@ this.setVolumeF((leftVolume) /100.0);
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
+    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
     
 
 

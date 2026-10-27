@@ -345,7 +345,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= stdUtil!.createHashMap();
+result= this.stdUtil!.createHashMap();
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;;

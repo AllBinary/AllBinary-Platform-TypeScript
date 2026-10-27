@@ -174,63 +174,63 @@ public constructor (itemHashMap: HashMap<any, any>){
 
                                     }
                                 
-this.itemId= itemHashMap!.get(basicItemData!.ID) as string;
+this.itemId= itemHashMap!.get(this.basicItemData!.ID) as string;
     
-this.number= itemHashMap!.get(basicItemData!.NUMBER) as string;
+this.number= itemHashMap!.get(this.basicItemData!.NUMBER) as string;
     
-this.inBaskets= itemHashMap!.get(basicItemData!.INBASKETS) as string;
+this.inBaskets= itemHashMap!.get(this.basicItemData!.INBASKETS) as string;
     
-this.weight= itemHashMap!.get(basicItemData!.WEIGHT) as string;
+this.weight= itemHashMap!.get(this.basicItemData!.WEIGHT) as string;
     
 this.enabled= itemHashMap!.get(EntryData.getInstance()!.ENABLE) as string;
     
-this.newOrUsed= itemHashMap!.get(basicItemData!.NEWORUSED) as string;
+this.newOrUsed= itemHashMap!.get(this.basicItemData!.NEWORUSED) as string;
     
-this.summary= itemHashMap!.get(basicItemData!.SUMMARY) as string;
+this.summary= itemHashMap!.get(this.basicItemData!.SUMMARY) as string;
     
-this.distributor= itemHashMap!.get(basicItemData!.DISTRIBUTOR) as string;
+this.distributor= itemHashMap!.get(this.basicItemData!.DISTRIBUTOR) as string;
     
-this.idUsedByDistributor= itemHashMap!.get(basicItemData!.IDUSEDBYDISTRIBUTOR) as string;
+this.idUsedByDistributor= itemHashMap!.get(this.basicItemData!.IDUSEDBYDISTRIBUTOR) as string;
     
-this.producedBy= itemHashMap!.get(basicItemData!.PRODUCEDBY) as string;
+this.producedBy= itemHashMap!.get(this.basicItemData!.PRODUCEDBY) as string;
     
-this.productionDate= itemHashMap!.get(basicItemData!.PRODUCTIONDATE) as string;
+this.productionDate= itemHashMap!.get(this.basicItemData!.PRODUCTIONDATE) as string;
     
-this.startProductionDate= itemHashMap!.get(basicItemData!.STARTPRODUCTIONDATE) as string;
+this.startProductionDate= itemHashMap!.get(this.basicItemData!.STARTPRODUCTIONDATE) as string;
     
-this.description= itemHashMap!.get(basicItemData!.DESCRIPTION) as string;
+this.description= itemHashMap!.get(this.basicItemData!.DESCRIPTION) as string;
     
-this.keywords= itemHashMap!.get(basicItemData!.KEYWORDS) as string;
+this.keywords= itemHashMap!.get(this.basicItemData!.KEYWORDS) as string;
     
-this.category= itemHashMap!.get(basicItemData!.CATEGORY) as string;
+this.category= itemHashMap!.get(this.basicItemData!.CATEGORY) as string;
     
-this.type= itemHashMap!.get(basicItemData!.TYPE) as string;
+this.type= itemHashMap!.get(this.basicItemData!.TYPE) as string;
     
-this.smallImage= itemHashMap!.get(basicItemData!.SMALLIMAGE) as string;
+this.smallImage= itemHashMap!.get(this.basicItemData!.SMALLIMAGE) as string;
     
-this.mediumImage= itemHashMap!.get(basicItemData!.MEDIUMIMAGE) as string;
+this.mediumImage= itemHashMap!.get(this.basicItemData!.MEDIUMIMAGE) as string;
     
-this.largeImage= itemHashMap!.get(basicItemData!.LARGEIMAGE) as string;
+this.largeImage= itemHashMap!.get(this.basicItemData!.LARGEIMAGE) as string;
     
 this.timeEntered= itemHashMap!.get(EntryData.getInstance()!.TIMECREATED) as string;
     
 this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as string;
     
-this.price= new Money(itemHashMap!.get(basicItemData!.PRICE) as string);
+this.price= new Money(itemHashMap!.get(this.basicItemData!.PRICE) as string);
     
-this.comment= itemHashMap!.get(basicItemData!.COMMENT) as string;
+this.comment= itemHashMap!.get(this.basicItemData!.COMMENT) as string;
     
-this.customs= itemHashMap!.get(basicItemData!.CUSTOMS) as string;
+this.customs= itemHashMap!.get(this.basicItemData!.CUSTOMS) as string;
     
-this.setDownloads(itemHashMap!.get(basicItemData!.DOWNLOADS) as string);
+this.setDownloads(itemHashMap!.get(this.basicItemData!.DOWNLOADS) as string);
     
-this.groups= itemHashMap!.get(basicItemData!.GROUPS) as string;
+this.groups= itemHashMap!.get(this.basicItemData!.GROUPS) as string;
     
-this.options= itemHashMap!.get(basicItemData!.OPTIONS) as string;
+this.options= itemHashMap!.get(this.basicItemData!.OPTIONS) as string;
     
-this.permissions= itemHashMap!.get(basicItemData!.PERMISSIONS) as string;
+this.permissions= itemHashMap!.get(this.basicItemData!.PERMISSIONS) as string;
     
-this.specials= itemHashMap!.get(basicItemData!.SPECIALS) as string;
+this.specials= itemHashMap!.get(this.basicItemData!.SPECIALS) as string;
     
 }
 
@@ -838,43 +838,43 @@ itemTotal!.multiply(new Integer(this.number).intValue());
 
     var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-hashMap!.put(basicItemData!.ID, this.itemId);
+hashMap!.put(this.basicItemData!.ID, this.itemId);
     
-hashMap!.put(basicItemData!.NUMBER, this.number);
+hashMap!.put(this.basicItemData!.NUMBER, this.number);
     
-hashMap!.put(basicItemData!.INBASKETS, this.inBaskets);
+hashMap!.put(this.basicItemData!.INBASKETS, this.inBaskets);
     
-hashMap!.put(basicItemData!.WEIGHT, this.weight);
+hashMap!.put(this.basicItemData!.WEIGHT, this.weight);
     
 hashMap!.put(EntryData.getInstance()!.ENABLE, this.enabled);
     
-hashMap!.put(basicItemData!.NEWORUSED, this.newOrUsed);
+hashMap!.put(this.basicItemData!.NEWORUSED, this.newOrUsed);
     
-hashMap!.put(basicItemData!.SUMMARY, this.summary);
+hashMap!.put(this.basicItemData!.SUMMARY, this.summary);
     
-hashMap!.put(basicItemData!.DISTRIBUTOR, this.distributor);
+hashMap!.put(this.basicItemData!.DISTRIBUTOR, this.distributor);
     
-hashMap!.put(basicItemData!.IDUSEDBYDISTRIBUTOR, this.idUsedByDistributor);
+hashMap!.put(this.basicItemData!.IDUSEDBYDISTRIBUTOR, this.idUsedByDistributor);
     
-hashMap!.put(basicItemData!.PRODUCEDBY, this.producedBy);
+hashMap!.put(this.basicItemData!.PRODUCEDBY, this.producedBy);
     
-hashMap!.put(basicItemData!.PRODUCTIONDATE, this.productionDate);
+hashMap!.put(this.basicItemData!.PRODUCTIONDATE, this.productionDate);
     
-hashMap!.put(basicItemData!.STARTPRODUCTIONDATE, this.startProductionDate);
+hashMap!.put(this.basicItemData!.STARTPRODUCTIONDATE, this.startProductionDate);
     
-hashMap!.put(basicItemData!.DESCRIPTION, this.description);
+hashMap!.put(this.basicItemData!.DESCRIPTION, this.description);
     
-hashMap!.put(basicItemData!.KEYWORDS, this.keywords);
+hashMap!.put(this.basicItemData!.KEYWORDS, this.keywords);
     
-hashMap!.put(basicItemData!.CATEGORY, this.category);
+hashMap!.put(this.basicItemData!.CATEGORY, this.category);
     
-hashMap!.put(basicItemData!.TYPE, this.type);
+hashMap!.put(this.basicItemData!.TYPE, this.type);
     
-hashMap!.put(basicItemData!.SMALLIMAGE, this.smallImage);
+hashMap!.put(this.basicItemData!.SMALLIMAGE, this.smallImage);
     
-hashMap!.put(basicItemData!.MEDIUMIMAGE, this.mediumImage);
+hashMap!.put(this.basicItemData!.MEDIUMIMAGE, this.mediumImage);
     
-hashMap!.put(basicItemData!.LARGEIMAGE, this.largeImage);
+hashMap!.put(this.basicItemData!.LARGEIMAGE, this.largeImage);
     
 
     var calendar: Calendar = Calendar.getInstance()!;;
@@ -884,21 +884,21 @@ hashMap!.put(basicItemData!.LARGEIMAGE, this.largeImage);
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
-hashMap!.put(basicItemData!.PRICE, this.price.toString());
+hashMap!.put(this.basicItemData!.PRICE, this.price.toString());
     
-hashMap!.put(basicItemData!.COMMENT, this.comment);
+hashMap!.put(this.basicItemData!.COMMENT, this.comment);
     
-hashMap!.put(basicItemData!.CUSTOMS, this.customs);
+hashMap!.put(this.basicItemData!.CUSTOMS, this.customs);
     
-hashMap!.put(basicItemData!.DOWNLOADS, this.getDownloads());
+hashMap!.put(this.basicItemData!.DOWNLOADS, this.getDownloads());
     
-hashMap!.put(basicItemData!.GROUPS, this.groups);
+hashMap!.put(this.basicItemData!.GROUPS, this.groups);
     
-hashMap!.put(basicItemData!.OPTIONS, this.options);
+hashMap!.put(this.basicItemData!.OPTIONS, this.options);
     
-hashMap!.put(basicItemData!.PERMISSIONS, this.permissions);
+hashMap!.put(this.basicItemData!.PERMISSIONS, this.permissions);
     
-hashMap!.put(basicItemData!.SPECIALS, this.specials);
+hashMap!.put(this.basicItemData!.SPECIALS, this.specials);
     
 
 

@@ -125,7 +125,7 @@ this.optionItem= new BasicArrayListD();
     
 this.optionValue= new BasicArrayListD();
     
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
 this.optionOneTitle= this.request.getParameter(BasicOptionItemData.OPTION_ONE_TITLE);
     
@@ -180,7 +180,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(basicItemData!.ID, id);
+values.put(this.basicItemData!.ID, id);
     
 values.put(BasicOptionItemData.OPTION_ONE_ONE_ITEM, this.optionItem!.get(0));
     

@@ -139,7 +139,7 @@ billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
     
 }
 
-billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(streetAddresses!.size()).toString()));
+billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(this.streetAddresses!.size()).toString()));
     
 
 

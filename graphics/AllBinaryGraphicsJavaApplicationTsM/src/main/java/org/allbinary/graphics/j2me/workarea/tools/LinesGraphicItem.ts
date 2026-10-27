@@ -813,7 +813,7 @@ this.deactivate();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.KEY_PRESSED, e);
     
 }
 

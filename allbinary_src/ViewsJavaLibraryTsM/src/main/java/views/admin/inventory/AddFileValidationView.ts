@@ -256,7 +256,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                                     }
                                 
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
@@ -435,7 +435,7 @@ stringBuffer!.append(" does not exist.<br />");
 }
 
 
-    var anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
+    var anyType: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
@@ -627,7 +627,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-                        if(fileItemFieldName!.compareTo(basicItemData!.IMAGE) == 0)
+                        if(fileItemFieldName!.compareTo(this.basicItemData!.IMAGE) == 0)
                         
                                     {
                                     

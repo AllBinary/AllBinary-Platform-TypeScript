@@ -141,7 +141,7 @@ this.setTableName(this.tableName);
     public delete(value: string){
 
         try {
-            super.deleteWhere(basicItemData!.ID, value);
+            super.deleteWhere(this.basicItemData!.ID, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -211,7 +211,7 @@ this.setTableName(this.tableName);
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(basicItemData!.CATEGORY) as string;;
+    var category: string = itemHashMap!.get(this.basicItemData!.CATEGORY) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(category) && category.startsWith(storeFrontInterface!.getCategoryPath()))
@@ -242,7 +242,7 @@ this.setTableName(this.tableName);
 
     var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-keysAndValues!.put(basicItemData!.ID, id);
+keysAndValues!.put(this.basicItemData!.ID, id);
     
 
     var itemHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
@@ -280,7 +280,7 @@ keysAndValues!.put(basicItemData!.ID, id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getField(basicItemData!.ID, id, basicItemData!.WEIGHT);;
+                        return super.getField(this.basicItemData!.ID, id, this.basicItemData!.WEIGHT);;
     
 }
 
@@ -295,19 +295,19 @@ stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     
-stringBuffer!.append(basicItemData!.ID);
+stringBuffer!.append(this.basicItemData!.ID);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.NUMBER);
+stringBuffer!.append(this.basicItemData!.NUMBER);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.INBASKETS);
+stringBuffer!.append(this.basicItemData!.INBASKETS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.WEIGHT);
+stringBuffer!.append(this.basicItemData!.WEIGHT);
     
 stringBuffer!.append(" VARCHAR(20) NOT NULL,");
     
@@ -315,59 +315,59 @@ stringBuffer!.append(EntryData.getInstance()!.ENABLE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.NEWORUSED);
+stringBuffer!.append(this.basicItemData!.NEWORUSED);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.SUMMARY);
+stringBuffer!.append(this.basicItemData!.SUMMARY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.DISTRIBUTOR);
+stringBuffer!.append(this.basicItemData!.DISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.IDUSEDBYDISTRIBUTOR);
+stringBuffer!.append(this.basicItemData!.IDUSEDBYDISTRIBUTOR);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PRODUCEDBY);
+stringBuffer!.append(this.basicItemData!.PRODUCEDBY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PRODUCTIONDATE);
+stringBuffer!.append(this.basicItemData!.PRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.STARTPRODUCTIONDATE);
+stringBuffer!.append(this.basicItemData!.STARTPRODUCTIONDATE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.DESCRIPTION);
+stringBuffer!.append(this.basicItemData!.DESCRIPTION);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.KEYWORDS);
+stringBuffer!.append(this.basicItemData!.KEYWORDS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.CATEGORY);
+stringBuffer!.append(this.basicItemData!.CATEGORY);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.TYPE);
+stringBuffer!.append(this.basicItemData!.TYPE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.SMALLIMAGE);
+stringBuffer!.append(this.basicItemData!.SMALLIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.MEDIUMIMAGE);
+stringBuffer!.append(this.basicItemData!.MEDIUMIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.LARGEIMAGE);
+stringBuffer!.append(this.basicItemData!.LARGEIMAGE);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
@@ -379,41 +379,41 @@ stringBuffer!.append(EntryData.getInstance()!.TIMECREATED);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PRICE);
+stringBuffer!.append(this.basicItemData!.PRICE);
     
 stringBuffer!.append(" VARCHAR(20) NOT NULL,");
     
-stringBuffer!.append(basicItemData!.COMMENT);
+stringBuffer!.append(this.basicItemData!.COMMENT);
     
 stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.CUSTOMS);
+stringBuffer!.append(this.basicItemData!.CUSTOMS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.DOWNLOADS);
+stringBuffer!.append(this.basicItemData!.DOWNLOADS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.GROUPS);
+stringBuffer!.append(this.basicItemData!.GROUPS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.OPTIONS);
+stringBuffer!.append(this.basicItemData!.OPTIONS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.PERMISSIONS);
+stringBuffer!.append(this.basicItemData!.PERMISSIONS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
-stringBuffer!.append(basicItemData!.SPECIALS);
+stringBuffer!.append(this.basicItemData!.SPECIALS);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
 stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
     
-stringBuffer!.append(basicItemData!.ID);
+stringBuffer!.append(this.basicItemData!.ID);
     
 stringBuffer!.append(this.sqlStrings!.END);
     
@@ -437,7 +437,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
     public update(updatedValues: HashMap<any, any>){
-super.updateWhere(basicItemData!.ID, updatedValues!.get(basicItemData!.ID) as string, updatedValues);
+super.updateWhere(this.basicItemData!.ID, updatedValues!.get(this.basicItemData!.ID) as string, updatedValues);
     
 }
 

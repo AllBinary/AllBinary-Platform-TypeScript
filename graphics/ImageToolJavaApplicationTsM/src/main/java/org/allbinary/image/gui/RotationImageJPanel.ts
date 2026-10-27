@@ -150,7 +150,7 @@ ImageArrayRotationUtil.getInstance()!.process(RotationImageJPanel.prototype.getI
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -348,7 +348,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(RotationImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
+    var isWritten: boolean = ImageIO.write(RotationImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     

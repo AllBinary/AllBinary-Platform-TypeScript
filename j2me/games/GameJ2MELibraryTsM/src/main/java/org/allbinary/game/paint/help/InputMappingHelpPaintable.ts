@@ -248,7 +248,7 @@ keyMappings= this.get(list);
     
 stringMaker!.delete(0, stringMaker!.length());
     
-actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!.append(commonSeps!.SPACE)!.append(commonSeps!.SPACE)!.toString();
+actionString= stringMaker!.append(inputInfo[index]!)!.append(this.commonSeps!.COLON)!.append(this.commonSeps!.SPACE)!.append(this.commonSeps!.SPACE)!.toString();
     
 updateMyFontProperties!.actionStringArray[index]= actionString;
     

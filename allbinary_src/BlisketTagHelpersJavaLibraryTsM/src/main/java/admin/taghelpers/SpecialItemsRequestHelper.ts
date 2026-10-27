@@ -121,9 +121,9 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
-this.number= this.request.getParameter(basicItemData!.NUMBER);
+this.number= this.request.getParameter(this.basicItemData!.NUMBER);
     
 this.enabled= this.request.getParameter(EntryData.getInstance()!.ENABLE);
     
@@ -131,7 +131,7 @@ this.startTime= this.request.getParameter(SpecialItemData.START_TIME);
     
 this.endTime= this.request.getParameter(SpecialItemData.END_TIME);
     
-this.price= this.request.getParameter(basicItemData!.PRICE);
+this.price= this.request.getParameter(this.basicItemData!.PRICE);
     
 this.timeEntered= this.request.getParameter(EntryData.getInstance()!.TIMECREATED);
     
@@ -144,9 +144,9 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(basicItemData!.ID, this.id);
+values.put(this.basicItemData!.ID, this.id);
     
-values.put(basicItemData!.NUMBER, this.number);
+values.put(this.basicItemData!.NUMBER, this.number);
     
 values.put(EntryData.getInstance()!.ENABLE, this.enabled);
     
@@ -154,7 +154,7 @@ values.put(SpecialItemData.START_TIME, this.startTime);
     
 values.put(SpecialItemData.END_TIME, this.endTime);
     
-values.put(basicItemData!.PRICE, this.price);
+values.put(this.basicItemData!.PRICE, this.price);
     
 
     var calendar: Calendar = Calendar.getInstance()!;;

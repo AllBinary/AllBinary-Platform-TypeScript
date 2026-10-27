@@ -115,7 +115,7 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
 this.xmlFileStatus= this.request.getParameter(XmlOptionItemData.XML_FILE_STATUS);
     
@@ -132,7 +132,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(basicItemData!.ID, this.id);
+values.put(this.basicItemData!.ID, this.id);
     
 values.put(XmlOptionItemData.XML_FILE_STATUS, this.xmlFileStatus);
     

@@ -104,7 +104,7 @@ this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
     var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index) as HashMap<any, any>;;
     
 
-    var categoryName: string = hashMap!.get(basicItemData!.CATEGORY) as string;;
+    var categoryName: string = hashMap!.get(this.basicItemData!.CATEGORY) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(categoryName) && categoryName!.startsWith(category))

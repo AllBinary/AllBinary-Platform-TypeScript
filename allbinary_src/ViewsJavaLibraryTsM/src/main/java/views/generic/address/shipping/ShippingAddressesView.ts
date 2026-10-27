@@ -141,7 +141,7 @@ billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
     
 }
 
-billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(streetAddressList!.size()).toString()));
+billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(this.streetAddressList!.size()).toString()));
     
 
 

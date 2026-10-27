@@ -128,7 +128,7 @@ export class PreGameSelectionGameInputProcessor extends Processor implements Gam
     
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
-gameCanvas!.setGameState(nextGameState);
+this.gameCanvas!.setGameState(nextGameState);
     
 GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
     
@@ -231,10 +231,10 @@ break;
                         
                                     {
                                     
-                        if(!abRunnable!.isRunning())
+                        if(!this.abRunnable!.isRunning())
                         
                                     {
-                                    abRunnable!.setRunning(true);
+                                    this.abRunnable!.setRunning(true);
     
 ThreadObjectUtil.getInstance()!.processThread(abRunnable);
     

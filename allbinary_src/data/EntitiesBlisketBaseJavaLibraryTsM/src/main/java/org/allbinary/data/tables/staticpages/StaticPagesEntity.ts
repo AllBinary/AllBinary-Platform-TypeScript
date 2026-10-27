@@ -135,7 +135,7 @@ this.setTableName(this.TABLENAME);
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, store);
     
-whereHashMap!.put(basicItemData!.KEYWORDS, keywords);
+whereHashMap!.put(this.basicItemData!.KEYWORDS, keywords);
     
 
     var file: string = super.getField(whereHashMap, SearchData.PAGE)!;;
@@ -150,7 +150,7 @@ whereHashMap!.put(basicItemData!.KEYWORDS, keywords);
 
 
     public delete(keywords: string){
-super.deleteWhere(basicItemData!.KEYWORDS, keywords);
+super.deleteWhere(this.basicItemData!.KEYWORDS, keywords);
     
 }
 
@@ -169,7 +169,7 @@ super.deleteWhere(basicItemData!.KEYWORDS, keywords);
 
 
     public update(updatedValues: HashMap<any, any>){
-super.updateWhere(basicItemData!.KEYWORDS, updatedValues!.get(basicItemData!.KEYWORDS) as string, updatedValues);
+super.updateWhere(this.basicItemData!.KEYWORDS, updatedValues!.get(this.basicItemData!.KEYWORDS) as string, updatedValues);
     
 }
 
@@ -178,7 +178,7 @@ super.updateWhere(basicItemData!.KEYWORDS, updatedValues!.get(basicItemData!.KEY
 
     var stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(this.sqlStrings!.START)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)!.append(basicItemData!.KEYWORDS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(SearchData.PAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StoreFrontData.getInstance()!.NAME)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.append(basicItemData!.KEYWORDS)!.append(this.sqlStrings!.END);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(this.sqlStrings!.START)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)!.append(this.basicItemData!.KEYWORDS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(SearchData.PAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StoreFrontData.getInstance()!.NAME)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.append(this.basicItemData!.KEYWORDS)!.append(this.sqlStrings!.END);
     
 
 

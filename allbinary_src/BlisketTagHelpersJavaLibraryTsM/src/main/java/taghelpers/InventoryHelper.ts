@@ -154,7 +154,7 @@ this.getFormData();
 
 
     getFormData(){
-this.id= this.request.getParameter(basicItemData!.ID);
+this.id= this.request.getParameter(this.basicItemData!.ID);
     
 }
 
@@ -217,7 +217,7 @@ this.id= this.request.getParameter(basicItemData!.ID);
     var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(basicItemData!.KEYWORDS) as string;;
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(this.basicItemData!.KEYWORDS) as string;;
     
 
                         if(keywords == 

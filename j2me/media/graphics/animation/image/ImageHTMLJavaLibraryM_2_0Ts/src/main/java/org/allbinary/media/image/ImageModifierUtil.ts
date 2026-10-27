@@ -248,7 +248,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.putF(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+logUtil!.putF(this.resourceCallbackStrings!.DONE +image.getName(), this, this.resourceCallbackStrings!.HANDLE_IMAGE);
     
 copy(imageArray, index, image, image3);
     
@@ -258,7 +258,7 @@ copy(imageArray, index, image, image3);
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.put(new StringMaker().append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE, e);
+logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(this.resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, this.resourceCallbackStrings!.HANDLE_IMAGE, e);
     
 }
 
@@ -299,7 +299,7 @@ imageArray[index]= image2;
                 //: 
 } catch(e) 
             {
-this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
+this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +this.resourceCallbackStrings!.DONE, this, this.resourceCallbackStrings!.HANDLE_IMAGE);
     
 }
 

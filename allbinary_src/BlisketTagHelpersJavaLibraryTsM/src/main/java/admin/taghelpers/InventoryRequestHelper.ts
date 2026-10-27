@@ -172,14 +172,14 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 
     var id: string = dataMappingInterface!.getKey() as string;;
     
-InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(basicItemData!.ID, id);
+InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(this.basicItemData!.ID, id);
     
 
     var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed the item with ");
     
-stringBuffer!.append(basicItemData!.ID);
+stringBuffer!.append(this.basicItemData!.ID);
     
 stringBuffer!.append("=");
     

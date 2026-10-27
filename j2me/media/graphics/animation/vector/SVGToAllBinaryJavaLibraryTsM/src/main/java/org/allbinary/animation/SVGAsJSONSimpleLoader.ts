@@ -420,10 +420,10 @@ this.addSeparator(pointVector);
     var y: number = this.readInt(rectangle, KEY_Y, 0)!;;
     
 
-    var width: number = this.readInt(rectangle, graphicsStrings!.WIDTH)!;;
+    var width: number = this.readInt(rectangle, this.graphicsStrings!.WIDTH)!;;
     
 
-    var height: number = this.readInt(rectangle, graphicsStrings!.HEIGHT)!;;
+    var height: number = this.readInt(rectangle, this.graphicsStrings!.HEIGHT)!;;
     
 this.addPoint(pointVector, x, y);
     

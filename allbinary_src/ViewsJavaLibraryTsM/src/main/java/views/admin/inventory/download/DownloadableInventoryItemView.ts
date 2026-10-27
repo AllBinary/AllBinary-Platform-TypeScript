@@ -172,7 +172,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
     getFormData(){
 this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
-this.id= this.getRequestHashMap()!.get(basicItemData!.ID) as string;
+this.id= this.getRequestHashMap()!.get(this.basicItemData!.ID) as string;
     
 }
 
